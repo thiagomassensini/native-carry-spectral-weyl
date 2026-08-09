@@ -1,99 +1,787 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.5.0",
-  "count": 92,
+  "release": "0.6.0",
+  "count": 156,
   "theorems": [
-    { "id": "NCSW-001", "name": "cameraSlope_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_two" },
-    { "id": "NCSW-002", "name": "cameraSlope_of_ne_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two" },
-    { "id": "NCSW-003", "name": "profile_two", "qualified": "NativeCarrySpectralWeyl.Camera.profile_two" },
-    { "id": "NCSW-004", "name": "profile_of_odd", "qualified": "NativeCarrySpectralWeyl.Camera.profile_of_odd" },
-    { "id": "NCSW-005", "name": "profile_of_even", "qualified": "NativeCarrySpectralWeyl.Camera.profile_of_even" },
-    { "id": "NCSW-006", "name": "dvdIndicator_add_of_dvd", "qualified": "NativeCarrySpectralWeyl.Camera.dvdIndicator_add_of_dvd" },
-    { "id": "NCSW-007", "name": "c2Profile_add_period", "qualified": "NativeCarrySpectralWeyl.Camera.c2Profile_add_period" },
-    { "id": "NCSW-008", "name": "oddProfile_add_period", "qualified": "NativeCarrySpectralWeyl.Camera.oddProfile_add_period" },
-    { "id": "NCSW-009", "name": "evenProfile_add_period", "qualified": "NativeCarrySpectralWeyl.Camera.evenProfile_add_period" },
-    { "id": "NCSW-010", "name": "profile_add_period", "qualified": "NativeCarrySpectralWeyl.Camera.profile_add_period" },
-    { "id": "NCSW-011", "name": "sum_dvdIndicator_Ioc", "qualified": "NativeCarrySpectralWeyl.Camera.sum_dvdIndicator_Ioc" },
-    { "id": "NCSW-012", "name": "c2Profile_sum_period", "qualified": "NativeCarrySpectralWeyl.Camera.c2Profile_sum_period" },
-    { "id": "NCSW-013", "name": "oddProfile_sum_period", "qualified": "NativeCarrySpectralWeyl.Camera.oddProfile_sum_period" },
-    { "id": "NCSW-014", "name": "evenProfile_sum_period", "qualified": "NativeCarrySpectralWeyl.Camera.evenProfile_sum_period" },
-    { "id": "NCSW-015", "name": "profile_sum_period", "qualified": "NativeCarrySpectralWeyl.Camera.profile_sum_period" },
-    { "id": "NCSW-016", "name": "isSupported_iff", "qualified": "NativeCarrySpectralWeyl.Camera.isSupported_iff" },
-    { "id": "NCSW-017", "name": "alignedCenter_eq_cameraSlope_mul", "qualified": "NativeCarrySpectralWeyl.Camera.alignedCenter_eq_cameraSlope_mul" },
-    { "id": "NCSW-018", "name": "alignedCenter_succ", "qualified": "NativeCarrySpectralWeyl.Camera.alignedCenter_succ" },
-    { "id": "NCSW-019", "name": "mem_radiusSet_iff", "qualified": "NativeCarrySpectralWeyl.Camera.mem_radiusSet_iff" },
-    { "id": "NCSW-020", "name": "halfRange_pos", "qualified": "NativeCarrySpectralWeyl.Camera.halfRange_pos" },
-    { "id": "NCSW-021", "name": "card_radiusSet", "qualified": "NativeCarrySpectralWeyl.Camera.card_radiusSet" },
-    { "id": "NCSW-022", "name": "seedCount_eq_card_radiusSet", "qualified": "NativeCarrySpectralWeyl.Camera.seedCount_eq_card_radiusSet" },
-    { "id": "NCSW-023", "name": "bracketCount_eq_cutoff_mul_card_radiusSet", "qualified": "NativeCarrySpectralWeyl.Camera.bracketCount_eq_cutoff_mul_card_radiusSet" },
-    { "id": "NCSW-024", "name": "nativeLine_re", "qualified": "NativeCarrySpectralWeyl.Camera.nativeLine_re" },
-    { "id": "NCSW-025", "name": "nativeLine_im", "qualified": "NativeCarrySpectralWeyl.Camera.nativeLine_im" },
-    { "id": "NCSW-026", "name": "factor_two", "qualified": "NativeCarrySpectralWeyl.Camera.factor_two" },
-    { "id": "NCSW-027", "name": "factor_of_odd", "qualified": "NativeCarrySpectralWeyl.Camera.factor_of_odd" },
-    { "id": "NCSW-028", "name": "factor_of_even", "qualified": "NativeCarrySpectralWeyl.Camera.factor_of_even" },
-    { "id": "NCSW-029", "name": "c2Factor_ne_zero_iff", "qualified": "NativeCarrySpectralWeyl.Camera.c2Factor_ne_zero_iff" },
-    { "id": "NCSW-030", "name": "oddFactor_eq_zero_iff", "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_eq_zero_iff" },
-    { "id": "NCSW-031", "name": "norm_cpow_one_sub_nativeLine", "qualified": "NativeCarrySpectralWeyl.Camera.norm_cpow_one_sub_nativeLine" },
-    { "id": "NCSW-032", "name": "norm_cpow_neg_nativeLine", "qualified": "NativeCarrySpectralWeyl.Camera.norm_cpow_neg_nativeLine" },
-    { "id": "NCSW-033", "name": "oddFactor_nativeLine_lower", "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_lower" },
-    { "id": "NCSW-034", "name": "oddFactor_nativeLine_lower_pos", "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_lower_pos" },
-    { "id": "NCSW-035", "name": "oddFactor_nativeLine_ne_zero", "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_ne_zero" },
-    { "id": "NCSW-036", "name": "c2Factor_nativeLine_lower", "qualified": "NativeCarrySpectralWeyl.Camera.c2Factor_nativeLine_lower" },
-    { "id": "NCSW-037", "name": "universalFloor_pos", "qualified": "NativeCarrySpectralWeyl.Camera.universalFloor_pos" },
-    { "id": "NCSW-038", "name": "c2Factor_nativeLine_ne_zero", "qualified": "NativeCarrySpectralWeyl.Camera.c2Factor_nativeLine_ne_zero" },
-    { "id": "NCSW-039", "name": "universalFloor_le_one", "qualified": "NativeCarrySpectralWeyl.Camera.universalFloor_le_one" },
-    { "id": "NCSW-040", "name": "evenFactor_nativeLine_lower_one", "qualified": "NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_lower_one" },
-    { "id": "NCSW-041", "name": "evenFactor_nativeLine_lower", "qualified": "NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_lower" },
-    { "id": "NCSW-042", "name": "evenFactor_nativeLine_ne_zero", "qualified": "NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_ne_zero" },
-    { "id": "NCSW-043", "name": "universalFloor_le_half", "qualified": "NativeCarrySpectralWeyl.Camera.universalFloor_le_half" },
-    { "id": "NCSW-044", "name": "oddFactor_nativeLine_uniform_lower", "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_uniform_lower" },
-    { "id": "NCSW-045", "name": "factor_nativeLine_lower", "qualified": "NativeCarrySpectralWeyl.Camera.factor_nativeLine_lower" },
-    { "id": "NCSW-046", "name": "factor_nativeLine_ne_zero", "qualified": "NativeCarrySpectralWeyl.Camera.factor_nativeLine_ne_zero" },
-    { "id": "NCSW-047", "name": "atom_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.atom_apply" },
-    { "id": "NCSW-048", "name": "centeredBracketStencil_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.centeredBracketStencil_apply" },
-    { "id": "NCSW-049", "name": "seedStencil_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.seedStencil_apply" },
-    { "id": "NCSW-050", "name": "centerStencil_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.centerStencil_apply" },
-    { "id": "NCSW-051", "name": "finiteStencil_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_apply" },
-    { "id": "NCSW-052", "name": "finiteStencil_zero", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_zero" },
-    { "id": "NCSW-053", "name": "finiteStencil_succ", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_succ" },
-    { "id": "NCSW-054", "name": "finiteCoefficient_zero", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteCoefficient_zero" },
-    { "id": "NCSW-055", "name": "finiteCoefficient_succ", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteCoefficient_succ" },
-    { "id": "NCSW-056", "name": "evalStencil_atom", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_atom" },
-    { "id": "NCSW-057", "name": "evalStencil_centeredBracketStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centeredBracketStencil" },
-    { "id": "NCSW-058", "name": "evalStencil_seedStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_seedStencil" },
-    { "id": "NCSW-059", "name": "evalStencil_centerStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centerStencil" },
-    { "id": "NCSW-060", "name": "evalStencil_finiteStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_finiteStencil" },
-    { "id": "NCSW-061", "name": "c2_centerCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_centerCoefficient" },
-    { "id": "NCSW-062", "name": "c2_finiteCoefficient_eq_profile_window", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile_window" },
-    { "id": "NCSW-063", "name": "c2_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile" },
-    { "id": "NCSW-064", "name": "c2_finiteCoefficient_eq_zero_of_outside", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_zero_of_outside" },
-    { "id": "NCSW-065", "name": "odd_centerCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_centerCoefficient" },
-    { "id": "NCSW-066", "name": "odd_seedCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_seedCoefficient" },
-    { "id": "NCSW-067", "name": "odd_finiteCoefficient_eq_profile_window_of_half", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile_window_of_half" },
-    { "id": "NCSW-068", "name": "odd_finiteCoefficient_eq_profile_window", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile_window" },
-    { "id": "NCSW-069", "name": "odd_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile" },
-    { "id": "NCSW-070", "name": "even_centerCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_centerCoefficient" },
-    { "id": "NCSW-071", "name": "even_seedCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_seedCoefficient" },
-    { "id": "NCSW-072", "name": "even_finiteCoefficient_eq_profile_window_of_half", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_of_half" },
-    { "id": "NCSW-073", "name": "even_finiteCoefficient_eq_profile_window", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window" },
-    { "id": "NCSW-074", "name": "even_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile" },
-    { "id": "NCSW-075", "name": "even_finiteCoefficient_endpoint", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_endpoint" },
-    { "id": "NCSW-076", "name": "evenProfile_endpoint", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evenProfile_endpoint" },
-    { "id": "NCSW-077", "name": "even_finiteCoefficient_eq_profile_window_corrected", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_corrected" },
-    { "id": "NCSW-078", "name": "natural_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.natural_finiteCoefficient_eq_profile" },
-    { "id": "NCSW-079", "name": "positiveDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.positiveDirichletTerm_summable" },
-    { "id": "NCSW-080", "name": "positiveDirichletSeries_eq_riemannZeta", "qualified": "NativeCarrySpectralWeyl.Camera.positiveDirichletSeries_eq_riemannZeta" },
-    { "id": "NCSW-081", "name": "dvdIndicatorDirichletSeries", "qualified": "NativeCarrySpectralWeyl.Camera.dvdIndicatorDirichletSeries" },
-    { "id": "NCSW-082", "name": "dvdIndicatorDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.dvdIndicatorDirichletTerm_summable" },
-    { "id": "NCSW-083", "name": "c2ProfileDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.c2ProfileDirichletTerm_summable" },
-    { "id": "NCSW-084", "name": "oddProfileDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.oddProfileDirichletTerm_summable" },
-    { "id": "NCSW-085", "name": "evenProfileDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.evenProfileDirichletTerm_summable" },
-    { "id": "NCSW-086", "name": "c2ProfileDirichletSeries_factorization", "qualified": "NativeCarrySpectralWeyl.Camera.c2ProfileDirichletSeries_factorization" },
-    { "id": "NCSW-087", "name": "oddProfileDirichletSeries_factorization", "qualified": "NativeCarrySpectralWeyl.Camera.oddProfileDirichletSeries_factorization" },
-    { "id": "NCSW-088", "name": "evenProfileDirichletSeries_factorization", "qualified": "NativeCarrySpectralWeyl.Camera.evenProfileDirichletSeries_factorization" },
-    { "id": "NCSW-089", "name": "profileDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletTerm_summable" },
-    { "id": "NCSW-090", "name": "profileDirichletTerm_norm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletTerm_norm_summable" },
-    { "id": "NCSW-091", "name": "profileDirichletSeries_factorization", "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletSeries_factorization" },
-    { "id": "NCSW-092", "name": "profileDirichletSeries_eq_factor_mul_riemannZeta", "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletSeries_eq_factor_mul_riemannZeta" }
+    {
+      "id": "NCSW-001",
+      "name": "cameraSlope_two",
+      "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_two"
+    },
+    {
+      "id": "NCSW-002",
+      "name": "cameraSlope_of_ne_two",
+      "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two"
+    },
+    {
+      "id": "NCSW-003",
+      "name": "profile_two",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profile_two"
+    },
+    {
+      "id": "NCSW-004",
+      "name": "profile_of_odd",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profile_of_odd"
+    },
+    {
+      "id": "NCSW-005",
+      "name": "profile_of_even",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profile_of_even"
+    },
+    {
+      "id": "NCSW-006",
+      "name": "dvdIndicator_add_of_dvd",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dvdIndicator_add_of_dvd"
+    },
+    {
+      "id": "NCSW-007",
+      "name": "c2Profile_add_period",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2Profile_add_period"
+    },
+    {
+      "id": "NCSW-008",
+      "name": "oddProfile_add_period",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddProfile_add_period"
+    },
+    {
+      "id": "NCSW-009",
+      "name": "evenProfile_add_period",
+      "qualified": "NativeCarrySpectralWeyl.Camera.evenProfile_add_period"
+    },
+    {
+      "id": "NCSW-010",
+      "name": "profile_add_period",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profile_add_period"
+    },
+    {
+      "id": "NCSW-011",
+      "name": "sum_dvdIndicator_Ioc",
+      "qualified": "NativeCarrySpectralWeyl.Camera.sum_dvdIndicator_Ioc"
+    },
+    {
+      "id": "NCSW-012",
+      "name": "c2Profile_sum_period",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2Profile_sum_period"
+    },
+    {
+      "id": "NCSW-013",
+      "name": "oddProfile_sum_period",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddProfile_sum_period"
+    },
+    {
+      "id": "NCSW-014",
+      "name": "evenProfile_sum_period",
+      "qualified": "NativeCarrySpectralWeyl.Camera.evenProfile_sum_period"
+    },
+    {
+      "id": "NCSW-015",
+      "name": "profile_sum_period",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profile_sum_period"
+    },
+    {
+      "id": "NCSW-016",
+      "name": "isSupported_iff",
+      "qualified": "NativeCarrySpectralWeyl.Camera.isSupported_iff"
+    },
+    {
+      "id": "NCSW-017",
+      "name": "alignedCenter_eq_cameraSlope_mul",
+      "qualified": "NativeCarrySpectralWeyl.Camera.alignedCenter_eq_cameraSlope_mul"
+    },
+    {
+      "id": "NCSW-018",
+      "name": "alignedCenter_succ",
+      "qualified": "NativeCarrySpectralWeyl.Camera.alignedCenter_succ"
+    },
+    {
+      "id": "NCSW-019",
+      "name": "mem_radiusSet_iff",
+      "qualified": "NativeCarrySpectralWeyl.Camera.mem_radiusSet_iff"
+    },
+    {
+      "id": "NCSW-020",
+      "name": "halfRange_pos",
+      "qualified": "NativeCarrySpectralWeyl.Camera.halfRange_pos"
+    },
+    {
+      "id": "NCSW-021",
+      "name": "card_radiusSet",
+      "qualified": "NativeCarrySpectralWeyl.Camera.card_radiusSet"
+    },
+    {
+      "id": "NCSW-022",
+      "name": "seedCount_eq_card_radiusSet",
+      "qualified": "NativeCarrySpectralWeyl.Camera.seedCount_eq_card_radiusSet"
+    },
+    {
+      "id": "NCSW-023",
+      "name": "bracketCount_eq_cutoff_mul_card_radiusSet",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCount_eq_cutoff_mul_card_radiusSet"
+    },
+    {
+      "id": "NCSW-024",
+      "name": "nativeLine_re",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLine_re"
+    },
+    {
+      "id": "NCSW-025",
+      "name": "nativeLine_im",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLine_im"
+    },
+    {
+      "id": "NCSW-026",
+      "name": "factor_two",
+      "qualified": "NativeCarrySpectralWeyl.Camera.factor_two"
+    },
+    {
+      "id": "NCSW-027",
+      "name": "factor_of_odd",
+      "qualified": "NativeCarrySpectralWeyl.Camera.factor_of_odd"
+    },
+    {
+      "id": "NCSW-028",
+      "name": "factor_of_even",
+      "qualified": "NativeCarrySpectralWeyl.Camera.factor_of_even"
+    },
+    {
+      "id": "NCSW-029",
+      "name": "c2Factor_ne_zero_iff",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2Factor_ne_zero_iff"
+    },
+    {
+      "id": "NCSW-030",
+      "name": "oddFactor_eq_zero_iff",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_eq_zero_iff"
+    },
+    {
+      "id": "NCSW-031",
+      "name": "norm_cpow_one_sub_nativeLine",
+      "qualified": "NativeCarrySpectralWeyl.Camera.norm_cpow_one_sub_nativeLine"
+    },
+    {
+      "id": "NCSW-032",
+      "name": "norm_cpow_neg_nativeLine",
+      "qualified": "NativeCarrySpectralWeyl.Camera.norm_cpow_neg_nativeLine"
+    },
+    {
+      "id": "NCSW-033",
+      "name": "oddFactor_nativeLine_lower",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_lower"
+    },
+    {
+      "id": "NCSW-034",
+      "name": "oddFactor_nativeLine_lower_pos",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_lower_pos"
+    },
+    {
+      "id": "NCSW-035",
+      "name": "oddFactor_nativeLine_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_ne_zero"
+    },
+    {
+      "id": "NCSW-036",
+      "name": "universalFloor_eq_sq_div_sqrt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.universalFloor_eq_sq_div_sqrt"
+    },
+    {
+      "id": "NCSW-037",
+      "name": "c2Factor_nativeLine_lower",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2Factor_nativeLine_lower"
+    },
+    {
+      "id": "NCSW-038",
+      "name": "universalFloor_pos",
+      "qualified": "NativeCarrySpectralWeyl.Camera.universalFloor_pos"
+    },
+    {
+      "id": "NCSW-039",
+      "name": "c2Factor_nativeLine_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2Factor_nativeLine_ne_zero"
+    },
+    {
+      "id": "NCSW-040",
+      "name": "universalFloor_le_one",
+      "qualified": "NativeCarrySpectralWeyl.Camera.universalFloor_le_one"
+    },
+    {
+      "id": "NCSW-041",
+      "name": "evenFactor_nativeLine_lower_one",
+      "qualified": "NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_lower_one"
+    },
+    {
+      "id": "NCSW-042",
+      "name": "evenFactor_nativeLine_lower",
+      "qualified": "NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_lower"
+    },
+    {
+      "id": "NCSW-043",
+      "name": "evenFactor_nativeLine_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_ne_zero"
+    },
+    {
+      "id": "NCSW-044",
+      "name": "universalFloor_le_half",
+      "qualified": "NativeCarrySpectralWeyl.Camera.universalFloor_le_half"
+    },
+    {
+      "id": "NCSW-045",
+      "name": "oddFactor_nativeLine_uniform_lower",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_uniform_lower"
+    },
+    {
+      "id": "NCSW-046",
+      "name": "factor_nativeLine_lower",
+      "qualified": "NativeCarrySpectralWeyl.Camera.factor_nativeLine_lower"
+    },
+    {
+      "id": "NCSW-047",
+      "name": "factor_nativeLine_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.factor_nativeLine_ne_zero"
+    },
+    {
+      "id": "NCSW-048",
+      "name": "atom_apply",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.atom_apply"
+    },
+    {
+      "id": "NCSW-049",
+      "name": "centeredBracketStencil_apply",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.centeredBracketStencil_apply"
+    },
+    {
+      "id": "NCSW-050",
+      "name": "seedStencil_apply",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.seedStencil_apply"
+    },
+    {
+      "id": "NCSW-051",
+      "name": "centerStencil_apply",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.centerStencil_apply"
+    },
+    {
+      "id": "NCSW-052",
+      "name": "finiteStencil_apply",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_apply"
+    },
+    {
+      "id": "NCSW-053",
+      "name": "finiteStencil_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_zero"
+    },
+    {
+      "id": "NCSW-054",
+      "name": "finiteStencil_succ",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_succ"
+    },
+    {
+      "id": "NCSW-055",
+      "name": "finiteCoefficient_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteCoefficient_zero"
+    },
+    {
+      "id": "NCSW-056",
+      "name": "finiteCoefficient_succ",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteCoefficient_succ"
+    },
+    {
+      "id": "NCSW-057",
+      "name": "evalStencil_atom",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_atom"
+    },
+    {
+      "id": "NCSW-058",
+      "name": "evalStencil_centeredBracketStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centeredBracketStencil"
+    },
+    {
+      "id": "NCSW-059",
+      "name": "evalStencil_seedStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_seedStencil"
+    },
+    {
+      "id": "NCSW-060",
+      "name": "evalStencil_centerStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centerStencil"
+    },
+    {
+      "id": "NCSW-061",
+      "name": "evalStencil_finiteStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_finiteStencil"
+    },
+    {
+      "id": "NCSW-062",
+      "name": "c2_centerCoefficient",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_centerCoefficient"
+    },
+    {
+      "id": "NCSW-063",
+      "name": "c2_finiteCoefficient_eq_profile_window",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile_window"
+    },
+    {
+      "id": "NCSW-064",
+      "name": "c2_finiteCoefficient_eq_profile",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile"
+    },
+    {
+      "id": "NCSW-065",
+      "name": "c2_finiteCoefficient_eq_zero_of_outside",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_zero_of_outside"
+    },
+    {
+      "id": "NCSW-066",
+      "name": "odd_centerCoefficient",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_centerCoefficient"
+    },
+    {
+      "id": "NCSW-067",
+      "name": "odd_seedCoefficient",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_seedCoefficient"
+    },
+    {
+      "id": "NCSW-068",
+      "name": "odd_finiteCoefficient_eq_profile_window_of_half",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile_window_of_half"
+    },
+    {
+      "id": "NCSW-069",
+      "name": "odd_finiteCoefficient_eq_profile_window",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile_window"
+    },
+    {
+      "id": "NCSW-070",
+      "name": "odd_finiteCoefficient_eq_profile",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile"
+    },
+    {
+      "id": "NCSW-071",
+      "name": "even_centerCoefficient",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_centerCoefficient"
+    },
+    {
+      "id": "NCSW-072",
+      "name": "even_seedCoefficient",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_seedCoefficient"
+    },
+    {
+      "id": "NCSW-073",
+      "name": "even_finiteCoefficient_eq_profile_window_of_half",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_of_half"
+    },
+    {
+      "id": "NCSW-074",
+      "name": "even_finiteCoefficient_eq_profile_window",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window"
+    },
+    {
+      "id": "NCSW-075",
+      "name": "even_finiteCoefficient_eq_profile",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile"
+    },
+    {
+      "id": "NCSW-076",
+      "name": "even_finiteCoefficient_endpoint",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_endpoint"
+    },
+    {
+      "id": "NCSW-077",
+      "name": "evenProfile_endpoint",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evenProfile_endpoint"
+    },
+    {
+      "id": "NCSW-078",
+      "name": "even_finiteCoefficient_eq_profile_window_corrected",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_corrected"
+    },
+    {
+      "id": "NCSW-079",
+      "name": "natural_finiteCoefficient_eq_profile",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.natural_finiteCoefficient_eq_profile"
+    },
+    {
+      "id": "NCSW-080",
+      "name": "positiveDirichletTerm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.positiveDirichletTerm_summable"
+    },
+    {
+      "id": "NCSW-081",
+      "name": "positiveDirichletSeries_eq_riemannZeta",
+      "qualified": "NativeCarrySpectralWeyl.Camera.positiveDirichletSeries_eq_riemannZeta"
+    },
+    {
+      "id": "NCSW-082",
+      "name": "dvdIndicatorDirichletSeries",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dvdIndicatorDirichletSeries"
+    },
+    {
+      "id": "NCSW-083",
+      "name": "dvdIndicatorDirichletTerm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dvdIndicatorDirichletTerm_summable"
+    },
+    {
+      "id": "NCSW-084",
+      "name": "c2ProfileDirichletTerm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2ProfileDirichletTerm_summable"
+    },
+    {
+      "id": "NCSW-085",
+      "name": "oddProfileDirichletTerm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddProfileDirichletTerm_summable"
+    },
+    {
+      "id": "NCSW-086",
+      "name": "evenProfileDirichletTerm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.evenProfileDirichletTerm_summable"
+    },
+    {
+      "id": "NCSW-087",
+      "name": "c2ProfileDirichletSeries_factorization",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2ProfileDirichletSeries_factorization"
+    },
+    {
+      "id": "NCSW-088",
+      "name": "oddProfileDirichletSeries_factorization",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddProfileDirichletSeries_factorization"
+    },
+    {
+      "id": "NCSW-089",
+      "name": "evenProfileDirichletSeries_factorization",
+      "qualified": "NativeCarrySpectralWeyl.Camera.evenProfileDirichletSeries_factorization"
+    },
+    {
+      "id": "NCSW-090",
+      "name": "profileDirichletTerm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletTerm_summable"
+    },
+    {
+      "id": "NCSW-091",
+      "name": "profileDirichletTerm_norm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletTerm_norm_summable"
+    },
+    {
+      "id": "NCSW-092",
+      "name": "profileDirichletSeries_factorization",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletSeries_factorization"
+    },
+    {
+      "id": "NCSW-093",
+      "name": "profileDirichletSeries_eq_factor_mul_riemannZeta",
+      "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletSeries_eq_factor_mul_riemannZeta"
+    },
+    {
+      "id": "NCSW-094",
+      "name": "dirichletKernel_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletKernel_hasDerivAt"
+    },
+    {
+      "id": "NCSW-095",
+      "name": "dirichletKernelDeriv_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletKernelDeriv_hasDerivAt"
+    },
+    {
+      "id": "NCSW-096",
+      "name": "dirichletKernelSecondDeriv_norm",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletKernelSecondDeriv_norm"
+    },
+    {
+      "id": "NCSW-097",
+      "name": "norm_centeredSecondDifference_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.norm_centeredSecondDifference_le"
+    },
+    {
+      "id": "NCSW-098",
+      "name": "dirichletKernel_centered_bound",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletKernel_centered_bound"
+    },
+    {
+      "id": "NCSW-099",
+      "name": "centeredBracketTerm_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centeredBracketTerm_norm_le"
+    },
+    {
+      "id": "NCSW-100",
+      "name": "centeredBracketSequence_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centeredBracketSequence_summable"
+    },
+    {
+      "id": "NCSW-101",
+      "name": "c2_index_succ_le_alignedCenter_sub",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2_index_succ_le_alignedCenter_sub"
+    },
+    {
+      "id": "NCSW-102",
+      "name": "natural_index_succ_le_alignedCenter_sub",
+      "qualified": "NativeCarrySpectralWeyl.Camera.natural_index_succ_le_alignedCenter_sub"
+    },
+    {
+      "id": "NCSW-103",
+      "name": "centerBracketTerm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketTerm_summable"
+    },
+    {
+      "id": "NCSW-104",
+      "name": "centerBracketTerm_norm_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketTerm_norm_summable"
+    },
+    {
+      "id": "NCSW-105",
+      "name": "finiteBracketCharacteristic_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_zero"
+    },
+    {
+      "id": "NCSW-106",
+      "name": "finiteBracketCharacteristic_succ",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_succ"
+    },
+    {
+      "id": "NCSW-107",
+      "name": "finiteBracketCharacteristic_tendsto",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_tendsto"
+    },
+    {
+      "id": "NCSW-108",
+      "name": "isOpen_bracketDomain",
+      "qualified": "NativeCarrySpectralWeyl.Camera.isOpen_bracketDomain"
+    },
+    {
+      "id": "NCSW-109",
+      "name": "centeredBracketTerm_norm_le_uniform",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centeredBracketTerm_norm_le_uniform"
+    },
+    {
+      "id": "NCSW-110",
+      "name": "radiusBracketMajorant_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.radiusBracketMajorant_summable"
+    },
+    {
+      "id": "NCSW-111",
+      "name": "centerBracketMajorant_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketMajorant_summable"
+    },
+    {
+      "id": "NCSW-112",
+      "name": "centerBracketTerm_norm_le_majorant",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketTerm_norm_le_majorant"
+    },
+    {
+      "id": "NCSW-113",
+      "name": "centerBracketTerm_summableLocallyUniformlyOn",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketTerm_summableLocallyUniformlyOn"
+    },
+    {
+      "id": "NCSW-114",
+      "name": "dirichletValue_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletValue_differentiable"
+    },
+    {
+      "id": "NCSW-115",
+      "name": "centeredBracketTerm_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centeredBracketTerm_differentiable"
+    },
+    {
+      "id": "NCSW-116",
+      "name": "centerBracketTerm_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketTerm_differentiable"
+    },
+    {
+      "id": "NCSW-117",
+      "name": "seedDirichletTerm_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.seedDirichletTerm_differentiable"
+    },
+    {
+      "id": "NCSW-118",
+      "name": "finiteBracketCharacteristic_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_differentiable"
+    },
+    {
+      "id": "NCSW-119",
+      "name": "bracketCharacteristic_differentiableOn",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_differentiableOn"
+    },
+    {
+      "id": "NCSW-120",
+      "name": "finiteBracketCharacteristic_tendstoLocallyUniformlyOn",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_tendstoLocallyUniformlyOn"
+    },
+    {
+      "id": "NCSW-121",
+      "name": "evalDirichletStencil_atom",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalDirichletStencil_atom"
+    },
+    {
+      "id": "NCSW-122",
+      "name": "evalDirichletStencil_centeredBracketStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalDirichletStencil_centeredBracketStencil"
+    },
+    {
+      "id": "NCSW-123",
+      "name": "evalDirichletStencil_seedStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalDirichletStencil_seedStencil"
+    },
+    {
+      "id": "NCSW-124",
+      "name": "evalDirichletStencil_centerStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalDirichletStencil_centerStencil"
+    },
+    {
+      "id": "NCSW-125",
+      "name": "evalDirichletStencil_finiteStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalDirichletStencil_finiteStencil"
+    },
+    {
+      "id": "NCSW-126",
+      "name": "coefficientPrefixStencil_apply",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.coefficientPrefixStencil_apply"
+    },
+    {
+      "id": "NCSW-127",
+      "name": "evalDirichletStencil_coefficientPrefixStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalDirichletStencil_coefficientPrefixStencil"
+    },
+    {
+      "id": "NCSW-128",
+      "name": "finiteStencil_two_eq_coefficientPrefixStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_two_eq_coefficientPrefixStencil"
+    },
+    {
+      "id": "NCSW-129",
+      "name": "finiteStencil_odd_eq_coefficientPrefixStencil",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_odd_eq_coefficientPrefixStencil"
+    },
+    {
+      "id": "NCSW-130",
+      "name": "finiteStencil_even_eq_coefficientPrefixStencil_sub",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_even_eq_coefficientPrefixStencil_sub"
+    },
+    {
+      "id": "NCSW-131",
+      "name": "finiteBracketCharacteristic_two_eq_profilePrefix",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteBracketCharacteristic_two_eq_profilePrefix"
+    },
+    {
+      "id": "NCSW-132",
+      "name": "finiteBracketCharacteristic_odd_eq_profilePrefix",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteBracketCharacteristic_odd_eq_profilePrefix"
+    },
+    {
+      "id": "NCSW-133",
+      "name": "finiteBracketCharacteristic_even_eq_profilePrefix_sub",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteBracketCharacteristic_even_eq_profilePrefix_sub"
+    },
+    {
+      "id": "NCSW-134",
+      "name": "coefficientDirichletPrefix_tendsto",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.coefficientDirichletPrefix_tendsto"
+    },
+    {
+      "id": "NCSW-135",
+      "name": "tendsto_nat_mul_add_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.tendsto_nat_mul_add_atTop"
+    },
+    {
+      "id": "NCSW-136",
+      "name": "dirichletValue_tendsto_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.dirichletValue_tendsto_zero"
+    },
+    {
+      "id": "NCSW-137",
+      "name": "finiteBracketCharacteristic_two_tendsto_profileSeries",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteBracketCharacteristic_two_tendsto_profileSeries"
+    },
+    {
+      "id": "NCSW-138",
+      "name": "finiteBracketCharacteristic_odd_tendsto_profileSeries",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteBracketCharacteristic_odd_tendsto_profileSeries"
+    },
+    {
+      "id": "NCSW-139",
+      "name": "finiteBracketCharacteristic_even_tendsto_profileSeries",
+      "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteBracketCharacteristic_even_tendsto_profileSeries"
+    },
+    {
+      "id": "NCSW-140",
+      "name": "finiteBracketCharacteristic_tendsto_profileDirichletSeries",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_tendsto_profileDirichletSeries"
+    },
+    {
+      "id": "NCSW-141",
+      "name": "bracketCharacteristic_eq_profileDirichletSeries",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_eq_profileDirichletSeries"
+    },
+    {
+      "id": "NCSW-142",
+      "name": "bracketCharacteristic_eq_factor_mul_riemannZeta",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_eq_factor_mul_riemannZeta"
+    },
+    {
+      "id": "NCSW-143",
+      "name": "bracketCharacteristic_cross_eq_on_gt_one",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_cross_eq_on_gt_one"
+    },
+    {
+      "id": "NCSW-144",
+      "name": "natCastCpow_const_sub_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.natCastCpow_const_sub_differentiable"
+    },
+    {
+      "id": "NCSW-145",
+      "name": "c2Factor_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2Factor_differentiable"
+    },
+    {
+      "id": "NCSW-146",
+      "name": "oddFactor_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_differentiable"
+    },
+    {
+      "id": "NCSW-147",
+      "name": "evenFactor_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.evenFactor_differentiable"
+    },
+    {
+      "id": "NCSW-148",
+      "name": "factor_differentiable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.factor_differentiable"
+    },
+    {
+      "id": "NCSW-149",
+      "name": "isPreconnected_bracketDomain",
+      "qualified": "NativeCarrySpectralWeyl.Camera.isPreconnected_bracketDomain"
+    },
+    {
+      "id": "NCSW-150",
+      "name": "bracketCharacteristic_cross_eq",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_cross_eq"
+    },
+    {
+      "id": "NCSW-151",
+      "name": "isOpen_nativeScalarDomain",
+      "qualified": "NativeCarrySpectralWeyl.Camera.isOpen_nativeScalarDomain"
+    },
+    {
+      "id": "NCSW-152",
+      "name": "factor_three_ne_zero_of_re_lt_one",
+      "qualified": "NativeCarrySpectralWeyl.Camera.factor_three_ne_zero_of_re_lt_one"
+    },
+    {
+      "id": "NCSW-153",
+      "name": "bracketCharacteristic_eq_factor_mul_nativeScalar",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_eq_factor_mul_nativeScalar"
+    },
+    {
+      "id": "NCSW-154",
+      "name": "nativeScalar_differentiableOn",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeScalar_differentiableOn"
+    },
+    {
+      "id": "NCSW-155",
+      "name": "bracketCharacteristic_nativeLine_eq_zero_iff",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_eq_zero_iff"
+    },
+    {
+      "id": "NCSW-156",
+      "name": "bracketCharacteristic_nativeLine_common_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_common_zero"
+    }
   ]
 }

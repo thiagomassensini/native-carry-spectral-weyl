@@ -61,6 +61,13 @@ theorem oddFactor_nativeLine_ne_zero {camera : ℕ} (hcamera : 3 ≤ camera) (t 
 def universalFloor : ℝ :=
   (1 - (Real.sqrt 2)⁻¹) * (Real.sqrt 2 - 1)
 
+/-- The universal floor in the alternate closed form recorded by the source derivation. -/
+theorem universalFloor_eq_sq_div_sqrt :
+    universalFloor = (Real.sqrt 2 - 1) ^ 2 / Real.sqrt 2 := by
+  have hsqrt : Real.sqrt 2 ≠ 0 := ne_of_gt (Real.sqrt_pos.2 (by norm_num))
+  unfold universalFloor
+  field_simp
+
 /-- The aligned C2 factor satisfies the universal lower bound on the native line. -/
 theorem c2Factor_nativeLine_lower (t : ℝ) :
     universalFloor ≤ ‖c2Factor (nativeLine t)‖ := by

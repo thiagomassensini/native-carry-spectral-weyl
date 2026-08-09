@@ -26,6 +26,18 @@ MODULES = [
      "NativeCarrySpectralWeyl.Camera.FiniteBridge."),
     (ROOT / "NativeCarrySpectralWeyl/Camera/ProfileDirichlet.lean",
      "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/BracketSeries.lean",
+     "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/NormalConvergence.lean",
+     "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/BracketProfileBridge.lean",
+     "NativeCarrySpectralWeyl.Camera.FiniteBridge."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/BracketProfileFactorization.lean",
+     "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/CrossFactorization.lean",
+     "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/CommonZeroSet.lean",
+     "NativeCarrySpectralWeyl.Camera."),
 ]
 
 
