@@ -62,3 +62,7 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_seedStencil
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centerStencil
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_finiteStencil
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_centerCoefficient
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile_window
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_zero_of_outside
