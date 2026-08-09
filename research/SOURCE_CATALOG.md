@@ -16,6 +16,7 @@ design the plan.
 | `OPERADOR_ESPECTRAL_CAMERAS_DEFECT_WEYL.md` | `07a8ec4ac6446f0cb422734e2f4a8a4354825f9752847c47490e08e5451f0783` | Finite spectral pair |
 | `CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md` | `c439ab475e6fcfcd67295114277193d793384dae01572c8582aa318bc8453545` | Functional moment limit |
 | `TRANSFORMADA_CAUCHY_STIELTJES_POVM_E_WEYL_CAMERAS.md` | `23b468dec2322bcfbb8d2dbb96a9528bc3a5b2aa18d86b5dc3a7cd8cecaf679f` | Finite Cauchy/Weyl construction |
+| `native_carry_camera_second_centered_moment_lab.py` | `d13feb6c04ff58d8660f85a5547d901c33ed091c8d6d31d879278382c95c2f9c` | Recovered second-moment and finite POVM laboratory |
 
 ## Exact duplicate families
 
@@ -39,8 +40,9 @@ bundle.
   `native_carry_pythagorean_node_weyl_colligation_lab.py`.  These exist in the
   tracked `carry-lab` Git history and should be materialized from an exact
   commit, not from its dirty worktree.
-- `native_carry_camera_second_centered_moment_lab.py` is referenced by the
-  nonuniversal-defect audit but was not found.
+- `native_carry_camera_second_centered_moment_lab.py` was supplied through
+  `/tmp`, parsed successfully by Python's AST parser and copied byte-for-byte to
+  `carry-lab/Wayl` on 2026-08-09.
 
 ## Lean dependencies
 

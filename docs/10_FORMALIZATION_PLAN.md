@@ -5,10 +5,10 @@
 The GitHub repository began at commit
 `39cb245d0b612c4cd213a664a8b7730660254aa9` with only `LICENSE`.
 
-The local research directory `carry-lab/Wayl` contains 64 files (about 1.2 MB):
+The local research directory `carry-lab/Wayl` contains 65 files (about 1.2 MB):
 
 - 27 Markdown derivations;
-- 16 Python laboratories;
+- 17 Python laboratories;
 - 21 JSON ledgers.
 
 The source set is not yet a release-grade corpus:
@@ -18,8 +18,9 @@ The source set is not yet a release-grade corpus:
   valid JSON;
 - several laboratories import historical `carry-lab` scripts rather than
   self-contained local modules;
-- `native_carry_camera_second_centered_moment_lab.py` is referenced but was not
-  found in either the current workspace or the tracked `carry-lab` tree;
+- `native_carry_camera_second_centered_moment_lab.py` was initially absent, then
+  recovered from `/tmp`, syntax-checked and copied into `carry-lab/Wayl` with
+  SHA-256 `d13feb6c04ff58d8660f85a5547d901c33ed091c8d6d31d879278382c95c2f9c`;
 - the `carry-lab` worktree is heavily dirty and `Wayl/` itself is untracked.
 
 Therefore sources must be copied by an explicit manifest and SHA-256, without
