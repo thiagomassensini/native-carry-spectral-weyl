@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.7 quantitative-tail milestone contains **202 public kernel-checked Lean
+The v0.8 higher-derivative-tail milestone contains **218 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -52,12 +52,19 @@ finite native-carry operator commit.  The current public surface proves:
 - the source-form native-line parameter result
   `d/dt (chi_b(1/2 + it) - chi_(b,M)(1/2 + it)) =
   O(M^(-3/2) * log M)`.
+- the general off-line tail estimate on `re s > -1` and its uniform form on a
+  Cauchy circle of radius `1 / log M` around the native line;
+- Cauchy's estimate for every fixed complex derivative order `k`, yielding
+  `O(M^(-3/2) * log(M)^k)` without expanding higher differentiated summands;
+- the exact chain rule along `s = 1/2 + it`, where the `k`-th real derivative
+  is the `k`-th complex derivative multiplied by `I^k`, and hence the same
+  `O(M^(-3/2) * log(M)^k)` rate for the actual `t` derivative.
 
 The common-zero and quantitative-tail theorems concern the scalar camera
-characteristics.  Equality of local zero multiplicities, derivative orders
-`k >= 2`, finite POVM/Cauchy packages and an operator-valued Weyl family remain
-separate obligations.  No Parseval or Poisson statement is used to infer the
-analytic camera bridge or its tail rates.
+characteristics.  Equality of local zero multiplicities, finite POVM/Cauchy
+packages and an operator-valued Weyl family remain separate obligations.  No
+Parseval or Poisson statement is used to infer the analytic camera bridge or
+its tail rates.
 
 Pinned foundations:
 
@@ -94,7 +101,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 202 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 218 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

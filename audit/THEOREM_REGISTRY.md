@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.7 quantitative-tail milestone contains exactly **202** named public Lean
-theorems, ordered as `NCSW-001` through `NCSW-202` in
+The v0.8 higher-derivative-tail milestone contains exactly **218** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-218` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -24,5 +24,6 @@ report for every declaration.
 | `NCSW-151`–`NCSW-156` | `Camera/CommonZeroSet.lean` | native scalar and common native-line zero sets |
 | `NCSW-157`–`NCSW-167` | `Camera/QuantitativeTail.lean` | explicit `M^-3/2` characteristic tails and stable cross residuals |
 | `NCSW-168`–`NCSW-202` | `Camera/DerivativeTail.lean` | differentiated centered series and `M^-3/2 log M` native-line derivative tail |
+| `NCSW-203`–`NCSW-218` | `Camera/HigherDerivativeTail.lean` | dynamic Cauchy discs and all fixed-order `M^-3/2 log(M)^k` derivative tails |
 
 The JSON registry is the machine-readable authority for exact qualified names.

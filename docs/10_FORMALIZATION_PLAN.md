@@ -188,6 +188,7 @@ NativeCarrySpectralWeyl/Camera/CrossFactorization.lean
 NativeCarrySpectralWeyl/Camera/CommonZeroSet.lean
 NativeCarrySpectralWeyl/Camera/QuantitativeTail.lean
 NativeCarrySpectralWeyl/Camera/DerivativeTail.lean
+NativeCarrySpectralWeyl/Camera/HigherDerivativeTail.lean
 ```
 
 Kernel checked in the v0.6 analytic-camera milestone:
@@ -222,12 +223,23 @@ Kernel checked in the v0.7 quantitative-tail milestone:
   `C(b,t) * ((2/3) log M + 10/9) * M^(-3/2)`, hence
   `O(M^(-3/2) log M)`.
 
+Kernel checked in the v0.8 higher-derivative-tail milestone:
+
+- a general integral-test tail bound for every shifted real power with
+  exponent below `-1`;
+- an explicit order-zero cutoff estimate throughout the bracket half-plane,
+  uniform on a complex circle around `s = 1/2 + it`;
+- the dynamic Cauchy radius `1 / log M`, which keeps that circle inside the
+  holomorphy domain and turns the order-zero rate into
+  `O(M^(-3/2) log(M)^k)` for every fixed complex derivative order `k`;
+- an exact all-orders chain rule along the native line, multiplying the
+  complex derivative by `I^k` and therefore preserving the norm;
+- the source-form actual `t`-derivative remainder
+  `O(M^(-3/2) log(M)^k)` for every fixed order `k`.
+
 Remaining analytic obligations:
 
-- handle analytic multiplicity separately through local zero order;
-- generalize the derivative tail from the kernel-checked first derivative to
-  each fixed order `k >= 2`, with the source rate
-  `O(M^(-3/2) log^k M)`.
+- handle analytic multiplicity separately through local zero order.
 
 The quantitative tail theorems are explicit consequences of the centered
 block majorants and integral tests; they are not inferred from pointwise
