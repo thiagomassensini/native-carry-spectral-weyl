@@ -1,0 +1,39 @@
+{
+  "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
+  "release": "0.1.0",
+  "registry_count": 46,
+  "count": 5,
+  "status_counts": { "KERNEL_CHECKED": 5 },
+  "claims": [
+    {
+      "id": "NCSW-CAM-001",
+      "claim": "The spectral slope and natural radius counts agree exactly with the pinned finite native-camera geometry",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-016", "NCSW-017", "NCSW-018", "NCSW-019", "NCSW-020", "NCSW-021", "NCSW-022", "NCSW-023"]
+    },
+    {
+      "id": "NCSW-CAM-002",
+      "claim": "The aligned C2, odd natural and even natural coefficient profiles have the stated exact divisibility formulas and periods",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-001", "NCSW-002", "NCSW-003", "NCSW-004", "NCSW-005", "NCSW-006", "NCSW-007", "NCSW-008", "NCSW-009", "NCSW-010"]
+    },
+    {
+      "id": "NCSW-CAM-003",
+      "claim": "Every supported native-camera profile has zero coefficient mean over one exact spectral period",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-011", "NCSW-012", "NCSW-013", "NCSW-014", "NCSW-015"]
+    },
+    {
+      "id": "NCSW-CAM-004",
+      "claim": "The aligned C2, odd natural and even natural complex camera factors are defined by the explicit source formulas",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-024", "NCSW-025", "NCSW-026", "NCSW-027", "NCSW-028", "NCSW-029", "NCSW-030"]
+    },
+    {
+      "id": "NCSW-CAM-005",
+      "claim": "All supported explicit camera factors have a uniform positive floor and are nonzero on s = 1/2 + i t",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-031", "NCSW-032", "NCSW-033", "NCSW-034", "NCSW-035", "NCSW-036", "NCSW-037", "NCSW-038", "NCSW-039", "NCSW-040", "NCSW-041", "NCSW-042", "NCSW-043", "NCSW-044", "NCSW-045", "NCSW-046"]
+    }
+  ]
+}

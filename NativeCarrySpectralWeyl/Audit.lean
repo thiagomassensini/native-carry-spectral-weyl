@@ -1,0 +1,50 @@
+import NativeCarrySpectralWeyl.PublicAPI
+
+/-! Ordered foundational-dependency report for the v0.1 camera registry. -/
+
+#print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
+#print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
+#print axioms NativeCarrySpectralWeyl.Camera.profile_two
+#print axioms NativeCarrySpectralWeyl.Camera.profile_of_odd
+#print axioms NativeCarrySpectralWeyl.Camera.profile_of_even
+#print axioms NativeCarrySpectralWeyl.Camera.dvdIndicator_add_of_dvd
+#print axioms NativeCarrySpectralWeyl.Camera.c2Profile_add_period
+#print axioms NativeCarrySpectralWeyl.Camera.oddProfile_add_period
+#print axioms NativeCarrySpectralWeyl.Camera.evenProfile_add_period
+#print axioms NativeCarrySpectralWeyl.Camera.profile_add_period
+#print axioms NativeCarrySpectralWeyl.Camera.sum_dvdIndicator_Ioc
+#print axioms NativeCarrySpectralWeyl.Camera.c2Profile_sum_period
+#print axioms NativeCarrySpectralWeyl.Camera.oddProfile_sum_period
+#print axioms NativeCarrySpectralWeyl.Camera.evenProfile_sum_period
+#print axioms NativeCarrySpectralWeyl.Camera.profile_sum_period
+#print axioms NativeCarrySpectralWeyl.Camera.isSupported_iff
+#print axioms NativeCarrySpectralWeyl.Camera.alignedCenter_eq_cameraSlope_mul
+#print axioms NativeCarrySpectralWeyl.Camera.alignedCenter_succ
+#print axioms NativeCarrySpectralWeyl.Camera.mem_radiusSet_iff
+#print axioms NativeCarrySpectralWeyl.Camera.halfRange_pos
+#print axioms NativeCarrySpectralWeyl.Camera.card_radiusSet
+#print axioms NativeCarrySpectralWeyl.Camera.seedCount_eq_card_radiusSet
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCount_eq_cutoff_mul_card_radiusSet
+#print axioms NativeCarrySpectralWeyl.Camera.nativeLine_re
+#print axioms NativeCarrySpectralWeyl.Camera.nativeLine_im
+#print axioms NativeCarrySpectralWeyl.Camera.factor_two
+#print axioms NativeCarrySpectralWeyl.Camera.factor_of_odd
+#print axioms NativeCarrySpectralWeyl.Camera.factor_of_even
+#print axioms NativeCarrySpectralWeyl.Camera.c2Factor_ne_zero_iff
+#print axioms NativeCarrySpectralWeyl.Camera.oddFactor_eq_zero_iff
+#print axioms NativeCarrySpectralWeyl.Camera.norm_cpow_one_sub_nativeLine
+#print axioms NativeCarrySpectralWeyl.Camera.norm_cpow_neg_nativeLine
+#print axioms NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_lower
+#print axioms NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_lower_pos
+#print axioms NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_ne_zero
+#print axioms NativeCarrySpectralWeyl.Camera.c2Factor_nativeLine_lower
+#print axioms NativeCarrySpectralWeyl.Camera.universalFloor_pos
+#print axioms NativeCarrySpectralWeyl.Camera.c2Factor_nativeLine_ne_zero
+#print axioms NativeCarrySpectralWeyl.Camera.universalFloor_le_one
+#print axioms NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_lower_one
+#print axioms NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_lower
+#print axioms NativeCarrySpectralWeyl.Camera.evenFactor_nativeLine_ne_zero
+#print axioms NativeCarrySpectralWeyl.Camera.universalFloor_le_half
+#print axioms NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_uniform_lower
+#print axioms NativeCarrySpectralWeyl.Camera.factor_nativeLine_lower
+#print axioms NativeCarrySpectralWeyl.Camera.factor_nativeLine_ne_zero

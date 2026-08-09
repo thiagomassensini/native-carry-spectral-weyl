@@ -1,4 +1,4 @@
-name: Lean bootstrap audit
+name: Lean theorem audit
 
 on:
   pull_request:
@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   audit:
-    name: Exact-checkout Lean bootstrap
+    name: Exact-checkout Lean theorem audit
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     steps:
@@ -49,6 +49,17 @@ jobs:
       - name: Build with warnings as errors
         shell: bash
         run: lake build --wfail NativeCarrySpectralWeyl
+
+      - name: Check theorem registry and claim coverage
+        shell: bash
+        run: python3 scripts/check_registry.py
+
+      - name: Check named foundational dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean NativeCarrySpectralWeyl/Audit.lean | tee /tmp/native-carry-spectral-weyl-axioms.txt
+          python3 scripts/check_axiom_output.py /tmp/native-carry-spectral-weyl-axioms.txt
 
       - name: Reject Lean trust escapes
         shell: bash
