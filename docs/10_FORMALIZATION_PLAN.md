@@ -5,17 +5,18 @@
 The GitHub repository began at commit
 `39cb245d0b612c4cd213a664a8b7730660254aa9` with only `LICENSE`.
 
-The local research directory `carry-lab/Wayl` contains 65 files (about 1.2 MB):
+The local research directory `carry-lab/Wayl` contains 66 files (about 1.2 MB):
 
 - 27 Markdown derivations;
 - 17 Python laboratories;
-- 21 JSON ledgers.
+- 22 JSON ledgers.
 
 The source set is not yet a release-grade corpus:
 
 - five exact duplicate families were found;
-- `three_color_creation_operator_audit.json` has a trailing `t` and is not
-  valid JSON;
+- `three_color_creation_operator_audit.json` originally had a trailing `t`;
+  the compact ledger was corrected and a separate full ledger was regenerated
+  by its script with every assertion enabled;
 - several laboratories import historical `carry-lab` scripts rather than
   self-contained local modules;
 - `native_carry_camera_second_centered_moment_lab.py` was initially absent, then
