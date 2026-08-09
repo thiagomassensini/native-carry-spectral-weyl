@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.6.0",
-  "registry_count": 156,
-  "count": 15,
-  "status_counts": { "KERNEL_CHECKED": 15 },
+  "release": "0.7.0",
+  "registry_count": 202,
+  "count": 17,
+  "status_counts": { "KERNEL_CHECKED": 17 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -94,6 +94,18 @@
       "claim": "Camera 3 defines a holomorphic native scalar on -1 < Re(s) < 1; every supported camera factors through it there and all supported camera characteristics have the same zero set on the native line",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-151", "NCSW-152", "NCSW-153", "NCSW-154", "NCSW-155", "NCSW-156"]
+    },
+    {
+      "id": "NCSW-CAM-016",
+      "claim": "A cutoff of M aligned center blocks approximates each supported native-line bracket characteristic with an explicit O(M^(-3/2)) remainder, and the stable finite-camera cross residual has the same rate",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-157", "NCSW-158", "NCSW-159", "NCSW-160", "NCSW-161", "NCSW-162", "NCSW-163", "NCSW-164", "NCSW-165", "NCSW-166", "NCSW-167"]
+    },
+    {
+      "id": "NCSW-CAM-017",
+      "claim": "The centered exponent derivative series is termwise valid and summable on the native line; both the complex-exponent derivative and the actual t derivative of the M-block characteristic have an explicit O(M^(-3/2) log M) tail",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-168", "NCSW-169", "NCSW-170", "NCSW-171", "NCSW-172", "NCSW-173", "NCSW-174", "NCSW-175", "NCSW-176", "NCSW-177", "NCSW-178", "NCSW-179", "NCSW-180", "NCSW-181", "NCSW-182", "NCSW-183", "NCSW-184", "NCSW-185", "NCSW-186", "NCSW-187", "NCSW-188", "NCSW-189", "NCSW-190", "NCSW-191", "NCSW-192", "NCSW-193", "NCSW-194", "NCSW-195", "NCSW-196", "NCSW-197", "NCSW-198", "NCSW-199", "NCSW-200", "NCSW-201", "NCSW-202"]
     }
   ]
 }

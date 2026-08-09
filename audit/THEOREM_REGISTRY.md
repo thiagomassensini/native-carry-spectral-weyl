@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.6 analytic-camera milestone contains exactly **156** named public Lean
-theorems, ordered as `NCSW-001` through `NCSW-156` in
+The v0.7 quantitative-tail milestone contains exactly **202** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-202` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -22,5 +22,7 @@ report for every declaration.
 | `NCSW-140`–`NCSW-143` | `Camera/BracketProfileFactorization.lean` | infinite bracket/profile/zeta bridge and initial cross identity |
 | `NCSW-144`–`NCSW-150` | `Camera/CrossFactorization.lean` | entire factors and analytic continuation of the cross identity |
 | `NCSW-151`–`NCSW-156` | `Camera/CommonZeroSet.lean` | native scalar and common native-line zero sets |
+| `NCSW-157`–`NCSW-167` | `Camera/QuantitativeTail.lean` | explicit `M^-3/2` characteristic tails and stable cross residuals |
+| `NCSW-168`–`NCSW-202` | `Camera/DerivativeTail.lean` | differentiated centered series and `M^-3/2 log M` native-line derivative tail |
 
 The JSON registry is the machine-readable authority for exact qualified names.

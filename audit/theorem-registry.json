@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.6.0",
-  "count": 156,
+  "release": "0.7.0",
+  "count": 202,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -782,6 +782,236 @@
       "id": "NCSW-156",
       "name": "bracketCharacteristic_nativeLine_common_zero",
       "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_common_zero"
+    },
+    {
+      "id": "NCSW-157",
+      "name": "cameraRadiusSqSum_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Camera.cameraRadiusSqSum_nonneg"
+    },
+    {
+      "id": "NCSW-158",
+      "name": "nativeTailConstant_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeTailConstant_nonneg"
+    },
+    {
+      "id": "NCSW-159",
+      "name": "centerBracketMajorant_nativeLine_eq",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketMajorant_nativeLine_eq"
+    },
+    {
+      "id": "NCSW-160",
+      "name": "centerBracketTerm_norm_le_nativeTail",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketTerm_norm_le_nativeTail"
+    },
+    {
+      "id": "NCSW-161",
+      "name": "nativeTailWeight_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeTailWeight_summable"
+    },
+    {
+      "id": "NCSW-162",
+      "name": "nativeTailWeight_tsum_nat_add_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeTailWeight_tsum_nat_add_le"
+    },
+    {
+      "id": "NCSW-163",
+      "name": "bracketCharacteristic_sub_finite_eq_tsum_nat_add",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_sub_finite_eq_tsum_nat_add"
+    },
+    {
+      "id": "NCSW-164",
+      "name": "bracketCharacteristic_nativeLine_tail_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_tail_le"
+    },
+    {
+      "id": "NCSW-165",
+      "name": "bracketCharacteristic_nativeLine_tail_isBigO",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_tail_isBigO"
+    },
+    {
+      "id": "NCSW-166",
+      "name": "finiteBracketCharacteristic_cross_tail_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_cross_tail_le"
+    },
+    {
+      "id": "NCSW-167",
+      "name": "finiteBracketCharacteristic_cross_tail_isBigO",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_cross_tail_isBigO"
+    },
+    {
+      "id": "NCSW-168",
+      "name": "exp_two_fifths_le_two",
+      "qualified": "NativeCarrySpectralWeyl.Camera.exp_two_fifths_le_two"
+    },
+    {
+      "id": "NCSW-169",
+      "name": "nativeLogTailPrimitive_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLogTailPrimitive_hasDerivAt"
+    },
+    {
+      "id": "NCSW-170",
+      "name": "nativeLogTailIntegrand_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLogTailIntegrand_nonneg"
+    },
+    {
+      "id": "NCSW-171",
+      "name": "nativeLogTailPrimitive_tendsto",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLogTailPrimitive_tendsto"
+    },
+    {
+      "id": "NCSW-172",
+      "name": "nativeLogTailIntegrand_integrableOn_Ioi",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLogTailIntegrand_integrableOn_Ioi"
+    },
+    {
+      "id": "NCSW-173",
+      "name": "integral_Ioi_log_mul_rpow_native",
+      "qualified": "NativeCarrySpectralWeyl.Camera.integral_Ioi_log_mul_rpow_native"
+    },
+    {
+      "id": "NCSW-174",
+      "name": "nativeLogTailWeight_tsum_nat_add_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLogTailWeight_tsum_nat_add_le"
+    },
+    {
+      "id": "NCSW-175",
+      "name": "nativeLogTailWeight_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLogTailWeight_summable"
+    },
+    {
+      "id": "NCSW-176",
+      "name": "dirichletValue_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletValue_hasDerivAt"
+    },
+    {
+      "id": "NCSW-177",
+      "name": "ofReal_inv_mul_cpow",
+      "qualified": "NativeCarrySpectralWeyl.Camera.ofReal_inv_mul_cpow"
+    },
+    {
+      "id": "NCSW-178",
+      "name": "dirichletKernelExponentDeriv_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletKernelExponentDeriv_hasDerivAt"
+    },
+    {
+      "id": "NCSW-179",
+      "name": "dirichletKernelExponentDerivX_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletKernelExponentDerivX_hasDerivAt"
+    },
+    {
+      "id": "NCSW-180",
+      "name": "dirichletKernelExponentDerivXX_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.dirichletKernelExponentDerivXX_norm_le"
+    },
+    {
+      "id": "NCSW-181",
+      "name": "centeredBracketTerm_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centeredBracketTerm_hasDerivAt"
+    },
+    {
+      "id": "NCSW-182",
+      "name": "centeredBracketExponentDerivTerm_norm_le_nativeLine",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centeredBracketExponentDerivTerm_norm_le_nativeLine"
+    },
+    {
+      "id": "NCSW-183",
+      "name": "cameraDerivativeScale_pos",
+      "qualified": "NativeCarrySpectralWeyl.Camera.cameraDerivativeScale_pos"
+    },
+    {
+      "id": "NCSW-184",
+      "name": "c2_alignedCenter_add_one_le_scale",
+      "qualified": "NativeCarrySpectralWeyl.Camera.c2_alignedCenter_add_one_le_scale"
+    },
+    {
+      "id": "NCSW-185",
+      "name": "natural_alignedCenter_add_radius_le_scale",
+      "qualified": "NativeCarrySpectralWeyl.Camera.natural_alignedCenter_add_radius_le_scale"
+    },
+    {
+      "id": "NCSW-186",
+      "name": "alignedCenter_add_radius_log_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.alignedCenter_add_radius_log_le"
+    },
+    {
+      "id": "NCSW-187",
+      "name": "nativeDerivativeTailConstant_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeDerivativeTailConstant_nonneg"
+    },
+    {
+      "id": "NCSW-188",
+      "name": "centerBracketTerm_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketTerm_hasDerivAt"
+    },
+    {
+      "id": "NCSW-189",
+      "name": "seedDirichletTerm_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.seedDirichletTerm_hasDerivAt"
+    },
+    {
+      "id": "NCSW-190",
+      "name": "finiteBracketCharacteristic_hasDerivAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.finiteBracketCharacteristic_hasDerivAt"
+    },
+    {
+      "id": "NCSW-191",
+      "name": "deriv_centerBracketTerm",
+      "qualified": "NativeCarrySpectralWeyl.Camera.deriv_centerBracketTerm"
+    },
+    {
+      "id": "NCSW-192",
+      "name": "deriv_finiteBracketCharacteristic",
+      "qualified": "NativeCarrySpectralWeyl.Camera.deriv_finiteBracketCharacteristic"
+    },
+    {
+      "id": "NCSW-193",
+      "name": "centerBracketExponentDeriv_norm_le_nativeTail",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketExponentDeriv_norm_le_nativeTail"
+    },
+    {
+      "id": "NCSW-194",
+      "name": "centerBracketExponentDeriv_summable",
+      "qualified": "NativeCarrySpectralWeyl.Camera.centerBracketExponentDeriv_summable"
+    },
+    {
+      "id": "NCSW-195",
+      "name": "deriv_bracketCharacteristic_nativeLine",
+      "qualified": "NativeCarrySpectralWeyl.Camera.deriv_bracketCharacteristic_nativeLine"
+    },
+    {
+      "id": "NCSW-196",
+      "name": "bracketCharacteristicExponentDeriv_sub_finite_eq_tsum_nat_add",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristicExponentDeriv_sub_finite_eq_tsum_nat_add"
+    },
+    {
+      "id": "NCSW-197",
+      "name": "bracketCharacteristicExponentDeriv_tail_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristicExponentDeriv_tail_le"
+    },
+    {
+      "id": "NCSW-198",
+      "name": "deriv_bracketCharacteristic_nativeLine_tail_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.deriv_bracketCharacteristic_nativeLine_tail_le"
+    },
+    {
+      "id": "NCSW-199",
+      "name": "deriv_finiteBracketCharacteristic_nativeLine",
+      "qualified": "NativeCarrySpectralWeyl.Camera.deriv_finiteBracketCharacteristic_nativeLine"
+    },
+    {
+      "id": "NCSW-200",
+      "name": "deriv_bracketCharacteristic_along_nativeLine",
+      "qualified": "NativeCarrySpectralWeyl.Camera.deriv_bracketCharacteristic_along_nativeLine"
+    },
+    {
+      "id": "NCSW-201",
+      "name": "deriv_along_nativeLine_tail_le",
+      "qualified": "NativeCarrySpectralWeyl.Camera.deriv_along_nativeLine_tail_le"
+    },
+    {
+      "id": "NCSW-202",
+      "name": "deriv_along_nativeLine_tail_isBigO",
+      "qualified": "NativeCarrySpectralWeyl.Camera.deriv_along_nativeLine_tail_isBigO"
     }
   ]
 }

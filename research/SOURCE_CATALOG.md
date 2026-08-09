@@ -10,6 +10,8 @@ design the plan.
 |---|---|---|
 | `native_carry_defect_probe_research_log.md` | `8be81ba74d53aa9b77807c050c74b0f8df2ba2476b56bfe237134aa1b8914f5f` | Consolidated dependency map |
 | `ALL_BASES_NATIVE_CAMERA_COMMON_ZERO_SET_THEOREM.md` | `074d27a121c602af6b96e8fb2ccb7d5ef5b9b1c680ca82000000c2db258fe031` | Camera profiles, factors and analytic bridge |
+| `NATIVE_CARRY_DYNAMIC_SECTOR_LIMIT_THEOREM.md` | `f3cbe6be4b9bb8545c75129463e7586d07b7ca39745eeeb244385608a749cef5` | Quantitative cutoff tails and fixed-order derivative rates |
+| `native_carry_dynamic_sector_limit_gate.py` | `13f984e873607f690ee9fb83b3b8f2db044856e6a942283b9561137ee5f901e0` | Numerical audit of the `M^-3/2` tail slope |
 | `ALL_BASES_INFINITE_CAMERA_SPECTRAL_ATLAS_THEOREM.md` | `25b291bac6d7cf6c07e7a91d1cba25ead4d46b17514c947e3536ad9294beb0a6` | Countable Gram completion and Weyl inverse |
 | `LIMITE_FRAME_DEFECT_PROBES_SEM_COLAPSO.md` | `c5fcffebf1f1acfb770a26eff34b176187b2c0a57a6aa02b97b83492bff8800e` | Noncollapse target |
 | `UNICIDADE_LIMITE_COVARIANCIA_DEFECT_PROBES.md` | `5a5e7024f3093aacc6aa6d37a8c22cf7f5f5c05a069bfbb0a4fa34b06d5947fc` | Return-metric covariance limit |

@@ -64,6 +64,12 @@ after normal convergence, analytic continuation and factor nonvanishing are
 kernel checked.  Equality of local zero multiplicities remains a separate
 claim and requires its own local-order theorem.
 
+The v0.7 scalar surface additionally admits quantitative cutoff claims only
+after the centered block identity is retained through the norm estimate.  In
+particular, the first native-line derivative tail is proved by differentiating
+the centered bracket before taking norms; no three-leg termwise estimate or
+numerical slope is used as a Lean premise.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:
