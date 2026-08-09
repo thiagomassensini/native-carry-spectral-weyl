@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.3.0",
-  "count": 64,
+  "release": "0.4.0",
+  "count": 78,
   "theorems": [
     { "id": "NCSW-001", "name": "cameraSlope_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_two" },
     { "id": "NCSW-002", "name": "cameraSlope_of_ne_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two" },
@@ -66,6 +66,20 @@
     { "id": "NCSW-061", "name": "c2_centerCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_centerCoefficient" },
     { "id": "NCSW-062", "name": "c2_finiteCoefficient_eq_profile_window", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile_window" },
     { "id": "NCSW-063", "name": "c2_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile" },
-    { "id": "NCSW-064", "name": "c2_finiteCoefficient_eq_zero_of_outside", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_zero_of_outside" }
+    { "id": "NCSW-064", "name": "c2_finiteCoefficient_eq_zero_of_outside", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_zero_of_outside" },
+    { "id": "NCSW-065", "name": "odd_centerCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_centerCoefficient" },
+    { "id": "NCSW-066", "name": "odd_seedCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_seedCoefficient" },
+    { "id": "NCSW-067", "name": "odd_finiteCoefficient_eq_profile_window_of_half", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile_window_of_half" },
+    { "id": "NCSW-068", "name": "odd_finiteCoefficient_eq_profile_window", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile_window" },
+    { "id": "NCSW-069", "name": "odd_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile" },
+    { "id": "NCSW-070", "name": "even_centerCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_centerCoefficient" },
+    { "id": "NCSW-071", "name": "even_seedCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_seedCoefficient" },
+    { "id": "NCSW-072", "name": "even_finiteCoefficient_eq_profile_window_of_half", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_of_half" },
+    { "id": "NCSW-073", "name": "even_finiteCoefficient_eq_profile_window", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window" },
+    { "id": "NCSW-074", "name": "even_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile" },
+    { "id": "NCSW-075", "name": "even_finiteCoefficient_endpoint", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_endpoint" },
+    { "id": "NCSW-076", "name": "evenProfile_endpoint", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evenProfile_endpoint" },
+    { "id": "NCSW-077", "name": "even_finiteCoefficient_eq_profile_window_corrected", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_corrected" },
+    { "id": "NCSW-078", "name": "natural_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.natural_finiteCoefficient_eq_profile" }
   ]
 }

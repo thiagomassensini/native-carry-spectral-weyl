@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.3 C2 interior-profile milestone contains **64 public kernel-checked Lean
+The v0.4 natural interior-profile milestone contains **78 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -20,10 +20,15 @@ finite native-carry operator commit.  The current public surface proves:
   evaluation is exactly the pinned `finiteNativeOperator`;
 - the complete aligned-C2 formula: finite coefficients equal `c2Profile` on
   `1 <= n <= 4 * cutoff + 1` and vanish outside that window.
+- the complete odd natural-camera formula: finite coefficients equal
+  `oddProfile` on the full emitted window;
+- the complete even natural-camera formula: finite coefficients equal
+  `evenProfile` on the strict interior, while the final antipodal coefficient
+  is exactly `1 = 2 - 1`, with the correction stated explicitly in Lean.
 
-The remaining finite bridge obligation is to prove the corresponding exact
-window formulas for odd and even natural cameras.
-The analytic factorization of camera characteristics is also separate.  No
+The exact finite/profile coefficient bridge is now complete for aligned C2 and
+all supported natural cameras.  The analytic factorization of camera
+characteristics remains separate.  No
 common-zero or Weyl-family claim is inferred from this milestone.
 
 Pinned foundations:
@@ -61,7 +66,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 64 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 78 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
