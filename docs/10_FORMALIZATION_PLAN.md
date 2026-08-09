@@ -85,7 +85,7 @@ that no research source is being presented as kernel evidence.
 
 ## 4. Phase 1 — native camera arithmetic
 
-### v0.1 progress
+### Milestone progress
 
 Kernel checked in the first camera-arithmetic candidate:
 
@@ -97,10 +97,18 @@ Kernel checked in the first camera-arithmetic candidate:
 - exact complex-power norms on `s = 1/2 + i t`;
 - the uniform positive all-camera floor and nonvanishing theorem.
 
+Added in the v0.2 finite-coefficient milestone:
+
+- a free integer stencil for atoms, centered brackets, seed blocks, center
+  blocks and finite camera cutoffs;
+- literal scalar coefficient formulas and cutoff recurrences;
+- exact evaluation theorems identifying every formal block, and the whole
+  stencil, with the pinned real-plane finite operator.
+
 Still open before Phase 1 is fully closed:
 
-- extract the interior scalar coefficients directly from the finite operator
-  sums and identify them with `profile`;
+- simplify the now-extracted scalar coefficients throughout the valid interior
+  window and identify them with `profile`;
 - connect the period profiles to the Dirichlet multiplier formulas in an
   absolutely convergent domain;
 - record the alternate closed form

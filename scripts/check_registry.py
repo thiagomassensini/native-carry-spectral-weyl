@@ -9,12 +9,17 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PREFIX = "NativeCarrySpectralWeyl.Camera."
 MODULES = [
-    ROOT / "NativeCarrySpectralWeyl/Camera/PeriodicProfiles.lean",
-    ROOT / "NativeCarrySpectralWeyl/Camera/Geometry.lean",
-    ROOT / "NativeCarrySpectralWeyl/Camera/Factors.lean",
-    ROOT / "NativeCarrySpectralWeyl/Camera/NativeLineFloor.lean",
+    (ROOT / "NativeCarrySpectralWeyl/Camera/PeriodicProfiles.lean",
+     "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/Geometry.lean",
+     "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/Factors.lean",
+     "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/NativeLineFloor.lean",
+     "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/FiniteCoefficientBridge.lean",
+     "NativeCarrySpectralWeyl.Camera.FiniteBridge."),
 ]
 
 
@@ -36,14 +41,14 @@ if len(set(qualified)) != len(qualified):
     fail("qualified theorem names are not unique")
 
 source_names: list[str] = []
-for module in MODULES:
+for module, prefix in MODULES:
     text = module.read_text()
     names = re.findall(
         r"^(?:@\[[^\n]*\]\s*)?theorem\s+([A-Za-z0-9_']+)",
         text,
         re.MULTILINE,
     )
-    source_names.extend(PREFIX + name for name in names)
+    source_names.extend(prefix + name for name in names)
 if source_names != qualified:
     fail("registry order or content differs from local theorem declarations")
 

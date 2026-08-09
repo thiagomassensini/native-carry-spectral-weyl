@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.1 camera-arithmetic milestone contains **46 public kernel-checked Lean
+The v0.2 finite-coefficient milestone contains **60 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -15,11 +15,14 @@ finite native-carry operator commit.  The current public surface proves:
 - exact periodicity and zero coefficient mean over one camera period;
 - the explicit complex factors `A_b(s)` and the native line `s = 1/2 + i t`;
 - a simultaneous positive lower bound for every `b >= 2`, hence
-  `A_b(1/2 + i t) != 0`.
+  `A_b(1/2 + i t) != 0`;
+- a free integer stencil whose scalar coefficients are literal and whose
+  evaluation is exactly the pinned `finiteNativeOperator`.
 
-The exact coefficient extraction from the finite operator and the analytic
-factorization of camera characteristics remain separate obligations.  No
-common-zero or Weyl-family claim is inferred from this arithmetic milestone.
+The remaining finite bridge obligation is to simplify those exact scalar
+coefficients to the periodic `profile` throughout the valid interior window.
+The analytic factorization of camera characteristics is also separate.  No
+common-zero or Weyl-family claim is inferred from this milestone.
 
 Pinned foundations:
 
@@ -56,7 +59,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 46 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 60 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
