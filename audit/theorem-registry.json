@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.1.0",
-  "count": 46,
+  "release": "0.2.0",
+  "count": 60,
   "theorems": [
     { "id": "NCSW-001", "name": "cameraSlope_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_two" },
     { "id": "NCSW-002", "name": "cameraSlope_of_ne_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two" },
@@ -48,6 +48,20 @@
     { "id": "NCSW-043", "name": "universalFloor_le_half", "qualified": "NativeCarrySpectralWeyl.Camera.universalFloor_le_half" },
     { "id": "NCSW-044", "name": "oddFactor_nativeLine_uniform_lower", "qualified": "NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_uniform_lower" },
     { "id": "NCSW-045", "name": "factor_nativeLine_lower", "qualified": "NativeCarrySpectralWeyl.Camera.factor_nativeLine_lower" },
-    { "id": "NCSW-046", "name": "factor_nativeLine_ne_zero", "qualified": "NativeCarrySpectralWeyl.Camera.factor_nativeLine_ne_zero" }
+    { "id": "NCSW-046", "name": "factor_nativeLine_ne_zero", "qualified": "NativeCarrySpectralWeyl.Camera.factor_nativeLine_ne_zero" },
+    { "id": "NCSW-047", "name": "atom_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.atom_apply" },
+    { "id": "NCSW-048", "name": "centeredBracketStencil_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.centeredBracketStencil_apply" },
+    { "id": "NCSW-049", "name": "seedStencil_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.seedStencil_apply" },
+    { "id": "NCSW-050", "name": "centerStencil_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.centerStencil_apply" },
+    { "id": "NCSW-051", "name": "finiteStencil_apply", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_apply" },
+    { "id": "NCSW-052", "name": "finiteStencil_zero", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_zero" },
+    { "id": "NCSW-053", "name": "finiteStencil_succ", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_succ" },
+    { "id": "NCSW-054", "name": "finiteCoefficient_zero", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteCoefficient_zero" },
+    { "id": "NCSW-055", "name": "finiteCoefficient_succ", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteCoefficient_succ" },
+    { "id": "NCSW-056", "name": "evalStencil_atom", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_atom" },
+    { "id": "NCSW-057", "name": "evalStencil_centeredBracketStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centeredBracketStencil" },
+    { "id": "NCSW-058", "name": "evalStencil_seedStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_seedStencil" },
+    { "id": "NCSW-059", "name": "evalStencil_centerStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centerStencil" },
+    { "id": "NCSW-060", "name": "evalStencil_finiteStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_finiteStencil" }
   ]
 }

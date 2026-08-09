@@ -48,3 +48,17 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Camera.oddFactor_nativeLine_uniform_lower
 #print axioms NativeCarrySpectralWeyl.Camera.factor_nativeLine_lower
 #print axioms NativeCarrySpectralWeyl.Camera.factor_nativeLine_ne_zero
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.atom_apply
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.centeredBracketStencil_apply
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.seedStencil_apply
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.centerStencil_apply
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_apply
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_zero
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteStencil_succ
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteCoefficient_zero
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.finiteCoefficient_succ
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_atom
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centeredBracketStencil
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_seedStencil
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centerStencil
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_finiteStencil

@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.1.0",
-  "registry_count": 46,
-  "count": 5,
-  "status_counts": { "KERNEL_CHECKED": 5 },
+  "release": "0.2.0",
+  "registry_count": 60,
+  "count": 6,
+  "status_counts": { "KERNEL_CHECKED": 6 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -34,6 +34,12 @@
       "claim": "All supported explicit camera factors have a uniform positive floor and are nonzero on s = 1/2 + i t",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-031", "NCSW-032", "NCSW-033", "NCSW-034", "NCSW-035", "NCSW-036", "NCSW-037", "NCSW-038", "NCSW-039", "NCSW-040", "NCSW-041", "NCSW-042", "NCSW-043", "NCSW-044", "NCSW-045", "NCSW-046"]
+    },
+    {
+      "id": "NCSW-CAM-006",
+      "claim": "The pinned finite native operator has an exact free integer-coefficient realization with literal scalar coefficient extraction",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-047", "NCSW-048", "NCSW-049", "NCSW-050", "NCSW-051", "NCSW-052", "NCSW-053", "NCSW-054", "NCSW-055", "NCSW-056", "NCSW-057", "NCSW-058", "NCSW-059", "NCSW-060"]
     }
   ]
 }
