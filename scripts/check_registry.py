@@ -44,6 +44,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Camera."),
     (ROOT / "NativeCarrySpectralWeyl/Camera/HigherDerivativeTail.lean",
      "NativeCarrySpectralWeyl.Camera."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/ZeroMultiplicity.lean",
+     "NativeCarrySpectralWeyl.Camera."),
 ]
 
 

@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.8 higher-derivative-tail registry. -/
+/-! Ordered foundational-dependency report for the v0.9 zero-multiplicity registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -220,3 +220,11 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_finiteBracketCharacteristic_along_nativeLine
 #print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_along_nativeLine_tail_le
 #print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_along_nativeLine_tail_isBigO
+#print axioms NativeCarrySpectralWeyl.Camera.factor_analyticOrderAt_eq_zero_of_ne_zero
+#print axioms NativeCarrySpectralWeyl.Camera.nativeScalar_analyticAt
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_eventuallyEq_factor_mul_nativeScalar
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_analyticOrderAt_eq_nativeScalar_of_factor_ne_zero
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_analyticOrderAt_eq_nativeScalar
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_common_analyticOrder
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_common_analyticOrderNat
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_zero_order_transfer
