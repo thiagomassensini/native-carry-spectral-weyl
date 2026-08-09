@@ -5,7 +5,7 @@ import NativeCarrySpectralWeyl.Camera.FiniteCoefficientBridge
 import NativeCarrySpectralWeyl.Camera.C2InteriorProfile
 import NativeCarrySpectralWeyl.Camera.NaturalInteriorProfile
 import NativeCarrySpectralWeyl.Camera.ProfileDirichlet
-import NativeCarrySpectralWeyl.Camera.CommonZeroSet
+import NativeCarrySpectralWeyl.Camera.DerivativeTail
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -15,8 +15,11 @@ periodic profiles and finite-camera coefficient bridge, explicit factors and
 their uniform native-line floor, normally convergent bracket characteristics
 on `re s > -1`, their initial profile/zeta factorization on `re s > 1`, the
 analytically continued cross-factor identity, and the common native-line zero
-set of every supported camera.  Local zero multiplicity and the operator-valued
-Weyl layers remain outside this surface.
+set of every supported camera.  It also exports the explicit
+`O(M⁻³ᐟ²)` cutoff and stable cross-residual estimates, plus the first
+native-line derivative rate `O(M⁻³ᐟ² log M)`.  Higher derivative orders, local
+zero multiplicity and the operator-valued Weyl layers remain outside this
+surface.
 -/
 
 namespace NativeCarrySpectralWeyl

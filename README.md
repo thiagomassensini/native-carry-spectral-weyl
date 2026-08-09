@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.6 analytic-camera milestone contains **156 public kernel-checked Lean
+The v0.7 quantitative-tail milestone contains **202 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -41,12 +41,23 @@ finite native-carry operator commit.  The current public surface proves:
 - a holomorphic native scalar `chi_3 / factor 3` on `-1 < re s < 1`, through
   which every supported camera factors, and the common zero set of every
   camera characteristic on `s = 1/2 + i t`.
+- the literal `M`-block cutoff identity and explicit native-line remainder
+  `O(M^(-3/2))`, obtained from the centered-block `m^(-5/2)` majorant;
+- the numerically stable cross residual
+  `factor 3 * chi_(b,M) - factor b * chi_(3,M) = O(M^(-3/2))`, without
+  division near a common zero;
+- termwise differentiation of the centered bracket series and the explicit
+  first-derivative estimate
+  `C(b,t) * ((2/3) * log M + 10/9) * M^(-3/2)`;
+- the source-form native-line parameter result
+  `d/dt (chi_b(1/2 + it) - chi_(b,M)(1/2 + it)) =
+  O(M^(-3/2) * log M)`.
 
-The common-zero theorem is a theorem about the scalar camera
-characteristics.  Equality of local zero multiplicities, quantitative
-`O(M^(-3/2))` tails and derivative tails, finite POVM/Cauchy packages and an
-operator-valued Weyl family remain separate obligations.  No Parseval or
-Poisson statement is used to infer the analytic camera bridge.
+The common-zero and quantitative-tail theorems concern the scalar camera
+characteristics.  Equality of local zero multiplicities, derivative orders
+`k >= 2`, finite POVM/Cauchy packages and an operator-valued Weyl family remain
+separate obligations.  No Parseval or Poisson statement is used to infer the
+analytic camera bridge or its tail rates.
 
 Pinned foundations:
 
@@ -83,7 +94,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 156 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 202 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

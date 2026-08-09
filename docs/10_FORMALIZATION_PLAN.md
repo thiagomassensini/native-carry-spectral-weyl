@@ -186,6 +186,8 @@ NativeCarrySpectralWeyl/Camera/BracketProfileBridge.lean
 NativeCarrySpectralWeyl/Camera/BracketProfileFactorization.lean
 NativeCarrySpectralWeyl/Camera/CrossFactorization.lean
 NativeCarrySpectralWeyl/Camera/CommonZeroSet.lean
+NativeCarrySpectralWeyl/Camera/QuantitativeTail.lean
+NativeCarrySpectralWeyl/Camera/DerivativeTail.lean
 ```
 
 Kernel checked in the v0.6 analytic-camera milestone:
@@ -201,13 +203,35 @@ Kernel checked in the v0.6 analytic-camera milestone:
 - native-scalar recovery through camera 3 on `-1 < re s < 1`;
 - common zero sets of all supported camera characteristics on the native line.
 
+Kernel checked in the v0.7 quantitative-tail milestone:
+
+- the cutoff is literally the number `M` of aligned center blocks in
+  `finiteBracketCharacteristic`;
+- every native-line center block is bounded by an explicit multiple of
+  `(m+1)^(-5/2)`, and the shifted integral test gives the exact exponent drop
+  `5/2 -> 3/2`;
+- each supported characteristic has an explicit `O(M^(-3/2))` cutoff tail;
+- the stable finite-camera cross residual has the same `O(M^(-3/2))` rate,
+  stated without division by a factor near a common zero;
+- differentiation in the complex exponent preserves the centered cancellation
+  and adds one logarithmic weight;
+- the differentiated series is summable and equals the derivative of the
+  infinite characteristic on the native line;
+- both the complex-exponent derivative and the actual derivative in
+  `t` along `s = 1/2 + it` satisfy the explicit bound
+  `C(b,t) * ((2/3) log M + 10/9) * M^(-3/2)`, hence
+  `O(M^(-3/2) log M)`.
+
 Remaining analytic obligations:
 
 - handle analytic multiplicity separately through local zero order;
-- prove the quantitative tail and derivative-tail estimates.
+- generalize the derivative tail from the kernel-checked first derivative to
+  each fixed order `k >= 2`, with the source rate
+  `O(M^(-3/2) log^k M)`.
 
-The `O(M^(-3/2))` tail and derivative bounds are separate quantitative
-theorems, not implicit consequences of pointwise convergence.
+The quantitative tail theorems are explicit consequences of the centered
+block majorants and integral tests; they are not inferred from pointwise
+convergence alone.
 
 ## 6. Phase 3 — finite camera spectral package
 
