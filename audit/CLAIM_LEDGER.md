@@ -1,10 +1,12 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.1 it contains
-seven `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.4 it contains
+eight `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
-operator, and the complete aligned-C2 finite/profile coefficient identity.
+operator, the complete aligned-C2 finite/profile coefficient identity, and the
+complete odd/even natural-camera identities with the final even antipodal
+correction.
 
 No analytic camera factorization, common-zero theorem, finite POVM, infinite
 camera completion or Weyl inverse is claimed by this milestone.

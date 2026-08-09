@@ -22,6 +22,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Camera.FiniteBridge."),
     (ROOT / "NativeCarrySpectralWeyl/Camera/C2InteriorProfile.lean",
      "NativeCarrySpectralWeyl.Camera.FiniteBridge."),
+    (ROOT / "NativeCarrySpectralWeyl/Camera/NaturalInteriorProfile.lean",
+     "NativeCarrySpectralWeyl.Camera.FiniteBridge."),
 ]
 
 

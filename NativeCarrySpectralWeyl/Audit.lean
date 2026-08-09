@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.1 camera registry. -/
+/-! Ordered foundational-dependency report for the v0.4 camera registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -66,3 +66,17 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile_window
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_zero_of_outside
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_centerCoefficient
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_seedCoefficient
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile_window_of_half
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile_window
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.odd_finiteCoefficient_eq_profile
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.even_centerCoefficient
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.even_seedCoefficient
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_of_half
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_endpoint
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evenProfile_endpoint
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_corrected
+#print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.natural_finiteCoefficient_eq_profile

@@ -111,10 +111,19 @@ Added in the v0.3 aligned-C2 milestone:
 - equality with `c2Profile` throughout `1 <= n <= 4 * cutoff + 1`;
 - exact vanishing outside the emitted C2 window.
 
+Added in the v0.4 natural-camera milestone:
+
+- generic interval-counting formulas for every odd and even natural-camera
+  seed and aligned center block;
+- equality with `oddProfile` throughout the complete odd emitted window;
+- equality with `evenProfile` throughout the strict even interior;
+- the exact final even antipodal correction: the finite coefficient is `1`,
+  the periodic value is `2`, and the corrected window formula subtracts one
+  unit only at that endpoint;
+- a unified natural-camera theorem on the common strict interior window.
+
 Still open before Phase 1 is fully closed:
 
-- prove the odd- and even-natural camera window formulas, including the final
-  antipodal boundary correction in the even case;
 - connect the period profiles to the Dirichlet multiplier formulas in an
   absolutely convergent domain;
 - record the alternate closed form

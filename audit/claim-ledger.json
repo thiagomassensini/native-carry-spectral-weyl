@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.3.0",
-  "registry_count": 64,
-  "count": 7,
-  "status_counts": { "KERNEL_CHECKED": 7 },
+  "release": "0.4.0",
+  "registry_count": 78,
+  "count": 8,
+  "status_counts": { "KERNEL_CHECKED": 8 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -46,6 +46,12 @@
       "claim": "Every aligned C2 finite coefficient equals the exact periodic profile on its emitted window and vanishes outside",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-061", "NCSW-062", "NCSW-063", "NCSW-064"]
+    },
+    {
+      "id": "NCSW-CAM-008",
+      "claim": "Every natural odd-camera finite coefficient equals its periodic profile on the full emitted window; every natural even-camera coefficient equals its profile before the final antipodal point and differs there by exactly one unit",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-065", "NCSW-066", "NCSW-067", "NCSW-068", "NCSW-069", "NCSW-070", "NCSW-071", "NCSW-072", "NCSW-073", "NCSW-074", "NCSW-075", "NCSW-076", "NCSW-077", "NCSW-078"]
     }
   ]
 }
