@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.9.0",
-  "count": 226,
+  "release": "0.10.0",
+  "count": 257,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1132,6 +1132,161 @@
       "id": "NCSW-226",
       "name": "bracketCharacteristic_nativeLine_zero_order_transfer",
       "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_zero_order_transfer"
+    },
+    {
+      "id": "NCSW-227",
+      "name": "normSq_analyticAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.normSq_analyticAt"
+    },
+    {
+      "id": "NCSW-228",
+      "name": "analyticOrderAt_realRestriction_eq",
+      "qualified": "NativeCarrySpectralWeyl.Camera.analyticOrderAt_realRestriction_eq"
+    },
+    {
+      "id": "NCSW-229",
+      "name": "normSq_analyticOrderAt_eq_two_mul",
+      "qualified": "NativeCarrySpectralWeyl.Camera.normSq_analyticOrderAt_eq_two_mul"
+    },
+    {
+      "id": "NCSW-230",
+      "name": "weightedNormSq_analyticOrderAt_eq_two_mul",
+      "qualified": "NativeCarrySpectralWeyl.Camera.weightedNormSq_analyticOrderAt_eq_two_mul"
+    },
+    {
+      "id": "NCSW-231",
+      "name": "nativeLineComplex_ofReal",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeLineComplex_ofReal"
+    },
+    {
+      "id": "NCSW-232",
+      "name": "hasDerivAt_nativeLineComplex",
+      "qualified": "NativeCarrySpectralWeyl.Camera.hasDerivAt_nativeLineComplex"
+    },
+    {
+      "id": "NCSW-233",
+      "name": "analyticAt_nativeLineComplex",
+      "qualified": "NativeCarrySpectralWeyl.Camera.analyticAt_nativeLineComplex"
+    },
+    {
+      "id": "NCSW-234",
+      "name": "analyticAt_comp_nativeLine",
+      "qualified": "NativeCarrySpectralWeyl.Camera.analyticAt_comp_nativeLine"
+    },
+    {
+      "id": "NCSW-235",
+      "name": "analyticOrderAt_comp_nativeLine_eq",
+      "qualified": "NativeCarrySpectralWeyl.Camera.analyticOrderAt_comp_nativeLine_eq"
+    },
+    {
+      "id": "NCSW-236",
+      "name": "modalCoefficient_pos",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalCoefficient_pos"
+    },
+    {
+      "id": "NCSW-237",
+      "name": "binaryDefectFactor_analyticAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.binaryDefectFactor_analyticAt"
+    },
+    {
+      "id": "NCSW-238",
+      "name": "binaryDefectFactor_nativeLine_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.binaryDefectFactor_nativeLine_ne_zero"
+    },
+    {
+      "id": "NCSW-239",
+      "name": "modalFactor_analyticAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalFactor_analyticAt"
+    },
+    {
+      "id": "NCSW-240",
+      "name": "modalFactor_nativeLine_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalFactor_nativeLine_ne_zero"
+    },
+    {
+      "id": "NCSW-241",
+      "name": "modalAmplitude_nativeLine_analyticAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalAmplitude_nativeLine_analyticAt"
+    },
+    {
+      "id": "NCSW-242",
+      "name": "modalAmplitude_nativeLine_analyticOrderAt_eq_nativeScalar",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalAmplitude_nativeLine_analyticOrderAt_eq_nativeScalar"
+    },
+    {
+      "id": "NCSW-243",
+      "name": "modalAmplitude_mode3_eq_bracketCharacteristic",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalAmplitude_mode3_eq_bracketCharacteristic"
+    },
+    {
+      "id": "NCSW-244",
+      "name": "modalAmplitude_mode4_eq_binaryDefectFactor_mul_nativeScalar",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalAmplitude_mode4_eq_binaryDefectFactor_mul_nativeScalar"
+    },
+    {
+      "id": "NCSW-245",
+      "name": "modalAmplitude_mode5_eq_bracketCharacteristic",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalAmplitude_mode5_eq_bracketCharacteristic"
+    },
+    {
+      "id": "NCSW-246",
+      "name": "modalAmplitude_mode7_eq_bracketCharacteristic",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalAmplitude_mode7_eq_bracketCharacteristic"
+    },
+    {
+      "id": "NCSW-247",
+      "name": "modalAmplitude_mixed_eq_binaryDefectFactor_mul_factor_three_mul_nativeScalar",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalAmplitude_mixed_eq_binaryDefectFactor_mul_factor_three_mul_nativeScalar"
+    },
+    {
+      "id": "NCSW-248",
+      "name": "modalWeight_pos",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalWeight_pos"
+    },
+    {
+      "id": "NCSW-249",
+      "name": "modalEnergy_eq_modalWeight_mul_nativeScalar_normSq",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_eq_modalWeight_mul_nativeScalar_normSq"
+    },
+    {
+      "id": "NCSW-250",
+      "name": "modalEnergy_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_nonneg"
+    },
+    {
+      "id": "NCSW-251",
+      "name": "modalEnergy_eq_zero_iff_nativeScalar_eq_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_eq_zero_iff_nativeScalar_eq_zero"
+    },
+    {
+      "id": "NCSW-252",
+      "name": "modalEnergy_common_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_common_zero"
+    },
+    {
+      "id": "NCSW-253",
+      "name": "modalWeight_analyticAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalWeight_analyticAt"
+    },
+    {
+      "id": "NCSW-254",
+      "name": "modalEnergy_analyticAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_analyticAt"
+    },
+    {
+      "id": "NCSW-255",
+      "name": "modalEnergy_analyticOrderAt_eq_two_mul",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_analyticOrderAt_eq_two_mul"
+    },
+    {
+      "id": "NCSW-256",
+      "name": "modalEnergy_zero_order_transfer",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_zero_order_transfer"
+    },
+    {
+      "id": "NCSW-257",
+      "name": "modalEnergy_zero_order_of_bracketCharacteristic",
+      "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_zero_order_of_bracketCharacteristic"
     }
   ]
 }

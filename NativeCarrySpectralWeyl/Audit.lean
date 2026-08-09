@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.9 zero-multiplicity registry. -/
+/-! Ordered foundational-dependency report for the v0.10 modal-energy registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -228,3 +228,34 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_common_analyticOrder
 #print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_common_analyticOrderNat
 #print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_zero_order_transfer
+#print axioms NativeCarrySpectralWeyl.Camera.normSq_analyticAt
+#print axioms NativeCarrySpectralWeyl.Camera.analyticOrderAt_realRestriction_eq
+#print axioms NativeCarrySpectralWeyl.Camera.normSq_analyticOrderAt_eq_two_mul
+#print axioms NativeCarrySpectralWeyl.Camera.weightedNormSq_analyticOrderAt_eq_two_mul
+#print axioms NativeCarrySpectralWeyl.Camera.nativeLineComplex_ofReal
+#print axioms NativeCarrySpectralWeyl.Camera.hasDerivAt_nativeLineComplex
+#print axioms NativeCarrySpectralWeyl.Camera.analyticAt_nativeLineComplex
+#print axioms NativeCarrySpectralWeyl.Camera.analyticAt_comp_nativeLine
+#print axioms NativeCarrySpectralWeyl.Camera.analyticOrderAt_comp_nativeLine_eq
+#print axioms NativeCarrySpectralWeyl.Camera.modalCoefficient_pos
+#print axioms NativeCarrySpectralWeyl.Camera.binaryDefectFactor_analyticAt
+#print axioms NativeCarrySpectralWeyl.Camera.binaryDefectFactor_nativeLine_ne_zero
+#print axioms NativeCarrySpectralWeyl.Camera.modalFactor_analyticAt
+#print axioms NativeCarrySpectralWeyl.Camera.modalFactor_nativeLine_ne_zero
+#print axioms NativeCarrySpectralWeyl.Camera.modalAmplitude_nativeLine_analyticAt
+#print axioms NativeCarrySpectralWeyl.Camera.modalAmplitude_nativeLine_analyticOrderAt_eq_nativeScalar
+#print axioms NativeCarrySpectralWeyl.Camera.modalAmplitude_mode3_eq_bracketCharacteristic
+#print axioms NativeCarrySpectralWeyl.Camera.modalAmplitude_mode4_eq_binaryDefectFactor_mul_nativeScalar
+#print axioms NativeCarrySpectralWeyl.Camera.modalAmplitude_mode5_eq_bracketCharacteristic
+#print axioms NativeCarrySpectralWeyl.Camera.modalAmplitude_mode7_eq_bracketCharacteristic
+#print axioms NativeCarrySpectralWeyl.Camera.modalAmplitude_mixed_eq_binaryDefectFactor_mul_factor_three_mul_nativeScalar
+#print axioms NativeCarrySpectralWeyl.Camera.modalWeight_pos
+#print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_eq_modalWeight_mul_nativeScalar_normSq
+#print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_nonneg
+#print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_eq_zero_iff_nativeScalar_eq_zero
+#print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_common_zero
+#print axioms NativeCarrySpectralWeyl.Camera.modalWeight_analyticAt
+#print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_analyticAt
+#print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_analyticOrderAt_eq_two_mul
+#print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_zero_order_transfer
+#print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_zero_order_of_bracketCharacteristic

@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.9 zero-multiplicity milestone contains exactly **226** named public Lean
-theorems, ordered as `NCSW-001` through `NCSW-226` in
+The v0.10 modal-energy milestone contains exactly **257** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-257` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -26,5 +26,6 @@ report for every declaration.
 | `NCSW-168`–`NCSW-202` | `Camera/DerivativeTail.lean` | differentiated centered series and `M^-3/2 log M` native-line derivative tail |
 | `NCSW-203`–`NCSW-218` | `Camera/HigherDerivativeTail.lean` | dynamic Cauchy discs and all fixed-order `M^-3/2 log(M)^k` derivative tails |
 | `NCSW-219`–`NCSW-226` | `Camera/ZeroMultiplicity.lean` | local analytic units and common native-line zero multiplicities |
+| `NCSW-227`–`NCSW-257` | `Camera/ModalEnergy.lean` | real/complex order bridge, five modal energies, common zeros and exact order doubling |
 
 The JSON registry is the machine-readable authority for exact qualified names.
