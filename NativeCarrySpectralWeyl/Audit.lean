@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.7 quantitative-tail registry. -/
+/-! Ordered foundational-dependency report for the v0.8 higher-derivative-tail registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -204,3 +204,19 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Camera.deriv_bracketCharacteristic_along_nativeLine
 #print axioms NativeCarrySpectralWeyl.Camera.deriv_along_nativeLine_tail_le
 #print axioms NativeCarrySpectralWeyl.Camera.deriv_along_nativeLine_tail_isBigO
+#print axioms NativeCarrySpectralWeyl.Camera.shiftedRpowWeight_summable
+#print axioms NativeCarrySpectralWeyl.Camera.shiftedRpowWeight_tsum_nat_add_le
+#print axioms NativeCarrySpectralWeyl.Camera.centerBracketMajorant_eq_cameraRadiusSqSum
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_sub_finite_eq_tsum_nat_add_of_mem_domain
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_tail_le_of_re_ge
+#print axioms NativeCarrySpectralWeyl.Camera.higherDerivativeCircleConstant_nonneg
+#print axioms NativeCarrySpectralWeyl.Camera.bracketCharacteristic_dynamic_circle_tail_le
+#print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_characteristicTail_nativeLine_le
+#print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_bracketCharacteristic_nativeLine_tail_le
+#print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_bracketCharacteristic_nativeLine_tail_isBigO
+#print axioms NativeCarrySpectralWeyl.Camera.deriv_comp_nativeLine_eq
+#print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_comp_nativeLine_eq
+#print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_bracketCharacteristic_along_nativeLine
+#print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_finiteBracketCharacteristic_along_nativeLine
+#print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_along_nativeLine_tail_le
+#print axioms NativeCarrySpectralWeyl.Camera.iteratedDeriv_along_nativeLine_tail_isBigO
