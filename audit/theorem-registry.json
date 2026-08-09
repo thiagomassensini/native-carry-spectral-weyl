@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.8.0",
-  "count": 218,
+  "release": "0.9.0",
+  "count": 226,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1092,6 +1092,46 @@
       "id": "NCSW-218",
       "name": "iteratedDeriv_along_nativeLine_tail_isBigO",
       "qualified": "NativeCarrySpectralWeyl.Camera.iteratedDeriv_along_nativeLine_tail_isBigO"
+    },
+    {
+      "id": "NCSW-219",
+      "name": "factor_analyticOrderAt_eq_zero_of_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.factor_analyticOrderAt_eq_zero_of_ne_zero"
+    },
+    {
+      "id": "NCSW-220",
+      "name": "nativeScalar_analyticAt",
+      "qualified": "NativeCarrySpectralWeyl.Camera.nativeScalar_analyticAt"
+    },
+    {
+      "id": "NCSW-221",
+      "name": "bracketCharacteristic_eventuallyEq_factor_mul_nativeScalar",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_eventuallyEq_factor_mul_nativeScalar"
+    },
+    {
+      "id": "NCSW-222",
+      "name": "bracketCharacteristic_analyticOrderAt_eq_nativeScalar_of_factor_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_analyticOrderAt_eq_nativeScalar_of_factor_ne_zero"
+    },
+    {
+      "id": "NCSW-223",
+      "name": "bracketCharacteristic_nativeLine_analyticOrderAt_eq_nativeScalar",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_analyticOrderAt_eq_nativeScalar"
+    },
+    {
+      "id": "NCSW-224",
+      "name": "bracketCharacteristic_nativeLine_common_analyticOrder",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_common_analyticOrder"
+    },
+    {
+      "id": "NCSW-225",
+      "name": "bracketCharacteristic_nativeLine_common_analyticOrderNat",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_common_analyticOrderNat"
+    },
+    {
+      "id": "NCSW-226",
+      "name": "bracketCharacteristic_nativeLine_zero_order_transfer",
+      "qualified": "NativeCarrySpectralWeyl.Camera.bracketCharacteristic_nativeLine_zero_order_transfer"
     }
   ]
 }

@@ -189,6 +189,7 @@ NativeCarrySpectralWeyl/Camera/CommonZeroSet.lean
 NativeCarrySpectralWeyl/Camera/QuantitativeTail.lean
 NativeCarrySpectralWeyl/Camera/DerivativeTail.lean
 NativeCarrySpectralWeyl/Camera/HigherDerivativeTail.lean
+NativeCarrySpectralWeyl/Camera/ZeroMultiplicity.lean
 ```
 
 Kernel checked in the v0.6 analytic-camera milestone:
@@ -237,9 +238,21 @@ Kernel checked in the v0.8 higher-derivative-tail milestone:
 - the source-form actual `t`-derivative remainder
   `O(M^(-3/2) log(M)^k)` for every fixed order `k`.
 
-Remaining analytic obligations:
+Kernel checked in the v0.9 zero-multiplicity milestone:
 
-- handle analytic multiplicity separately through local zero order.
+- a nonvanishing supported camera factor has `analyticOrderAt = 0`, the precise
+  local-unit statement used in the source notes;
+- the strip factorization `chi_b = A_b * Z_nat` holds as an equality of
+  analytic germs at every point of the native-scalar domain;
+- multiplication by the local camera unit preserves `analyticOrderAt`;
+- every pair of supported camera characteristics has the same analytic order
+  at every native-line point;
+- if one characteristic has a finite zero of order `m`, then `m > 0` and every
+  other supported characteristic has exactly the same order `m`.
+
+This closes the scalar analytic obligations identified in Phase 2.  The
+energy-order `2m` statement belongs to a later modal-energy layer and is not
+inferred from the scalar API alone.
 
 The quantitative tail theorems are explicit consequences of the centered
 block majorants and integral tests; they are not inferred from pointwise

@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.8.0",
-  "registry_count": 218,
-  "count": 18,
-  "status_counts": { "KERNEL_CHECKED": 18 },
+  "release": "0.9.0",
+  "registry_count": 226,
+  "count": 19,
+  "status_counts": { "KERNEL_CHECKED": 19 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -112,6 +112,12 @@
       "claim": "For every fixed order k, Cauchy estimates on a dynamic complex disc prove both the complex-exponent and actual native-line t-derivative cutoff rates O(M^(-3/2) log(M)^k)",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-203", "NCSW-204", "NCSW-205", "NCSW-206", "NCSW-207", "NCSW-208", "NCSW-209", "NCSW-210", "NCSW-211", "NCSW-212", "NCSW-213", "NCSW-214", "NCSW-215", "NCSW-216", "NCSW-217", "NCSW-218"]
+    },
+    {
+      "id": "NCSW-CAM-019",
+      "claim": "Every supported camera factor is a local analytic unit at native-line points, so all supported camera characteristics have the same analytic order of vanishing there; every finite positive zero order transfers exactly between cameras",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-219", "NCSW-220", "NCSW-221", "NCSW-222", "NCSW-223", "NCSW-224", "NCSW-225", "NCSW-226"]
     }
   ]
 }

@@ -61,10 +61,11 @@ The first theorem milestone is intentionally finite and arithmetic:
 
 The scalar common-zero-set theorem is admitted to the release surface only
 after normal convergence, analytic continuation and factor nonvanishing are
-kernel checked.  Equality of local zero multiplicities remains a separate
-claim and requires its own local-order theorem.
+kernel checked.  The v0.9 surface additionally admits equality of local zero
+multiplicities only through Mathlib's analytic order and an explicit proof that
+each nonvanishing camera factor has local order zero.
 
-The v0.8 scalar surface additionally admits quantitative cutoff claims only
+The v0.9 scalar surface additionally admits quantitative cutoff claims only
 after the centered block identity is retained through the norm estimate.  In
 particular, the first native-line derivative tail is proved by differentiating
 the centered bracket before taking norms; no three-leg termwise estimate or
