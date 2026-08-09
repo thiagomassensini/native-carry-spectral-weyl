@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.4 camera registry. -/
+/-! Ordered foundational-dependency report for the v0.5 camera registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -80,3 +80,17 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.evenProfile_endpoint
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_corrected
 #print axioms NativeCarrySpectralWeyl.Camera.FiniteBridge.natural_finiteCoefficient_eq_profile
+#print axioms NativeCarrySpectralWeyl.Camera.positiveDirichletTerm_summable
+#print axioms NativeCarrySpectralWeyl.Camera.positiveDirichletSeries_eq_riemannZeta
+#print axioms NativeCarrySpectralWeyl.Camera.dvdIndicatorDirichletSeries
+#print axioms NativeCarrySpectralWeyl.Camera.dvdIndicatorDirichletTerm_summable
+#print axioms NativeCarrySpectralWeyl.Camera.c2ProfileDirichletTerm_summable
+#print axioms NativeCarrySpectralWeyl.Camera.oddProfileDirichletTerm_summable
+#print axioms NativeCarrySpectralWeyl.Camera.evenProfileDirichletTerm_summable
+#print axioms NativeCarrySpectralWeyl.Camera.c2ProfileDirichletSeries_factorization
+#print axioms NativeCarrySpectralWeyl.Camera.oddProfileDirichletSeries_factorization
+#print axioms NativeCarrySpectralWeyl.Camera.evenProfileDirichletSeries_factorization
+#print axioms NativeCarrySpectralWeyl.Camera.profileDirichletTerm_summable
+#print axioms NativeCarrySpectralWeyl.Camera.profileDirichletTerm_norm_summable
+#print axioms NativeCarrySpectralWeyl.Camera.profileDirichletSeries_factorization
+#print axioms NativeCarrySpectralWeyl.Camera.profileDirichletSeries_eq_factor_mul_riemannZeta
