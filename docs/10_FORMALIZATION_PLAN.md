@@ -5,10 +5,11 @@
 The GitHub repository began at commit
 `39cb245d0b612c4cd213a664a8b7730660254aa9` with only `LICENSE`.
 
-The local research directory `carry-lab/Wayl` contains 66 files (about 1.2 MB):
+The local research directory `carry-lab/Wayl` contains 67 source files (about
+1.5 MB):
 
 - 27 Markdown derivations;
-- 17 Python laboratories;
+- 18 Python laboratories;
 - 22 JSON ledgers.
 
 The source set is not yet a release-grade corpus:
@@ -22,6 +23,10 @@ The source set is not yet a release-grade corpus:
 - `native_carry_camera_second_centered_moment_lab.py` was initially absent, then
   recovered from `/tmp`, syntax-checked and copied into `carry-lab/Wayl` with
   SHA-256 `d13feb6c04ff58d8660f85a5547d901c33ed091c8d6d31d879278382c95c2f9c`;
+- `native_carry_primitive_real_operator_all_bases_fixed.py` was supplied at the
+  `carry-lab` root, matched the primitive SHA recorded in the common-zero JSON,
+  and was moved byte-for-byte into `carry-lab/Wayl` with SHA-256
+  `c68d4bb274f36eb4dc5572afe64394787876f64bc8f2e50573654f2ab712ecee`;
 - the `carry-lab` worktree is heavily dirty and `Wayl/` itself is untracked.
 
 Therefore sources must be copied by an explicit manifest and SHA-256, without
@@ -135,10 +140,8 @@ Added in the v0.5 profile-Dirichlet milestone:
 - an explicit firewall separating this result from bracket-series normal
   convergence, analytic continuation and common-zero claims.
 
-Still open before Phase 1 is fully closed:
-
-- record the alternate closed form
-  `(sqrt 2 - 1)^2 / sqrt 2` for the universal constant.
+Closed in v0.6: the alternate closed form
+`(sqrt 2 - 1)^2 / sqrt 2` for the universal constant is now kernel checked.
 
 Suggested modules:
 
@@ -179,19 +182,29 @@ Suggested modules:
 ```text
 NativeCarrySpectralWeyl/Camera/BracketSeries.lean
 NativeCarrySpectralWeyl/Camera/NormalConvergence.lean
+NativeCarrySpectralWeyl/Camera/BracketProfileBridge.lean
+NativeCarrySpectralWeyl/Camera/BracketProfileFactorization.lean
 NativeCarrySpectralWeyl/Camera/CrossFactorization.lean
 NativeCarrySpectralWeyl/Camera/CommonZeroSet.lean
 ```
 
-Obligations:
+Kernel checked in the v0.6 analytic-camera milestone:
 
-- bound centered second differences using the integral/Taylor remainder;
-- prove normal convergence on compact subsets of `re s > -1`;
-- establish the factorization first in the absolutely convergent half-plane;
-- extend the cross identity by the holomorphic identity theorem;
-- define the native scalar through camera 3 only where its factor is nonzero;
-- prove common zero sets on the native line;
-- handle analytic multiplicity separately through local zero order.
+- a quantitative second-derivative bound for centered differences;
+- pointwise absolute and compact-normal convergence on `re s > -1`;
+- locally uniform cutoff convergence and holomorphy of the bracket limits;
+- exact complex finite-stencil/profile-prefix formulas for C2, odd and even
+  cameras, including the even endpoint correction;
+- bracket/profile/factor-zeta equality on `re s > 1`;
+- the cross-factor identity on `re s > 1` and its extension to `re s > -1` by
+  the holomorphic identity theorem;
+- native-scalar recovery through camera 3 on `-1 < re s < 1`;
+- common zero sets of all supported camera characteristics on the native line.
+
+Remaining analytic obligations:
+
+- handle analytic multiplicity separately through local zero order;
+- prove the quantitative tail and derivative-tail estimates.
 
 The `O(M^(-3/2))` tail and derivative bounds are separate quantitative
 theorems, not implicit consequences of pointwise convergence.

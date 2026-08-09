@@ -59,9 +59,10 @@ The first theorem milestone is intentionally finite and arithmetic:
 4. define the periodic mean kernel and prove finite-support positivity;
 5. recover the exact finite Gram for cameras `2,...,7`.
 
-The analytic common-zero theorem is admitted to the release surface only after
-normal convergence, analytic continuation and local multiplicity are all
-kernel checked.
+The scalar common-zero-set theorem is admitted to the release surface only
+after normal convergence, analytic continuation and factor nonvanishing are
+kernel checked.  Equality of local zero multiplicities remains a separate
+claim and requires its own local-order theorem.
 
 ## Explicit nonclaims
 

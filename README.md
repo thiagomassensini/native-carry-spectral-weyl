@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.5 profile-Dirichlet milestone contains **92 public kernel-checked Lean
+The v0.6 analytic-camera milestone contains **156 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -28,13 +28,25 @@ finite native-carry operator commit.  The current public surface proves:
 - absolute summability of every supported periodic-profile Dirichlet series
   on `1 < re s`, and the exact identity
   `profileDirichletSeries b s = factor b s * riemannZeta s` there.
+- literal finite and infinite bracket characteristics from the aligned camera
+  geometry, with absolute summability for `-1 < re s`;
+- normal convergence on compact subsets of `-1 < re s`, locally uniform
+  convergence of finite cutoffs, and holomorphy of every limit characteristic;
+- exact complex evaluation of the free finite stencil as C2, odd and even
+  profile Dirichlet prefixes, including the final even antipodal correction;
+- equality of the bracket characteristic with the profile series, hence with
+  `factor b s * riemannZeta s`, on the common half-plane `1 < re s`;
+- analytic continuation of the cross-factor identity
+  `factor 3 s * chi_b(s) = factor b s * chi_3(s)` to `-1 < re s`;
+- a holomorphic native scalar `chi_3 / factor 3` on `-1 < re s < 1`, through
+  which every supported camera factors, and the common zero set of every
+  camera characteristic on `s = 1/2 + i t`.
 
-The exact finite/profile coefficient bridge is now complete for aligned C2 and
-all supported natural cameras.  The new Dirichlet identity concerns those
-periodic profiles only.  Normal convergence of the bracket characteristics,
-analytic continuation of the native cross identity, and zero multiplicity
-remain separate.  No
-common-zero or Weyl-family claim is inferred from this milestone.
+The common-zero theorem is a theorem about the scalar camera
+characteristics.  Equality of local zero multiplicities, quantitative
+`O(M^(-3/2))` tails and derivative tails, finite POVM/Cauchy packages and an
+operator-valued Weyl family remain separate obligations.  No Parseval or
+Poisson statement is used to infer the analytic camera bridge.
 
 Pinned foundations:
 
@@ -71,7 +83,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 92 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 156 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.5.0",
-  "registry_count": 92,
-  "count": 9,
-  "status_counts": { "KERNEL_CHECKED": 9 },
+  "release": "0.6.0",
+  "registry_count": 156,
+  "count": 15,
+  "status_counts": { "KERNEL_CHECKED": 15 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -31,33 +31,69 @@
     },
     {
       "id": "NCSW-CAM-005",
-      "claim": "All supported explicit camera factors have a uniform positive floor and are nonzero on s = 1/2 + i t",
+      "claim": "All supported explicit camera factors have the stated universal floor, including its alternate closed form, and are nonzero on s = 1/2 + i t",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-031", "NCSW-032", "NCSW-033", "NCSW-034", "NCSW-035", "NCSW-036", "NCSW-037", "NCSW-038", "NCSW-039", "NCSW-040", "NCSW-041", "NCSW-042", "NCSW-043", "NCSW-044", "NCSW-045", "NCSW-046"]
+      "theorem_ids": ["NCSW-031", "NCSW-032", "NCSW-033", "NCSW-034", "NCSW-035", "NCSW-036", "NCSW-037", "NCSW-038", "NCSW-039", "NCSW-040", "NCSW-041", "NCSW-042", "NCSW-043", "NCSW-044", "NCSW-045", "NCSW-046", "NCSW-047"]
     },
     {
       "id": "NCSW-CAM-006",
       "claim": "The pinned finite native operator has an exact free integer-coefficient realization with literal scalar coefficient extraction",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-047", "NCSW-048", "NCSW-049", "NCSW-050", "NCSW-051", "NCSW-052", "NCSW-053", "NCSW-054", "NCSW-055", "NCSW-056", "NCSW-057", "NCSW-058", "NCSW-059", "NCSW-060"]
+      "theorem_ids": ["NCSW-048", "NCSW-049", "NCSW-050", "NCSW-051", "NCSW-052", "NCSW-053", "NCSW-054", "NCSW-055", "NCSW-056", "NCSW-057", "NCSW-058", "NCSW-059", "NCSW-060", "NCSW-061"]
     },
     {
       "id": "NCSW-CAM-007",
       "claim": "Every aligned C2 finite coefficient equals the exact periodic profile on its emitted window and vanishes outside",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-061", "NCSW-062", "NCSW-063", "NCSW-064"]
+      "theorem_ids": ["NCSW-062", "NCSW-063", "NCSW-064", "NCSW-065"]
     },
     {
       "id": "NCSW-CAM-008",
       "claim": "Every natural odd-camera finite coefficient equals its periodic profile on the full emitted window; every natural even-camera coefficient equals its profile before the final antipodal point and differs there by exactly one unit",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-065", "NCSW-066", "NCSW-067", "NCSW-068", "NCSW-069", "NCSW-070", "NCSW-071", "NCSW-072", "NCSW-073", "NCSW-074", "NCSW-075", "NCSW-076", "NCSW-077", "NCSW-078"]
+      "theorem_ids": ["NCSW-066", "NCSW-067", "NCSW-068", "NCSW-069", "NCSW-070", "NCSW-071", "NCSW-072", "NCSW-073", "NCSW-074", "NCSW-075", "NCSW-076", "NCSW-077", "NCSW-078", "NCSW-079"]
     },
     {
       "id": "NCSW-CAM-009",
-      "claim": "On the absolutely convergent half-plane Re(s) > 1, every supported periodic camera-profile Dirichlet series is summable and equals its explicit camera factor times the common positive-index Dirichlet series, equivalently times Mathlib's riemannZeta",
+      "claim": "On Re(s) > 1, every supported periodic camera-profile Dirichlet series is summable and equals its explicit camera factor times the common positive-index series, equivalently Mathlib's riemannZeta",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-079", "NCSW-080", "NCSW-081", "NCSW-082", "NCSW-083", "NCSW-084", "NCSW-085", "NCSW-086", "NCSW-087", "NCSW-088", "NCSW-089", "NCSW-090", "NCSW-091", "NCSW-092"]
+      "theorem_ids": ["NCSW-080", "NCSW-081", "NCSW-082", "NCSW-083", "NCSW-084", "NCSW-085", "NCSW-086", "NCSW-087", "NCSW-088", "NCSW-089", "NCSW-090", "NCSW-091", "NCSW-092", "NCSW-093"]
+    },
+    {
+      "id": "NCSW-CAM-010",
+      "claim": "For every supported camera, the literal center-bracket series is absolutely summable on Re(s) > -1 and its finite cutoffs converge pointwise to the infinite bracket characteristic",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-094", "NCSW-095", "NCSW-096", "NCSW-097", "NCSW-098", "NCSW-099", "NCSW-100", "NCSW-101", "NCSW-102", "NCSW-103", "NCSW-104", "NCSW-105", "NCSW-106", "NCSW-107"]
+    },
+    {
+      "id": "NCSW-CAM-011",
+      "claim": "For each supported camera, the center-bracket series converges normally on Re(s) > -1, finite characteristics converge locally uniformly, and the infinite characteristic is holomorphic there",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-108", "NCSW-109", "NCSW-110", "NCSW-111", "NCSW-112", "NCSW-113", "NCSW-114", "NCSW-115", "NCSW-116", "NCSW-117", "NCSW-118", "NCSW-119", "NCSW-120"]
+    },
+    {
+      "id": "NCSW-CAM-012",
+      "claim": "Complex evaluation of the free finite stencil gives the exact C2, odd and even profile Dirichlet prefixes, including the even antipodal correction, and those prefixes converge to their profile series on Re(s) > 1",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-121", "NCSW-122", "NCSW-123", "NCSW-124", "NCSW-125", "NCSW-126", "NCSW-127", "NCSW-128", "NCSW-129", "NCSW-130", "NCSW-131", "NCSW-132", "NCSW-133", "NCSW-134", "NCSW-135", "NCSW-136", "NCSW-137", "NCSW-138", "NCSW-139"]
+    },
+    {
+      "id": "NCSW-CAM-013",
+      "claim": "On Re(s) > 1, the infinite bracket characteristic equals the unified profile series and its explicit factor times Mathlib's riemannZeta, yielding the initial cross-factor identity",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-140", "NCSW-141", "NCSW-142", "NCSW-143"]
+    },
+    {
+      "id": "NCSW-CAM-014",
+      "claim": "All supported factors are entire and the cross-factor identity extends by the analytic identity principle to the full connected half-plane Re(s) > -1",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-144", "NCSW-145", "NCSW-146", "NCSW-147", "NCSW-148", "NCSW-149", "NCSW-150"]
+    },
+    {
+      "id": "NCSW-CAM-015",
+      "claim": "Camera 3 defines a holomorphic native scalar on -1 < Re(s) < 1; every supported camera factors through it there and all supported camera characteristics have the same zero set on the native line",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-151", "NCSW-152", "NCSW-153", "NCSW-154", "NCSW-155", "NCSW-156"]
     }
   ]
 }
