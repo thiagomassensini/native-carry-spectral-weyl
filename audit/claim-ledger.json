@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.4.0",
-  "registry_count": 78,
-  "count": 8,
-  "status_counts": { "KERNEL_CHECKED": 8 },
+  "release": "0.5.0",
+  "registry_count": 92,
+  "count": 9,
+  "status_counts": { "KERNEL_CHECKED": 9 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -52,6 +52,12 @@
       "claim": "Every natural odd-camera finite coefficient equals its periodic profile on the full emitted window; every natural even-camera coefficient equals its profile before the final antipodal point and differs there by exactly one unit",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-065", "NCSW-066", "NCSW-067", "NCSW-068", "NCSW-069", "NCSW-070", "NCSW-071", "NCSW-072", "NCSW-073", "NCSW-074", "NCSW-075", "NCSW-076", "NCSW-077", "NCSW-078"]
+    },
+    {
+      "id": "NCSW-CAM-009",
+      "claim": "On the absolutely convergent half-plane Re(s) > 1, every supported periodic camera-profile Dirichlet series is summable and equals its explicit camera factor times the common positive-index Dirichlet series, equivalently times Mathlib's riemannZeta",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-079", "NCSW-080", "NCSW-081", "NCSW-082", "NCSW-083", "NCSW-084", "NCSW-085", "NCSW-086", "NCSW-087", "NCSW-088", "NCSW-089", "NCSW-090", "NCSW-091", "NCSW-092"]
     }
   ]
 }

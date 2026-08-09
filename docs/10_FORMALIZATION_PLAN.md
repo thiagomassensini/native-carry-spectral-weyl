@@ -122,10 +122,21 @@ Added in the v0.4 natural-camera milestone:
   unit only at that endpoint;
 - a unified natural-camera theorem on the common strict interior window.
 
+Added in the v0.5 profile-Dirichlet milestone:
+
+- exact reindexing of a divisibility-indicator series onto positive multiples;
+- absolute summability of the aligned C2, odd, even and unified profile series
+  throughout `1 < re s`;
+- exact factorization of all three profile classes by the explicit factors
+  already defined in `Camera/Factors.lean`;
+- the unified identity
+  `profileDirichletSeries b s = factor b s * riemannZeta s` in the absolutely
+  convergent half-plane;
+- an explicit firewall separating this result from bracket-series normal
+  convergence, analytic continuation and common-zero claims.
+
 Still open before Phase 1 is fully closed:
 
-- connect the period profiles to the Dirichlet multiplier formulas in an
-  absolutely convergent domain;
 - record the alternate closed form
   `(sqrt 2 - 1)^2 / sqrt 2` for the universal constant.
 

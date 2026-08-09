@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.4.0",
-  "count": 78,
+  "release": "0.5.0",
+  "count": 92,
   "theorems": [
     { "id": "NCSW-001", "name": "cameraSlope_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_two" },
     { "id": "NCSW-002", "name": "cameraSlope_of_ne_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two" },
@@ -80,6 +80,20 @@
     { "id": "NCSW-075", "name": "even_finiteCoefficient_endpoint", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_endpoint" },
     { "id": "NCSW-076", "name": "evenProfile_endpoint", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evenProfile_endpoint" },
     { "id": "NCSW-077", "name": "even_finiteCoefficient_eq_profile_window_corrected", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.even_finiteCoefficient_eq_profile_window_corrected" },
-    { "id": "NCSW-078", "name": "natural_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.natural_finiteCoefficient_eq_profile" }
+    { "id": "NCSW-078", "name": "natural_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.natural_finiteCoefficient_eq_profile" },
+    { "id": "NCSW-079", "name": "positiveDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.positiveDirichletTerm_summable" },
+    { "id": "NCSW-080", "name": "positiveDirichletSeries_eq_riemannZeta", "qualified": "NativeCarrySpectralWeyl.Camera.positiveDirichletSeries_eq_riemannZeta" },
+    { "id": "NCSW-081", "name": "dvdIndicatorDirichletSeries", "qualified": "NativeCarrySpectralWeyl.Camera.dvdIndicatorDirichletSeries" },
+    { "id": "NCSW-082", "name": "dvdIndicatorDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.dvdIndicatorDirichletTerm_summable" },
+    { "id": "NCSW-083", "name": "c2ProfileDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.c2ProfileDirichletTerm_summable" },
+    { "id": "NCSW-084", "name": "oddProfileDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.oddProfileDirichletTerm_summable" },
+    { "id": "NCSW-085", "name": "evenProfileDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.evenProfileDirichletTerm_summable" },
+    { "id": "NCSW-086", "name": "c2ProfileDirichletSeries_factorization", "qualified": "NativeCarrySpectralWeyl.Camera.c2ProfileDirichletSeries_factorization" },
+    { "id": "NCSW-087", "name": "oddProfileDirichletSeries_factorization", "qualified": "NativeCarrySpectralWeyl.Camera.oddProfileDirichletSeries_factorization" },
+    { "id": "NCSW-088", "name": "evenProfileDirichletSeries_factorization", "qualified": "NativeCarrySpectralWeyl.Camera.evenProfileDirichletSeries_factorization" },
+    { "id": "NCSW-089", "name": "profileDirichletTerm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletTerm_summable" },
+    { "id": "NCSW-090", "name": "profileDirichletTerm_norm_summable", "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletTerm_norm_summable" },
+    { "id": "NCSW-091", "name": "profileDirichletSeries_factorization", "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletSeries_factorization" },
+    { "id": "NCSW-092", "name": "profileDirichletSeries_eq_factor_mul_riemannZeta", "qualified": "NativeCarrySpectralWeyl.Camera.profileDirichletSeries_eq_factor_mul_riemannZeta" }
   ]
 }

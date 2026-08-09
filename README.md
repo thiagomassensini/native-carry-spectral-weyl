@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.4 natural interior-profile milestone contains **78 public kernel-checked Lean
+The v0.5 profile-Dirichlet milestone contains **92 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -25,10 +25,15 @@ finite native-carry operator commit.  The current public surface proves:
 - the complete even natural-camera formula: finite coefficients equal
   `evenProfile` on the strict interior, while the final antipodal coefficient
   is exactly `1 = 2 - 1`, with the correction stated explicitly in Lean.
+- absolute summability of every supported periodic-profile Dirichlet series
+  on `1 < re s`, and the exact identity
+  `profileDirichletSeries b s = factor b s * riemannZeta s` there.
 
 The exact finite/profile coefficient bridge is now complete for aligned C2 and
-all supported natural cameras.  The analytic factorization of camera
-characteristics remains separate.  No
+all supported natural cameras.  The new Dirichlet identity concerns those
+periodic profiles only.  Normal convergence of the bracket characteristics,
+analytic continuation of the native cross identity, and zero multiplicity
+remain separate.  No
 common-zero or Weyl-family claim is inferred from this milestone.
 
 Pinned foundations:
@@ -66,7 +71,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 78 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 92 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
