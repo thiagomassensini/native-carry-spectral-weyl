@@ -1,0 +1,16 @@
+name = "NativeCarrySpectralWeyl"
+version = "0.0.0"
+defaultTargets = ["NativeCarrySpectralWeyl"]
+
+[[lean_lib]]
+name = "NativeCarrySpectralWeyl"
+
+[[require]]
+name = "GreenFrame"
+git = "https://github.com/thiagomassensini/green-frame-theorem.git"
+rev = "cd2d838bee67ad23f869a02f8ed9f0a0feb926fa"
+
+[[require]]
+name = "FiniteNativeCarryOperator"
+git = "https://github.com/thiagomassensini/finite-native-carry-operator.git"
+rev = "00e9d6beb17226545abf5ddf90bbfede6c7146b0"
