@@ -65,7 +65,15 @@ kernel checked.  The v0.9 surface additionally admits equality of local zero
 multiplicities only through Mathlib's analytic order and an explicit proof that
 each nonvanishing camera factor has local order zero.
 
-The v0.9 scalar surface additionally admits quantitative cutoff claims only
+The v0.10 surface admits the five limiting scalar-sector energies only after
+separating complex analytic amplitude order from real analytic energy order.
+Restriction to the native line is proved through its complex-affine extension
+with derivative `I`; `Complex.normSq` is then proved to double every finite
+order, and each explicit positive modal weight is proved not to alter it.  The
+canonical mode-4 formula is the aggregate of the rank-two sector, not a claim
+that either leg is a separate eigenspace.
+
+The scalar surface additionally admits quantitative cutoff claims only
 after the centered block identity is retained through the norm estimate.  In
 particular, the first native-line derivative tail is proved by differentiating
 the centered bracket before taking norms; no three-leg termwise estimate or

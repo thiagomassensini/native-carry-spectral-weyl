@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.9 zero-multiplicity milestone contains **226 public kernel-checked Lean
+The v0.10 modal-energy milestone contains **257 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -65,12 +65,20 @@ finite native-carry operator commit.  The current public surface proves:
 - equality of `analyticOrderAt` for every pair of supported camera
   characteristics at every native-line point, including exact transfer of any
   finite positive zero order.
+- the five limiting modal sectors `3`, `4`, `5`, `7` and mixed, with the
+  rank-two `log 4` sector represented by its canonical aggregate carrying
+  `1 - 2^(1-s)`, and the mixed amplitude carrying its product with `A_3`;
+- strictly positive real-analytic modal weights, nonnegative real-analytic
+  energies, the exact factorization
+  `E_j(t) = Q_j(t) * normSq(Z_nat(1/2 + i t))`, and their common zero set;
+- the real/complex analytic bridge proving that a finite amplitude zero of
+  complex order `m` gives every modal energy exact real order `2m`.
 
-The common-zero and quantitative-tail theorems concern the scalar camera
-characteristics.  Finite POVM/Cauchy packages and an operator-valued Weyl
-family remain separate obligations.  No Parseval or Poisson statement is used
-to infer the analytic camera bridge, its tail rates or its zero
-multiplicities.
+The modal energies are limiting scalar-sector formulas; this milestone does
+not construct the finite spectral projectors or a finite POVM.  Those
+POVM/Cauchy packages and the operator-valued Weyl family remain separate
+obligations.  No Parseval or Poisson statement is used to infer the analytic
+camera bridge, its tail rates, zero multiplicities or energy orders.
 
 Pinned foundations:
 
@@ -107,7 +115,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 226 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 257 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.9.0",
-  "registry_count": 226,
-  "count": 19,
-  "status_counts": { "KERNEL_CHECKED": 19 },
+  "release": "0.10.0",
+  "registry_count": 257,
+  "count": 21,
+  "status_counts": { "KERNEL_CHECKED": 21 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -118,6 +118,18 @@
       "claim": "Every supported camera factor is a local analytic unit at native-line points, so all supported camera characteristics have the same analytic order of vanishing there; every finite positive zero order transfers exactly between cameras",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-219", "NCSW-220", "NCSW-221", "NCSW-222", "NCSW-223", "NCSW-224", "NCSW-225", "NCSW-226"]
+    },
+    {
+      "id": "NCSW-CAM-020",
+      "claim": "Finite holomorphic zero order is preserved under restriction to the native real line; Complex.normSq doubles that real analytic order, and multiplication by a nonzero real-analytic weight preserves the doubled order",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-227", "NCSW-228", "NCSW-229", "NCSW-230", "NCSW-231", "NCSW-232", "NCSW-233", "NCSW-234", "NCSW-235"]
+    },
+    {
+      "id": "NCSW-CAM-021",
+      "claim": "The five limiting sectors 3, 4, 5, 7 and mixed have the exact source factors, including the binary defect factor in the aggregated rank-two mode 4 and its product with A_3 in the mixed mode; their positive real-analytic weights and nonnegative real-analytic energies satisfy E_j(t) = Q_j(t) normSq(Z_nat), share the native scalar zero set, and turn a camera zero of finite complex order m into exact real energy order 2m",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-236", "NCSW-237", "NCSW-238", "NCSW-239", "NCSW-240", "NCSW-241", "NCSW-242", "NCSW-243", "NCSW-244", "NCSW-245", "NCSW-246", "NCSW-247", "NCSW-248", "NCSW-249", "NCSW-250", "NCSW-251", "NCSW-252", "NCSW-253", "NCSW-254", "NCSW-255", "NCSW-256", "NCSW-257"]
     }
   ]
 }

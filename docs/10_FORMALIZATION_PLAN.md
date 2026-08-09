@@ -190,6 +190,7 @@ NativeCarrySpectralWeyl/Camera/QuantitativeTail.lean
 NativeCarrySpectralWeyl/Camera/DerivativeTail.lean
 NativeCarrySpectralWeyl/Camera/HigherDerivativeTail.lean
 NativeCarrySpectralWeyl/Camera/ZeroMultiplicity.lean
+NativeCarrySpectralWeyl/Camera/ModalEnergy.lean
 ```
 
 Kernel checked in the v0.6 analytic-camera milestone:
@@ -250,9 +251,27 @@ Kernel checked in the v0.9 zero-multiplicity milestone:
 - if one characteristic has a finite zero of order `m`, then `m > 0` and every
   other supported characteristic has exactly the same order `m`.
 
-This closes the scalar analytic obligations identified in Phase 2.  The
-energy-order `2m` statement belongs to a later modal-energy layer and is not
-inferred from the scalar API alone.
+This closes the scalar analytic obligations identified in Phase 2.
+
+Kernel checked in the v0.10 modal-energy milestone:
+
+- the five limiting sectors `3`, `4`, `5`, `7` and mixed, with exact
+  coefficients and holomorphic factors from the source formulas;
+- the canonical rank-two mode-4 aggregate through the binary defect factor
+  `1 - 2^(1-s)`, and the mixed sector through its product with `A_3`;
+- strictly positive real-analytic weights and nonnegative real-analytic modal
+  energies satisfying `E_j(t) = Q_j(t) * normSq(Z_nat(1/2 + i t))`;
+- a proved bridge from complex holomorphic order to real analytic order along
+  the native line, whose complex-affine parametrization has derivative `I`;
+- exact order doubling under `Complex.normSq` and preservation under a
+  nonzero real-analytic weight;
+- common modal-energy zero sets and the source statement that a camera zero
+  of finite complex order `m` gives every limiting modal energy exact real
+  order `2m`.
+
+This closes the multiplicity-and-transverse-opening statement in section 10
+of the dynamic sector-limit notes.  It does not construct the finite spectral
+projectors used in the numerical gate; those begin in Phase 3.
 
 The quantitative tail theorems are explicit consequences of the centered
 block majorants and integral tests; they are not inferred from pointwise
