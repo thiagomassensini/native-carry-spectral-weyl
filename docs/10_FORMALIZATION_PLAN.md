@@ -85,6 +85,27 @@ that no research source is being presented as kernel evidence.
 
 ## 4. Phase 1 — native camera arithmetic
 
+### v0.1 progress
+
+Kernel checked in the first camera-arithmetic candidate:
+
+- exact supported-camera slope and radius-count bridge to
+  `FiniteNativeCarryOperator`;
+- aligned C2, odd natural and even natural profile formulas;
+- exact periodicity and mean zero over one spectral period;
+- explicit `A_b(s)` definitions for all three camera classes;
+- exact complex-power norms on `s = 1/2 + i t`;
+- the uniform positive all-camera floor and nonvanishing theorem.
+
+Still open before Phase 1 is fully closed:
+
+- extract the interior scalar coefficients directly from the finite operator
+  sums and identify them with `profile`;
+- connect the period profiles to the Dirichlet multiplier formulas in an
+  absolutely convergent domain;
+- record the alternate closed form
+  `(sqrt 2 - 1)^2 / sqrt 2` for the universal constant.
+
 Suggested modules:
 
 ```text

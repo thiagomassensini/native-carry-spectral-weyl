@@ -5,12 +5,21 @@ carry cameras.
 
 ## Current status
 
-This repository is at the audited-bootstrap stage.  The package builds against
-the exact Green Frame v2.1 commit and the exact finite native-carry operator
-commit, but it intentionally contains **zero new kernel-checked Weyl claims**.
-The research documents and Python ledgers have been inventoried; their status
-does not become a theorem until an exact Lean declaration enters the public
-registry and passes the release gates.
+The v0.1 camera-arithmetic milestone contains **46 public kernel-checked Lean
+theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
+finite native-carry operator commit.  The current public surface proves:
+
+- the bridge from spectral slope/radius counts to the pinned finite-camera
+  geometry;
+- exact aligned-C2, odd and even periodic coefficient profiles;
+- exact periodicity and zero coefficient mean over one camera period;
+- the explicit complex factors `A_b(s)` and the native line `s = 1/2 + i t`;
+- a simultaneous positive lower bound for every `b >= 2`, hence
+  `A_b(1/2 + i t) != 0`.
+
+The exact coefficient extraction from the finite operator and the analytic
+factorization of camera characteristics remain separate obligations.  No
+common-zero or Weyl-family claim is inferred from this arithmetic milestone.
 
 Pinned foundations:
 
@@ -47,7 +56,10 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `.github/workflows/lean-audit.yml`: exact-checkout bootstrap CI.
+- `audit/theorem-registry.json`: ordered registry of all 46 public theorems;
+- `audit/claim-ledger.json`: exact theorem-to-claim mapping;
+- `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
+- `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
 
 ## Build
 
@@ -56,5 +68,5 @@ lake update
 lake build --wfail NativeCarrySpectralWeyl
 ```
 
-The release-grade theorem registry, named axiom audit, claim ledger and exact-SHA
-packaging will be activated with the first nonempty theorem milestone.
+The theorem registry and claim ledger are active.  A release tag is created
+only after the exact candidate SHA passes the remote audit on `main`.
