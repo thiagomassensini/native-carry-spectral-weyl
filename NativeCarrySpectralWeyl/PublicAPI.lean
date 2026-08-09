@@ -2,6 +2,7 @@ import GreenFrame
 import FiniteNativeCarryOperator
 import NativeCarrySpectralWeyl.Camera.NativeLineFloor
 import NativeCarrySpectralWeyl.Camera.FiniteCoefficientBridge
+import NativeCarrySpectralWeyl.Camera.C2InteriorProfile
 
 /-!
 # Native Carry Spectral Weyl public API

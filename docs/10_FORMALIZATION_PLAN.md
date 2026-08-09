@@ -105,10 +105,16 @@ Added in the v0.2 finite-coefficient milestone:
 - exact evaluation theorems identifying every formal block, and the whole
   stencil, with the pinned real-plane finite operator.
 
+Added in the v0.3 aligned-C2 milestone:
+
+- a complete coefficient formula at every natural position and cutoff;
+- equality with `c2Profile` throughout `1 <= n <= 4 * cutoff + 1`;
+- exact vanishing outside the emitted C2 window.
+
 Still open before Phase 1 is fully closed:
 
-- simplify the now-extracted scalar coefficients throughout the valid interior
-  window and identify them with `profile`;
+- prove the odd- and even-natural camera window formulas, including the final
+  antipodal boundary correction in the even case;
 - connect the period profiles to the Dirichlet multiplier formulas in an
   absolutely convergent domain;
 - record the alternate closed form

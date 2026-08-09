@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.2.0",
-  "registry_count": 60,
-  "count": 6,
-  "status_counts": { "KERNEL_CHECKED": 6 },
+  "release": "0.3.0",
+  "registry_count": 64,
+  "count": 7,
+  "status_counts": { "KERNEL_CHECKED": 7 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -40,6 +40,12 @@
       "claim": "The pinned finite native operator has an exact free integer-coefficient realization with literal scalar coefficient extraction",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-047", "NCSW-048", "NCSW-049", "NCSW-050", "NCSW-051", "NCSW-052", "NCSW-053", "NCSW-054", "NCSW-055", "NCSW-056", "NCSW-057", "NCSW-058", "NCSW-059", "NCSW-060"]
+    },
+    {
+      "id": "NCSW-CAM-007",
+      "claim": "Every aligned C2 finite coefficient equals the exact periodic profile on its emitted window and vanishes outside",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-061", "NCSW-062", "NCSW-063", "NCSW-064"]
     }
   ]
 }

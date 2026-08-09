@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.2.0",
-  "count": 60,
+  "release": "0.3.0",
+  "count": 64,
   "theorems": [
     { "id": "NCSW-001", "name": "cameraSlope_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_two" },
     { "id": "NCSW-002", "name": "cameraSlope_of_ne_two", "qualified": "NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two" },
@@ -62,6 +62,10 @@
     { "id": "NCSW-057", "name": "evalStencil_centeredBracketStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centeredBracketStencil" },
     { "id": "NCSW-058", "name": "evalStencil_seedStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_seedStencil" },
     { "id": "NCSW-059", "name": "evalStencil_centerStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_centerStencil" },
-    { "id": "NCSW-060", "name": "evalStencil_finiteStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_finiteStencil" }
+    { "id": "NCSW-060", "name": "evalStencil_finiteStencil", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.evalStencil_finiteStencil" },
+    { "id": "NCSW-061", "name": "c2_centerCoefficient", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_centerCoefficient" },
+    { "id": "NCSW-062", "name": "c2_finiteCoefficient_eq_profile_window", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile_window" },
+    { "id": "NCSW-063", "name": "c2_finiteCoefficient_eq_profile", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_profile" },
+    { "id": "NCSW-064", "name": "c2_finiteCoefficient_eq_zero_of_outside", "qualified": "NativeCarrySpectralWeyl.Camera.FiniteBridge.c2_finiteCoefficient_eq_zero_of_outside" }
   ]
 }
