@@ -73,6 +73,13 @@ order, and each explicit positive modal weight is proved not to alter it.  The
 canonical mode-4 formula is the aggregate of the rank-two sector, not a claim
 that either leg is a separate eigenspace.
 
+The v0.11 surface admits the finite periodic Gram layer.  Its positivity is
+proved directly from rank-one decompositions of the periodic product mean and
+the slope-minimum kernel, followed by the Schur product theorem.  For cameras
+`2,...,7`, period `420`, the exact rational matrix and determinant are checked
+inside Lean; Python output is not used as a premise.  Positive definiteness of
+this six-camera matrix does not by itself construct whitening or a POVM.
+
 The scalar surface additionally admits quantitative cutoff claims only
 after the centered block identity is retained through the norm estimate.  In
 particular, the first native-line derivative tail is proved by differentiating

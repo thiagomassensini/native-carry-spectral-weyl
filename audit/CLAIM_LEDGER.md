@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.10 it contains
-twenty-one `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.11 it contains
+twenty-two `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -21,7 +21,11 @@ modal energies: their positive weights, nonnegativity, common native-scalar
 zero set, and exact real order `2m` for an amplitude zero of complex order `m`,
 including the canonical rank-two mode-4 aggregate with binary defect factor
 `1 - 2^(1-s)` and the corresponding mixed product with `A_3`.
+The finite-Gram claim adds common-period product means, positivity of the
+slope-minimum and weighted Gram kernels for every finite camera family, and the
+exact positive-definite period-`420` matrix for cameras `2,...,7`, including
+its determinant `4_981_760`.
 
 No finite POVM, infinite camera completion or Weyl inverse is claimed by this
-milestone.  The modal-energy formulas are the limiting scalar-sector layer and
-do not by themselves construct finite spectral projectors.
+milestone.  The finite Gram matrix and modal-energy formulas do not by
+themselves construct finite spectral projectors or whitening.

@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.10 modal-energy registry. -/
+/-! Ordered foundational-dependency report for the v0.11 finite-Gram registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -259,3 +259,16 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_analyticOrderAt_eq_two_mul
 #print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_zero_order_transfer
 #print axioms NativeCarrySpectralWeyl.Camera.modalEnergy_zero_order_of_bracketCharacteristic
+#print axioms NativeCarrySpectralWeyl.Finite.profile_add_commonPeriod
+#print axioms NativeCarrySpectralWeyl.Finite.sum_indicator_eq_min
+#print axioms NativeCarrySpectralWeyl.Finite.slopeMinMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.periodicMeanMatrix_apply
+#print axioms NativeCarrySpectralWeyl.Finite.periodicMeanMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.periodicGramMatrix_apply
+#print axioms NativeCarrySpectralWeyl.Finite.periodicGramMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.sixCamera_commonPeriod
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraProductSum_eq
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraGram_eq
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraGram_det
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraGram_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraGram_posDef

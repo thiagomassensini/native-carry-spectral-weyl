@@ -279,6 +279,25 @@ convergence alone.
 
 ## 6. Phase 3 — finite camera spectral package
 
+Kernel checked in the v0.11 finite-Gram milestone:
+
+- a common-period predicate and invariance of every supported camera profile
+  under a period divisible by its exact spectral slope;
+- the periodic product-mean matrix as a normalized finite sum of rank-one
+  profile matrices, hence positive semidefinite;
+- the slope-minimum kernel as a finite sum of rank-one level indicators, hence
+  positive semidefinite for every finite slope family;
+- the weighted Gram formula
+  `G(b,c) = min(ell_b,ell_c) * m(b,c)` and its positive semidefiniteness by the
+  Schur product theorem;
+- the exact common period `420` and integer product-sum certificate for cameras
+  `2,...,7`;
+- literal recovery of the documented rational Gram matrix, its exact
+  determinant `4_981_760`, and strict positive definiteness.
+
+This closes the Gram portion of Phase 3.  Moment matrices, whitening, the step
+POVM and its Cauchy/Weyl transforms remain subsequent milestones.
+
 Suggested modules:
 
 ```text

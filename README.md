@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.10 modal-energy milestone contains **257 public kernel-checked Lean
+The v0.11 finite-Gram milestone contains **270 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -73,12 +73,20 @@ finite native-carry operator commit.  The current public surface proves:
   `E_j(t) = Q_j(t) * normSq(Z_nat(1/2 + i t))`, and their common zero set;
 - the real/complex analytic bridge proving that a finite amplitude zero of
   complex order `m` gives every modal energy exact real order `2m`.
+- periodic product means over a chosen common camera period, realized as
+  normalized sums of rank-one matrices and therefore positive semidefinite;
+- the positive-semidefinite slope-minimum kernel and, by the Schur product
+  theorem, the positive-semidefinite weighted Gram matrix for every finite
+  camera family;
+- the exact period-`420` Gram matrix for cameras `2,...,7`, including its
+  integer profile-product certificate, determinant `4_981_760`, and strict
+  positive definiteness.
 
-The modal energies are limiting scalar-sector formulas; this milestone does
-not construct the finite spectral projectors or a finite POVM.  Those
-POVM/Cauchy packages and the operator-valued Weyl family remain separate
-obligations.  No Parseval or Poisson statement is used to infer the analytic
-camera bridge, its tail rates, zero multiplicities or energy orders.
+The finite Gram layer does not yet construct moment matrices, whitening,
+spectral projectors or a finite POVM.  Those POVM/Cauchy packages and the
+operator-valued Weyl family remain separate obligations.  No Parseval or
+Poisson statement is used to infer the analytic camera bridge, its tail rates,
+zero multiplicities, energy orders or finite-Gram positivity.
 
 Pinned foundations:
 
@@ -115,7 +123,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 257 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 270 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

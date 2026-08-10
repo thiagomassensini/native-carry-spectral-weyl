@@ -8,6 +8,7 @@ import NativeCarrySpectralWeyl.Camera.ProfileDirichlet
 import NativeCarrySpectralWeyl.Camera.HigherDerivativeTail
 import NativeCarrySpectralWeyl.Camera.ZeroMultiplicity
 import NativeCarrySpectralWeyl.Camera.ModalEnergy
+import NativeCarrySpectralWeyl.Finite.Gram
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -24,7 +25,10 @@ multiplicities between all supported cameras on the native line.  It also
 exports the five limiting modal energies, their positive scalar weights and
 common zero set, and the exact doubling from complex amplitude order `m` to
 real energy order `2m`.  The finite POVM/Cauchy packages and operator-valued
-Weyl layers remain outside this surface.
+Weyl layers remain outside this surface.  The first finite spectral layer is
+now included: periodic product means, the slope-weighted Gram kernel, its
+finite-family positive semidefiniteness, and the exact positive-definite Gram
+matrix for cameras `2, ..., 7`.
 -/
 
 namespace NativeCarrySpectralWeyl
