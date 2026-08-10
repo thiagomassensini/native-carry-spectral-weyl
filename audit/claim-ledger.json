@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.13.0",
-  "registry_count": 313,
-  "count": 24,
-  "status_counts": { "KERNEL_CHECKED": 24 },
+  "release": "0.14.0",
+  "registry_count": 333,
+  "count": 25,
+  "status_counts": { "KERNEL_CHECKED": 25 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -148,6 +148,12 @@
       "claim": "Every positive-definite finite Gram matrix has a canonical positive inverse square root R satisfying R^2 = G^-1 and R G R = I; whitening preserves Hermitianity and positive semidefiniteness, the variance equals R (J - H G^-1 H) R and is positive whenever the moment block is positive, and the period-420 cameras 2 through 7 instantiate the canonical self-adjoint whitened operators",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-285", "NCSW-286", "NCSW-287", "NCSW-288", "NCSW-289", "NCSW-290", "NCSW-291", "NCSW-292", "NCSW-293", "NCSW-294", "NCSW-295", "NCSW-296", "NCSW-297", "NCSW-298", "NCSW-299", "NCSW-300", "NCSW-301", "NCSW-302", "NCSW-303", "NCSW-304", "NCSW-305", "NCSW-306", "NCSW-307", "NCSW-308", "NCSW-309", "NCSW-310", "NCSW-311", "NCSW-312", "NCSW-313"]
+    },
+    {
+      "id": "NCSW-FIN-004",
+      "claim": "For every finite positive-slope camera family, the centered logarithmic moment block is the Hadamard product of two positive semidefinite matrices: an integral Gram block of the truncated features 1 and 1 + log x, and the repeated periodic profile mean. Its entries are exactly ell, ell log ell and ell (1 + log(ell)^2). Hence the documented period-420 six-camera moment block and canonical variance are positive semidefinite.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-314", "NCSW-315", "NCSW-316", "NCSW-317", "NCSW-318", "NCSW-319", "NCSW-320", "NCSW-321", "NCSW-322", "NCSW-323", "NCSW-324", "NCSW-325", "NCSW-326", "NCSW-327", "NCSW-328", "NCSW-329", "NCSW-330", "NCSW-331", "NCSW-332", "NCSW-333"]
     }
   ]
 }

@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.13 it contains
-twenty-four `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.14 it contains
+twenty-five `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -33,8 +33,12 @@ exact Gram normalization, congruence preservation, whitened first and second
 moments, the exact variance/Schur-complement identity, conditional variance
 positivity from the moment block, and the canonical self-adjoint six-camera
 operators.
+The step-density claim evaluates the singular centered-logarithmic integrals,
+realizes the two-level slope moment block as an integral Gram matrix, combines
+it with the repeated periodic mean by the Schur product theorem, and proves
+the exact six-camera moment block and variance positive semidefinite.
 
 No finite POVM, infinite camera completion or Weyl inverse is claimed by this
-milestone.  Positivity of the concrete six-camera variance is not claimed
-until positivity of its continuous step-density moment block is formalized;
-whitening alone does not construct finite spectral projectors or a POVM.
+milestone.  The proved step density supplies the positive moment block and
+variance, but it does not by itself construct finite spectral projectors or a
+normalized POVM.

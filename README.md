@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.13 finite-whitening milestone contains **313 public kernel-checked Lean
+The v0.14 step-density milestone contains **333 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -101,15 +101,22 @@ finite native-carry operator commit.  The current public surface proves:
 - the canonical six-camera inverse square root, logarithmic operator, second
   moment and variance, recovered from the period-`420` source constructions
   and proved self-adjoint where applicable.
+- the endpoint-sensitive identities
+  `integral 0..ell (1 + log x) = ell * log ell` and
+  `integral 0..ell (1 + log x)^2 = ell * (1 + log(ell)^2)`;
+- the full two-level slope moment block as an integral Gram matrix of the
+  truncated features `1` and `1 + log x`, hence positive semidefinite;
+- exact factorization of `[[G,H],[H,J]]` as the Hadamard product of that step
+  Gram block with the repeated periodic product-mean block;
+- unconditional positive semidefiniteness of the exact period-`420`
+  six-camera moment block and canonical variance operator.
 
-The whitening layer does not yet prove that the concrete six-camera moment
-block is positive semidefinite from its continuous step-density realization.
-Accordingly, positivity of the concrete variance is not claimed
-unconditionally yet.  Spectral projectors, a normalized finite POVM, its
-Cauchy transform and the operator-valued Weyl family remain separate
-obligations.  No Parseval or Poisson statement is used to infer the analytic
-camera bridge, its tail rates, zero multiplicities, energy orders, finite-Gram
-positivity, moment formulas or whitening identities.
+The step-density layer proves the concrete moment block and variance positive,
+but spectral projectors, a normalized finite POVM, its Cauchy transform and
+the operator-valued Weyl family remain separate obligations.  No Parseval or
+Poisson statement is used to infer the analytic camera bridge, its tail rates,
+zero multiplicities, energy orders, finite-Gram positivity, moment formulas,
+whitening identities or step-density positivity.
 
 Pinned foundations:
 
@@ -146,7 +153,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 313 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 333 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

@@ -11,6 +11,7 @@ import NativeCarrySpectralWeyl.Camera.ModalEnergy
 import NativeCarrySpectralWeyl.Finite.Gram
 import NativeCarrySpectralWeyl.Finite.Moments
 import NativeCarrySpectralWeyl.Finite.Whitening
+import NativeCarrySpectralWeyl.Finite.StepDensity
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -33,9 +34,12 @@ exports the first and second centered logarithmic moment matrices, their
 generic self-adjointness, and their exact six-camera forms.  The whitening
 surface constructs the canonical positive inverse square root, proves exact
 Gram normalization, defines the whitened moments and variance, and identifies
-variance positivity with the moment-block Schur condition.  The concrete
-step-density proof of that condition, the finite POVM/Cauchy package and the
-operator-valued Weyl layers remain outside this surface.
+variance positivity with the moment-block Schur condition.  The continuous
+step-density layer proves that condition from an integral Gram representation,
+recovers the exact moment block by a Schur product with the periodic profile
+mean, and proves the concrete six-camera variance positive semidefinite.  The
+finite POVM/Cauchy package and the operator-valued Weyl layers remain outside
+this surface.
 -/
 
 namespace NativeCarrySpectralWeyl

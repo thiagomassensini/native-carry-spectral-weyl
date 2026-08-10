@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.13 finite-whitening registry. -/
+/-! Ordered foundational-dependency report for the v0.14 step-density registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -315,3 +315,23 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraWhitenedSecondMoment_isSelfAdjoint
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraVariance_eq_whitened_schur
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraVariance_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.intervalIntegrable_centeredLogSq_zero
+#print axioms NativeCarrySpectralWeyl.Finite.integral_centeredLogSq_zero
+#print axioms NativeCarrySpectralWeyl.Finite.intervalIntegrable_centeredLog_zero
+#print axioms NativeCarrySpectralWeyl.Finite.integral_centeredLog_zero
+#print axioms NativeCarrySpectralWeyl.Finite.intervalGramMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.slopeMomentBlock_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.slopeMomentBlock_apply_inl_inl
+#print axioms NativeCarrySpectralWeyl.Finite.slopeMomentBlock_apply_inl_inr
+#print axioms NativeCarrySpectralWeyl.Finite.slopeMomentBlock_apply_inr_inl
+#print axioms NativeCarrySpectralWeyl.Finite.slopeMomentBlock_apply_inr_inr
+#print axioms NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_apply_inl_inl
+#print axioms NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_apply_inl_inr
+#print axioms NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_apply_inr_inl
+#print axioms NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_apply_inr_inr
+#print axioms NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.cameraMomentBlock_eq_hadamard_step
+#print axioms NativeCarrySpectralWeyl.Finite.cameraMomentBlock_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.sixCamera_slope_pos
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraMomentBlock_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraVariance_posSemidef

@@ -65,3 +65,19 @@ bundle.
 | `finite-native-carry-operator` | `00e9d6beb17226545abf5ddf90bbfede6c7146b0` | `v0.1.0`, finite camera/operator layer |
 
 Both use Lean and Mathlib `4.32.0`.
+
+## v0.14 step-density trace
+
+The continuous moment-block proof in
+`NativeCarrySpectralWeyl/Finite/StepDensity.lean` follows the finite density
+recorded in `native_carry_defect_probe_research_log.md`,
+`CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md` and
+`OPERADOR_ESPECTRAL_CAMERAS_DEFECT_WEYL.md`:
+
+`dSigma(x) = D(x) M0 D(x) dx`, with `D_b(x) = 1_{{x <= ell_b}}`.
+
+The first and second centered-logarithmic entries are cross-checked against
+`native_carry_camera_second_centered_moment_lab.py`.  Python output is not a
+Lean premise: the identities for `ell`, `ell log ell` and
+`ell (1 + log(ell)^2)`, the integral-Gram positivity proof and the exact
+period-`420` factorization are all kernel checked independently.

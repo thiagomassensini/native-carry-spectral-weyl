@@ -98,6 +98,16 @@ concrete variance remains conditional until the continuous step-density
 realization of the moment block is formalized.  No finite POVM or spectral
 projector is inferred from whitening alone.
 
+The v0.14 surface supplies that missing continuous realization.  It evaluates
+the first two centered logarithmic moments at the singular endpoint, realizes
+the two-level slope block as the integral Gram matrix of the truncated
+features `1` and `1 + log x`, and proves its positive semidefiniteness by
+integrating a square.  The full camera moment block is exactly its Hadamard
+product with the repeated periodic product-mean block, so the exact
+period-`420` six-camera block and canonical variance are now positive
+semidefinite without a conditional hypothesis.  This still does not define a
+normalized finite POVM, spectral projectors or a Cauchy/Weyl transform.
+
 The scalar surface additionally admits quantitative cutoff claims only
 after the centered block identity is retained through the norm estimate.  In
 particular, the first native-line derivative tail is proved by differentiating

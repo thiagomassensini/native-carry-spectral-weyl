@@ -335,10 +335,30 @@ Kernel checked in the v0.13 finite-whitening milestone:
   including exact recovery from the period-`420` constructions and
   self-adjointness.
 
-This closes the algebraic whitening portion of Phase 3.  The next milestone
-must realize the moment block as a positive continuous step-density integral;
-that will discharge the remaining hypothesis for concrete variance positivity
-and simultaneously provide the normalization input for the step POVM.
+This closed the algebraic whitening portion of Phase 3.  At that milestone,
+the next obligation was to realize the moment block as a positive continuous
+step-density integral, discharging the remaining hypothesis for concrete
+variance positivity and providing the normalization input for the step POVM.
+
+Kernel checked in the v0.14 step-density milestone:
+
+- right-endpoint control of `x * log(x)^2` at zero and the exact identities
+  `integral 0..ell (1 + log x) = ell log ell` and
+  `integral 0..ell (1 + log x)^2 = ell (1 + log(ell)^2)`;
+- a general finite interval-Gram matrix and its positive-semidefinite proof by
+  rewriting every quadratic form as the integral of a square;
+- the two-level truncated slope features `1` and `1 + log x`, their exact
+  Gram entries and positivity;
+- the repeated periodic product-mean block as a normalized sum of rank-one
+  matrices;
+- exact Hadamard factorization of the documented moment block
+  `[[G,H],[H,J]]` into the two positive-semidefinite factors;
+- unconditional positive semidefiniteness of the period-`420` six-camera
+  moment block and variance operator.
+
+This closes the moment-block positivity obligation.  The next Phase 3
+milestone is normalization of the step density into a finite POVM, followed
+by its Cauchy transform and finite Weyl family.
 
 Suggested modules:
 
@@ -346,6 +366,7 @@ Suggested modules:
 NativeCarrySpectralWeyl/Finite/Gram.lean
 NativeCarrySpectralWeyl/Finite/Moments.lean
 NativeCarrySpectralWeyl/Finite/Whitening.lean
+NativeCarrySpectralWeyl/Finite/StepDensity.lean
 NativeCarrySpectralWeyl/Finite/StepPOVM.lean
 NativeCarrySpectralWeyl/Finite/Cauchy.lean
 NativeCarrySpectralWeyl/Finite/Weyl.lean

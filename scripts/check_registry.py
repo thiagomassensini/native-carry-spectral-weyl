@@ -54,6 +54,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Finite."),
     (ROOT / "NativeCarrySpectralWeyl/Finite/Whitening.lean",
      "NativeCarrySpectralWeyl.Finite."),
+    (ROOT / "NativeCarrySpectralWeyl/Finite/StepDensity.lean",
+     "NativeCarrySpectralWeyl.Finite."),
 ]
 
 

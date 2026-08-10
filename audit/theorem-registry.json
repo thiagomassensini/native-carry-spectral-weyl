@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.13.0",
-  "count": 313,
+  "release": "0.14.0",
+  "count": 333,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1567,6 +1567,106 @@
       "id": "NCSW-313",
       "name": "sixCameraVariance_isSelfAdjoint",
       "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraVariance_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-314",
+      "name": "intervalIntegrable_centeredLogSq_zero",
+      "qualified": "NativeCarrySpectralWeyl.Finite.intervalIntegrable_centeredLogSq_zero"
+    },
+    {
+      "id": "NCSW-315",
+      "name": "integral_centeredLogSq_zero",
+      "qualified": "NativeCarrySpectralWeyl.Finite.integral_centeredLogSq_zero"
+    },
+    {
+      "id": "NCSW-316",
+      "name": "intervalIntegrable_centeredLog_zero",
+      "qualified": "NativeCarrySpectralWeyl.Finite.intervalIntegrable_centeredLog_zero"
+    },
+    {
+      "id": "NCSW-317",
+      "name": "integral_centeredLog_zero",
+      "qualified": "NativeCarrySpectralWeyl.Finite.integral_centeredLog_zero"
+    },
+    {
+      "id": "NCSW-318",
+      "name": "intervalGramMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.intervalGramMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-319",
+      "name": "slopeMomentBlock_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.slopeMomentBlock_posSemidef"
+    },
+    {
+      "id": "NCSW-320",
+      "name": "slopeMomentBlock_apply_inl_inl",
+      "qualified": "NativeCarrySpectralWeyl.Finite.slopeMomentBlock_apply_inl_inl"
+    },
+    {
+      "id": "NCSW-321",
+      "name": "slopeMomentBlock_apply_inl_inr",
+      "qualified": "NativeCarrySpectralWeyl.Finite.slopeMomentBlock_apply_inl_inr"
+    },
+    {
+      "id": "NCSW-322",
+      "name": "slopeMomentBlock_apply_inr_inl",
+      "qualified": "NativeCarrySpectralWeyl.Finite.slopeMomentBlock_apply_inr_inl"
+    },
+    {
+      "id": "NCSW-323",
+      "name": "slopeMomentBlock_apply_inr_inr",
+      "qualified": "NativeCarrySpectralWeyl.Finite.slopeMomentBlock_apply_inr_inr"
+    },
+    {
+      "id": "NCSW-324",
+      "name": "repeatedPeriodicMeanMatrix_apply_inl_inl",
+      "qualified": "NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_apply_inl_inl"
+    },
+    {
+      "id": "NCSW-325",
+      "name": "repeatedPeriodicMeanMatrix_apply_inl_inr",
+      "qualified": "NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_apply_inl_inr"
+    },
+    {
+      "id": "NCSW-326",
+      "name": "repeatedPeriodicMeanMatrix_apply_inr_inl",
+      "qualified": "NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_apply_inr_inl"
+    },
+    {
+      "id": "NCSW-327",
+      "name": "repeatedPeriodicMeanMatrix_apply_inr_inr",
+      "qualified": "NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_apply_inr_inr"
+    },
+    {
+      "id": "NCSW-328",
+      "name": "repeatedPeriodicMeanMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.repeatedPeriodicMeanMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-329",
+      "name": "cameraMomentBlock_eq_hadamard_step",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraMomentBlock_eq_hadamard_step"
+    },
+    {
+      "id": "NCSW-330",
+      "name": "cameraMomentBlock_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraMomentBlock_posSemidef"
+    },
+    {
+      "id": "NCSW-331",
+      "name": "sixCamera_slope_pos",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCamera_slope_pos"
+    },
+    {
+      "id": "NCSW-332",
+      "name": "sixCameraMomentBlock_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraMomentBlock_posSemidef"
+    },
+    {
+      "id": "NCSW-333",
+      "name": "sixCameraVariance_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraVariance_posSemidef"
     }
   ]
 }
