@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.11 it contains
-twenty-two `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.12 it contains
+twenty-three `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -25,7 +25,10 @@ The finite-Gram claim adds common-period product means, positivity of the
 slope-minimum and weighted Gram kernels for every finite camera family, and the
 exact positive-definite period-`420` matrix for cameras `2,...,7`, including
 its determinant `4_981_760`.
+The finite-moments claim adds the generic self-adjoint shared-slope moment
+construction, the exact first and second centered logarithmic formulas, and
+their literal period-`420` matrices for cameras `2,...,7`.
 
 No finite POVM, infinite camera completion or Weyl inverse is claimed by this
-milestone.  The finite Gram matrix and modal-energy formulas do not by
-themselves construct finite spectral projectors or whitening.
+milestone.  The finite Gram and unwhitened moment matrices do not by themselves
+construct finite spectral projectors, whitening or the variance operator.

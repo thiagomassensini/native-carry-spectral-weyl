@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.11 finite-Gram registry. -/
+/-! Ordered foundational-dependency report for the v0.12 finite-moments registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -272,3 +272,17 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraGram_det
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraGram_posSemidef
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraGram_posDef
+#print axioms NativeCarrySpectralWeyl.Finite.slopeWeightMatrix_isHermitian
+#print axioms NativeCarrySpectralWeyl.Finite.weightedMomentMatrix_apply
+#print axioms NativeCarrySpectralWeyl.Finite.weightedMomentMatrix_isHermitian
+#print axioms NativeCarrySpectralWeyl.Finite.weightedMomentMatrix_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.firstMomentMatrix_apply
+#print axioms NativeCarrySpectralWeyl.Finite.secondCenteredMomentMatrix_apply
+#print axioms NativeCarrySpectralWeyl.Finite.firstMomentMatrix_isHermitian
+#print axioms NativeCarrySpectralWeyl.Finite.firstMomentMatrix_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.secondCenteredMomentMatrix_isHermitian
+#print axioms NativeCarrySpectralWeyl.Finite.secondCenteredMomentMatrix_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraFirstMoment_eq
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraSecondCenteredMoment_eq
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraFirstMoment_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraSecondCenteredMoment_isSelfAdjoint

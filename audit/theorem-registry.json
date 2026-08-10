@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.11.0",
-  "count": 270,
+  "release": "0.12.0",
+  "count": 284,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1352,6 +1352,76 @@
       "id": "NCSW-270",
       "name": "sixCameraGram_posDef",
       "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraGram_posDef"
+    },
+    {
+      "id": "NCSW-271",
+      "name": "slopeWeightMatrix_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Finite.slopeWeightMatrix_isHermitian"
+    },
+    {
+      "id": "NCSW-272",
+      "name": "weightedMomentMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Finite.weightedMomentMatrix_apply"
+    },
+    {
+      "id": "NCSW-273",
+      "name": "weightedMomentMatrix_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Finite.weightedMomentMatrix_isHermitian"
+    },
+    {
+      "id": "NCSW-274",
+      "name": "weightedMomentMatrix_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.weightedMomentMatrix_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-275",
+      "name": "firstMomentMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Finite.firstMomentMatrix_apply"
+    },
+    {
+      "id": "NCSW-276",
+      "name": "secondCenteredMomentMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Finite.secondCenteredMomentMatrix_apply"
+    },
+    {
+      "id": "NCSW-277",
+      "name": "firstMomentMatrix_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Finite.firstMomentMatrix_isHermitian"
+    },
+    {
+      "id": "NCSW-278",
+      "name": "firstMomentMatrix_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.firstMomentMatrix_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-279",
+      "name": "secondCenteredMomentMatrix_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Finite.secondCenteredMomentMatrix_isHermitian"
+    },
+    {
+      "id": "NCSW-280",
+      "name": "secondCenteredMomentMatrix_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.secondCenteredMomentMatrix_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-281",
+      "name": "sixCameraFirstMoment_eq",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraFirstMoment_eq"
+    },
+    {
+      "id": "NCSW-282",
+      "name": "sixCameraSecondCenteredMoment_eq",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraSecondCenteredMoment_eq"
+    },
+    {
+      "id": "NCSW-283",
+      "name": "sixCameraFirstMoment_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraFirstMoment_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-284",
+      "name": "sixCameraSecondCenteredMoment_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraSecondCenteredMoment_isSelfAdjoint"
     }
   ]
 }
