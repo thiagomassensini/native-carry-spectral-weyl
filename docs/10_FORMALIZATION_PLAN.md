@@ -360,6 +360,25 @@ This closes the moment-block positivity obligation.  The next Phase 3
 milestone is normalization of the step density into a finite POVM, followed
 by its Cauchy transform and finite Weyl family.
 
+Kernel checked in the v0.15 finite-POVM milestone:
+
+- the step cutoff `1_{(0,ell]}` and pointwise positive density
+  `D(x) M₀ D(x)` for every finite camera family;
+- Bochner integrability of the pair-indexed matrix coordinates and the exact
+  total-density identity `∫ D(x) M₀ D(x) dx = G`;
+- positivity of the unnormalized vector measure on every measurable set and
+  exact total mass `Σ(ℝ) = G`;
+- continuity of matrix congruence and normalization by the canonical positive
+  inverse square root, giving `E(ℝ) = I` whenever `G` is positive definite;
+- a reusable finite matrix-POVM structure and measurable pushforward;
+- pushforward under the centered-log coordinate `y = 1 + log x` and concrete
+  positivity/normalization of the period-`420` six-camera POVM.
+
+This closes the finite measure-normalization portion of Phase 3.  The next
+milestone is its finite Cauchy transform, including analyticity, the Herglotz
+sign identity and the first two centered-log moment recoveries.  Projection
+effects are not assumed: the constructed object is a POVM, not a PVM.
+
 Suggested modules:
 
 ```text

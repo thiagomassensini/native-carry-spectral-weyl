@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.14 it contains
-twenty-five `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.15 it contains
+twenty-six `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -37,8 +37,11 @@ The step-density claim evaluates the singular centered-logarithmic integrals,
 realizes the two-level slope moment block as an integral Gram matrix, combines
 it with the repeated periodic mean by the Schur product theorem, and proves
 the exact six-camera moment block and variance positive semidefinite.
+The finite-POVM claim realizes `D(x) M₀ D(x) dx` as a positive matrix-valued
+measure with total mass `G`, normalizes it by `G⁻¹/²` to total mass `I`, and
+pushes it forward under `y = 1 + log x`.  The canonical six-camera
+centered-log measure is therefore a positive normalized POVM.
 
-No finite POVM, infinite camera completion or Weyl inverse is claimed by this
-milestone.  The proved step density supplies the positive moment block and
-variance, but it does not by itself construct finite spectral projectors or a
-normalized POVM.
+No projection-valued measure, infinite camera completion or Weyl inverse is
+claimed by this milestone.  Positivity and normalization of the finite POVM do
+not imply idempotent spectral effects.

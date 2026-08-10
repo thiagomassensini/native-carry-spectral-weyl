@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.14.0",
-  "registry_count": 333,
-  "count": 25,
-  "status_counts": { "KERNEL_CHECKED": 25 },
+  "release": "0.15.0",
+  "registry_count": 355,
+  "count": 26,
+  "status_counts": { "KERNEL_CHECKED": 26 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -154,6 +154,12 @@
       "claim": "For every finite positive-slope camera family, the centered logarithmic moment block is the Hadamard product of two positive semidefinite matrices: an integral Gram block of the truncated features 1 and 1 + log x, and the repeated periodic profile mean. Its entries are exactly ell, ell log ell and ell (1 + log(ell)^2). Hence the documented period-420 six-camera moment block and canonical variance are positive semidefinite.",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-314", "NCSW-315", "NCSW-316", "NCSW-317", "NCSW-318", "NCSW-319", "NCSW-320", "NCSW-321", "NCSW-322", "NCSW-323", "NCSW-324", "NCSW-325", "NCSW-326", "NCSW-327", "NCSW-328", "NCSW-329", "NCSW-330", "NCSW-331", "NCSW-332", "NCSW-333"]
+    },
+    {
+      "id": "NCSW-FIN-005",
+      "claim": "For every finite camera family, the continuous step density D(x) M0 D(x) is pointwise positive semidefinite and Bochner-integrable, its vector measure is positive on every measurable set and has total mass G, and positive-definite G normalizes it by congruence with G^-1/2 to a POVM of total mass I. Pushforward by y = 1 + log x preserves this POVM structure; in particular the canonical period-420 six-camera centered-log measure has positive effects and total effect I.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-334", "NCSW-335", "NCSW-336", "NCSW-337", "NCSW-338", "NCSW-339", "NCSW-340", "NCSW-341", "NCSW-342", "NCSW-343", "NCSW-344", "NCSW-345", "NCSW-346", "NCSW-347", "NCSW-348", "NCSW-349", "NCSW-350", "NCSW-351", "NCSW-352", "NCSW-353", "NCSW-354", "NCSW-355"]
     }
   ]
 }

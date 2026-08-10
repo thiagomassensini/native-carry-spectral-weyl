@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.14 step-density registry. -/
+/-! Ordered foundational-dependency report for the v0.15 finite-POVM registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -335,3 +335,25 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Finite.sixCamera_slope_pos
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraMomentBlock_posSemidef
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraVariance_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.integralGramMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.cameraStepDensity_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.pairToMatrix_matrixToPair
+#print axioms NativeCarrySpectralWeyl.Finite.matrixToPair_pairToMatrix
+#print axioms NativeCarrySpectralWeyl.Finite.pairToMatrix_zero
+#print axioms NativeCarrySpectralWeyl.Finite.pairToMatrix_add
+#print axioms NativeCarrySpectralWeyl.Finite.matrixToPair_injective
+#print axioms NativeCarrySpectralWeyl.Finite.pairToMatrix_injective
+#print axioms NativeCarrySpectralWeyl.Finite.cameraStepDensityVector_integrable
+#print axioms NativeCarrySpectralWeyl.Finite.cameraStepDensityVector_integral
+#print axioms NativeCarrySpectralWeyl.Finite.stepSetGramMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.cameraStepMeasure_apply
+#print axioms NativeCarrySpectralWeyl.Finite.cameraStepMeasure_toMatrix_apply
+#print axioms NativeCarrySpectralWeyl.Finite.cameraStepMeasure_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.cameraStepMeasure_univ
+#print axioms NativeCarrySpectralWeyl.Finite.matrixCongruenceAddHom_continuous
+#print axioms NativeCarrySpectralWeyl.Finite.normalizedCameraStepMeasure_apply
+#print axioms NativeCarrySpectralWeyl.Finite.normalizedCameraStepMeasure_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.normalizedCameraStepMeasure_univ
+#print axioms NativeCarrySpectralWeyl.Finite.measurable_centeredLogCoordinate
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraCenteredLogPOVM_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraCenteredLogPOVM_univ

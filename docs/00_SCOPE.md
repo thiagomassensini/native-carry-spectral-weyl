@@ -108,6 +108,16 @@ period-`420` six-camera block and canonical variance are now positive
 semidefinite without a conditional hypothesis.  This still does not define a
 normalized finite POVM, spectral projectors or a Cauchy/Weyl transform.
 
+The v0.15 surface constructs the normalized finite POVM.  It represents the
+continuous density `D(x) M₀ D(x) dx` as a Bochner-integrated vector measure,
+proves positive semidefiniteness of every measurable effect and proves exact
+total mass `G`.  Continuous congruence by `G⁻¹/²` then gives total effect `I`;
+pushforward by `x ↦ 1 + log x` supplies the centered-log spectral coordinate.
+The canonical period-`420` six-camera POVM is instantiated and proved positive
+and normalized.  This is an operator-valued measure, not a projection-valued
+measure: no idempotence, spectral projector, Cauchy transform or Weyl family is
+inferred from normalization.
+
 The scalar surface additionally admits quantitative cutoff claims only
 after the centered block identity is retained through the norm estimate.  In
 particular, the first native-line derivative tail is proved by differentiating

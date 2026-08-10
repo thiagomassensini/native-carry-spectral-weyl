@@ -81,3 +81,21 @@ The first and second centered-logarithmic entries are cross-checked against
 Lean premise: the identities for `ell`, `ell log ell` and
 `ell (1 + log(ell)^2)`, the integral-Gram positivity proof and the exact
 period-`420` factorization are all kernel checked independently.
+
+## v0.15 finite-POVM trace
+
+`NativeCarrySpectralWeyl/Finite/StepPOVM.lean` formalizes the normalization
+chain recorded in `CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md`,
+`TRANSFORMADA_CAUCHY_STIELTJES_POVM_E_WEYL_CAMERAS.md` and the consolidated
+research log:
+
+`dSigma(x) = D(x) M0 D(x) dx`, `G = integral dSigma`, and
+`dE(x) = G^(-1/2) dSigma(x) G^(-1/2)`.
+
+The Lean proof constructs `Sigma` as a genuine vector measure, proves every
+measurable effect positive semidefinite and proves `Sigma(univ) = G`.  It then
+implements whitening as a continuous additive congruence map, obtains
+`E(univ) = I`, and pushes the measure forward by `y = 1 + log x`.  The
+coordinate-vector representation used for integration is proved exactly
+equivalent to the matrix representation; no Python output or floating-point
+matrix inverse is used as a premise.

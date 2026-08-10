@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.14.0",
-  "count": 333,
+  "release": "0.15.0",
+  "count": 355,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1667,6 +1667,116 @@
       "id": "NCSW-333",
       "name": "sixCameraVariance_posSemidef",
       "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraVariance_posSemidef"
+    },
+    {
+      "id": "NCSW-334",
+      "name": "integralGramMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.integralGramMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-335",
+      "name": "cameraStepDensity_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraStepDensity_posSemidef"
+    },
+    {
+      "id": "NCSW-336",
+      "name": "pairToMatrix_matrixToPair",
+      "qualified": "NativeCarrySpectralWeyl.Finite.pairToMatrix_matrixToPair"
+    },
+    {
+      "id": "NCSW-337",
+      "name": "matrixToPair_pairToMatrix",
+      "qualified": "NativeCarrySpectralWeyl.Finite.matrixToPair_pairToMatrix"
+    },
+    {
+      "id": "NCSW-338",
+      "name": "pairToMatrix_zero",
+      "qualified": "NativeCarrySpectralWeyl.Finite.pairToMatrix_zero"
+    },
+    {
+      "id": "NCSW-339",
+      "name": "pairToMatrix_add",
+      "qualified": "NativeCarrySpectralWeyl.Finite.pairToMatrix_add"
+    },
+    {
+      "id": "NCSW-340",
+      "name": "matrixToPair_injective",
+      "qualified": "NativeCarrySpectralWeyl.Finite.matrixToPair_injective"
+    },
+    {
+      "id": "NCSW-341",
+      "name": "pairToMatrix_injective",
+      "qualified": "NativeCarrySpectralWeyl.Finite.pairToMatrix_injective"
+    },
+    {
+      "id": "NCSW-342",
+      "name": "cameraStepDensityVector_integrable",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraStepDensityVector_integrable"
+    },
+    {
+      "id": "NCSW-343",
+      "name": "cameraStepDensityVector_integral",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraStepDensityVector_integral"
+    },
+    {
+      "id": "NCSW-344",
+      "name": "stepSetGramMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.stepSetGramMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-345",
+      "name": "cameraStepMeasure_apply",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraStepMeasure_apply"
+    },
+    {
+      "id": "NCSW-346",
+      "name": "cameraStepMeasure_toMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraStepMeasure_toMatrix_apply"
+    },
+    {
+      "id": "NCSW-347",
+      "name": "cameraStepMeasure_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraStepMeasure_posSemidef"
+    },
+    {
+      "id": "NCSW-348",
+      "name": "cameraStepMeasure_univ",
+      "qualified": "NativeCarrySpectralWeyl.Finite.cameraStepMeasure_univ"
+    },
+    {
+      "id": "NCSW-349",
+      "name": "matrixCongruenceAddHom_continuous",
+      "qualified": "NativeCarrySpectralWeyl.Finite.matrixCongruenceAddHom_continuous"
+    },
+    {
+      "id": "NCSW-350",
+      "name": "normalizedCameraStepMeasure_apply",
+      "qualified": "NativeCarrySpectralWeyl.Finite.normalizedCameraStepMeasure_apply"
+    },
+    {
+      "id": "NCSW-351",
+      "name": "normalizedCameraStepMeasure_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.normalizedCameraStepMeasure_posSemidef"
+    },
+    {
+      "id": "NCSW-352",
+      "name": "normalizedCameraStepMeasure_univ",
+      "qualified": "NativeCarrySpectralWeyl.Finite.normalizedCameraStepMeasure_univ"
+    },
+    {
+      "id": "NCSW-353",
+      "name": "measurable_centeredLogCoordinate",
+      "qualified": "NativeCarrySpectralWeyl.Finite.measurable_centeredLogCoordinate"
+    },
+    {
+      "id": "NCSW-354",
+      "name": "sixCameraCenteredLogPOVM_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraCenteredLogPOVM_posSemidef"
+    },
+    {
+      "id": "NCSW-355",
+      "name": "sixCameraCenteredLogPOVM_univ",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraCenteredLogPOVM_univ"
     }
   ]
 }
