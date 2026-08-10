@@ -315,6 +315,31 @@ This closes the unwhitened moment portion of Phase 3.  The positive inverse
 square root, the whitened logarithmic operator, the variance Schur complement
 and the step POVM remain subsequent milestones.
 
+Kernel checked in the v0.13 finite-whitening milestone:
+
+- the canonical positive inverse square root
+  `R = (CFC.sqrt G)⁻¹ = CFC.sqrt(G⁻¹)` for every positive-definite finite Gram
+  matrix;
+- positive definiteness, Hermitianity and self-adjointness of `R`;
+- the exact inverse-square and normalization identities
+  `R² = G⁻¹` and `R G R = I`;
+- congruence whitening and preservation of Hermitianity, self-adjointness and
+  positive semidefiniteness;
+- the whitened first and second moments `L = R H R` and `M₂ = R J R`;
+- the variance `V = M₂ - L²` and its exact identity
+  `V = R (J - H G⁻¹ H) R`;
+- equivalence between positivity of the Hermitian block `[[G,H],[H,J]]` and
+  positivity of its Schur complement, yielding a reusable conditional
+  positivity theorem for `V`;
+- canonical instantiation of `R`, `L`, `M₂` and `V` for cameras `2,...,7`,
+  including exact recovery from the period-`420` constructions and
+  self-adjointness.
+
+This closes the algebraic whitening portion of Phase 3.  The next milestone
+must realize the moment block as a positive continuous step-density integral;
+that will discharge the remaining hypothesis for concrete variance positivity
+and simultaneously provide the normalization input for the step POVM.
+
 Suggested modules:
 
 ```text

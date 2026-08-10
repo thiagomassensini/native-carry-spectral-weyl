@@ -87,6 +87,17 @@ camera package, and the literal six-camera matrices are recovered at period
 `420`.  This does not identify `G⁻¹/²`, prove positivity of the whitened
 variance, or construct a normalized operator-valued measure.
 
+The v0.13 surface constructs the canonical positive inverse square root for
+every positive-definite finite Gram matrix and proves the exact identities
+`R² = G⁻¹` and `R G R = I`.  It defines the whitened first and second moments,
+the variance `V = M₂ - L²`, and proves
+`V = R (J - H G⁻¹ H) R`.  Positivity of `V` is kernel checked from positivity
+of the moment block, equivalently its Schur complement.  The concrete
+six-camera operators are instantiated and self-adjoint, but positivity of the
+concrete variance remains conditional until the continuous step-density
+realization of the moment block is formalized.  No finite POVM or spectral
+projector is inferred from whitening alone.
+
 The scalar surface additionally admits quantitative cutoff claims only
 after the centered block identity is retained through the norm estimate.  In
 particular, the first native-line derivative tail is proved by differentiating

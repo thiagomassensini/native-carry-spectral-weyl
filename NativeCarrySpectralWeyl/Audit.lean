@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.12 finite-moments registry. -/
+/-! Ordered foundational-dependency report for the v0.13 finite-whitening registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -286,3 +286,32 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraSecondCenteredMoment_eq
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraFirstMoment_isSelfAdjoint
 #print axioms NativeCarrySpectralWeyl.Finite.sixCameraSecondCenteredMoment_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_eq_sqrt_inv
+#print axioms NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_posDef
+#print axioms NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_isHermitian
+#print axioms NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_mul_self
+#print axioms NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_whitens
+#print axioms NativeCarrySpectralWeyl.Finite.whitenedMatrix_isHermitian
+#print axioms NativeCarrySpectralWeyl.Finite.whitenedMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.whitenedMatrix_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.whitenedGram_eq_one
+#print axioms NativeCarrySpectralWeyl.Finite.whitenedFirstMoment_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.whitenedSecondMoment_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.momentBlockMatrix_posSemidef_iff_schur
+#print axioms NativeCarrySpectralWeyl.Finite.varianceOperator_eq_whitened_schur
+#print axioms NativeCarrySpectralWeyl.Finite.varianceOperator_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.varianceOperator_posSemidef_of_block
+#print axioms NativeCarrySpectralWeyl.Finite.varianceOperator_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraInverseSqrt_posDef
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraInverseSqrt_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.sixCamera_whitening_identity
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraWhitenedGram_eq_one
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraLogOperator_source_eq
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraWhitenedSecondMoment_source_eq
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraVariance_source_eq
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraLogOperator_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraWhitenedSecondMoment_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraVariance_eq_whitened_schur
+#print axioms NativeCarrySpectralWeyl.Finite.sixCameraVariance_isSelfAdjoint

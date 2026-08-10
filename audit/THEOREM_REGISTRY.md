@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.12 finite-moments milestone contains exactly **284** named public Lean
-theorems, ordered as `NCSW-001` through `NCSW-284` in
+The v0.13 finite-whitening milestone contains exactly **313** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-313` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -29,5 +29,6 @@ report for every declaration.
 | `NCSW-227`–`NCSW-257` | `Camera/ModalEnergy.lean` | real/complex order bridge, five modal energies, common zeros and exact order doubling |
 | `NCSW-258`–`NCSW-270` | `Finite/Gram.lean` | common periods, periodic product means, finite Gram positivity and exact positive-definite six-camera matrix |
 | `NCSW-271`–`NCSW-284` | `Finite/Moments.lean` | generic shared-slope moments, exact first/second centered formulas and six-camera self-adjointness |
+| `NCSW-285`–`NCSW-313` | `Finite/Whitening.lean` | positive inverse square root, exact Gram normalization, whitened moments, variance/Schur identity and six-camera operators |
 
 The JSON registry is the machine-readable authority for exact qualified names.
