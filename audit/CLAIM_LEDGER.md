@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.15 it contains
-twenty-six `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.16 it contains
+twenty-eight `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -41,7 +41,14 @@ The finite-POVM claim realizes `D(x) M₀ D(x) dx` as a positive matrix-valued
 measure with total mass `G`, normalizes it by `G⁻¹/²` to total mass `I`, and
 pushes it forward under `y = 1 + log x`.  The canonical six-camera
 centered-log measure is therefore a positive normalized POVM.
+The two initial limit claims prove ordinary and Dirichlet--Abel weighted means
+for vector-valued periodic sequences, then lift them to the genuine pairwise
+camera cutoff.  Under the explicitly named asymptotically-linear mass
+hypothesis, the finite covariance converges in matrix norm to the periodic
+Gram, including the exact six-camera matrix.  The ledger deliberately does not
+claim that the concrete resolvent weight already satisfies that scalar
+regular-variation hypothesis.
 
-No projection-valued measure, infinite camera completion or Weyl inverse is
-claimed by this milestone.  Positivity and normalization of the finite POVM do
-not imply idempotent spectral effects.
+No concrete resolvent-weight asymptotic, projection-valued measure, infinite
+camera completion or Weyl inverse is claimed by this milestone.  Positivity
+and normalization of the finite POVM do not imply idempotent spectral effects.

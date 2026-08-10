@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.15.0",
-  "count": 355,
+  "release": "0.16.0",
+  "count": 375,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1777,6 +1777,106 @@
       "id": "NCSW-355",
       "name": "sixCameraCenteredLogPOVM_univ",
       "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraCenteredLogPOVM_univ"
+    },
+    {
+      "id": "NCSW-356",
+      "name": "sum_range_mul_period",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sum_range_mul_period"
+    },
+    {
+      "id": "NCSW-357",
+      "name": "sum_range_eq_blocks_add_remainder",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sum_range_eq_blocks_add_remainder"
+    },
+    {
+      "id": "NCSW-358",
+      "name": "sum_range_eq_remainder_of_periodic_of_sum_eq_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sum_range_eq_remainder_of_periodic_of_sum_eq_zero"
+    },
+    {
+      "id": "NCSW-359",
+      "name": "norm_sum_range_le_period_norm_sum",
+      "qualified": "NativeCarrySpectralWeyl.Limits.norm_sum_range_le_period_norm_sum"
+    },
+    {
+      "id": "NCSW-360",
+      "name": "tendsto_inv_smul_sum_range_zero_of_periodic",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_inv_smul_sum_range_zero_of_periodic"
+    },
+    {
+      "id": "NCSW-361",
+      "name": "sum_period_sub_periodMean",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sum_period_sub_periodMean"
+    },
+    {
+      "id": "NCSW-362",
+      "name": "tendsto_periodic_cesaro",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_periodic_cesaro"
+    },
+    {
+      "id": "NCSW-363",
+      "name": "tendsto_periodic_weightedMean",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_periodic_weightedMean"
+    },
+    {
+      "id": "NCSW-364",
+      "name": "realProfileProduct_periodic",
+      "qualified": "NativeCarrySpectralWeyl.Limits.realProfileProduct_periodic"
+    },
+    {
+      "id": "NCSW-365",
+      "name": "periodMean_realProfileProduct",
+      "qualified": "NativeCarrySpectralWeyl.Limits.periodMean_realProfileProduct"
+    },
+    {
+      "id": "NCSW-366",
+      "name": "tendsto_weightedProfileMeanMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_weightedProfileMeanMatrix_apply"
+    },
+    {
+      "id": "NCSW-367",
+      "name": "tendsto_weightedProfileMeanMatrix",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_weightedProfileMeanMatrix"
+    },
+    {
+      "id": "NCSW-368",
+      "name": "tendsto_weightedCameraCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_weightedCameraCovariance"
+    },
+    {
+      "id": "NCSW-369",
+      "name": "tendsto_norm_weightedCameraCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_weightedCameraCovariance_sub"
+    },
+    {
+      "id": "NCSW-370",
+      "name": "tendsto_nat_const_mul_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_nat_const_mul_atTop"
+    },
+    {
+      "id": "NCSW-371",
+      "name": "tendsto_scaledCutoffCameraCovariance_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_scaledCutoffCameraCovariance_apply"
+    },
+    {
+      "id": "NCSW-372",
+      "name": "tendsto_scaledCutoffCameraCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_scaledCutoffCameraCovariance"
+    },
+    {
+      "id": "NCSW-373",
+      "name": "tendsto_norm_scaledCutoffCameraCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_scaledCutoffCameraCovariance_sub"
+    },
+    {
+      "id": "NCSW-374",
+      "name": "tendsto_sixCamera_scaledCutoffCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_sixCamera_scaledCutoffCovariance"
+    },
+    {
+      "id": "NCSW-375",
+      "name": "tendsto_norm_sixCamera_scaledCutoffCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_scaledCutoffCovariance_sub"
     }
   ]
 }

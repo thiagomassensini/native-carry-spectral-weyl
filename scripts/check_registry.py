@@ -58,6 +58,10 @@ MODULES = [
      "NativeCarrySpectralWeyl.Finite."),
     (ROOT / "NativeCarrySpectralWeyl/Finite/StepPOVM.lean",
      "NativeCarrySpectralWeyl.Finite."),
+    (ROOT / "NativeCarrySpectralWeyl/Limits/PeriodicMean.lean",
+     "NativeCarrySpectralWeyl.Limits."),
+    (ROOT / "NativeCarrySpectralWeyl/Limits/CameraCovariance.lean",
+     "NativeCarrySpectralWeyl.Limits."),
 ]
 
 

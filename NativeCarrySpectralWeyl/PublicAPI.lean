@@ -13,6 +13,8 @@ import NativeCarrySpectralWeyl.Finite.Moments
 import NativeCarrySpectralWeyl.Finite.Whitening
 import NativeCarrySpectralWeyl.Finite.StepDensity
 import NativeCarrySpectralWeyl.Finite.StepPOVM
+import NativeCarrySpectralWeyl.Limits.PeriodicMean
+import NativeCarrySpectralWeyl.Limits.CameraCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -43,7 +45,13 @@ finite POVM layer realizes the positive step density as a vector measure,
 proves total mass `G`, normalizes it by congruence with `G⁻¹/²`, and pushes it
 to the centered-log spectral coordinate; the canonical six-camera POVM has
 positive effects and total effect `I`.  Its Cauchy transform and the
-operator-valued Weyl layers remain outside this surface.
+operator-valued Weyl layers remain outside this surface.  The first Phase 4
+limit layer proves vector-valued periodic Cesàro convergence, a
+Dirichlet--Abel weighted periodic-mean theorem, and finite-matrix norm
+convergence of the genuine slope-scaled cutoff covariance to the camera Gram
+under an explicit asymptotically-linear mass hypothesis.  Instantiating that
+hypothesis for the concrete resolvent weight remains the next scalar analytic
+obligation.
 -/
 
 namespace NativeCarrySpectralWeyl

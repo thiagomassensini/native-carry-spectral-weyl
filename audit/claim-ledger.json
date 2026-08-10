@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.15.0",
-  "registry_count": 355,
-  "count": 26,
-  "status_counts": { "KERNEL_CHECKED": 26 },
+  "release": "0.16.0",
+  "registry_count": 375,
+  "count": 28,
+  "status_counts": { "KERNEL_CHECKED": 28 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -160,6 +160,18 @@
       "claim": "For every finite camera family, the continuous step density D(x) M0 D(x) is pointwise positive semidefinite and Bochner-integrable, its vector measure is positive on every measurable set and has total mass G, and positive-definite G normalizes it by congruence with G^-1/2 to a POVM of total mass I. Pushforward by y = 1 + log x preserves this POVM structure; in particular the canonical period-420 six-camera centered-log measure has positive effects and total effect I.",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-334", "NCSW-335", "NCSW-336", "NCSW-337", "NCSW-338", "NCSW-339", "NCSW-340", "NCSW-341", "NCSW-342", "NCSW-343", "NCSW-344", "NCSW-345", "NCSW-346", "NCSW-347", "NCSW-348", "NCSW-349", "NCSW-350", "NCSW-351", "NCSW-352", "NCSW-353", "NCSW-354", "NCSW-355"]
+    },
+    {
+      "id": "NCSW-LIM-001",
+      "claim": "Every periodic sequence valued in a real normed vector space has Cesaro mean equal to its one-period average. If scalar weights are antitone, tend to zero, and have divergent total mass, the same conclusion holds for normalized weighted means by a Dirichlet-Abel argument with uniformly bounded centered prefix sums.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-356", "NCSW-357", "NCSW-358", "NCSW-359", "NCSW-360", "NCSW-361", "NCSW-362", "NCSW-363"]
+    },
+    {
+      "id": "NCSW-LIM-002",
+      "claim": "For every supported finite camera family and every weight satisfying the explicit Dirichlet-Abel and asymptotically-linear mass hypotheses, the genuine pairwise cutoff covariance up to min(ell_i,ell_j) M converges uniformly in finite-matrix norm to the periodic camera Gram matrix. In particular, cameras 2 through 7 converge to the exact documented six-camera Gram matrix under those hypotheses.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-364", "NCSW-365", "NCSW-366", "NCSW-367", "NCSW-368", "NCSW-369", "NCSW-370", "NCSW-371", "NCSW-372", "NCSW-373", "NCSW-374", "NCSW-375"]
     }
   ]
 }

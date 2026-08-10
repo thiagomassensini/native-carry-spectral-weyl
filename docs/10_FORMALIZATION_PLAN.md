@@ -413,6 +413,29 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
+Kernel checked in the v0.16 periodic-covariance-limit milestone:
+
+- exact complete-block plus remainder decomposition for periodic
+  vector-valued sums and a uniform norm bound for zero-mean prefixes;
+- ordinary Cesàro convergence to the one-period mean in every real normed
+  vector space;
+- a Dirichlet--Abel weighted periodic-mean theorem under the explicit
+  hypotheses that the weight is antitone, tends to zero and has divergent
+  partial mass;
+- the predicate `HasAsymptoticallyLinearMass`, which isolates precisely the
+  remaining scalar input `A_(L M) / A_M -> L`;
+- convergence of the genuine camera covariance with pairwise cutoff
+  `min(ell_i,ell_j) M` to the periodic Gram matrix, both entrywise and in the
+  finite entry-sup matrix norm;
+- specialization to cameras `2,...,7`, with limit exactly the documented
+  positive-definite matrix `sixCameraGram`.
+
+This milestone does not assert the asymptotically-linear mass hypothesis for
+`w_z(n) = |z - log n|^-2`.  The next Phase 4 step is the scalar resolvent-weight
+package: eventual monotonicity, `w_z(n) -> 0`, mass divergence and regular
+variation.  Finite seed/endpoint stability is then required before identifying
+the abstract cutoff covariance with the literal defect-probe covariance.
+
 Targets:
 
 - finite resolvent-weighted defect analysis;
