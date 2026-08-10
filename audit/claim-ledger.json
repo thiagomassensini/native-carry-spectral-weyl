@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.10.0",
-  "registry_count": 257,
-  "count": 21,
-  "status_counts": { "KERNEL_CHECKED": 21 },
+  "release": "0.11.0",
+  "registry_count": 270,
+  "count": 22,
+  "status_counts": { "KERNEL_CHECKED": 22 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -130,6 +130,12 @@
       "claim": "The five limiting sectors 3, 4, 5, 7 and mixed have the exact source factors, including the binary defect factor in the aggregated rank-two mode 4 and its product with A_3 in the mixed mode; their positive real-analytic weights and nonnegative real-analytic energies satisfy E_j(t) = Q_j(t) normSq(Z_nat), share the native scalar zero set, and turn a camera zero of finite complex order m into exact real energy order 2m",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-236", "NCSW-237", "NCSW-238", "NCSW-239", "NCSW-240", "NCSW-241", "NCSW-242", "NCSW-243", "NCSW-244", "NCSW-245", "NCSW-246", "NCSW-247", "NCSW-248", "NCSW-249", "NCSW-250", "NCSW-251", "NCSW-252", "NCSW-253", "NCSW-254", "NCSW-255", "NCSW-256", "NCSW-257"]
+    },
+    {
+      "id": "NCSW-FIN-001",
+      "claim": "For every finite camera family, the periodic product-mean matrix and its slope-minimum weighted Gram matrix are positive semidefinite; for cameras 2 through 7, period 420 yields the exact documented rational Gram matrix with determinant 4,981,760, hence it is positive definite",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-258", "NCSW-259", "NCSW-260", "NCSW-261", "NCSW-262", "NCSW-263", "NCSW-264", "NCSW-265", "NCSW-266", "NCSW-267", "NCSW-268", "NCSW-269", "NCSW-270"]
     }
   ]
 }

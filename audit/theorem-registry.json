@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.10.0",
-  "count": 257,
+  "release": "0.11.0",
+  "count": 270,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1287,6 +1287,71 @@
       "id": "NCSW-257",
       "name": "modalEnergy_zero_order_of_bracketCharacteristic",
       "qualified": "NativeCarrySpectralWeyl.Camera.modalEnergy_zero_order_of_bracketCharacteristic"
+    },
+    {
+      "id": "NCSW-258",
+      "name": "profile_add_commonPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Finite.profile_add_commonPeriod"
+    },
+    {
+      "id": "NCSW-259",
+      "name": "sum_indicator_eq_min",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sum_indicator_eq_min"
+    },
+    {
+      "id": "NCSW-260",
+      "name": "slopeMinMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.slopeMinMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-261",
+      "name": "periodicMeanMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Finite.periodicMeanMatrix_apply"
+    },
+    {
+      "id": "NCSW-262",
+      "name": "periodicMeanMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.periodicMeanMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-263",
+      "name": "periodicGramMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Finite.periodicGramMatrix_apply"
+    },
+    {
+      "id": "NCSW-264",
+      "name": "periodicGramMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.periodicGramMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-265",
+      "name": "sixCamera_commonPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCamera_commonPeriod"
+    },
+    {
+      "id": "NCSW-266",
+      "name": "sixCameraProductSum_eq",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraProductSum_eq"
+    },
+    {
+      "id": "NCSW-267",
+      "name": "sixCameraGram_eq",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraGram_eq"
+    },
+    {
+      "id": "NCSW-268",
+      "name": "sixCameraGram_det",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraGram_det"
+    },
+    {
+      "id": "NCSW-269",
+      "name": "sixCameraGram_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraGram_posSemidef"
+    },
+    {
+      "id": "NCSW-270",
+      "name": "sixCameraGram_posDef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraGram_posDef"
     }
   ]
 }
