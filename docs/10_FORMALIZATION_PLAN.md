@@ -295,8 +295,25 @@ Kernel checked in the v0.11 finite-Gram milestone:
 - literal recovery of the documented rational Gram matrix, its exact
   determinant `4_981_760`, and strict positive definiteness.
 
-This closes the Gram portion of Phase 3.  Moment matrices, whitening, the step
-POVM and its Cauchy/Weyl transforms remain subsequent milestones.
+This closed the Gram portion of Phase 3 at v0.11.  Moment matrices are the next
+layer; whitening, the step POVM and its Cauchy/Weyl transforms remain later
+milestones.
+
+Kernel checked in the v0.12 finite-moments milestone:
+
+- a generic real shared-slope weight matrix and its Hermitian proof;
+- a generic weighted-moment construction over the periodic Gram, Hermitian and
+  self-adjoint for every finite camera package;
+- the exact source formulas
+  `H(b,c) = G(b,c) * log(min(ell_b,ell_c))` and
+  `J(b,c) = G(b,c) * (1 + log(min(ell_b,ell_c))^2)`;
+- Hermitian and self-adjoint first and second centered logarithmic moments;
+- literal recovery of both documented period-`420` matrices for cameras
+  `2,...,7`, together with their self-adjointness.
+
+This closes the unwhitened moment portion of Phase 3.  The positive inverse
+square root, the whitened logarithmic operator, the variance Schur complement
+and the step POVM remain subsequent milestones.
 
 Suggested modules:
 

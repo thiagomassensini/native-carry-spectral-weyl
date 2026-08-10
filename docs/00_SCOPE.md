@@ -80,6 +80,13 @@ the slope-minimum kernel, followed by the Schur product theorem.  For cameras
 inside Lean; Python output is not used as a premise.  Positive definiteness of
 this six-camera matrix does not by itself construct whitening or a POVM.
 
+The v0.12 surface admits the unwhitened first and second centered logarithmic
+moments only through their exact shared-slope formulas over the periodic Gram.
+Their Hermitian and self-adjoint character is kernel checked for every finite
+camera package, and the literal six-camera matrices are recovered at period
+`420`.  This does not identify `G⁻¹/²`, prove positivity of the whitened
+variance, or construct a normalized operator-valued measure.
+
 The scalar surface additionally admits quantitative cutoff claims only
 after the centered block identity is retained through the norm estimate.  In
 particular, the first native-line derivative tail is proved by differentiating

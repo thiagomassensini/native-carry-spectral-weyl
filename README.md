@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.11 finite-Gram milestone contains **270 public kernel-checked Lean
+The v0.12 finite-moments milestone contains **284 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -81,12 +81,20 @@ finite native-carry operator commit.  The current public surface proves:
 - the exact period-`420` Gram matrix for cameras `2,...,7`, including its
   integer profile-product certificate, determinant `4_981_760`, and strict
   positive definiteness.
+- a generic slope-weighted moment construction whose real matrices are
+  Hermitian and self-adjoint for every finite camera package;
+- the exact first centered logarithmic moment
+  `H_bc = G_bc * log(min(ell_b,ell_c))` and second centered moment
+  `J_bc = G_bc * (1 + log(min(ell_b,ell_c))^2)`;
+- literal recovery and self-adjointness of both documented moment matrices for
+  cameras `2,...,7` at common period `420`.
 
-The finite Gram layer does not yet construct moment matrices, whitening,
-spectral projectors or a finite POVM.  Those POVM/Cauchy packages and the
-operator-valued Weyl family remain separate obligations.  No Parseval or
-Poisson statement is used to infer the analytic camera bridge, its tail rates,
-zero multiplicities, energy orders or finite-Gram positivity.
+The finite moment layer does not yet construct whitening, the variance Schur
+complement, spectral projectors or a finite POVM.  Those POVM/Cauchy packages
+and the operator-valued Weyl family remain separate obligations.  No Parseval
+or Poisson statement is used to infer the analytic camera bridge, its tail
+rates, zero multiplicities, energy orders, finite-Gram positivity or the
+moment formulas.
 
 Pinned foundations:
 
@@ -123,7 +131,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 270 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 284 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

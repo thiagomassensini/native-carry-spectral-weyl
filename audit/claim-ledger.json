@@ -1,9 +1,9 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.11.0",
-  "registry_count": 270,
-  "count": 22,
-  "status_counts": { "KERNEL_CHECKED": 22 },
+  "release": "0.12.0",
+  "registry_count": 284,
+  "count": 23,
+  "status_counts": { "KERNEL_CHECKED": 23 },
   "claims": [
     {
       "id": "NCSW-CAM-001",
@@ -136,6 +136,12 @@
       "claim": "For every finite camera family, the periodic product-mean matrix and its slope-minimum weighted Gram matrix are positive semidefinite; for cameras 2 through 7, period 420 yields the exact documented rational Gram matrix with determinant 4,981,760, hence it is positive definite",
       "status": "KERNEL_CHECKED",
       "theorem_ids": ["NCSW-258", "NCSW-259", "NCSW-260", "NCSW-261", "NCSW-262", "NCSW-263", "NCSW-264", "NCSW-265", "NCSW-266", "NCSW-267", "NCSW-268", "NCSW-269", "NCSW-270"]
+    },
+    {
+      "id": "NCSW-FIN-002",
+      "claim": "For every finite camera family, the first centered logarithmic moment H_ij = G_ij log(ell_ij) and second centered logarithmic moment J_ij = G_ij (1 + log(ell_ij)^2) are Hermitian and self-adjoint; for cameras 2 through 7, period 420 recovers the exact documented moment matrices",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": ["NCSW-271", "NCSW-272", "NCSW-273", "NCSW-274", "NCSW-275", "NCSW-276", "NCSW-277", "NCSW-278", "NCSW-279", "NCSW-280", "NCSW-281", "NCSW-282", "NCSW-283", "NCSW-284"]
     }
   ]
 }
