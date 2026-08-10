@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.12.0",
-  "count": 284,
+  "release": "0.13.0",
+  "count": 313,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1422,6 +1422,151 @@
       "id": "NCSW-284",
       "name": "sixCameraSecondCenteredMoment_isSelfAdjoint",
       "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraSecondCenteredMoment_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-285",
+      "name": "positiveInverseSqrt_eq_sqrt_inv",
+      "qualified": "NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_eq_sqrt_inv"
+    },
+    {
+      "id": "NCSW-286",
+      "name": "positiveInverseSqrt_posDef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_posDef"
+    },
+    {
+      "id": "NCSW-287",
+      "name": "positiveInverseSqrt_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_posSemidef"
+    },
+    {
+      "id": "NCSW-288",
+      "name": "positiveInverseSqrt_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_isHermitian"
+    },
+    {
+      "id": "NCSW-289",
+      "name": "positiveInverseSqrt_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-290",
+      "name": "positiveInverseSqrt_mul_self",
+      "qualified": "NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_mul_self"
+    },
+    {
+      "id": "NCSW-291",
+      "name": "positiveInverseSqrt_whitens",
+      "qualified": "NativeCarrySpectralWeyl.Finite.positiveInverseSqrt_whitens"
+    },
+    {
+      "id": "NCSW-292",
+      "name": "whitenedMatrix_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Finite.whitenedMatrix_isHermitian"
+    },
+    {
+      "id": "NCSW-293",
+      "name": "whitenedMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.whitenedMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-294",
+      "name": "whitenedMatrix_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.whitenedMatrix_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-295",
+      "name": "whitenedGram_eq_one",
+      "qualified": "NativeCarrySpectralWeyl.Finite.whitenedGram_eq_one"
+    },
+    {
+      "id": "NCSW-296",
+      "name": "whitenedFirstMoment_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.whitenedFirstMoment_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-297",
+      "name": "whitenedSecondMoment_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.whitenedSecondMoment_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-298",
+      "name": "momentBlockMatrix_posSemidef_iff_schur",
+      "qualified": "NativeCarrySpectralWeyl.Finite.momentBlockMatrix_posSemidef_iff_schur"
+    },
+    {
+      "id": "NCSW-299",
+      "name": "varianceOperator_eq_whitened_schur",
+      "qualified": "NativeCarrySpectralWeyl.Finite.varianceOperator_eq_whitened_schur"
+    },
+    {
+      "id": "NCSW-300",
+      "name": "varianceOperator_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.varianceOperator_posSemidef"
+    },
+    {
+      "id": "NCSW-301",
+      "name": "varianceOperator_posSemidef_of_block",
+      "qualified": "NativeCarrySpectralWeyl.Finite.varianceOperator_posSemidef_of_block"
+    },
+    {
+      "id": "NCSW-302",
+      "name": "varianceOperator_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.varianceOperator_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-303",
+      "name": "sixCameraInverseSqrt_posDef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraInverseSqrt_posDef"
+    },
+    {
+      "id": "NCSW-304",
+      "name": "sixCameraInverseSqrt_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraInverseSqrt_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-305",
+      "name": "sixCamera_whitening_identity",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCamera_whitening_identity"
+    },
+    {
+      "id": "NCSW-306",
+      "name": "sixCameraWhitenedGram_eq_one",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraWhitenedGram_eq_one"
+    },
+    {
+      "id": "NCSW-307",
+      "name": "sixCameraLogOperator_source_eq",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraLogOperator_source_eq"
+    },
+    {
+      "id": "NCSW-308",
+      "name": "sixCameraWhitenedSecondMoment_source_eq",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraWhitenedSecondMoment_source_eq"
+    },
+    {
+      "id": "NCSW-309",
+      "name": "sixCameraVariance_source_eq",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraVariance_source_eq"
+    },
+    {
+      "id": "NCSW-310",
+      "name": "sixCameraLogOperator_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraLogOperator_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-311",
+      "name": "sixCameraWhitenedSecondMoment_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraWhitenedSecondMoment_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-312",
+      "name": "sixCameraVariance_eq_whitened_schur",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraVariance_eq_whitened_schur"
+    },
+    {
+      "id": "NCSW-313",
+      "name": "sixCameraVariance_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Finite.sixCameraVariance_isSelfAdjoint"
     }
   ]
 }

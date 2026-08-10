@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.12 finite-moments milestone contains **284 public kernel-checked Lean
+The v0.13 finite-whitening milestone contains **313 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -88,13 +88,28 @@ finite native-carry operator commit.  The current public surface proves:
   `J_bc = G_bc * (1 + log(min(ell_b,ell_c))^2)`;
 - literal recovery and self-adjointness of both documented moment matrices for
   cameras `2,...,7` at common period `420`.
+- the canonical positive inverse square root `R = (sqrt G)⁻¹ = sqrt(G⁻¹)` for
+  every positive-definite finite Gram matrix, including positivity,
+  Hermitianity and self-adjointness;
+- the exact identities `R * R = G⁻¹` and `R * G * R = I`, together with
+  preservation of Hermitianity and positive semidefiniteness under whitening;
+- the whitened operators `L = R H R`, `M₂ = R J R` and `V = M₂ - L²`, with
+  the exact Schur identity `V = R (J - H G⁻¹ H) R`;
+- equivalence between positivity of the Hermitian moment block
+  `[[G,H],[H,J]]` and its Schur complement, hence positivity of `V` under that
+  kernel-checked hypothesis;
+- the canonical six-camera inverse square root, logarithmic operator, second
+  moment and variance, recovered from the period-`420` source constructions
+  and proved self-adjoint where applicable.
 
-The finite moment layer does not yet construct whitening, the variance Schur
-complement, spectral projectors or a finite POVM.  Those POVM/Cauchy packages
-and the operator-valued Weyl family remain separate obligations.  No Parseval
-or Poisson statement is used to infer the analytic camera bridge, its tail
-rates, zero multiplicities, energy orders, finite-Gram positivity or the
-moment formulas.
+The whitening layer does not yet prove that the concrete six-camera moment
+block is positive semidefinite from its continuous step-density realization.
+Accordingly, positivity of the concrete variance is not claimed
+unconditionally yet.  Spectral projectors, a normalized finite POVM, its
+Cauchy transform and the operator-valued Weyl family remain separate
+obligations.  No Parseval or Poisson statement is used to infer the analytic
+camera bridge, its tail rates, zero multiplicities, energy orders, finite-Gram
+positivity, moment formulas or whitening identities.
 
 Pinned foundations:
 
@@ -131,7 +146,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 284 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 313 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
