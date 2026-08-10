@@ -177,13 +177,14 @@ def scaledCutoffCameraCovariance {ι : Type*} (weight : ℕ → ℝ) (cutoff : �
           (min (cameraSlope (camera i)) (cameraSlope (camera j)) * cutoff),
         weight n * realProfileProduct (camera i) (camera j) n
 
-/-- Entrywise convergence of the genuine scaled cutoff covariance to the
-camera Gram kernel. -/
-theorem tendsto_scaledCutoffCameraCovariance_apply {ι : Type*} [Fintype ι]
+/-- Entrywise convergence of the genuine scaled cutoff covariance when the
+weight is antitone after a finite prefix. -/
+theorem tendsto_scaledCutoffCameraCovariance_apply_of_eventually_antitone
+    {ι : Type*} [Fintype ι]
     {period : ℕ} {camera : ι → ℕ} {weight : ℕ → ℝ}
     (hperiod : 0 < period) (hcamera : ∀ i, 2 ≤ camera i)
     (hcommon : IsCommonProfilePeriod period camera)
-    (hweightAnti : Antitone weight)
+    (hweightAnti : ∃ offset : ℕ, Antitone (fun n => weight (n + offset)))
     (hweightZero : Tendsto weight atTop (nhds 0))
     (hmass : Tendsto (fun cutoff : ℕ =>
       ∑ n ∈ Finset.range cutoff, weight n) atTop atTop)
@@ -200,7 +201,7 @@ theorem tendsto_scaledCutoffCameraCovariance_apply {ι : Type*} [Fintype ι]
   have hproduct : Function.Periodic
       (realProfileProduct (camera i) (camera j)) period :=
     realProfileProduct_periodic (hcamera i) (hcamera j) (hcommon i) (hcommon j)
-  have havg := tendsto_periodic_weightedMean hperiod hproduct
+  have havg := tendsto_periodic_weightedMean_of_eventually_antitone hperiod hproduct
     hweightAnti hweightZero hmass
   have hscaledAvg : Tendsto (fun cutoff : ℕ =>
       (∑ n ∈ Finset.range (scale * cutoff), weight n)⁻¹ *
@@ -241,6 +242,68 @@ theorem tendsto_scaledCutoffCameraCovariance_apply {ι : Type*} [Fintype ι]
     hproductLimit.congr' heventual.symm
   simpa only [scaledCutoffCameraCovariance, scale, periodicGramMatrix_apply]
     using hlimit
+
+/-- Entrywise convergence of the genuine scaled cutoff covariance to the
+camera Gram kernel. -/
+theorem tendsto_scaledCutoffCameraCovariance_apply {ι : Type*} [Fintype ι]
+    {period : ℕ} {camera : ι → ℕ} {weight : ℕ → ℝ}
+    (hperiod : 0 < period) (hcamera : ∀ i, 2 ≤ camera i)
+    (hcommon : IsCommonProfilePeriod period camera)
+    (hweightAnti : Antitone weight)
+    (hweightZero : Tendsto weight atTop (nhds 0))
+    (hmass : Tendsto (fun cutoff : ℕ =>
+      ∑ n ∈ Finset.range cutoff, weight n) atTop atTop)
+    (hmassLinear : HasAsymptoticallyLinearMass weight) (i j : ι) :
+    Tendsto (fun cutoff => scaledCutoffCameraCovariance weight cutoff camera i j)
+      atTop (nhds (periodicGramMatrix period camera i j)) := by
+  apply tendsto_scaledCutoffCameraCovariance_apply_of_eventually_antitone
+    hperiod hcamera hcommon ⟨0, ?_⟩ hweightZero hmass hmassLinear i j
+  simpa only [Nat.add_zero] using hweightAnti
+
+/-- The genuine finite scaled cutoff covariance converges as a matrix when
+the scalar weight is antitone after a finite prefix. -/
+theorem tendsto_scaledCutoffCameraCovariance_of_eventually_antitone
+    {ι : Type*} [Fintype ι]
+    {period : ℕ} {camera : ι → ℕ} {weight : ℕ → ℝ}
+    (hperiod : 0 < period) (hcamera : ∀ i, 2 ≤ camera i)
+    (hcommon : IsCommonProfilePeriod period camera)
+    (hweightAnti : ∃ offset : ℕ, Antitone (fun n => weight (n + offset)))
+    (hweightZero : Tendsto weight atTop (nhds 0))
+    (hmass : Tendsto (fun cutoff : ℕ =>
+      ∑ n ∈ Finset.range cutoff, weight n) atTop atTop)
+    (hmassLinear : HasAsymptoticallyLinearMass weight) :
+    Tendsto (fun cutoff => scaledCutoffCameraCovariance weight cutoff camera)
+      atTop (nhds (periodicGramMatrix period camera)) := by
+  change Tendsto
+    (fun cutoff i j => scaledCutoffCameraCovariance weight cutoff camera i j)
+    atTop (nhds fun i j => periodicGramMatrix period camera i j)
+  rw [tendsto_pi_nhds]
+  intro i
+  rw [tendsto_pi_nhds]
+  intro j
+  exact tendsto_scaledCutoffCameraCovariance_apply_of_eventually_antitone
+    hperiod hcamera hcommon hweightAnti hweightZero hmass hmassLinear i j
+
+/-- Uniform finite-matrix norm convergence with an eventually antitone
+weight. -/
+theorem tendsto_norm_scaledCutoffCameraCovariance_sub_of_eventually_antitone
+    {ι : Type*} [Fintype ι]
+    {period : ℕ} {camera : ι → ℕ} {weight : ℕ → ℝ}
+    (hperiod : 0 < period) (hcamera : ∀ i, 2 ≤ camera i)
+    (hcommon : IsCommonProfilePeriod period camera)
+    (hweightAnti : ∃ offset : ℕ, Antitone (fun n => weight (n + offset)))
+    (hweightZero : Tendsto weight atTop (nhds 0))
+    (hmass : Tendsto (fun cutoff : ℕ =>
+      ∑ n ∈ Finset.range cutoff, weight n) atTop atTop)
+    (hmassLinear : HasAsymptoticallyLinearMass weight) :
+    Tendsto (fun cutoff =>
+      ‖scaledCutoffCameraCovariance weight cutoff camera -
+        periodicGramMatrix period camera‖) atTop (nhds 0) := by
+  have hmatrix := tendsto_scaledCutoffCameraCovariance_of_eventually_antitone
+    hperiod hcamera hcommon hweightAnti hweightZero hmass hmassLinear
+  have hconstant : Tendsto (fun _ : ℕ => periodicGramMatrix period camera)
+      atTop (nhds (periodicGramMatrix period camera)) := tendsto_const_nhds
+  simpa using (hmatrix.sub hconstant).norm
 
 /-- The genuine finite scaled cutoff covariance converges as a matrix to the
 periodic camera Gram matrix. -/

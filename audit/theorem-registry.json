@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.16.0",
-  "count": 375,
+  "release": "0.17.0",
+  "count": 404,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -1820,63 +1820,208 @@
     },
     {
       "id": "NCSW-364",
+      "name": "sum_period_natAdd",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sum_period_natAdd"
+    },
+    {
+      "id": "NCSW-365",
+      "name": "periodMean_natAdd",
+      "qualified": "NativeCarrySpectralWeyl.Limits.periodMean_natAdd"
+    },
+    {
+      "id": "NCSW-366",
+      "name": "tendsto_periodic_weightedMean_of_eventually_antitone",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_periodic_weightedMean_of_eventually_antitone"
+    },
+    {
+      "id": "NCSW-367",
       "name": "realProfileProduct_periodic",
       "qualified": "NativeCarrySpectralWeyl.Limits.realProfileProduct_periodic"
     },
     {
-      "id": "NCSW-365",
+      "id": "NCSW-368",
       "name": "periodMean_realProfileProduct",
       "qualified": "NativeCarrySpectralWeyl.Limits.periodMean_realProfileProduct"
     },
     {
-      "id": "NCSW-366",
+      "id": "NCSW-369",
       "name": "tendsto_weightedProfileMeanMatrix_apply",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_weightedProfileMeanMatrix_apply"
     },
     {
-      "id": "NCSW-367",
+      "id": "NCSW-370",
       "name": "tendsto_weightedProfileMeanMatrix",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_weightedProfileMeanMatrix"
     },
     {
-      "id": "NCSW-368",
+      "id": "NCSW-371",
       "name": "tendsto_weightedCameraCovariance",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_weightedCameraCovariance"
     },
     {
-      "id": "NCSW-369",
+      "id": "NCSW-372",
       "name": "tendsto_norm_weightedCameraCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_weightedCameraCovariance_sub"
     },
     {
-      "id": "NCSW-370",
+      "id": "NCSW-373",
       "name": "tendsto_nat_const_mul_atTop",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_nat_const_mul_atTop"
     },
     {
-      "id": "NCSW-371",
+      "id": "NCSW-374",
+      "name": "tendsto_scaledCutoffCameraCovariance_apply_of_eventually_antitone",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_scaledCutoffCameraCovariance_apply_of_eventually_antitone"
+    },
+    {
+      "id": "NCSW-375",
       "name": "tendsto_scaledCutoffCameraCovariance_apply",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_scaledCutoffCameraCovariance_apply"
     },
     {
-      "id": "NCSW-372",
+      "id": "NCSW-376",
+      "name": "tendsto_scaledCutoffCameraCovariance_of_eventually_antitone",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_scaledCutoffCameraCovariance_of_eventually_antitone"
+    },
+    {
+      "id": "NCSW-377",
+      "name": "tendsto_norm_scaledCutoffCameraCovariance_sub_of_eventually_antitone",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_scaledCutoffCameraCovariance_sub_of_eventually_antitone"
+    },
+    {
+      "id": "NCSW-378",
       "name": "tendsto_scaledCutoffCameraCovariance",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_scaledCutoffCameraCovariance"
     },
     {
-      "id": "NCSW-373",
+      "id": "NCSW-379",
       "name": "tendsto_norm_scaledCutoffCameraCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_scaledCutoffCameraCovariance_sub"
     },
     {
-      "id": "NCSW-374",
+      "id": "NCSW-380",
       "name": "tendsto_sixCamera_scaledCutoffCovariance",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_sixCamera_scaledCutoffCovariance"
     },
     {
-      "id": "NCSW-375",
+      "id": "NCSW-381",
       "name": "tendsto_norm_sixCamera_scaledCutoffCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_scaledCutoffCovariance_sub"
+    },
+    {
+      "id": "NCSW-382",
+      "name": "resolventWeight_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventWeight_eq"
+    },
+    {
+      "id": "NCSW-383",
+      "name": "resolventWeight_pos",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventWeight_pos"
+    },
+    {
+      "id": "NCSW-384",
+      "name": "tendsto_resolventDenominator_div_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventDenominator_div_atTop"
+    },
+    {
+      "id": "NCSW-385",
+      "name": "tendsto_resolventDenominator_step",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventDenominator_step"
+    },
+    {
+      "id": "NCSW-386",
+      "name": "eventually_one_div_nat_succ_le_resolventWeight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.eventually_one_div_nat_succ_le_resolventWeight"
+    },
+    {
+      "id": "NCSW-387",
+      "name": "tendsto_resolventWeight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventWeight_zero"
+    },
+    {
+      "id": "NCSW-388",
+      "name": "exists_resolventWeight_antitone_natAdd",
+      "qualified": "NativeCarrySpectralWeyl.Limits.exists_resolventWeight_antitone_natAdd"
+    },
+    {
+      "id": "NCSW-389",
+      "name": "not_summable_resolventWeight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.not_summable_resolventWeight"
+    },
+    {
+      "id": "NCSW-390",
+      "name": "tendsto_resolventMass_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventMass_atTop"
+    },
+    {
+      "id": "NCSW-391",
+      "name": "tendsto_resolventScale_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScale_atTop"
+    },
+    {
+      "id": "NCSW-392",
+      "name": "tendsto_resolventScale_increment_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScale_increment_div_weight"
+    },
+    {
+      "id": "NCSW-393",
+      "name": "tendsto_resolventMass_div_scale_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventMass_div_scale_one"
+    },
+    {
+      "id": "NCSW-394",
+      "name": "tendsto_resolventDenominator_div_log_sq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventDenominator_div_log_sq"
+    },
+    {
+      "id": "NCSW-395",
+      "name": "tendsto_resolventWeight_nat_mul_div",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventWeight_nat_mul_div"
+    },
+    {
+      "id": "NCSW-396",
+      "name": "tendsto_resolventScale_nat_mul_div",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScale_nat_mul_div"
+    },
+    {
+      "id": "NCSW-397",
+      "name": "tendsto_resolventMass_nat_mul_div",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventMass_nat_mul_div"
+    },
+    {
+      "id": "NCSW-398",
+      "name": "resolventWeight_hasAsymptoticallyLinearMass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventWeight_hasAsymptoticallyLinearMass"
+    },
+    {
+      "id": "NCSW-399",
+      "name": "tendsto_resolventWeight_mul_log_sq_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventWeight_mul_log_sq_one"
+    },
+    {
+      "id": "NCSW-400",
+      "name": "tendsto_resolventMass_div_nat_div_log_sq_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventMass_div_nat_div_log_sq_one"
+    },
+    {
+      "id": "NCSW-401",
+      "name": "tendsto_resolvent_scaledCutoffCameraCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolvent_scaledCutoffCameraCovariance"
+    },
+    {
+      "id": "NCSW-402",
+      "name": "tendsto_norm_resolvent_scaledCutoffCameraCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_resolvent_scaledCutoffCameraCovariance_sub"
+    },
+    {
+      "id": "NCSW-403",
+      "name": "tendsto_sixCamera_resolvent_scaledCutoffCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_sixCamera_resolvent_scaledCutoffCovariance"
+    },
+    {
+      "id": "NCSW-404",
+      "name": "tendsto_norm_sixCamera_resolvent_scaledCutoffCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_resolvent_scaledCutoffCovariance_sub"
     }
   ]
 }

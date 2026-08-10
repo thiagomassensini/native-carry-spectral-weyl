@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.16 periodic-covariance-limit milestone contains **375 public kernel-checked Lean
+The v0.17 resolvent-weight-limit milestone contains **404 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -124,6 +124,7 @@ finite native-carry operator commit.  The current public surface proves:
   Cesàro means to the one-period average;
 - a Dirichlet--Abel weighted periodic-mean theorem for antitone weights that
   tend to zero and have divergent total mass;
+- finite-prefix stability of that theorem, so eventual antitonicity is enough;
 - an explicit `HasAsymptoticallyLinearMass` interface isolating the scalar
   regular-variation input `A_(L M) / A_M -> L` from camera arithmetic;
 - entrywise and finite-matrix norm convergence of the genuine pairwise cutoff
@@ -132,17 +133,25 @@ finite native-carry operator commit.  The current public surface proves:
   weight hypotheses;
 - specialization of that norm limit to cameras `2,...,7`, with target exactly
   the documented positive-definite matrix `sixCameraGram`.
+- the concrete resolvent weight
+  `resolventWeight z n = |z - log(n+1)|^-2`, with positivity for nonreal `z`,
+  decay to zero, eventual antitonicity and divergent partial mass;
+- the scalar asymptotics
+  `A_M(z) ~ M / log(M+1)^2` and `A_(L M)(z) / A_M(z) -> L` for every fixed
+  positive natural `L`;
+- direct finite-matrix norm convergence of the concrete resolvent-weighted
+  pairwise cutoff covariance to the periodic Gram matrix, including cameras
+  `2,...,7` converging to the exact matrix `sixCameraGram`.
 
-The periodic/Abel part of the covariance passage is now constructed, but the
-concrete resolvent weight has not been silently granted its asymptotics.  The
-next obligation is to prove for `w_z(n) = |z - log n|^-2` that the weight is
-eventually antitone, its mass diverges, and
-`A_(L M)(z) / A_M(z) -> L` (equivalently the needed regular variation).  Only
-then will the abstract covariance theorem become the literal defect-probe
-limit from the notes.  The finite normalized POVM is not upgraded to a
-projection-valued measure, and its Cauchy transform and the operator-valued
-Weyl family remain separate obligations.  No Parseval or Poisson statement is
-used to infer these new spectral limits.
+The scalar regular-variation obligation left open in v0.16 is now discharged,
+and the abstract periodic covariance theorem is instantiated by the concrete
+resolvent weight.  Identifying this periodic-profile covariance with every
+literal finite defect-probe formula still requires the documented finite
+seed/endpoint bridge and exact return-metric cancellation.  The finite
+normalized POVM is not upgraded to a projection-valued measure, and its
+Cauchy transform and the operator-valued Weyl family remain separate
+obligations.  No Parseval or Poisson statement is used to infer these new
+spectral limits.
 
 Pinned foundations:
 
@@ -179,7 +188,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 375 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 404 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

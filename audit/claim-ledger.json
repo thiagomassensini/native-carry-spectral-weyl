@@ -1,177 +1,618 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.16.0",
-  "registry_count": 375,
-  "count": 28,
-  "status_counts": { "KERNEL_CHECKED": 28 },
+  "release": "0.17.0",
+  "registry_count": 404,
+  "count": 29,
+  "status_counts": {
+    "KERNEL_CHECKED": 29
+  },
   "claims": [
     {
       "id": "NCSW-CAM-001",
       "claim": "The spectral slope and natural radius counts agree exactly with the pinned finite native-camera geometry",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-016", "NCSW-017", "NCSW-018", "NCSW-019", "NCSW-020", "NCSW-021", "NCSW-022", "NCSW-023"]
+      "theorem_ids": [
+        "NCSW-016",
+        "NCSW-017",
+        "NCSW-018",
+        "NCSW-019",
+        "NCSW-020",
+        "NCSW-021",
+        "NCSW-022",
+        "NCSW-023"
+      ]
     },
     {
       "id": "NCSW-CAM-002",
       "claim": "The aligned C2, odd natural and even natural coefficient profiles have the stated exact divisibility formulas and periods",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-001", "NCSW-002", "NCSW-003", "NCSW-004", "NCSW-005", "NCSW-006", "NCSW-007", "NCSW-008", "NCSW-009", "NCSW-010"]
+      "theorem_ids": [
+        "NCSW-001",
+        "NCSW-002",
+        "NCSW-003",
+        "NCSW-004",
+        "NCSW-005",
+        "NCSW-006",
+        "NCSW-007",
+        "NCSW-008",
+        "NCSW-009",
+        "NCSW-010"
+      ]
     },
     {
       "id": "NCSW-CAM-003",
       "claim": "Every supported native-camera profile has zero coefficient mean over one exact spectral period",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-011", "NCSW-012", "NCSW-013", "NCSW-014", "NCSW-015"]
+      "theorem_ids": [
+        "NCSW-011",
+        "NCSW-012",
+        "NCSW-013",
+        "NCSW-014",
+        "NCSW-015"
+      ]
     },
     {
       "id": "NCSW-CAM-004",
       "claim": "The aligned C2, odd natural and even natural complex camera factors are defined by the explicit source formulas",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-024", "NCSW-025", "NCSW-026", "NCSW-027", "NCSW-028", "NCSW-029", "NCSW-030"]
+      "theorem_ids": [
+        "NCSW-024",
+        "NCSW-025",
+        "NCSW-026",
+        "NCSW-027",
+        "NCSW-028",
+        "NCSW-029",
+        "NCSW-030"
+      ]
     },
     {
       "id": "NCSW-CAM-005",
       "claim": "All supported explicit camera factors have the stated universal floor, including its alternate closed form, and are nonzero on s = 1/2 + i t",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-031", "NCSW-032", "NCSW-033", "NCSW-034", "NCSW-035", "NCSW-036", "NCSW-037", "NCSW-038", "NCSW-039", "NCSW-040", "NCSW-041", "NCSW-042", "NCSW-043", "NCSW-044", "NCSW-045", "NCSW-046", "NCSW-047"]
+      "theorem_ids": [
+        "NCSW-031",
+        "NCSW-032",
+        "NCSW-033",
+        "NCSW-034",
+        "NCSW-035",
+        "NCSW-036",
+        "NCSW-037",
+        "NCSW-038",
+        "NCSW-039",
+        "NCSW-040",
+        "NCSW-041",
+        "NCSW-042",
+        "NCSW-043",
+        "NCSW-044",
+        "NCSW-045",
+        "NCSW-046",
+        "NCSW-047"
+      ]
     },
     {
       "id": "NCSW-CAM-006",
       "claim": "The pinned finite native operator has an exact free integer-coefficient realization with literal scalar coefficient extraction",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-048", "NCSW-049", "NCSW-050", "NCSW-051", "NCSW-052", "NCSW-053", "NCSW-054", "NCSW-055", "NCSW-056", "NCSW-057", "NCSW-058", "NCSW-059", "NCSW-060", "NCSW-061"]
+      "theorem_ids": [
+        "NCSW-048",
+        "NCSW-049",
+        "NCSW-050",
+        "NCSW-051",
+        "NCSW-052",
+        "NCSW-053",
+        "NCSW-054",
+        "NCSW-055",
+        "NCSW-056",
+        "NCSW-057",
+        "NCSW-058",
+        "NCSW-059",
+        "NCSW-060",
+        "NCSW-061"
+      ]
     },
     {
       "id": "NCSW-CAM-007",
       "claim": "Every aligned C2 finite coefficient equals the exact periodic profile on its emitted window and vanishes outside",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-062", "NCSW-063", "NCSW-064", "NCSW-065"]
+      "theorem_ids": [
+        "NCSW-062",
+        "NCSW-063",
+        "NCSW-064",
+        "NCSW-065"
+      ]
     },
     {
       "id": "NCSW-CAM-008",
       "claim": "Every natural odd-camera finite coefficient equals its periodic profile on the full emitted window; every natural even-camera coefficient equals its profile before the final antipodal point and differs there by exactly one unit",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-066", "NCSW-067", "NCSW-068", "NCSW-069", "NCSW-070", "NCSW-071", "NCSW-072", "NCSW-073", "NCSW-074", "NCSW-075", "NCSW-076", "NCSW-077", "NCSW-078", "NCSW-079"]
+      "theorem_ids": [
+        "NCSW-066",
+        "NCSW-067",
+        "NCSW-068",
+        "NCSW-069",
+        "NCSW-070",
+        "NCSW-071",
+        "NCSW-072",
+        "NCSW-073",
+        "NCSW-074",
+        "NCSW-075",
+        "NCSW-076",
+        "NCSW-077",
+        "NCSW-078",
+        "NCSW-079"
+      ]
     },
     {
       "id": "NCSW-CAM-009",
       "claim": "On Re(s) > 1, every supported periodic camera-profile Dirichlet series is summable and equals its explicit camera factor times the common positive-index series, equivalently Mathlib's riemannZeta",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-080", "NCSW-081", "NCSW-082", "NCSW-083", "NCSW-084", "NCSW-085", "NCSW-086", "NCSW-087", "NCSW-088", "NCSW-089", "NCSW-090", "NCSW-091", "NCSW-092", "NCSW-093"]
+      "theorem_ids": [
+        "NCSW-080",
+        "NCSW-081",
+        "NCSW-082",
+        "NCSW-083",
+        "NCSW-084",
+        "NCSW-085",
+        "NCSW-086",
+        "NCSW-087",
+        "NCSW-088",
+        "NCSW-089",
+        "NCSW-090",
+        "NCSW-091",
+        "NCSW-092",
+        "NCSW-093"
+      ]
     },
     {
       "id": "NCSW-CAM-010",
       "claim": "For every supported camera, the literal center-bracket series is absolutely summable on Re(s) > -1 and its finite cutoffs converge pointwise to the infinite bracket characteristic",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-094", "NCSW-095", "NCSW-096", "NCSW-097", "NCSW-098", "NCSW-099", "NCSW-100", "NCSW-101", "NCSW-102", "NCSW-103", "NCSW-104", "NCSW-105", "NCSW-106", "NCSW-107"]
+      "theorem_ids": [
+        "NCSW-094",
+        "NCSW-095",
+        "NCSW-096",
+        "NCSW-097",
+        "NCSW-098",
+        "NCSW-099",
+        "NCSW-100",
+        "NCSW-101",
+        "NCSW-102",
+        "NCSW-103",
+        "NCSW-104",
+        "NCSW-105",
+        "NCSW-106",
+        "NCSW-107"
+      ]
     },
     {
       "id": "NCSW-CAM-011",
       "claim": "For each supported camera, the center-bracket series converges normally on Re(s) > -1, finite characteristics converge locally uniformly, and the infinite characteristic is holomorphic there",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-108", "NCSW-109", "NCSW-110", "NCSW-111", "NCSW-112", "NCSW-113", "NCSW-114", "NCSW-115", "NCSW-116", "NCSW-117", "NCSW-118", "NCSW-119", "NCSW-120"]
+      "theorem_ids": [
+        "NCSW-108",
+        "NCSW-109",
+        "NCSW-110",
+        "NCSW-111",
+        "NCSW-112",
+        "NCSW-113",
+        "NCSW-114",
+        "NCSW-115",
+        "NCSW-116",
+        "NCSW-117",
+        "NCSW-118",
+        "NCSW-119",
+        "NCSW-120"
+      ]
     },
     {
       "id": "NCSW-CAM-012",
       "claim": "Complex evaluation of the free finite stencil gives the exact C2, odd and even profile Dirichlet prefixes, including the even antipodal correction, and those prefixes converge to their profile series on Re(s) > 1",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-121", "NCSW-122", "NCSW-123", "NCSW-124", "NCSW-125", "NCSW-126", "NCSW-127", "NCSW-128", "NCSW-129", "NCSW-130", "NCSW-131", "NCSW-132", "NCSW-133", "NCSW-134", "NCSW-135", "NCSW-136", "NCSW-137", "NCSW-138", "NCSW-139"]
+      "theorem_ids": [
+        "NCSW-121",
+        "NCSW-122",
+        "NCSW-123",
+        "NCSW-124",
+        "NCSW-125",
+        "NCSW-126",
+        "NCSW-127",
+        "NCSW-128",
+        "NCSW-129",
+        "NCSW-130",
+        "NCSW-131",
+        "NCSW-132",
+        "NCSW-133",
+        "NCSW-134",
+        "NCSW-135",
+        "NCSW-136",
+        "NCSW-137",
+        "NCSW-138",
+        "NCSW-139"
+      ]
     },
     {
       "id": "NCSW-CAM-013",
       "claim": "On Re(s) > 1, the infinite bracket characteristic equals the unified profile series and its explicit factor times Mathlib's riemannZeta, yielding the initial cross-factor identity",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-140", "NCSW-141", "NCSW-142", "NCSW-143"]
+      "theorem_ids": [
+        "NCSW-140",
+        "NCSW-141",
+        "NCSW-142",
+        "NCSW-143"
+      ]
     },
     {
       "id": "NCSW-CAM-014",
       "claim": "All supported factors are entire and the cross-factor identity extends by the analytic identity principle to the full connected half-plane Re(s) > -1",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-144", "NCSW-145", "NCSW-146", "NCSW-147", "NCSW-148", "NCSW-149", "NCSW-150"]
+      "theorem_ids": [
+        "NCSW-144",
+        "NCSW-145",
+        "NCSW-146",
+        "NCSW-147",
+        "NCSW-148",
+        "NCSW-149",
+        "NCSW-150"
+      ]
     },
     {
       "id": "NCSW-CAM-015",
       "claim": "Camera 3 defines a holomorphic native scalar on -1 < Re(s) < 1; every supported camera factors through it there and all supported camera characteristics have the same zero set on the native line",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-151", "NCSW-152", "NCSW-153", "NCSW-154", "NCSW-155", "NCSW-156"]
+      "theorem_ids": [
+        "NCSW-151",
+        "NCSW-152",
+        "NCSW-153",
+        "NCSW-154",
+        "NCSW-155",
+        "NCSW-156"
+      ]
     },
     {
       "id": "NCSW-CAM-016",
       "claim": "A cutoff of M aligned center blocks approximates each supported native-line bracket characteristic with an explicit O(M^(-3/2)) remainder, and the stable finite-camera cross residual has the same rate",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-157", "NCSW-158", "NCSW-159", "NCSW-160", "NCSW-161", "NCSW-162", "NCSW-163", "NCSW-164", "NCSW-165", "NCSW-166", "NCSW-167"]
+      "theorem_ids": [
+        "NCSW-157",
+        "NCSW-158",
+        "NCSW-159",
+        "NCSW-160",
+        "NCSW-161",
+        "NCSW-162",
+        "NCSW-163",
+        "NCSW-164",
+        "NCSW-165",
+        "NCSW-166",
+        "NCSW-167"
+      ]
     },
     {
       "id": "NCSW-CAM-017",
       "claim": "The centered exponent derivative series is termwise valid and summable on the native line; both the complex-exponent derivative and the actual t derivative of the M-block characteristic have an explicit O(M^(-3/2) log M) tail",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-168", "NCSW-169", "NCSW-170", "NCSW-171", "NCSW-172", "NCSW-173", "NCSW-174", "NCSW-175", "NCSW-176", "NCSW-177", "NCSW-178", "NCSW-179", "NCSW-180", "NCSW-181", "NCSW-182", "NCSW-183", "NCSW-184", "NCSW-185", "NCSW-186", "NCSW-187", "NCSW-188", "NCSW-189", "NCSW-190", "NCSW-191", "NCSW-192", "NCSW-193", "NCSW-194", "NCSW-195", "NCSW-196", "NCSW-197", "NCSW-198", "NCSW-199", "NCSW-200", "NCSW-201", "NCSW-202"]
+      "theorem_ids": [
+        "NCSW-168",
+        "NCSW-169",
+        "NCSW-170",
+        "NCSW-171",
+        "NCSW-172",
+        "NCSW-173",
+        "NCSW-174",
+        "NCSW-175",
+        "NCSW-176",
+        "NCSW-177",
+        "NCSW-178",
+        "NCSW-179",
+        "NCSW-180",
+        "NCSW-181",
+        "NCSW-182",
+        "NCSW-183",
+        "NCSW-184",
+        "NCSW-185",
+        "NCSW-186",
+        "NCSW-187",
+        "NCSW-188",
+        "NCSW-189",
+        "NCSW-190",
+        "NCSW-191",
+        "NCSW-192",
+        "NCSW-193",
+        "NCSW-194",
+        "NCSW-195",
+        "NCSW-196",
+        "NCSW-197",
+        "NCSW-198",
+        "NCSW-199",
+        "NCSW-200",
+        "NCSW-201",
+        "NCSW-202"
+      ]
     },
     {
       "id": "NCSW-CAM-018",
       "claim": "For every fixed order k, Cauchy estimates on a dynamic complex disc prove both the complex-exponent and actual native-line t-derivative cutoff rates O(M^(-3/2) log(M)^k)",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-203", "NCSW-204", "NCSW-205", "NCSW-206", "NCSW-207", "NCSW-208", "NCSW-209", "NCSW-210", "NCSW-211", "NCSW-212", "NCSW-213", "NCSW-214", "NCSW-215", "NCSW-216", "NCSW-217", "NCSW-218"]
+      "theorem_ids": [
+        "NCSW-203",
+        "NCSW-204",
+        "NCSW-205",
+        "NCSW-206",
+        "NCSW-207",
+        "NCSW-208",
+        "NCSW-209",
+        "NCSW-210",
+        "NCSW-211",
+        "NCSW-212",
+        "NCSW-213",
+        "NCSW-214",
+        "NCSW-215",
+        "NCSW-216",
+        "NCSW-217",
+        "NCSW-218"
+      ]
     },
     {
       "id": "NCSW-CAM-019",
       "claim": "Every supported camera factor is a local analytic unit at native-line points, so all supported camera characteristics have the same analytic order of vanishing there; every finite positive zero order transfers exactly between cameras",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-219", "NCSW-220", "NCSW-221", "NCSW-222", "NCSW-223", "NCSW-224", "NCSW-225", "NCSW-226"]
+      "theorem_ids": [
+        "NCSW-219",
+        "NCSW-220",
+        "NCSW-221",
+        "NCSW-222",
+        "NCSW-223",
+        "NCSW-224",
+        "NCSW-225",
+        "NCSW-226"
+      ]
     },
     {
       "id": "NCSW-CAM-020",
       "claim": "Finite holomorphic zero order is preserved under restriction to the native real line; Complex.normSq doubles that real analytic order, and multiplication by a nonzero real-analytic weight preserves the doubled order",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-227", "NCSW-228", "NCSW-229", "NCSW-230", "NCSW-231", "NCSW-232", "NCSW-233", "NCSW-234", "NCSW-235"]
+      "theorem_ids": [
+        "NCSW-227",
+        "NCSW-228",
+        "NCSW-229",
+        "NCSW-230",
+        "NCSW-231",
+        "NCSW-232",
+        "NCSW-233",
+        "NCSW-234",
+        "NCSW-235"
+      ]
     },
     {
       "id": "NCSW-CAM-021",
       "claim": "The five limiting sectors 3, 4, 5, 7 and mixed have the exact source factors, including the binary defect factor in the aggregated rank-two mode 4 and its product with A_3 in the mixed mode; their positive real-analytic weights and nonnegative real-analytic energies satisfy E_j(t) = Q_j(t) normSq(Z_nat), share the native scalar zero set, and turn a camera zero of finite complex order m into exact real energy order 2m",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-236", "NCSW-237", "NCSW-238", "NCSW-239", "NCSW-240", "NCSW-241", "NCSW-242", "NCSW-243", "NCSW-244", "NCSW-245", "NCSW-246", "NCSW-247", "NCSW-248", "NCSW-249", "NCSW-250", "NCSW-251", "NCSW-252", "NCSW-253", "NCSW-254", "NCSW-255", "NCSW-256", "NCSW-257"]
+      "theorem_ids": [
+        "NCSW-236",
+        "NCSW-237",
+        "NCSW-238",
+        "NCSW-239",
+        "NCSW-240",
+        "NCSW-241",
+        "NCSW-242",
+        "NCSW-243",
+        "NCSW-244",
+        "NCSW-245",
+        "NCSW-246",
+        "NCSW-247",
+        "NCSW-248",
+        "NCSW-249",
+        "NCSW-250",
+        "NCSW-251",
+        "NCSW-252",
+        "NCSW-253",
+        "NCSW-254",
+        "NCSW-255",
+        "NCSW-256",
+        "NCSW-257"
+      ]
     },
     {
       "id": "NCSW-FIN-001",
       "claim": "For every finite camera family, the periodic product-mean matrix and its slope-minimum weighted Gram matrix are positive semidefinite; for cameras 2 through 7, period 420 yields the exact documented rational Gram matrix with determinant 4,981,760, hence it is positive definite",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-258", "NCSW-259", "NCSW-260", "NCSW-261", "NCSW-262", "NCSW-263", "NCSW-264", "NCSW-265", "NCSW-266", "NCSW-267", "NCSW-268", "NCSW-269", "NCSW-270"]
+      "theorem_ids": [
+        "NCSW-258",
+        "NCSW-259",
+        "NCSW-260",
+        "NCSW-261",
+        "NCSW-262",
+        "NCSW-263",
+        "NCSW-264",
+        "NCSW-265",
+        "NCSW-266",
+        "NCSW-267",
+        "NCSW-268",
+        "NCSW-269",
+        "NCSW-270"
+      ]
     },
     {
       "id": "NCSW-FIN-002",
       "claim": "For every finite camera family, the first centered logarithmic moment H_ij = G_ij log(ell_ij) and second centered logarithmic moment J_ij = G_ij (1 + log(ell_ij)^2) are Hermitian and self-adjoint; for cameras 2 through 7, period 420 recovers the exact documented moment matrices",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-271", "NCSW-272", "NCSW-273", "NCSW-274", "NCSW-275", "NCSW-276", "NCSW-277", "NCSW-278", "NCSW-279", "NCSW-280", "NCSW-281", "NCSW-282", "NCSW-283", "NCSW-284"]
+      "theorem_ids": [
+        "NCSW-271",
+        "NCSW-272",
+        "NCSW-273",
+        "NCSW-274",
+        "NCSW-275",
+        "NCSW-276",
+        "NCSW-277",
+        "NCSW-278",
+        "NCSW-279",
+        "NCSW-280",
+        "NCSW-281",
+        "NCSW-282",
+        "NCSW-283",
+        "NCSW-284"
+      ]
     },
     {
       "id": "NCSW-FIN-003",
       "claim": "Every positive-definite finite Gram matrix has a canonical positive inverse square root R satisfying R^2 = G^-1 and R G R = I; whitening preserves Hermitianity and positive semidefiniteness, the variance equals R (J - H G^-1 H) R and is positive whenever the moment block is positive, and the period-420 cameras 2 through 7 instantiate the canonical self-adjoint whitened operators",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-285", "NCSW-286", "NCSW-287", "NCSW-288", "NCSW-289", "NCSW-290", "NCSW-291", "NCSW-292", "NCSW-293", "NCSW-294", "NCSW-295", "NCSW-296", "NCSW-297", "NCSW-298", "NCSW-299", "NCSW-300", "NCSW-301", "NCSW-302", "NCSW-303", "NCSW-304", "NCSW-305", "NCSW-306", "NCSW-307", "NCSW-308", "NCSW-309", "NCSW-310", "NCSW-311", "NCSW-312", "NCSW-313"]
+      "theorem_ids": [
+        "NCSW-285",
+        "NCSW-286",
+        "NCSW-287",
+        "NCSW-288",
+        "NCSW-289",
+        "NCSW-290",
+        "NCSW-291",
+        "NCSW-292",
+        "NCSW-293",
+        "NCSW-294",
+        "NCSW-295",
+        "NCSW-296",
+        "NCSW-297",
+        "NCSW-298",
+        "NCSW-299",
+        "NCSW-300",
+        "NCSW-301",
+        "NCSW-302",
+        "NCSW-303",
+        "NCSW-304",
+        "NCSW-305",
+        "NCSW-306",
+        "NCSW-307",
+        "NCSW-308",
+        "NCSW-309",
+        "NCSW-310",
+        "NCSW-311",
+        "NCSW-312",
+        "NCSW-313"
+      ]
     },
     {
       "id": "NCSW-FIN-004",
       "claim": "For every finite positive-slope camera family, the centered logarithmic moment block is the Hadamard product of two positive semidefinite matrices: an integral Gram block of the truncated features 1 and 1 + log x, and the repeated periodic profile mean. Its entries are exactly ell, ell log ell and ell (1 + log(ell)^2). Hence the documented period-420 six-camera moment block and canonical variance are positive semidefinite.",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-314", "NCSW-315", "NCSW-316", "NCSW-317", "NCSW-318", "NCSW-319", "NCSW-320", "NCSW-321", "NCSW-322", "NCSW-323", "NCSW-324", "NCSW-325", "NCSW-326", "NCSW-327", "NCSW-328", "NCSW-329", "NCSW-330", "NCSW-331", "NCSW-332", "NCSW-333"]
+      "theorem_ids": [
+        "NCSW-314",
+        "NCSW-315",
+        "NCSW-316",
+        "NCSW-317",
+        "NCSW-318",
+        "NCSW-319",
+        "NCSW-320",
+        "NCSW-321",
+        "NCSW-322",
+        "NCSW-323",
+        "NCSW-324",
+        "NCSW-325",
+        "NCSW-326",
+        "NCSW-327",
+        "NCSW-328",
+        "NCSW-329",
+        "NCSW-330",
+        "NCSW-331",
+        "NCSW-332",
+        "NCSW-333"
+      ]
     },
     {
       "id": "NCSW-FIN-005",
       "claim": "For every finite camera family, the continuous step density D(x) M0 D(x) is pointwise positive semidefinite and Bochner-integrable, its vector measure is positive on every measurable set and has total mass G, and positive-definite G normalizes it by congruence with G^-1/2 to a POVM of total mass I. Pushforward by y = 1 + log x preserves this POVM structure; in particular the canonical period-420 six-camera centered-log measure has positive effects and total effect I.",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-334", "NCSW-335", "NCSW-336", "NCSW-337", "NCSW-338", "NCSW-339", "NCSW-340", "NCSW-341", "NCSW-342", "NCSW-343", "NCSW-344", "NCSW-345", "NCSW-346", "NCSW-347", "NCSW-348", "NCSW-349", "NCSW-350", "NCSW-351", "NCSW-352", "NCSW-353", "NCSW-354", "NCSW-355"]
+      "theorem_ids": [
+        "NCSW-334",
+        "NCSW-335",
+        "NCSW-336",
+        "NCSW-337",
+        "NCSW-338",
+        "NCSW-339",
+        "NCSW-340",
+        "NCSW-341",
+        "NCSW-342",
+        "NCSW-343",
+        "NCSW-344",
+        "NCSW-345",
+        "NCSW-346",
+        "NCSW-347",
+        "NCSW-348",
+        "NCSW-349",
+        "NCSW-350",
+        "NCSW-351",
+        "NCSW-352",
+        "NCSW-353",
+        "NCSW-354",
+        "NCSW-355"
+      ]
     },
     {
       "id": "NCSW-LIM-001",
       "claim": "Every periodic sequence valued in a real normed vector space has Cesaro mean equal to its one-period average. If scalar weights are antitone, tend to zero, and have divergent total mass, the same conclusion holds for normalized weighted means by a Dirichlet-Abel argument with uniformly bounded centered prefix sums.",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-356", "NCSW-357", "NCSW-358", "NCSW-359", "NCSW-360", "NCSW-361", "NCSW-362", "NCSW-363"]
+      "theorem_ids": [
+        "NCSW-356",
+        "NCSW-357",
+        "NCSW-358",
+        "NCSW-359",
+        "NCSW-360",
+        "NCSW-361",
+        "NCSW-362",
+        "NCSW-363",
+        "NCSW-364",
+        "NCSW-365",
+        "NCSW-366"
+      ]
     },
     {
       "id": "NCSW-LIM-002",
       "claim": "For every supported finite camera family and every weight satisfying the explicit Dirichlet-Abel and asymptotically-linear mass hypotheses, the genuine pairwise cutoff covariance up to min(ell_i,ell_j) M converges uniformly in finite-matrix norm to the periodic camera Gram matrix. In particular, cameras 2 through 7 converge to the exact documented six-camera Gram matrix under those hypotheses.",
       "status": "KERNEL_CHECKED",
-      "theorem_ids": ["NCSW-364", "NCSW-365", "NCSW-366", "NCSW-367", "NCSW-368", "NCSW-369", "NCSW-370", "NCSW-371", "NCSW-372", "NCSW-373", "NCSW-374", "NCSW-375"]
+      "theorem_ids": [
+        "NCSW-367",
+        "NCSW-368",
+        "NCSW-369",
+        "NCSW-370",
+        "NCSW-371",
+        "NCSW-372",
+        "NCSW-373",
+        "NCSW-374",
+        "NCSW-375",
+        "NCSW-376",
+        "NCSW-377",
+        "NCSW-378",
+        "NCSW-379",
+        "NCSW-380",
+        "NCSW-381"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-003",
+      "claim": "For every fixed nonreal z, the concrete logarithmic resolvent weight is positive, tends to zero, is eventually antitone, has mass A_M(z) asymptotic to M/log(M+1)^2, and satisfies A_(L M)(z)/A_M(z) -> L for every fixed positive natural L. Therefore the genuine resolvent-weighted finite-camera covariance converges in matrix norm to the periodic Gram matrix, with cameras 2 through 7 converging to the exact sixCameraGram.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-382",
+        "NCSW-383",
+        "NCSW-384",
+        "NCSW-385",
+        "NCSW-386",
+        "NCSW-387",
+        "NCSW-388",
+        "NCSW-389",
+        "NCSW-390",
+        "NCSW-391",
+        "NCSW-392",
+        "NCSW-393",
+        "NCSW-394",
+        "NCSW-395",
+        "NCSW-396",
+        "NCSW-397",
+        "NCSW-398",
+        "NCSW-399",
+        "NCSW-400",
+        "NCSW-401",
+        "NCSW-402",
+        "NCSW-403",
+        "NCSW-404"
+      ]
     }
   ]
 }

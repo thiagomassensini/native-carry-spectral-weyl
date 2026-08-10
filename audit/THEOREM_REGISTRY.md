@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.16 periodic-covariance-limit milestone contains exactly **375** named public Lean
-theorems, ordered as `NCSW-001` through `NCSW-375` in
+The v0.17 resolvent-weight-limit milestone contains exactly **404** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-404` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -32,7 +32,8 @@ report for every declaration.
 | `NCSW-285`–`NCSW-313` | `Finite/Whitening.lean` | positive inverse square root, exact Gram normalization, whitened moments, variance/Schur identity and six-camera operators |
 | `NCSW-314`–`NCSW-333` | `Finite/StepDensity.lean` | exact centered-log integrals, continuous step Gram positivity, moment-block factorization and unconditional six-camera variance positivity |
 | `NCSW-334`–`NCSW-355` | `Finite/StepPOVM.lean` | positive step-density measure, exact total mass, whitening normalization, centered-log pushforward and canonical six-camera POVM |
-| `NCSW-356`–`NCSW-363` | `Limits/PeriodicMean.lean` | exact periodic block/remainder formulas, bounded centered prefixes, Cesàro convergence and Dirichlet--Abel weighted means |
-| `NCSW-364`–`NCSW-375` | `Limits/CameraCovariance.lean` | weighted profile limits, asymptotically-linear mass interface, genuine scaled-cutoff matrix convergence and exact six-camera Gram limit |
+| `NCSW-356`–`NCSW-366` | `Limits/PeriodicMean.lean` | exact periodic block/remainder formulas, bounded centered prefixes, Cesàro convergence, Dirichlet--Abel weighted means and finite-prefix stability |
+| `NCSW-367`–`NCSW-381` | `Limits/CameraCovariance.lean` | weighted profile limits, asymptotically-linear mass interface, eventual-antitone scaled-cutoff matrix convergence and exact six-camera Gram limit |
+| `NCSW-382`–`NCSW-404` | `Limits/ResolventWeight.lean` | concrete resolvent-weight decay and eventual monotonicity, mass divergence, `M/log(M+1)^2` asymptotic, regular variation and concrete covariance limits |
 
 The JSON registry is the machine-readable authority for exact qualified names.

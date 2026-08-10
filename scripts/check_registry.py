@@ -62,6 +62,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Limits."),
     (ROOT / "NativeCarrySpectralWeyl/Limits/CameraCovariance.lean",
      "NativeCarrySpectralWeyl.Limits."),
+    (ROOT / "NativeCarrySpectralWeyl/Limits/ResolventWeight.lean",
+     "NativeCarrySpectralWeyl.Limits."),
 ]
 
 

@@ -198,4 +198,144 @@ theorem tendsto_periodic_weightedMean {q : ℕ → E} {period : ℕ} {weight : �
     Finset.sum_sub_distrib, ← Finset.sum_smul]
   rw [smul_smul, inv_mul_cancel₀ hmass0', one_smul, sub_add_cancel]
 
+/-- Translating a periodic sequence does not change its sum over one complete
+period. -/
+theorem sum_period_natAdd {q : ℕ → E} {period : ℕ}
+    (hq : Function.Periodic q period) (offset : ℕ) :
+    ∑ r ∈ Finset.range period, q (offset + r) =
+      ∑ r ∈ Finset.range period, q r := by
+  apply add_left_cancel (a := ∑ r ∈ Finset.range offset, q r)
+  calc
+    (∑ r ∈ Finset.range offset, q r) +
+        ∑ r ∈ Finset.range period, q (offset + r) =
+      ∑ r ∈ Finset.range (offset + period), q r :=
+        (Finset.sum_range_add q offset period).symm
+    _ = ∑ r ∈ Finset.range (period + offset), q r := by rw [Nat.add_comm]
+    _ = (∑ r ∈ Finset.range period, q r) +
+        ∑ r ∈ Finset.range offset, q (period + r) :=
+          Finset.sum_range_add q period offset
+    _ = (∑ r ∈ Finset.range period, q r) +
+        ∑ r ∈ Finset.range offset, q r := by
+          congr 1
+          apply Finset.sum_congr rfl
+          intro r hr
+          simpa only [Nat.add_comm] using hq r
+    _ = (∑ r ∈ Finset.range offset, q r) +
+        ∑ r ∈ Finset.range period, q r := add_comm _ _
+
+/-- Translating a periodic sequence does not change its period mean. -/
+theorem periodMean_natAdd {q : ℕ → E} {period : ℕ} [NormedSpace ℝ E]
+    (hq : Function.Periodic q period) (offset : ℕ) :
+    periodMean (fun n => q (offset + n)) period = periodMean q period := by
+  simp only [periodMean]
+  rw [sum_period_natAdd hq offset]
+
+/-- Dirichlet--Abel periodic averaging when the weight is antitone only after
+a finite prefix.  Both the finite mass and numerator prefix disappear after
+normalization by the divergent total mass. -/
+theorem tendsto_periodic_weightedMean_of_eventually_antitone
+    {q : ℕ → E} {period : ℕ} {weight : ℕ → ℝ}
+    [NormedSpace ℝ E]
+    (hperiod : 0 < period) (hq : Function.Periodic q period)
+    (hweightAnti : ∃ offset : ℕ, Antitone (fun n => weight (n + offset)))
+    (hweightZero : Tendsto weight atTop (nhds 0))
+    (hmass : Tendsto (fun cutoff : ℕ =>
+      ∑ n ∈ Finset.range cutoff, weight n) atTop atTop) :
+    Tendsto (fun cutoff : ℕ =>
+      (∑ n ∈ Finset.range cutoff, weight n)⁻¹ •
+        ∑ n ∈ Finset.range cutoff, weight n • q n)
+      atTop (nhds (periodMean q period)) := by
+  obtain ⟨offset, hanti⟩ := hweightAnti
+  let shiftedWeight : ℕ → ℝ := fun n => weight (n + offset)
+  let shiftedQ : ℕ → E := fun n => q (offset + n)
+  let mass : ℕ → ℝ := fun cutoff => ∑ n ∈ Finset.range cutoff, weight n
+  let shiftedMass : ℕ → ℝ := fun cutoff =>
+    ∑ n ∈ Finset.range cutoff, shiftedWeight n
+  let numerator : ℕ → E := fun cutoff =>
+    ∑ n ∈ Finset.range cutoff, weight n • q n
+  let shiftedNumerator : ℕ → E := fun cutoff =>
+    ∑ n ∈ Finset.range cutoff, shiftedWeight n • shiftedQ n
+  let prefixMass : ℝ := mass offset
+  let prefixNumerator : E := numerator offset
+  have hshiftedQ : Function.Periodic shiftedQ period := by
+    intro n
+    simpa only [shiftedQ, Nat.add_assoc] using hq (offset + n)
+  have hshiftedZero : Tendsto shiftedWeight atTop (nhds 0) :=
+    hweightZero.comp (tendsto_add_atTop_nat offset)
+  have hmassShift : Tendsto (fun cutoff => mass (cutoff + offset)) atTop atTop :=
+    hmass.comp (tendsto_add_atTop_nat offset)
+  have hshiftedMassEq (cutoff : ℕ) :
+      shiftedMass cutoff = mass (cutoff + offset) - prefixMass := by
+    simp only [shiftedMass, shiftedWeight, mass, prefixMass]
+    rw [Nat.add_comm cutoff offset, Finset.sum_range_add]
+    simp only [Nat.add_comm offset]
+    abel
+  have hshiftedMass : Tendsto shiftedMass atTop atTop := by
+    have h := Filter.tendsto_atTop_add_const_right atTop (-prefixMass) hmassShift
+    apply h.congr'
+    filter_upwards with cutoff
+    rw [hshiftedMassEq]
+    simp only [sub_eq_add_neg]
+  have hshiftedMean : Tendsto (fun cutoff =>
+      (shiftedMass cutoff)⁻¹ • shiftedNumerator cutoff)
+      atTop (nhds (periodMean q period)) := by
+    have h := tendsto_periodic_weightedMean hperiod hshiftedQ hanti
+      hshiftedZero hshiftedMass
+    rw [periodMean_natAdd hq offset] at h
+    exact h
+  have hprefixMassEq (cutoff : ℕ) :
+      mass (cutoff + offset) = prefixMass + shiftedMass cutoff := by
+    rw [hshiftedMassEq]
+    ring
+  have hprefixNumeratorEq (cutoff : ℕ) :
+      numerator (cutoff + offset) = prefixNumerator + shiftedNumerator cutoff := by
+    simp only [numerator, prefixNumerator, shiftedNumerator, shiftedWeight, shiftedQ]
+    rw [Nat.add_comm cutoff offset, Finset.sum_range_add]
+    simp only [Nat.add_comm offset]
+  have hinvMassShift : Tendsto (fun cutoff => (mass (cutoff + offset))⁻¹)
+      atTop (nhds 0) := tendsto_inv_atTop_zero.comp hmassShift
+  have hprefixZero : Tendsto (fun cutoff =>
+      (mass (cutoff + offset))⁻¹ • prefixNumerator) atTop (nhds 0) := by
+    simpa using hinvMassShift.smul_const prefixNumerator
+  have hratio : Tendsto (fun cutoff =>
+      shiftedMass cutoff / mass (cutoff + offset)) atTop (nhds 1) := by
+    have hcorrection : Tendsto (fun cutoff =>
+        prefixMass * (mass (cutoff + offset))⁻¹) atTop (nhds 0) := by
+      simpa using hinvMassShift.const_mul prefixMass
+    have h : Tendsto (fun cutoff : ℕ =>
+        (1 : ℝ) - prefixMass * (mass (cutoff + offset))⁻¹)
+        atTop (nhds 1) := by simpa using tendsto_const_nhds.sub hcorrection
+    apply h.congr'
+    filter_upwards [hmassShift.eventually_ne_atTop 0] with cutoff hmass0
+    rw [hprefixMassEq]
+    have hsum0 : prefixMass + shiftedMass cutoff ≠ 0 := by
+      rw [← hprefixMassEq]
+      exact hmass0
+    field_simp [hsum0]
+    ring
+  have hmain := hratio.smul hshiftedMean
+  have htotal := hmain.add hprefixZero
+  have hshiftedFull : Tendsto (fun cutoff =>
+      (mass (cutoff + offset))⁻¹ • numerator (cutoff + offset))
+      atTop (nhds (periodMean q period)) := by
+    have htotal' : Tendsto (fun x =>
+        (shiftedMass x / mass (x + offset)) •
+            ((shiftedMass x)⁻¹ • shiftedNumerator x) +
+          (mass (x + offset))⁻¹ • prefixNumerator)
+        atTop (nhds (periodMean q period)) := by simpa using htotal
+    apply htotal'.congr'
+    filter_upwards [hshiftedMass.eventually_ne_atTop 0,
+      hmassShift.eventually_ne_atTop 0] with cutoff htail0 hmass0
+    rw [hprefixNumeratorEq]
+    simp only [div_eq_mul_inv, smul_add]
+    rw [smul_smul]
+    have hcoef : shiftedMass cutoff * (mass (cutoff + offset))⁻¹ *
+        (shiftedMass cutoff)⁻¹ = (mass (cutoff + offset))⁻¹ := by
+      field_simp [htail0, hmass0]
+    rw [hcoef]
+    ac_rfl
+  exact (tendsto_add_atTop_iff_nat
+    (f := fun cutoff : ℕ => (mass cutoff)⁻¹ • numerator cutoff)
+    offset).1 hshiftedFull
+
 end NativeCarrySpectralWeyl.Limits

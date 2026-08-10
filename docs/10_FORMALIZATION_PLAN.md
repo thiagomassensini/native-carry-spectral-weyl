@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked in the v0.16 periodic-covariance-limit milestone:
+Kernel checked through the v0.17 resolvent-weight-limit milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -429,12 +429,20 @@ Kernel checked in the v0.16 periodic-covariance-limit milestone:
   finite entry-sup matrix norm;
 - specialization to cameras `2,...,7`, with limit exactly the documented
   positive-definite matrix `sixCameraGram`.
+- finite-prefix stability of the Dirichlet--Abel theorem, permitting weights
+  that are only eventually antitone;
+- the concrete zero-indexed form
+  `w_z(n) = |z - log(n+1)|^-2`, with positivity for `Im z != 0`, decay,
+  eventual antitonicity and divergent mass;
+- the exact asymptotic package `A_M(z) ~ M/log(M+1)^2` and
+  `A_(L M)(z)/A_M(z) -> L` for fixed positive natural `L`;
+- matrix-norm convergence of the concrete resolvent-weighted pairwise cutoff
+  covariance, including the exact six-camera Gram limit.
 
-This milestone does not assert the asymptotically-linear mass hypothesis for
-`w_z(n) = |z - log n|^-2`.  The next Phase 4 step is the scalar resolvent-weight
-package: eventual monotonicity, `w_z(n) -> 0`, mass divergence and regular
-variation.  Finite seed/endpoint stability is then required before identifying
-the abstract cutoff covariance with the literal defect-probe covariance.
+The next Phase 4 bridge is finite seed/endpoint stability for the literal
+defect-probe coefficients together with the exact return-metric covariance
+cancellation.  After that bridge, the polynomial functional moments become
+the natural next analytic target.
 
 Targets:
 

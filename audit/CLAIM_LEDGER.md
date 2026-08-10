@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.16 it contains
-twenty-eight `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.17 it contains
+twenty-nine `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -41,14 +41,14 @@ The finite-POVM claim realizes `D(x) M₀ D(x) dx` as a positive matrix-valued
 measure with total mass `G`, normalizes it by `G⁻¹/²` to total mass `I`, and
 pushes it forward under `y = 1 + log x`.  The canonical six-camera
 centered-log measure is therefore a positive normalized POVM.
-The two initial limit claims prove ordinary and Dirichlet--Abel weighted means
-for vector-valued periodic sequences, then lift them to the genuine pairwise
-camera cutoff.  Under the explicitly named asymptotically-linear mass
-hypothesis, the finite covariance converges in matrix norm to the periodic
-Gram, including the exact six-camera matrix.  The ledger deliberately does not
-claim that the concrete resolvent weight already satisfies that scalar
-regular-variation hypothesis.
+The first two limit claims prove ordinary and Dirichlet--Abel weighted means
+for vector-valued periodic sequences, including stability under a finite
+nonmonotone prefix, then lift them to the genuine pairwise camera cutoff.  The
+new resolvent-limit claim proves that `|z-log(n+1)|^-2` is positive, decays,
+becomes antitone, has mass asymptotic to `M/log(M+1)^2`, and is regularly
+varying with index one.  It therefore instantiates the finite covariance norm
+limit, including the exact six-camera matrix.
 
-No concrete resolvent-weight asymptotic, projection-valued measure, infinite
-camera completion or Weyl inverse is claimed by this milestone.  Positivity
-and normalization of the finite POVM do not imply idempotent spectral effects.
+No projection-valued measure, infinite camera completion or Weyl inverse is
+claimed by this milestone.  Positivity and normalization of the finite POVM
+do not imply idempotent spectral effects.
