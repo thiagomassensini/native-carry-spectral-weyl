@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.37 general moment-hierarchy registry. -/
+/-! Ordered foundational-dependency report for the v0.38 all-bases Gram-kernel registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -841,3 +841,41 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_eight
 #print axioms NativeCarrySpectralWeyl.Limits.sixCameraFunctionalMoment_eq
 #print axioms NativeCarrySpectralWeyl.Limits.sixCameraFunctionalMoment_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Infinite.cameraSlope_pos
+#print axioms NativeCarrySpectralWeyl.Infinite.two_le_cameraSlope
+#print axioms NativeCarrySpectralWeyl.Infinite.cameraSlope_eq_four_iff
+#print axioms NativeCarrySpectralWeyl.Infinite.camera_eq_of_slope_eq_of_ne_four
+#print axioms NativeCarrySpectralWeyl.Infinite.profile_zero_ne_zero
+#print axioms NativeCarrySpectralWeyl.Infinite.profile_two_at_two
+#print axioms NativeCarrySpectralWeyl.Infinite.profile_four_at_two
+#print axioms NativeCarrySpectralWeyl.Infinite.pairPeriod_pos
+#print axioms NativeCarrySpectralWeyl.Infinite.cameraSlope_dvd_pairPeriod_left
+#print axioms NativeCarrySpectralWeyl.Infinite.cameraSlope_dvd_pairPeriod_right
+#print axioms NativeCarrySpectralWeyl.Infinite.profileProduct_periodic
+#print axioms NativeCarrySpectralWeyl.Infinite.periodicProductSum_mul_pairPeriod
+#print axioms NativeCarrySpectralWeyl.Infinite.periodicProductMean_mul_pairPeriod
+#print axioms NativeCarrySpectralWeyl.Infinite.periodicProductMean_eq_pairPeriod
+#print axioms NativeCarrySpectralWeyl.Infinite.pairPeriod_comm
+#print axioms NativeCarrySpectralWeyl.Infinite.periodicMeanKernel_comm
+#print axioms NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_eq
+#print axioms NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_det
+#print axioms NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_eq_periodicMeanMatrix
+#print axioms NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_posDef
+#print axioms NativeCarrySpectralWeyl.Infinite.gramKernel_comm
+#print axioms NativeCarrySpectralWeyl.Infinite.finiteSupportPeriod_pos
+#print axioms NativeCarrySpectralWeyl.Infinite.cameraSlope_dvd_finiteSupportPeriod
+#print axioms NativeCarrySpectralWeyl.Infinite.pairPeriod_dvd_finiteSupportPeriod
+#print axioms NativeCarrySpectralWeyl.Infinite.gramKernel_eq_commonPeriod
+#print axioms NativeCarrySpectralWeyl.Infinite.finiteGramMatrix_eq_periodicGramMatrix
+#print axioms NativeCarrySpectralWeyl.Infinite.finiteGramMatrix_posSemidef
+#print axioms NativeCarrySpectralWeyl.Infinite.gramForm_comm
+#print axioms NativeCarrySpectralWeyl.Infinite.gramForm_self_eq_finiteGramMatrix
+#print axioms NativeCarrySpectralWeyl.Infinite.gramForm_nonneg
+#print axioms NativeCarrySpectralWeyl.Infinite.cameraSlope_le_finiteSlopeBound
+#print axioms NativeCarrySpectralWeyl.Infinite.finiteGramMatrix_quadratic_eq_sum_sq
+#print axioms NativeCarrySpectralWeyl.Infinite.exists_maximal_nonzero_slope
+#print axioms NativeCarrySpectralWeyl.Infinite.levelProfileCombination_max_ne_zero_of_slope_ne_four
+#print axioms NativeCarrySpectralWeyl.Infinite.levelProfileCombination_max_ne_zero_of_slope_four
+#print axioms NativeCarrySpectralWeyl.Infinite.finiteGramMatrix_posDef
+#print axioms NativeCarrySpectralWeyl.Infinite.gramForm_pos

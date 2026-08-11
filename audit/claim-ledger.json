@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.37.0",
-  "registry_count": 839,
-  "count": 49,
+  "release": "0.38.0",
+  "registry_count": 877,
+  "count": 50,
   "status_counts": {
-    "KERNEL_CHECKED": 49
+    "KERNEL_CHECKED": 50
   },
   "claims": [
     {
@@ -1187,6 +1187,51 @@
         "NCSW-837",
         "NCSW-838",
         "NCSW-839"
+      ]
+    },
+    {
+      "id": "NCSW-INF-001",
+      "claim": "The first countable all-bases camera layer is kernel checked. Camera labels b >= 2 form the countable index, each pairwise periodic mean is defined over the least common multiple of its slopes and is proved invariant under every larger positive common period, and every finite principal restriction is exactly the previously checked finite periodic Gram matrix. The exceptional duplicated slope four has exact C2/C4 periodic-mean block [[3/2,5/2],[5/2,11/2]], determinant 2 and positive definiteness. A level/residue sum-of-squares identity proves every finite principal all-bases Gram matrix strictly positive definite and the induced Gram form strictly positive on every nonzero Finsupp vector. This claim does not yet construct the Hilbert completion, an all-bases POVM or a Weyl inverse.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-840",
+        "NCSW-841",
+        "NCSW-842",
+        "NCSW-843",
+        "NCSW-844",
+        "NCSW-845",
+        "NCSW-846",
+        "NCSW-847",
+        "NCSW-848",
+        "NCSW-849",
+        "NCSW-850",
+        "NCSW-851",
+        "NCSW-852",
+        "NCSW-853",
+        "NCSW-854",
+        "NCSW-855",
+        "NCSW-856",
+        "NCSW-857",
+        "NCSW-858",
+        "NCSW-859",
+        "NCSW-860",
+        "NCSW-861",
+        "NCSW-862",
+        "NCSW-863",
+        "NCSW-864",
+        "NCSW-865",
+        "NCSW-866",
+        "NCSW-867",
+        "NCSW-868",
+        "NCSW-869",
+        "NCSW-870",
+        "NCSW-871",
+        "NCSW-872",
+        "NCSW-873",
+        "NCSW-874",
+        "NCSW-875",
+        "NCSW-876",
+        "NCSW-877"
       ]
     }
   ]

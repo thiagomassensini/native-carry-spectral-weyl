@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.37 it contains
-forty-nine `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.38 it contains
+fifty `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -25,6 +25,12 @@ The finite-Gram claim adds common-period product means, positivity of the
 slope-minimum and weighted Gram kernels for every finite camera family, and the
 exact positive-definite period-`420` matrix for cameras `2,...,7`, including
 its determinant `4_981_760`.
+The first all-bases claim defines the countable camera index and its canonical
+pair-period mean, proves that every positive larger common period gives the
+same value, identifies every finite principal restriction with the existing
+finite periodic Gram matrix, checks the exceptional C2/C4 mean block and its
+determinant `2`, and proves strict positivity of both every finite principal
+matrix and the induced Gram form on finitely supported coefficients.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.

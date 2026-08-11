@@ -38,6 +38,7 @@ import NativeCarrySpectralWeyl.Limits.SeventhFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarEighthFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.EighthFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.GeneralMomentHierarchy
+import NativeCarrySpectralWeyl.Infinite.GramKernel
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -176,7 +177,15 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     previously checked concrete matrices, while cameras `2,...,7` have one
     exact self-adjoint literal matrix in every degree.  This algebraic
     hierarchy does not by itself extend the analytic covariance limits beyond
-    degree eight.
+    degree eight.  Finally, the first all-bases layer defines the countable
+    camera index, evaluates each pairwise profile mean over the least common
+    multiple of its slopes, proves independence from every larger positive
+    common period, and recovers the old periodic Gram matrix on every finite
+    principal restriction.  Its exact level/residue sum-of-squares formula,
+    including the exceptional positive-definite C2/C4 slope-four block, proves
+    every finite principal Gram matrix positive definite and the induced
+    `Finsupp` Gram form strictly positive.  The Hilbert completion and its
+    operator-valued spectral layers remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl

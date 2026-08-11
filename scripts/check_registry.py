@@ -108,6 +108,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Limits."),
     (ROOT / "NativeCarrySpectralWeyl/Limits/GeneralMomentHierarchy.lean",
      "NativeCarrySpectralWeyl.Limits."),
+    (ROOT / "NativeCarrySpectralWeyl/Infinite/GramKernel.lean",
+     "NativeCarrySpectralWeyl.Infinite."),
 ]
 
 

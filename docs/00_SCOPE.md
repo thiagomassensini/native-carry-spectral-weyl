@@ -313,6 +313,18 @@ This is an algebraic hierarchy: scalar and covariance convergence remains
 proved only through degree eight.  Arbitrary-degree analytic convergence, the
 all-bases completion and the analytic transform remain outside this surface.
 
+The v0.38 surface starts the countable all-bases atlas without choosing an
+external camera weight.  For each pair of cameras it defines the periodic mean
+over the least common multiple of their slopes and proves independence from
+every larger positive common period.  Every finite principal restriction is
+exactly the earlier finite periodic Gram matrix.  A kernel-checked
+level/residue sum-of-squares identity proves strict positive definiteness; the
+only duplicated slope is four, where the exact C2/C4 periodic-mean block is
+`[[3/2,5/2],[5/2,11/2]]` with determinant `2`.  Consequently the induced Gram
+form is strictly positive on every nonzero `Finsupp` vector.  The Hilbert
+completion, Kolmogorov/Naimark realizations, Cauchy family and unbounded Weyl
+inverse remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the

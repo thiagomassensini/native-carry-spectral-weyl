@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.37.0",
-  "count": 839,
+  "release": "0.38.0",
+  "count": 877,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -4197,6 +4197,196 @@
       "id": "NCSW-839",
       "name": "sixCameraFunctionalMoment_isSelfAdjoint",
       "qualified": "NativeCarrySpectralWeyl.Limits.sixCameraFunctionalMoment_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-840",
+      "name": "cameraSlope_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraSlope_pos"
+    },
+    {
+      "id": "NCSW-841",
+      "name": "two_le_cameraSlope",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.two_le_cameraSlope"
+    },
+    {
+      "id": "NCSW-842",
+      "name": "cameraSlope_eq_four_iff",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraSlope_eq_four_iff"
+    },
+    {
+      "id": "NCSW-843",
+      "name": "camera_eq_of_slope_eq_of_ne_four",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.camera_eq_of_slope_eq_of_ne_four"
+    },
+    {
+      "id": "NCSW-844",
+      "name": "profile_zero_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.profile_zero_ne_zero"
+    },
+    {
+      "id": "NCSW-845",
+      "name": "profile_two_at_two",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.profile_two_at_two"
+    },
+    {
+      "id": "NCSW-846",
+      "name": "profile_four_at_two",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.profile_four_at_two"
+    },
+    {
+      "id": "NCSW-847",
+      "name": "pairPeriod_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.pairPeriod_pos"
+    },
+    {
+      "id": "NCSW-848",
+      "name": "cameraSlope_dvd_pairPeriod_left",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraSlope_dvd_pairPeriod_left"
+    },
+    {
+      "id": "NCSW-849",
+      "name": "cameraSlope_dvd_pairPeriod_right",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraSlope_dvd_pairPeriod_right"
+    },
+    {
+      "id": "NCSW-850",
+      "name": "profileProduct_periodic",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.profileProduct_periodic"
+    },
+    {
+      "id": "NCSW-851",
+      "name": "periodicProductSum_mul_pairPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicProductSum_mul_pairPeriod"
+    },
+    {
+      "id": "NCSW-852",
+      "name": "periodicProductMean_mul_pairPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicProductMean_mul_pairPeriod"
+    },
+    {
+      "id": "NCSW-853",
+      "name": "periodicProductMean_eq_pairPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicProductMean_eq_pairPeriod"
+    },
+    {
+      "id": "NCSW-854",
+      "name": "pairPeriod_comm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.pairPeriod_comm"
+    },
+    {
+      "id": "NCSW-855",
+      "name": "periodicMeanKernel_comm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanKernel_comm"
+    },
+    {
+      "id": "NCSW-856",
+      "name": "slopeFourPeriodicMeanMatrix_eq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_eq"
+    },
+    {
+      "id": "NCSW-857",
+      "name": "slopeFourPeriodicMeanMatrix_det",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_det"
+    },
+    {
+      "id": "NCSW-858",
+      "name": "slopeFourPeriodicMeanMatrix_eq_periodicMeanMatrix",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_eq_periodicMeanMatrix"
+    },
+    {
+      "id": "NCSW-859",
+      "name": "slopeFourPeriodicMeanMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-860",
+      "name": "slopeFourPeriodicMeanMatrix_posDef",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.slopeFourPeriodicMeanMatrix_posDef"
+    },
+    {
+      "id": "NCSW-861",
+      "name": "gramKernel_comm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramKernel_comm"
+    },
+    {
+      "id": "NCSW-862",
+      "name": "finiteSupportPeriod_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteSupportPeriod_pos"
+    },
+    {
+      "id": "NCSW-863",
+      "name": "cameraSlope_dvd_finiteSupportPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraSlope_dvd_finiteSupportPeriod"
+    },
+    {
+      "id": "NCSW-864",
+      "name": "pairPeriod_dvd_finiteSupportPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.pairPeriod_dvd_finiteSupportPeriod"
+    },
+    {
+      "id": "NCSW-865",
+      "name": "gramKernel_eq_commonPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramKernel_eq_commonPeriod"
+    },
+    {
+      "id": "NCSW-866",
+      "name": "finiteGramMatrix_eq_periodicGramMatrix",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteGramMatrix_eq_periodicGramMatrix"
+    },
+    {
+      "id": "NCSW-867",
+      "name": "finiteGramMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteGramMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-868",
+      "name": "gramForm_comm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_comm"
+    },
+    {
+      "id": "NCSW-869",
+      "name": "gramForm_self_eq_finiteGramMatrix",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_self_eq_finiteGramMatrix"
+    },
+    {
+      "id": "NCSW-870",
+      "name": "gramForm_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_nonneg"
+    },
+    {
+      "id": "NCSW-871",
+      "name": "cameraSlope_le_finiteSlopeBound",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraSlope_le_finiteSlopeBound"
+    },
+    {
+      "id": "NCSW-872",
+      "name": "finiteGramMatrix_quadratic_eq_sum_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteGramMatrix_quadratic_eq_sum_sq"
+    },
+    {
+      "id": "NCSW-873",
+      "name": "exists_maximal_nonzero_slope",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.exists_maximal_nonzero_slope"
+    },
+    {
+      "id": "NCSW-874",
+      "name": "levelProfileCombination_max_ne_zero_of_slope_ne_four",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.levelProfileCombination_max_ne_zero_of_slope_ne_four"
+    },
+    {
+      "id": "NCSW-875",
+      "name": "levelProfileCombination_max_ne_zero_of_slope_four",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.levelProfileCombination_max_ne_zero_of_slope_four"
+    },
+    {
+      "id": "NCSW-876",
+      "name": "finiteGramMatrix_posDef",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteGramMatrix_posDef"
+    },
+    {
+      "id": "NCSW-877",
+      "name": "gramForm_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_pos"
     }
   ]
 }

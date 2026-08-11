@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.37 general moment-hierarchy milestone contains **839 public
+The v0.38 all-bases Gram-kernel milestone contains **877 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -82,6 +82,16 @@ surface proves:
 - the exact period-`420` Gram matrix for cameras `2,...,7`, including its
   integer profile-product certificate, determinant `4_981_760`, and strict
   positive definiteness.
+- the countable index of every supported camera `b >= 2`, with canonical
+  pairwise period `lcm(ell_b,ell_c)` and a normalized product mean proved
+  invariant under every larger positive common period;
+- exact identification of every finite principal restriction of the
+  all-bases kernel with the earlier finite periodic Gram matrix;
+- the exact exceptional C2/C4 slope-four periodic-mean block
+  `[[3/2,5/2],[5/2,11/2]]`, determinant `2`, and positive definiteness;
+- a level/residue sum-of-squares identity proving every finite principal Gram
+  matrix positive definite and the induced `Finsupp` Gram form strictly
+  positive on every nonzero finitely supported coefficient vector.
 - a generic slope-weighted moment construction whose real matrices are
   Hermitian and self-adjoint for every finite camera package;
 - the exact first centered logarithmic moment
@@ -335,7 +345,10 @@ functional covariance limits are now kernel checked.  The next analytic gate
 is to lift the scalar and periodic-residue arguments to a degree-generic
 induction over the new polynomial hierarchy.  The algebraic all-degree targets
 are complete, but analytic convergence beyond degree eight is not yet claimed.
-The finite
+Independently, Phase 5 has passed its first all-bases gate: the canonical
+strictly positive Gram form exists on `Finsupp`.  Its next gate is the Hilbert
+completion in that intrinsic metric, not the standard unweighted camera
+`l2` space.  The finite
 normalized POVM is not upgraded to a projection-valued measure, and its Cauchy
 transform and the operator-valued Weyl family remain separate obligations.
 
@@ -374,7 +387,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 839 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 877 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
