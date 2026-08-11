@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.26 it contains
-thirty-eight `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.27 it contains
+thirty-nine `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -93,8 +93,15 @@ the unbounded weight `log(n+1)^3 w_z(n)`, whose periodic residue is
 residue and every fixed literal seed/endpoint boundary, obtaining the complete
 third centered moment in coefficient, direct-product and return-metric forms.
 Its six-camera target is exactly the complexification of
-`sixCameraThirdCenteredMoment`.  Moments of degree at least four remain
-explicit coefficient-covariance obligations.
+`sixCameraThirdCenteredMoment`.
+The fourth scalar-moment claim proves the exact quartic cutoff recurrence,
+shows that its squared-step quadratic, cubed-step linear and fourth-step mass
+corrections vanish, and sums the resulting little-o increment to obtain the
+raw limit
+`ell(log(ell)^4-4log(ell)^3+12log(ell)^2-24log(ell)+24)`.  Shifting from
+`log M` to `μ_M(z)` gives the documented centered limit
+`ell(log(ell)^4+6log(ell)^2-8log(ell)+9)`.  The quartic periodic residue and
+literal boundary are the next coefficient-covariance obligations.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

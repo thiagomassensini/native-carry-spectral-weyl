@@ -337,6 +337,32 @@ exact target is the complexification of `sixCameraThirdCenteredMoment`.
 Python validations remain provenance and cross-check material only; no
 sampled value or tolerance is a Lean premise.
 
+## v0.27 scalar fourth functional-moment trace
+
+`NativeCarrySpectralWeyl/Limits/ScalarFourthFunctionalMoment.lean` continues
+the exact discrete-moment recurrence.  With
+`d_M = log(M+1)-log M`, the change of the old quartic coordinate is
+
+`(x-d_M)^4-x^4 = -4d_M x^3 + 6d_M^2 x^2 - 4d_M^3 x + d_M^4`.
+
+The fixed-width endpoint block converges after division by `w_z(M)` to
+`ell log(ell)^4`.  The term with `d_M` is controlled by the v0.25 raw third
+moment.  The terms containing `d_M^2`, `d_M^3` and `d_M^4` are proved
+negligible by multiplying the already checked lower-degree endpoint limits by
+the vanishing logarithmic step.  Exact telescoping and little-o summation give
+
+`A_M^-1 sum_(n<ell*M) (log(n+1)-log M)^4 w_z(n)
+  -> ell(log(ell)^4-4log(ell)^3+12log(ell)^2-24log(ell)+24)`.
+
+Finally, expansion around `log M-μ_M(z) -> 1` and the raw moments of degrees
+zero through four yield
+
+`A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))^4 w_z(n)
+  -> ell(log(ell)^4+6log(ell)^2-8log(ell)+9)`.
+
+No sampled value, tolerance or unformalized integral approximation enters the
+Lean proof.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the

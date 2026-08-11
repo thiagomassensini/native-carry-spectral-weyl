@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.26 cubic functional-covariance milestone contains exactly **561** named
-public Lean theorems, ordered as `NCSW-001` through `NCSW-561` in
+The v0.27 scalar fourth-moment milestone contains exactly **571** named public
+Lean theorems, ordered as `NCSW-001` through `NCSW-571` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -46,5 +46,6 @@ report for every declaration.
 | `NCSW-498`–`NCSW-521` | `Limits/QuadraticFunctionalCovariance.lean` | log-squared periodic-residue and literal-boundary elimination, complete coefficient/direct/return-metric second-moment limits and exact six-camera target |
 | `NCSW-522`–`NCSW-530` | `Limits/ScalarThirdFunctionalMoment.lean` | exact cubic recurrence, raw third scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)³+3log(ℓ)-2)` |
 | `NCSW-531`–`NCSW-561` | `Limits/CubicFunctionalCovariance.lean` | discrete Abel control of the unbounded log-cubed periodic weight, cubic residue and literal-boundary elimination, complete coefficient/direct/return-metric third-moment limits and exact six-camera target |
+| `NCSW-562`–`NCSW-571` | `Limits/ScalarFourthFunctionalMoment.lean` | exact quartic recurrence, raw fourth scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)⁴+6log(ℓ)²-8log(ℓ)+9)` |
 
 The JSON registry is the machine-readable authority for exact qualified names.

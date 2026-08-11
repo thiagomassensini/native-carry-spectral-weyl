@@ -204,6 +204,19 @@ cameras `2,...,7`.  Scalar moments of degree at least four, the full
 arbitrary-polynomial limit and the analytic transform remain outside this
 surface.
 
+The v0.27 surface proves the fourth scalar weighted functional moment at
+every fixed positive natural cutoff multiplier `ell`.  The exact quartic
+increment uses the previously checked cubic, quadratic and linear logarithmic
+moments with binomial coefficients `-4`, `6` and `-4`; all terms beyond the
+logarithmic step times the cubic moment vanish at endpoint-weight scale.
+Little-o summation gives the `log M`-centered limit
+`ell(log(ell)^4-4log(ell)^3+12log(ell)^2-24log(ell)+24)`, and the
+logarithmic-mean asymptotic converts it to
+`ell(log(ell)^4+6log(ell)^2-8log(ell)+9)` in the documented `μ_M(z)`
+coordinate.  Elimination of the quartic periodic camera residue, the complete
+fourth coefficient covariance and all moments of degree at least five remain
+outside this surface.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:

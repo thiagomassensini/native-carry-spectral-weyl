@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.26.0",
-  "registry_count": 561,
-  "count": 38,
+  "release": "0.27.0",
+  "registry_count": 571,
+  "count": 39,
   "status_counts": {
-    "KERNEL_CHECKED": 38
+    "KERNEL_CHECKED": 39
   },
   "claims": [
     {
@@ -832,6 +832,23 @@
         "NCSW-559",
         "NCSW-560",
         "NCSW-561"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-013",
+      "claim": "For every fixed positive natural scale ell and nonreal z, the fourth scalar resolvent functional moment below ell M is kernel checked. The exact quartic recurrence decomposes its increment into the fourth-power endpoint block and the already proved cubic, quadratic and linear logarithmic moments with binomial coefficients -4, 6 and -4. Only the logarithmic step times the cubic moment contributes at endpoint-weight scale; the higher-step corrections vanish. Little-o summation gives the log-M-centered limit ell(log(ell)^4-4log(ell)^3+12log(ell)^2-24log(ell)+24), and log M-mu_M(z) -> 1 converts it to the weighted-mean-centered limit ell(log(ell)^4+6log(ell)^2-8log(ell)+9).",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-562",
+        "NCSW-563",
+        "NCSW-564",
+        "NCSW-565",
+        "NCSW-566",
+        "NCSW-567",
+        "NCSW-568",
+        "NCSW-569",
+        "NCSW-570",
+        "NCSW-571"
       ]
     }
   ]

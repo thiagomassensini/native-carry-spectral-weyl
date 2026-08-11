@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.26.0",
-  "count": 561,
+  "release": "0.27.0",
+  "count": 571,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -2807,6 +2807,56 @@
       "id": "NCSW-561",
       "name": "tendsto_norm_sixCamera_normalizedFiniteCenteredCubicReturnMetricCrossCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredCubicReturnMetricCrossCovariance_sub"
+    },
+    {
+      "id": "NCSW-562",
+      "name": "tendsto_resolventScaledLogFourthBoundary_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogFourthBoundary_div_weight"
+    },
+    {
+      "id": "NCSW-563",
+      "name": "tendsto_logStep_mul_resolventScaledLogCubeMoment_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_mul_resolventScaledLogCubeMoment_div_weight"
+    },
+    {
+      "id": "NCSW-564",
+      "name": "tendsto_logStep_sq_mul_resolventScaledLogSqMoment_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_sq_mul_resolventScaledLogSqMoment_div_weight_zero"
+    },
+    {
+      "id": "NCSW-565",
+      "name": "tendsto_logStep_cube_mul_resolventScaledLogMoment_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_cube_mul_resolventScaledLogMoment_div_weight_zero"
+    },
+    {
+      "id": "NCSW-566",
+      "name": "tendsto_logStep_fourth_mul_resolventMass_nat_mul_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_fourth_mul_resolventMass_nat_mul_div_weight_zero"
+    },
+    {
+      "id": "NCSW-567",
+      "name": "resolventScaledLogFourthMoment_succ",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventScaledLogFourthMoment_succ"
+    },
+    {
+      "id": "NCSW-568",
+      "name": "tendsto_resolventScaledLogFourthMomentIncrementError_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogFourthMomentIncrementError_div_weight_zero"
+    },
+    {
+      "id": "NCSW-569",
+      "name": "resolventScaledLogFourthMomentError_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventScaledLogFourthMomentError_eq"
+    },
+    {
+      "id": "NCSW-570",
+      "name": "tendsto_resolventScaledLogFourthMoment_div_mass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogFourthMoment_div_mass"
+    },
+    {
+      "id": "NCSW-571",
+      "name": "tendsto_resolventScaledCenteredLogFourthMoment_div_mass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledCenteredLogFourthMoment_div_mass"
     }
   ]
 }
