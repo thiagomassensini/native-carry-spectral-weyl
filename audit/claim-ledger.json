@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.25.0",
-  "registry_count": 530,
-  "count": 37,
+  "release": "0.26.0",
+  "registry_count": 561,
+  "count": 38,
   "status_counts": {
-    "KERNEL_CHECKED": 37
+    "KERNEL_CHECKED": 38
   },
   "claims": [
     {
@@ -794,6 +794,44 @@
         "NCSW-528",
         "NCSW-529",
         "NCSW-530"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-012",
+      "claim": "For every finite camera family with a common profile period and every nonreal z, the complete literal covariance with centered cubic multiplier (log(n+1)-mu_M(z))^3 converges entrywise and in finite matrix norm to the third centered camera moment K_ij = G_ij(log(min(ell_i,ell_j))^3+3log(min(ell_i,ell_j))-2). Discrete Abel summation controls the unbounded log-cubed resolvent weight, whose endpoint is only O(log M), and eliminates the zero-mean cubic periodic residue; every fixed seed and corrected endpoint boundary term also vanishes. The same limit holds for the direct functional matrix product and every compatible return-metric colligation family; cameras 2 through 7 converge to the exact complexification of sixCameraThirdCenteredMoment.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-531",
+        "NCSW-532",
+        "NCSW-533",
+        "NCSW-534",
+        "NCSW-535",
+        "NCSW-536",
+        "NCSW-537",
+        "NCSW-538",
+        "NCSW-539",
+        "NCSW-540",
+        "NCSW-541",
+        "NCSW-542",
+        "NCSW-543",
+        "NCSW-544",
+        "NCSW-545",
+        "NCSW-546",
+        "NCSW-547",
+        "NCSW-548",
+        "NCSW-549",
+        "NCSW-550",
+        "NCSW-551",
+        "NCSW-552",
+        "NCSW-553",
+        "NCSW-554",
+        "NCSW-555",
+        "NCSW-556",
+        "NCSW-557",
+        "NCSW-558",
+        "NCSW-559",
+        "NCSW-560",
+        "NCSW-561"
       ]
     }
   ]

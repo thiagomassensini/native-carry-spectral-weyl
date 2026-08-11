@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.25 it contains
-thirty-seven `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.26 it contains
+thirty-eight `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -81,15 +81,20 @@ The quadratic functional-covariance claim proves the required log-squared
 Dirichlet boundedness, eliminates the quadratic periodic residue and literal
 boundary, and obtains the complete second centered moment in coefficient,
 direct-product and return-metric forms.  Its six-camera target is exactly the
-complexification of `sixCameraSecondCenteredMoment`.  Moments of degree at
-least three remain explicit coefficient-covariance obligations.
+complexification of `sixCameraSecondCenteredMoment`.
 The third scalar-moment claim proves the exact cubic cutoff recurrence, shows
 that its squared-step first-moment and cubic-step mass corrections vanish,
 sums the resulting little-o increment and obtains the raw limit
 `ell(log(ell)^3-3log(ell)^2+6log(ell)-6)`.  Shifting from `log M` to `μ_M(z)`
-gives the documented centered limit `ell(log(ell)^3+3log(ell)-2)`.  The cubic
-periodic residue and literal boundary are the next coefficient-covariance
-obligations.
+gives the documented centered limit `ell(log(ell)^3+3log(ell)-2)`.
+The cubic functional-covariance claim then proves a discrete Abel estimate for
+the unbounded weight `log(n+1)^3 w_z(n)`, whose periodic residue is
+`O(log M)` and hence negligible relative to `A_M(z)`.  It eliminates that
+residue and every fixed literal seed/endpoint boundary, obtaining the complete
+third centered moment in coefficient, direct-product and return-metric forms.
+Its six-camera target is exactly the complexification of
+`sixCameraThirdCenteredMoment`.  Moments of degree at least four remain
+explicit coefficient-covariance obligations.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

@@ -26,6 +26,7 @@ import NativeCarrySpectralWeyl.Limits.LinearFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarSecondFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.QuadraticFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarThirdFunctionalMoment
+import NativeCarrySpectralWeyl.Limits.CubicFunctionalCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -96,6 +97,12 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     recurrence that
     `sum_(n<ℓM) (log(n+1)-μ_M(z))³w_z(n)/A_M →
     ℓ(log(ℓ)³+3log(ℓ)-2)`.
+    Finally, discrete Abel summation controls the unbounded log-cubed
+    periodic weight, the centered cubic residue and every fixed literal
+    boundary vanish after normalization, and the complete coefficient,
+    direct and compatible return-metric covariances converge to
+    `thirdCenteredMomentMatrix`, with exact six-camera target
+    `sixCameraThirdCenteredMoment`.
 -/
 
 namespace NativeCarrySpectralWeyl

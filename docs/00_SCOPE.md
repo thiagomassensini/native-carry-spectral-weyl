@@ -191,6 +191,19 @@ coordinate.  Elimination of the cubic periodic camera residue, the complete
 third coefficient covariance and all moments of degree at least four remain
 outside this surface.
 
+The v0.26 surface eliminates the zero-mean periodic camera residue and every
+fixed literal seed/corrected-endpoint boundary term for the centered cubic
+multiplier.  Because `log(n+1)^3 w_z(n)` is unbounded, the proof uses discrete
+Abel summation to bound its periodic weighted sum by the endpoint size
+`O(log M)` and then applies `log(M)/A_M(z) -> 0`.  The complete coefficient
+covariance therefore converges entrywise and in finite matrix norm to
+`K_bc = G_bc(log(min(ell_b,ell_c))^3 + 3log(min(ell_b,ell_c)) - 2)`; the
+direct functional product and every compatible return-metric colligation
+inherit the same limit, with exact target `sixCameraThirdCenteredMoment` for
+cameras `2,...,7`.  Scalar moments of degree at least four, the full
+arbitrary-polynomial limit and the analytic transform remain outside this
+surface.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:

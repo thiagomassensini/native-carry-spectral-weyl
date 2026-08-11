@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.25 scalar third-moment milestone contains **530 public kernel-checked
+The v0.26 cubic functional-covariance milestone contains **561 public kernel-checked
 Lean theorems**.  It builds against the exact Green Frame v2.1 commit and the
 exact finite native-carry operator commit.  The current public surface proves:
 
@@ -220,6 +220,18 @@ exact finite native-carry operator commit.  The current public surface proves:
 - the third weighted-mean-centered scalar functional limit
   `A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))^3 w_z(n) →
   ell(log(ell)^3+3log(ell)-2)`.
+- a discrete Abel summation bound for unbounded monotone periodic weights,
+  applied to `log(n+1)^3 w_z(n) = O(log n)` together with
+  `log(M)/A_M(z) → 0`;
+- elimination of the centered cubic zero-mean periodic residue and every
+  fixed literal seed/corrected-endpoint boundary term, giving convergence of
+  the complete coefficient covariance to
+  `K_bc = G_bc * (log(min(ell_b,ell_c))^3 +
+  3log(min(ell_b,ell_c)) - 2)`;
+- transfer of the third-moment limit to the direct functional matrix product
+  and every compatible return-metric colligation family, with cameras
+  `2,...,7` converging to the exact complexification of
+  `sixCameraThirdCenteredMoment`.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -228,10 +240,10 @@ the explicit identities `P_M E_M = B_M` and
 `E_MᴴE_M + B_MᴴB_M = I`.  Instantiating those matrices from an additional
 upstream Green model is therefore a separate integration step, not a hidden
 premise.  The logarithmic centering asymptotic, the first three scalar weighted
-moments at cutoffs `ell * M`, and the complete linear and quadratic functional
-covariance limits are now kernel checked.  The next analytic gate is the cubic
-periodic residue and literal boundary, followed by scalar moments of degree at
-least four and their periodic residues.  The finite
+moments at cutoffs `ell * M`, and the complete linear, quadratic and cubic
+functional covariance limits are now kernel checked.  The next analytic gate
+is the scalar moment of degree four and its periodic residue, followed by the
+arbitrary-polynomial coefficient-sum limit.  The finite
 normalized POVM is not upgraded to a projection-valued measure, and its Cauchy
 transform and the operator-valued Weyl family remain separate obligations.
 
@@ -270,7 +282,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 530 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 561 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

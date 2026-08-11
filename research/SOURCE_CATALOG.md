@@ -308,6 +308,35 @@ zero, one and two yields
 No sampled value, tolerance or unformalized Riemann-sum premise enters the
 Lean proof.
 
+## v0.26 cubic functional-covariance trace
+
+`NativeCarrySpectralWeyl/Limits/CubicFunctionalCovariance.lean` closes the
+third coefficient-sum gate isolated in the functional defect-probe notes.  It
+combines the v0.25 scalar limit with the exact camera-product decomposition
+into its one-period mean and a zero-mean periodic residue.
+
+The new analytic obstruction is that `log(n+1)^3 w_z(n)` no longer stays
+bounded: it grows like `log n`.  The Lean proof establishes a discrete Abel
+summation inequality for nonnegative monotone weights against zero-mean
+periodic sequences.  After proving eventual monotonicity of the concrete
+log-cubed resolvent weight, this bounds the residue by its endpoint size
+`O(log M)`.  The independently checked limit `log(M)/A_M(z) -> 0`, together
+with the lower-degree residue estimates, eliminates the full centered cubic
+periodic residue.
+
+Combining the periodic mean with the v0.25 scalar moment gives
+
+`K_bc = G_bc * (log(min(ell_b,ell_c))^3 +
+  3log(min(ell_b,ell_c)) - 2)`.
+
+Every fixed seed and corrected endpoint term vanishes for the cubic weight.
+Consequently the complete literal coefficient covariance, the direct
+functional matrix product and every compatible return-metric colligation
+family converge to `thirdCenteredMomentMatrix`.  For cameras `2,...,7`, the
+exact target is the complexification of `sixCameraThirdCenteredMoment`.
+Python validations remain provenance and cross-check material only; no
+sampled value or tolerance is a Lean premise.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the
