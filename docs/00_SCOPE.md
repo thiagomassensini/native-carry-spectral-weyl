@@ -126,6 +126,21 @@ numerical slope is used as a Lean premise.  Every higher fixed-order derivative
 tail is then proved from a uniform order-zero estimate on a Cauchy circle of
 radius `1 / log M`; no numerical derivative fit is used as a Lean premise.
 
+The v0.16--v0.18 surface proves the periodic, concrete-resolvent and literal
+finite-defect covariance limits.  The return-metric realization is universal
+over finite colligation families satisfying the displayed Poisson and
+Pythagorean identities; it does not claim that an additional upstream Green
+model has been instantiated inside this repository.
+
+The v0.19 surface adds the exact finite functional layer.  An arbitrary real
+spectral multiplier in one probe leg cancels through the return metric and is
+identified with the complete literal coefficient sum.  Every real polynomial
+in the finite centered logarithmic coordinate is included, and conditional
+transfer theorems reduce both matrix realizations to convergence of that sum.
+This surface does not claim the remaining asymptotic
+`μ_M(z) - log M -> -1`, the polynomial moment limit, locally uniform Cauchy
+transform convergence, or any operator-valued Weyl inverse.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:

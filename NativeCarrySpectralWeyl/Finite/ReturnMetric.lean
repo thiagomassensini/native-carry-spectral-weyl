@@ -42,6 +42,13 @@ def sourceProbe (camera : Matrix output spectral ℂ)
     (endpointMap : Matrix endpoint spectral ℂ) : Matrix output endpoint ℂ :=
   camera * resolvent * endpointMapᴴ
 
+/-- Functional defect readout with a spectral observable inserted before the
+resolvent.  Diagonal polynomial observables are the main application. -/
+def functionalSourceProbe (camera : Matrix output spectral ℂ)
+    (observable resolvent : Matrix spectral spectral ℂ)
+    (endpointMap : Matrix endpoint spectral ℂ) : Matrix output endpoint ℂ :=
+  camera * observable * resolvent * endpointMapᴴ
+
 /-- Covariance intrinsic to the dual endpoint return metric. -/
 def returnMetricCovariance (camera : Matrix output spectral ℂ)
     (resolvent : Matrix spectral spectral ℂ)
@@ -50,10 +57,27 @@ def returnMetricCovariance (camera : Matrix output spectral ℂ)
   sourceProbe camera resolvent endpointMap * returnMetric poisson *
     (sourceProbe camera resolvent endpointMap)ᴴ
 
+/-- Cross covariance between a functional probe and the unmodified source
+probe in the endpoint return metric. -/
+def functionalReturnMetricCrossCovariance
+    (camera : Matrix output spectral ℂ)
+    (observable resolvent : Matrix spectral spectral ℂ)
+    (endpointMap : Matrix endpoint spectral ℂ)
+    (poisson : Matrix bulk endpoint ℂ) : Matrix output output ℂ :=
+  functionalSourceProbe camera observable resolvent endpointMap *
+    returnMetric poisson * (sourceProbe camera resolvent endpointMap)ᴴ
+
 /-- Direct weighted camera covariance after the endpoint/bulk cancellation. -/
 def directResolventCovariance (camera : Matrix output spectral ℂ)
     (resolvent : Matrix spectral spectral ℂ) : Matrix output output ℂ :=
   camera * resolvent * resolventᴴ * cameraᴴ
+
+/-- Direct functional camera covariance after return-metric cancellation. -/
+def directFunctionalResolventCovariance
+    (camera : Matrix output spectral ℂ)
+    (observable resolvent : Matrix spectral spectral ℂ) :
+    Matrix output output ℂ :=
+  camera * observable * resolvent * resolventᴴ * cameraᴴ
 
 omit [Fintype spectral] in
 /-- Exact Pythagorean conservation in the endpoint return metric. -/

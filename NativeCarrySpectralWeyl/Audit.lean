@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.18 finite-defect-limit registry. -/
+/-! Ordered foundational-dependency report for the v0.19 finite-functional registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -444,3 +444,15 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Limits.complexPeriodicGramMatrix_sixCamera
 #print axioms NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteDirectCovariance_sub
 #print axioms NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteReturnMetricCovariance_sub
+#print axioms NativeCarrySpectralWeyl.Finite.functionalSourceProbe_one
+#print axioms NativeCarrySpectralWeyl.Finite.functionalReturnMetricCrossCovariance_one
+#print axioms NativeCarrySpectralWeyl.Finite.directFunctionalResolventCovariance_one
+#print axioms NativeCarrySpectralWeyl.Finite.functionalReturnMetricCrossCovariance_eq_direct
+#print axioms NativeCarrySpectralWeyl.Limits.normalizedFiniteFunctionalDirectCovariance_eq_coefficients
+#print axioms NativeCarrySpectralWeyl.Limits.normalizedFiniteFunctionalReturnMetricCrossCovariance_eq_coefficients
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteFunctionalDirectCovariance_of_coefficients
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteFunctionalReturnMetricCrossCovariance_of_coefficients
+#print axioms NativeCarrySpectralWeyl.Limits.normalizedFiniteCenteredPolynomialReturnMetricCrossCovariance_eq
+#print axioms NativeCarrySpectralWeyl.Limits.finiteFunctionalCoefficientCovariance_one
+#print axioms NativeCarrySpectralWeyl.Limits.centeredPolynomialMultiplier_one
+#print axioms NativeCarrySpectralWeyl.Limits.finiteCenteredPolynomialCoefficientCovariance_one

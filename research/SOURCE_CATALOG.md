@@ -17,6 +17,8 @@ design the plan.
 | `UNICIDADE_LIMITE_COVARIANCIA_DEFECT_PROBES.md` | `5a5e7024f3093aacc6aa6d37a8c22cf7f5f5c05a069bfbb0a4fa34b06d5947fc` | Return-metric covariance limit |
 | `OPERADOR_ESPECTRAL_CAMERAS_DEFECT_WEYL.md` | `07a8ec4ac6446f0cb422734e2f4a8a4354825f9752847c47490e08e5451f0783` | Finite spectral pair |
 | `CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md` | `c439ab475e6fcfcd67295114277193d793384dae01572c8582aa318bc8453545` | Functional moment limit |
+| `native_carry_defect_functional_limit_lab.py` | `859878929df216075c1dd934cf8c588a279eeb9c891febbd606e4ed43a004c8e` | Finite functional covariance and polynomial-limit laboratory |
+| `defect_functional_limit_audit.json` | `2f5ab8683fd000791aef646ea1d9c66175c611b23886cc665d7331789100ef87` | Numerical audit emitted by the functional-limit laboratory |
 | `TRANSFORMADA_CAUCHY_STIELTJES_POVM_E_WEYL_CAMERAS.md` | `23b468dec2322bcfbb8d2dbb96a9528bc3a5b2aa18d86b5dc3a7cd8cecaf679f` | Finite Cauchy/Weyl construction |
 | `native_carry_camera_second_centered_moment_lab.py` | `d13feb6c04ff58d8660f85a5547d901c33ed091c8d6d31d879278382c95c2f9c` | Recovered second-moment and finite POVM laboratory |
 | `native_carry_defect_return_metric_covariance_limit_lab.py` | `ba0803715a0de5e3ff3fae63eefae6878573f3f9d6c8aef36aa138ed57a2bd1f` | Literal finite covariance and return-metric limit laboratory |
@@ -129,3 +131,28 @@ yielding the entrywise and finite-matrix norm limit and its exact six-camera
 specialization.
 Python output is provenance and cross-check material only; none of its numeric
 assertions is a Lean premise.
+
+## v0.19 finite-functional covariance trace
+
+`NativeCarrySpectralWeyl/Finite/FunctionalReturnMetric.lean` and
+`NativeCarrySpectralWeyl/Limits/FiniteFunctionalCovariance.lean` formalize the
+exact finite algebra isolated in `CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md`
+and cross-checked by `native_carry_defect_functional_limit_lab.py` plus its
+JSON audit.
+
+For an arbitrary real multiplier `f_M(n)`, Lean proves
+
+`U_M[f] G_E S_M* = C_M diag(f_M) R_M R_M* C_M*`
+
+and identifies every matrix entry with the complete normalized literal
+coefficient sum.  This includes finite seeds and the corrected even-camera
+endpoint because it reuses the common-window camera matrix from v0.18.  The
+specialization `f_M(n) = p(log(n+1) - μ_M(z))` is defined for every real
+polynomial `p`, and `p = 1` is proved to recover the order-zero covariance.
+
+The two convergence-transfer theorems are deliberately conditional only on
+the literal coefficient sums.  Thus the remaining analytic input is visible:
+prove `μ_M(z) - log M -> -1` and the centered polynomial coefficient-sum
+limit.  The numerical audit reports the finite identity to floating-point
+precision, but no numerical row, tolerance or asserted asymptotic is used as
+a Lean premise.

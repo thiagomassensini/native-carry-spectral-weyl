@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.18.0",
-  "registry_count": 442,
-  "count": 30,
+  "release": "0.19.0",
+  "registry_count": 454,
+  "count": 31,
   "status_counts": {
-    "KERNEL_CHECKED": 30
+    "KERNEL_CHECKED": 31
   },
   "claims": [
     {
@@ -657,6 +657,25 @@
         "NCSW-440",
         "NCSW-441",
         "NCSW-442"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-005",
+      "claim": "For every real spectral multiplier and every compatible finite return-metric colligation, the functional cross covariance cancels exactly to the direct observable-resolvent covariance and equals the complete literal finite coefficient sum. This specializes to every real polynomial evaluated at log(n+1) minus the finite resolvent-weighted logarithmic mean; the constant polynomial recovers the order-zero covariance. Any limit proved for the literal functional coefficient sums transfers automatically to both the direct matrix product and the return-metric colligation family.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-443",
+        "NCSW-444",
+        "NCSW-445",
+        "NCSW-446",
+        "NCSW-447",
+        "NCSW-448",
+        "NCSW-449",
+        "NCSW-450",
+        "NCSW-451",
+        "NCSW-452",
+        "NCSW-453",
+        "NCSW-454"
       ]
     }
   ]

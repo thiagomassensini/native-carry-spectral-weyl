@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.18 finite-defect-covariance milestone:
+Kernel checked through the v0.19 finite-functional-covariance milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -452,13 +452,30 @@ Kernel checked through the v0.18 finite-defect-covariance milestone:
   product and every cutoff-indexed compatible finite colligation family;
 - specialization to cameras `2,...,7`, with target the exact complexification
   of `sixCameraGram`.
+- insertion of an arbitrary spectral observable in one defect-probe leg and
+  exact cancellation of the return-metric cross covariance to the direct
+  observable-resolvent covariance;
+- exact equality of the normalized functional matrix product with the complete
+  literal finite coefficient sum for every real multiplier;
+- specialization to every real polynomial in
+  `log(n+1) - μ_M(z)`, with the finite resolvent-weighted logarithmic center
+  `μ_M(z)` defined explicitly and the constant polynomial proved to recover
+  the order-zero covariance;
+- convergence-transfer theorems reducing both the direct functional matrix
+  product and every compatible return-metric colligation family to the same
+  literal coefficient-sum limit.
 
-The next Phase 4 target is convergence of polynomial functional moments,
-followed by locally uniform Cauchy-transform convergence off the real axis.
+The exact finite polynomial layer is complete.  The next Phase 4 target is the
+analytic coefficient-sum theorem: first prove
+`μ_M(z) - log M -> -1`, then prove convergence of every centered polynomial
+coefficient covariance to the corresponding polynomial moment of the
+centered-log step POVM.  The transfer theorems already lift that result to the
+direct and return-metric formulations.  Locally uniform Cauchy-transform
+convergence off the real axis follows afterward.
 
 Targets:
 
-- polynomial functional moments;
+- centered logarithmic-mean asymptotic and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 
 The Green v2.1 strong Parseval and finite-Poisson limits may be reused through

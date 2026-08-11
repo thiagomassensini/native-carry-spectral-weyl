@@ -68,6 +68,10 @@ MODULES = [
      "NativeCarrySpectralWeyl.Finite."),
     (ROOT / "NativeCarrySpectralWeyl/Limits/FiniteDefectCovariance.lean",
      "NativeCarrySpectralWeyl.Limits."),
+    (ROOT / "NativeCarrySpectralWeyl/Finite/FunctionalReturnMetric.lean",
+     "NativeCarrySpectralWeyl.Finite."),
+    (ROOT / "NativeCarrySpectralWeyl/Limits/FiniteFunctionalCovariance.lean",
+     "NativeCarrySpectralWeyl.Limits."),
 ]
 
 

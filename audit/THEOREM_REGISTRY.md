@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.18 finite-defect-covariance milestone contains exactly **442** named public Lean
-theorems, ordered as `NCSW-001` through `NCSW-442` in
+The v0.19 finite-functional-covariance milestone contains exactly **454** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-454` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -37,5 +37,7 @@ report for every declaration.
 | `NCSW-382`–`NCSW-404` | `Limits/ResolventWeight.lean` | concrete resolvent-weight decay and eventual monotonicity, mass divergence, `M/log(M+1)^2` asymptotic, regular variation and concrete covariance limits |
 | `NCSW-405`–`NCSW-406` | `Finite/ReturnMetric.lean` | exact endpoint return-metric isometry and source-probe covariance cancellation |
 | `NCSW-407`–`NCSW-442` | `Limits/FiniteDefectCovariance.lean` | literal finite supports and endpoints, common-window camera/resolvent matrices, core-boundary decomposition, boundary vanishing and exact return-metric six-camera norm limit |
+| `NCSW-443`–`NCSW-446` | `Finite/FunctionalReturnMetric.lean` | constant-observable compatibility and exact arbitrary-observable return-metric cross-covariance cancellation |
+| `NCSW-447`–`NCSW-454` | `Limits/FiniteFunctionalCovariance.lean` | literal functional coefficient identity, centered-polynomial specialization, order-zero compatibility and conditional limit transfer |
 
 The JSON registry is the machine-readable authority for exact qualified names.

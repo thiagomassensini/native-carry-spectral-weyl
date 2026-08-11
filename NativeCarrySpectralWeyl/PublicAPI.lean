@@ -14,10 +14,12 @@ import NativeCarrySpectralWeyl.Finite.Whitening
 import NativeCarrySpectralWeyl.Finite.StepDensity
 import NativeCarrySpectralWeyl.Finite.StepPOVM
 import NativeCarrySpectralWeyl.Finite.ReturnMetric
+import NativeCarrySpectralWeyl.Finite.FunctionalReturnMetric
 import NativeCarrySpectralWeyl.Limits.PeriodicMean
 import NativeCarrySpectralWeyl.Limits.CameraCovariance
 import NativeCarrySpectralWeyl.Limits.ResolventWeight
 import NativeCarrySpectralWeyl.Limits.FiniteDefectCovariance
+import NativeCarrySpectralWeyl.Limits.FiniteFunctionalCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -60,7 +62,13 @@ literal finite camera stencils—including the corrected even endpoint—are
 realized as a common-window camera matrix.  The endpoint return metric cancels
 exactly under `P E = B` and `Eᴴ E + Bᴴ B = I`, and the resulting normalized
 finite defect covariance converges in matrix norm to the exact six-camera
-Gram.
+Gram.  The functional extension inserts an arbitrary spectral observable in
+one probe leg, proves exact return-metric cancellation to the complete literal
+coefficient sum, and specializes this identity to every real polynomial in
+the finite centered logarithmic coordinate.  Any limit of those coefficient
+sums transfers automatically to both the direct matrix product and every
+compatible finite colligation family; proving the polynomial coefficient-sum
+limit itself remains the next analytic obligation.
 -/
 
 namespace NativeCarrySpectralWeyl

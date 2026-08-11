@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.18.0",
-  "count": 442,
+  "release": "0.19.0",
+  "count": 454,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -2212,6 +2212,66 @@
       "id": "NCSW-442",
       "name": "tendsto_norm_sixCamera_normalizedFiniteReturnMetricCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteReturnMetricCovariance_sub"
+    },
+    {
+      "id": "NCSW-443",
+      "name": "functionalSourceProbe_one",
+      "qualified": "NativeCarrySpectralWeyl.Finite.functionalSourceProbe_one"
+    },
+    {
+      "id": "NCSW-444",
+      "name": "functionalReturnMetricCrossCovariance_one",
+      "qualified": "NativeCarrySpectralWeyl.Finite.functionalReturnMetricCrossCovariance_one"
+    },
+    {
+      "id": "NCSW-445",
+      "name": "directFunctionalResolventCovariance_one",
+      "qualified": "NativeCarrySpectralWeyl.Finite.directFunctionalResolventCovariance_one"
+    },
+    {
+      "id": "NCSW-446",
+      "name": "functionalReturnMetricCrossCovariance_eq_direct",
+      "qualified": "NativeCarrySpectralWeyl.Finite.functionalReturnMetricCrossCovariance_eq_direct"
+    },
+    {
+      "id": "NCSW-447",
+      "name": "normalizedFiniteFunctionalDirectCovariance_eq_coefficients",
+      "qualified": "NativeCarrySpectralWeyl.Limits.normalizedFiniteFunctionalDirectCovariance_eq_coefficients"
+    },
+    {
+      "id": "NCSW-448",
+      "name": "normalizedFiniteFunctionalReturnMetricCrossCovariance_eq_coefficients",
+      "qualified": "NativeCarrySpectralWeyl.Limits.normalizedFiniteFunctionalReturnMetricCrossCovariance_eq_coefficients"
+    },
+    {
+      "id": "NCSW-449",
+      "name": "tendsto_normalizedFiniteFunctionalDirectCovariance_of_coefficients",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteFunctionalDirectCovariance_of_coefficients"
+    },
+    {
+      "id": "NCSW-450",
+      "name": "tendsto_normalizedFiniteFunctionalReturnMetricCrossCovariance_of_coefficients",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteFunctionalReturnMetricCrossCovariance_of_coefficients"
+    },
+    {
+      "id": "NCSW-451",
+      "name": "normalizedFiniteCenteredPolynomialReturnMetricCrossCovariance_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.normalizedFiniteCenteredPolynomialReturnMetricCrossCovariance_eq"
+    },
+    {
+      "id": "NCSW-452",
+      "name": "finiteFunctionalCoefficientCovariance_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteFunctionalCoefficientCovariance_one"
+    },
+    {
+      "id": "NCSW-453",
+      "name": "centeredPolynomialMultiplier_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.centeredPolynomialMultiplier_one"
+    },
+    {
+      "id": "NCSW-454",
+      "name": "finiteCenteredPolynomialCoefficientCovariance_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCenteredPolynomialCoefficientCovariance_one"
     }
   ]
 }

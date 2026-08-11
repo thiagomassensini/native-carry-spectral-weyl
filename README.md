@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.18 finite-defect-covariance milestone contains **442 public kernel-checked Lean
+The v0.19 finite-functional-covariance milestone contains **454 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -156,17 +156,30 @@ finite native-carry operator commit.  The current public surface proves:
 - entrywise and matrix-norm convergence of the literal finite covariance, the
   direct matrix product and every compatible return-metric colligation family,
   including the exact complexified six-camera limit `sixCameraGram`.
+- exact cancellation of the return-metric cross covariance after inserting an
+  arbitrary spectral observable in one probe leg, with no commutation or
+  polynomial hypothesis;
+- exact identification of every real functional multiplier with its complete
+  literal finite coefficient sum, including all finite seeds and corrected
+  even-camera endpoints;
+- specialization to every real polynomial evaluated at
+  `log(n+1) - μ_M(z)`, where `μ_M(z)` is the finite resolvent-weighted
+  logarithmic mean, and exact recovery of the order-zero covariance for the
+  constant polynomial;
+- transfer of any proved coefficient-sum limit to both the direct functional
+  matrix product and every compatible return-metric colligation family.
 
-The finite seed/endpoint bridge and return-metric covariance passage left open
-in v0.17 are now kernel checked.  The camera/resolvent construction is fully
-concrete; the return-metric theorem is parametrized by a finite colligation
-family satisfying the explicit identities `P_M E_M = B_M` and
+The finite functional algebra is now kernel checked through arbitrary real
+polynomials.  The camera/resolvent construction is fully concrete; the
+return-metric theorem is parametrized by a finite colligation family satisfying
+the explicit identities `P_M E_M = B_M` and
 `E_MᴴE_M + B_MᴴB_M = I`.  Instantiating those matrices from an additional
 upstream Green model is therefore a separate integration step, not a hidden
-premise.  The next analytic target is convergence of polynomial functional
-moments.  The finite normalized POVM is not upgraded to a projection-valued
-measure, and its Cauchy transform and the operator-valued Weyl family remain
-separate obligations.
+premise.  The remaining analytic gate for the actual polynomial functional
+limit is convergence of the centered literal coefficient sums, including the
+asymptotic `μ_M(z) - log M -> -1`.  The finite normalized POVM is not upgraded
+to a projection-valued measure, and its Cauchy transform and the
+operator-valued Weyl family remain separate obligations.
 
 Pinned foundations:
 
@@ -203,7 +216,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 442 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 454 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
