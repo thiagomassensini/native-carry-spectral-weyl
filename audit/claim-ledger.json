@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.36.0",
-  "registry_count": 803,
-  "count": 48,
+  "release": "0.37.0",
+  "registry_count": 839,
+  "count": 49,
   "status_counts": {
-    "KERNEL_CHECKED": 48
+    "KERNEL_CHECKED": 49
   },
   "claims": [
     {
@@ -1144,6 +1144,49 @@
         "NCSW-801",
         "NCSW-802",
         "NCSW-803"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-023",
+      "claim": "The algebraic functional-moment target is kernel checked in every natural degree. The polynomial family P_0=1 and P_k=(1+X)^k-k P_(k-1) is defined once in Polynomial R, and every P_k is proved monic with natural degree exactly k. For every finite camera family the general matrix has entries G_ij P_k(log(min(ell_i,ell_j))) and is Hermitian and self-adjoint. Degrees zero through eight are proved equal to the previously checked concrete moment matrices, and cameras 2 through 7 admit one exact literal self-adjoint matrix for every degree. This claim is algebraic and does not assert scalar or covariance convergence beyond degree eight.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-804",
+        "NCSW-805",
+        "NCSW-806",
+        "NCSW-807",
+        "NCSW-808",
+        "NCSW-809",
+        "NCSW-810",
+        "NCSW-811",
+        "NCSW-812",
+        "NCSW-813",
+        "NCSW-814",
+        "NCSW-815",
+        "NCSW-816",
+        "NCSW-817",
+        "NCSW-818",
+        "NCSW-819",
+        "NCSW-820",
+        "NCSW-821",
+        "NCSW-822",
+        "NCSW-823",
+        "NCSW-824",
+        "NCSW-825",
+        "NCSW-826",
+        "NCSW-827",
+        "NCSW-828",
+        "NCSW-829",
+        "NCSW-830",
+        "NCSW-831",
+        "NCSW-832",
+        "NCSW-833",
+        "NCSW-834",
+        "NCSW-835",
+        "NCSW-836",
+        "NCSW-837",
+        "NCSW-838",
+        "NCSW-839"
       ]
     }
   ]

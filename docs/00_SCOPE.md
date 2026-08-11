@@ -301,6 +301,18 @@ target `sixCameraEighthCenteredMoment` for cameras `2,...,7`.  Scalar moments
 of degree at least nine, the full arbitrary-polynomial limit and the analytic
 transform remain outside this surface.
 
+The v0.37 surface replaces the finite list of algebraic moment targets by the
+single polynomial hierarchy `P_0=1`, `P_k=(1+X)^k-kP_(k-1)`.  Every `P_k` is
+proved monic of natural degree exactly `k`, and the general finite-camera
+matrix has the kernel-checked entry formula
+`M_k(b,c)=G_bc P_k(log(min(ell_b,ell_c)))`.  It is Hermitian and self-adjoint
+for every finite camera family.  Degrees zero through eight recover the
+existing concrete matrices definitionally through proved bridge theorems, and
+cameras `2,...,7` have one exact literal self-adjoint matrix in every degree.
+This is an algebraic hierarchy: scalar and covariance convergence remains
+proved only through degree eight.  Arbitrary-degree analytic convergence, the
+all-bases completion and the analytic transform remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the

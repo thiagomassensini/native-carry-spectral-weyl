@@ -37,6 +37,7 @@ import NativeCarrySpectralWeyl.Limits.ScalarSeventhFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.SeventhFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarEighthFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.EighthFunctionalCovariance
+import NativeCarrySpectralWeyl.Limits.GeneralMomentHierarchy
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -168,6 +169,14 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     compatible return-metric covariances converge to
     `eighthCenteredMomentMatrix`, with exact six-camera target
     `sixCameraEighthCenteredMoment`.
+    The general moment hierarchy then defines a single polynomial family
+    `P₀ = 1`, `Pₖ = (1+X)ᵏ-kPₖ₋₁`, proves that `Pₖ` is monic of degree `k`,
+    and packages every algebraic camera target as
+    `G(i,j)Pₖ(log(ell(i,j)))`.  Degrees zero through eight recover the
+    previously checked concrete matrices, while cameras `2,...,7` have one
+    exact self-adjoint literal matrix in every degree.  This algebraic
+    hierarchy does not by itself extend the analytic covariance limits beyond
+    degree eight.
 -/
 
 namespace NativeCarrySpectralWeyl

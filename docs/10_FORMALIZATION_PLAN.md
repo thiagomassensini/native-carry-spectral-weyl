@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.36 eighth functional-covariance milestone:
+Kernel checked through the v0.37 general moment-hierarchy milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -623,18 +623,27 @@ Kernel checked through the v0.36 eighth functional-covariance milestone:
   target `sixCameraEighthCenteredMoment` for cameras `2,...,7`;
 - transfer of the same eighth-moment limit to the direct functional matrix
   product and every compatible return-metric colligation family.
+- the single polynomial recurrence `P_0=1`, `P_k=(1+X)^k-kP_(k-1)` for all
+  natural degrees, with `P_k` monic of natural degree exactly `k`;
+- the general algebraic camera target
+  `M_k(i,j)=G(i,j)P_k(log(min(ell_i,ell_j)))`, Hermitian and self-adjoint for
+  every finite camera family;
+- exact bridges recovering degrees zero through eight and an exact literal
+  self-adjoint moment matrix for cameras `2,...,7` in every degree.
 
 The exact finite polynomial layer, logarithmic centering asymptotic, first
 eight scalar centered moments and complete linear through eighth-power
 functional covariance limits are complete.  The next Phase 4 target is to
-iterate the scalar recurrence from degree nine and continue toward every
-polynomial moment.  The existing transfer theorems lift those coefficient-sum
-results to the direct and return-metric formulations.  Locally uniform
+lift the scalar recurrence, Abel estimates and periodic-residue elimination to
+a degree-generic induction over `functionalMomentPolynomial`.  The algebraic
+targets exist in every degree, while analytic convergence remains checked
+through degree eight.  The existing transfer theorems lift future generic
+coefficient-sum results to the direct and return-metric formulations.  Locally uniform
 Cauchy-transform convergence off the real axis follows afterward.
 
 Targets:
 
-- scalar moments of degree at least nine and polynomial coefficient-sum limits;
+- degree-generic scalar and covariance limits for the moment hierarchy;
 - locally uniform Cauchy-transform convergence off the real axis.
 
 The Green v2.1 strong Parseval and finite-Poisson limits may be reused through

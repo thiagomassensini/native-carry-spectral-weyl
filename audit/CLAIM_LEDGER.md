@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.36 it contains
-forty-eight `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.37 it contains
+forty-nine `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -158,6 +158,12 @@ weight and closes the five critical mixed terms `μ_M log^7`, `μ_M^2 log^6`,
 `μ_M^3 log^5`, `μ_M^4 log^4` and `μ_M^5 log^3`.  The complete eighth
 covariance follows in coefficient, direct-product and return-metric forms,
 with exact six-camera target `sixCameraEighthCenteredMoment`.
+The general moment-hierarchy claim packages the documented recurrence
+`P_0=1`, `P_k=(1+X)^k-kP_(k-1)` for every natural degree, proves that `P_k` is
+monic of degree `k`, and defines the self-adjoint algebraic camera target
+`G_bc P_k(log(ell_bc))`.  It recovers all concrete targets through degree
+eight and gives one exact literal six-camera matrix in every degree.  It does
+not promote the degree-at-most-eight analytic limits to arbitrary degree.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.36 eighth functional-covariance registry. -/
+/-! Ordered foundational-dependency report for the v0.37 general moment-hierarchy registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -805,3 +805,39 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Limits.complexEighthCenteredMomentMatrix_sixCamera
 #print axioms NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredEighthDirectCovariance_sub
 #print axioms NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredEighthReturnMetricCrossCovariance_sub
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_zero
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_succ
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_isMonicOfDegree
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_monic
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_natDegree
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_one
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_two
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_three
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_four
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_five
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_six
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_seven
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_eight
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_succ
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_apply
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_isHermitian
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_zero
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_one
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_two
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_three
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_four
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_five
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_six
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_seven
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentWeight_eight
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_one
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_two
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_three
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_four
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_five
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_six
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_seven
+#print axioms NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_eight
+#print axioms NativeCarrySpectralWeyl.Limits.sixCameraFunctionalMoment_eq
+#print axioms NativeCarrySpectralWeyl.Limits.sixCameraFunctionalMoment_isSelfAdjoint

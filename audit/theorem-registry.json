@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.36.0",
-  "count": 803,
+  "release": "0.37.0",
+  "count": 839,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -4017,6 +4017,186 @@
       "id": "NCSW-803",
       "name": "tendsto_norm_sixCamera_normalizedFiniteCenteredEighthReturnMetricCrossCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredEighthReturnMetricCrossCovariance_sub"
+    },
+    {
+      "id": "NCSW-804",
+      "name": "functionalMomentPolynomial_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_zero"
+    },
+    {
+      "id": "NCSW-805",
+      "name": "functionalMomentPolynomial_succ",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_succ"
+    },
+    {
+      "id": "NCSW-806",
+      "name": "functionalMomentPolynomial_isMonicOfDegree",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_isMonicOfDegree"
+    },
+    {
+      "id": "NCSW-807",
+      "name": "functionalMomentPolynomial_monic",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_monic"
+    },
+    {
+      "id": "NCSW-808",
+      "name": "functionalMomentPolynomial_natDegree",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_natDegree"
+    },
+    {
+      "id": "NCSW-809",
+      "name": "functionalMomentPolynomial_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_one"
+    },
+    {
+      "id": "NCSW-810",
+      "name": "functionalMomentPolynomial_two",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_two"
+    },
+    {
+      "id": "NCSW-811",
+      "name": "functionalMomentPolynomial_three",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_three"
+    },
+    {
+      "id": "NCSW-812",
+      "name": "functionalMomentPolynomial_four",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_four"
+    },
+    {
+      "id": "NCSW-813",
+      "name": "functionalMomentPolynomial_five",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_five"
+    },
+    {
+      "id": "NCSW-814",
+      "name": "functionalMomentPolynomial_six",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_six"
+    },
+    {
+      "id": "NCSW-815",
+      "name": "functionalMomentPolynomial_seven",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_seven"
+    },
+    {
+      "id": "NCSW-816",
+      "name": "functionalMomentPolynomial_eight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentPolynomial_eight"
+    },
+    {
+      "id": "NCSW-817",
+      "name": "functionalMomentWeight_succ",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_succ"
+    },
+    {
+      "id": "NCSW-818",
+      "name": "functionalMomentMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_apply"
+    },
+    {
+      "id": "NCSW-819",
+      "name": "functionalMomentMatrix_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_isHermitian"
+    },
+    {
+      "id": "NCSW-820",
+      "name": "functionalMomentMatrix_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-821",
+      "name": "functionalMomentMatrix_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_zero"
+    },
+    {
+      "id": "NCSW-822",
+      "name": "functionalMomentWeight_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_one"
+    },
+    {
+      "id": "NCSW-823",
+      "name": "functionalMomentWeight_two",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_two"
+    },
+    {
+      "id": "NCSW-824",
+      "name": "functionalMomentWeight_three",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_three"
+    },
+    {
+      "id": "NCSW-825",
+      "name": "functionalMomentWeight_four",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_four"
+    },
+    {
+      "id": "NCSW-826",
+      "name": "functionalMomentWeight_five",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_five"
+    },
+    {
+      "id": "NCSW-827",
+      "name": "functionalMomentWeight_six",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_six"
+    },
+    {
+      "id": "NCSW-828",
+      "name": "functionalMomentWeight_seven",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_seven"
+    },
+    {
+      "id": "NCSW-829",
+      "name": "functionalMomentWeight_eight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentWeight_eight"
+    },
+    {
+      "id": "NCSW-830",
+      "name": "functionalMomentMatrix_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_one"
+    },
+    {
+      "id": "NCSW-831",
+      "name": "functionalMomentMatrix_two",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_two"
+    },
+    {
+      "id": "NCSW-832",
+      "name": "functionalMomentMatrix_three",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_three"
+    },
+    {
+      "id": "NCSW-833",
+      "name": "functionalMomentMatrix_four",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_four"
+    },
+    {
+      "id": "NCSW-834",
+      "name": "functionalMomentMatrix_five",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_five"
+    },
+    {
+      "id": "NCSW-835",
+      "name": "functionalMomentMatrix_six",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_six"
+    },
+    {
+      "id": "NCSW-836",
+      "name": "functionalMomentMatrix_seven",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_seven"
+    },
+    {
+      "id": "NCSW-837",
+      "name": "functionalMomentMatrix_eight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.functionalMomentMatrix_eight"
+    },
+    {
+      "id": "NCSW-838",
+      "name": "sixCameraFunctionalMoment_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sixCameraFunctionalMoment_eq"
+    },
+    {
+      "id": "NCSW-839",
+      "name": "sixCameraFunctionalMoment_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sixCameraFunctionalMoment_isSelfAdjoint"
     }
   ]
 }
