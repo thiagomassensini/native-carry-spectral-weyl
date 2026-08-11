@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.35 scalar eighth-moment milestone contains **763 public
+The v0.36 eighth functional-covariance milestone contains **803 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -305,6 +305,15 @@ surface proves:
 - the eighth weighted-mean-centered scalar functional limit
   `ell(log(ell)^8+28log(ell)^6-112log(ell)^5+630log(ell)^4-
   2464log(ell)^3+7420log(ell)^2-14832log(ell)+14833)`.
+- a discrete Abel estimate for the log-eighth resolvent weight, whose endpoint
+  grows as `O(log(M)^6)`, together with `log(M)^6/A_M(z) → 0`;
+- elimination of the complete centered eighth-power periodic residue,
+  including the five critical mixed terms `μ_M log^7`, `μ_M^2 log^6`,
+  `μ_M^3 log^5`, `μ_M^4 log^4` and `μ_M^5 log^3`, and every fixed literal
+  boundary;
+- convergence of the complete eighth coefficient covariance, direct product
+  and every compatible return-metric family to `eighthCenteredMomentMatrix`,
+  with exact six-camera target `sixCameraEighthCenteredMoment`.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -313,10 +322,10 @@ the explicit identities `P_M E_M = B_M` and
 `E_MᴴE_M + B_MᴴB_M = I`.  Instantiating those matrices from an additional
 upstream Green model is therefore a separate integration step, not a hidden
 premise.  The logarithmic centering asymptotic, the first eight scalar weighted
-moments at cutoffs `ell * M`, and the complete linear through seventh-power
+moments at cutoffs `ell * M`, and the complete linear through eighth-power
 functional covariance limits are now kernel checked.  The next analytic gate
-is the eighth periodic-residue and literal-boundary elimination, followed by
-its covariance limit and the arbitrary-polynomial coefficient-sum limit.  The finite
+is the scalar recurrence from degree nine, followed by its covariance limit
+and the arbitrary-polynomial coefficient-sum limit.  The finite
 normalized POVM is not upgraded to a projection-valued measure, and its Cauchy
 transform and the operator-valued Weyl family remain separate obligations.
 
@@ -355,7 +364,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 763 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 803 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

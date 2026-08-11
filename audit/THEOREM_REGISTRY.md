@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.35 scalar eighth-moment milestone contains exactly **763**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-763` in
+The v0.36 eighth functional-covariance milestone contains exactly **803**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-803` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -55,5 +55,6 @@ report for every declaration.
 | `NCSW-699`–`NCSW-711` | `Limits/ScalarSeventhFunctionalMoment.lean` | exact seventh-power recurrence, raw seventh scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)⁷+21log(ℓ)⁵-70log(ℓ)⁴+315log(ℓ)³-924log(ℓ)²+1855log(ℓ)-1854)` |
 | `NCSW-712`–`NCSW-749` | `Limits/SeventhFunctionalCovariance.lean` | log-seventh Abel control, four critical mixed terms, seventh-power residue and literal-boundary elimination, complete coefficient/direct/return-metric seventh-moment limits and exact six-camera target |
 | `NCSW-750`–`NCSW-763` | `Limits/ScalarEighthFunctionalMoment.lean` | exact eighth-power recurrence, raw eighth scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)⁸+28log(ℓ)⁶-112log(ℓ)⁵+630log(ℓ)⁴-2464log(ℓ)³+7420log(ℓ)²-14832log(ℓ)+14833)` |
+| `NCSW-764`–`NCSW-803` | `Limits/EighthFunctionalCovariance.lean` | log-eighth Abel control, five critical mixed terms, eighth-power residue and literal-boundary elimination, complete coefficient/direct/return-metric eighth-moment limits and exact six-camera target |
 
 The JSON registry is the machine-readable authority for exact qualified names.

@@ -36,6 +36,7 @@ import NativeCarrySpectralWeyl.Limits.SexticFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarSeventhFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.SeventhFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarEighthFunctionalMoment
+import NativeCarrySpectralWeyl.Limits.EighthFunctionalCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -160,6 +161,13 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     `sum_(n<ℓM) (log(n+1)-μ_M(z))⁸w_z(n)/A_M →
     ℓ(log(ℓ)⁸+28log(ℓ)⁶-112log(ℓ)⁵+630log(ℓ)⁴-
     2464log(ℓ)³+7420log(ℓ)²-14832log(ℓ)+14833)`.
+    Finally, discrete Abel summation controls the log-eighth periodic weight.
+    The five critical mixed terms are closed using
+    `μ_M(z)/log(M+1) → 1`; the centered eighth-power residue and every fixed
+    literal boundary vanish, and the complete coefficient, direct and
+    compatible return-metric covariances converge to
+    `eighthCenteredMomentMatrix`, with exact six-camera target
+    `sixCameraEighthCenteredMoment`.
 -/
 
 namespace NativeCarrySpectralWeyl

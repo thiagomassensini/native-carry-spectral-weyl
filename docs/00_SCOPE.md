@@ -285,6 +285,22 @@ of the eighth-power periodic residue, the complete eighth coefficient
 covariance and all scalar moments of degree at least nine remain outside this
 surface.
 
+The v0.36 surface eliminates that eighth-power periodic residue and every
+fixed literal seed/corrected-endpoint boundary.  Discrete Abel summation
+controls `log(n+1)^8 w_z(n)` by its `O(log(M)^6)` endpoint, while
+`μ_M(z)/log(M+1) → 1` closes the five critical mixed contributions
+`μ_M log^7`, `μ_M^2 log^6`, `μ_M^3 log^5`, `μ_M^4 log^4` and
+`μ_M^5 log^3`.  Consequently the complete eighth coefficient covariance
+converges entrywise and in finite matrix norm to
+`G_bc(log(min(ell_b,ell_c))^8 + 28log(min(ell_b,ell_c))^6 -
+112log(min(ell_b,ell_c))^5 + 630log(min(ell_b,ell_c))^4 -
+2464log(min(ell_b,ell_c))^3 + 7420log(min(ell_b,ell_c))^2 -
+14832log(min(ell_b,ell_c)) + 14833)`.  The direct functional product and
+every compatible return-metric colligation inherit the same limit, with exact
+target `sixCameraEighthCenteredMoment` for cameras `2,...,7`.  Scalar moments
+of degree at least nine, the full arbitrary-polynomial limit and the analytic
+transform remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the

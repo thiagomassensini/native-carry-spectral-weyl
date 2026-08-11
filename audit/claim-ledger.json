@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.35.0",
-  "registry_count": 763,
-  "count": 47,
+  "release": "0.36.0",
+  "registry_count": 803,
+  "count": 48,
   "status_counts": {
-    "KERNEL_CHECKED": 47
+    "KERNEL_CHECKED": 48
   },
   "claims": [
     {
@@ -1097,6 +1097,53 @@
         "NCSW-761",
         "NCSW-762",
         "NCSW-763"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-022",
+      "claim": "For every finite common-period camera family and nonreal z, the complete centered-eighth resolvent covariance is kernel checked. Discrete Abel summation controls the unbounded log-eighth resolvent weight by its O(log(M)^6) endpoint, which is negligible relative to A_M(z). The five critical mixed terms mu_M log^7, mu_M^2 log^6, mu_M^3 log^5, mu_M^4 log^4 and mu_M^5 log^3 are reduced using mu_M(z)/log(M+1) -> 1 to separately checked endpoint and periodic-sum limits. The full centered eighth-power residue and every fixed literal seed/corrected-endpoint boundary vanish. Thus the complete coefficient covariance, normalized direct functional product and every compatible return-metric colligation converge to G_bc(log(min(ell_b,ell_c))^8+28log(min(ell_b,ell_c))^6-112log(min(ell_b,ell_c))^5+630log(min(ell_b,ell_c))^4-2464log(min(ell_b,ell_c))^3+7420log(min(ell_b,ell_c))^2-14832log(min(ell_b,ell_c))+14833), with exact six-camera target sixCameraEighthCenteredMoment.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-764",
+        "NCSW-765",
+        "NCSW-766",
+        "NCSW-767",
+        "NCSW-768",
+        "NCSW-769",
+        "NCSW-770",
+        "NCSW-771",
+        "NCSW-772",
+        "NCSW-773",
+        "NCSW-774",
+        "NCSW-775",
+        "NCSW-776",
+        "NCSW-777",
+        "NCSW-778",
+        "NCSW-779",
+        "NCSW-780",
+        "NCSW-781",
+        "NCSW-782",
+        "NCSW-783",
+        "NCSW-784",
+        "NCSW-785",
+        "NCSW-786",
+        "NCSW-787",
+        "NCSW-788",
+        "NCSW-789",
+        "NCSW-790",
+        "NCSW-791",
+        "NCSW-792",
+        "NCSW-793",
+        "NCSW-794",
+        "NCSW-795",
+        "NCSW-796",
+        "NCSW-797",
+        "NCSW-798",
+        "NCSW-799",
+        "NCSW-800",
+        "NCSW-801",
+        "NCSW-802",
+        "NCSW-803"
       ]
     }
   ]

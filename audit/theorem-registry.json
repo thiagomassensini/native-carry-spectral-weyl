@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.35.0",
-  "count": 763,
+  "release": "0.36.0",
+  "count": 803,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -3817,6 +3817,206 @@
       "id": "NCSW-763",
       "name": "tendsto_resolventScaledCenteredLogEighthMoment_div_mass",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledCenteredLogEighthMoment_div_mass"
+    },
+    {
+      "id": "NCSW-764",
+      "name": "eighthCenteredMomentMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.eighthCenteredMomentMatrix_apply"
+    },
+    {
+      "id": "NCSW-765",
+      "name": "eighthCenteredMomentMatrix_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Limits.eighthCenteredMomentMatrix_isHermitian"
+    },
+    {
+      "id": "NCSW-766",
+      "name": "eighthCenteredMomentMatrix_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Limits.eighthCenteredMomentMatrix_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-767",
+      "name": "sixCameraEighthCenteredMoment_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sixCameraEighthCenteredMoment_eq"
+    },
+    {
+      "id": "NCSW-768",
+      "name": "sixCameraEighthCenteredMoment_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sixCameraEighthCenteredMoment_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-769",
+      "name": "resolventLogEighthWeight_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventLogEighthWeight_nonneg"
+    },
+    {
+      "id": "NCSW-770",
+      "name": "exists_resolventLogEighthWeight_monotone_natAdd",
+      "qualified": "NativeCarrySpectralWeyl.Limits.exists_resolventLogEighthWeight_monotone_natAdd"
+    },
+    {
+      "id": "NCSW-771",
+      "name": "tendsto_log_succ_sixth_div_resolventMass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_log_succ_sixth_div_resolventMass_zero"
+    },
+    {
+      "id": "NCSW-772",
+      "name": "tendsto_resolventLogEighthWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogEighthWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-773",
+      "name": "tendsto_resolventLogEighth_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogEighth_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-774",
+      "name": "tendsto_resolventLogMean_mul_resolventLogSeventhWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_mul_resolventLogSeventhWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-775",
+      "name": "tendsto_resolventLogMean_mul_resolventLogSeventh_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_mul_resolventLogSeventh_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-776",
+      "name": "tendsto_resolventLogMean_sq_mul_resolventLogSixthWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sq_mul_resolventLogSixthWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-777",
+      "name": "tendsto_resolventLogMean_sq_mul_resolventLogSixth_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sq_mul_resolventLogSixth_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-778",
+      "name": "tendsto_resolventLogMean_cube_mul_resolventLogFifthWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_cube_mul_resolventLogFifthWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-779",
+      "name": "tendsto_resolventLogMean_cube_mul_resolventLogFifth_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_cube_mul_resolventLogFifth_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-780",
+      "name": "tendsto_resolventLogMean_fourth_mul_resolventLogFourthWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_fourth_mul_resolventLogFourthWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-781",
+      "name": "tendsto_resolventLogMean_fourth_mul_resolventLogFourth_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_fourth_mul_resolventLogFourth_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-782",
+      "name": "tendsto_resolventLogMean_fifth_mul_resolventLogCubeWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_fifth_mul_resolventLogCubeWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-783",
+      "name": "tendsto_resolventLogMean_fifth_mul_resolventLogCube_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_fifth_mul_resolventLogCube_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-784",
+      "name": "tendsto_log_eighth_div_resolventMass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_log_eighth_div_resolventMass_zero"
+    },
+    {
+      "id": "NCSW-785",
+      "name": "tendsto_resolventLogMean_eighth_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_eighth_div_mass_zero"
+    },
+    {
+      "id": "NCSW-786",
+      "name": "tendsto_resolventCenteredLogEighth_periodicResidue_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventCenteredLogEighth_periodicResidue_zero"
+    },
+    {
+      "id": "NCSW-787",
+      "name": "tendsto_resolventCenteredLogEighth_periodicWeightedSum",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventCenteredLogEighth_periodicWeightedSum"
+    },
+    {
+      "id": "NCSW-788",
+      "name": "tendsto_resolvent_shiftedCoreEighthFunctional_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolvent_shiftedCoreEighthFunctional_apply"
+    },
+    {
+      "id": "NCSW-789",
+      "name": "centeredPolynomialMultiplier_X_eighth",
+      "qualified": "NativeCarrySpectralWeyl.Limits.centeredPolynomialMultiplier_X_eighth"
+    },
+    {
+      "id": "NCSW-790",
+      "name": "tendsto_resolventCenteredEighth_finiteBoundaryTerm_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventCenteredEighth_finiteBoundaryTerm_zero"
+    },
+    {
+      "id": "NCSW-791",
+      "name": "tendsto_resolventCenteredEighth_finiteBoundarySum_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventCenteredEighth_finiteBoundarySum_zero"
+    },
+    {
+      "id": "NCSW-792",
+      "name": "tendsto_finiteCenteredEighthCoefficientCovariance_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_finiteCenteredEighthCoefficientCovariance_apply"
+    },
+    {
+      "id": "NCSW-793",
+      "name": "tendsto_finiteCenteredEighthCoefficientCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_finiteCenteredEighthCoefficientCovariance"
+    },
+    {
+      "id": "NCSW-794",
+      "name": "tendsto_norm_finiteCenteredEighthCoefficientCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_finiteCenteredEighthCoefficientCovariance_sub"
+    },
+    {
+      "id": "NCSW-795",
+      "name": "tendsto_norm_sixCamera_finiteCenteredEighthCoefficientCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_finiteCenteredEighthCoefficientCovariance_sub"
+    },
+    {
+      "id": "NCSW-796",
+      "name": "tendsto_complex_finiteCenteredEighthCoefficientCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_complex_finiteCenteredEighthCoefficientCovariance"
+    },
+    {
+      "id": "NCSW-797",
+      "name": "tendsto_normalizedFiniteCenteredEighthDirectCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteCenteredEighthDirectCovariance"
+    },
+    {
+      "id": "NCSW-798",
+      "name": "tendsto_norm_normalizedFiniteCenteredEighthDirectCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_normalizedFiniteCenteredEighthDirectCovariance_sub"
+    },
+    {
+      "id": "NCSW-799",
+      "name": "tendsto_normalizedFiniteCenteredEighthReturnMetricCrossCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteCenteredEighthReturnMetricCrossCovariance"
+    },
+    {
+      "id": "NCSW-800",
+      "name": "tendsto_norm_normalizedFiniteCenteredEighthReturnMetricCrossCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_normalizedFiniteCenteredEighthReturnMetricCrossCovariance_sub"
+    },
+    {
+      "id": "NCSW-801",
+      "name": "complexEighthCenteredMomentMatrix_sixCamera",
+      "qualified": "NativeCarrySpectralWeyl.Limits.complexEighthCenteredMomentMatrix_sixCamera"
+    },
+    {
+      "id": "NCSW-802",
+      "name": "tendsto_norm_sixCamera_normalizedFiniteCenteredEighthDirectCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredEighthDirectCovariance_sub"
+    },
+    {
+      "id": "NCSW-803",
+      "name": "tendsto_norm_sixCamera_normalizedFiniteCenteredEighthReturnMetricCrossCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredEighthReturnMetricCrossCovariance_sub"
     }
   ]
 }

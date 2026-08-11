@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.35 scalar eighth-moment milestone:
+Kernel checked through the v0.36 eighth functional-covariance milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -611,20 +611,30 @@ Kernel checked through the v0.35 scalar eighth-moment milestone:
   40320log(ell)+40320)` and the weighted-mean-centered limit
   `ell(log(ell)^8+28log(ell)^6-112log(ell)^5+630log(ell)^4-
   2464log(ell)^3+7420log(ell)^2-14832log(ell)+14833)`.
+- discrete Abel summation for the log-eighth resolvent weight, its endpoint
+  growth `O(log(M)^6)` and normalized decay `log(M)^6/A_M(z) → 0`;
+- reduction of the critical `μ_M log^7`, `μ_M^2 log^6`, `μ_M^3 log^5`,
+  `μ_M^4 log^4` and `μ_M^5 log^3` periodic terms using
+  `μ_M(z)/log(M+1) → 1`;
+- elimination of the centered eighth-power periodic residue and every
+  fixed-width literal boundary term;
+- entrywise and finite-matrix norm convergence of the complete centered-
+  eighth coefficient covariance to `eighthCenteredMomentMatrix`, with exact
+  target `sixCameraEighthCenteredMoment` for cameras `2,...,7`;
+- transfer of the same eighth-moment limit to the direct functional matrix
+  product and every compatible return-metric colligation family.
 
 The exact finite polynomial layer, logarithmic centering asymptotic, first
-eight scalar centered moments and complete linear through seventh-power
+eight scalar centered moments and complete linear through eighth-power
 functional covariance limits are complete.  The next Phase 4 target is to
-close the eighth periodic residue and literal boundary, prove its complete
-covariance limit, and continue toward every
+iterate the scalar recurrence from degree nine and continue toward every
 polynomial moment.  The existing transfer theorems lift those coefficient-sum
 results to the direct and return-metric formulations.  Locally uniform
 Cauchy-transform convergence off the real axis follows afterward.
 
 Targets:
 
-- the eighth covariance limit, scalar moments of degree at least nine and
-  polynomial coefficient-sum limits;
+- scalar moments of degree at least nine and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 
 The Green v2.1 strong Parseval and finite-Poisson limits may be reused through
