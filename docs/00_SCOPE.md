@@ -217,6 +217,20 @@ coordinate.  Elimination of the quartic periodic camera residue, the complete
 fourth coefficient covariance and all moments of degree at least five remain
 outside this surface.
 
+The v0.28 surface eliminates the quartic periodic camera residue and every
+fixed literal seed/corrected-endpoint boundary.  Discrete Abel summation
+controls `log(n+1)^4 w_z(n)` by its endpoint size `O(log(M)^2)`, and the
+independently checked limit `log(M)^2/A_M(z) -> 0` makes that contribution
+negligible.  Slow variation of `μ_M(z)` under fixed positive natural dilation
+closes the mixed terms in the centered expansion.  Consequently the complete
+fourth coefficient covariance converges entrywise and in finite matrix norm to
+`L_bc = G_bc(log(min(ell_b,ell_c))^4 + 6log(min(ell_b,ell_c))^2 -
+8log(min(ell_b,ell_c)) + 9)`.  The direct functional product and every
+compatible return-metric colligation inherit the same limit, with exact target
+`sixCameraFourthCenteredMoment` for cameras `2,...,7`.  Scalar moments of
+degree at least five, the full arbitrary-polynomial limit and the analytic
+transform remain outside this surface.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:

@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.27 it contains
-thirty-nine `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.28 it contains
+forty `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -100,8 +100,18 @@ corrections vanish, and sums the resulting little-o increment to obtain the
 raw limit
 `ell(log(ell)^4-4log(ell)^3+12log(ell)^2-24log(ell)+24)`.  Shifting from
 `log M` to `μ_M(z)` gives the documented centered limit
-`ell(log(ell)^4+6log(ell)^2-8log(ell)+9)`.  The quartic periodic residue and
-literal boundary are the next coefficient-covariance obligations.
+`ell(log(ell)^4+6log(ell)^2-8log(ell)+9)`.
+The quartic functional-covariance claim proves slow variation of the
+logarithmic mean under positive natural dilation and applies discrete Abel
+summation to the log-fourth resolvent weight, whose endpoint grows as
+`O(log(M)^2)` and is negligible relative to `A_M(z)`.  It eliminates all five
+terms in the centered quartic periodic residue and every fixed literal
+seed/corrected-endpoint boundary.  The complete coefficient covariance, direct
+functional product and every compatible return-metric colligation converge to
+`L_bc = G_bc(log(min(ell_b,ell_c))^4 + 6log(min(ell_b,ell_c))^2 -
+8log(min(ell_b,ell_c)) + 9)`.  Its six-camera target is exactly the
+complexification of `sixCameraFourthCenteredMoment`.  Scalar degree five is
+the next moment obligation.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

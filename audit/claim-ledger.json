@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.27.0",
-  "registry_count": 571,
-  "count": 39,
+  "release": "0.28.0",
+  "registry_count": 604,
+  "count": 40,
   "status_counts": {
-    "KERNEL_CHECKED": 39
+    "KERNEL_CHECKED": 40
   },
   "claims": [
     {
@@ -849,6 +849,46 @@
         "NCSW-569",
         "NCSW-570",
         "NCSW-571"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-014",
+      "claim": "For every finite camera family with a common profile period and every nonreal z, the complete literal covariance with centered fourth-power multiplier (log(n+1)-mu_M(z))^4 converges entrywise and in finite matrix norm to L_ij = G_ij(log(min(ell_i,ell_j))^4+6log(min(ell_i,ell_j))^2-8log(min(ell_i,ell_j))+9). The proof uses discrete Abel summation for the log-fourth weight growing as O(log(M)^2), proves slow variation of mu_M under positive natural dilation, eliminates all five periodic-residue terms and the fixed literal boundary, and transfers the limit to direct and compatible return-metric formulations. For cameras 2 through 7 the exact target is the complexification of sixCameraFourthCenteredMoment.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-572",
+        "NCSW-573",
+        "NCSW-574",
+        "NCSW-575",
+        "NCSW-576",
+        "NCSW-577",
+        "NCSW-578",
+        "NCSW-579",
+        "NCSW-580",
+        "NCSW-581",
+        "NCSW-582",
+        "NCSW-583",
+        "NCSW-584",
+        "NCSW-585",
+        "NCSW-586",
+        "NCSW-587",
+        "NCSW-588",
+        "NCSW-589",
+        "NCSW-590",
+        "NCSW-591",
+        "NCSW-592",
+        "NCSW-593",
+        "NCSW-594",
+        "NCSW-595",
+        "NCSW-596",
+        "NCSW-597",
+        "NCSW-598",
+        "NCSW-599",
+        "NCSW-600",
+        "NCSW-601",
+        "NCSW-602",
+        "NCSW-603",
+        "NCSW-604"
       ]
     }
   ]

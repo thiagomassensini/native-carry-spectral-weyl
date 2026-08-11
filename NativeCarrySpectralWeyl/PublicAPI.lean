@@ -28,6 +28,7 @@ import NativeCarrySpectralWeyl.Limits.QuadraticFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarThirdFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.CubicFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarFourthFunctionalMoment
+import NativeCarrySpectralWeyl.Limits.QuarticFunctionalCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -108,6 +109,11 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     and proves
     `sum_(n<ℓM) (log(n+1)-μ_M(z))⁴w_z(n)/A_M →
     ℓ(log(ℓ)⁴+6log(ℓ)²-8log(ℓ)+9)`.
+    Finally, discrete Abel summation controls the log-fourth periodic weight,
+    the centered fourth-power residue and every fixed literal boundary vanish,
+    and the complete coefficient, direct and compatible return-metric
+    covariances converge to `fourthCenteredMomentMatrix`, with exact
+    six-camera target `sixCameraFourthCenteredMoment`.
 -/
 
 namespace NativeCarrySpectralWeyl

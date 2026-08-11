@@ -363,6 +363,35 @@ zero through four yield
 No sampled value, tolerance or unformalized integral approximation enters the
 Lean proof.
 
+## v0.28 quartic functional-covariance trace
+
+`NativeCarrySpectralWeyl/Limits/QuarticFunctionalCovariance.lean` combines the
+v0.27 scalar fourth-moment limit with the exact periodic camera decomposition.
+The unbounded weight `log(n+1)^4 w_z(n)` is eventually nonnegative and
+monotone, so the existing discrete Abel theorem bounds its zero-mean periodic
+sum by the endpoint size.  That endpoint is `O(log(M)^2)`, and the new Lean
+limit `log(M)^2/A_M(z) -> 0` eliminates it after normalization.
+
+Expanding `(log(n+1)-μ_M(z))^4` produces the log-fourth residue together with
+four lower-degree mixed terms.  The proof reuses the established cubic,
+quadratic, linear and constant residue limits and proves the required slow
+variation `μ_(ell*M)(z)/μ_M(z) -> 1`.  Hence the full centered periodic
+residue vanishes.  The literal boundary is reduced to the already checked
+cubic boundary by factoring the quartic multiplier into one centered
+coordinate times the cubic multiplier.
+
+The resulting complete covariance target is
+
+`L_bc = G_bc * (log(min(ell_b,ell_c))^4 +
+  6log(min(ell_b,ell_c))^2 - 8log(min(ell_b,ell_c)) + 9)`.
+
+The theorem is proved entrywise and in finite matrix norm for literal
+coefficient sums, then transferred exactly to the direct functional product
+and every compatible return-metric colligation family.  Cameras `2,...,7`
+converge to the complexification of `sixCameraFourthCenteredMoment`.  Python
+validations remain provenance and cross-check material only; no sampled value
+or tolerance is a Lean premise.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the

@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.27 scalar fourth-moment milestone:
+Kernel checked through the v0.28 quartic functional-covariance milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -526,20 +526,29 @@ Kernel checked through the v0.27 scalar fourth-moment milestone:
   `ell(log(ell)^4-4log(ell)^3+12log(ell)^2-24log(ell)+24)` and the
   weighted-mean-centered limit
   `ell(log(ell)^4+6log(ell)^2-8log(ell)+9)`.
+- discrete Abel summation for the log-fourth resolvent weight, whose endpoint
+  grows as `O(log(M)^2)`, and the normalized decay
+  `log(M)^2/A_M(z) -> 0`;
+- slow variation of `μ_M(z)` under every fixed positive natural dilation,
+  followed by elimination of all terms in the centered quartic periodic
+  residue and every fixed-width literal boundary;
+- entrywise and finite-matrix norm convergence of the complete
+  centered-quartic coefficient covariance to `fourthCenteredMomentMatrix`,
+  with exact target `sixCameraFourthCenteredMoment` for cameras `2,...,7`;
+- transfer of the same fourth-moment limit to the direct functional matrix
+  product and every compatible return-metric colligation family.
 
 The exact finite polynomial layer, logarithmic centering asymptotic, first
-four scalar centered moments and complete linear, quadratic and cubic
+four scalar centered moments and complete linear, quadratic, cubic and quartic
 functional covariance limits are complete.  The next Phase 4 target is to
-eliminate the quartic periodic residue and fixed literal boundary, then
-iterate the scalar recurrence from degree five and eliminate the corresponding
-periodic residues, yielding every polynomial moment.  The existing transfer
-theorems lift those coefficient-sum results to the direct and return-metric
-formulations.  Locally uniform
+iterate the scalar recurrence from degree five and eliminate its periodic
+residue and fixed literal boundary, then continue toward every polynomial
+moment.  The existing transfer theorems lift those coefficient-sum results to
+the direct and return-metric formulations.  Locally uniform
 Cauchy-transform convergence off the real axis follows afterward.
 
 Targets:
 
-- quartic periodic-residue elimination and the complete fourth covariance;
 - scalar moments of degree at least five and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 
