@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.34.0",
-  "registry_count": 749,
-  "count": 46,
+  "release": "0.35.0",
+  "registry_count": 763,
+  "count": 47,
   "status_counts": {
-    "KERNEL_CHECKED": 46
+    "KERNEL_CHECKED": 47
   },
   "claims": [
     {
@@ -1076,6 +1076,27 @@
         "NCSW-747",
         "NCSW-748",
         "NCSW-749"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-021",
+      "claim": "For every fixed positive natural scale ell and nonreal z, the eighth scalar resolvent functional moment below ell M is kernel checked. The exact eighth-power recurrence decomposes its increment into the endpoint block and the already proved seventh through first logarithmic moments with binomial coefficients -8, 28, -56, 70, -56, 28 and -8, followed by the positive eighth-power mass correction. Only the logarithmic step times the raw seventh moment contributes at endpoint-weight scale; every higher-step correction vanishes. Little-o summation gives the log-M-centered limit ell(log(ell)^8-8log(ell)^7+56log(ell)^6-336log(ell)^5+1680log(ell)^4-6720log(ell)^3+20160log(ell)^2-40320log(ell)+40320), and log M-mu_M(z) -> 1 converts it to the weighted-mean-centered limit ell(log(ell)^8+28log(ell)^6-112log(ell)^5+630log(ell)^4-2464log(ell)^3+7420log(ell)^2-14832log(ell)+14833).",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-750",
+        "NCSW-751",
+        "NCSW-752",
+        "NCSW-753",
+        "NCSW-754",
+        "NCSW-755",
+        "NCSW-756",
+        "NCSW-757",
+        "NCSW-758",
+        "NCSW-759",
+        "NCSW-760",
+        "NCSW-761",
+        "NCSW-762",
+        "NCSW-763"
       ]
     }
   ]

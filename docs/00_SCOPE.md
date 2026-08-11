@@ -269,6 +269,22 @@ cameras `2,...,7`.  Scalar moments of degree at least eight, the full
 arbitrary-polynomial limit and the analytic transform remain outside this
 surface.
 
+The v0.35 surface proves the eighth scalar weighted functional moment at every
+fixed positive natural cutoff multiplier `ell`.  Its exact increment has
+binomial coefficients `-8`, `28`, `-56`, `70`, `-56`, `28`, `-8`, followed
+by the positive eighth-power mass correction.  Only the logarithmic step times
+the already checked raw seventh moment survives at endpoint-weight scale;
+all higher-step terms vanish.  Little-o summation gives the `log M`-centered
+limit
+`ell(log(ell)^8-8log(ell)^7+56log(ell)^6-336log(ell)^5+
+1680log(ell)^4-6720log(ell)^3+20160log(ell)^2-40320log(ell)+40320)`,
+and `log M - μ_M(z) → 1` converts it to
+`ell(log(ell)^8+28log(ell)^6-112log(ell)^5+630log(ell)^4-
+2464log(ell)^3+7420log(ell)^2-14832log(ell)+14833)`.  Elimination
+of the eighth-power periodic residue, the complete eighth coefficient
+covariance and all scalar moments of degree at least nine remain outside this
+surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
