@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.17 resolvent-weight-limit milestone contains exactly **404** named public Lean
-theorems, ordered as `NCSW-001` through `NCSW-404` in
+The v0.18 finite-defect-covariance milestone contains exactly **442** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-442` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -35,5 +35,7 @@ report for every declaration.
 | `NCSW-356`–`NCSW-366` | `Limits/PeriodicMean.lean` | exact periodic block/remainder formulas, bounded centered prefixes, Cesàro convergence, Dirichlet--Abel weighted means and finite-prefix stability |
 | `NCSW-367`–`NCSW-381` | `Limits/CameraCovariance.lean` | weighted profile limits, asymptotically-linear mass interface, eventual-antitone scaled-cutoff matrix convergence and exact six-camera Gram limit |
 | `NCSW-382`–`NCSW-404` | `Limits/ResolventWeight.lean` | concrete resolvent-weight decay and eventual monotonicity, mass divergence, `M/log(M+1)^2` asymptotic, regular variation and concrete covariance limits |
+| `NCSW-405`–`NCSW-406` | `Finite/ReturnMetric.lean` | exact endpoint return-metric isometry and source-probe covariance cancellation |
+| `NCSW-407`–`NCSW-442` | `Limits/FiniteDefectCovariance.lean` | literal finite supports and endpoints, common-window camera/resolvent matrices, core-boundary decomposition, boundary vanishing and exact return-metric six-camera norm limit |
 
 The JSON registry is the machine-readable authority for exact qualified names.

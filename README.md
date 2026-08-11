@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.17 resolvent-weight-limit milestone contains **404 public kernel-checked Lean
+The v0.18 finite-defect-covariance milestone contains **442 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -142,16 +142,31 @@ finite native-carry operator commit.  The current public surface proves:
 - direct finite-matrix norm convergence of the concrete resolvent-weighted
   pairwise cutoff covariance to the periodic Gram matrix, including cameras
   `2,...,7` converging to the exact matrix `sixCameraGram`.
+- the exact return metric `G_E = I + PᴴP` and the finite cancellation
+  `Eᴴ G_E E = I` from `P E = B` and `EᴴE + BᴴB = I`, hence
+  `S G_E Sᴴ = C R Rᴴ Cᴴ` for `S = C R Eᴴ`;
+- a common-window literal finite camera matrix containing every seed and tail
+  coefficient, including the one-unit correction at the final antipodal
+  point of each even camera;
+- exact identification of its normalized diagonal-resolvent matrix product
+  with the complete finite coefficient covariance;
+- decomposition of that covariance into the shifted periodic core plus a
+  cutoff-independent finite boundary tail, and proof that the resolvent tail
+  vanishes;
+- entrywise and matrix-norm convergence of the literal finite covariance, the
+  direct matrix product and every compatible return-metric colligation family,
+  including the exact complexified six-camera limit `sixCameraGram`.
 
-The scalar regular-variation obligation left open in v0.16 is now discharged,
-and the abstract periodic covariance theorem is instantiated by the concrete
-resolvent weight.  Identifying this periodic-profile covariance with every
-literal finite defect-probe formula still requires the documented finite
-seed/endpoint bridge and exact return-metric cancellation.  The finite
-normalized POVM is not upgraded to a projection-valued measure, and its
-Cauchy transform and the operator-valued Weyl family remain separate
-obligations.  No Parseval or Poisson statement is used to infer these new
-spectral limits.
+The finite seed/endpoint bridge and return-metric covariance passage left open
+in v0.17 are now kernel checked.  The camera/resolvent construction is fully
+concrete; the return-metric theorem is parametrized by a finite colligation
+family satisfying the explicit identities `P_M E_M = B_M` and
+`E_MᴴE_M + B_MᴴB_M = I`.  Instantiating those matrices from an additional
+upstream Green model is therefore a separate integration step, not a hidden
+premise.  The next analytic target is convergence of polynomial functional
+moments.  The finite normalized POVM is not upgraded to a projection-valued
+measure, and its Cauchy transform and the operator-valued Weyl family remain
+separate obligations.
 
 Pinned foundations:
 
@@ -188,7 +203,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 404 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 442 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

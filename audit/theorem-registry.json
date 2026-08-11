@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.17.0",
-  "count": 404,
+  "release": "0.18.0",
+  "count": 442,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -2022,6 +2022,196 @@
       "id": "NCSW-404",
       "name": "tendsto_norm_sixCamera_resolvent_scaledCutoffCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_resolvent_scaledCutoffCovariance_sub"
+    },
+    {
+      "id": "NCSW-405",
+      "name": "endpointMap_conjTranspose_mul_returnMetric_mul_endpointMap",
+      "qualified": "NativeCarrySpectralWeyl.Finite.endpointMap_conjTranspose_mul_returnMetric_mul_endpointMap"
+    },
+    {
+      "id": "NCSW-406",
+      "name": "returnMetricCovariance_eq_directResolventCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Finite.returnMetricCovariance_eq_directResolventCovariance"
+    },
+    {
+      "id": "NCSW-407",
+      "name": "cameraBoundaryWidth_two",
+      "qualified": "NativeCarrySpectralWeyl.Limits.cameraBoundaryWidth_two"
+    },
+    {
+      "id": "NCSW-408",
+      "name": "cameraBoundaryWidth_of_ne_two",
+      "qualified": "NativeCarrySpectralWeyl.Limits.cameraBoundaryWidth_of_ne_two"
+    },
+    {
+      "id": "NCSW-409",
+      "name": "finiteCameraWindow_two",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCameraWindow_two"
+    },
+    {
+      "id": "NCSW-410",
+      "name": "finiteCameraWindow_of_ne_two",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCameraWindow_of_ne_two"
+    },
+    {
+      "id": "NCSW-411",
+      "name": "finiteCoefficient_eq_profile_of_le_core",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCoefficient_eq_profile_of_le_core"
+    },
+    {
+      "id": "NCSW-412",
+      "name": "finiteCoefficientAt_eq_profile_of_lt_core",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCoefficientAt_eq_profile_of_lt_core"
+    },
+    {
+      "id": "NCSW-413",
+      "name": "finiteCoefficient_eq_zero_of_window_lt",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCoefficient_eq_zero_of_window_lt"
+    },
+    {
+      "id": "NCSW-414",
+      "name": "finiteCoefficientAt_eq_zero_of_window_le",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCoefficientAt_eq_zero_of_window_le"
+    },
+    {
+      "id": "NCSW-415",
+      "name": "profile_natAbs_le",
+      "qualified": "NativeCarrySpectralWeyl.Limits.profile_natAbs_le"
+    },
+    {
+      "id": "NCSW-416",
+      "name": "finiteCoefficient_natAbs_le",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCoefficient_natAbs_le"
+    },
+    {
+      "id": "NCSW-417",
+      "name": "abs_finiteCoefficientAt_le",
+      "qualified": "NativeCarrySpectralWeyl.Limits.abs_finiteCoefficientAt_le"
+    },
+    {
+      "id": "NCSW-418",
+      "name": "finiteCameraWindow_le_finiteFamilyWindow",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCameraWindow_le_finiteFamilyWindow"
+    },
+    {
+      "id": "NCSW-419",
+      "name": "finiteResolventMatrix_mul_conjTranspose",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteResolventMatrix_mul_conjTranspose"
+    },
+    {
+      "id": "NCSW-420",
+      "name": "pairCoreLength_le_pairFiniteWindow",
+      "qualified": "NativeCarrySpectralWeyl.Limits.pairCoreLength_le_pairFiniteWindow"
+    },
+    {
+      "id": "NCSW-421",
+      "name": "pairFiniteWindow_le_core_add_boundary",
+      "qualified": "NativeCarrySpectralWeyl.Limits.pairFiniteWindow_le_core_add_boundary"
+    },
+    {
+      "id": "NCSW-422",
+      "name": "pairBoundaryLength_le",
+      "qualified": "NativeCarrySpectralWeyl.Limits.pairBoundaryLength_le"
+    },
+    {
+      "id": "NCSW-423",
+      "name": "sum_finiteFamilyWindow_eq_pairFiniteWindow",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sum_finiteFamilyWindow_eq_pairFiniteWindow"
+    },
+    {
+      "id": "NCSW-424",
+      "name": "normalizedFiniteDirectCovariance_eq_finiteCoefficientCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.normalizedFiniteDirectCovariance_eq_finiteCoefficientCovariance"
+    },
+    {
+      "id": "NCSW-425",
+      "name": "normalizedFiniteReturnMetricCovariance_eq_finiteCoefficientCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.normalizedFiniteReturnMetricCovariance_eq_finiteCoefficientCovariance"
+    },
+    {
+      "id": "NCSW-426",
+      "name": "tendsto_scaled_periodic_weightedMean_of_eventually_antitone",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_scaled_periodic_weightedMean_of_eventually_antitone"
+    },
+    {
+      "id": "NCSW-427",
+      "name": "tendsto_shiftedCoreCameraCovariance_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_shiftedCoreCameraCovariance_apply"
+    },
+    {
+      "id": "NCSW-428",
+      "name": "finiteCoefficientWeightedSum_eq_shiftedCore_add_boundary",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCoefficientWeightedSum_eq_shiftedCore_add_boundary"
+    },
+    {
+      "id": "NCSW-429",
+      "name": "finiteCoefficientCovariance_eq_shiftedCore_add_boundary",
+      "qualified": "NativeCarrySpectralWeyl.Limits.finiteCoefficientCovariance_eq_shiftedCore_add_boundary"
+    },
+    {
+      "id": "NCSW-430",
+      "name": "tendsto_resolvent_finiteBoundaryTerm_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolvent_finiteBoundaryTerm_zero"
+    },
+    {
+      "id": "NCSW-431",
+      "name": "tendsto_resolvent_finiteBoundarySum_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolvent_finiteBoundarySum_zero"
+    },
+    {
+      "id": "NCSW-432",
+      "name": "tendsto_resolvent_finiteCoefficientCovariance_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolvent_finiteCoefficientCovariance_apply"
+    },
+    {
+      "id": "NCSW-433",
+      "name": "tendsto_resolvent_finiteCoefficientCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolvent_finiteCoefficientCovariance"
+    },
+    {
+      "id": "NCSW-434",
+      "name": "tendsto_normalizedFiniteDirectCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteDirectCovariance"
+    },
+    {
+      "id": "NCSW-435",
+      "name": "tendsto_norm_normalizedFiniteDirectCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_normalizedFiniteDirectCovariance_sub"
+    },
+    {
+      "id": "NCSW-436",
+      "name": "tendsto_normalizedFiniteReturnMetricCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteReturnMetricCovariance"
+    },
+    {
+      "id": "NCSW-437",
+      "name": "tendsto_norm_normalizedFiniteReturnMetricCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_normalizedFiniteReturnMetricCovariance_sub"
+    },
+    {
+      "id": "NCSW-438",
+      "name": "tendsto_norm_resolvent_finiteCoefficientCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_resolvent_finiteCoefficientCovariance_sub"
+    },
+    {
+      "id": "NCSW-439",
+      "name": "tendsto_norm_sixCamera_resolvent_finiteCoefficientCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_resolvent_finiteCoefficientCovariance_sub"
+    },
+    {
+      "id": "NCSW-440",
+      "name": "complexPeriodicGramMatrix_sixCamera",
+      "qualified": "NativeCarrySpectralWeyl.Limits.complexPeriodicGramMatrix_sixCamera"
+    },
+    {
+      "id": "NCSW-441",
+      "name": "tendsto_norm_sixCamera_normalizedFiniteDirectCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteDirectCovariance_sub"
+    },
+    {
+      "id": "NCSW-442",
+      "name": "tendsto_norm_sixCamera_normalizedFiniteReturnMetricCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteReturnMetricCovariance_sub"
     }
   ]
 }

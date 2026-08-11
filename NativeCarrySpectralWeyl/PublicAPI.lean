@@ -13,9 +13,11 @@ import NativeCarrySpectralWeyl.Finite.Moments
 import NativeCarrySpectralWeyl.Finite.Whitening
 import NativeCarrySpectralWeyl.Finite.StepDensity
 import NativeCarrySpectralWeyl.Finite.StepPOVM
+import NativeCarrySpectralWeyl.Finite.ReturnMetric
 import NativeCarrySpectralWeyl.Limits.PeriodicMean
 import NativeCarrySpectralWeyl.Limits.CameraCovariance
 import NativeCarrySpectralWeyl.Limits.ResolventWeight
+import NativeCarrySpectralWeyl.Limits.FiniteDefectCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -53,7 +55,12 @@ finite prefix.  For the concrete weight `|z - log(n+1)|⁻²`, it proves
 positivity, decay, eventual monotonicity, divergent mass,
 `A_M(z) ~ M / log(M+1)^2`, and `A_(L M)(z) / A_M(z) → L`.  Consequently the
 genuine slope-scaled cutoff covariance converges in finite-matrix norm to the
-camera Gram, with the exact six-camera limit `sixCameraGram`.
+camera Gram, with the exact six-camera limit `sixCameraGram`.  Finally, the
+literal finite camera stencils—including the corrected even endpoint—are
+realized as a common-window camera matrix.  The endpoint return metric cancels
+exactly under `P E = B` and `Eᴴ E + Bᴴ B = I`, and the resulting normalized
+finite defect covariance converges in matrix norm to the exact six-camera
+Gram.
 -/
 
 namespace NativeCarrySpectralWeyl

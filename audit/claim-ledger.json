@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.17.0",
-  "registry_count": 404,
-  "count": 29,
+  "release": "0.18.0",
+  "registry_count": 442,
+  "count": 30,
   "status_counts": {
-    "KERNEL_CHECKED": 29
+    "KERNEL_CHECKED": 30
   },
   "claims": [
     {
@@ -612,6 +612,51 @@
         "NCSW-402",
         "NCSW-403",
         "NCSW-404"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-004",
+      "claim": "The exact finite return metric G_E = I + P^*P makes every endpoint map E satisfying P E = B and E^*E + B^*B = I an isometry, so the return-metric source-probe covariance cancels exactly to the direct camera-resolvent covariance. The literal finite camera matrix includes every seed and corrected even endpoint coefficient; its normalized covariance differs from the shifted periodic core only by a uniformly finite resolvent tail, which vanishes. Consequently every compatible cutoff-indexed finite colligation family converges in matrix norm to the complexified periodic Gram, and cameras 2 through 7 converge to the exact sixCameraGram.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-405",
+        "NCSW-406",
+        "NCSW-407",
+        "NCSW-408",
+        "NCSW-409",
+        "NCSW-410",
+        "NCSW-411",
+        "NCSW-412",
+        "NCSW-413",
+        "NCSW-414",
+        "NCSW-415",
+        "NCSW-416",
+        "NCSW-417",
+        "NCSW-418",
+        "NCSW-419",
+        "NCSW-420",
+        "NCSW-421",
+        "NCSW-422",
+        "NCSW-423",
+        "NCSW-424",
+        "NCSW-425",
+        "NCSW-426",
+        "NCSW-427",
+        "NCSW-428",
+        "NCSW-429",
+        "NCSW-430",
+        "NCSW-431",
+        "NCSW-432",
+        "NCSW-433",
+        "NCSW-434",
+        "NCSW-435",
+        "NCSW-436",
+        "NCSW-437",
+        "NCSW-438",
+        "NCSW-439",
+        "NCSW-440",
+        "NCSW-441",
+        "NCSW-442"
       ]
     }
   ]

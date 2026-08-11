@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.17 it contains
-twenty-nine `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.18 it contains
+thirty `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -48,6 +48,14 @@ new resolvent-limit claim proves that `|z-log(n+1)|^-2` is positive, decays,
 becomes antitone, has mass asymptotic to `M/log(M+1)^2`, and is regularly
 varying with index one.  It therefore instantiates the finite covariance norm
 limit, including the exact six-camera matrix.
+The finite-defect covariance claim closes the next bridge: the endpoint return
+metric cancels exactly under the finite Poisson and Pythagorean identities;
+the complete literal camera stencils form a common-window matrix whose direct
+diagonal-resolvent covariance equals the finite coefficient formula; and its
+fixed-width seed/endpoint boundary vanishes.  Thus the literal covariance, the
+direct matrix product and every compatible cutoff-indexed return-metric
+colligation family converge in matrix norm, with the six-camera target exactly
+the complexification of `sixCameraGram`.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

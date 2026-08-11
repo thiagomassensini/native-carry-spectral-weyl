@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.17 resolvent-weight-limit milestone:
+Kernel checked through the v0.18 finite-defect-covariance milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -438,19 +438,26 @@ Kernel checked through the v0.17 resolvent-weight-limit milestone:
   `A_(L M)(z)/A_M(z) -> L` for fixed positive natural `L`;
 - matrix-norm convergence of the concrete resolvent-weighted pairwise cutoff
   covariance, including the exact six-camera Gram limit.
+- exact finite return-metric cancellation: `P E = B` and
+  `Eᴴ E + Bᴴ B = I` imply `Eᴴ (I + PᴴP) E = I` and therefore
+  `S (I + PᴴP) Sᴴ = C R Rᴴ Cᴴ` for `S = C R Eᴴ`;
+- exact common-window realization of every literal finite camera coefficient,
+  including finite seeds, zero support beyond the emitted window and the
+  corrected final even-camera endpoint;
+- exact equality between the normalized finite camera/resolvent matrix product
+  and the literal coefficient covariance;
+- decomposition into a shifted periodic core plus a uniformly finite boundary
+  sum, followed by vanishing of that boundary for the concrete resolvent;
+- matrix-norm convergence of the literal finite covariance, the direct matrix
+  product and every cutoff-indexed compatible finite colligation family;
+- specialization to cameras `2,...,7`, with target the exact complexification
+  of `sixCameraGram`.
 
-The next Phase 4 bridge is finite seed/endpoint stability for the literal
-defect-probe coefficients together with the exact return-metric covariance
-cancellation.  After that bridge, the polynomial functional moments become
-the natural next analytic target.
+The next Phase 4 target is convergence of polynomial functional moments,
+followed by locally uniform Cauchy-transform convergence off the real axis.
 
 Targets:
 
-- finite resolvent-weighted defect analysis;
-- exact return-metric covariance cancellation;
-- periodic weighted-mean lemma;
-- operator-norm convergence of normalized finite covariance to the camera
-  Gram;
 - polynomial functional moments;
 - locally uniform Cauchy-transform convergence off the real axis.
 
