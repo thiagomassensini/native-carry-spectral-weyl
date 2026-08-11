@@ -151,8 +151,40 @@ specialization `f_M(n) = p(log(n+1) - μ_M(z))` is defined for every real
 polynomial `p`, and `p = 1` is proved to recover the order-zero covariance.
 
 The two convergence-transfer theorems are deliberately conditional only on
-the literal coefficient sums.  Thus the remaining analytic input is visible:
-prove `μ_M(z) - log M -> -1` and the centered polynomial coefficient-sum
-limit.  The numerical audit reports the finite identity to floating-point
-precision, but no numerical row, tolerance or asserted asymptotic is used as
-a Lean premise.
+the literal coefficient sums.  At v0.19 the remaining analytic input was
+visible: prove `μ_M(z) - log M -> -1` and the centered polynomial
+coefficient-sum limit.  The numerical audit reports the finite identity to
+floating-point precision, but no numerical row, tolerance or asserted
+asymptotic is used as a Lean premise.
+
+## v0.20 logarithmic-mean trace
+
+`NativeCarrySpectralWeyl/Limits/ResolventLogMean.lean` closes the scalar
+centering asymptotic stated in `CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md`.
+Rather than formalizing the note's informal weighted Riemann-sum sentence, the
+Lean proof uses the exact centered numerator
+
+`C_M = B_M - (log M - 1) A_M`
+
+and proves its increment is
+
+`C_(M+1) - C_M = w_M - A_M (log(M+1) - log M)`.
+
+The v0.17 theorem `A_M/(M w_M) -> 1` and the independently checked elementary
+limit `M(log(M+1)-log M) -> 1` show that this increment is `o(w_M)`.  Mathlib's
+summation theorem for little-o sequences then yields `C_M = o(A_M)` and hence
+`μ_M(z) - log M -> -1`.  No numeric value of `mu_minus_logM_plus_1` from the
+Python audit is used.
+
+## Additional workspace inputs reviewed on 2026-08-11
+
+The following newly supplied files were inventoried but are outside the
+current functional-limit dependency chain:
+
+| Source under `carry-lab/Wayl` | SHA-256 | Finding |
+|---|---|---|
+| `LARGE_PRIME_COFACTOR_PACKET_THEOREM.md` | `423ef38f9b91c7144a599bd232d85c488e062bb707eb1592640eb80d054b8bac` | large-prime cofactor packet invertibility; no resolvent mean or functional-limit input |
+| `native_carry_large_prime_cofactor_packet_lab.py` | `52ea7552f15c4e7e6caa089981d887f3b83b2bd363d813c25f5a5c78791939d1` | finite cofactor packet audit laboratory |
+| `native_carry_large_prime_cofactor_packet_audit.json` | `c6e5481422df37b5b5c5d2827e354513c35a4afb72b099c303c62ca37fc954e6` | numerical packet audit |
+
+They were not copied, executed or used as Lean premises for v0.20.

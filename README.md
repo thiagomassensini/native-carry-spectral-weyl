@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.19 finite-functional-covariance milestone contains **454 public kernel-checked Lean
+The v0.20 logarithmic-mean milestone contains **458 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -168,6 +168,12 @@ finite native-carry operator commit.  The current public surface proves:
   constant polynomial;
 - transfer of any proved coefficient-sum limit to both the direct functional
   matrix product and every compatible return-metric colligation family.
+- the exact telescoping formula for the centered resolvent-weighted logarithmic
+  numerator, whose increment is
+  `w_M - A_M * (log(M+1) - log M)`;
+- the elementary limit `M * (log(M+1) - log M) → 1` and, together with the
+  existing `A_M / (M w_M) → 1`, the kernel-checked second-order asymptotic
+  `μ_M(z) - log M → -1` for every fixed nonreal `z`.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -175,10 +181,11 @@ return-metric theorem is parametrized by a finite colligation family satisfying
 the explicit identities `P_M E_M = B_M` and
 `E_MᴴE_M + B_MᴴB_M = I`.  Instantiating those matrices from an additional
 upstream Green model is therefore a separate integration step, not a hidden
-premise.  The remaining analytic gate for the actual polynomial functional
-limit is convergence of the centered literal coefficient sums, including the
-asymptotic `μ_M(z) - log M -> -1`.  The finite normalized POVM is not upgraded
-to a projection-valued measure, and its Cauchy transform and the
+premise.  The logarithmic centering asymptotic is now kernel checked.  The
+remaining analytic gate for the actual polynomial functional limit is the
+scalar weighted theorem at cutoffs `ell * M`, followed by convergence of the
+periodic centered literal coefficient sums.  The finite normalized POVM is
+not upgraded to a projection-valued measure, and its Cauchy transform and the
 operator-valued Weyl family remain separate obligations.
 
 Pinned foundations:
@@ -216,7 +223,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 454 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 458 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

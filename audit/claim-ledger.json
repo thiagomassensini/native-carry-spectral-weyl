@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.19.0",
-  "registry_count": 454,
-  "count": 31,
+  "release": "0.20.0",
+  "registry_count": 458,
+  "count": 32,
   "status_counts": {
-    "KERNEL_CHECKED": 31
+    "KERNEL_CHECKED": 32
   },
   "claims": [
     {
@@ -676,6 +676,17 @@
         "NCSW-452",
         "NCSW-453",
         "NCSW-454"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-006",
+      "claim": "For every fixed nonreal z, the finite resolvent-weighted logarithmic mean satisfies mu_M(z) - log M -> -1. The proof is kernel checked from an exact telescoping identity: the centered numerator increment is w_M - A_M(log(M+1)-log M); the previously proved A_M/(M w_M) -> 1 and the elementary M(log(M+1)-log M) -> 1 make this increment little-o of w_M, and summation makes the centered numerator little-o of A_M.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-455",
+        "NCSW-456",
+        "NCSW-457",
+        "NCSW-458"
       ]
     }
   ]

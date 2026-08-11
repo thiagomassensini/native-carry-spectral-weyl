@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.19 finite-functional-covariance milestone:
+Kernel checked through the v0.20 logarithmic-mean milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -464,18 +464,24 @@ Kernel checked through the v0.19 finite-functional-covariance milestone:
 - convergence-transfer theorems reducing both the direct functional matrix
   product and every compatible return-metric colligation family to the same
   literal coefficient-sum limit.
+- the exact telescoping identity for the centered logarithmic numerator and
+  the asymptotic `μ_M(z) - log M -> -1`, obtained from
+  `A_M(z)/(M w_z(M)) -> 1`, `M(log(M+1)-log M) -> 1` and summation of a
+  little-o increment.
 
-The exact finite polynomial layer is complete.  The next Phase 4 target is the
-analytic coefficient-sum theorem: first prove
-`μ_M(z) - log M -> -1`, then prove convergence of every centered polynomial
-coefficient covariance to the corresponding polynomial moment of the
-centered-log step POVM.  The transfer theorems already lift that result to the
-direct and return-metric formulations.  Locally uniform Cauchy-transform
+The exact finite polynomial layer and logarithmic centering asymptotic are
+complete.  The next Phase 4 target is the scalar weighted theorem at each
+fixed cutoff multiplier `ell`: prove the normalized centered monomial or
+analytic-transform limit, then eliminate the zero-mean periodic residue and
+the fixed seed/tail boundary.  This yields convergence of every centered
+polynomial coefficient covariance to the corresponding polynomial moment of
+the centered-log step POVM.  The transfer theorems already lift that result to
+the direct and return-metric formulations.  Locally uniform Cauchy-transform
 convergence off the real axis follows afterward.
 
 Targets:
 
-- centered logarithmic-mean asymptotic and polynomial coefficient-sum limits;
+- scalar weighted limits at `ell * M` and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 
 The Green v2.1 strong Parseval and finite-Poisson limits may be reused through

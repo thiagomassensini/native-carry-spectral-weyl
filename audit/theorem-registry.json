@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.19.0",
-  "count": 454,
+  "release": "0.20.0",
+  "count": 458,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -2272,6 +2272,26 @@
       "id": "NCSW-454",
       "name": "finiteCenteredPolynomialCoefficientCovariance_one",
       "qualified": "NativeCarrySpectralWeyl.Limits.finiteCenteredPolynomialCoefficientCovariance_one"
+    },
+    {
+      "id": "NCSW-455",
+      "name": "resolventLogCenteringError_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventLogCenteringError_eq"
+    },
+    {
+      "id": "NCSW-456",
+      "name": "tendsto_nat_mul_log_succ_sub_log_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_nat_mul_log_succ_sub_log_one"
+    },
+    {
+      "id": "NCSW-457",
+      "name": "tendsto_resolventLogMean_sub_log_add_one",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sub_log_add_one"
+    },
+    {
+      "id": "NCSW-458",
+      "name": "tendsto_resolventLogMean_sub_log",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sub_log"
     }
   ]
 }

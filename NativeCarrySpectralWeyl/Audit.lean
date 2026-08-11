@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.19 finite-functional registry. -/
+/-! Ordered foundational-dependency report for the v0.20 logarithmic-mean registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -456,3 +456,7 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Limits.finiteFunctionalCoefficientCovariance_one
 #print axioms NativeCarrySpectralWeyl.Limits.centeredPolynomialMultiplier_one
 #print axioms NativeCarrySpectralWeyl.Limits.finiteCenteredPolynomialCoefficientCovariance_one
+#print axioms NativeCarrySpectralWeyl.Limits.resolventLogCenteringError_eq
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_nat_mul_log_succ_sub_log_one
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sub_log_add_one
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sub_log

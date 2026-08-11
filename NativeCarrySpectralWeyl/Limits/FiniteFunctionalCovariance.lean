@@ -1,5 +1,6 @@
 import NativeCarrySpectralWeyl.Limits.FiniteDefectCovariance
 import NativeCarrySpectralWeyl.Finite.FunctionalReturnMetric
+import NativeCarrySpectralWeyl.Limits.ResolventLogMean
 import Mathlib.Algebra.Polynomial.Eval.Defs
 import Mathlib.Tactic
 
@@ -251,12 +252,6 @@ theorem
       hcamera z cutoff (multiplier cutoff) (endpointMap cutoff)
         (bulkMap cutoff) (poisson cutoff) (hpoisson cutoff) (hisometry cutoff)
   exact hdirectExact.trans hreturnExact.symm
-
-/-- Finite resolvent-weighted logarithmic center `μ_M(z)`. -/
-def resolventLogMean (z : ℂ) (cutoff : ℕ) : ℝ :=
-  (resolventMass z cutoff)⁻¹ *
-    ∑ n ∈ Finset.range cutoff,
-      Real.log (n + 1) * resolventWeight z n
 
 /-- Multiplier obtained by evaluating a real polynomial at the centered
 finite spectral coordinate `log(n+1) - μ_M(z)`. -/

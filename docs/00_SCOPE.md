@@ -141,6 +141,13 @@ This surface does not claim the remaining asymptotic
 `μ_M(z) - log M -> -1`, the polynomial moment limit, locally uniform Cauchy
 transform convergence, or any operator-valued Weyl inverse.
 
+The v0.20 surface proves that previously open logarithmic-mean asymptotic.  It
+uses an exact discrete telescoping identity and the already checked resolvent
+mass equivalence, not a numerical fit or an unformalized Riemann-sum premise.
+The scalar weighted limit at `ell * M`, periodic-residue elimination, the full
+polynomial moment limit and the analytic transform remain outside this
+surface.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:

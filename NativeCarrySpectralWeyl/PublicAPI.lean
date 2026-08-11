@@ -19,6 +19,7 @@ import NativeCarrySpectralWeyl.Limits.PeriodicMean
 import NativeCarrySpectralWeyl.Limits.CameraCovariance
 import NativeCarrySpectralWeyl.Limits.ResolventWeight
 import NativeCarrySpectralWeyl.Limits.FiniteDefectCovariance
+import NativeCarrySpectralWeyl.Limits.ResolventLogMean
 import NativeCarrySpectralWeyl.Limits.FiniteFunctionalCovariance
 
 /-!
@@ -68,7 +69,10 @@ coefficient sum, and specializes this identity to every real polynomial in
 the finite centered logarithmic coordinate.  Any limit of those coefficient
 sums transfers automatically to both the direct matrix product and every
 compatible finite colligation family; proving the polynomial coefficient-sum
-limit itself remains the next analytic obligation.
+limit itself remains the next analytic obligation.  The scalar second-order
+layer proves the exact telescoping identity for the centered logarithmic
+numerator and the asymptotic `μ_M(z) - log M → -1` for every fixed nonreal
+resolvent parameter.
 -/
 
 namespace NativeCarrySpectralWeyl
