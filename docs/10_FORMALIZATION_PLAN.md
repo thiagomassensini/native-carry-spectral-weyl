@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.33 scalar seventh-moment milestone:
+Kernel checked through the v0.34 seventh functional-covariance milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -589,19 +589,29 @@ Kernel checked through the v0.33 scalar seventh-moment milestone:
   weighted-mean-centered limit
   `ell(log(ell)^7+21log(ell)^5-70log(ell)^4+315log(ell)^3-
   924log(ell)^2+1855log(ell)-1854)`.
+- discrete Abel summation for the log-seventh resolvent weight, its endpoint
+  growth `O(log(M)^5)` and normalized decay `log(M)^5/A_M(z) → 0`;
+- reduction of the critical `μ_M log^6`, `μ_M^2 log^5`, `μ_M^3 log^4` and
+  `μ_M^4 log^3` periodic terms using `μ_M(z)/log(M+1) → 1`;
+- elimination of the centered seventh-power periodic residue and every
+  fixed-width literal boundary term;
+- entrywise and finite-matrix norm convergence of the complete centered-
+  seventh coefficient covariance to `seventhCenteredMomentMatrix`, with exact
+  target `sixCameraSeventhCenteredMoment` for cameras `2,...,7`;
+- transfer of the same seventh-moment limit to the direct functional matrix
+  product and every compatible return-metric colligation family.
 
 The exact finite polynomial layer, logarithmic centering asymptotic, first
-seven scalar centered moments and complete linear through sextic functional
-covariance limits are complete.  The next Phase 4 target is to eliminate the
-seventh-power periodic residue and fixed literal boundary, then iterate the
-scalar recurrence from degree eight and continue toward every
+seven scalar centered moments and complete linear through seventh-power
+functional covariance limits are complete.  The next Phase 4 target is to
+iterate the scalar recurrence from degree eight, close its periodic residue
+and continue toward every
 polynomial moment.  The existing transfer theorems lift those coefficient-sum
 results to the direct and return-metric formulations.  Locally uniform
 Cauchy-transform convergence off the real axis follows afterward.
 
 Targets:
 
-- seventh periodic-residue elimination and the complete seventh covariance;
 - scalar moments of degree at least eight and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 

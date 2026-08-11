@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.33.0",
-  "count": 711,
+  "release": "0.34.0",
+  "count": 749,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -3557,6 +3557,196 @@
       "id": "NCSW-711",
       "name": "tendsto_resolventScaledCenteredLogSeventhMoment_div_mass",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledCenteredLogSeventhMoment_div_mass"
+    },
+    {
+      "id": "NCSW-712",
+      "name": "seventhCenteredMomentMatrix_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.seventhCenteredMomentMatrix_apply"
+    },
+    {
+      "id": "NCSW-713",
+      "name": "seventhCenteredMomentMatrix_isHermitian",
+      "qualified": "NativeCarrySpectralWeyl.Limits.seventhCenteredMomentMatrix_isHermitian"
+    },
+    {
+      "id": "NCSW-714",
+      "name": "seventhCenteredMomentMatrix_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Limits.seventhCenteredMomentMatrix_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-715",
+      "name": "sixCameraSeventhCenteredMoment_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sixCameraSeventhCenteredMoment_eq"
+    },
+    {
+      "id": "NCSW-716",
+      "name": "sixCameraSeventhCenteredMoment_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Limits.sixCameraSeventhCenteredMoment_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-717",
+      "name": "resolventLogSeventhWeight_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventLogSeventhWeight_nonneg"
+    },
+    {
+      "id": "NCSW-718",
+      "name": "exists_resolventLogSeventhWeight_monotone_natAdd",
+      "qualified": "NativeCarrySpectralWeyl.Limits.exists_resolventLogSeventhWeight_monotone_natAdd"
+    },
+    {
+      "id": "NCSW-719",
+      "name": "tendsto_log_succ_fifth_div_resolventMass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_log_succ_fifth_div_resolventMass_zero"
+    },
+    {
+      "id": "NCSW-720",
+      "name": "tendsto_resolventLogSeventhWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogSeventhWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-721",
+      "name": "tendsto_resolventLogSeventh_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogSeventh_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-722",
+      "name": "tendsto_resolventLogMean_mul_resolventLogSixthWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_mul_resolventLogSixthWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-723",
+      "name": "tendsto_resolventLogMean_mul_resolventLogSixth_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_mul_resolventLogSixth_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-724",
+      "name": "tendsto_resolventLogMean_sq_mul_resolventLogFifthWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sq_mul_resolventLogFifthWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-725",
+      "name": "tendsto_resolventLogMean_sq_mul_resolventLogFifth_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sq_mul_resolventLogFifth_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-726",
+      "name": "tendsto_resolventLogMean_cube_mul_resolventLogFourthWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_cube_mul_resolventLogFourthWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-727",
+      "name": "tendsto_resolventLogMean_cube_mul_resolventLogFourth_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_cube_mul_resolventLogFourth_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-728",
+      "name": "tendsto_resolventLogMean_fourth_mul_resolventLogCubeWeight_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_fourth_mul_resolventLogCubeWeight_div_mass_zero"
+    },
+    {
+      "id": "NCSW-729",
+      "name": "tendsto_resolventLogMean_fourth_mul_resolventLogCube_periodicWeightedSum_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_fourth_mul_resolventLogCube_periodicWeightedSum_div_mass_zero"
+    },
+    {
+      "id": "NCSW-730",
+      "name": "tendsto_log_seventh_div_resolventMass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_log_seventh_div_resolventMass_zero"
+    },
+    {
+      "id": "NCSW-731",
+      "name": "tendsto_resolventLogMean_seventh_div_mass_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_seventh_div_mass_zero"
+    },
+    {
+      "id": "NCSW-732",
+      "name": "tendsto_resolventCenteredLogSeventh_periodicResidue_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventCenteredLogSeventh_periodicResidue_zero"
+    },
+    {
+      "id": "NCSW-733",
+      "name": "tendsto_resolventCenteredLogSeventh_periodicWeightedSum",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventCenteredLogSeventh_periodicWeightedSum"
+    },
+    {
+      "id": "NCSW-734",
+      "name": "tendsto_resolvent_shiftedCoreSeventhFunctional_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolvent_shiftedCoreSeventhFunctional_apply"
+    },
+    {
+      "id": "NCSW-735",
+      "name": "centeredPolynomialMultiplier_X_seventh",
+      "qualified": "NativeCarrySpectralWeyl.Limits.centeredPolynomialMultiplier_X_seventh"
+    },
+    {
+      "id": "NCSW-736",
+      "name": "tendsto_resolventCenteredSeventh_finiteBoundaryTerm_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventCenteredSeventh_finiteBoundaryTerm_zero"
+    },
+    {
+      "id": "NCSW-737",
+      "name": "tendsto_resolventCenteredSeventh_finiteBoundarySum_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventCenteredSeventh_finiteBoundarySum_zero"
+    },
+    {
+      "id": "NCSW-738",
+      "name": "tendsto_finiteCenteredSeventhCoefficientCovariance_apply",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_finiteCenteredSeventhCoefficientCovariance_apply"
+    },
+    {
+      "id": "NCSW-739",
+      "name": "tendsto_finiteCenteredSeventhCoefficientCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_finiteCenteredSeventhCoefficientCovariance"
+    },
+    {
+      "id": "NCSW-740",
+      "name": "tendsto_norm_finiteCenteredSeventhCoefficientCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_finiteCenteredSeventhCoefficientCovariance_sub"
+    },
+    {
+      "id": "NCSW-741",
+      "name": "tendsto_norm_sixCamera_finiteCenteredSeventhCoefficientCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_finiteCenteredSeventhCoefficientCovariance_sub"
+    },
+    {
+      "id": "NCSW-742",
+      "name": "tendsto_complex_finiteCenteredSeventhCoefficientCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_complex_finiteCenteredSeventhCoefficientCovariance"
+    },
+    {
+      "id": "NCSW-743",
+      "name": "tendsto_normalizedFiniteCenteredSeventhDirectCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteCenteredSeventhDirectCovariance"
+    },
+    {
+      "id": "NCSW-744",
+      "name": "tendsto_norm_normalizedFiniteCenteredSeventhDirectCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_normalizedFiniteCenteredSeventhDirectCovariance_sub"
+    },
+    {
+      "id": "NCSW-745",
+      "name": "tendsto_normalizedFiniteCenteredSeventhReturnMetricCrossCovariance",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_normalizedFiniteCenteredSeventhReturnMetricCrossCovariance"
+    },
+    {
+      "id": "NCSW-746",
+      "name": "tendsto_norm_normalizedFiniteCenteredSeventhReturnMetricCrossCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_normalizedFiniteCenteredSeventhReturnMetricCrossCovariance_sub"
+    },
+    {
+      "id": "NCSW-747",
+      "name": "complexSeventhCenteredMomentMatrix_sixCamera",
+      "qualified": "NativeCarrySpectralWeyl.Limits.complexSeventhCenteredMomentMatrix_sixCamera"
+    },
+    {
+      "id": "NCSW-748",
+      "name": "tendsto_norm_sixCamera_normalizedFiniteCenteredSeventhDirectCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredSeventhDirectCovariance_sub"
+    },
+    {
+      "id": "NCSW-749",
+      "name": "tendsto_norm_sixCamera_normalizedFiniteCenteredSeventhReturnMetricCrossCovariance_sub",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredSeventhReturnMetricCrossCovariance_sub"
     }
   ]
 }

@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.33 scalar seventh-moment milestone contains exactly **711** named public
-Lean theorems, ordered as `NCSW-001` through `NCSW-711` in
+The v0.34 seventh functional-covariance milestone contains exactly **749**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-749` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -53,5 +53,6 @@ report for every declaration.
 | `NCSW-651`–`NCSW-662` | `Limits/ScalarSixthFunctionalMoment.lean` | exact sextic recurrence, raw sixth scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)⁶+15log(ℓ)⁴-40log(ℓ)³+135log(ℓ)²-264log(ℓ)+265)` |
 | `NCSW-663`–`NCSW-698` | `Limits/SexticFunctionalCovariance.lean` | log-sixth Abel control, three critical mixed terms, sextic residue and literal-boundary elimination, complete coefficient/direct/return-metric sixth-moment limits and exact six-camera target |
 | `NCSW-699`–`NCSW-711` | `Limits/ScalarSeventhFunctionalMoment.lean` | exact seventh-power recurrence, raw seventh scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)⁷+21log(ℓ)⁵-70log(ℓ)⁴+315log(ℓ)³-924log(ℓ)²+1855log(ℓ)-1854)` |
+| `NCSW-712`–`NCSW-749` | `Limits/SeventhFunctionalCovariance.lean` | log-seventh Abel control, four critical mixed terms, seventh-power residue and literal-boundary elimination, complete coefficient/direct/return-metric seventh-moment limits and exact six-camera target |
 
 The JSON registry is the machine-readable authority for exact qualified names.

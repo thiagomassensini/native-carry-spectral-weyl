@@ -253,6 +253,22 @@ logarithmic-mean asymptotic converts it to
 residue, the complete seventh coefficient covariance and all moments of
 degree at least eight remain outside this surface.
 
+The v0.34 surface eliminates that seventh-power periodic residue and every
+fixed literal seed/corrected-endpoint boundary.  Discrete Abel summation
+controls `log(n+1)^7 w_z(n)` by its `O(log(M)^5)` endpoint, while
+`μ_M(z)/log(M+1) → 1` closes the four critical mixed contributions
+`μ_M log^6`, `μ_M^2 log^5`, `μ_M^3 log^4` and `μ_M^4 log^3`.  Consequently
+the complete seventh coefficient covariance converges entrywise and in finite
+matrix norm to
+`G_bc(log(min(ell_b,ell_c))^7 + 21log(min(ell_b,ell_c))^5 -
+70log(min(ell_b,ell_c))^4 + 315log(min(ell_b,ell_c))^3 -
+924log(min(ell_b,ell_c))^2 + 1855log(min(ell_b,ell_c)) - 1854)`.
+The direct functional product and every compatible return-metric colligation
+inherit the same limit, with exact target `sixCameraSeventhCenteredMoment` for
+cameras `2,...,7`.  Scalar moments of degree at least eight, the full
+arbitrary-polynomial limit and the analytic transform remain outside this
+surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
