@@ -1,8 +1,8 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.23 it contains
-thirty-five `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
-profiles, period mean zero, explicit camera factors and the uniform positive
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.24 it contains
+thirty-six `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
 complete odd/even natural-camera identities with the final even antipodal
@@ -72,14 +72,17 @@ The linear functional-covariance claim then eliminates the zero-mean periodic
 residue using bounded Dirichlet sums for `w_z` and `log(n+1)w_z`, proves every
 fixed literal seed/endpoint boundary vanishes, and obtains the full first
 moment in coefficient, direct-product and return-metric forms.  Its six-camera
-target is exactly the complexification of `sixCameraFirstMoment`.  Higher
-linear degree is complete; the quadratic camera residue and moments of degree
-at least three remain explicit obligations.
+target is exactly the complexification of `sixCameraFirstMoment`.
 The second scalar-moment claim proves the exact quadratic cutoff recurrence,
 sums its little-o increment and obtains both the raw limit
 `ell(log(ell)^2-2log(ell)+2)` and the documented centered limit
-`ell(1+log(ell)^2)`.  The quadratic periodic camera residue and literal
-boundary remain the next coefficient-covariance obligations.
+`ell(1+log(ell)^2)`.
+The quadratic functional-covariance claim proves the required log-squared
+Dirichlet boundedness, eliminates the quadratic periodic residue and literal
+boundary, and obtains the complete second centered moment in coefficient,
+direct-product and return-metric forms.  Its six-camera target is exactly the
+complexification of `sixCameraSecondCenteredMoment`.  Moments of degree at
+least three remain explicit obligations.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

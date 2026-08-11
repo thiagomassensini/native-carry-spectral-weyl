@@ -252,6 +252,36 @@ This matches the exact endpoint integral already formalized in
 `Finite/StepDensity.lean`.  Numerical samples and tolerances from the Python
 laboratory are not Lean premises.
 
+## v0.24 quadratic functional-covariance trace
+
+`NativeCarrySpectralWeyl/Limits/QuadraticFunctionalCovariance.lean` closes the
+second coefficient-sum gate isolated in
+`CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md` and validated numerically by
+`native_carry_camera_second_centered_moment_lab.py`.  The camera product is
+again split into its one-period mean and a zero-mean periodic residue, now
+against the squared centered logarithmic coordinate.
+
+The new analytic point is that `log(n+1)^2 w_z(n)` tends to one rather than
+zero.  Lean subtracts that limit and proves the remaining tail is eventually
+monotone in one of the two possible directions, selected by the sign of
+`Re z`.  A two-sided Dirichlet boundedness theorem then controls its
+zero-mean periodic sum.  Together with the lower-degree residue bounds and
+the estimates `log(M)^2/A_M -> 0` and `μ_M(z)^2/A_M -> 0`, this eliminates the
+full centered quadratic periodic residue.
+
+Combining the periodic mean with the v0.23 scalar limit yields
+
+`J_bc = G_bc * (1 + log(min(ell_b,ell_c))^2)`.
+
+Every fixed seed and corrected endpoint boundary term is proved to vanish for
+the quadratic weight.  Hence the complete literal coefficient covariance,
+the direct functional matrix product and every compatible return-metric
+colligation family converge to `secondCenteredMomentMatrix`.  For cameras
+`2,...,7`, the exact target is the complexification of
+`sixCameraSecondCenteredMoment`.  The Python laboratories remain provenance
+and cross-check material only; no sampled value or tolerance is a Lean
+premise.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the

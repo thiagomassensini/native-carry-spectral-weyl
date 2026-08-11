@@ -24,6 +24,7 @@ import NativeCarrySpectralWeyl.Limits.ScalarFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.FiniteFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.LinearFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarSecondFunctionalMoment
+import NativeCarrySpectralWeyl.Limits.QuadraticFunctionalCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -85,6 +86,11 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     scalar functional-moment layer uses another exact discrete recurrence to
     prove
     `sum_(n<ℓM) (log(n+1)-μ_M(z))²w_z(n)/A_M → ℓ(1+log(ℓ)²)`.
+    The quadratic covariance layer then controls the log-squared periodic
+    residue and fixed literal boundary, proving convergence of the complete
+    coefficient covariance, direct product and every compatible return-metric
+    family to `secondCenteredMomentMatrix`, with exact six-camera target
+    `sixCameraSecondCenteredMoment`.
 -/
 
 namespace NativeCarrySpectralWeyl

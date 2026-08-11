@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.23 scalar second-moment milestone:
+Kernel checked through the v0.24 quadratic covariance milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -490,20 +490,28 @@ Kernel checked through the v0.23 scalar second-moment milestone:
 - little-o summation of that increment, giving the raw second scalar limit
   `ell(log(ell)^2-2log(ell)+2)` and the weighted-mean-centered limit
   `ell(1+log(ell)^2)`.
+- eventual tail monotonicity in one of the two directions for the
+  log-squared resolvent weight, and bounded Dirichlet sums against every
+  zero-mean periodic residue;
+- elimination of the centered quadratic periodic residue and every
+  fixed-width literal boundary term;
+- entrywise and finite-matrix norm convergence of the complete
+  centered-quadratic coefficient covariance to `secondCenteredMomentMatrix`,
+  with exact target `sixCameraSecondCenteredMoment` for cameras `2,...,7`;
+- transfer of the same second-moment limit to the direct functional matrix
+  product and every compatible return-metric colligation family.
 
 The exact finite polynomial layer, logarithmic centering asymptotic, first
-two scalar centered moments and complete linear functional covariance limit
-are complete.  The next Phase 4 target is to eliminate the quadratic periodic
-residue and fixed literal boundary, connecting the new scalar result to
-`secondCenteredMomentMatrix`.  The recurrence can then be iterated for degrees
-at least three and their corresponding periodic residues, yielding every
-polynomial moment.  The existing transfer theorems lift those coefficient-sum
-results to the direct and return-metric formulations.  Locally uniform
+two scalar centered moments and complete linear and quadratic functional
+covariance limits are complete.  The next Phase 4 target is to iterate the
+recurrence for degrees at least three and eliminate their corresponding
+periodic residues, yielding every polynomial moment.  The existing transfer
+theorems lift those coefficient-sum results to the direct and return-metric
+formulations.  Locally uniform
 Cauchy-transform convergence off the real axis follows afterward.
 
 Targets:
 
-- quadratic periodic-residue elimination and the complete second covariance;
 - scalar moments of degree at least three and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 

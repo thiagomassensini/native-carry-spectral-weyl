@@ -170,6 +170,16 @@ it to `ell(1+log(ell)^2)` in the documented `μ_M(z)` coordinate.  Elimination
 of the quadratic periodic camera residue, the complete second coefficient
 covariance and all higher polynomial moments remain outside this surface.
 
+The v0.24 surface eliminates the zero-mean periodic camera residue and every
+fixed literal seed/corrected-endpoint boundary term for the centered quadratic
+multiplier.  The complete coefficient covariance therefore converges
+entrywise and in finite matrix norm to
+`J_bc = G_bc(1+log(min(ell_b,ell_c))^2)`; the direct functional product and
+every compatible return-metric colligation inherit the same limit, with exact
+target `sixCameraSecondCenteredMoment` for cameras `2,...,7`.  Scalar moments
+of degree at least three, the full arbitrary-polynomial limit and the analytic
+transform remain outside this surface.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:
