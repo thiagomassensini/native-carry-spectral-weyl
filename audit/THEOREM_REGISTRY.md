@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.20 logarithmic-mean milestone contains exactly **458** named public Lean
-theorems, ordered as `NCSW-001` through `NCSW-458` in
+The v0.21 first scalar-moment milestone contains exactly **466** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-466` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -40,5 +40,6 @@ report for every declaration.
 | `NCSW-443`–`NCSW-446` | `Finite/FunctionalReturnMetric.lean` | constant-observable compatibility and exact arbitrary-observable return-metric cross-covariance cancellation |
 | `NCSW-447`–`NCSW-454` | `Limits/FiniteFunctionalCovariance.lean` | literal functional coefficient identity, centered-polynomial specialization, order-zero compatibility and conditional limit transfer |
 | `NCSW-455`–`NCSW-458` | `Limits/ResolventLogMean.lean` | centered-numerator telescoping, logarithmic step limit and second-order asymptotic `μ_M(z) - log M → -1` |
+| `NCSW-459`–`NCSW-466` | `Limits/ScalarFunctionalMoment.lean` | displaced endpoint slow variation, exact scaled first-moment recurrence and normalized centered limit `ℓ log ℓ` |
 
 The JSON registry is the machine-readable authority for exact qualified names.

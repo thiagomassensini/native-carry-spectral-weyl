@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.20.0",
-  "registry_count": 458,
-  "count": 32,
+  "release": "0.21.0",
+  "registry_count": 466,
+  "count": 33,
   "status_counts": {
-    "KERNEL_CHECKED": 32
+    "KERNEL_CHECKED": 33
   },
   "claims": [
     {
@@ -687,6 +687,21 @@
         "NCSW-456",
         "NCSW-457",
         "NCSW-458"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-007",
+      "claim": "For every fixed positive natural scale ell and every nonreal z, the first scalar resolvent functional moment below ell M is kernel checked. Fixed displaced dilations satisfy w_z(ell M+r)/w_z(M) -> 1 and log(ell M+r+1)-log(M+1) -> log ell. An exact discrete increment and little-o summation then give the log-M-centered limit ell(log ell-1), and the asymptotic mu_M(z)-log M -> -1 converts it to the weighted-mean-centered limit ell log ell.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-459",
+        "NCSW-460",
+        "NCSW-461",
+        "NCSW-462",
+        "NCSW-463",
+        "NCSW-464",
+        "NCSW-465",
+        "NCSW-466"
       ]
     }
   ]

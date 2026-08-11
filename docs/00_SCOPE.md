@@ -144,9 +144,14 @@ transform convergence, or any operator-valued Weyl inverse.
 The v0.20 surface proves that previously open logarithmic-mean asymptotic.  It
 uses an exact discrete telescoping identity and the already checked resolvent
 mass equivalence, not a numerical fit or an unformalized Riemann-sum premise.
-The scalar weighted limit at `ell * M`, periodic-residue elimination, the full
-polynomial moment limit and the analytic transform remain outside this
-surface.
+
+The v0.21 surface proves the first scalar weighted functional moment at every
+fixed positive natural cutoff multiplier `ell`.  Fixed displaced endpoint
+weights and logarithms are controlled directly, and an exact increment plus
+little-o summation gives the limits `ell(log ell-1)` when centered at `log M`
+and `ell log ell` when centered at `μ_M(z)`.  Higher scalar moments,
+periodic-residue elimination, the full polynomial coefficient-sum limit and
+the analytic transform remain outside this surface.
 
 ## Explicit nonclaims
 

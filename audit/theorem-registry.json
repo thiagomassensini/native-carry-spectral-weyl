@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.20.0",
-  "count": 458,
+  "release": "0.21.0",
+  "count": 466,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -2292,6 +2292,46 @@
       "id": "NCSW-458",
       "name": "tendsto_resolventLogMean_sub_log",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventLogMean_sub_log"
+    },
+    {
+      "id": "NCSW-459",
+      "name": "tendsto_resolventWeight_nat_mul_add_div",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventWeight_nat_mul_add_div"
+    },
+    {
+      "id": "NCSW-460",
+      "name": "tendsto_log_nat_mul_add_sub_log",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_log_nat_mul_add_sub_log"
+    },
+    {
+      "id": "NCSW-461",
+      "name": "resolventScaledLogMoment_succ",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventScaledLogMoment_succ"
+    },
+    {
+      "id": "NCSW-462",
+      "name": "tendsto_resolventScaledLogBoundary_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogBoundary_div_weight"
+    },
+    {
+      "id": "NCSW-463",
+      "name": "tendsto_resolventScaledLogCentering_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogCentering_div_weight"
+    },
+    {
+      "id": "NCSW-464",
+      "name": "resolventScaledLogMomentError_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventScaledLogMomentError_eq"
+    },
+    {
+      "id": "NCSW-465",
+      "name": "tendsto_resolventScaledLogMoment_div_mass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogMoment_div_mass"
+    },
+    {
+      "id": "NCSW-466",
+      "name": "tendsto_resolventScaledCenteredLogMoment_div_mass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledCenteredLogMoment_div_mass"
     }
   ]
 }

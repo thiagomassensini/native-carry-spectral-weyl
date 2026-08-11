@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.20 logarithmic-mean milestone contains **458 public kernel-checked Lean
+The v0.21 first scalar-moment milestone contains **466 public kernel-checked Lean
 theorems**.  It builds against the exact Green Frame v2.1 commit and the exact
 finite native-carry operator commit.  The current public surface proves:
 
@@ -174,6 +174,16 @@ finite native-carry operator commit.  The current public surface proves:
 - the elementary limit `M * (log(M+1) - log M) → 1` and, together with the
   existing `A_M / (M w_M) → 1`, the kernel-checked second-order asymptotic
   `μ_M(z) - log M → -1` for every fixed nonreal `z`.
+- fixed-displacement slow variation
+  `w_z(ell*M+r) / w_z(M) → 1` and the logarithmic boundary limit
+  `log(ell*M+r+1) - log(M+1) → log ell` for every fixed positive natural
+  `ell` and fixed natural `r`;
+- the exact discrete increment for the first logarithmic scalar moment below
+  `ell*M`, and the normalized limit centered at `log M`,
+  `A_M^-1 sum_(n<ell*M) (log(n+1)-log M)w_z(n) → ell(log ell-1)`;
+- the first weighted-mean-centered scalar functional limit
+  `A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))w_z(n) → ell log ell`, exactly the
+  endpoint integral of `1 + log x` from `0` to `ell`.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -181,12 +191,13 @@ return-metric theorem is parametrized by a finite colligation family satisfying
 the explicit identities `P_M E_M = B_M` and
 `E_MᴴE_M + B_MᴴB_M = I`.  Instantiating those matrices from an additional
 upstream Green model is therefore a separate integration step, not a hidden
-premise.  The logarithmic centering asymptotic is now kernel checked.  The
-remaining analytic gate for the actual polynomial functional limit is the
-scalar weighted theorem at cutoffs `ell * M`, followed by convergence of the
-periodic centered literal coefficient sums.  The finite normalized POVM is
-not upgraded to a projection-valued measure, and its Cauchy transform and the
-operator-valued Weyl family remain separate obligations.
+premise.  The logarithmic centering asymptotic and the first scalar weighted
+moment at cutoffs `ell * M` are now kernel checked.  The remaining analytic
+gate for the full polynomial functional limit consists of the higher scalar
+centered moments and convergence of the periodic centered literal coefficient
+sums.  The finite normalized POVM is not upgraded to a projection-valued
+measure, and its Cauchy transform and the operator-valued Weyl family remain
+separate obligations.
 
 Pinned foundations:
 
@@ -223,7 +234,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 458 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 466 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

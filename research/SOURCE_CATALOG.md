@@ -176,6 +176,30 @@ summation theorem for little-o sequences then yields `C_M = o(A_M)` and hence
 `μ_M(z) - log M -> -1`.  No numeric value of `mu_minus_logM_plus_1` from the
 Python audit is used.
 
+## v0.21 first scalar functional-moment trace
+
+`NativeCarrySpectralWeyl/Limits/ScalarFunctionalMoment.lean` formalizes the
+first endpoint integral from `CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md`.
+For every fixed positive natural `ell`, it studies the sum below `ell*M` first
+in the coordinate `log(n+1)-log M` and then in the documented coordinate
+`log(n+1)-μ_M(z)`.
+
+The proof again avoids an unformalized Riemann-sum premise.  Its exact discrete
+increment consists of the new block of `ell` endpoint terms minus the change
+of logarithmic center over the old mass.  For every fixed block offset `r`,
+Lean proves both `w_z(ell*M+r)/w_z(M) -> 1` and
+`log(ell*M+r+1)-log(M+1) -> log ell`.  The normalized boundary therefore tends
+to `ell log ell`, while the normalized centering term tends to `ell`.
+Subtracting `ell(log ell-1) A_M` leaves a little-o increment, whose sum is
+little-o of `A_M`.  Finally, the v0.20 mean asymptotic converts the result to
+
+`A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z)) w_z(n) -> ell log ell`.
+
+This matches the independently formalized endpoint integral
+`integral_0^ell (1+log x) dx = ell log ell`.  The Python validations remain
+provenance and cross-check material; no sampled value or tolerance is a Lean
+premise.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the

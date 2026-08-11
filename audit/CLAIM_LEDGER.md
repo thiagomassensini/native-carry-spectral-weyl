@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.20 it contains
-thirty-two `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.21 it contains
+thirty-three `KERNEL_CHECKED` claims covering finite-camera geometry, exact periodic
 profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -65,8 +65,11 @@ and transfers any future coefficient-sum limit to both matrix realizations.
 It does not claim the analytic polynomial moment limit itself.
 The logarithmic-mean claim now proves `μ_M(z) - log M -> -1` from an exact
 telescoping identity and the previously established resolvent mass asymptotic.
-The scalar weighted limit at `ell * M` and the centered periodic coefficient
-sums remain explicit obligations.
+The first scalar-moment claim proves fixed-displacement endpoint slow
+variation and the normalized first functional limit at every positive natural
+cutoff multiplier `ell`, both centered at `log M` and at `μ_M(z)`.  Higher
+scalar moments and the centered periodic coefficient sums remain explicit
+obligations.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

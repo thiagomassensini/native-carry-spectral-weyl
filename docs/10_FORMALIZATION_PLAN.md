@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.20 logarithmic-mean milestone:
+Kernel checked through the v0.21 first scalar-moment milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -468,20 +468,28 @@ Kernel checked through the v0.20 logarithmic-mean milestone:
   the asymptotic `μ_M(z) - log M -> -1`, obtained from
   `A_M(z)/(M w_z(M)) -> 1`, `M(log(M+1)-log M) -> 1` and summation of a
   little-o increment.
+- fixed-displacement endpoint asymptotics for every positive natural `ell`
+  and fixed `r`: `w_z(ell*M+r)/w_z(M) -> 1` and
+  `log(ell*M+r+1)-log(M+1) -> log ell`;
+- an exact discrete increment for the first scalar logarithmic moment below
+  `ell*M`, with the little-o summation limits
+  `A_M^-1 sum_(n<ell*M) (log(n+1)-log M)w_z(n) -> ell(log ell-1)` and
+  `A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))w_z(n) -> ell log ell`.
 
-The exact finite polynomial layer and logarithmic centering asymptotic are
-complete.  The next Phase 4 target is the scalar weighted theorem at each
-fixed cutoff multiplier `ell`: prove the normalized centered monomial or
-analytic-transform limit, then eliminate the zero-mean periodic residue and
-the fixed seed/tail boundary.  This yields convergence of every centered
-polynomial coefficient covariance to the corresponding polynomial moment of
-the centered-log step POVM.  The transfer theorems already lift that result to
-the direct and return-metric formulations.  Locally uniform Cauchy-transform
-convergence off the real axis follows afterward.
+The exact finite polynomial layer, logarithmic centering asymptotic and first
+scalar centered moment are complete.  The next Phase 4 target is to eliminate
+the zero-mean periodic residue and fixed seed/tail boundary for the linear
+multiplier, connecting the scalar limit to the first functional coefficient
+covariance.  The same discrete recurrence can then be iterated for higher
+centered monomials, yielding every polynomial moment.  The existing transfer
+theorems lift those coefficient-sum results to the direct and return-metric
+formulations.  Locally uniform Cauchy-transform convergence off the real axis
+follows afterward.
 
 Targets:
 
-- scalar weighted limits at `ell * M` and polynomial coefficient-sum limits;
+- periodic-residue elimination for the first functional coefficient sum;
+- higher scalar moments at `ell * M` and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 
 The Green v2.1 strong Parseval and finite-Poisson limits may be reused through
