@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.29 scalar fifth-moment milestone contains exactly **615** named public
-Lean theorems, ordered as `NCSW-001` through `NCSW-615` in
+The v0.32 sextic covariance milestone contains exactly **698** named public
+Lean theorems, ordered as `NCSW-001` through `NCSW-698` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -49,5 +49,8 @@ report for every declaration.
 | `NCSW-562`–`NCSW-571` | `Limits/ScalarFourthFunctionalMoment.lean` | exact quartic recurrence, raw fourth scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)⁴+6log(ℓ)²-8log(ℓ)+9)` |
 | `NCSW-572`–`NCSW-604` | `Limits/QuarticFunctionalCovariance.lean` | log-fourth Abel control, slow variation of the logarithmic mean, quartic residue and literal-boundary elimination, complete coefficient/direct/return-metric fourth-moment limits and exact six-camera target |
 | `NCSW-605`–`NCSW-615` | `Limits/ScalarFifthFunctionalMoment.lean` | exact quintic recurrence, raw fifth scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)⁵+10log(ℓ)³-20log(ℓ)²+45log(ℓ)-44)` |
+| `NCSW-616`–`NCSW-650` | `Limits/QuinticFunctionalCovariance.lean` | log-fifth Abel control, quintic residue and literal-boundary elimination, complete coefficient/direct/return-metric fifth-moment limits and exact six-camera target |
+| `NCSW-651`–`NCSW-662` | `Limits/ScalarSixthFunctionalMoment.lean` | exact sextic recurrence, raw sixth scalar limit and weighted-mean-centered limit `ℓ(log(ℓ)⁶+15log(ℓ)⁴-40log(ℓ)³+135log(ℓ)²-264log(ℓ)+265)` |
+| `NCSW-663`–`NCSW-698` | `Limits/SexticFunctionalCovariance.lean` | log-sixth Abel control, three critical mixed terms, sextic residue and literal-boundary elimination, complete coefficient/direct/return-metric sixth-moment limits and exact six-camera target |
 
 The JSON registry is the machine-readable authority for exact qualified names.

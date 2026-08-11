@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.31.0",
-  "registry_count": 662,
-  "count": 43,
+  "release": "0.32.0",
+  "registry_count": 698,
+  "count": 44,
   "status_counts": {
-    "KERNEL_CHECKED": 43
+    "KERNEL_CHECKED": 44
   },
   "claims": [
     {
@@ -968,6 +968,49 @@
         "NCSW-660",
         "NCSW-661",
         "NCSW-662"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-018",
+      "claim": "For every finite common-period camera family and nonreal z, the complete centered-sextic resolvent covariance is kernel checked. Discrete Abel summation controls the unbounded log-sixth resolvent weight by its O(log(M)^4) endpoint, which is negligible relative to A_M(z). The three critical mixed terms mu_M log^5, mu_M^2 log^4 and mu_M^3 log^3 are reduced using mu_M(z)/log(M+1) -> 1 to separately checked endpoint and periodic-sum limits. The full centered sextic residue and every fixed literal seed/corrected-endpoint boundary vanish. Thus the complete coefficient covariance, normalized direct functional product and every compatible return-metric colligation converge to G_bc(log(min(ell_b,ell_c))^6+15log(min(ell_b,ell_c))^4-40log(min(ell_b,ell_c))^3+135log(min(ell_b,ell_c))^2-264log(min(ell_b,ell_c))+265), with exact six-camera target sixCameraSixthCenteredMoment.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-663",
+        "NCSW-664",
+        "NCSW-665",
+        "NCSW-666",
+        "NCSW-667",
+        "NCSW-668",
+        "NCSW-669",
+        "NCSW-670",
+        "NCSW-671",
+        "NCSW-672",
+        "NCSW-673",
+        "NCSW-674",
+        "NCSW-675",
+        "NCSW-676",
+        "NCSW-677",
+        "NCSW-678",
+        "NCSW-679",
+        "NCSW-680",
+        "NCSW-681",
+        "NCSW-682",
+        "NCSW-683",
+        "NCSW-684",
+        "NCSW-685",
+        "NCSW-686",
+        "NCSW-687",
+        "NCSW-688",
+        "NCSW-689",
+        "NCSW-690",
+        "NCSW-691",
+        "NCSW-692",
+        "NCSW-693",
+        "NCSW-694",
+        "NCSW-695",
+        "NCSW-696",
+        "NCSW-697",
+        "NCSW-698"
       ]
     }
   ]

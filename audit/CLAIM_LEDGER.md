@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.29 it contains
-forty-one `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.32 it contains
+forty-four `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -118,9 +118,21 @@ increment to obtain
 `ell(log(ell)^5-5log(ell)^4+20log(ell)^3-60log(ell)^2+
 120log(ell)-120)`.  Shifting from `log M` to `μ_M(z)` gives the documented
 centered limit
-`ell(log(ell)^5+10log(ell)^3-20log(ell)^2+45log(ell)-44)`.  The quintic
-periodic residue and literal boundary are the next coefficient-covariance
-obligations.
+`ell(log(ell)^5+10log(ell)^3-20log(ell)^2+45log(ell)-44)`.
+The quintic functional-covariance claim controls the log-fifth periodic
+weight, eliminates its two new mixed terms and literal boundary, and obtains
+the complete fifth centered covariance in coefficient, direct-product and
+return-metric forms.
+The sixth scalar-moment claim proves the exact sextic cutoff recurrence and
+the centered limit
+`ell(log(ell)^6+15log(ell)^4-40log(ell)^3+135log(ell)^2-
+264log(ell)+265)`.
+The sextic functional-covariance claim applies discrete Abel summation to the
+log-sixth weight, closes the three critical mixed terms
+`μ_M log^5`, `μ_M^2 log^4` and `μ_M^3 log^3`, and eliminates every fixed
+literal boundary.  The complete sixth covariance follows in coefficient,
+direct-product and return-metric forms, with exact six-camera target
+`sixCameraSixthCenteredMoment`.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM
