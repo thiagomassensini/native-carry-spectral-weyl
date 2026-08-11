@@ -676,7 +676,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked in the v0.38 all-bases Gram-kernel milestone:
+Kernel checked through the v0.39 canonical camera-completion milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -686,9 +686,17 @@ Kernel checked in the v0.38 all-bases Gram-kernel milestone:
 - a level/residue sum-of-squares identity, strict positive definiteness of
   every finite principal restriction, and strict positivity of the resulting
   `Finsupp` Gram form.
+- all bilinear inner-product laws for that Gram form and the induced intrinsic
+  real norm on finitely supported camera coefficients;
+- the canonical Mathlib completion, its explicit completeness, dense
+  isometric embedding and canonical camera vectors with Gram-kernel inner
+  products;
+- monotone compatible finite-label inclusions and density of their union in
+  the all-bases completion.
 
-The next unchecked item is the Hilbert completion of this pre-inner-product
-space; no standard unweighted camera `l2` model is introduced.
+The next unchecked item is a Kolmogorov realization of the periodic kernel,
+followed by the explicit step-function/Naimark isometry.  No standard
+unweighted camera `l2` model is introduced.
 
 This phase must not represent the all-bases inverse as an everywhere-defined
 continuous linear map.

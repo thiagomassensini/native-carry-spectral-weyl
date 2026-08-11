@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.38 all-bases Gram-kernel milestone contains exactly **877**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-877` in
+The v0.39 canonical camera-completion milestone contains exactly **901**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-901` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -58,5 +58,6 @@ report for every declaration.
 | `NCSW-764`–`NCSW-803` | `Limits/EighthFunctionalCovariance.lean` | log-eighth Abel control, five critical mixed terms, eighth-power residue and literal-boundary elimination, complete coefficient/direct/return-metric eighth-moment limits and exact six-camera target |
 | `NCSW-804`–`NCSW-839` | `Limits/GeneralMomentHierarchy.lean` | all-degree polynomial recurrence, monic degree theorem, general self-adjoint moment matrices, bridges through degree eight and exact all-degree six-camera target |
 | `NCSW-840`–`NCSW-877` | `Infinite/GramKernel.lean` | countable camera index, canonical pair-period kernel, finite-restriction bridge, exact slope-four block, sum-of-squares identity and strict positivity on `Finsupp` |
+| `NCSW-878`–`NCSW-901` | `Infinite/CameraCompletion.lean` | intrinsic Gram inner product, canonical Hilbert completion, dense isometric embedding, exact camera-vector Gram kernel and dense compatible finite-level union |
 
 The JSON registry is the machine-readable authority for exact qualified names.

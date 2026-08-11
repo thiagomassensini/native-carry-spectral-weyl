@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.38 it contains
-fifty `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.39 it contains
+fifty-one `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -31,6 +31,11 @@ same value, identifies every finite principal restriction with the existing
 finite periodic Gram matrix, checks the exceptional C2/C4 mean block and its
 determinant `2`, and proves strict positivity of both every finite principal
 matrix and the induced Gram form on finitely supported coefficients.
+The second all-bases claim equips that `Finsupp` space with the intrinsic real
+Gram inner product, takes its canonical complete Hilbert-space completion,
+proves the completion embedding is isometric and dense, recovers the exact
+Gram kernel as inner products of canonical camera vectors, and proves the
+compatible finite-label levels have dense union.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.
@@ -171,6 +176,6 @@ monic of degree `k`, and defines the self-adjoint algebraic camera target
 eight and gives one exact literal six-camera matrix in every degree.  It does
 not promote the degree-at-most-eight analytic limits to arbitrary degree.
 
-No projection-valued measure, infinite camera completion or Weyl inverse is
-claimed by this milestone.  Positivity and normalization of the finite POVM
-do not imply idempotent spectral effects.
+No all-bases POVM, Kolmogorov/Naimark realization or Weyl inverse is claimed
+by this milestone.  Positivity and normalization of the finite POVM do not
+imply idempotent spectral effects.

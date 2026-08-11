@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.38.0",
-  "count": 877,
+  "release": "0.39.0",
+  "count": 901,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -4387,6 +4387,126 @@
       "id": "NCSW-877",
       "name": "gramForm_pos",
       "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_pos"
+    },
+    {
+      "id": "NCSW-878",
+      "name": "gramForm_add_left",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_add_left"
+    },
+    {
+      "id": "NCSW-879",
+      "name": "gramForm_add_right",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_add_right"
+    },
+    {
+      "id": "NCSW-880",
+      "name": "gramForm_smul_left",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_smul_left"
+    },
+    {
+      "id": "NCSW-881",
+      "name": "gramForm_smul_right",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_smul_right"
+    },
+    {
+      "id": "NCSW-882",
+      "name": "gramForm_zero_left",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_zero_left"
+    },
+    {
+      "id": "NCSW-883",
+      "name": "gramForm_zero_right",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_zero_right"
+    },
+    {
+      "id": "NCSW-884",
+      "name": "gramForm_single_single",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.gramForm_single_single"
+    },
+    {
+      "id": "NCSW-885",
+      "name": "cameraFinsupp_inner_eq_gramForm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraFinsupp_inner_eq_gramForm"
+    },
+    {
+      "id": "NCSW-886",
+      "name": "cameraFinsupp_norm_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraFinsupp_norm_sq"
+    },
+    {
+      "id": "NCSW-887",
+      "name": "cameraHilbert_isComplete_univ",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraHilbert_isComplete_univ"
+    },
+    {
+      "id": "NCSW-888",
+      "name": "cameraEmbedding_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraEmbedding_apply"
+    },
+    {
+      "id": "NCSW-889",
+      "name": "cameraEmbedding_denseRange",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraEmbedding_denseRange"
+    },
+    {
+      "id": "NCSW-890",
+      "name": "cameraEmbedding_inner",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraEmbedding_inner"
+    },
+    {
+      "id": "NCSW-891",
+      "name": "cameraEmbedding_norm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraEmbedding_norm"
+    },
+    {
+      "id": "NCSW-892",
+      "name": "inner_cameraVector",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.inner_cameraVector"
+    },
+    {
+      "id": "NCSW-893",
+      "name": "norm_cameraVector_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_cameraVector_sq"
+    },
+    {
+      "id": "NCSW-894",
+      "name": "finiteCameraSubspace_mono",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteCameraSubspace_mono"
+    },
+    {
+      "id": "NCSW-895",
+      "name": "finiteCameraInclusion_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteCameraInclusion_apply"
+    },
+    {
+      "id": "NCSW-896",
+      "name": "finiteCameraInclusion_mono_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteCameraInclusion_mono_apply"
+    },
+    {
+      "id": "NCSW-897",
+      "name": "finiteCameraInclusion_inner",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteCameraInclusion_inner"
+    },
+    {
+      "id": "NCSW-898",
+      "name": "cameraLabel_le_cameraSupportBound",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraLabel_le_cameraSupportBound"
+    },
+    {
+      "id": "NCSW-899",
+      "name": "mem_finiteCameraSubspace_cameraSupportBound",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.mem_finiteCameraSubspace_cameraSupportBound"
+    },
+    {
+      "id": "NCSW-900",
+      "name": "dense_iUnion_range_finiteCameraInclusion",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.dense_iUnion_range_finiteCameraInclusion"
+    },
+    {
+      "id": "NCSW-901",
+      "name": "cameraVector_mem_range_finiteCameraInclusion",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraVector_mem_range_finiteCameraInclusion"
     }
   ]
 }

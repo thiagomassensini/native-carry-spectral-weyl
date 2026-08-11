@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.38.0",
-  "registry_count": 877,
-  "count": 50,
+  "release": "0.39.0",
+  "registry_count": 901,
+  "count": 51,
   "status_counts": {
-    "KERNEL_CHECKED": 50
+    "KERNEL_CHECKED": 51
   },
   "claims": [
     {
@@ -1191,7 +1191,7 @@
     },
     {
       "id": "NCSW-INF-001",
-      "claim": "The first countable all-bases camera layer is kernel checked. Camera labels b >= 2 form the countable index, each pairwise periodic mean is defined over the least common multiple of its slopes and is proved invariant under every larger positive common period, and every finite principal restriction is exactly the previously checked finite periodic Gram matrix. The exceptional duplicated slope four has exact C2/C4 periodic-mean block [[3/2,5/2],[5/2,11/2]], determinant 2 and positive definiteness. A level/residue sum-of-squares identity proves every finite principal all-bases Gram matrix strictly positive definite and the induced Gram form strictly positive on every nonzero Finsupp vector. This claim does not yet construct the Hilbert completion, an all-bases POVM or a Weyl inverse.",
+      "claim": "The first countable all-bases camera layer is kernel checked. Camera labels b >= 2 form the countable index, each pairwise periodic mean is defined over the least common multiple of its slopes and is proved invariant under every larger positive common period, and every finite principal restriction is exactly the previously checked finite periodic Gram matrix. The exceptional duplicated slope four has exact C2/C4 periodic-mean block [[3/2,5/2],[5/2,11/2]], determinant 2 and positive definiteness. A level/residue sum-of-squares identity proves every finite principal all-bases Gram matrix strictly positive definite and the induced Gram form strictly positive on every nonzero Finsupp vector. This first claim stops at the algebraic Finsupp layer; the canonical completion is covered by the following claim.",
       "status": "KERNEL_CHECKED",
       "theorem_ids": [
         "NCSW-840",
@@ -1232,6 +1232,37 @@
         "NCSW-875",
         "NCSW-876",
         "NCSW-877"
+      ]
+    },
+    {
+      "id": "NCSW-INF-002",
+      "claim": "The canonical all-bases camera Hilbert completion is kernel checked without choosing an external camera weight. The strictly positive Finsupp Gram form satisfies all real bilinear inner-product laws and induces the intrinsic norm with norm square g_infinity(u,u). Mathlib's canonical completion is explicitly complete; its linear-isometric embedding preserves the Gram inner product and norm and has dense range. Canonical single-camera vectors have inner products exactly G_bc. The subspaces supported on labels at most B are monotone, their isometric inclusions are compatible as B increases, every finitely supported vector belongs to one such level, and the union of all finite-level images is dense in the completion. This claim does not construct a Kolmogorov/Naimark realization, an all-bases POVM, a Cauchy family or a Weyl inverse.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-878",
+        "NCSW-879",
+        "NCSW-880",
+        "NCSW-881",
+        "NCSW-882",
+        "NCSW-883",
+        "NCSW-884",
+        "NCSW-885",
+        "NCSW-886",
+        "NCSW-887",
+        "NCSW-888",
+        "NCSW-889",
+        "NCSW-890",
+        "NCSW-891",
+        "NCSW-892",
+        "NCSW-893",
+        "NCSW-894",
+        "NCSW-895",
+        "NCSW-896",
+        "NCSW-897",
+        "NCSW-898",
+        "NCSW-899",
+        "NCSW-900",
+        "NCSW-901"
       ]
     }
   ]

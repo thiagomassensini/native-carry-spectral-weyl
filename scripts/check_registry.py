@@ -110,6 +110,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Limits."),
     (ROOT / "NativeCarrySpectralWeyl/Infinite/GramKernel.lean",
      "NativeCarrySpectralWeyl.Infinite."),
+    (ROOT / "NativeCarrySpectralWeyl/Infinite/CameraCompletion.lean",
+     "NativeCarrySpectralWeyl.Infinite."),
 ]
 
 

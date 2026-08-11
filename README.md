@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.38 all-bases Gram-kernel milestone contains **877 public
+The v0.39 canonical camera-completion milestone contains **901 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -92,6 +92,12 @@ surface proves:
 - a level/residue sum-of-squares identity proving every finite principal Gram
   matrix positive definite and the induced `Finsupp` Gram form strictly
   positive on every nonzero finitely supported coefficient vector.
+- the intrinsic real inner-product and Gram norm on finitely supported
+  all-bases camera coefficients, with no externally chosen camera weight;
+- the canonical complete camera Hilbert space obtained from Mathlib's
+  completion, together with its dense isometric `Finsupp` embedding;
+- canonical camera vectors whose inner products are exactly the all-bases
+  Gram kernel, and compatible finite-label inclusions whose union is dense.
 - a generic slope-weighted moment construction whose real matrices are
   Hermitian and self-adjoint for every finite camera package;
 - the exact first centered logarithmic moment
@@ -345,12 +351,14 @@ functional covariance limits are now kernel checked.  The next analytic gate
 is to lift the scalar and periodic-residue arguments to a degree-generic
 induction over the new polynomial hierarchy.  The algebraic all-degree targets
 are complete, but analytic convergence beyond degree eight is not yet claimed.
-Independently, Phase 5 has passed its first all-bases gate: the canonical
-strictly positive Gram form exists on `Finsupp`.  Its next gate is the Hilbert
-completion in that intrinsic metric, not the standard unweighted camera
-`l2` space.  The finite
-normalized POVM is not upgraded to a projection-valued measure, and its Cauchy
-transform and the operator-valued Weyl family remain separate obligations.
+Independently, Phase 5 has passed its second all-bases gate: the canonical
+strictly positive Gram form on `Finsupp` now generates its intrinsic real
+inner product, and the all-bases camera Hilbert space is its canonical
+completion.  Every finite-label level enters isometrically and compatibly,
+and their union is dense.  This is not the standard unweighted camera `l2`
+space.  The finite normalized POVM is not upgraded to a projection-valued
+measure; the Kolmogorov/Naimark realization, Cauchy transform and
+operator-valued Weyl family remain separate obligations.
 
 Pinned foundations:
 
@@ -387,7 +395,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 877 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 901 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

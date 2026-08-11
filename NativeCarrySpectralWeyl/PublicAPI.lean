@@ -39,6 +39,7 @@ import NativeCarrySpectralWeyl.Limits.ScalarEighthFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.EighthFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.GeneralMomentHierarchy
 import NativeCarrySpectralWeyl.Infinite.GramKernel
+import NativeCarrySpectralWeyl.Infinite.CameraCompletion
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -184,8 +185,13 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     principal restriction.  Its exact level/residue sum-of-squares formula,
     including the exceptional positive-definite C2/C4 slope-four block, proves
     every finite principal Gram matrix positive definite and the induced
-    `Finsupp` Gram form strictly positive.  The Hilbert completion and its
-    operator-valued spectral layers remain subsequent obligations.
+    `Finsupp` Gram form strictly positive.  Finally, that form equips `c₀₀`
+    with its intrinsic real inner product and norm, and its canonical Mathlib
+    completion produces the all-bases camera Hilbert space.  The completion
+    embedding is isometric with dense range, canonical camera-vector inner
+    products recover the Gram kernel, and the compatible finite-label levels
+    have dense union.  Kolmogorov/Naimark and operator-valued spectral layers
+    remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl

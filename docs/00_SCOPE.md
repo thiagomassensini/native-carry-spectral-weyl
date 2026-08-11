@@ -325,6 +325,17 @@ form is strictly positive on every nonzero `Finsupp` vector.  The Hilbert
 completion, Kolmogorov/Naimark realizations, Cauchy family and unbounded Weyl
 inverse remain outside this surface.
 
+The v0.39 surface takes the next canonical step.  The strictly positive Gram
+form defines the real inner product and norm on finitely supported camera
+coefficients, and the all-bases camera Hilbert space is Mathlib's completion
+in exactly that norm.  The completion coercion is a dense linear isometry;
+canonical camera vectors recover `gramKernel` through their inner products.
+For the label levels `F_B={b : b ≤ B}`, the inclusions are isometric and
+compatible under increasing `B`, and the union of their images is dense.
+No standard unweighted camera `l2` model or external base weight is used.
+Kolmogorov/Naimark realizations, an all-bases POVM, the Cauchy family and the
+unbounded Weyl inverse remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
