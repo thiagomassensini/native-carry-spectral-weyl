@@ -282,6 +282,32 @@ colligation family converge to `secondCenteredMomentMatrix`.  For cameras
 and cross-check material only; no sampled value or tolerance is a Lean
 premise.
 
+## v0.25 scalar third functional-moment trace
+
+`NativeCarrySpectralWeyl/Limits/ScalarThirdFunctionalMoment.lean` continues
+the exact discrete-moment route independently of numerical quadrature.  If
+`d_M = log(M+1)-log M`, the old cubic coordinate changes by the identity
+
+`(x-d_M)^3-x^3 = -3d_M x^2 + 3d_M^2 x - d_M^3`.
+
+The new fixed-width endpoint block converges after division by `w_z(M)` to
+`ell log(ell)^3`.  The term with `d_M` is controlled by the v0.23 raw second
+moment, while the terms containing `d_M^2` and `d_M^3` are proved negligible.
+The resulting increment differs by little-o of `w_z(M)` from
+
+`ell(log(ell)^3-3log(ell)^2+6log(ell)-6) w_z(M)`.
+
+Exact telescoping and the resolvent-mass asymptotic therefore give the raw
+third moment with that coefficient.  Expanding around
+`log M-μ_M(z) -> 1` and applying the previously proved moments of degrees
+zero, one and two yields
+
+`A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))^3 w_z(n)
+  -> ell(log(ell)^3+3log(ell)-2)`.
+
+No sampled value, tolerance or unformalized Riemann-sum premise enters the
+Lean proof.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the

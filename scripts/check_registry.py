@@ -82,6 +82,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Limits."),
     (ROOT / "NativeCarrySpectralWeyl/Limits/QuadraticFunctionalCovariance.lean",
      "NativeCarrySpectralWeyl.Limits."),
+    (ROOT / "NativeCarrySpectralWeyl/Limits/ScalarThirdFunctionalMoment.lean",
+     "NativeCarrySpectralWeyl.Limits."),
 ]
 
 

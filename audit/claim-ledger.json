@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.24.0",
-  "registry_count": 521,
-  "count": 36,
+  "release": "0.25.0",
+  "registry_count": 530,
+  "count": 37,
   "status_counts": {
-    "KERNEL_CHECKED": 36
+    "KERNEL_CHECKED": 37
   },
   "claims": [
     {
@@ -778,6 +778,22 @@
         "NCSW-519",
         "NCSW-520",
         "NCSW-521"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-011",
+      "claim": "For every fixed positive natural scale ell and nonreal z, the third scalar resolvent functional moment below ell M is kernel checked. The exact cubic recurrence decomposes its increment into the cubic endpoint block, the already proved second and first logarithmic moments with their binomial coefficients, and a negligible cubic change-of-center term. Little-o summation gives the log-M-centered limit ell(log(ell)^3-3log(ell)^2+6log(ell)-6), and mu_M(z)-log M -> -1 converts it to the weighted-mean-centered limit ell(log(ell)^3+3log(ell)-2).",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-522",
+        "NCSW-523",
+        "NCSW-524",
+        "NCSW-525",
+        "NCSW-526",
+        "NCSW-527",
+        "NCSW-528",
+        "NCSW-529",
+        "NCSW-530"
       ]
     }
   ]

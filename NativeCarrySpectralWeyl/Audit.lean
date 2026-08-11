@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.24 quadratic covariance registry. -/
+/-! Ordered foundational-dependency report for the v0.25 scalar third-moment registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -523,3 +523,12 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Limits.complexSecondCenteredMomentMatrix_sixCamera
 #print axioms NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredQuadraticDirectCovariance_sub
 #print axioms NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredQuadraticReturnMetricCrossCovariance_sub
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogCubeBoundary_div_weight
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_logStep_mul_resolventScaledLogSqMoment_div_weight
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_logStep_sq_mul_resolventScaledLogMoment_div_weight_zero
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_logStep_cube_mul_resolventMass_nat_mul_div_weight_zero
+#print axioms NativeCarrySpectralWeyl.Limits.resolventScaledLogCubeMoment_succ
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogCubeMomentIncrementError_div_weight_zero
+#print axioms NativeCarrySpectralWeyl.Limits.resolventScaledLogCubeMomentError_eq
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogCubeMoment_div_mass
+#print axioms NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledCenteredLogCubeMoment_div_mass

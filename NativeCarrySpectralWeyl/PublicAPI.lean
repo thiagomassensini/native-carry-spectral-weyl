@@ -25,6 +25,7 @@ import NativeCarrySpectralWeyl.Limits.FiniteFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.LinearFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarSecondFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.QuadraticFunctionalCovariance
+import NativeCarrySpectralWeyl.Limits.ScalarThirdFunctionalMoment
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -91,6 +92,10 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     coefficient covariance, direct product and every compatible return-metric
     family to `secondCenteredMomentMatrix`, with exact six-camera target
     `sixCameraSecondCenteredMoment`.
+    The third scalar functional-moment layer proves by an exact cubic
+    recurrence that
+    `sum_(n<ℓM) (log(n+1)-μ_M(z))³w_z(n)/A_M →
+    ℓ(log(ℓ)³+3log(ℓ)-2)`.
 -/
 
 namespace NativeCarrySpectralWeyl

@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.24.0",
-  "count": 521,
+  "release": "0.25.0",
+  "count": 530,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -2607,6 +2607,51 @@
       "id": "NCSW-521",
       "name": "tendsto_norm_sixCamera_normalizedFiniteCenteredQuadraticReturnMetricCrossCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredQuadraticReturnMetricCrossCovariance_sub"
+    },
+    {
+      "id": "NCSW-522",
+      "name": "tendsto_resolventScaledLogCubeBoundary_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogCubeBoundary_div_weight"
+    },
+    {
+      "id": "NCSW-523",
+      "name": "tendsto_logStep_mul_resolventScaledLogSqMoment_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_mul_resolventScaledLogSqMoment_div_weight"
+    },
+    {
+      "id": "NCSW-524",
+      "name": "tendsto_logStep_sq_mul_resolventScaledLogMoment_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_sq_mul_resolventScaledLogMoment_div_weight_zero"
+    },
+    {
+      "id": "NCSW-525",
+      "name": "tendsto_logStep_cube_mul_resolventMass_nat_mul_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_cube_mul_resolventMass_nat_mul_div_weight_zero"
+    },
+    {
+      "id": "NCSW-526",
+      "name": "resolventScaledLogCubeMoment_succ",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventScaledLogCubeMoment_succ"
+    },
+    {
+      "id": "NCSW-527",
+      "name": "tendsto_resolventScaledLogCubeMomentIncrementError_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogCubeMomentIncrementError_div_weight_zero"
+    },
+    {
+      "id": "NCSW-528",
+      "name": "resolventScaledLogCubeMomentError_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventScaledLogCubeMomentError_eq"
+    },
+    {
+      "id": "NCSW-529",
+      "name": "tendsto_resolventScaledLogCubeMoment_div_mass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogCubeMoment_div_mass"
+    },
+    {
+      "id": "NCSW-530",
+      "name": "tendsto_resolventScaledCenteredLogCubeMoment_div_mass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledCenteredLogCubeMoment_div_mass"
     }
   ]
 }

@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.24 quadratic covariance milestone:
+Kernel checked through the v0.25 scalar third-moment milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -500,19 +500,26 @@ Kernel checked through the v0.24 quadratic covariance milestone:
   with exact target `sixCameraSecondCenteredMoment` for cameras `2,...,7`;
 - transfer of the same second-moment limit to the direct functional matrix
   product and every compatible return-metric colligation family.
+- the exact cubic increment below `ell*M`, with its cubic boundary, second-
+  and first-moment binomial terms and negligible cubic change of center;
+- little-o summation of that increment, giving the raw third scalar limit
+  `ell(log(ell)^3-3log(ell)^2+6log(ell)-6)` and the
+  weighted-mean-centered limit `ell(log(ell)^3+3log(ell)-2)`.
 
 The exact finite polynomial layer, logarithmic centering asymptotic, first
-two scalar centered moments and complete linear and quadratic functional
-covariance limits are complete.  The next Phase 4 target is to iterate the
-recurrence for degrees at least three and eliminate their corresponding
-periodic residues, yielding every polynomial moment.  The existing transfer
+three scalar centered moments and complete linear and quadratic functional
+covariance limits are complete.  The next Phase 4 target is to eliminate the
+cubic periodic residue and fixed literal boundary, then iterate the recurrence
+for degrees at least four and their corresponding residues, yielding every
+polynomial moment.  The existing transfer
 theorems lift those coefficient-sum results to the direct and return-metric
 formulations.  Locally uniform
 Cauchy-transform convergence off the real axis follows afterward.
 
 Targets:
 
-- scalar moments of degree at least three and polynomial coefficient-sum limits;
+- cubic periodic-residue elimination and the complete third covariance;
+- scalar moments of degree at least four and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 
 The Green v2.1 strong Parseval and finite-Poisson limits may be reused through

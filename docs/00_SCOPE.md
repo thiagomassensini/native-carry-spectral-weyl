@@ -180,6 +180,17 @@ target `sixCameraSecondCenteredMoment` for cameras `2,...,7`.  Scalar moments
 of degree at least three, the full arbitrary-polynomial limit and the analytic
 transform remain outside this surface.
 
+The v0.25 surface proves the third scalar weighted functional moment at every
+fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
+uses the previously checked second and first logarithmic moments with the
+binomial coefficients `-3` and `3`; the remaining higher-step corrections
+vanish.  Little-o summation gives the `log M`-centered limit
+`ell(log(ell)^3-3log(ell)^2+6log(ell)-6)`, and the logarithmic-mean asymptotic
+converts it to `ell(log(ell)^3+3log(ell)-2)` in the documented `μ_M(z)`
+coordinate.  Elimination of the cubic periodic camera residue, the complete
+third coefficient covariance and all moments of degree at least four remain
+outside this surface.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:
