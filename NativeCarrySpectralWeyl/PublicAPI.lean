@@ -31,6 +31,7 @@ import NativeCarrySpectralWeyl.Limits.ScalarFourthFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.QuarticFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarFifthFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.QuinticFunctionalCovariance
+import NativeCarrySpectralWeyl.Limits.ScalarSixthFunctionalMoment
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -127,6 +128,10 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     compatible return-metric covariances converge to
     `fifthCenteredMomentMatrix`, with exact six-camera target
     `sixCameraFifthCenteredMoment`.
+    The sixth scalar functional-moment layer continues the recurrence and
+    proves
+    `sum_(n<ℓM) (log(n+1)-μ_M(z))⁶w_z(n)/A_M →
+    ℓ(log(ℓ)⁶+15log(ℓ)⁴-40log(ℓ)³+135log(ℓ)²-264log(ℓ)+265)`.
 -/
 
 namespace NativeCarrySpectralWeyl

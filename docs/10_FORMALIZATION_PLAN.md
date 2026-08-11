@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.30 quintic functional-covariance milestone:
+Kernel checked through the v0.31 scalar sixth-moment milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -557,18 +557,30 @@ Kernel checked through the v0.30 quintic functional-covariance milestone:
   target `sixCameraFifthCenteredMoment` for cameras `2,...,7`;
 - transfer of the same fifth-moment limit to the direct functional matrix
   product and every compatible return-metric colligation family.
+- the exact sextic increment below `ell*M`, with its sixth-power boundary,
+  fifth- through first-moment binomial terms and positive sixth-power mass
+  correction;
+- endpoint-weight negligibility of every sextic correction except the
+  logarithmic step times the already proved raw fifth moment;
+- little-o summation of that increment, giving the raw sixth scalar limit
+  `ell(log(ell)^6-6log(ell)^5+30log(ell)^4-120log(ell)^3+
+  360log(ell)^2-720log(ell)+720)` and the weighted-mean-centered limit
+  `ell(log(ell)^6+15log(ell)^4-40log(ell)^3+135log(ell)^2-
+  264log(ell)+265)`.
 
 The exact finite polynomial layer, logarithmic centering asymptotic, first
-five scalar centered moments and complete linear through quintic functional
-covariance limits are complete.  The next Phase 4 target is to iterate the
-scalar recurrence from degree six and continue toward every
+six scalar centered moments and complete linear through quintic functional
+covariance limits are complete.  The next Phase 4 target is to eliminate the
+sextic periodic residue and fixed literal boundary, then iterate the scalar
+recurrence from degree seven and continue toward every
 polynomial moment.  The existing transfer theorems lift those coefficient-sum
 results to the direct and return-metric formulations.  Locally uniform
 Cauchy-transform convergence off the real axis follows afterward.
 
 Targets:
 
-- scalar moments of degree at least six and polynomial coefficient-sum limits;
+- sextic periodic-residue elimination and the complete sixth covariance;
+- scalar moments of degree at least seven and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 
 The Green v2.1 strong Parseval and finite-Poisson limits may be reused through

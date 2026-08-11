@@ -209,6 +209,21 @@ cameras `2,...,7`.  Scalar moments of degree at least six, the full
 arbitrary-polynomial limit and the analytic transform remain outside this
 surface.
 
+The v0.31 surface proves the sixth scalar weighted functional moment at every
+fixed positive natural cutoff multiplier `ell`.  The exact sextic increment
+uses the already checked fifth through first logarithmic moments with binomial
+coefficients `-6`, `15`, `-20`, `15` and `-6`, followed by the positive
+sixth-power mass correction.  Only the logarithmic step times the raw fifth
+moment survives at endpoint-weight scale.  Little-o summation gives the
+`log M`-centered limit
+`ell(log(ell)^6-6log(ell)^5+30log(ell)^4-120log(ell)^3+
+360log(ell)^2-720log(ell)+720)`, and the logarithmic-mean asymptotic converts
+it to
+`ell(log(ell)^6+15log(ell)^4-40log(ell)^3+135log(ell)^2-
+264log(ell)+265)` in the documented `μ_M(z)` coordinate.  Elimination of the
+sextic periodic residue, the complete sixth coefficient covariance and all
+moments of degree at least seven remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
