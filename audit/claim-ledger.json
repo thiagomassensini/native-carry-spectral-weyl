@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.21.0",
-  "registry_count": 466,
-  "count": 33,
+  "release": "0.22.0",
+  "registry_count": 489,
+  "count": 34,
   "status_counts": {
-    "KERNEL_CHECKED": 33
+    "KERNEL_CHECKED": 34
   },
   "claims": [
     {
@@ -702,6 +702,36 @@
         "NCSW-464",
         "NCSW-465",
         "NCSW-466"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-008",
+      "claim": "For every finite camera family with a common profile period and every nonreal z, the complete literal covariance with the centered linear multiplier log(n+1)-mu_M(z) converges entrywise and in finite matrix norm to the first camera moment H_ij = G_ij log(min(ell_i,ell_j)). The proof eliminates the zero-mean periodic residue by bounded Dirichlet sums for both w_z and log(n+1)w_z, and eliminates every fixed seed and endpoint boundary term. The same limit holds for the direct functional matrix product and every compatible return-metric colligation family; cameras 2 through 7 converge to the exact complexification of sixCameraFirstMoment.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-467",
+        "NCSW-468",
+        "NCSW-469",
+        "NCSW-470",
+        "NCSW-471",
+        "NCSW-472",
+        "NCSW-473",
+        "NCSW-474",
+        "NCSW-475",
+        "NCSW-476",
+        "NCSW-477",
+        "NCSW-478",
+        "NCSW-479",
+        "NCSW-480",
+        "NCSW-481",
+        "NCSW-482",
+        "NCSW-483",
+        "NCSW-484",
+        "NCSW-485",
+        "NCSW-486",
+        "NCSW-487",
+        "NCSW-488",
+        "NCSW-489"
       ]
     }
   ]

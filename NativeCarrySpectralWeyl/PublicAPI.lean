@@ -22,6 +22,7 @@ import NativeCarrySpectralWeyl.Limits.FiniteDefectCovariance
 import NativeCarrySpectralWeyl.Limits.ResolventLogMean
 import NativeCarrySpectralWeyl.Limits.ScalarFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.FiniteFunctionalCovariance
+import NativeCarrySpectralWeyl.Limits.LinearFunctionalCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -69,8 +70,11 @@ one probe leg, proves exact return-metric cancellation to the complete literal
 coefficient sum, and specializes this identity to every real polynomial in
 the finite centered logarithmic coordinate.  Any limit of those coefficient
 sums transfers automatically to both the direct matrix product and every
-compatible finite colligation family; proving the polynomial coefficient-sum
-limit itself remains the next analytic obligation.  The scalar second-order
+    compatible finite colligation family.  For the linear polynomial, the
+    zero-mean periodic residue and fixed literal boundary are eliminated, so
+    the complete coefficient covariance, direct product and every compatible
+    return-metric family converge in matrix norm to the first camera moment,
+    with exact six-camera target `sixCameraFirstMoment`.  The scalar second-order
 layer proves the exact telescoping identity for the centered logarithmic
 numerator and the asymptotic `μ_M(z) - log M → -1` for every fixed nonreal
 resolvent parameter.  The first scalar functional-moment layer then proves,

@@ -151,7 +151,16 @@ weights and logarithms are controlled directly, and an exact increment plus
 little-o summation gives the limits `ell(log ell-1)` when centered at `log M`
 and `ell log ell` when centered at `μ_M(z)`.  Higher scalar moments,
 periodic-residue elimination, the full polynomial coefficient-sum limit and
-the analytic transform remain outside this surface.
+the analytic transform remain outside that surface.
+
+The v0.22 surface eliminates the zero-mean periodic residue and every fixed
+literal seed/endpoint boundary term for the centered linear multiplier.  The
+complete coefficient covariance therefore converges entrywise and in finite
+matrix norm to `H_bc = G_bc log(min(ell_b,ell_c))`; the direct functional
+product and every compatible return-metric colligation inherit the same
+limit, with exact target `sixCameraFirstMoment` for cameras `2,...,7`.  Higher
+centered powers, the full polynomial limit and the analytic transform remain
+outside this surface.
 
 ## Explicit nonclaims
 

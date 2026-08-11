@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.21 first scalar-moment milestone:
+Kernel checked through the v0.22 linear functional-covariance milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -474,21 +474,28 @@ Kernel checked through the v0.21 first scalar-moment milestone:
 - an exact discrete increment for the first scalar logarithmic moment below
   `ell*M`, with the little-o summation limits
   `A_M^-1 sum_(n<ell*M) (log(n+1)-log M)w_z(n) -> ell(log ell-1)` and
-  `A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))w_z(n) -> ell log ell`.
+  `A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))w_z(n) -> ell log ell`;
+- eventual antitonicity and decay of `log(n+1)w_z(n)`, and boundedness of its
+  Dirichlet prefixes against every zero-mean periodic residue;
+- elimination of the centered linear periodic residue and every fixed-width
+  literal seed/endpoint boundary after normalization by `A_M`;
+- entrywise and finite-matrix norm convergence of the complete centered-linear
+  coefficient covariance to `firstMomentMatrix`, including the exact target
+  `sixCameraFirstMoment` for cameras `2,...,7`;
+- transfer of the same first-moment limit to the direct functional matrix
+  product and every compatible return-metric colligation family.
 
-The exact finite polynomial layer, logarithmic centering asymptotic and first
-scalar centered moment are complete.  The next Phase 4 target is to eliminate
-the zero-mean periodic residue and fixed seed/tail boundary for the linear
-multiplier, connecting the scalar limit to the first functional coefficient
-covariance.  The same discrete recurrence can then be iterated for higher
-centered monomials, yielding every polynomial moment.  The existing transfer
-theorems lift those coefficient-sum results to the direct and return-metric
+The exact finite polynomial layer, logarithmic centering asymptotic, first
+scalar centered moment and complete linear functional covariance limit are
+complete.  The next Phase 4 target is to iterate the discrete recurrence for
+higher centered monomials and eliminate their corresponding periodic
+residues, yielding every polynomial moment.  The existing transfer theorems
+then lift those coefficient-sum results to the direct and return-metric
 formulations.  Locally uniform Cauchy-transform convergence off the real axis
 follows afterward.
 
 Targets:
 
-- periodic-residue elimination for the first functional coefficient sum;
 - higher scalar moments at `ell * M` and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 

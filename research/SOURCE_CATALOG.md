@@ -200,6 +200,29 @@ This matches the independently formalized endpoint integral
 provenance and cross-check material; no sampled value or tolerance is a Lean
 premise.
 
+## v0.22 linear functional-covariance trace
+
+`NativeCarrySpectralWeyl/Limits/LinearFunctionalCovariance.lean` closes the
+linear coefficient-sum gate isolated in
+`CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md` and in the defect-probe research
+log.  For a common profile period, the camera product is decomposed into its
+one-period mean plus a zero-mean periodic residue.  Lean proves bounded
+Dirichlet prefixes for that residue against both `w_z(n)` and
+`log(n+1)w_z(n)`; the latter weight is proved to tend to zero and to become
+antitone after a finite prefix.  The auxiliary estimates
+`log M / A_M -> 0` and `μ_M(z) / A_M -> 0` then eliminate the centered residue.
+
+The shifted periodic core is combined with the v0.21 scalar limit, while the
+complete finite coefficient formula is recovered by proving every fixed
+seed/corrected-endpoint boundary term vanishes.  Consequently the literal
+centered-linear coefficient covariance converges to
+`firstMomentMatrix`; the existing exact finite identities transfer this limit
+to the direct functional matrix product and every compatible return-metric
+colligation family.  Cameras `2,...,7` have exact target the complexification
+of `sixCameraFirstMoment`.  The Python laboratories remain provenance and
+cross-check material only; no sampled value or tolerance is used as a Lean
+premise.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the
