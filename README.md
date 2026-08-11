@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.32 sextic covariance milestone contains **698 public
+The v0.33 scalar seventh-moment milestone contains **711 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -282,6 +282,13 @@ surface proves:
 - convergence of the complete sixth coefficient covariance, direct product
   and every compatible return-metric family to `sixthCenteredMomentMatrix`,
   with exact six-camera target `sixCameraSixthCenteredMoment`.
+- the exact seventh-power recurrence below `ell*M`, with binomial
+  coefficients `-7, 21, -35, 35, -21, 7, -1` and raw limit
+  `ell(log(ell)^7-7log(ell)^6+42log(ell)^5-210log(ell)^4+
+  840log(ell)^3-2520log(ell)^2+5040log(ell)-5040)`;
+- the seventh weighted-mean-centered scalar functional limit
+  `ell(log(ell)^7+21log(ell)^5-70log(ell)^4+315log(ell)^3-
+  924log(ell)^2+1855log(ell)-1854)`.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -289,10 +296,11 @@ return-metric theorem is parametrized by a finite colligation family satisfying
 the explicit identities `P_M E_M = B_M` and
 `E_MᴴE_M + B_MᴴB_M = I`.  Instantiating those matrices from an additional
 upstream Green model is therefore a separate integration step, not a hidden
-premise.  The logarithmic centering asymptotic, the first six scalar weighted
+premise.  The logarithmic centering asymptotic, the first seven scalar weighted
 moments at cutoffs `ell * M`, and the complete linear through sextic
 functional covariance limits are now kernel checked.  The next analytic gate
-is the scalar recurrence from degree seven and the arbitrary-polynomial
+is the seventh periodic-residue and literal-boundary elimination, followed by
+the scalar recurrence from degree eight and the arbitrary-polynomial
 coefficient-sum limit.  The finite
 normalized POVM is not upgraded to a projection-valued measure, and its Cauchy
 transform and the operator-valued Weyl family remain separate obligations.
@@ -332,7 +340,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 698 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 711 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

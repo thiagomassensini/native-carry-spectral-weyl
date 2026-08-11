@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.32.0",
-  "registry_count": 698,
-  "count": 44,
+  "release": "0.33.0",
+  "registry_count": 711,
+  "count": 45,
   "status_counts": {
-    "KERNEL_CHECKED": 44
+    "KERNEL_CHECKED": 45
   },
   "claims": [
     {
@@ -1011,6 +1011,26 @@
         "NCSW-696",
         "NCSW-697",
         "NCSW-698"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-019",
+      "claim": "For every fixed positive natural scale ell and nonreal z, the seventh scalar resolvent functional moment below ell M is kernel checked. The exact seventh-power recurrence decomposes its increment into the endpoint block and the already proved sixth through first logarithmic moments with binomial coefficients -7, 21, -35, 35, -21 and 7, followed by the negative seventh-power mass correction. Only the logarithmic step times the raw sixth moment contributes at endpoint-weight scale; all higher-step corrections vanish. Little-o summation gives the log-M-centered limit ell(log(ell)^7-7log(ell)^6+42log(ell)^5-210log(ell)^4+840log(ell)^3-2520log(ell)^2+5040log(ell)-5040), and log M-mu_M(z) -> 1 converts it to the weighted-mean-centered limit ell(log(ell)^7+21log(ell)^5-70log(ell)^4+315log(ell)^3-924log(ell)^2+1855log(ell)-1854).",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-699",
+        "NCSW-700",
+        "NCSW-701",
+        "NCSW-702",
+        "NCSW-703",
+        "NCSW-704",
+        "NCSW-705",
+        "NCSW-706",
+        "NCSW-707",
+        "NCSW-708",
+        "NCSW-709",
+        "NCSW-710",
+        "NCSW-711"
       ]
     }
   ]

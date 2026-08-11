@@ -33,6 +33,7 @@ import NativeCarrySpectralWeyl.Limits.ScalarFifthFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.QuinticFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarSixthFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.SexticFunctionalCovariance
+import NativeCarrySpectralWeyl.Limits.ScalarSeventhFunctionalMoment
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -140,6 +141,11 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     compatible return-metric covariances converge to
     `sixthCenteredMomentMatrix`, with exact six-camera target
     `sixCameraSixthCenteredMoment`.
+    The seventh scalar functional-moment layer then proves by the next exact
+    recurrence that
+    `sum_(n<ℓM) (log(n+1)-μ_M(z))⁷w_z(n)/A_M →
+    ℓ(log(ℓ)⁷+21log(ℓ)⁵-70log(ℓ)⁴+315log(ℓ)³-
+    924log(ℓ)²+1855log(ℓ)-1854)`.
 -/
 
 namespace NativeCarrySpectralWeyl

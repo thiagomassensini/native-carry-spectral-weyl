@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.32 it contains
-forty-four `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.33 it contains
+forty-five `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -133,6 +133,12 @@ log-sixth weight, closes the three critical mixed terms
 literal boundary.  The complete sixth covariance follows in coefficient,
 direct-product and return-metric forms, with exact six-camera target
 `sixCameraSixthCenteredMoment`.
+The seventh scalar-moment claim proves the exact seventh-power cutoff
+recurrence, shows that only the logarithmic step times the raw sixth moment
+survives at endpoint-weight scale, and derives the centered limit
+`ell(log(ell)^7+21log(ell)^5-70log(ell)^4+315log(ell)^3-
+924log(ell)^2+1855log(ell)-1854)`.  The seventh periodic residue and literal
+boundary are the next coefficient-covariance obligations.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

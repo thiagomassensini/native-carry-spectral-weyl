@@ -238,6 +238,21 @@ target `sixCameraSixthCenteredMoment` for cameras `2,...,7`.  Scalar moments
 of degree at least seven, the full arbitrary-polynomial limit and the
 analytic transform remain outside this surface.
 
+The v0.33 surface proves the seventh scalar weighted functional moment at
+every fixed positive natural cutoff multiplier `ell`.  The exact
+seventh-power increment uses the already checked sixth through first
+logarithmic moments with binomial coefficients `-7`, `21`, `-35`, `35`,
+`-21` and `7`, followed by the negative seventh-power mass correction.  Only
+the logarithmic step times the raw sixth moment survives at endpoint-weight
+scale.  Little-o summation gives the `log M`-centered limit
+`ell(log(ell)^7-7log(ell)^6+42log(ell)^5-210log(ell)^4+
+840log(ell)^3-2520log(ell)^2+5040log(ell)-5040)`, and the
+logarithmic-mean asymptotic converts it to
+`ell(log(ell)^7+21log(ell)^5-70log(ell)^4+315log(ell)^3-
+924log(ell)^2+1855log(ell)-1854)`.  Elimination of the seventh-power periodic
+residue, the complete seventh coefficient covariance and all moments of
+degree at least eight remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
