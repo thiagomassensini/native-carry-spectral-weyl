@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.28 it contains
-forty `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.29 it contains
+forty-one `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -110,8 +110,17 @@ seed/corrected-endpoint boundary.  The complete coefficient covariance, direct
 functional product and every compatible return-metric colligation converge to
 `L_bc = G_bc(log(min(ell_b,ell_c))^4 + 6log(min(ell_b,ell_c))^2 -
 8log(min(ell_b,ell_c)) + 9)`.  Its six-camera target is exactly the
-complexification of `sixCameraFourthCenteredMoment`.  Scalar degree five is
-the next moment obligation.
+complexification of `sixCameraFourthCenteredMoment`.
+The fifth scalar-moment claim proves the exact quintic cutoff recurrence,
+shows that all corrections beyond the logarithmic step times the raw fourth
+moment vanish at endpoint-weight scale, and sums the resulting little-o
+increment to obtain
+`ell(log(ell)^5-5log(ell)^4+20log(ell)^3-60log(ell)^2+
+120log(ell)-120)`.  Shifting from `log M` to `μ_M(z)` gives the documented
+centered limit
+`ell(log(ell)^5+10log(ell)^3-20log(ell)^2+45log(ell)-44)`.  The quintic
+periodic residue and literal boundary are the next coefficient-covariance
+obligations.
 
 No projection-valued measure, infinite camera completion or Weyl inverse is
 claimed by this milestone.  Positivity and normalization of the finite POVM

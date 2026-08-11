@@ -392,6 +392,34 @@ converge to the complexification of `sixCameraFourthCenteredMoment`.  Python
 validations remain provenance and cross-check material only; no sampled value
 or tolerance is a Lean premise.
 
+## v0.29 scalar fifth functional-moment trace
+
+`NativeCarrySpectralWeyl/Limits/ScalarFifthFunctionalMoment.lean` continues
+the exact discrete-moment recurrence.  With
+`d_M = log(M+1)-log M`, the change of the old quintic coordinate is
+
+`(x-d_M)^5-x^5 = -5d_M x^4 + 10d_M^2 x^3 - 10d_M^3 x^2 +
+  5d_M^4 x - d_M^5`.
+
+The fixed-width endpoint block converges after division by `w_z(M)` to
+`ell log(ell)^5`.  The term with `d_M` is controlled by the v0.27 raw fourth
+moment.  The terms containing `d_M^2` through `d_M^5` are proved negligible
+by multiplying the already checked lower-degree endpoint limits by the
+vanishing logarithmic step.  Exact telescoping and little-o summation give
+
+`A_M^-1 sum_(n<ell*M) (log(n+1)-log M)^5 w_z(n)
+  -> ell(log(ell)^5-5log(ell)^4+20log(ell)^3-60log(ell)^2+
+    120log(ell)-120)`.
+
+Finally, expansion around `log M-μ_M(z) -> 1` and the raw moments of degrees
+zero through five yield
+
+`A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))^5 w_z(n)
+  -> ell(log(ell)^5+10log(ell)^3-20log(ell)^2+45log(ell)-44)`.
+
+No sampled value, tolerance or unformalized integral approximation enters the
+Lean proof.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the

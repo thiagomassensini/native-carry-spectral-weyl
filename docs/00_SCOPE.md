@@ -180,6 +180,20 @@ target `sixCameraSecondCenteredMoment` for cameras `2,...,7`.  Scalar moments
 of degree at least three, the full arbitrary-polynomial limit and the analytic
 transform remain outside this surface.
 
+The v0.29 surface proves the fifth scalar weighted functional moment at every
+fixed positive natural cutoff multiplier `ell`.  The exact quintic increment
+uses the previously checked fourth, cubic, quadratic and linear logarithmic
+moments with binomial coefficients `-5`, `10`, `-10` and `5`, followed by the
+fifth-power mass correction.  Only the logarithmic step times the raw fourth
+moment survives at endpoint-weight scale.  Little-o summation gives the
+`log M`-centered limit
+`ell(log(ell)^5-5log(ell)^4+20log(ell)^3-60log(ell)^2+
+120log(ell)-120)`, and the logarithmic-mean asymptotic converts it to
+`ell(log(ell)^5+10log(ell)^3-20log(ell)^2+45log(ell)-44)` in the documented
+`μ_M(z)` coordinate.  Elimination of the quintic periodic camera residue,
+the complete fifth coefficient covariance and all moments of degree at least
+six remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the

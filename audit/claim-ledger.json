@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.28.0",
-  "registry_count": 604,
-  "count": 40,
+  "release": "0.29.0",
+  "registry_count": 615,
+  "count": 41,
   "status_counts": {
-    "KERNEL_CHECKED": 40
+    "KERNEL_CHECKED": 41
   },
   "claims": [
     {
@@ -889,6 +889,24 @@
         "NCSW-602",
         "NCSW-603",
         "NCSW-604"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-015",
+      "claim": "For every fixed positive natural scale ell and nonreal z, the fifth scalar resolvent functional moment below ell M is kernel checked. The exact quintic recurrence decomposes its increment into the fifth-power endpoint block and the already proved fourth, cubic, quadratic and linear logarithmic moments with binomial coefficients -5, 10, -10 and 5, followed by the fifth-power mass correction. Only the logarithmic step times the fourth moment contributes at endpoint-weight scale; all higher-step corrections vanish. Little-o summation gives the log-M-centered limit ell(log(ell)^5-5log(ell)^4+20log(ell)^3-60log(ell)^2+120log(ell)-120), and log M-mu_M(z) -> 1 converts it to the weighted-mean-centered limit ell(log(ell)^5+10log(ell)^3-20log(ell)^2+45log(ell)-44).",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-605",
+        "NCSW-606",
+        "NCSW-607",
+        "NCSW-608",
+        "NCSW-609",
+        "NCSW-610",
+        "NCSW-611",
+        "NCSW-612",
+        "NCSW-613",
+        "NCSW-614",
+        "NCSW-615"
       ]
     }
   ]
