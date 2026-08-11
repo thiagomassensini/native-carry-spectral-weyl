@@ -413,7 +413,7 @@ the authoritative definition and is sufficient for the operator theory.
 This phase connects the camera package to the Green/state layer without
 identifying static Poisson with spectral Weyl.
 
-Kernel checked through the v0.29 scalar fifth-moment milestone:
+Kernel checked through the v0.30 quintic functional-covariance milestone:
 
 - exact complete-block plus remainder decomposition for periodic
   vector-valued sums and a uniform norm bound for zero-mean prefixes;
@@ -546,19 +546,28 @@ Kernel checked through the v0.29 scalar fifth-moment milestone:
   `ell(log(ell)^5-5log(ell)^4+20log(ell)^3-60log(ell)^2+
   120log(ell)-120)` and the weighted-mean-centered limit
   `ell(log(ell)^5+10log(ell)^3-20log(ell)^2+45log(ell)-44)`.
+- discrete Abel summation for the log-fifth resolvent weight, its endpoint
+  growth `O(log(M)^3)` and the normalized decay `log(M)^3/A_M(z) → 0`;
+- the auxiliary asymptotic `μ_M(z)/log(M+1) → 1`, which closes the new
+  `μ_M log^4` and `μ_M^2 log^3` periodic terms;
+- elimination of the centered quintic periodic residue and every fixed-width
+  literal boundary term;
+- entrywise and finite-matrix norm convergence of the complete centered-
+  quintic coefficient covariance to `fifthCenteredMomentMatrix`, with exact
+  target `sixCameraFifthCenteredMoment` for cameras `2,...,7`;
+- transfer of the same fifth-moment limit to the direct functional matrix
+  product and every compatible return-metric colligation family.
 
 The exact finite polynomial layer, logarithmic centering asymptotic, first
-five scalar centered moments and complete linear, quadratic, cubic and quartic
-functional covariance limits are complete.  The next Phase 4 target is to
-eliminate the quintic periodic residue and fixed literal boundary, then
-iterate the scalar recurrence from degree six and continue toward every
+five scalar centered moments and complete linear through quintic functional
+covariance limits are complete.  The next Phase 4 target is to iterate the
+scalar recurrence from degree six and continue toward every
 polynomial moment.  The existing transfer theorems lift those coefficient-sum
 results to the direct and return-metric formulations.  Locally uniform
 Cauchy-transform convergence off the real axis follows afterward.
 
 Targets:
 
-- quintic periodic-residue elimination and the complete fifth covariance;
 - scalar moments of degree at least six and polynomial coefficient-sum limits;
 - locally uniform Cauchy-transform convergence off the real axis.
 

@@ -194,6 +194,21 @@ moment survives at endpoint-weight scale.  Little-o summation gives the
 the complete fifth coefficient covariance and all moments of degree at least
 six remain outside this surface.
 
+The v0.30 surface eliminates the centered quintic periodic residue and every
+fixed literal seed/corrected-endpoint boundary.  Discrete Abel summation
+controls `log(n+1)^5 w_z(n)` by `O(log(M)^3)`, while
+`μ_M(z)/log(M+1) → 1` reduces the new `μ_M log^4` and
+`μ_M^2 log^3` contributions to already checked endpoint and periodic-sum
+limits.  Consequently the complete fifth coefficient covariance converges
+entrywise and in finite matrix norm to
+`G_bc(log(min(ell_b,ell_c))^5 + 10log(min(ell_b,ell_c))^3 -
+20log(min(ell_b,ell_c))^2 + 45log(min(ell_b,ell_c)) - 44)`.
+The direct functional product and every compatible return-metric colligation
+inherit the same limit, with exact target `sixCameraFifthCenteredMoment` for
+cameras `2,...,7`.  Scalar moments of degree at least six, the full
+arbitrary-polynomial limit and the analytic transform remain outside this
+surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the

@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.29.0",
-  "registry_count": 615,
-  "count": 41,
+  "release": "0.30.0",
+  "registry_count": 650,
+  "count": 42,
   "status_counts": {
-    "KERNEL_CHECKED": 41
+    "KERNEL_CHECKED": 42
   },
   "claims": [
     {
@@ -907,6 +907,48 @@
         "NCSW-613",
         "NCSW-614",
         "NCSW-615"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-016",
+      "claim": "For every finite common-period camera family and nonreal z, the complete centered-quintic resolvent covariance is kernel checked. Discrete Abel summation controls the log-fifth periodic weight by its O(log(M)^3) endpoint and log(M)^3/A_M(z) tends to zero. The asymptotic mu_M(z)/log(M+1) tends to one closes the new mu_M log^4 and mu_M^2 log^3 mixed terms; all remaining centered periodic residues and fixed literal boundaries vanish. The complete coefficient covariance converges entrywise and in finite matrix norm to G_bc(log(ell_bc)^5+10log(ell_bc)^3-20log(ell_bc)^2+45log(ell_bc)-44), and the direct functional product and every compatible return-metric colligation inherit that limit, with exact six-camera target.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-616",
+        "NCSW-617",
+        "NCSW-618",
+        "NCSW-619",
+        "NCSW-620",
+        "NCSW-621",
+        "NCSW-622",
+        "NCSW-623",
+        "NCSW-624",
+        "NCSW-625",
+        "NCSW-626",
+        "NCSW-627",
+        "NCSW-628",
+        "NCSW-629",
+        "NCSW-630",
+        "NCSW-631",
+        "NCSW-632",
+        "NCSW-633",
+        "NCSW-634",
+        "NCSW-635",
+        "NCSW-636",
+        "NCSW-637",
+        "NCSW-638",
+        "NCSW-639",
+        "NCSW-640",
+        "NCSW-641",
+        "NCSW-642",
+        "NCSW-643",
+        "NCSW-644",
+        "NCSW-645",
+        "NCSW-646",
+        "NCSW-647",
+        "NCSW-648",
+        "NCSW-649",
+        "NCSW-650"
       ]
     }
   ]

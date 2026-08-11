@@ -30,6 +30,7 @@ import NativeCarrySpectralWeyl.Limits.CubicFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarFourthFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.QuarticFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.ScalarFifthFunctionalMoment
+import NativeCarrySpectralWeyl.Limits.QuinticFunctionalCovariance
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -119,6 +120,13 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     recurrence that
     `sum_(n<ℓM) (log(n+1)-μ_M(z))⁵w_z(n)/A_M →
     ℓ(log(ℓ)⁵+10log(ℓ)³-20log(ℓ)²+45log(ℓ)-44)`.
+    Finally, discrete Abel summation controls the log-fifth periodic weight.
+    The two new mixed terms are closed using
+    `μ_M(z)/log(M+1) → 1`, the centered quintic residue and every fixed
+    literal boundary vanish, and the complete coefficient, direct and
+    compatible return-metric covariances converge to
+    `fifthCenteredMomentMatrix`, with exact six-camera target
+    `sixCameraFifthCenteredMoment`.
 -/
 
 namespace NativeCarrySpectralWeyl
