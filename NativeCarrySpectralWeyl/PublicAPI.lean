@@ -40,6 +40,7 @@ import NativeCarrySpectralWeyl.Limits.EighthFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.GeneralMomentHierarchy
 import NativeCarrySpectralWeyl.Infinite.GramKernel
 import NativeCarrySpectralWeyl.Infinite.CameraCompletion
+import NativeCarrySpectralWeyl.Infinite.Kolmogorov
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -190,8 +191,13 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     completion produces the all-bases camera Hilbert space.  The completion
     embedding is isometric with dense range, canonical camera-vector inner
     products recover the Gram kernel, and the compatible finite-label levels
-    have dense union.  Kolmogorov/Naimark and operator-valued spectral layers
-    remain subsequent obligations.
+    have dense union.  The periodic profile-mean kernel separately admits its
+    canonical Kolmogorov realization: every finite principal restriction is
+    positive semidefinite, the induced `Finsupp` pre-inner product is completed
+    after quotienting null vectors, and the resulting complete space has a
+    dense canonical family `r_b` with inner products exactly `m_bc`.  The
+    Naimark `L²` realization of the slope-minimum factor and operator-valued
+    spectral layers remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl

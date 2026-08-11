@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.39 it contains
-fifty-one `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.40 it contains
+fifty-two `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -36,6 +36,11 @@ Gram inner product, takes its canonical complete Hilbert-space completion,
 proves the completion embedding is isometric and dense, recovers the exact
 Gram kernel as inner products of canonical camera vectors, and proves the
 compatible finite-label levels have dense union.
+The third all-bases claim constructs the canonical Kolmogorov realization of
+the periodic kernel `m_bc`.  It identifies every finite restriction with the
+finite periodic-mean matrix, proves positive semidefiniteness, builds the
+intrinsic pre-inner-product completion `K₀`, and supplies canonical vectors
+`r_b` with exact kernel inner products and dense algebraic span.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.
@@ -176,6 +181,7 @@ monic of degree `k`, and defines the self-adjoint algebraic camera target
 eight and gives one exact literal six-camera matrix in every degree.  It does
 not promote the degree-at-most-eight analytic limits to arbitrary degree.
 
-No all-bases POVM, Kolmogorov/Naimark realization or Weyl inverse is claimed
-by this milestone.  Positivity and normalization of the finite POVM do not
-imply idempotent spectral effects.
+No all-bases POVM, `L²` Naimark realization or Weyl inverse is claimed by this
+milestone.  The Kolmogorov space realizes only `m_bc`; the slope-minimum factor
+still requires the indicator-function Naimark construction.  Positivity and
+normalization of the finite POVM do not imply idempotent spectral effects.

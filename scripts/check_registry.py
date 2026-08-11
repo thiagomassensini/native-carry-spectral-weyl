@@ -112,6 +112,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Infinite."),
     (ROOT / "NativeCarrySpectralWeyl/Infinite/CameraCompletion.lean",
      "NativeCarrySpectralWeyl.Infinite."),
+    (ROOT / "NativeCarrySpectralWeyl/Infinite/Kolmogorov.lean",
+     "NativeCarrySpectralWeyl.Infinite."),
 ]
 
 

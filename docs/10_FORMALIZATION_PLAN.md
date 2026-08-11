@@ -676,7 +676,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.39 canonical camera-completion milestone:
+Kernel checked through the v0.40 periodic-kernel Kolmogorov milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -693,10 +693,17 @@ Kernel checked through the v0.39 canonical camera-completion milestone:
   products;
 - monotone compatible finite-label inclusions and density of their union in
   the all-bases completion.
+- exact identification of every finite periodic-mean kernel restriction with
+  its common-period profile-mean matrix and positive semidefiniteness;
+- the intrinsic periodic-mean pre-inner product on a type-distinct finitely
+  supported core and its canonical complete Kolmogorov space `K₀`;
+- canonical vectors `r_b` with inner products exactly `m_bc`, explicit finite
+  linear-combination generation of the dense completion image, and density of
+  their algebraic span.
 
-The next unchecked item is a Kolmogorov realization of the periodic kernel,
-followed by the explicit step-function/Naimark isometry.  No standard
-unweighted camera `l2` model is introduced.
+The next unchecked item is the explicit indicator-function map into
+`L²((0,∞),K₀)` and its extension to a Naimark isometry realizing the full Gram
+kernel.  No standard unweighted camera `l2` model is introduced.
 
 This phase must not represent the all-bases inverse as an everywhere-defined
 continuous linear map.

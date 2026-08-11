@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.39 canonical camera-completion milestone contains **901 public
+The v0.40 periodic-kernel Kolmogorov milestone contains **925 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -98,6 +98,15 @@ surface proves:
   completion, together with its dense isometric `Finsupp` embedding;
 - canonical camera vectors whose inner products are exactly the all-bases
   Gram kernel, and compatible finite-label inclusions whose union is dense.
+- exact recovery of every finite principal periodic-mean kernel restriction
+  as the earlier finite periodic profile-mean matrix, hence positive
+  semidefiniteness on every finite camera support;
+- the intrinsic periodic-mean pre-inner product on a type-distinct `Finsupp`
+  core and its canonical complete Kolmogorov space `K₀`, with seminorm-zero
+  vectors separated by Mathlib's completion;
+- canonical Kolmogorov vectors `r_b` satisfying
+  `inner r_b r_c = periodicMeanKernel b c` exactly, whose algebraic span is
+  dense in `K₀`.
 - a generic slope-weighted moment construction whose real matrices are
   Hermitian and self-adjoint for every finite camera package;
 - the exact first centered logarithmic moment
@@ -351,14 +360,16 @@ functional covariance limits are now kernel checked.  The next analytic gate
 is to lift the scalar and periodic-residue arguments to a degree-generic
 induction over the new polynomial hierarchy.  The algebraic all-degree targets
 are complete, but analytic convergence beyond degree eight is not yet claimed.
-Independently, Phase 5 has passed its second all-bases gate: the canonical
+Independently, Phase 5 has passed its third all-bases gate: the canonical
 strictly positive Gram form on `Finsupp` now generates its intrinsic real
 inner product, and the all-bases camera Hilbert space is its canonical
 completion.  Every finite-label level enters isometrically and compatibly,
 and their union is dense.  This is not the standard unweighted camera `l2`
-space.  The finite normalized POVM is not upgraded to a projection-valued
-measure; the Kolmogorov/Naimark realization, Cauchy transform and
-operator-valued Weyl family remain separate obligations.
+space.  Separately, the periodic kernel `m_bc` now has its canonical complete
+Kolmogorov realization `K₀`; its vectors `r_b` recover `m_bc` exactly and
+generate densely.  The finite normalized POVM is not upgraded to a
+projection-valued measure; the explicit `L²((0,∞),K₀)` Naimark isometry,
+Cauchy transform and operator-valued Weyl family remain separate obligations.
 
 Pinned foundations:
 
@@ -395,7 +406,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 901 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 925 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

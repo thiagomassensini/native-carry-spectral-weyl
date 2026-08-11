@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.39.0",
-  "count": 901,
+  "release": "0.40.0",
+  "count": 925,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -4507,6 +4507,126 @@
       "id": "NCSW-901",
       "name": "cameraVector_mem_range_finiteCameraInclusion",
       "qualified": "NativeCarrySpectralWeyl.Infinite.cameraVector_mem_range_finiteCameraInclusion"
+    },
+    {
+      "id": "NCSW-902",
+      "name": "periodicMeanKernel_eq_commonPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanKernel_eq_commonPeriod"
+    },
+    {
+      "id": "NCSW-903",
+      "name": "finitePeriodicMeanMatrix_eq_periodicMeanMatrix",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finitePeriodicMeanMatrix_eq_periodicMeanMatrix"
+    },
+    {
+      "id": "NCSW-904",
+      "name": "finitePeriodicMeanMatrix_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finitePeriodicMeanMatrix_posSemidef"
+    },
+    {
+      "id": "NCSW-905",
+      "name": "periodicMeanForm_comm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_comm"
+    },
+    {
+      "id": "NCSW-906",
+      "name": "periodicMeanForm_self_eq_finitePeriodicMeanMatrix",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_self_eq_finitePeriodicMeanMatrix"
+    },
+    {
+      "id": "NCSW-907",
+      "name": "periodicMeanForm_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_nonneg"
+    },
+    {
+      "id": "NCSW-908",
+      "name": "periodicMeanForm_add_left",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_add_left"
+    },
+    {
+      "id": "NCSW-909",
+      "name": "periodicMeanForm_add_right",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_add_right"
+    },
+    {
+      "id": "NCSW-910",
+      "name": "periodicMeanForm_smul_left",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_smul_left"
+    },
+    {
+      "id": "NCSW-911",
+      "name": "periodicMeanForm_smul_right",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_smul_right"
+    },
+    {
+      "id": "NCSW-912",
+      "name": "periodicMeanForm_zero_left",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_zero_left"
+    },
+    {
+      "id": "NCSW-913",
+      "name": "periodicMeanForm_zero_right",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_zero_right"
+    },
+    {
+      "id": "NCSW-914",
+      "name": "periodicMeanForm_single_single",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.periodicMeanForm_single_single"
+    },
+    {
+      "id": "NCSW-915",
+      "name": "kolmogorovPre_inner_eq_periodicMeanForm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.kolmogorovPre_inner_eq_periodicMeanForm"
+    },
+    {
+      "id": "NCSW-916",
+      "name": "kolmogorovPre_norm_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.kolmogorovPre_norm_sq"
+    },
+    {
+      "id": "NCSW-917",
+      "name": "kolmogorovSpace_isComplete_univ",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.kolmogorovSpace_isComplete_univ"
+    },
+    {
+      "id": "NCSW-918",
+      "name": "kolmogorovEmbedding_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.kolmogorovEmbedding_apply"
+    },
+    {
+      "id": "NCSW-919",
+      "name": "kolmogorovEmbedding_denseRange",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.kolmogorovEmbedding_denseRange"
+    },
+    {
+      "id": "NCSW-920",
+      "name": "kolmogorovEmbedding_inner",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.kolmogorovEmbedding_inner"
+    },
+    {
+      "id": "NCSW-921",
+      "name": "inner_kolmogorovVector",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.inner_kolmogorovVector"
+    },
+    {
+      "id": "NCSW-922",
+      "name": "norm_kolmogorovVector_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_kolmogorovVector_sq"
+    },
+    {
+      "id": "NCSW-923",
+      "name": "kolmogorovEmbedding_eq_linearCombination",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.kolmogorovEmbedding_eq_linearCombination"
+    },
+    {
+      "id": "NCSW-924",
+      "name": "range_kolmogorovEmbedding_subset_span",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.range_kolmogorovEmbedding_subset_span"
+    },
+    {
+      "id": "NCSW-925",
+      "name": "dense_span_kolmogorovVector",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.dense_span_kolmogorovVector"
     }
   ]
 }

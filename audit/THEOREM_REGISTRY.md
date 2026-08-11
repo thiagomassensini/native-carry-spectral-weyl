@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.39 canonical camera-completion milestone contains exactly **901**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-901` in
+The v0.40 periodic-kernel Kolmogorov milestone contains exactly **925**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-925` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -59,5 +59,6 @@ report for every declaration.
 | `NCSW-804`–`NCSW-839` | `Limits/GeneralMomentHierarchy.lean` | all-degree polynomial recurrence, monic degree theorem, general self-adjoint moment matrices, bridges through degree eight and exact all-degree six-camera target |
 | `NCSW-840`–`NCSW-877` | `Infinite/GramKernel.lean` | countable camera index, canonical pair-period kernel, finite-restriction bridge, exact slope-four block, sum-of-squares identity and strict positivity on `Finsupp` |
 | `NCSW-878`–`NCSW-901` | `Infinite/CameraCompletion.lean` | intrinsic Gram inner product, canonical Hilbert completion, dense isometric embedding, exact camera-vector Gram kernel and dense compatible finite-level union |
+| `NCSW-902`–`NCSW-925` | `Infinite/Kolmogorov.lean` | finite periodic-kernel positivity, intrinsic pre-inner-product completion, exact canonical kernel vectors and dense algebraic span |
 
 The JSON registry is the machine-readable authority for exact qualified names.

@@ -336,6 +336,19 @@ No standard unweighted camera `l2` model or external base weight is used.
 Kolmogorov/Naimark realizations, an all-bases POVM, the Cauchy family and the
 unbounded Weyl inverse remain outside this surface.
 
+The v0.40 surface closes the Kolmogorov gate for the periodic profile-mean
+kernel `m_bc`.  Every finite principal restriction is identified with the
+existing finite periodic-mean matrix and is therefore positive semidefinite.
+The resulting bilinear form equips a type-distinct finitely supported
+coefficient space with its intrinsic real pre-inner product.  Mathlib's
+completion separates seminorm-zero vectors and produces a complete Hilbert
+space `K₀`.  Its canonical vectors `r_b` satisfy
+`inner r_b r_c = m_bc`, every embedded finitely supported vector is their
+finite linear combination, and their span is dense.  This construction does
+not yet realize the factor `min(ell_b,ell_c)`: the explicit indicator-function
+map into `L²((0,∞),K₀)`, its Naimark isometry, the all-bases POVM, Cauchy family
+and unbounded Weyl inverse remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the

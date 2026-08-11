@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.39.0",
-  "registry_count": 901,
-  "count": 51,
+  "release": "0.40.0",
+  "registry_count": 925,
+  "count": 52,
   "status_counts": {
-    "KERNEL_CHECKED": 51
+    "KERNEL_CHECKED": 52
   },
   "claims": [
     {
@@ -1236,7 +1236,7 @@
     },
     {
       "id": "NCSW-INF-002",
-      "claim": "The canonical all-bases camera Hilbert completion is kernel checked without choosing an external camera weight. The strictly positive Finsupp Gram form satisfies all real bilinear inner-product laws and induces the intrinsic norm with norm square g_infinity(u,u). Mathlib's canonical completion is explicitly complete; its linear-isometric embedding preserves the Gram inner product and norm and has dense range. Canonical single-camera vectors have inner products exactly G_bc. The subspaces supported on labels at most B are monotone, their isometric inclusions are compatible as B increases, every finitely supported vector belongs to one such level, and the union of all finite-level images is dense in the completion. This claim does not construct a Kolmogorov/Naimark realization, an all-bases POVM, a Cauchy family or a Weyl inverse.",
+      "claim": "The canonical all-bases camera Hilbert completion is kernel checked without choosing an external camera weight. The strictly positive Finsupp Gram form satisfies all real bilinear inner-product laws and induces the intrinsic norm with norm square g_infinity(u,u). Mathlib's canonical completion is explicitly complete; its linear-isometric embedding preserves the Gram inner product and norm and has dense range. Canonical single-camera vectors have inner products exactly G_bc. The subspaces supported on labels at most B are monotone, their isometric inclusions are compatible as B increases, every finitely supported vector belongs to one such level, and the union of all finite-level images is dense in the completion. This claim does not construct an all-bases POVM, a Cauchy family or a Weyl inverse.",
       "status": "KERNEL_CHECKED",
       "theorem_ids": [
         "NCSW-878",
@@ -1263,6 +1263,37 @@
         "NCSW-899",
         "NCSW-900",
         "NCSW-901"
+      ]
+    },
+    {
+      "id": "NCSW-INF-003",
+      "claim": "The canonical Kolmogorov realization of the all-bases periodic profile-mean kernel m_bc is kernel checked. Every finite principal restriction is identified with the finite periodic mean matrix and is positive semidefinite. Its bilinear Finsupp form satisfies the real pre-inner-product laws and is nonnegative; Mathlib's completion separates its seminorm-zero vectors and produces a complete Hilbert space K_0. The canonical vectors r_b satisfy inner(r_b,r_c)=m_bc exactly, every embedded finitely supported vector is their finite linear combination, and their algebraic span is dense. This claim deliberately does not realize the slope-minimum factor, construct the L2 Naimark isometry, promote the finite POVM to all bases, or construct a Cauchy/Weyl family.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-902",
+        "NCSW-903",
+        "NCSW-904",
+        "NCSW-905",
+        "NCSW-906",
+        "NCSW-907",
+        "NCSW-908",
+        "NCSW-909",
+        "NCSW-910",
+        "NCSW-911",
+        "NCSW-912",
+        "NCSW-913",
+        "NCSW-914",
+        "NCSW-915",
+        "NCSW-916",
+        "NCSW-917",
+        "NCSW-918",
+        "NCSW-919",
+        "NCSW-920",
+        "NCSW-921",
+        "NCSW-922",
+        "NCSW-923",
+        "NCSW-924",
+        "NCSW-925"
       ]
     }
   ]
