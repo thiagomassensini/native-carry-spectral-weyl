@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.22.0",
-  "registry_count": 489,
-  "count": 34,
+  "release": "0.23.0",
+  "registry_count": 497,
+  "count": 35,
   "status_counts": {
-    "KERNEL_CHECKED": 34
+    "KERNEL_CHECKED": 35
   },
   "claims": [
     {
@@ -732,6 +732,21 @@
         "NCSW-487",
         "NCSW-488",
         "NCSW-489"
+      ]
+    },
+    {
+      "id": "NCSW-LIM-009",
+      "claim": "For every fixed positive natural scale ell and nonreal z, the second scalar resolvent functional moment below ell M is kernel checked. An exact quadratic recurrence splits its increment into the squared endpoint block, the already proved first logarithmic moment and a negligible squared change-of-center term. Little-o summation gives the log-M-centered limit ell(log(ell)^2-2log(ell)+2), and mu_M(z)-log M -> -1 converts it to the weighted-mean-centered limit ell(1+log(ell)^2).",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-490",
+        "NCSW-491",
+        "NCSW-492",
+        "NCSW-493",
+        "NCSW-494",
+        "NCSW-495",
+        "NCSW-496",
+        "NCSW-497"
       ]
     }
   ]

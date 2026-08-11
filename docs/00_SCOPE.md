@@ -162,6 +162,14 @@ limit, with exact target `sixCameraFirstMoment` for cameras `2,...,7`.  Higher
 centered powers, the full polynomial limit and the analytic transform remain
 outside this surface.
 
+The v0.23 surface proves the second scalar weighted functional moment at every
+fixed positive natural cutoff multiplier `ell`.  An exact quadratic increment
+identity and little-o summation give the `log M`-centered limit
+`ell(log(ell)^2-2log(ell)+2)`; the proved logarithmic-mean asymptotic converts
+it to `ell(1+log(ell)^2)` in the documented `μ_M(z)` coordinate.  Elimination
+of the quadratic periodic camera residue, the complete second coefficient
+covariance and all higher polynomial moments remain outside this surface.
+
 ## Explicit nonclaims
 
 The bootstrap and first milestone do not claim:

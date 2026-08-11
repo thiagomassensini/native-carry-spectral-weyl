@@ -23,6 +23,7 @@ import NativeCarrySpectralWeyl.Limits.ResolventLogMean
 import NativeCarrySpectralWeyl.Limits.ScalarFunctionalMoment
 import NativeCarrySpectralWeyl.Limits.FiniteFunctionalCovariance
 import NativeCarrySpectralWeyl.Limits.LinearFunctionalCovariance
+import NativeCarrySpectralWeyl.Limits.ScalarSecondFunctionalMoment
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -78,9 +79,12 @@ sums transfers automatically to both the direct matrix product and every
 layer proves the exact telescoping identity for the centered logarithmic
 numerator and the asymptotic `μ_M(z) - log M → -1` for every fixed nonreal
 resolvent parameter.  The first scalar functional-moment layer then proves,
-for every fixed positive natural `ℓ`, the normalized limits
-`sum_(n<ℓM) (log(n+1)-log M)w_z(n)/A_M → ℓ(log ℓ-1)` and
-`sum_(n<ℓM) (log(n+1)-μ_M(z))w_z(n)/A_M → ℓ log ℓ`.
+    for every fixed positive natural `ℓ`, the normalized limits
+    `sum_(n<ℓM) (log(n+1)-log M)w_z(n)/A_M → ℓ(log ℓ-1)` and
+    `sum_(n<ℓM) (log(n+1)-μ_M(z))w_z(n)/A_M → ℓ log ℓ`.  The second
+    scalar functional-moment layer uses another exact discrete recurrence to
+    prove
+    `sum_(n<ℓM) (log(n+1)-μ_M(z))²w_z(n)/A_M → ℓ(1+log(ℓ)²)`.
 -/
 
 namespace NativeCarrySpectralWeyl

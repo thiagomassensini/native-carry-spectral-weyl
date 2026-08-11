@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.22.0",
-  "count": 489,
+  "release": "0.23.0",
+  "count": 497,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -2447,6 +2447,46 @@
       "id": "NCSW-489",
       "name": "tendsto_norm_sixCamera_normalizedFiniteCenteredLinearReturnMetricCrossCovariance_sub",
       "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_norm_sixCamera_normalizedFiniteCenteredLinearReturnMetricCrossCovariance_sub"
+    },
+    {
+      "id": "NCSW-490",
+      "name": "tendsto_resolventScaledLogSqBoundary_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogSqBoundary_div_weight"
+    },
+    {
+      "id": "NCSW-491",
+      "name": "tendsto_logStep_mul_resolventScaledLogMoment_div_weight",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_mul_resolventScaledLogMoment_div_weight"
+    },
+    {
+      "id": "NCSW-492",
+      "name": "tendsto_logStep_sq_mul_resolventMass_nat_mul_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_logStep_sq_mul_resolventMass_nat_mul_div_weight_zero"
+    },
+    {
+      "id": "NCSW-493",
+      "name": "resolventScaledLogSqMoment_succ",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventScaledLogSqMoment_succ"
+    },
+    {
+      "id": "NCSW-494",
+      "name": "tendsto_resolventScaledLogSqMomentIncrementError_div_weight_zero",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogSqMomentIncrementError_div_weight_zero"
+    },
+    {
+      "id": "NCSW-495",
+      "name": "resolventScaledLogSqMomentError_eq",
+      "qualified": "NativeCarrySpectralWeyl.Limits.resolventScaledLogSqMomentError_eq"
+    },
+    {
+      "id": "NCSW-496",
+      "name": "tendsto_resolventScaledLogSqMoment_div_mass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledLogSqMoment_div_mass"
+    },
+    {
+      "id": "NCSW-497",
+      "name": "tendsto_resolventScaledCenteredLogSqMoment_div_mass",
+      "qualified": "NativeCarrySpectralWeyl.Limits.tendsto_resolventScaledCenteredLogSqMoment_div_mass"
     }
   ]
 }

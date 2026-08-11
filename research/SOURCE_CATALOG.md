@@ -223,6 +223,35 @@ of `sixCameraFirstMoment`.  The Python laboratories remain provenance and
 cross-check material only; no sampled value or tolerance is used as a Lean
 premise.
 
+## v0.23 scalar second functional-moment trace
+
+`NativeCarrySpectralWeyl/Limits/ScalarSecondFunctionalMoment.lean` formalizes
+the second scalar limit recorded in
+`native_carry_camera_second_centered_moment_lab.py` and
+`CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md`.  As in v0.21, the Lean proof
+uses an exact discrete recurrence rather than the note's informal Riemann-sum
+argument.
+
+For the moment centered at `log M`, the increment from `M` to `M+1` splits
+exactly into the new fixed-width squared boundary block, minus twice the
+logarithmic step times the already checked first moment, plus the squared step
+times the scaled resolvent mass.  Their endpoint-weight-normalized limits are
+respectively `ell log(ell)^2`, `ell(log(ell)-1)` and zero.  Little-o summation
+therefore gives
+
+`A_M^-1 sum_(n<ell*M) (log(n+1)-log M)^2 w_z(n)
+  -> ell(log(ell)^2-2log(ell)+2)`.
+
+Finally `log M-μ_M(z) -> 1`, together with the v0.21 first moment and mass
+regular variation, yields the documented limit
+
+`A_M^-1 sum_(n<ell*M) (log(n+1)-μ_M(z))^2 w_z(n)
+  -> ell(1+log(ell)^2)`.
+
+This matches the exact endpoint integral already formalized in
+`Finite/StepDensity.lean`.  Numerical samples and tolerances from the Python
+laboratory are not Lean premises.
+
 ## Additional workspace inputs reviewed on 2026-08-11
 
 The following newly supplied files were inventoried but are outside the
