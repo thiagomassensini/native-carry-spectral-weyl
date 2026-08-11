@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.40.0",
-  "registry_count": 925,
-  "count": 52,
+  "release": "0.41.0",
+  "registry_count": 942,
+  "count": 53,
   "status_counts": {
-    "KERNEL_CHECKED": 52
+    "KERNEL_CHECKED": 53
   },
   "claims": [
     {
@@ -1294,6 +1294,30 @@
         "NCSW-923",
         "NCSW-924",
         "NCSW-925"
+      ]
+    },
+    {
+      "id": "NCSW-INF-004",
+      "claim": "The explicit all-bases Naimark isometry is kernel checked. Lebesgue measure restricted to the positive half-line and the intervals (0,ell_b] realize the slope-minimum factor exactly. The L2 vectors 1_(0,ell_b] r_b have almost-everywhere indicator representatives and inner products equal to the full all-bases Gram kernel G_bc. Their finite linear-combination map preserves the intrinsic Gram inner product and norm on CameraFinsupp. It extends along the dense canonical embedding to a norm- and inner-product-preserving real linear isometry from CameraHilbert into L2((0,infinity),K_0), sending every canonical camera vector to its documented indicator vector. This claim does not yet construct logarithmic multiplication, a projection-valued measure, the compressed Cauchy family or the unbounded Weyl inverse.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-926",
+        "NCSW-927",
+        "NCSW-928",
+        "NCSW-929",
+        "NCSW-930",
+        "NCSW-931",
+        "NCSW-932",
+        "NCSW-933",
+        "NCSW-934",
+        "NCSW-935",
+        "NCSW-936",
+        "NCSW-937",
+        "NCSW-938",
+        "NCSW-939",
+        "NCSW-940",
+        "NCSW-941",
+        "NCSW-942"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.40.0",
-  "count": 925,
+  "release": "0.41.0",
+  "count": 942,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -4627,6 +4627,91 @@
       "id": "NCSW-925",
       "name": "dense_span_kolmogorovVector",
       "qualified": "NativeCarrySpectralWeyl.Infinite.dense_span_kolmogorovVector"
+    },
+    {
+      "id": "NCSW-926",
+      "name": "cameraInterval_measurable",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraInterval_measurable"
+    },
+    {
+      "id": "NCSW-927",
+      "name": "cameraInterval_subset_positive",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraInterval_subset_positive"
+    },
+    {
+      "id": "NCSW-928",
+      "name": "positiveLebesgueMeasure_cameraInterval_ne_top",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.positiveLebesgueMeasure_cameraInterval_ne_top"
+    },
+    {
+      "id": "NCSW-929",
+      "name": "positiveLebesgueMeasure_inter_cameraInterval",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.positiveLebesgueMeasure_inter_cameraInterval"
+    },
+    {
+      "id": "NCSW-930",
+      "name": "naimarkCameraVector_coeFn",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCameraVector_coeFn"
+    },
+    {
+      "id": "NCSW-931",
+      "name": "inner_naimarkCameraVector",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.inner_naimarkCameraVector"
+    },
+    {
+      "id": "NCSW-932",
+      "name": "norm_naimarkCameraVector_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_naimarkCameraVector_sq"
+    },
+    {
+      "id": "NCSW-933",
+      "name": "naimarkCoreMap_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_apply"
+    },
+    {
+      "id": "NCSW-934",
+      "name": "naimarkCoreMap_single",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_single"
+    },
+    {
+      "id": "NCSW-935",
+      "name": "naimarkCoreMap_inner",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_inner"
+    },
+    {
+      "id": "NCSW-936",
+      "name": "naimarkCoreMap_norm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_norm"
+    },
+    {
+      "id": "NCSW-937",
+      "name": "naimarkCoreIsometry_single",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCoreIsometry_single"
+    },
+    {
+      "id": "NCSW-938",
+      "name": "naimarkExtension_cameraEmbedding",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkExtension_cameraEmbedding"
+    },
+    {
+      "id": "NCSW-939",
+      "name": "naimarkExtension_norm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkExtension_norm"
+    },
+    {
+      "id": "NCSW-940",
+      "name": "naimarkIsometry_cameraEmbedding",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkIsometry_cameraEmbedding"
+    },
+    {
+      "id": "NCSW-941",
+      "name": "naimarkIsometry_cameraVector",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkIsometry_cameraVector"
+    },
+    {
+      "id": "NCSW-942",
+      "name": "naimarkIsometry_inner",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkIsometry_inner"
     }
   ]
 }

@@ -349,6 +349,19 @@ not yet realize the factor `min(ell_b,ell_c)`: the explicit indicator-function
 map into `L²((0,∞),K₀)`, its Naimark isometry, the all-bases POVM, Cauchy family
 and unbounded Weyl inverse remain outside this surface.
 
+The v0.41 surface realizes the missing slope-minimum factor explicitly.
+Lebesgue measure restricted to `(0,∞)` gives
+`measure((0,ell_b] ∩ (0,ell_c]) = min(ell_b,ell_c)`, so the vectors
+`1_(0,ell_b] r_b` in `L²((0,∞),K₀)` have inner products exactly
+`gramKernel b c`.  The formalization includes their almost-everywhere
+indicator representatives, the finite linear-combination map, exact
+preservation of the intrinsic Gram form and norm, and the continuous extension
+to a real linear isometry from the complete all-bases camera Hilbert space.
+It sends every canonical camera vector to its documented indicator vector.
+This does not yet define logarithmic multiplication, promote the construction
+to an all-bases PVM/POVM, compress the resolvent, or construct the unbounded
+Weyl inverse.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the

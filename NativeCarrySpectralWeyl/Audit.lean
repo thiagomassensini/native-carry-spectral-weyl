@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.38 all-bases Gram-kernel registry. -/
+/-! Ordered foundational-dependency report for the v0.41 explicit Naimark-isometry registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -927,3 +927,20 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Infinite.kolmogorovEmbedding_eq_linearCombination
 #print axioms NativeCarrySpectralWeyl.Infinite.range_kolmogorovEmbedding_subset_span
 #print axioms NativeCarrySpectralWeyl.Infinite.dense_span_kolmogorovVector
+#print axioms NativeCarrySpectralWeyl.Infinite.cameraInterval_measurable
+#print axioms NativeCarrySpectralWeyl.Infinite.cameraInterval_subset_positive
+#print axioms NativeCarrySpectralWeyl.Infinite.positiveLebesgueMeasure_cameraInterval_ne_top
+#print axioms NativeCarrySpectralWeyl.Infinite.positiveLebesgueMeasure_inter_cameraInterval
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCameraVector_coeFn
+#print axioms NativeCarrySpectralWeyl.Infinite.inner_naimarkCameraVector
+#print axioms NativeCarrySpectralWeyl.Infinite.norm_naimarkCameraVector_sq
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_apply
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_single
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_inner
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_norm
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCoreIsometry_single
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkExtension_cameraEmbedding
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkExtension_norm
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkIsometry_cameraEmbedding
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkIsometry_cameraVector
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkIsometry_inner

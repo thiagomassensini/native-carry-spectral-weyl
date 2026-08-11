@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.40 it contains
-fifty-two `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.41 it contains
+fifty-three `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -41,6 +41,13 @@ the periodic kernel `m_bc`.  It identifies every finite restriction with the
 finite periodic-mean matrix, proves positive semidefiniteness, builds the
 intrinsic pre-inner-product completion `K₀`, and supplies canonical vectors
 `r_b` with exact kernel inner products and dense algebraic span.
+The fourth all-bases claim constructs the explicit Naimark isometry.  It uses
+Lebesgue measure on `(0,∞)` and the vectors `1_(0,ell_b] r_b` in
+`L²((0,∞),K₀)`, proves their almost-everywhere indicator formula and exact
+full-Gram inner products, and extends their finite linear-combination map from
+the intrinsic `Finsupp` core to a norm- and inner-product-preserving linear
+isometry on the complete camera Hilbert space.  Logarithmic multiplication,
+the PVM, Cauchy compression and the unbounded Weyl inverse are not claimed.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.

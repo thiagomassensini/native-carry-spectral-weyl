@@ -41,6 +41,7 @@ import NativeCarrySpectralWeyl.Limits.GeneralMomentHierarchy
 import NativeCarrySpectralWeyl.Infinite.GramKernel
 import NativeCarrySpectralWeyl.Infinite.CameraCompletion
 import NativeCarrySpectralWeyl.Infinite.Kolmogorov
+import NativeCarrySpectralWeyl.Infinite.Naimark
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -196,8 +197,13 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     positive semidefinite, the induced `Finsupp` pre-inner product is completed
     after quotienting null vectors, and the resulting complete space has a
     dense canonical family `r_b` with inner products exactly `m_bc`.  The
-    Naimark `L²` realization of the slope-minimum factor and operator-valued
-    spectral layers remain subsequent obligations.
+    slope-minimum factor is then realized by the explicit vectors
+    `1_(0,ell_b] r_b` in `L²((0,∞),K₀)`: their inner products are exactly the
+    full Gram kernel, their finite linear combinations preserve the intrinsic
+    camera norm, and the map extends to a linear isometry from the complete
+    all-bases camera space.  The logarithmic multiplication operator,
+    projection-valued measure, Cauchy compression and unbounded Weyl inverse
+    remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl

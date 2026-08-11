@@ -676,7 +676,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.40 periodic-kernel Kolmogorov milestone:
+Kernel checked through the v0.41 explicit Naimark-isometry milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -700,10 +700,23 @@ Kernel checked through the v0.40 periodic-kernel Kolmogorov milestone:
 - canonical vectors `r_b` with inner products exactly `m_bc`, explicit finite
   linear-combination generation of the dense completion image, and density of
   their algebraic span.
+- Lebesgue measure restricted to `(0,∞)`, measurable finite intervals
+  `(0,ell_b]`, and the exact overlap identity
+  `measure((0,ell_b] ∩ (0,ell_c]) = min(ell_b,ell_c)`;
+- explicit vectors `1_(0,ell_b] r_b` in `L²((0,∞),K₀)`, including their
+  almost-everywhere indicator representatives and exact full-Gram inner
+  products;
+- the finite linear-combination map from the intrinsic camera `Finsupp` core,
+  with exact Gram-form, norm and single-camera identities;
+- its continuous extension along the dense camera-completion embedding and
+  the resulting linear isometry
+  `CameraHilbert →ₗᵢ[ℝ] L²((0,∞),K₀)`, preserving all inner products and
+  sending each canonical camera vector to its indicator vector.
 
-The next unchecked item is the explicit indicator-function map into
-`L²((0,∞),K₀)` and its extension to a Naimark isometry realizing the full Gram
-kernel.  No standard unweighted camera `l2` model is introduced.
+The next unchecked item is the logarithmic multiplication operator on its
+natural dense domain in `L²((0,∞),K₀)`, followed by its spectral projections
+and the bounded compressed Cauchy family.  No standard unweighted camera `l2`
+model is introduced.
 
 This phase must not represent the all-bases inverse as an everywhere-defined
 continuous linear map.
