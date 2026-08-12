@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.49 gamma-field/Weyl-identification milestone contains exactly **1,217**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-1217` in
+The v0.50 external Green-camera coupling milestone contains exactly **1,242**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-1242` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -70,5 +70,6 @@ report for every declaration.
 | `NCSW-1127`–`NCSW-1156` | `Boundary/SourceRelation.lean` | source-extended relation with unique coordinates, reference/Weyl charts and rotation, coupled Green identity and abstract maximality, instantiated by logarithmic multiplication and the all-bases Naimark port |
 | `NCSW-1157`–`NCSW-1190` | `Infinite/ComplexifiedResolvent.lean` | explicit realified ambient resolvent, exact compression, maximal-domain range, bijectivity of `lambda-Y` and two-sided resolvent laws |
 | `NCSW-1191`–`NCSW-1217` | `Boundary/GammaField.lean` | unique realified defect solutions, source- and trace-parametrized gamma fields, exact boundary values and identification of the closed unbounded Weyl family |
+| `NCSW-1218`–`NCSW-1242` | `Boundary/GreenCameraCoupling.lean` | explicit bounded-readout interface, canonical external synthesis, separate static Poisson output, defect pullback, exact Cauchy trace and Weyl transport, with concrete Green split specialization |
 
 The JSON registry is the machine-readable authority for exact qualified names.

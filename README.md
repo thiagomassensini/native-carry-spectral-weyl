@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.49 gamma-field/Weyl-identification milestone contains **1,217 public
+The v0.50 external Green-camera coupling milestone contains **1,242 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -440,7 +440,22 @@ surface proves:
 - the checked boundary law
   `Gamma_1 gamma(lambda)xi=M_infinity(lambda)⁻¹xi`, with the boundary Weyl
   family equal to the existing closed, densely defined and non-norm-bounded
-  `LinearPMap` inverse.
+  `LinearPMap` inverse;
+- a generic external Green-camera coupling whose only new analytic datum is
+  an explicitly supplied bounded real-linear state readout into the realified
+  all-bases camera space;
+- canonical external synthesis followed by that readout, with the exact
+  operator identity `cameraPort ∘ normalizedExternal = stateReadout`;
+- the separate joint output `(cameraPort, staticPoisson)`, recovering on every
+  coherent state both the camera readout and the normalized Green bulk without
+  identifying the static Poisson component with the spectral Weyl family;
+- pullback of the source gamma field along the external camera port, producing
+  defect states in the exact carry defect subspace and the unique solutions of
+  the maximal-domain defect equation;
+- induced Cauchy traces in the exact Weyl domain, with the kernel-checked laws
+  `gamma(trace(e)) = gammaSource(cameraPort(e))` and
+  `W(lambda)(trace(e)) = cameraPort(e)`, plus a specialization to the pinned
+  concrete Green analysis operator and its exact split bounds.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -490,9 +505,14 @@ Naimark port gives unique source coordinates; the reference/Weyl charts,
 their rotation and Green identities, and maximality of the coupled Weyl graph
 are all kernel checked.  The canonical realification now also supplies the
 ambient resolvent, unique defect solutions, source and trace gamma fields and
-the exact compressed-resolvent/Weyl identification.  A native complex scalar
-action, explicit PVM, an ordinary boundary triple and the external
-Green/camera port coupling remain later obligations.
+the exact compressed-resolvent/Weyl identification.  The external
+Green/camera interface is now kernel checked for every explicitly supplied
+bounded state readout, including the canonical external synthesis, the
+separate static Poisson output and transport through the defect and Weyl
+families.  Constructing the particular infinite state readout intended by the
+research notes, and proving its boundedness, remain analytic obligations.  A
+native complex scalar action, explicit PVM and ordinary boundary triple also
+remain outside the current surface.
 
 Pinned foundations:
 
@@ -511,9 +531,12 @@ unbounded Weyl inverse.  Those gates are now complete.  The abstract relation,
 Green-form, self-adjoint graph-maximality, source-extended relation and maximal
 coupled Weyl boundary graph are also complete.  The realified gamma field and
 the exact identification of its Weyl family with the compressed-resolvent
-inverse are now complete as well.  The next boundary gate is the external
-Green state/port coupling, with its domains and interface hypotheses kept
-explicit.
+inverse are now complete as well.  The external Green state/port coupling is
+complete as a theorem parameterized by an explicit bounded state readout; its
+concrete Green split specialization is also exported.  The next boundary gate
+is either to construct and bound the research-specific infinite readout or to
+formalize its angular evaluation theorem, keeping `t` independent from the
+spectral parameter `lambda`.
 
 Three parameters remain permanently distinct:
 
@@ -533,7 +556,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,217 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,242 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

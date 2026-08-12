@@ -134,6 +134,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Infinite."),
     (ROOT / "NativeCarrySpectralWeyl/Boundary/GammaField.lean",
      "NativeCarrySpectralWeyl.Boundary."),
+    (ROOT / "NativeCarrySpectralWeyl/Boundary/GreenCameraCoupling.lean",
+     "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling."),
 ]
 
 

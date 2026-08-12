@@ -472,6 +472,31 @@ the existing closed, densely defined and non-norm-bounded `LinearPMap`.
 Nothing here introduces an independent complex scalar action, an
 everywhere-defined inverse, an explicit PVM or an ordinary boundary triple.
 
+The v0.50 surface connects the normalized external Green split to the
+spectral camera boundary through an explicit interface.  For a complex split
+operator `T` with `SplitComplexFrameBounds`, a `GreenCameraCoupling T`
+contains one bounded real-linear map
+`stateReadout : H →L[ℝ] RealifiedCameraComplexification`.  This map is an
+analytic hypothesis, not a construction extracted from the current notes.
+Canonical ambient external synthesis induces
+`cameraPort = stateReadout ∘ ambientExternalSynthesis`, and Lean proves the
+operator identity
+`cameraPort ∘ normalizedExternal = stateReadout`.  In parallel, the static
+Poisson component satisfies its independent intertwining law with
+`normalizedBulk`; the paired output retains both values and does not identify
+them.
+
+Pulling `cameraPort` through the source gamma map produces a bounded external
+gamma source and a domain-valued defect solution.  Every resulting pair lies
+in the exact carry defect subspace and is the unique solution of the
+realified maximal-domain defect equation.  Its Cauchy trace is constructed as
+an element of the exact domain of the closed Weyl inverse, and the boundary
+law proves `W(lambda)(trace(e))=cameraPort(e)`.  The concrete GreenFrame
+specialization supplies `concreteAnalysisOperator omega` and
+`concreteSplitFrameBounds omega`; the research-specific bounded
+`stateReadout` remains an explicit argument.  No strong-resolvent or
+strong-graph passage is needed for these bounded compositions.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -535,5 +560,8 @@ The bootstrap and first milestone do not claim:
   (the gamma field and compressed-resolvent boundary law are checked only on
   the exact dense inverse domain);
 - strong-resolvent or strong-graph convergence;
+- construction or boundedness of the research-specific infinite
+  Green-state-to-camera readout (v0.50 proves the complete transport theorem
+  for any such bounded readout supplied explicitly);
 - equality between the Green static Poisson map and a spectral Weyl map;
 - any consequence concerning external special-function zeros.

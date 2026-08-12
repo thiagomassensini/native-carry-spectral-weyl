@@ -51,6 +51,7 @@ import NativeCarrySpectralWeyl.Infinite.WeylUnbounded
 import NativeCarrySpectralWeyl.Boundary.GreenRelation
 import NativeCarrySpectralWeyl.Boundary.SourceRelation
 import NativeCarrySpectralWeyl.Boundary.GammaField
+import NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -258,8 +259,17 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     `Gamma_0` on the exact dense Cauchy range proves
     `Gamma_1 gamma(lambda) = M(lambda)⁻¹ Gamma_0 gamma(lambda)`; this boundary
     Weyl family is the existing closed, densely defined and non-norm-bounded
-    `LinearPMap` inverse.  No independent complex scalar action or ordinary
-    boundary triple is claimed here.
+    `LinearPMap` inverse.  Finally, the external Green-camera layer accepts an
+    explicit bounded real-linear state readout, composes it with canonical
+    ambient external synthesis and keeps the static Poisson bulk output as a
+    separate component.  Coherent external data recover both the supplied
+    readout and normalized bulk exactly.  Pullback through the gamma field
+    produces canonical defect states and Cauchy traces in the exact Weyl
+    domain, where the closed inverse recovers the original camera port.  The
+    pinned concrete Green split fills the frame-bound certificate, but the
+    research-specific bounded state readout itself remains an explicit input.
+    No independent complex scalar action or ordinary boundary triple is
+    claimed here.
 -/
 
 namespace NativeCarrySpectralWeyl

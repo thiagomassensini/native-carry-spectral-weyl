@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.49.0",
-  "registry_count": 1217,
-  "count": 63,
+  "release": "0.50.0",
+  "registry_count": 1242,
+  "count": 64,
   "status_counts": {
-    "KERNEL_CHECKED": 63
+    "KERNEL_CHECKED": 64
   },
   "claims": [
     {
@@ -1663,6 +1663,38 @@
         "NCSW-1215",
         "NCSW-1216",
         "NCSW-1217"
+      ]
+    },
+    {
+      "id": "NCSW-BND-004",
+      "claim": "The external Green-to-camera coupling is kernel checked under one explicit analytic hypothesis: a bounded real-linear state readout from the complex Green state space to the realified all-bases camera space. For every complex Green split with certified lower frame bounds, canonical ambient external synthesis induces a bounded camera port that recovers the state readout exactly on coherent normalized external data. Independently, the static Green Poisson component recovers the normalized bulk, and the joint output records both components without identifying them. Pulling the camera port through the source gamma map yields canonical defect states in the exact carry defect subspace, the unique maximal-domain solutions of the realified defect equation. Their Cauchy traces belong by construction to the dense domain of the closed Weyl inverse, and the exact boundary law sends each induced trace back to the original camera port. The concrete specialization uses the pinned GreenFrame concrete analysis operator and its exact split bounds. This claim does not construct the bounded state readout, identify static Poisson with spectral Weyl, or assert an everywhere-defined Weyl inverse.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1218",
+        "NCSW-1219",
+        "NCSW-1220",
+        "NCSW-1221",
+        "NCSW-1222",
+        "NCSW-1223",
+        "NCSW-1224",
+        "NCSW-1225",
+        "NCSW-1226",
+        "NCSW-1227",
+        "NCSW-1228",
+        "NCSW-1229",
+        "NCSW-1230",
+        "NCSW-1231",
+        "NCSW-1232",
+        "NCSW-1233",
+        "NCSW-1234",
+        "NCSW-1235",
+        "NCSW-1236",
+        "NCSW-1237",
+        "NCSW-1238",
+        "NCSW-1239",
+        "NCSW-1240",
+        "NCSW-1241",
+        "NCSW-1242"
       ]
     }
   ]

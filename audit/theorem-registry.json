@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.49.0",
-  "count": 1217,
+  "release": "0.50.0",
+  "count": 1242,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -6087,6 +6087,131 @@
       "id": "NCSW-1217",
       "name": "carryBoundaryWeylFamily_not_normBounded",
       "qualified": "NativeCarrySpectralWeyl.Boundary.carryBoundaryWeylFamily_not_normBounded"
+    },
+    {
+      "id": "NCSW-1218",
+      "name": "externalPort_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalPort_apply"
+    },
+    {
+      "id": "NCSW-1219",
+      "name": "externalPort_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalPort_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1220",
+      "name": "externalPort_comp_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalPort_comp_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1221",
+      "name": "staticPoisson_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.staticPoisson_apply"
+    },
+    {
+      "id": "NCSW-1222",
+      "name": "staticPoisson_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.staticPoisson_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1223",
+      "name": "staticPoisson_comp_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.staticPoisson_comp_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1224",
+      "name": "externalOutput_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalOutput_apply"
+    },
+    {
+      "id": "NCSW-1225",
+      "name": "externalOutput_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalOutput_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1226",
+      "name": "externalOutput_comp_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalOutput_comp_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1227",
+      "name": "externalGammaSource_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalGammaSource_apply"
+    },
+    {
+      "id": "NCSW-1228",
+      "name": "externalGammaSource_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalGammaSource_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1229",
+      "name": "externalGammaSource_comp_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalGammaSource_comp_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1230",
+      "name": "externalDefectState_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalDefectState_apply"
+    },
+    {
+      "id": "NCSW-1231",
+      "name": "externalDefectState_mem_carryDefectSpace",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalDefectState_mem_carryDefectSpace"
+    },
+    {
+      "id": "NCSW-1232",
+      "name": "externalGammaSource_eq_iff_externalPort_eq",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalGammaSource_eq_iff_externalPort_eq"
+    },
+    {
+      "id": "NCSW-1233",
+      "name": "externalGammaSource_defect_equation",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalGammaSource_defect_equation"
+    },
+    {
+      "id": "NCSW-1234",
+      "name": "externalGammaIntoDomain_unique",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalGammaIntoDomain_unique"
+    },
+    {
+      "id": "NCSW-1235",
+      "name": "coe_externalCauchyTrace",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.coe_externalCauchyTrace"
+    },
+    {
+      "id": "NCSW-1236",
+      "name": "carryGammaField_externalCauchyTrace",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.carryGammaField_externalCauchyTrace"
+    },
+    {
+      "id": "NCSW-1237",
+      "name": "carryBoundaryWeylFamily_externalCauchyTrace",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.carryBoundaryWeylFamily_externalCauchyTrace"
+    },
+    {
+      "id": "NCSW-1238",
+      "name": "externalGammaSource_boundary_values",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.externalGammaSource_boundary_values"
+    },
+    {
+      "id": "NCSW-1239",
+      "name": "concreteGreenCameraCoupling_stateReadout",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.concreteGreenCameraCoupling_stateReadout"
+    },
+    {
+      "id": "NCSW-1240",
+      "name": "concreteGreenCamera_externalPort_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.concreteGreenCamera_externalPort_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1241",
+      "name": "concreteGreenCamera_externalOutput_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.concreteGreenCamera_externalOutput_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1242",
+      "name": "concreteGreenCamera_externalGammaSource_normalizedExternal",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.concreteGreenCamera_externalGammaSource_normalizedExternal"
     }
   ]
 }

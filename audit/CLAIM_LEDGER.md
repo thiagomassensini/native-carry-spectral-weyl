@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.49 it contains
-sixty-three `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.50 it contains
+sixty-four `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -278,3 +278,16 @@ is the existing closed, densely defined `LinearPMap` inverse and admits no
 global norm bound.  This claim does not introduce an everywhere-defined
 inverse, an independent complex-linear realization, or an ordinary boundary
 triple.
+
+The fourth boundary claim adds the external Green-to-camera interface.  For
+an arbitrary complex Green split with certified lower frame bounds, it takes
+one bounded real-linear state readout as explicit analytic input.  Canonical
+ambient external synthesis then induces a camera port satisfying the exact
+coherent-state identity, while the independent static Poisson component
+recovers the normalized Green bulk.  Pulling the port through the source gamma
+field gives defect states in the exact carry defect subspace and unique
+maximal-domain solutions.  Their induced Cauchy traces lie in the exact Weyl
+domain and satisfy `W(lambda)(trace(e))=cameraPort(e)`.  The concrete
+specialization fills the split certificate from the pinned GreenFrame theorem.
+Neither existence of the research-specific bounded state readout nor equality
+of static Poisson and spectral Weyl is claimed.

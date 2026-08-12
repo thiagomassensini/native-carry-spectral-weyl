@@ -681,7 +681,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.49 gamma-field/Weyl-identification milestone:
+Kernel checked through the v0.50 external Green-camera coupling milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -791,6 +791,7 @@ NativeCarrySpectralWeyl/Boundary/GreenRelation.lean
 NativeCarrySpectralWeyl/Boundary/SourceRelation.lean
 NativeCarrySpectralWeyl/Infinite/ComplexifiedResolvent.lean
 NativeCarrySpectralWeyl/Boundary/GammaField.lean
+NativeCarrySpectralWeyl/Boundary/GreenCameraCoupling.lean
 ```
 
 - define linear relations as submodules of a product Hilbert space;
@@ -800,13 +801,15 @@ NativeCarrySpectralWeyl/Boundary/GammaField.lean
   resolvent inverse;
 - prove any strong-star to strong-graph passage through graph projections;
 - connect external Green ports and spectral camera ports by an explicit map;
+- construct and bound the research-specific infinite state readout needed to
+  instantiate that interface without an external hypothesis;
 - state the angular readout theorem with `t` independent from `lambda`.
 
 The old finite maximal-isotropic calculation remains useful motivation, but
 the infinite adjoint/domain theorem is discharged independently by the v0.43
 regularizer argument above.
 
-Kernel checked through v0.49:
+Kernel checked through v0.50:
 
 - linear relations represented as submodules of the product Hilbert space;
 - the documented skew-Hermitian Green form and its exact symplectic
@@ -845,12 +848,32 @@ Kernel checked through v0.49:
   `Gamma_1 gamma(lambda)xi=M_infinity(lambda)⁻¹xi`;
 - identification of the boundary Weyl family with the existing closed,
   densely defined and non-norm-bounded `LinearPMap` inverse.
+- a generic `GreenCameraCoupling T` whose only new analytic datum is an
+  explicitly supplied bounded real-linear state readout from the Green state
+  space to the realified all-bases camera space;
+- the induced external camera port obtained from canonical ambient synthesis,
+  with the operator identity
+  `externalPort ∘ normalizedExternal = stateReadout`;
+- the independent static Poisson component and the joint camera/bulk output,
+  recovering `(stateReadout x, normalizedBulk x)` on coherent external data;
+- pullback of the source gamma field to external Green data, membership of
+  every resulting state in the carry defect subspace, the exact defect
+  equation and uniqueness on the maximal logarithmic domain;
+- induced Cauchy traces in the exact Weyl domain and the transport identities
+  `gamma(trace(e)) = gammaSource(externalPort(e))` and
+  `W(lambda)(trace(e)) = externalPort(e)`;
+- the concrete specialization to `concreteAnalysisOperator omega` and its
+  kernel-checked split bounds.
 
-The next Phase 6 gate is the explicit external Green state/port coupling.
-Strong-resolvent or strong-graph passage, if required by that interface, must
-be proved with its topology and domains stated explicitly.  The current
-realified representation remains deliberate: no independent complex scalar
-action, everywhere-defined inverse or ordinary boundary triple is inferred.
+The v0.50 interface deliberately does not manufacture the research-specific
+bounded `stateReadout`; that existence and boundedness theorem is one possible
+next gate.  The other immediate gate is the angular readout theorem with `t`
+kept independent from `lambda`, parameterized by the explicit coupling if
+necessary.  Strong-resolvent or strong-graph passage is not used by v0.50; if
+a later construction requires it, its topology and domains must be stated
+explicitly.  The current realified representation remains deliberate: no
+independent complex scalar action, everywhere-defined inverse or ordinary
+boundary triple is inferred.
 
 ## 10. Phase 7 — optional holonomic track
 
