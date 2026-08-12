@@ -681,7 +681,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.47 Green-relation foundation milestone:
+Kernel checked through the v0.48 source-extended boundary-relation milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -788,6 +788,7 @@ Only after Phase 5:
 
 ```text
 NativeCarrySpectralWeyl/Boundary/GreenRelation.lean
+NativeCarrySpectralWeyl/Boundary/SourceRelation.lean
 ```
 
 - define linear relations as submodules of a product Hilbert space;
@@ -803,7 +804,7 @@ The old finite maximal-isotropic calculation remains useful motivation, but
 the infinite adjoint/domain theorem is discharged independently by the v0.43
 regularizer argument above.
 
-Kernel checked at v0.47:
+Kernel checked through v0.48:
 
 - linear relations represented as submodules of the product Hilbert space;
 - the documented skew-Hermitian Green form and its exact symplectic
@@ -813,12 +814,23 @@ Kernel checked at v0.47:
 - equivalence of graph Green-isotropy with formal symmetry and, for dense
   domains, equivalence of maximal Green-isotropy with self-adjointness;
 - the graph of maximal logarithmic multiplication as a closed maximal Green
-  reference relation.
+  reference relation;
+- the source-extended relation `T_C={(f,Yf+Vu)}` as the range of an explicit
+  linear parameterization, with exact membership and uniqueness whenever the
+  bounded port `V` is injective;
+- reference and Weyl charts `(u,-V^*f)` and `(V^*f,u)` as well-defined linear
+  maps on the relation, and their exact symplectic quarter-turn relation;
+- the Green identity in both charts for every formally symmetric `Y`;
+- maximal coupled Green-isotropy of the Weyl boundary graph for every
+  self-adjoint `Y`, proved by recovering both the boundary coordinate and the
+  adjoint-domain condition from symplectic test vectors;
+- the concrete all-bases instance with maximal logarithmic multiplication,
+  the injective Naimark isometry and its adjoint compression map.
 
-The next Phase 6 gate is the actual source-extended relation
-`T_C={(f,Yf+Vu)}` together with well-defined reference/Weyl boundary charts.
-Only after its Green identity and maximality are checked should the gamma
-field and compressed-resolvent/Weyl identification be added.
+The next Phase 6 gate is the gamma field on the nonreal resolvent set and the
+exact identification of its boundary Weyl family with the already checked
+compressed-resolvent inverse.  The existing realified Cauchy representation
+must remain explicit; no independent complex scalar action may be inferred.
 
 ## 10. Phase 7 — optional holonomic track
 

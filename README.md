@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.47 Green-relation foundation milestone contains **1,126 public
+The v0.48 source-extended boundary-relation milestone contains **1,156 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -416,7 +416,17 @@ surface proves:
   graph with the graph of its Hilbert-space adjoint, so graph maximality is
   equivalent to self-adjointness;
 - the graph of maximal multiplication by `1+log x` as a concrete closed
-  maximal Green relation satisfying the exact Green identity.
+  maximal Green relation satisfying the exact Green identity;
+- the actual source-extended relation
+  `T_C = {(f, Y f + V u) | f in dom(Y), u in CameraHilbert}`, with uniqueness
+  of `(f,u)` supplied by injectivity of the all-bases Naimark port;
+- honest reference and Weyl boundary charts
+  `Gamma_H = (u,-V^*f)` and `Gamma_W = (V^*f,u)`, related by the exact
+  symplectic quarter-turn;
+- the abstract and concrete Green identities for both charts, and maximal
+  coupled Green-isotropy of the Weyl boundary graph whenever `Y` is
+  self-adjoint, instantiated with maximal logarithmic multiplication and the
+  all-bases Naimark isometry.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -460,10 +470,13 @@ realified complexification.  Centering each normalized camera interval at
 an explicit scalar bound that vanishes along camera labels `3,4,5,...`; the
 resulting unit vectors have Cauchy images converging to zero.  Thus the block
 is not bounded below and its closed densely defined inverse admits no global
-norm bound.  Phase 6 has now opened with the abstract Green-relation API and
-the closed maximal logarithmic reference graph.  A native complex scalar
-action, explicit PVM, the source-extended relation `{(f,Yf+Vu)}`, its gamma
-field and the Green/camera port coupling remain later obligations.
+norm bound.  Phase 6 now contains both the abstract Green-relation API and the
+actual source-extended all-bases relation `{(f,Yf+Vu)}`.  The injective
+Naimark port gives unique source coordinates; the reference/Weyl charts,
+their rotation and Green identities, and maximality of the coupled Weyl graph
+are all kernel checked.  A native complex scalar action, explicit PVM, the
+gamma field, compressed-resolvent/Weyl identification and the external
+Green/camera port coupling remain later obligations.
 
 Pinned foundations:
 
@@ -479,9 +492,10 @@ Pinned foundations:
 The formalization proceeds from exact camera arithmetic to finite spectral
 objects, then to the countable camera completion, Cauchy transform and closed
 unbounded Weyl inverse.  Those gates are now complete.  The abstract relation,
-Green-form and self-adjoint graph-maximality foundations are also complete.
-The source-extended boundary relation and its coupling to the Green state/port
-layer come next, with their domain and maximality statements kept explicit.
+Green-form, self-adjoint graph-maximality, source-extended relation and maximal
+coupled Weyl boundary graph are also complete.  The next boundary gate is the gamma field and
+the exact identification of its Weyl family with the compressed-resolvent
+inverse; the later external Green state/port coupling remains explicit.
 
 Three parameters remain permanently distinct:
 
@@ -501,7 +515,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,126 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,156 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.47.0",
-  "registry_count": 1126,
-  "count": 60,
+  "release": "0.48.0",
+  "registry_count": 1156,
+  "count": 61,
   "status_counts": {
-    "KERNEL_CHECKED": 60
+    "KERNEL_CHECKED": 61
   },
   "claims": [
     {
@@ -1551,6 +1551,43 @@
         "NCSW-1124",
         "NCSW-1125",
         "NCSW-1126"
+      ]
+    },
+    {
+      "id": "NCSW-BND-002",
+      "claim": "The source-extended boundary relation is kernel checked over real or complex Hilbert spaces. For a partial operator Y and bounded port V, the relation T_C={(f,Yf+Vu)} is the range of an explicit linear parameterization from dom(Y) x B. Injectivity of V proves uniqueness of the source parameters and therefore makes the reference and Weyl coordinates Gamma_H=(u,-V-adjoint f) and Gamma_W=(V-adjoint f,u) well-defined linear maps on T_C; the latter is exactly the symplectic quarter-turn of the former. Formal symmetry of Y gives the Green identity in both charts. In the coupled interior-boundary Green space, self-adjointness of Y makes the Weyl boundary graph maximal Green-isotropic: tests with (0,u) recover the V-adjoint coordinate, while tests with (f,0) recover membership in dom(Y) through the Hilbert-space adjoint. The concrete all-bases instance takes Y to be maximal multiplication by 1+log(x) and V to be the injective Naimark isometry; its port adjoint is the existing Naimark compression map, its relation and both charts have exact evaluation formulas, and its coupled Weyl graph equals its coupled Green adjoint. This claim does not yet construct the spectral-parameter-dependent gamma field, prove the compressed-resolvent/Weyl-family identification, or construct an ordinary boundary triple.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1127",
+        "NCSW-1128",
+        "NCSW-1129",
+        "NCSW-1130",
+        "NCSW-1131",
+        "NCSW-1132",
+        "NCSW-1133",
+        "NCSW-1134",
+        "NCSW-1135",
+        "NCSW-1136",
+        "NCSW-1137",
+        "NCSW-1138",
+        "NCSW-1139",
+        "NCSW-1140",
+        "NCSW-1141",
+        "NCSW-1142",
+        "NCSW-1143",
+        "NCSW-1144",
+        "NCSW-1145",
+        "NCSW-1146",
+        "NCSW-1147",
+        "NCSW-1148",
+        "NCSW-1149",
+        "NCSW-1150",
+        "NCSW-1151",
+        "NCSW-1152",
+        "NCSW-1153",
+        "NCSW-1154",
+        "NCSW-1155",
+        "NCSW-1156"
       ]
     }
   ]

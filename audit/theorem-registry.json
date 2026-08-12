@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.47.0",
-  "count": 1126,
+  "release": "0.48.0",
+  "count": 1156,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -5632,6 +5632,156 @@
       "id": "NCSW-1126",
       "name": "logarithmicGreenRelation_isClosed",
       "qualified": "NativeCarrySpectralWeyl.Boundary.logarithmicGreenRelation_isClosed"
+    },
+    {
+      "id": "NCSW-1127",
+      "name": "mem_sourceExtendedRelation_iff",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.mem_sourceExtendedRelation_iff"
+    },
+    {
+      "id": "NCSW-1128",
+      "name": "sourceRelationParameterization_injective",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.sourceRelationParameterization_injective"
+    },
+    {
+      "id": "NCSW-1129",
+      "name": "coe_sourceRelationEquiv",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.coe_sourceRelationEquiv"
+    },
+    {
+      "id": "NCSW-1130",
+      "name": "weylBoundaryParameters_eq_rotation",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.weylBoundaryParameters_eq_rotation"
+    },
+    {
+      "id": "NCSW-1131",
+      "name": "referenceBoundaryMap_sourceRelationEquiv",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.referenceBoundaryMap_sourceRelationEquiv"
+    },
+    {
+      "id": "NCSW-1132",
+      "name": "weylBoundaryMap_sourceRelationEquiv",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.weylBoundaryMap_sourceRelationEquiv"
+    },
+    {
+      "id": "NCSW-1133",
+      "name": "weylBoundaryMap_eq_rotation_referenceBoundaryMap",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.weylBoundaryMap_eq_rotation_referenceBoundaryMap"
+    },
+    {
+      "id": "NCSW-1134",
+      "name": "coupledGreenForm_zero_left",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.coupledGreenForm_zero_left"
+    },
+    {
+      "id": "NCSW-1135",
+      "name": "coupledGreenForm_zero_right",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.coupledGreenForm_zero_right"
+    },
+    {
+      "id": "NCSW-1136",
+      "name": "coupledGreenForm_add_right",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.coupledGreenForm_add_right"
+    },
+    {
+      "id": "NCSW-1137",
+      "name": "coupledGreenForm_smul_right",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.coupledGreenForm_smul_right"
+    },
+    {
+      "id": "NCSW-1138",
+      "name": "mem_coupledGreenAdjoint_iff",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.mem_coupledGreenAdjoint_iff"
+    },
+    {
+      "id": "NCSW-1139",
+      "name": "mem_weylBoundaryGraph_iff",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.mem_weylBoundaryGraph_iff"
+    },
+    {
+      "id": "NCSW-1140",
+      "name": "weylBoundaryGraph_green_identity",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.weylBoundaryGraph_green_identity"
+    },
+    {
+      "id": "NCSW-1141",
+      "name": "sourceExtendedRelation_weyl_green_identity",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.sourceExtendedRelation_weyl_green_identity"
+    },
+    {
+      "id": "NCSW-1142",
+      "name": "sourceExtendedRelation_reference_green_identity",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.sourceExtendedRelation_reference_green_identity"
+    },
+    {
+      "id": "NCSW-1143",
+      "name": "weylBoundaryGraph_le_coupledGreenAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.weylBoundaryGraph_le_coupledGreenAdjoint"
+    },
+    {
+      "id": "NCSW-1144",
+      "name": "weylBoundaryGraph_isMaximalCoupledGreenIsotropic",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.weylBoundaryGraph_isMaximalCoupledGreenIsotropic"
+    },
+    {
+      "id": "NCSW-1145",
+      "name": "carryNaimarkPort_injective",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carryNaimarkPort_injective"
+    },
+    {
+      "id": "NCSW-1146",
+      "name": "carryNaimarkPort_adjoint_eq",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carryNaimarkPort_adjoint_eq"
+    },
+    {
+      "id": "NCSW-1147",
+      "name": "mem_carrySourceRelation_iff",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.mem_carrySourceRelation_iff"
+    },
+    {
+      "id": "NCSW-1148",
+      "name": "coe_carrySourceRelationElement",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.coe_carrySourceRelationElement"
+    },
+    {
+      "id": "NCSW-1149",
+      "name": "carryReferenceBoundaryMap_element",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carryReferenceBoundaryMap_element"
+    },
+    {
+      "id": "NCSW-1150",
+      "name": "carryWeylBoundaryMap_element",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carryWeylBoundaryMap_element"
+    },
+    {
+      "id": "NCSW-1151",
+      "name": "carryWeylBoundaryMap_eq_rotation",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carryWeylBoundaryMap_eq_rotation"
+    },
+    {
+      "id": "NCSW-1152",
+      "name": "carrySourceRelation_weyl_green_identity",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carrySourceRelation_weyl_green_identity"
+    },
+    {
+      "id": "NCSW-1153",
+      "name": "carrySourceRelation_reference_green_identity",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carrySourceRelation_reference_green_identity"
+    },
+    {
+      "id": "NCSW-1154",
+      "name": "mem_carryWeylBoundaryGraph_iff",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.mem_carryWeylBoundaryGraph_iff"
+    },
+    {
+      "id": "NCSW-1155",
+      "name": "carryWeylBoundaryGraph_isMaximalCoupledGreenIsotropic",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carryWeylBoundaryGraph_isMaximalCoupledGreenIsotropic"
+    },
+    {
+      "id": "NCSW-1156",
+      "name": "carryWeylBoundaryGraph_coupledGreenAdjoint_eq",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.carryWeylBoundaryGraph_coupledGreenAdjoint_eq"
     }
   ]
 }

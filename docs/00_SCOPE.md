@@ -442,6 +442,20 @@ maximal logarithmic multiplier gives a closed maximal Green reference graph.
 This is not yet the source-extended boundary relation `{(f,Yf+Vu)}` and does
 not yet construct its boundary maps, gamma field, or Weyl family.
 
+The v0.48 surface constructs that missing source-extended relation.  For a
+self-adjoint partial operator `Y` and bounded port `V`, it parameterizes
+`T_C={(f,Yf+Vu)}` by `dom(Y) × B`.  Injectivity of `V` makes these parameters
+unique and turns the documented reference and Weyl coordinates
+`Gamma_H=(u,-V^*f)` and `Gamma_W=(V^*f,u)` into honest linear maps on the
+relation.  Their exact symplectic rotation and both Green identities are
+kernel checked.  In the coupled interior-boundary Green space, testing the
+symplectic orthogonal against `(0,u)` recovers `V^*f`, while testing against
+`(f,0)` and using `Y^*=Y` recovers the full source relation; hence the Weyl
+boundary graph equals its coupled Green adjoint.  The concrete instance uses
+maximal logarithmic multiplication and the injective all-bases Naimark
+isometry.  This does not yet construct the spectral-parameter-dependent gamma
+field or identify its Weyl family with the compressed resolvent inverse.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -501,8 +515,9 @@ The bootstrap and first milestone do not claim:
   its checked compressed Cauchy family;
 - a native complex-linear realization beyond the checked canonical real
   `2 × 2` block;
-- the source-extended maximal boundary relation `{(f,Yf+Vu)}` or its gamma
-  field (the self-adjoint logarithmic reference graph is maximal and checked);
+- the gamma field or the compressed-resolvent identification of the boundary
+  Weyl family (the source-extended relation, both charts and maximal coupled
+  Weyl boundary graph are now checked);
 - strong-resolvent or strong-graph convergence;
 - equality between the Green static Poisson map and a spectral Weyl map;
 - any consequence concerning external special-function zeros.

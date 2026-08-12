@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.46 unbounded-Weyl registry. -/
+/-! Ordered foundational-dependency report for the v0.48 source-relation registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -1128,3 +1128,33 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Boundary.logarithmicGreenRelation_isMaximalGreenIsotropic
 #print axioms NativeCarrySpectralWeyl.Boundary.logarithmicGreenRelation_greenAdjoint_eq
 #print axioms NativeCarrySpectralWeyl.Boundary.logarithmicGreenRelation_isClosed
+#print axioms NativeCarrySpectralWeyl.Boundary.mem_sourceExtendedRelation_iff
+#print axioms NativeCarrySpectralWeyl.Boundary.sourceRelationParameterization_injective
+#print axioms NativeCarrySpectralWeyl.Boundary.coe_sourceRelationEquiv
+#print axioms NativeCarrySpectralWeyl.Boundary.weylBoundaryParameters_eq_rotation
+#print axioms NativeCarrySpectralWeyl.Boundary.referenceBoundaryMap_sourceRelationEquiv
+#print axioms NativeCarrySpectralWeyl.Boundary.weylBoundaryMap_sourceRelationEquiv
+#print axioms NativeCarrySpectralWeyl.Boundary.weylBoundaryMap_eq_rotation_referenceBoundaryMap
+#print axioms NativeCarrySpectralWeyl.Boundary.coupledGreenForm_zero_left
+#print axioms NativeCarrySpectralWeyl.Boundary.coupledGreenForm_zero_right
+#print axioms NativeCarrySpectralWeyl.Boundary.coupledGreenForm_add_right
+#print axioms NativeCarrySpectralWeyl.Boundary.coupledGreenForm_smul_right
+#print axioms NativeCarrySpectralWeyl.Boundary.mem_coupledGreenAdjoint_iff
+#print axioms NativeCarrySpectralWeyl.Boundary.mem_weylBoundaryGraph_iff
+#print axioms NativeCarrySpectralWeyl.Boundary.weylBoundaryGraph_green_identity
+#print axioms NativeCarrySpectralWeyl.Boundary.sourceExtendedRelation_weyl_green_identity
+#print axioms NativeCarrySpectralWeyl.Boundary.sourceExtendedRelation_reference_green_identity
+#print axioms NativeCarrySpectralWeyl.Boundary.weylBoundaryGraph_le_coupledGreenAdjoint
+#print axioms NativeCarrySpectralWeyl.Boundary.weylBoundaryGraph_isMaximalCoupledGreenIsotropic
+#print axioms NativeCarrySpectralWeyl.Boundary.carryNaimarkPort_injective
+#print axioms NativeCarrySpectralWeyl.Boundary.carryNaimarkPort_adjoint_eq
+#print axioms NativeCarrySpectralWeyl.Boundary.mem_carrySourceRelation_iff
+#print axioms NativeCarrySpectralWeyl.Boundary.coe_carrySourceRelationElement
+#print axioms NativeCarrySpectralWeyl.Boundary.carryReferenceBoundaryMap_element
+#print axioms NativeCarrySpectralWeyl.Boundary.carryWeylBoundaryMap_element
+#print axioms NativeCarrySpectralWeyl.Boundary.carryWeylBoundaryMap_eq_rotation
+#print axioms NativeCarrySpectralWeyl.Boundary.carrySourceRelation_weyl_green_identity
+#print axioms NativeCarrySpectralWeyl.Boundary.carrySourceRelation_reference_green_identity
+#print axioms NativeCarrySpectralWeyl.Boundary.mem_carryWeylBoundaryGraph_iff
+#print axioms NativeCarrySpectralWeyl.Boundary.carryWeylBoundaryGraph_isMaximalCoupledGreenIsotropic
+#print axioms NativeCarrySpectralWeyl.Boundary.carryWeylBoundaryGraph_coupledGreenAdjoint_eq

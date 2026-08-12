@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.47 it contains
-sixty `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.48 it contains
+sixty-one `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -246,3 +246,13 @@ by this milestone.  The compressed Cauchy family is represented by its
 canonical real block because the established camera Hilbert space is real.
 Positivity and normalization of the finite POVM do not imply idempotent
 spectral effects.
+
+The second boundary claim constructs the actual source-extended relation
+`T_C={(f,Yf+Vu)}`.  Injectivity of the port gives unique source coordinates,
+so the reference chart `(u,-V^*f)` and Weyl chart `(V^*f,u)` are well-defined
+linear maps and differ by the exact symplectic quarter-turn.  Formal symmetry
+gives the Green identity in both charts, while self-adjointness makes the
+coupled Weyl graph equal to its coupled Green adjoint.  The concrete instance
+uses maximal logarithmic multiplication and the all-bases Naimark isometry.
+The spectral-parameter-dependent gamma field and compressed-resolvent/Weyl
+identification remain outside this claim.

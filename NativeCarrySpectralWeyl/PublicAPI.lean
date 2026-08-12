@@ -48,6 +48,7 @@ import NativeCarrySpectralWeyl.Infinite.ComplexifiedCauchy
 import NativeCarrySpectralWeyl.Infinite.WeylInverse
 import NativeCarrySpectralWeyl.Infinite.WeylUnbounded
 import NativeCarrySpectralWeyl.Boundary.GreenRelation
+import NativeCarrySpectralWeyl.Boundary.SourceRelation
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -241,10 +242,16 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     defined operator graph is Green-isotropic exactly when the operator is
     formally symmetric, and is maximal Green-isotropic exactly when the
     operator is self-adjoint.  Consequently the graph of maximal logarithmic
-    multiplication is a concrete closed maximal Green relation.  The
-    source-extended relation `{(f,Yf+Vu)}`, its gamma field, and identification
-    of its Weyl family with the compressed-resolvent inverse remain subsequent
-    obligations; no full boundary triple is claimed here.
+    multiplication is a concrete closed maximal Green relation.  The second
+    boundary layer now constructs the actual source-extended relation
+    `{(f,Yf+Vu)}`.  Injectivity of the all-bases Naimark port gives unique
+    source coordinates and honest reference/Weyl boundary charts
+    `(u,-V^*f)` and `(V^*f,u)`.  Their symplectic rotation, both Green
+    identities, and maximal coupled Green-isotropy are checked abstractly for
+    every self-adjoint `Y` and concretely for logarithmic multiplication and
+    the Naimark isometry.  The gamma field and identification of its Weyl
+    family with the compressed-resolvent inverse remain subsequent
+    obligations; no ordinary boundary triple is claimed here.
 -/
 
 namespace NativeCarrySpectralWeyl
