@@ -46,6 +46,7 @@ import NativeCarrySpectralWeyl.Infinite.LogarithmicMultiplication
 import NativeCarrySpectralWeyl.Infinite.Cauchy
 import NativeCarrySpectralWeyl.Infinite.ComplexifiedCauchy
 import NativeCarrySpectralWeyl.Infinite.WeylInverse
+import NativeCarrySpectralWeyl.Infinite.WeylUnbounded
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -228,9 +229,13 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     parameter, hence its range is dense.  Finally, its inverse on that exact
     range is bundled as a Mathlib `LinearPMap`.  The inverse domain is dense,
     its graph is closed, both inverse identities hold, and its range is the
-    whole realified complexification.  An explicit complex scalar action,
-    projection-valued measure, proof that this inverse is unbounded and the
-    Green boundary-relation identification remain subsequent obligations.
+    whole realified complexification.  Finally, the exact camera-interval
+    variance and resolvent-shift identities give an explicit sequence of unit
+    camera vectors whose complete Cauchy images converge to zero.  Hence the
+    Cauchy block is not bounded below and its closed densely defined inverse
+    admits no global norm bound on its domain.  An explicit complex scalar
+    action, projection-valued measure and the Green boundary-relation
+    identification remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl

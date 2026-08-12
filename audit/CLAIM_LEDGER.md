@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.45 it contains
-fifty-eight `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.46 it contains
+fifty-nine `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -82,7 +82,16 @@ range as a Mathlib `LinearPMap`.  Its domain is dense, its graph is the
 coordinate swap of the closed bounded Cauchy graph and is therefore closed,
 both inverse laws hold exactly, and its range is the whole realified
 complexification.  Unboundedness of this closed densely defined inverse is
-not yet claimed.
+not part of that claim; it is discharged by the next claim.
+The tenth all-bases claim closes that quantitative gate.  On `(0,ell]`, the
+coordinate `1+log x` centered at `log ell` has exact variance one after camera
+normalization.  The real and imaginary resolvent-shift identities give an
+explicit complete-block bound proportional to
+`abs(Re (lambda-log ell)⁻¹)+abs(Im (lambda-log ell)⁻¹)`, and that bound tends
+to zero along camera labels `3,4,5,...`.  These cameras yield explicit unit
+vectors with Cauchy images converging to zero.  Hence the block is not bounded
+below and its closed densely defined `LinearPMap` inverse has no global norm
+bound on its domain.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.
@@ -223,8 +232,8 @@ monic of degree `k`, and defines the self-adjoint algebraic camera target
 eight and gives one exact literal six-camera matrix in every degree.  It does
 not promote the degree-at-most-eight analytic limits to arbitrary degree.
 
-No explicit all-bases PVM, separate complex-linear realization or Weyl inverse
-is claimed by this milestone.  The compressed Cauchy family is represented by
-its canonical pair of real operators because the established camera Hilbert
-space is real.  Positivity and normalization of the finite POVM do not imply
-idempotent spectral effects.
+No explicit all-bases PVM or separate complex-linear realization is claimed
+by this milestone.  The compressed Cauchy family is represented by its
+canonical real block because the established camera Hilbert space is real.
+Positivity and normalization of the finite POVM do not imply idempotent
+spectral effects.

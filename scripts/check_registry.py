@@ -124,6 +124,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Infinite."),
     (ROOT / "NativeCarrySpectralWeyl/Infinite/WeylInverse.lean",
      "NativeCarrySpectralWeyl.Infinite."),
+    (ROOT / "NativeCarrySpectralWeyl/Infinite/WeylUnbounded.lean",
+     "NativeCarrySpectralWeyl.Infinite."),
 ]
 
 

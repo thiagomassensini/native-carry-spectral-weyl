@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.45 closed Weyl-inverse milestone contains exactly **1,061**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-1061` in
+The v0.46 unbounded-Weyl milestone contains exactly **1,102**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-1102` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -65,5 +65,6 @@ report for every declaration.
 | `NCSW-985`–`NCSW-1033` | `Infinite/Cauchy.lean` | bounded real/imaginary logarithmic resolvent multipliers, exact scalar identities and bounds, Naimark compression, self-adjoint components, conjugate symmetry, strict anti-Herglotz sign, injectivity and dense range |
 | `NCSW-1034`–`NCSW-1047` | `Infinite/ComplexifiedCauchy.lean` | canonical real `2 × 2` Cauchy block, coordinate and skew-form identities, conjugate adjoint, strict sign, injectivity and dense range |
 | `NCSW-1048`–`NCSW-1061` | `Infinite/WeylInverse.lean` | full-domain Cauchy partial map, exact-range Weyl inverse as `LinearPMap`, dense domain, swapped and closed graph, two-sided inverse laws and surjectivity |
+| `NCSW-1062`–`NCSW-1102` | `Infinite/WeylUnbounded.lean` | exact centered camera variance, resolvent-shift bounds, explicit unit small-image sequence, failure of a Cauchy lower bound and unboundedness of the closed inverse |
 
 The JSON registry is the machine-readable authority for exact qualified names.

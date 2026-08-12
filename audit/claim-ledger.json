@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.45.0",
-  "registry_count": 1061,
-  "count": 58,
+  "release": "0.46.0",
+  "registry_count": 1102,
+  "count": 59,
   "status_counts": {
-    "KERNEL_CHECKED": 58
+    "KERNEL_CHECKED": 59
   },
   "claims": [
     {
@@ -1472,6 +1472,54 @@
         "NCSW-1059",
         "NCSW-1060",
         "NCSW-1061"
+      ]
+    },
+    {
+      "id": "NCSW-INF-010",
+      "claim": "For every nonreal spectral parameter, the closed densely defined all-bases Weyl inverse is kernel checked to be genuinely unbounded. On each camera interval (0,ell], the logarithmic coordinate centered at log(ell) has exact unnormalized variance ell, so the centered Naimark camera vector has the same norm as the original vector. Exact scalar and operator resolvent-shift identities yield an explicit bound for the complete realified Cauchy block by (abs(Re (lambda-mu)^(-1))+abs(Im (lambda-mu)^(-1)))(1+2 abs(Im lambda)^(-1)), where mu=log(ell). Both centered coefficients and this bound tend to zero as mu tends to infinity. The supported cameras with labels n+3 therefore give an explicit sequence of unit realified camera vectors whose Cauchy images converge to zero. Consequently the complete Cauchy block is not bounded below, and its LinearPMap inverse on the exact dense range admits no global norm bound on its domain. No independent complex scalar action, explicit projection-valued measure or Green boundary relation is asserted.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1062",
+        "NCSW-1063",
+        "NCSW-1064",
+        "NCSW-1065",
+        "NCSW-1066",
+        "NCSW-1067",
+        "NCSW-1068",
+        "NCSW-1069",
+        "NCSW-1070",
+        "NCSW-1071",
+        "NCSW-1072",
+        "NCSW-1073",
+        "NCSW-1074",
+        "NCSW-1075",
+        "NCSW-1076",
+        "NCSW-1077",
+        "NCSW-1078",
+        "NCSW-1079",
+        "NCSW-1080",
+        "NCSW-1081",
+        "NCSW-1082",
+        "NCSW-1083",
+        "NCSW-1084",
+        "NCSW-1085",
+        "NCSW-1086",
+        "NCSW-1087",
+        "NCSW-1088",
+        "NCSW-1089",
+        "NCSW-1090",
+        "NCSW-1091",
+        "NCSW-1092",
+        "NCSW-1093",
+        "NCSW-1094",
+        "NCSW-1095",
+        "NCSW-1096",
+        "NCSW-1097",
+        "NCSW-1098",
+        "NCSW-1099",
+        "NCSW-1100",
+        "NCSW-1101",
+        "NCSW-1102"
       ]
     }
   ]

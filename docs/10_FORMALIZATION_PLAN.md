@@ -663,6 +663,7 @@ NativeCarrySpectralWeyl/Infinite/LogarithmicMultiplication.lean
 NativeCarrySpectralWeyl/Infinite/Cauchy.lean
 NativeCarrySpectralWeyl/Infinite/ComplexifiedCauchy.lean
 NativeCarrySpectralWeyl/Infinite/WeylInverse.lean
+NativeCarrySpectralWeyl/Infinite/WeylUnbounded.lean
 ```
 
 Proof order:
@@ -680,7 +681,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.45 closed Weyl-inverse milestone:
+Kernel checked through the v0.46 unbounded-Weyl milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -757,14 +758,26 @@ Kernel checked through the v0.45 closed Weyl-inverse milestone:
 - the inverse on that exact range as `allBasesWeylInverse`, with dense domain,
   graph obtained by coordinate swap, closedness, both exact inverse laws and
   surjectivity onto the whole realified complexification.
+- the exact centered interval variance
+  `integral 0..ell (1+log x-log ell)^2 = ell` and equality of centered and
+  uncentered camera-vector norms;
+- exact scalar and ambient-operator resolvent-shift identities, compression
+  estimates and the explicit full-block bound
+  `(abs(Re (lambda-mu)⁻¹)+abs(Im (lambda-mu)⁻¹)) *
+  (1+2 abs(Im lambda)⁻¹)`;
+- vanishing of that bound as `mu -> +infinity`, including the explicit
+  supported camera sequence with labels `n+3` and logarithmic centers
+  `log(n+3)`;
+- normalized realified unit camera vectors whose complete Cauchy images
+  converge to zero;
+- failure of every positive lower bound for the Cauchy block and failure of
+  every global norm bound for the closed densely defined Weyl inverse.
 
-The next unchecked item is step 9: use normalized single-camera or finite-core
-vectors escaping to the logarithmic tail to prove that the checked closed,
-densely defined inverse is not bounded.  This requires a quantitative sequence
-inside the compressed Cauchy range; dense range alone is not enough.  An
-independent complex scalar action and an explicit projection-valued measure
-also remain open.  The v0.45 construction uses the exact direct multiplication
-model and does not introduce a standard unweighted camera `l2` space.
+All nine Phase 5 steps are now checked.  An independent complex scalar action
+and an explicit projection-valued measure remain open, but neither is needed
+for the realified unboundedness theorem.  The v0.46 construction uses the
+exact direct multiplication model and does not introduce a standard
+unweighted camera `l2` space.
 
 This phase must not represent the all-bases inverse as an everywhere-defined
 continuous linear map.

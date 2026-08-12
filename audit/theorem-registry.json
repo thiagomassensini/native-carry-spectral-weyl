@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.45.0",
-  "count": 1061,
+  "release": "0.46.0",
+  "count": 1102,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -5307,6 +5307,211 @@
       "id": "NCSW-1061",
       "name": "allBasesWeylInverse_surjective",
       "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_surjective"
+    },
+    {
+      "id": "NCSW-1062",
+      "name": "integral_logarithmicCoordinate_sub_log_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.integral_logarithmicCoordinate_sub_log_sq"
+    },
+    {
+      "id": "NCSW-1063",
+      "name": "centeredNaimarkCameraVector_coeFn",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.centeredNaimarkCameraVector_coeFn"
+    },
+    {
+      "id": "NCSW-1064",
+      "name": "integral_indicator_camera_centeredCoordinate_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.integral_indicator_camera_centeredCoordinate_sq"
+    },
+    {
+      "id": "NCSW-1065",
+      "name": "norm_centeredNaimarkCameraVector_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_centeredNaimarkCameraVector_sq"
+    },
+    {
+      "id": "NCSW-1066",
+      "name": "norm_centeredNaimarkCameraVector",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_centeredNaimarkCameraVector"
+    },
+    {
+      "id": "NCSW-1067",
+      "name": "centeredResolventDenominator_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.centeredResolventDenominator_pos"
+    },
+    {
+      "id": "NCSW-1068",
+      "name": "logarithmicResolventRealCoefficient_shift",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventRealCoefficient_shift"
+    },
+    {
+      "id": "NCSW-1069",
+      "name": "logarithmicResolventImaginaryCoefficient_shift",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryCoefficient_shift"
+    },
+    {
+      "id": "NCSW-1070",
+      "name": "logarithmicResolventRealOperator_shift",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventRealOperator_shift"
+    },
+    {
+      "id": "NCSW-1071",
+      "name": "logarithmicResolventImaginaryOperator_shift",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_shift"
+    },
+    {
+      "id": "NCSW-1072",
+      "name": "norm_logarithmicResolventRealOperator_apply_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_logarithmicResolventRealOperator_apply_le"
+    },
+    {
+      "id": "NCSW-1073",
+      "name": "norm_logarithmicResolventImaginaryOperator_apply_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_logarithmicResolventImaginaryOperator_apply_le"
+    },
+    {
+      "id": "NCSW-1074",
+      "name": "norm_logarithmicResolventRealOperator_le_shift",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_logarithmicResolventRealOperator_le_shift"
+    },
+    {
+      "id": "NCSW-1075",
+      "name": "norm_logarithmicResolventImaginaryOperator_le_shift",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_logarithmicResolventImaginaryOperator_le_shift"
+    },
+    {
+      "id": "NCSW-1076",
+      "name": "centeredNaimarkCameraVector_coeFn_mul",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.centeredNaimarkCameraVector_coeFn_mul"
+    },
+    {
+      "id": "NCSW-1077",
+      "name": "norm_allBasesCauchyRealPart_apply_le_ambient",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_allBasesCauchyRealPart_apply_le_ambient"
+    },
+    {
+      "id": "NCSW-1078",
+      "name": "norm_allBasesCauchyImaginaryPart_apply_le_ambient",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_allBasesCauchyImaginaryPart_apply_le_ambient"
+    },
+    {
+      "id": "NCSW-1079",
+      "name": "norm_allBasesCauchyRealPart_cameraVector_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_allBasesCauchyRealPart_cameraVector_le"
+    },
+    {
+      "id": "NCSW-1080",
+      "name": "norm_allBasesCauchyImaginaryPart_cameraVector_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_allBasesCauchyImaginaryPart_cameraVector_le"
+    },
+    {
+      "id": "NCSW-1081",
+      "name": "realifiedCameraEmbedding_fst",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.realifiedCameraEmbedding_fst"
+    },
+    {
+      "id": "NCSW-1082",
+      "name": "realifiedCameraEmbedding_snd",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.realifiedCameraEmbedding_snd"
+    },
+    {
+      "id": "NCSW-1083",
+      "name": "norm_realifiedCameraEmbedding",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_realifiedCameraEmbedding"
+    },
+    {
+      "id": "NCSW-1084",
+      "name": "norm_realifiedCameraComplexification_le_add",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_realifiedCameraComplexification_le_add"
+    },
+    {
+      "id": "NCSW-1085",
+      "name": "norm_allBasesCauchyBlock_realifiedCameraEmbedding_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_allBasesCauchyBlock_realifiedCameraEmbedding_le"
+    },
+    {
+      "id": "NCSW-1086",
+      "name": "tendsto_centeredResolventRealCoefficient_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.tendsto_centeredResolventRealCoefficient_atTop"
+    },
+    {
+      "id": "NCSW-1087",
+      "name": "tendsto_centeredResolventImaginaryCoefficient_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.tendsto_centeredResolventImaginaryCoefficient_atTop"
+    },
+    {
+      "id": "NCSW-1088",
+      "name": "tendsto_centeredResolventCoefficientSum_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.tendsto_centeredResolventCoefficientSum_atTop"
+    },
+    {
+      "id": "NCSW-1089",
+      "name": "tendsto_cameraCauchyQuantitativeBound_atTop",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.tendsto_cameraCauchyQuantitativeBound_atTop"
+    },
+    {
+      "id": "NCSW-1090",
+      "name": "escapingCamera_label",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.escapingCamera_label"
+    },
+    {
+      "id": "NCSW-1091",
+      "name": "escapingCamera_slope",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.escapingCamera_slope"
+    },
+    {
+      "id": "NCSW-1092",
+      "name": "tendsto_escapingCamera_logSlope",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.tendsto_escapingCamera_logSlope"
+    },
+    {
+      "id": "NCSW-1093",
+      "name": "tendsto_cameraCauchyQuantitativeBound_escapingCamera",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.tendsto_cameraCauchyQuantitativeBound_escapingCamera"
+    },
+    {
+      "id": "NCSW-1094",
+      "name": "cameraVector_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.cameraVector_ne_zero"
+    },
+    {
+      "id": "NCSW-1095",
+      "name": "norm_normalizedRealifiedCameraVector",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_normalizedRealifiedCameraVector"
+    },
+    {
+      "id": "NCSW-1096",
+      "name": "norm_allBasesCauchyBlock_normalizedRealifiedCameraVector_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_allBasesCauchyBlock_normalizedRealifiedCameraVector_le"
+    },
+    {
+      "id": "NCSW-1097",
+      "name": "norm_quantitativeCameraSequence",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_quantitativeCameraSequence"
+    },
+    {
+      "id": "NCSW-1098",
+      "name": "norm_allBasesCauchyBlock_quantitativeCameraSequence_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.norm_allBasesCauchyBlock_quantitativeCameraSequence_le"
+    },
+    {
+      "id": "NCSW-1099",
+      "name": "tendsto_norm_allBasesCauchyBlock_quantitativeCameraSequence",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.tendsto_norm_allBasesCauchyBlock_quantitativeCameraSequence"
+    },
+    {
+      "id": "NCSW-1100",
+      "name": "tendsto_allBasesCauchyBlock_quantitativeCameraSequence",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.tendsto_allBasesCauchyBlock_quantitativeCameraSequence"
+    },
+    {
+      "id": "NCSW-1101",
+      "name": "allBasesCauchyBlock_not_boundedBelow",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_not_boundedBelow"
+    },
+    {
+      "id": "NCSW-1102",
+      "name": "allBasesWeylInverse_not_normBounded",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_not_normBounded"
     }
   ]
 }

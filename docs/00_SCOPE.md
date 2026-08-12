@@ -415,6 +415,19 @@ and it maps onto the whole realified complexification.  This surface does not
 claim an independent complex scalar action, an explicit PVM, or that the
 closed densely defined inverse is unbounded.
 
+The v0.46 surface closes the quantitative unboundedness gate.  The centered
+camera coordinate satisfies the exact identity
+`integral 0..ell (1+log x-log ell)^2 = ell`, so normalized single-camera
+vectors have logarithmic variance one.  Exact real and imaginary
+resolvent-shift identities give a complete-block norm bound proportional to
+`abs(Re (lambda-log ell)⁻¹)+abs(Im (lambda-log ell)⁻¹)`.  This bound tends to
+zero along the supported camera labels `3,4,5,...`, producing an explicit
+unit sequence whose Cauchy images converge to zero.  Therefore the complete
+Cauchy block is not bounded below, and its closed densely defined
+`LinearPMap` inverse admits no global norm bound on its exact domain.  This
+surface still does not claim an independent complex scalar action, an
+explicit PVM or a Green boundary relation.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
