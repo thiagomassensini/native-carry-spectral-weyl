@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.42 logarithmic-multiplier registry. -/
+/-! Ordered foundational-dependency report for the v0.43 self-adjoint-multiplier registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -973,5 +973,16 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplicationDomain_dense
 #print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_denseDomain
 #print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_isFormalAdjoint
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicTransferLinearMap_coeFn
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicTransferLinearMap_isSymmetric
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_adjoint_coeFn
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_adjoint_domain_le
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_adjoint_le
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_le_adjoint
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_adjoint_eq
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_adjoint_domain_eq
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_isClosed
 #print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_isClosable
 #print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_closure_isClosed
+#print axioms NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_closure_eq

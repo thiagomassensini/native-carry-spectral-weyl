@@ -376,6 +376,18 @@ original maximal operator is closed or equal to its Hilbert-space adjoint, so
 self-adjointness, its PVM, compressed Cauchy family and Weyl inverse remain
 outside the checked boundary.
 
+The v0.43 surface closes the maximal logarithmic-operator gate.  Applying the
+operator after the positive regularizer gives bounded multiplication by
+`y/(1+|y|)`.  For every vector `g` in the Hilbert-space adjoint domain, the
+adjoint identity on regularized test vectors proves
+`(yR)g = R(Y†g)`.  Since `R(x)>0` everywhere, cancellation gives the literal
+almost-everywhere formula `Y†g=yg`, hence membership in the natural maximal
+domain.  Symmetry supplies the reverse inclusion, so the adjoint domain is
+exactly the maximal domain and `Y†=Y`.  The operator is therefore self-adjoint
+and closed, and its canonical graph closure equals the original operator.
+The explicit spectral projections, compressed Cauchy family and unbounded
+Weyl inverse remain outside this surface.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -431,10 +443,9 @@ transform remain outside this surface.
 
 The bootstrap and first milestone do not claim:
 
-- an all-bases PVM/POVM beyond the explicit Naimark isometry;
-- closedness or self-adjointness of the original maximal logarithmic
-  multiplication operator (only symmetry, closability and closedness of its
-  graph closure are claimed);
+- an explicit all-bases PVM/POVM beyond the Naimark isometry and the
+  self-adjoint logarithmic multiplier;
+- the compressed Cauchy family of the self-adjoint logarithmic multiplier;
 - a closed densely defined all-bases Weyl inverse;
 - a maximal boundary relation or gamma field;
 - strong-resolvent or strong-graph convergence;

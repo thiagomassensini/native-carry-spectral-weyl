@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.42 logarithmic-multiplier milestone contains **973 public
+The v0.43 self-adjoint-multiplier milestone contains **984 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -125,9 +125,11 @@ surface proves:
 - density of the logarithmic domain via the bounded positive regularizer
   `(1+|y|)⁻¹`, whose symmetric multiplication map is injective and has dense
   range contained in the domain;
-- symmetry and closability of the logarithmic `LinearPMap`, together with
-  closedness of its canonical graph closure.  Closedness and equality with
-  the adjoint for the original maximal operator are not yet claimed.
+- symmetry of the logarithmic `LinearPMap` and the bounded transfer identity
+  obtained from the positive regularizer `(1+|y|)⁻¹`;
+- exact characterization of the adjoint action and domain, equality of the
+  maximal multiplier with its Hilbert-space adjoint, self-adjointness and
+  closedness; its canonical graph closure is exactly the original operator.
 - a generic slope-weighted moment construction whose real matrices are
   Hermitian and self-adjoint for every finite camera package;
 - the exact first centered logarithmic moment
@@ -381,7 +383,7 @@ functional covariance limits are now kernel checked.  The next analytic gate
 is to lift the scalar and periodic-residue arguments to a degree-generic
 induction over the new polynomial hierarchy.  The algebraic all-degree targets
 are complete, but analytic convergence beyond degree eight is not yet claimed.
-Independently, Phase 5 has passed its fifth all-bases gate: the canonical
+Independently, Phase 5 has passed its sixth all-bases gate: the canonical
 strictly positive Gram form on `Finsupp` now generates its intrinsic real
 inner product, and the all-bases camera Hilbert space is its canonical
 completion.  Every finite-label level enters isometrically and compatibly,
@@ -392,12 +394,12 @@ generate densely.  The slope-minimum factor is now realized by explicit
 positive-half-line indicator vectors, and their finite map extends
 isometrically from the intrinsic camera completion into `L²((0,∞),K₀)`.
 Multiplication by `1+log x` is now defined on its exact maximal `L²` domain;
-that domain is dense, contains the complete finite camera core, and the
-operator is symmetric and closable with a closed graph closure.  The next
-gate is to identify the maximal multiplier with its Hilbert-space adjoint
-(hence prove the original operator closed and self-adjoint), then construct
-its spectral projections and compressed Cauchy transform.  The
-operator-valued Weyl inverse remains a later obligation.
+that domain is dense, contains the complete finite camera core, and equals
+the domain of the Hilbert-space adjoint.  The maximal multiplier equals its
+adjoint, is self-adjoint and closed, and its canonical graph closure does not
+enlarge it.  The next gate is to construct its spectral projections and the
+bounded compressed Cauchy transform.  The operator-valued Weyl inverse
+remains a later obligation.
 
 Pinned foundations:
 
@@ -434,7 +436,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 973 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 984 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

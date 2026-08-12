@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.42.0",
-  "registry_count": 973,
-  "count": 54,
+  "release": "0.43.0",
+  "registry_count": 984,
+  "count": 55,
   "status_counts": {
-    "KERNEL_CHECKED": 54
+    "KERNEL_CHECKED": 55
   },
   "claims": [
     {
@@ -1354,8 +1354,26 @@
         "NCSW-969",
         "NCSW-970",
         "NCSW-971",
+        "NCSW-982",
+        "NCSW-983"
+      ]
+    },
+    {
+      "id": "NCSW-INF-006",
+      "claim": "The natural maximal logarithmic multiplication operator on the all-bases Naimark space is kernel checked as a self-adjoint closed LinearPMap. Composing its everywhere-positive regularizer R=(1+abs(y))^(-1) with logarithmic multiplication gives the bounded real transfer multiplier yR. Testing the Hilbert-space adjoint identity on regularized vectors proves (yR)g=R(Y-adjoint g) for every adjoint-domain vector; pointwise cancellation of R gives the literal almost-everywhere adjoint action Y-adjoint g=yg and places g in the natural maximal domain. Symmetry supplies the reverse operator inclusion, so the adjoint domain equals the maximal multiplication domain, Y-adjoint=Y, and Y is self-adjoint and closed. Its canonical graph closure equals Y itself. This claim does not yet construct explicit spectral projections, the compressed Cauchy family or the unbounded Weyl inverse.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
         "NCSW-972",
-        "NCSW-973"
+        "NCSW-973",
+        "NCSW-974",
+        "NCSW-975",
+        "NCSW-976",
+        "NCSW-977",
+        "NCSW-978",
+        "NCSW-979",
+        "NCSW-980",
+        "NCSW-981",
+        "NCSW-984"
       ]
     }
   ]

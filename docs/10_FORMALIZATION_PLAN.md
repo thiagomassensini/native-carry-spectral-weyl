@@ -672,14 +672,14 @@ Proof order:
 3. build a Kolmogorov realization of the periodic kernel;
 4. extend the explicit step-function map to a Naimark isometry;
 5. construct the logarithmic multiplication operator on its natural domain,
-   prove that domain dense, and close the original operator/self-adjointness
-   identification;
+   prove that domain dense, and identify the original operator with its
+   Hilbert-space adjoint;
 6. compress the resolvent to obtain a bounded Cauchy family;
 7. prove strict imaginary sign, injectivity and dense range;
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.42 logarithmic-multiplier milestone:
+Kernel checked through the v0.43 self-adjoint-multiplier milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -725,14 +725,19 @@ Kernel checked through the v0.42 logarithmic-multiplier milestone:
   symmetric and injective with dense range contained in the maximal domain,
   hence density of the logarithmic domain in the full Naimark space;
 - symmetry and closability of logarithmic multiplication and closedness of
-  its canonical graph closure.  These statements do not yet identify the
-  original maximal operator with its adjoint.
+  its canonical graph closure;
+- the bounded transfer multiplier `y/(1+|y|)`, obtained by applying the
+  logarithmic operator after regularization, and its real symmetry;
+- the almost-everywhere adjoint action obtained from
+  `(yR)g = R(Y†g)` and cancellation of the strictly positive regularizer;
+- equality of the adjoint domain with the natural maximal multiplication
+  domain, `Y†=Y`, self-adjointness and closedness of `Y`, and equality of its
+  canonical graph closure with `Y` itself.
 
-The next unchecked item is closedness and equality with the Hilbert-space
-adjoint for the original maximal logarithmic multiplier in
-`L²((0,∞),K₀)`.  Its spectral projections and the bounded compressed Cauchy
-family follow afterward.  No standard unweighted camera `l2` model is
-introduced.
+The next unchecked item is the spectral-projection/resolvent layer for the
+self-adjoint maximal logarithmic multiplier in `L²((0,∞),K₀)`, followed by
+the bounded compressed Cauchy family.  No standard unweighted camera `l2`
+model is introduced.
 
 This phase must not represent the all-bases inverse as an everywhere-defined
 continuous linear map.
@@ -750,8 +755,9 @@ Only after Phase 5:
 - connect external Green ports and spectral camera ports by an explicit map;
 - state the angular readout theorem with `t` independent from `lambda`.
 
-The old finite maximal-isotropic calculation is useful motivation, but it does
-not discharge the infinite adjoint/domain theorem.
+The old finite maximal-isotropic calculation remains useful motivation, but
+the infinite adjoint/domain theorem is discharged independently by the v0.43
+regularizer argument above.
 
 ## 10. Phase 7 — optional holonomic track
 

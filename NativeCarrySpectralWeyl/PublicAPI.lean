@@ -206,10 +206,12 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     `1 + log x` now defines a partial linear multiplication operator on its
     exact maximal square-integrability domain.  Every camera step vector and
     the finite camera core belong to that domain; a bounded positive
-    regularizer proves the domain dense, and the operator is symmetric and
-    closable with a closed canonical graph closure.  Equality with its
-    adjoint, the projection-valued measure, Cauchy compression and unbounded
-    Weyl inverse remain subsequent obligations.
+    regularizer proves the domain dense.  Testing the adjoint identity on
+    regularized vectors identifies its domain and almost-everywhere action:
+    the maximal multiplier equals its Hilbert-space adjoint, is self-adjoint
+    and closed, and its canonical graph closure is the operator itself.  The
+    projection-valued measure, Cauchy compression and unbounded Weyl inverse
+    remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl

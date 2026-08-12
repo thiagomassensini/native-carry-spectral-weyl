@@ -24,10 +24,10 @@ explicit camera step vector and hence the finite all-bases camera core.  The
 domain is dense in the whole Naimark space: multiplication by the bounded,
 strictly positive regularizer `(1 + |y|)⁻¹` has dense range, and that range
 lies in the maximal domain.  Finally, multiplication by the real coordinate
-is symmetric in the precise `LinearPMap.IsFormalAdjoint` sense.
-
-Closedness and equality with the Hilbert-space adjoint are intentionally left
-to the next operator-theoretic layer; no self-adjointness claim is made here.
+is symmetric in the precise `LinearPMap.IsFormalAdjoint` sense.  Testing the
+Hilbert-space adjoint identity on regularized vectors identifies its maximal
+domain with the original multiplication domain.  Consequently the operator
+equals its adjoint, is self-adjoint and is closed.
 -/
 
 open scoped ENNReal MeasureTheory RealInnerProductSpace
@@ -440,9 +440,167 @@ theorem logarithmicMultiplication_isFormalAdjoint :
   simp [logarithmicWeightedFunction, real_inner_smul_left,
     real_inner_smul_right]
 
-/-- The densely defined symmetric logarithmic multiplier is closable.  This
-uses its closed Hilbert-space adjoint as an extension; it does not identify
-the original operator with that adjoint. -/
+/-! ## Maximality and self-adjointness -/
+
+/-- The bounded regularization map, with its codomain restricted to the
+natural domain of logarithmic multiplication. -/
+def logarithmicRegularizationIntoDomainLinearMap :
+    NaimarkSpace →ₗ[ℝ] logarithmicMultiplication.domain :=
+  logarithmicRegularizationLinearMap.codRestrict
+    logarithmicMultiplication.domain
+    logarithmicRegularizationLinearMap_mem_domain
+
+/-- The bounded transfer map obtained by first regularizing and then applying
+the logarithmic multiplier.  Pointwise, its scalar multiplier is
+`y / (1 + |y|)`. -/
+def logarithmicTransferLinearMap : NaimarkSpace →ₗ[ℝ] NaimarkSpace :=
+  logarithmicMultiplication.toFun.comp
+    logarithmicRegularizationIntoDomainLinearMap
+
+/-- Pointwise representative of the bounded transfer map. -/
+def logarithmicTransferFunction (f : NaimarkSpace) (x : ℝ) :
+    KolmogorovSpace :=
+  (logarithmicCoordinate x * logarithmicRegularizer x) • f x
+
+/-- The bounded transfer map acts almost everywhere by the multiplier
+`y / (1 + |y|)`. -/
+theorem logarithmicTransferLinearMap_coeFn (f : NaimarkSpace) :
+    ⇑(logarithmicTransferLinearMap f) =ᵐ[positiveLebesgueMeasure]
+      logarithmicTransferFunction f := by
+  filter_upwards [logarithmicMultiplication_coeFn
+      (logarithmicRegularizationIntoDomainLinearMap f),
+    logarithmicRegularizationLinearMap_coeFn f] with x hmul hreg
+  change ⇑(logarithmicMultiplication
+    (logarithmicRegularizationIntoDomainLinearMap f)) x = _
+  rw [hmul]
+  change logarithmicCoordinate x •
+    ⇑(logarithmicRegularizationLinearMap f) x = _
+  rw [hreg]
+  simp [logarithmicTransferFunction, logarithmicRegularizedFunction, smul_smul]
+
+/-- The bounded transfer multiplier is real, hence its linear map is
+symmetric. -/
+theorem logarithmicTransferLinearMap_isSymmetric :
+    LinearMap.IsSymmetric logarithmicTransferLinearMap := by
+  intro f g
+  rw [L2.inner_def, L2.inner_def]
+  apply integral_congr_ae
+  filter_upwards [logarithmicTransferLinearMap_coeFn f,
+    logarithmicTransferLinearMap_coeFn g] with x hfx hgx
+  rw [hfx, hgx]
+  simp [logarithmicTransferFunction, real_inner_smul_left,
+    real_inner_smul_right]
+
+/-- A vector in the Hilbert-space adjoint domain is multiplied almost
+everywhere by the same logarithmic coordinate.  The proof tests the adjoint
+identity on the regularized vectors `R k`, obtains
+
+`(y R) g = R (Y† g)`,
+
+and cancels the everywhere-positive scalar multiplier of `R`. -/
+theorem logarithmicMultiplication_adjoint_coeFn
+    (g : logarithmicMultiplication.adjoint.domain) :
+    logarithmicWeightedFunction (g : NaimarkSpace) =ᵐ[positiveLebesgueMeasure]
+      ⇑(logarithmicMultiplication.adjoint g) := by
+  let h : NaimarkSpace := logarithmicMultiplication.adjoint g
+  have hvector :
+      logarithmicTransferLinearMap (g : NaimarkSpace) =
+        logarithmicRegularizationLinearMap h := by
+    apply ext_inner_left ℝ
+    intro k
+    rw [← logarithmicTransferLinearMap_isSymmetric k (g : NaimarkSpace),
+      ← logarithmicRegularizationLinearMap_isSymmetric k h]
+    have hformal := (LinearPMap.adjoint_isFormalAdjoint
+      logarithmicMultiplication_denseDomain) g
+      (logarithmicRegularizationIntoDomainLinearMap k)
+    change inner ℝ h (logarithmicRegularizationLinearMap k) =
+      inner ℝ (g : NaimarkSpace) (logarithmicTransferLinearMap k) at hformal
+    calc
+      inner ℝ (logarithmicTransferLinearMap k) (g : NaimarkSpace) =
+          inner ℝ (g : NaimarkSpace) (logarithmicTransferLinearMap k) :=
+        real_inner_comm _ _
+      _ = inner ℝ h (logarithmicRegularizationLinearMap k) := hformal.symm
+      _ = inner ℝ (logarithmicRegularizationLinearMap k) h :=
+        real_inner_comm _ _
+  have hcoe : ⇑(logarithmicTransferLinearMap (g : NaimarkSpace)) =ᵐ[
+      positiveLebesgueMeasure]
+      ⇑(logarithmicRegularizationLinearMap h) := by
+    rw [hvector]
+  filter_upwards [logarithmicTransferLinearMap_coeFn (g : NaimarkSpace),
+    logarithmicRegularizationLinearMap_coeFn h, hcoe] with x htransfer hreg heq
+  have hpoint : logarithmicTransferFunction (g : NaimarkSpace) x =
+      logarithmicRegularizedFunction h x :=
+    htransfer.symm.trans (heq.trans hreg)
+  have hinverse := congrArg
+    (fun value => (logarithmicRegularizer x)⁻¹ • value) hpoint
+  simpa [h, logarithmicWeightedFunction, logarithmicTransferFunction,
+    logarithmicRegularizedFunction, smul_smul, mul_assoc, mul_comm,
+    mul_left_comm, (logarithmicRegularizer_pos x).ne'] using hinverse
+
+/-- Maximality of the natural multiplication domain: every vector in the
+domain of the Hilbert-space adjoint already belongs to the original maximal
+domain. -/
+theorem logarithmicMultiplication_adjoint_domain_le :
+    logarithmicMultiplication.adjoint.domain ≤
+      logarithmicMultiplication.domain := by
+  intro g hg
+  let gAdj : logarithmicMultiplication.adjoint.domain := ⟨g, hg⟩
+  have hae := logarithmicMultiplication_adjoint_coeFn gAdj
+  exact (Lp.memLp (logarithmicMultiplication.adjoint gAdj)).ae_eq hae.symm
+
+/-- The Hilbert-space adjoint is contained in the maximal logarithmic
+multiplication operator. -/
+theorem logarithmicMultiplication_adjoint_le :
+    logarithmicMultiplication.adjoint ≤ logarithmicMultiplication := by
+  refine ⟨logarithmicMultiplication_adjoint_domain_le, ?_⟩
+  intro g f hgf
+  apply Lp.ext
+  have hcoe : ⇑(g : NaimarkSpace) =ᵐ[positiveLebesgueMeasure]
+      ⇑(f : NaimarkSpace) := by
+    rw [hgf]
+  filter_upwards [logarithmicMultiplication_adjoint_coeFn g,
+    logarithmicMultiplication_coeFn f, hcoe] with x hadj hmul hgf'
+  exact hadj.symm.trans ((congrArg
+    (fun value => logarithmicCoordinate x • value) hgf').trans hmul.symm)
+
+/-- Symmetry gives the reverse inclusion of the maximal logarithmic
+multiplier into its Hilbert-space adjoint. -/
+theorem logarithmicMultiplication_le_adjoint :
+    logarithmicMultiplication ≤ logarithmicMultiplication.adjoint :=
+  logarithmicMultiplication_isFormalAdjoint.le_adjoint
+    logarithmicMultiplication_denseDomain
+
+/-- The Hilbert-space adjoint of the maximal logarithmic multiplier is the
+operator itself. -/
+theorem logarithmicMultiplication_adjoint_eq :
+    logarithmicMultiplication.adjoint = logarithmicMultiplication :=
+  le_antisymm logarithmicMultiplication_adjoint_le
+    logarithmicMultiplication_le_adjoint
+
+/-- The natural maximal domain of logarithmic multiplication is exactly the
+domain of its Hilbert-space adjoint. -/
+@[simp] theorem logarithmicMultiplication_adjoint_domain_eq :
+    logarithmicMultiplication.adjoint.domain =
+      logarithmicMultiplication.domain :=
+  congrArg
+    (fun operator : NaimarkSpace →ₗ.[ℝ] NaimarkSpace => operator.domain)
+    logarithmicMultiplication_adjoint_eq
+
+/-- Multiplication by `1 + log x` on its natural maximal `L²` domain is
+self-adjoint. -/
+theorem logarithmicMultiplication_isSelfAdjoint :
+    IsSelfAdjoint logarithmicMultiplication := by
+  rw [LinearPMap.isSelfAdjoint_def]
+  exact logarithmicMultiplication_adjoint_eq
+
+/-- The maximal logarithmic multiplication operator is closed. -/
+theorem logarithmicMultiplication_isClosed :
+    logarithmicMultiplication.IsClosed :=
+  logarithmicMultiplication_isSelfAdjoint.isClosed
+
+/-- The logarithmic multiplier is closable.  This retains the direct
+dense-symmetry witness through the closed adjoint; the stronger identification
+with that adjoint is established above. -/
 theorem logarithmicMultiplication_isClosable :
     logarithmicMultiplication.IsClosable := by
   rw [LinearPMap.isClosable_iff_exists_closed_extension]
@@ -456,5 +614,13 @@ partial linear operator. -/
 theorem logarithmicMultiplication_closure_isClosed :
     logarithmicMultiplication.closure.IsClosed :=
   logarithmicMultiplication_isClosable.closure_isClosed
+
+/-- Because the maximal logarithmic multiplier is already closed, its
+canonical graph closure does not enlarge it. -/
+theorem logarithmicMultiplication_closure_eq :
+    logarithmicMultiplication.closure = logarithmicMultiplication := by
+  apply LinearPMap.eq_of_eq_graph
+  rw [← logarithmicMultiplication_isClosable.graph_closure_eq_closure_graph]
+  exact logarithmicMultiplication_isClosed.submodule_topologicalClosure_eq
 
 end NativeCarrySpectralWeyl.Infinite

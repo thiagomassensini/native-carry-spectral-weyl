@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.42 it contains
-fifty-four `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.43 it contains
+fifty-five `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -54,6 +54,13 @@ bounded positive regularizer `(1+|1+log x|)⁻¹` has symmetric dense range
 inside it, proving the domain dense; the logarithmic operator is symmetric and
 closable, and its canonical graph closure is closed.  The claim deliberately
 does not identify the original operator with its adjoint.
+The sixth all-bases claim closes that maximality gate.  Composing the positive
+regularizer with logarithmic multiplication gives the bounded real transfer
+multiplier `y/(1+|y|)`.  Testing the adjoint identity on those regularized
+vectors yields `(yR)g = R(Y†g)`; strict positivity of `R` then gives the
+literal almost-everywhere adjoint action.  Thus the adjoint domain equals the
+natural maximal multiplication domain, `Y†=Y`, and the operator is
+self-adjoint and closed.  Its canonical graph closure is exactly `Y`.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.
@@ -194,8 +201,8 @@ monic of degree `k`, and defines the self-adjoint algebraic camera target
 eight and gives one exact literal six-camera matrix in every degree.  It does
 not promote the degree-at-most-eight analytic limits to arbitrary degree.
 
-No all-bases PVM, compressed Cauchy family or Weyl inverse is claimed by this
-milestone.  Closedness and self-adjointness of the original maximal
-logarithmic multiplier remain separate from the proved closedness of its
-canonical graph closure.  Positivity and normalization of the finite POVM do
-not imply idempotent spectral effects.
+No explicit all-bases PVM, compressed Cauchy family or Weyl inverse is claimed
+by this milestone.  Self-adjointness of the maximal logarithmic multiplier
+does not by itself instantiate those downstream constructions in the public
+API.  Positivity and normalization of the finite POVM do not imply idempotent
+spectral effects.
