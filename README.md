@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.43 self-adjoint-multiplier milestone contains **984 public
+The v0.44 compressed-Cauchy milestone contains **1,033 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -130,6 +130,22 @@ surface proves:
 - exact characterization of the adjoint action and domain, equality of the
   maximal multiplier with its Hilbert-space adjoint, self-adjointness and
   closedness; its canonical graph closure is exactly the original operator.
+- the exact real and imaginary coefficients of `(lambda-y)⁻¹` for every
+  nonreal `lambda`, including both scalar inverse identities, the reciprocal-
+  denominator norm identity and the standard resolvent-scale component bounds
+  `|Re|, |Im| <= |Im lambda|⁻¹`;
+- bounded self-adjoint real and imaginary resolvent multiplication operators
+  on the Naimark `L²` space, with literal almost-everywhere action, operator-
+  norm bounds and conjugate-parameter symmetry;
+- compression through the all-bases Naimark isometry, producing the canonical
+  real/imaginary-component representation of
+  `M_infinity(lambda)=V†(lambda-Y)⁻¹V` on the real camera Hilbert space;
+- self-adjointness of both compressed components, the same
+  `|Im lambda|⁻¹` bounds, conjugate symmetry, strict negative imaginary
+  quadratic form in the upper half-plane and strict positive sign in the
+  lower half-plane;
+- injectivity and dense range of the compressed imaginary component for every
+  nonreal `lambda`.
 - a generic slope-weighted moment construction whose real matrices are
   Hermitian and self-adjoint for every finite camera package;
 - the exact first centered logarithmic moment
@@ -383,7 +399,7 @@ functional covariance limits are now kernel checked.  The next analytic gate
 is to lift the scalar and periodic-residue arguments to a degree-generic
 induction over the new polynomial hierarchy.  The algebraic all-degree targets
 are complete, but analytic convergence beyond degree eight is not yet claimed.
-Independently, Phase 5 has passed its sixth all-bases gate: the canonical
+Independently, Phase 5 has passed its Cauchy-family gate: the canonical
 strictly positive Gram form on `Finsupp` now generates its intrinsic real
 inner product, and the all-bases camera Hilbert space is its canonical
 completion.  Every finite-label level enters isometrically and compatibly,
@@ -397,9 +413,14 @@ Multiplication by `1+log x` is now defined on its exact maximal `L²` domain;
 that domain is dense, contains the complete finite camera core, and equals
 the domain of the Hilbert-space adjoint.  The maximal multiplier equals its
 adjoint, is self-adjoint and closed, and its canonical graph closure does not
-enlarge it.  The next gate is to construct its spectral projections and the
-bounded compressed Cauchy transform.  The operator-valued Weyl inverse
-remains a later obligation.
+enlarge it.  Direct bounded multiplication by the real and imaginary parts of
+`(lambda-y)⁻¹`, followed by Naimark compression, now gives the all-bases
+Cauchy family for every nonreal `lambda`.  Its components are self-adjoint,
+obey the sharp resolvent-scale bounds and conjugate symmetry, and its
+imaginary component has strict anti-Herglotz sign, is injective and has dense
+range.  This is deliberately a realified two-component representation; the
+operator-valued Weyl inverse and a separate complexification remain later
+obligations.
 
 Pinned foundations:
 
@@ -436,7 +457,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 984 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,033 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

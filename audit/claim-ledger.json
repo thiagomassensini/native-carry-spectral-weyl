@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
   "release": "0.43.0",
-  "registry_count": 984,
-  "count": 55,
+  "registry_count": 1033,
+  "count": 56,
   "status_counts": {
-    "KERNEL_CHECKED": 55
+    "KERNEL_CHECKED": 56
   },
   "claims": [
     {
@@ -1374,6 +1374,62 @@
         "NCSW-980",
         "NCSW-981",
         "NCSW-984"
+      ]
+    },
+    {
+      "id": "NCSW-INF-007",
+      "claim": "The canonical realified all-bases compressed Cauchy family is kernel checked for every nonreal spectral parameter lambda. The real and imaginary scalar parts of (lambda-y)^(-1), with y=1+log(x), are measurable and satisfy the exact two-component inverse identities, the reciprocal-denominator squared-modulus identity, conjugation symmetry and the standard resolvent-scale component bounds by abs(Im lambda)^(-1). They define bounded self-adjoint real multiplication operators on the Naimark L2 space with literal almost-everywhere action and the corresponding operator-norm estimates. Compression by the explicit Naimark isometry gives the real and imaginary components corresponding to V-adjoint (lambda-Y)^(-1) V on CameraHilbert. Both compressed components are self-adjoint, obey the same norm estimates and conjugation laws, and the imaginary component has strict negative quadratic form in the upper half-plane and strict positive form in the lower half-plane. Consequently it is injective and has dense range for every nonreal lambda. Because CameraHilbert is currently real, this claim packages the Cauchy family as its canonical real/imaginary operator pair; it does not construct a separate complex Hilbert-space realization, an explicit projection-valued measure or the unbounded Weyl inverse.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-985",
+        "NCSW-986",
+        "NCSW-987",
+        "NCSW-988",
+        "NCSW-989",
+        "NCSW-990",
+        "NCSW-991",
+        "NCSW-992",
+        "NCSW-993",
+        "NCSW-994",
+        "NCSW-995",
+        "NCSW-996",
+        "NCSW-997",
+        "NCSW-998",
+        "NCSW-999",
+        "NCSW-1000",
+        "NCSW-1001",
+        "NCSW-1002",
+        "NCSW-1003",
+        "NCSW-1004",
+        "NCSW-1005",
+        "NCSW-1006",
+        "NCSW-1007",
+        "NCSW-1008",
+        "NCSW-1009",
+        "NCSW-1010",
+        "NCSW-1011",
+        "NCSW-1012",
+        "NCSW-1013",
+        "NCSW-1014",
+        "NCSW-1015",
+        "NCSW-1016",
+        "NCSW-1017",
+        "NCSW-1018",
+        "NCSW-1019",
+        "NCSW-1020",
+        "NCSW-1021",
+        "NCSW-1022",
+        "NCSW-1023",
+        "NCSW-1024",
+        "NCSW-1025",
+        "NCSW-1026",
+        "NCSW-1027",
+        "NCSW-1028",
+        "NCSW-1029",
+        "NCSW-1030",
+        "NCSW-1031",
+        "NCSW-1032",
+        "NCSW-1033"
       ]
     }
   ]

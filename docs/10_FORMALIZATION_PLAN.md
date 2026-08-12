@@ -679,7 +679,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.43 self-adjoint-multiplier milestone:
+Kernel checked through the v0.44 compressed-Cauchy milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -733,11 +733,25 @@ Kernel checked through the v0.43 self-adjoint-multiplier milestone:
 - equality of the adjoint domain with the natural maximal multiplication
   domain, `Y†=Y`, self-adjointness and closedness of `Y`, and equality of its
   canonical graph closure with `Y` itself.
+- the measurable real and imaginary scalar parts of `(lambda-y)⁻¹`, their
+  exact inverse and reciprocal-denominator identities, conjugation laws and
+  `|Im lambda|⁻¹` bounds for every nonreal `lambda`;
+- bounded self-adjoint resolvent multipliers on the Naimark space with literal
+  almost-everywhere action and the corresponding operator-norm bounds;
+- compression by `V†(·)V` to two bounded self-adjoint real operators on the
+  camera Hilbert space, canonically representing the real and imaginary parts
+  of the all-bases Cauchy family;
+- conjugate symmetry, strict upper/lower half-plane quadratic-form signs, and
+  injectivity with dense range of the compressed imaginary component.
 
-The next unchecked item is the spectral-projection/resolvent layer for the
-self-adjoint maximal logarithmic multiplier in `L²((0,∞),K₀)`, followed by
-the bounded compressed Cauchy family.  No standard unweighted camera `l2`
-model is introduced.
+The next unchecked item is to turn the checked real/imaginary pair into one
+operator on a canonical complexification (equivalently, its real `2 × 2`
+block realization), transfer the strict sign to injectivity and dense range
+of that full Cauchy operator, and then bundle its inverse on the range as a
+densely defined `LinearPMap`.  Closedness and unboundedness follow as separate
+obligations.  An explicit projection-valued measure also remains open; the
+v0.44 construction uses the exact direct multiplication model and does not
+introduce a standard unweighted camera `l2` space.
 
 This phase must not represent the all-bases inverse as an everywhere-defined
 continuous linear map.

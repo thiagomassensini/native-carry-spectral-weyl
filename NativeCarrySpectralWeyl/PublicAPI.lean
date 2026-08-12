@@ -43,6 +43,7 @@ import NativeCarrySpectralWeyl.Infinite.CameraCompletion
 import NativeCarrySpectralWeyl.Infinite.Kolmogorov
 import NativeCarrySpectralWeyl.Infinite.Naimark
 import NativeCarrySpectralWeyl.Infinite.LogarithmicMultiplication
+import NativeCarrySpectralWeyl.Infinite.Cauchy
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -209,9 +210,16 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     regularizer proves the domain dense.  Testing the adjoint identity on
     regularized vectors identifies its domain and almost-everywhere action:
     the maximal multiplier equals its Hilbert-space adjoint, is self-adjoint
-    and closed, and its canonical graph closure is the operator itself.  The
-    projection-valued measure, Cauchy compression and unbounded Weyl inverse
-    remain subsequent obligations.
+    and closed, and its canonical graph closure is the operator itself.  For
+    every nonreal `lambda`, the real and imaginary scalar parts of
+    `(lambda-Y)⁻¹` are then bundled as bounded self-adjoint multiplication
+    operators with norm at most `|Im lambda|⁻¹` and compressed through the
+    Naimark isometry.  These two real operators canonically represent the
+    all-bases Cauchy family on the current real camera Hilbert space.  They
+    satisfy conjugate symmetry, the strict anti-Herglotz quadratic-form sign,
+    and the imaginary component is injective with dense range.  A separate
+    complex Hilbert-space realization, explicit projection-valued measure and
+    the unbounded Weyl inverse remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl

@@ -118,6 +118,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Infinite."),
     (ROOT / "NativeCarrySpectralWeyl/Infinite/LogarithmicMultiplication.lean",
      "NativeCarrySpectralWeyl.Infinite."),
+    (ROOT / "NativeCarrySpectralWeyl/Infinite/Cauchy.lean",
+     "NativeCarrySpectralWeyl.Infinite."),
 ]
 
 

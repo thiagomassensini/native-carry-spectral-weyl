@@ -388,6 +388,20 @@ and closed, and its canonical graph closure equals the original operator.
 The explicit spectral projections, compressed Cauchy family and unbounded
 Weyl inverse remain outside this surface.
 
+The v0.44 surface constructs the bounded all-bases Cauchy family directly from
+the explicit multiplication model.  Since the established camera and Naimark
+Hilbert spaces are real, it does so honestly as the pair of real continuous
+operators representing the real and imaginary parts of
+`V†(lambda-Y)⁻¹V`.  For every nonreal `lambda`, the scalar coefficients satisfy
+the two inverse identities, their squared complex modulus is the reciprocal
+resolvent denominator, and each component is bounded by
+`|Im lambda|⁻¹`.  The corresponding Naimark multipliers and their compressions
+are self-adjoint and satisfy conjugate symmetry.  The imaginary compressed
+component has strict anti-Herglotz sign on nonzero vectors, is injective and
+has dense range.  This surface does not claim a separate complexification, an
+explicit projection-valued measure, or the unbounded inverse of the Cauchy
+operator.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -443,9 +457,10 @@ transform remain outside this surface.
 
 The bootstrap and first milestone do not claim:
 
-- an explicit all-bases PVM/POVM beyond the Naimark isometry and the
-  self-adjoint logarithmic multiplier;
-- the compressed Cauchy family of the self-adjoint logarithmic multiplier;
+- an explicit all-bases PVM/POVM beyond the Naimark multiplication model and
+  its checked compressed Cauchy family;
+- a complex-linear realization beyond the checked real/imaginary-component
+  Cauchy representation;
 - a closed densely defined all-bases Weyl inverse;
 - a maximal boundary relation or gamma field;
 - strong-resolvent or strong-graph convergence;

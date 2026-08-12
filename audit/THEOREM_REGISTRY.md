@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.43 self-adjoint-multiplier milestone contains exactly **984**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-984` in
+The v0.44 compressed-Cauchy milestone contains exactly **1,033**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-1033` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -62,5 +62,6 @@ report for every declaration.
 | `NCSW-902`–`NCSW-925` | `Infinite/Kolmogorov.lean` | finite periodic-kernel positivity, intrinsic pre-inner-product completion, exact canonical kernel vectors and dense algebraic span |
 | `NCSW-926`–`NCSW-942` | `Infinite/Naimark.lean` | positive-half-line indicator realization, exact full-Gram inner products, finite-core isometry and extension to the complete camera Hilbert space |
 | `NCSW-943`–`NCSW-984` | `Infinite/LogarithmicMultiplication.lean` | maximal `L²` domain for multiplication by `1+log x`, camera-core membership, dense-domain regularizer, adjoint-domain maximality, self-adjointness, closedness and equality with the graph closure |
+| `NCSW-985`–`NCSW-1033` | `Infinite/Cauchy.lean` | bounded real/imaginary logarithmic resolvent multipliers, exact scalar identities and bounds, Naimark compression, self-adjoint components, conjugate symmetry, strict anti-Herglotz sign, injectivity and dense range |
 
 The JSON registry is the machine-readable authority for exact qualified names.

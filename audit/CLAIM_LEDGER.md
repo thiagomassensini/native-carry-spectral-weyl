@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.43 it contains
-fifty-five `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.44 it contains
+fifty-six `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -61,6 +61,15 @@ vectors yields `(yR)g = R(Y†g)`; strict positivity of `R` then gives the
 literal almost-everywhere adjoint action.  Thus the adjoint domain equals the
 natural maximal multiplication domain, `Y†=Y`, and the operator is
 self-adjoint and closed.  Its canonical graph closure is exactly `Y`.
+The seventh all-bases claim constructs the compressed Cauchy family for every
+nonreal `lambda`.  On the real Naimark model it bundles the real and imaginary
+parts of `(lambda-y)⁻¹` as bounded self-adjoint multiplication operators,
+checks the exact scalar inverse and modulus identities, proves the
+`|Im lambda|⁻¹` bounds and conjugation laws, and compresses through the
+all-bases Naimark isometry.  The resulting real two-component representation
+of `V†(lambda-Y)⁻¹V` is self-adjoint componentwise, has strict anti-Herglotz
+sign, and its imaginary component is injective with dense range.  No separate
+complexification, explicit PVM or unbounded Weyl inverse is claimed.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.
@@ -201,8 +210,8 @@ monic of degree `k`, and defines the self-adjoint algebraic camera target
 eight and gives one exact literal six-camera matrix in every degree.  It does
 not promote the degree-at-most-eight analytic limits to arbitrary degree.
 
-No explicit all-bases PVM, compressed Cauchy family or Weyl inverse is claimed
-by this milestone.  Self-adjointness of the maximal logarithmic multiplier
-does not by itself instantiate those downstream constructions in the public
-API.  Positivity and normalization of the finite POVM do not imply idempotent
-spectral effects.
+No explicit all-bases PVM, separate complex-linear realization or Weyl inverse
+is claimed by this milestone.  The compressed Cauchy family is represented by
+its canonical pair of real operators because the established camera Hilbert
+space is real.  Positivity and normalization of the finite POVM do not imply
+idempotent spectral effects.

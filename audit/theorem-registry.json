@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
   "release": "0.43.0",
-  "count": 984,
+  "count": 1033,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -4922,6 +4922,251 @@
       "id": "NCSW-984",
       "name": "logarithmicMultiplication_closure_eq",
       "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_closure_eq"
+    },
+    {
+      "id": "NCSW-985",
+      "name": "boundedRealNaimarkMultiplierFunction_aestronglyMeasurable",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplierFunction_aestronglyMeasurable"
+    },
+    {
+      "id": "NCSW-986",
+      "name": "boundedRealNaimarkMultiplierFunction_memLp",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplierFunction_memLp"
+    },
+    {
+      "id": "NCSW-987",
+      "name": "boundedRealNaimarkMultiplierFunction_add",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplierFunction_add"
+    },
+    {
+      "id": "NCSW-988",
+      "name": "boundedRealNaimarkMultiplierFunction_smul",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplierFunction_smul"
+    },
+    {
+      "id": "NCSW-989",
+      "name": "boundedRealNaimarkMultiplierLinearMap_coeFn",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplierLinearMap_coeFn"
+    },
+    {
+      "id": "NCSW-990",
+      "name": "boundedRealNaimarkMultiplierLinearMap_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplierLinearMap_norm_le"
+    },
+    {
+      "id": "NCSW-991",
+      "name": "boundedRealNaimarkMultiplier_coeFn",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplier_coeFn"
+    },
+    {
+      "id": "NCSW-992",
+      "name": "boundedRealNaimarkMultiplier_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplier_norm_le"
+    },
+    {
+      "id": "NCSW-993",
+      "name": "boundedRealNaimarkMultiplier_isSymmetric",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplier_isSymmetric"
+    },
+    {
+      "id": "NCSW-994",
+      "name": "boundedRealNaimarkMultiplier_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.boundedRealNaimarkMultiplier_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-995",
+      "name": "measurable_logarithmicResolventDenominator",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.measurable_logarithmicResolventDenominator"
+    },
+    {
+      "id": "NCSW-996",
+      "name": "logarithmicResolventDenominator_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventDenominator_pos"
+    },
+    {
+      "id": "NCSW-997",
+      "name": "logarithmicResolventDenominator_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventDenominator_ne_zero"
+    },
+    {
+      "id": "NCSW-998",
+      "name": "measurable_logarithmicResolventRealCoefficient",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.measurable_logarithmicResolventRealCoefficient"
+    },
+    {
+      "id": "NCSW-999",
+      "name": "measurable_logarithmicResolventImaginaryCoefficient",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.measurable_logarithmicResolventImaginaryCoefficient"
+    },
+    {
+      "id": "NCSW-1000",
+      "name": "logarithmicResolventCoefficient_real_identity",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventCoefficient_real_identity"
+    },
+    {
+      "id": "NCSW-1001",
+      "name": "logarithmicResolventCoefficient_imaginary_identity",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventCoefficient_imaginary_identity"
+    },
+    {
+      "id": "NCSW-1002",
+      "name": "logarithmicResolventCoefficient_norm_sq",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventCoefficient_norm_sq"
+    },
+    {
+      "id": "NCSW-1003",
+      "name": "abs_logarithmicResolventRealCoefficient_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.abs_logarithmicResolventRealCoefficient_le"
+    },
+    {
+      "id": "NCSW-1004",
+      "name": "abs_logarithmicResolventImaginaryCoefficient_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.abs_logarithmicResolventImaginaryCoefficient_le"
+    },
+    {
+      "id": "NCSW-1005",
+      "name": "logarithmicResolventRealCoefficient_conj",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventRealCoefficient_conj"
+    },
+    {
+      "id": "NCSW-1006",
+      "name": "logarithmicResolventImaginaryCoefficient_conj",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryCoefficient_conj"
+    },
+    {
+      "id": "NCSW-1007",
+      "name": "logarithmicResolventRealOperator_coeFn",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventRealOperator_coeFn"
+    },
+    {
+      "id": "NCSW-1008",
+      "name": "logarithmicResolventImaginaryOperator_coeFn",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_coeFn"
+    },
+    {
+      "id": "NCSW-1009",
+      "name": "logarithmicResolventRealOperator_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventRealOperator_norm_le"
+    },
+    {
+      "id": "NCSW-1010",
+      "name": "logarithmicResolventImaginaryOperator_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_norm_le"
+    },
+    {
+      "id": "NCSW-1011",
+      "name": "logarithmicResolventRealOperator_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventRealOperator_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-1012",
+      "name": "logarithmicResolventImaginaryOperator_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-1013",
+      "name": "logarithmicResolventRealOperator_conj",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventRealOperator_conj"
+    },
+    {
+      "id": "NCSW-1014",
+      "name": "logarithmicResolventImaginaryOperator_conj",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_conj"
+    },
+    {
+      "id": "NCSW-1015",
+      "name": "logarithmicResolventImaginaryOperator_inner_nonpos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_inner_nonpos"
+    },
+    {
+      "id": "NCSW-1016",
+      "name": "logarithmicResolventImaginaryOperator_inner_neg",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_inner_neg"
+    },
+    {
+      "id": "NCSW-1017",
+      "name": "logarithmicResolventImaginaryOperator_inner_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_inner_nonneg"
+    },
+    {
+      "id": "NCSW-1018",
+      "name": "logarithmicResolventImaginaryOperator_inner_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicResolventImaginaryOperator_inner_pos"
+    },
+    {
+      "id": "NCSW-1019",
+      "name": "naimarkAdjoint_norm_le_one",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkAdjoint_norm_le_one"
+    },
+    {
+      "id": "NCSW-1020",
+      "name": "inner_allBasesCauchyRealPart",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.inner_allBasesCauchyRealPart"
+    },
+    {
+      "id": "NCSW-1021",
+      "name": "inner_allBasesCauchyImaginaryPart",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.inner_allBasesCauchyImaginaryPart"
+    },
+    {
+      "id": "NCSW-1022",
+      "name": "allBasesCauchyRealPart_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyRealPart_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-1023",
+      "name": "allBasesCauchyImaginaryPart_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-1024",
+      "name": "allBasesCauchyRealPart_conj",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyRealPart_conj"
+    },
+    {
+      "id": "NCSW-1025",
+      "name": "allBasesCauchyImaginaryPart_conj",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_conj"
+    },
+    {
+      "id": "NCSW-1026",
+      "name": "allBasesCauchyRealPart_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyRealPart_norm_le"
+    },
+    {
+      "id": "NCSW-1027",
+      "name": "allBasesCauchyImaginaryPart_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_norm_le"
+    },
+    {
+      "id": "NCSW-1028",
+      "name": "allBasesCauchyImaginaryPart_inner_nonpos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_inner_nonpos"
+    },
+    {
+      "id": "NCSW-1029",
+      "name": "allBasesCauchyImaginaryPart_inner_neg",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_inner_neg"
+    },
+    {
+      "id": "NCSW-1030",
+      "name": "allBasesCauchyImaginaryPart_inner_nonneg",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_inner_nonneg"
+    },
+    {
+      "id": "NCSW-1031",
+      "name": "allBasesCauchyImaginaryPart_inner_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_inner_pos"
+    },
+    {
+      "id": "NCSW-1032",
+      "name": "allBasesCauchyImaginaryPart_injective",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_injective"
+    },
+    {
+      "id": "NCSW-1033",
+      "name": "allBasesCauchyImaginaryPart_denseRange",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_denseRange"
     }
   ]
 }
