@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.44 it contains
-fifty-six `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.45 it contains
+fifty-eight `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -70,6 +70,19 @@ all-bases Naimark isometry.  The resulting real two-component representation
 of `V†(lambda-Y)⁻¹V` is self-adjoint componentwise, has strict anti-Herglotz
 sign, and its imaginary component is injective with dense range.  No separate
 complexification, explicit PVM or unbounded Weyl inverse is claimed.
+The eighth all-bases claim passes to the underlying real Hilbert space
+`WithLp 2 (CameraHilbert × CameraHilbert)` of the canonical complexification.
+It combines the two components into the standard block
+`(x,y) ↦ (Ax-By,Bx+Ay)`, proves the exact skew quadratic-form identity and
+identifies the adjoint with the block at the conjugate parameter.  The strict
+anti-Herglotz sign makes the full block injective, while injectivity of its
+adjoint makes its range dense.
+The ninth all-bases claim defines the inverse of that full block on its exact
+range as a Mathlib `LinearPMap`.  Its domain is dense, its graph is the
+coordinate swap of the closed bounded Cauchy graph and is therefore closed,
+both inverse laws hold exactly, and its range is the whole realified
+complexification.  Unboundedness of this closed densely defined inverse is
+not yet claimed.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.

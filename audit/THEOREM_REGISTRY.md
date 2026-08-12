@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.44 compressed-Cauchy milestone contains exactly **1,033**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-1033` in
+The v0.45 closed Weyl-inverse milestone contains exactly **1,061**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-1061` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -63,5 +63,7 @@ report for every declaration.
 | `NCSW-926`–`NCSW-942` | `Infinite/Naimark.lean` | positive-half-line indicator realization, exact full-Gram inner products, finite-core isometry and extension to the complete camera Hilbert space |
 | `NCSW-943`–`NCSW-984` | `Infinite/LogarithmicMultiplication.lean` | maximal `L²` domain for multiplication by `1+log x`, camera-core membership, dense-domain regularizer, adjoint-domain maximality, self-adjointness, closedness and equality with the graph closure |
 | `NCSW-985`–`NCSW-1033` | `Infinite/Cauchy.lean` | bounded real/imaginary logarithmic resolvent multipliers, exact scalar identities and bounds, Naimark compression, self-adjoint components, conjugate symmetry, strict anti-Herglotz sign, injectivity and dense range |
+| `NCSW-1034`–`NCSW-1047` | `Infinite/ComplexifiedCauchy.lean` | canonical real `2 × 2` Cauchy block, coordinate and skew-form identities, conjugate adjoint, strict sign, injectivity and dense range |
+| `NCSW-1048`–`NCSW-1061` | `Infinite/WeylInverse.lean` | full-domain Cauchy partial map, exact-range Weyl inverse as `LinearPMap`, dense domain, swapped and closed graph, two-sided inverse laws and surjectivity |
 
 The JSON registry is the machine-readable authority for exact qualified names.

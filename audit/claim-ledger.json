@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.43.0",
-  "registry_count": 1033,
-  "count": 56,
+  "release": "0.45.0",
+  "registry_count": 1061,
+  "count": 58,
   "status_counts": {
-    "KERNEL_CHECKED": 56
+    "KERNEL_CHECKED": 58
   },
   "claims": [
     {
@@ -1430,6 +1430,48 @@
         "NCSW-1031",
         "NCSW-1032",
         "NCSW-1033"
+      ]
+    },
+    {
+      "id": "NCSW-INF-008",
+      "claim": "The complete all-bases Cauchy family is kernel checked on the underlying real Hilbert space of the canonical complexification WithLp 2 (CameraHilbert x CameraHilbert). For symmetric real and imaginary components A and B, the standard real block sends (x,y) to (Ax-By,Bx+Ay), its skew quadratic form is the sum of the two B quadratic forms, and its adjoint is the conjugate block A-iB. Applying these facts to the compressed Cauchy components transfers the strict upper- and lower-half-plane sign to every nonzero doubled vector. Hence the full block is injective. Conjugation of the spectral parameter identifies its adjoint with another injective Cauchy block, so the Hilbert-space orthogonal-range identity proves that the full block has dense range. This is a real block realization; no independent complex scalar action is asserted.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1034",
+        "NCSW-1035",
+        "NCSW-1036",
+        "NCSW-1037",
+        "NCSW-1038",
+        "NCSW-1039",
+        "NCSW-1040",
+        "NCSW-1041",
+        "NCSW-1042",
+        "NCSW-1043",
+        "NCSW-1044",
+        "NCSW-1045",
+        "NCSW-1046",
+        "NCSW-1047"
+      ]
+    },
+    {
+      "id": "NCSW-INF-009",
+      "claim": "For every nonreal spectral parameter, the inverse of the complete all-bases Cauchy block is kernel checked as a Mathlib LinearPMap on its exact operator range. The bounded Cauchy block viewed as a full-domain partial map is injective, has trivial kernel, the same range as the original continuous linear map, and a closed graph. Its LinearPMap inverse therefore has domain exactly the dense Cauchy range and is closed because its graph is the coordinate swap of the bounded graph. The inverse satisfies both exact inverse laws, is surjective onto the whole realified camera complexification, and is never represented as an everywhere-defined continuous linear map. This claim does not yet prove that the densely defined closed inverse is unbounded.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1048",
+        "NCSW-1049",
+        "NCSW-1050",
+        "NCSW-1051",
+        "NCSW-1052",
+        "NCSW-1053",
+        "NCSW-1054",
+        "NCSW-1055",
+        "NCSW-1056",
+        "NCSW-1057",
+        "NCSW-1058",
+        "NCSW-1059",
+        "NCSW-1060",
+        "NCSW-1061"
       ]
     }
   ]

@@ -661,6 +661,7 @@ NativeCarrySpectralWeyl/Infinite/Kolmogorov.lean
 NativeCarrySpectralWeyl/Infinite/Naimark.lean
 NativeCarrySpectralWeyl/Infinite/LogarithmicMultiplication.lean
 NativeCarrySpectralWeyl/Infinite/Cauchy.lean
+NativeCarrySpectralWeyl/Infinite/ComplexifiedCauchy.lean
 NativeCarrySpectralWeyl/Infinite/WeylInverse.lean
 ```
 
@@ -679,7 +680,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.44 compressed-Cauchy milestone:
+Kernel checked through the v0.45 closed Weyl-inverse milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -743,15 +744,27 @@ Kernel checked through the v0.44 compressed-Cauchy milestone:
   of the all-bases Cauchy family;
 - conjugate symmetry, strict upper/lower half-plane quadratic-form signs, and
   injectivity with dense range of the compressed imaginary component.
+- the underlying real Hilbert space
+  `WithLp 2 (CameraHilbert × CameraHilbert)` of the canonical
+  complexification and the standard real block
+  `(x,y) ↦ (Ax-By,Bx+Ay)` for the complete Cauchy operator;
+- the exact skew quadratic-form identity, strict sign on every nonzero
+  doubled vector and injectivity of the complete Cauchy block;
+- identification of the block adjoint with the Cauchy block at the conjugate
+  spectral parameter and dense range of the complete block;
+- the bounded Cauchy block as an everywhere-defined `LinearPMap`, with
+  unchanged range, trivial kernel and closed graph;
+- the inverse on that exact range as `allBasesWeylInverse`, with dense domain,
+  graph obtained by coordinate swap, closedness, both exact inverse laws and
+  surjectivity onto the whole realified complexification.
 
-The next unchecked item is to turn the checked real/imaginary pair into one
-operator on a canonical complexification (equivalently, its real `2 × 2`
-block realization), transfer the strict sign to injectivity and dense range
-of that full Cauchy operator, and then bundle its inverse on the range as a
-densely defined `LinearPMap`.  Closedness and unboundedness follow as separate
-obligations.  An explicit projection-valued measure also remains open; the
-v0.44 construction uses the exact direct multiplication model and does not
-introduce a standard unweighted camera `l2` space.
+The next unchecked item is step 9: use normalized single-camera or finite-core
+vectors escaping to the logarithmic tail to prove that the checked closed,
+densely defined inverse is not bounded.  This requires a quantitative sequence
+inside the compressed Cauchy range; dense range alone is not enough.  An
+independent complex scalar action and an explicit projection-valued measure
+also remain open.  The v0.45 construction uses the exact direct multiplication
+model and does not introduce a standard unweighted camera `l2` space.
 
 This phase must not represent the all-bases inverse as an everywhere-defined
 continuous linear map.

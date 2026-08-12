@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.44 compressed-Cauchy registry. -/
+/-! Ordered foundational-dependency report for the v0.45 Weyl-inverse registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -1035,3 +1035,31 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_inner_pos
 #print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_injective
 #print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_denseRange
+#print axioms NativeCarrySpectralWeyl.Infinite.realifiedCameraBlock_fst
+#print axioms NativeCarrySpectralWeyl.Infinite.realifiedCameraBlock_snd
+#print axioms NativeCarrySpectralWeyl.Infinite.realifiedCameraBlock_skewQuadratic
+#print axioms NativeCarrySpectralWeyl.Infinite.realifiedCameraBlock_adjoint
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_fst
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_snd
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_skewQuadratic
+#print axioms NativeCarrySpectralWeyl.Infinite.realifiedCameraComplexification_fst_ne_or_snd_ne
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_skewQuadratic_neg
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_skewQuadratic_pos
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_injective
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_conj
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_adjoint
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_denseRange
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_domain
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_apply
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_toFun_injective
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_ker_eq_bot
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_range
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_domain
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_denseDomain
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_isClosed
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_graph
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_isClosed
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_apply_cauchyRangeElement
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_apply_weylInverse
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_range_eq_top
+#print axioms NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_surjective

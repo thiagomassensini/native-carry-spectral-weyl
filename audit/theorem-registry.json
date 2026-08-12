@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.43.0",
-  "count": 1033,
+  "release": "0.45.0",
+  "count": 1061,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -5167,6 +5167,146 @@
       "id": "NCSW-1033",
       "name": "allBasesCauchyImaginaryPart_denseRange",
       "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyImaginaryPart_denseRange"
+    },
+    {
+      "id": "NCSW-1034",
+      "name": "realifiedCameraBlock_fst",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.realifiedCameraBlock_fst"
+    },
+    {
+      "id": "NCSW-1035",
+      "name": "realifiedCameraBlock_snd",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.realifiedCameraBlock_snd"
+    },
+    {
+      "id": "NCSW-1036",
+      "name": "realifiedCameraBlock_skewQuadratic",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.realifiedCameraBlock_skewQuadratic"
+    },
+    {
+      "id": "NCSW-1037",
+      "name": "realifiedCameraBlock_adjoint",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.realifiedCameraBlock_adjoint"
+    },
+    {
+      "id": "NCSW-1038",
+      "name": "allBasesCauchyBlock_fst",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_fst"
+    },
+    {
+      "id": "NCSW-1039",
+      "name": "allBasesCauchyBlock_snd",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_snd"
+    },
+    {
+      "id": "NCSW-1040",
+      "name": "allBasesCauchyBlock_skewQuadratic",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_skewQuadratic"
+    },
+    {
+      "id": "NCSW-1041",
+      "name": "realifiedCameraComplexification_fst_ne_or_snd_ne",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.realifiedCameraComplexification_fst_ne_or_snd_ne"
+    },
+    {
+      "id": "NCSW-1042",
+      "name": "allBasesCauchyBlock_skewQuadratic_neg",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_skewQuadratic_neg"
+    },
+    {
+      "id": "NCSW-1043",
+      "name": "allBasesCauchyBlock_skewQuadratic_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_skewQuadratic_pos"
+    },
+    {
+      "id": "NCSW-1044",
+      "name": "allBasesCauchyBlock_injective",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_injective"
+    },
+    {
+      "id": "NCSW-1045",
+      "name": "allBasesCauchyBlock_conj",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_conj"
+    },
+    {
+      "id": "NCSW-1046",
+      "name": "allBasesCauchyBlock_adjoint",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_adjoint"
+    },
+    {
+      "id": "NCSW-1047",
+      "name": "allBasesCauchyBlock_denseRange",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_denseRange"
+    },
+    {
+      "id": "NCSW-1048",
+      "name": "allBasesCauchyPMap_domain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_domain"
+    },
+    {
+      "id": "NCSW-1049",
+      "name": "allBasesCauchyPMap_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_apply"
+    },
+    {
+      "id": "NCSW-1050",
+      "name": "allBasesCauchyPMap_toFun_injective",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_toFun_injective"
+    },
+    {
+      "id": "NCSW-1051",
+      "name": "allBasesCauchyPMap_ker_eq_bot",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_ker_eq_bot"
+    },
+    {
+      "id": "NCSW-1052",
+      "name": "allBasesCauchyPMap_range",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_range"
+    },
+    {
+      "id": "NCSW-1053",
+      "name": "allBasesWeylInverse_domain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_domain"
+    },
+    {
+      "id": "NCSW-1054",
+      "name": "allBasesWeylInverse_denseDomain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_denseDomain"
+    },
+    {
+      "id": "NCSW-1055",
+      "name": "allBasesCauchyPMap_isClosed",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyPMap_isClosed"
+    },
+    {
+      "id": "NCSW-1056",
+      "name": "allBasesWeylInverse_graph",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_graph"
+    },
+    {
+      "id": "NCSW-1057",
+      "name": "allBasesWeylInverse_isClosed",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_isClosed"
+    },
+    {
+      "id": "NCSW-1058",
+      "name": "allBasesWeylInverse_apply_cauchyRangeElement",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_apply_cauchyRangeElement"
+    },
+    {
+      "id": "NCSW-1059",
+      "name": "allBasesCauchyBlock_apply_weylInverse",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesCauchyBlock_apply_weylInverse"
+    },
+    {
+      "id": "NCSW-1060",
+      "name": "allBasesWeylInverse_range_eq_top",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_range_eq_top"
+    },
+    {
+      "id": "NCSW-1061",
+      "name": "allBasesWeylInverse_surjective",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.allBasesWeylInverse_surjective"
     }
   ]
 }

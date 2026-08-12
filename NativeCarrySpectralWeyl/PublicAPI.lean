@@ -44,6 +44,8 @@ import NativeCarrySpectralWeyl.Infinite.Kolmogorov
 import NativeCarrySpectralWeyl.Infinite.Naimark
 import NativeCarrySpectralWeyl.Infinite.LogarithmicMultiplication
 import NativeCarrySpectralWeyl.Infinite.Cauchy
+import NativeCarrySpectralWeyl.Infinite.ComplexifiedCauchy
+import NativeCarrySpectralWeyl.Infinite.WeylInverse
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -73,8 +75,9 @@ mean, and proves the concrete six-camera variance positive semidefinite.  The
 finite POVM layer realizes the positive step density as a vector measure,
 proves total mass `G`, normalizes it by congruence with `G⁻¹/²`, and pushes it
 to the centered-log spectral coordinate; the canonical six-camera POVM has
-positive effects and total effect `I`.  Its Cauchy transform and the
-operator-valued Weyl layers remain outside this surface.  The Phase 4 limit
+positive effects and total effect `I`.  That finite POVM's own Cauchy
+transform and finite operator-valued Weyl layer remain outside this surface.
+The Phase 4 limit
 layer proves vector-valued periodic Cesàro convergence and Dirichlet--Abel
 weighted periodic means, including weights that become antitone after a
 finite prefix.  For the concrete weight `|z - log(n+1)|⁻²`, it proves
@@ -217,9 +220,17 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     Naimark isometry.  These two real operators canonically represent the
     all-bases Cauchy family on the current real camera Hilbert space.  They
     satisfy conjugate symmetry, the strict anti-Herglotz quadratic-form sign,
-    and the imaginary component is injective with dense range.  A separate
-    complex Hilbert-space realization, explicit projection-valued measure and
-    the unbounded Weyl inverse remain subsequent obligations.
+    and the imaginary component is injective with dense range.  The canonical
+    real `2 × 2` block on `WithLp 2 (CameraHilbert × CameraHilbert)` then
+    combines those components into the full realification of the complex
+    Cauchy operator.  Its skew quadratic form inherits the strict sign, hence
+    the block is injective; its adjoint is the block at the conjugate spectral
+    parameter, hence its range is dense.  Finally, its inverse on that exact
+    range is bundled as a Mathlib `LinearPMap`.  The inverse domain is dense,
+    its graph is closed, both inverse identities hold, and its range is the
+    whole realified complexification.  An explicit complex scalar action,
+    projection-valued measure, proof that this inverse is unbounded and the
+    Green boundary-relation identification remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl

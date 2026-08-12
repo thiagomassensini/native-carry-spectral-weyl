@@ -402,6 +402,19 @@ has dense range.  This surface does not claim a separate complexification, an
 explicit projection-valued measure, or the unbounded inverse of the Cauchy
 operator.
 
+The v0.45 surface combines the checked real and imaginary components on the
+underlying real Hilbert space of the canonical complexification
+`WithLp 2 (CameraHilbert × CameraHilbert)`.  The standard block
+`(x,y) ↦ (Ax-By,Bx+Ay)` has a skew quadratic form equal to the sum of the two
+imaginary-component forms.  Their strict sign makes the full block injective.
+Its adjoint is the block at `conj lambda`; that block is injective too, so the
+original block has dense range.  The inverse on this exact range is now a
+Mathlib `LinearPMap`.  Its domain is dense, its graph is closed by coordinate
+swap of the bounded Cauchy graph, it satisfies both exact inverse identities,
+and it maps onto the whole realified complexification.  This surface does not
+claim an independent complex scalar action, an explicit PVM, or that the
+closed densely defined inverse is unbounded.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -459,9 +472,10 @@ The bootstrap and first milestone do not claim:
 
 - an explicit all-bases PVM/POVM beyond the Naimark multiplication model and
   its checked compressed Cauchy family;
-- a complex-linear realization beyond the checked real/imaginary-component
-  Cauchy representation;
-- a closed densely defined all-bases Weyl inverse;
+- a native complex-linear realization beyond the checked canonical real
+  `2 × 2` block;
+- a proof that the checked closed densely defined all-bases Weyl inverse is
+  unbounded;
 - a maximal boundary relation or gamma field;
 - strong-resolvent or strong-graph convergence;
 - equality between the Green static Poisson map and a spectral Weyl map;

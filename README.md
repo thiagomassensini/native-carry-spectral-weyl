@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.44 compressed-Cauchy milestone contains **1,033 public
+The v0.45 closed Weyl-inverse milestone contains **1,061 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -146,6 +146,15 @@ surface proves:
   lower half-plane;
 - injectivity and dense range of the compressed imaginary component for every
   nonreal `lambda`.
+- the canonical real `2 × 2` block
+  `(x,y) ↦ (Ax-By,Bx+Ay)` on
+  `WithLp 2 (CameraHilbert × CameraHilbert)`, representing the full complex
+  Cauchy family without silently imposing an unproved complex scalar action;
+- the exact skew quadratic-form identity, strict upper/lower half-plane sign,
+  injectivity of the full Cauchy block, conjugate-parameter adjoint identity
+  and dense range;
+- the inverse of that block on its exact range as a Mathlib `LinearPMap`, with
+  dense domain, closed graph, exact left/right inverse laws and full range.
 - a generic slope-weighted moment construction whose real matrices are
   Hermitian and self-adjoint for every finite camera package;
 - the exact first centered logarithmic moment
@@ -399,7 +408,7 @@ functional covariance limits are now kernel checked.  The next analytic gate
 is to lift the scalar and periodic-residue arguments to a degree-generic
 induction over the new polynomial hierarchy.  The algebraic all-degree targets
 are complete, but analytic convergence beyond degree eight is not yet claimed.
-Independently, Phase 5 has passed its Cauchy-family gate: the canonical
+Independently, Phase 5 has passed its closed Weyl-inverse gate: the canonical
 strictly positive Gram form on `Finsupp` now generates its intrinsic real
 inner product, and the all-bases camera Hilbert space is its canonical
 completion.  Every finite-label level enters isometrically and compatibly,
@@ -418,9 +427,15 @@ enlarge it.  Direct bounded multiplication by the real and imaginary parts of
 Cauchy family for every nonreal `lambda`.  Its components are self-adjoint,
 obey the sharp resolvent-scale bounds and conjugate symmetry, and its
 imaginary component has strict anti-Herglotz sign, is injective and has dense
-range.  This is deliberately a realified two-component representation; the
-operator-valued Weyl inverse and a separate complexification remain later
-obligations.
+range.  On the underlying real Hilbert space of the canonical
+complexification, the standard `2 × 2` block combines those components into
+the full Cauchy operator.  Its strict skew-form sign proves injectivity, and
+its adjoint is the block at the conjugate parameter, proving dense range.
+The inverse on that exact range is now a closed densely defined Mathlib
+`LinearPMap` satisfying both inverse laws and surjecting onto the full
+realified complexification.  A native complex scalar action, explicit PVM,
+proof that this inverse is unbounded and the Green boundary-relation coupling
+remain later obligations.
 
 Pinned foundations:
 
@@ -434,10 +449,10 @@ Pinned foundations:
 ## Intended theorem boundary
 
 The formalization will proceed from exact camera arithmetic to finite spectral
-objects, then to the countable camera completion, Cauchy transform and an
-unbounded Weyl inverse.  Boundary relations and the coupling to the Green
-state/port layer come only after their domain and maximality statements are
-proved independently.
+objects, then to the countable camera completion, Cauchy transform, closed
+Weyl inverse and its unboundedness theorem.  Boundary relations and the
+coupling to the Green state/port layer come only after their domain and
+maximality statements are proved independently.
 
 Three parameters remain permanently distinct:
 
@@ -457,7 +472,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,033 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,061 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
