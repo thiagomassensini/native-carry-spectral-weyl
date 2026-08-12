@@ -54,6 +54,7 @@ import NativeCarrySpectralWeyl.Boundary.GammaField
 import NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling
 import NativeCarrySpectralWeyl.Boundary.AngularReadout
 import NativeCarrySpectralWeyl.Boundary.RiggedAngularOrbit
+import NativeCarrySpectralWeyl.Boundary.RiggedBoundaryPort
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -285,10 +286,14 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     isometric equivalences on this weighted coordinate realization.  The
     distinguished orbit has constant norm, and pointwise removal of the
     logarithmic weight recovers exactly
-    `dirichletValue (nativeLine t) n`.  This pointwise removal is not bundled
-    as a bounded operator, so the rigged orbit is not silently promoted to a
-    concrete Green state or composed with the still-supplied all-bases camera
-    readout.
+    `dirichletValue (nativeLine t) n`.  The closed rigged-port layer then
+    bundles removal of that weight as a maximal `LinearPMap` on the exact
+    proper dense square-summability domain.  This operator is surjective,
+    closed and self-adjoint, its domain is evolution-invariant, and the whole
+    critical orbit is proved to lie outside it.  Independently, the canonical
+    Fréchet--Riesz map places the orbit continuously in the strong dual of the
+    `H₁` test-coordinate realization.  This dual port is not identified with
+    the still-supplied research-specific all-bases camera readout.
     No independent complex scalar action or ordinary boundary triple is
     claimed here.
 -/

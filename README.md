@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.52 logarithmic rigged-orbit milestone contains **1,279 public
+The v0.53 closed rigged-port milestone contains **1,318 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -482,6 +482,20 @@ surface proves:
   with the exact pointwise bridge obtained by removing the rigging weight:
   `unriggedCoordinate (criticalRiggedOrbit t) n =
   dirichletValue (nativeLine t) n`.
+- the bounded injective rigging map `Jx(n)=x(n)/(1+log n)`, with dense range,
+  and its inverse as multiplication by `1+log n` on the explicit maximal
+  square-summability domain;
+- density and properness of that domain, exact coordinate and two-sided
+  inverse laws, surjectivity, closedness, closability, self-adjointness and
+  equality with the canonical graph closure;
+- invariance of the maximal domain under the logarithmic angular evolution
+  and exact intertwining of evolution with unrigging;
+- formal exclusion of every critical-orbit vector from the unrigging domain,
+  consistently with the harmonic obstruction;
+- the everywhere-defined Fréchet--Riesz anti-linear isometric equivalence from
+  the `H₋₁` coordinate realization into the strong dual of the corresponding
+  `H₁` test-coordinate realization, carrying the critical orbit to a
+  continuous constant-norm dual orbit.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -539,11 +553,13 @@ evaluation is also checked for every supplied state-valued family: `t` stays
 in the state family and each nonreal spectral probe stays in its own
 Cauchy/Weyl trace.  Separately, the critical native amplitude now has its
 canonical logarithmically weighted coordinate realization and a strongly
-continuous isometric orbit.  The raw amplitude is proved not to lie in
-unweighted `ℓ²`; removing the rigging weight is therefore intentionally only
-pointwise.  Constructing the appropriate closable rigged boundary form (or
-another justified port into the all-bases camera space) and proving the
-resulting readout theorem remain analytic obligations.  A native complex
+continuous isometric orbit.  Its canonical unrigging is the closed
+self-adjoint maximal multiplier on the exact proper dense domain.  Lean proves
+that the whole critical orbit lies outside that domain, while the canonical
+strong-dual port contains it continuously.  What remains is not operator
+closure for this diagonal map, but construction of the research-specific
+Green/Haar-to-all-bases camera synthesis and proof that its output agrees with
+the existing bounded-readout interface.  A native complex
 scalar action on the real all-bases camera completion, explicit PVM and
 ordinary boundary triple also remain outside the current surface.
 
@@ -568,10 +584,13 @@ inverse are now complete as well.  The external Green state/port coupling and
 its angular evaluation theorem are complete when parameterized by an explicit
 bounded state readout and a supplied state-valued family; the concrete Green
 split specialization is also exported.  The logarithmic `H₋₁` coordinate
-realization and its strongly continuous orbit `exp(-it log n)` are now
-constructed independently.  The next boundary gate is to formulate and close
-the research-specific rigged boundary form/port, then connect its output to
-the all-bases camera readout without asserting a false bounded unrigging map.
+realization, its strongly continuous orbit `exp(-it log n)`, the canonical
+strong-dual port and the closed self-adjoint maximal unrigging operator are now
+constructed independently.  No subsequent boundary gate is selected by this
+milestone.  The remaining research problem is the separate, typed
+Green/Haar-to-all-bases camera synthesis; it cannot be obtained by applying
+maximal unrigging to the critical orbit, which is formally outside that
+operator's domain.
 
 Three parameters remain permanently distinct:
 
@@ -590,8 +609,10 @@ existence of a Weyl family.
 - `NativeCarrySpectralWeyl/`: Lean source and public import surface;
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
+- `docs/20_POST_RIGGED_PORT_CONCEPTUAL_AUDIT.md`: post-v0.53 separation of
+  genuinely new mathematical structure from formalization/consolidation;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,279 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,318 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

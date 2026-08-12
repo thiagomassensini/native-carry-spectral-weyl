@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.52.0",
-  "count": 1279,
+  "release": "0.53.0",
+  "count": 1318,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -6397,6 +6397,201 @@
       "id": "NCSW-1279",
       "name": "unriggedCoordinate_eq_dirichletValue",
       "qualified": "NativeCarrySpectralWeyl.Boundary.unriggedCoordinate_eq_dirichletValue"
+    },
+    {
+      "id": "NCSW-1280",
+      "name": "logRiggingWeight_one_le",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingWeight_one_le"
+    },
+    {
+      "id": "NCSW-1281",
+      "name": "logRiggingWeight_pos",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingWeight_pos"
+    },
+    {
+      "id": "NCSW-1282",
+      "name": "logRiggingWeight_ne_zero",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingWeight_ne_zero"
+    },
+    {
+      "id": "NCSW-1283",
+      "name": "logRigging_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRigging_apply"
+    },
+    {
+      "id": "NCSW-1284",
+      "name": "logRigging_injective",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRigging_injective"
+    },
+    {
+      "id": "NCSW-1285",
+      "name": "logRigging_isSymmetric",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRigging_isSymmetric"
+    },
+    {
+      "id": "NCSW-1286",
+      "name": "logRigging_denseRange",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRigging_denseRange"
+    },
+    {
+      "id": "NCSW-1287",
+      "name": "logRiggingPMap_domain",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingPMap_domain"
+    },
+    {
+      "id": "NCSW-1288",
+      "name": "logRiggingPMap_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingPMap_apply"
+    },
+    {
+      "id": "NCSW-1289",
+      "name": "logRiggingPMap_toFun_injective",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingPMap_toFun_injective"
+    },
+    {
+      "id": "NCSW-1290",
+      "name": "logRiggingPMap_ker_eq_bot",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingPMap_ker_eq_bot"
+    },
+    {
+      "id": "NCSW-1291",
+      "name": "logRiggingPMap_range",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingPMap_range"
+    },
+    {
+      "id": "NCSW-1292",
+      "name": "range_logRigging_eq_logUnriggingDomain",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.range_logRigging_eq_logUnriggingDomain"
+    },
+    {
+      "id": "NCSW-1293",
+      "name": "logUnrigging_domain",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_domain"
+    },
+    {
+      "id": "NCSW-1294",
+      "name": "mem_logUnrigging_domain_iff",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.mem_logUnrigging_domain_iff"
+    },
+    {
+      "id": "NCSW-1295",
+      "name": "logUnrigging_denseDomain",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_denseDomain"
+    },
+    {
+      "id": "NCSW-1296",
+      "name": "logRiggingPMap_isClosed",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggingPMap_isClosed"
+    },
+    {
+      "id": "NCSW-1297",
+      "name": "logUnrigging_isClosed",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_isClosed"
+    },
+    {
+      "id": "NCSW-1298",
+      "name": "logUnrigging_isClosable",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_isClosable"
+    },
+    {
+      "id": "NCSW-1299",
+      "name": "logUnrigging_apply_logRiggingRangeElement",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_apply_logRiggingRangeElement"
+    },
+    {
+      "id": "NCSW-1300",
+      "name": "logUnrigging_apply_coordinate",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_apply_coordinate"
+    },
+    {
+      "id": "NCSW-1301",
+      "name": "logRigging_apply_logUnrigging",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRigging_apply_logUnrigging"
+    },
+    {
+      "id": "NCSW-1302",
+      "name": "logUnrigging_range_eq_top",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_range_eq_top"
+    },
+    {
+      "id": "NCSW-1303",
+      "name": "logUnrigging_surjective",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_surjective"
+    },
+    {
+      "id": "NCSW-1304",
+      "name": "riggedAngularEvolution_mem_logUnrigging_domain",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_mem_logUnrigging_domain"
+    },
+    {
+      "id": "NCSW-1305",
+      "name": "logUnrigging_commutes_riggedAngularEvolution",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_commutes_riggedAngularEvolution"
+    },
+    {
+      "id": "NCSW-1306",
+      "name": "criticalRiggedOrbit_not_mem_logUnrigging_domain",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedOrbit_not_mem_logUnrigging_domain"
+    },
+    {
+      "id": "NCSW-1307",
+      "name": "logUnrigging_domain_ne_top",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_domain_ne_top"
+    },
+    {
+      "id": "NCSW-1308",
+      "name": "logUnrigging_isFormalAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_isFormalAdjoint"
+    },
+    {
+      "id": "NCSW-1309",
+      "name": "logRigging_apply_logUnrigging_adjoint",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRigging_apply_logUnrigging_adjoint"
+    },
+    {
+      "id": "NCSW-1310",
+      "name": "logUnrigging_adjoint_domain_le",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_adjoint_domain_le"
+    },
+    {
+      "id": "NCSW-1311",
+      "name": "logUnrigging_adjoint_le",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_adjoint_le"
+    },
+    {
+      "id": "NCSW-1312",
+      "name": "logUnrigging_isSelfAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_isSelfAdjoint"
+    },
+    {
+      "id": "NCSW-1313",
+      "name": "logUnrigging_closure_eq",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logUnrigging_closure_eq"
+    },
+    {
+      "id": "NCSW-1314",
+      "name": "logRiggedDualPort_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggedDualPort_apply"
+    },
+    {
+      "id": "NCSW-1315",
+      "name": "logRiggedDualPort_norm",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.logRiggedDualPort_norm"
+    },
+    {
+      "id": "NCSW-1316",
+      "name": "continuous_criticalRiggedDualOrbit",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.continuous_criticalRiggedDualOrbit"
+    },
+    {
+      "id": "NCSW-1317",
+      "name": "criticalRiggedDualOrbit_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedDualOrbit_apply"
+    },
+    {
+      "id": "NCSW-1318",
+      "name": "criticalRiggedDualOrbit_norm",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedDualOrbit_norm"
     }
   ]
 }

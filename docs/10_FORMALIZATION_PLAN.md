@@ -681,7 +681,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.52 logarithmic rigged-orbit milestone:
+Kernel checked through the v0.53 closed rigged-port milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -794,6 +794,7 @@ NativeCarrySpectralWeyl/Boundary/GammaField.lean
 NativeCarrySpectralWeyl/Boundary/GreenCameraCoupling.lean
 NativeCarrySpectralWeyl/Boundary/AngularReadout.lean
 NativeCarrySpectralWeyl/Boundary/RiggedAngularOrbit.lean
+NativeCarrySpectralWeyl/Boundary/RiggedBoundaryPort.lean
 ```
 
 - define linear relations as submodules of a product Hilbert space;
@@ -807,14 +808,16 @@ NativeCarrySpectralWeyl/Boundary/RiggedAngularOrbit.lean
   instantiate that interface without an external hypothesis;
 - construct the logarithmically rigged native angular family when the raw
   amplitude does not belong to the Green state Hilbert space itself;
-- formulate the resulting camera port as a closable rigged boundary form (or
-  another domain-correct map) rather than assuming bounded unrigging.
+- separate canonical maximal unrigging and strong-dual rigged evaluation from
+  the research-specific Green/Haar-to-camera synthesis;
+- formulate that remaining camera synthesis as a typed mixed-order boundary
+  form/port rather than assuming bounded unrigging.
 
 The old finite maximal-isotropic calculation remains useful motivation, but
 the infinite adjoint/domain theorem is discharged independently by the v0.43
 regularizer argument above.
 
-Kernel checked through v0.52:
+Kernel checked through v0.53:
 
 - linear relations represented as submodules of the product Hilbert space;
 - the documented skew-Hermitian Green form and its exact symplectic
@@ -890,17 +893,33 @@ Kernel checked through v0.52:
 - norm continuity of every rigged orbit via a summable energy majorant, and
   continuity plus constant norm of the distinguished critical orbit;
 - exact pointwise recovery of `dirichletValue (nativeLine t) n` after removal
-  of the logarithmic rigging weight.
+  of the logarithmic rigging weight;
+- bounded injective logarithmic rigging with dense range and exact range equal
+  to the maximal unrigging domain;
+- maximal unrigging as multiplication by `1+log n` on the explicit proper
+  dense square-summability domain, with exact two-sided inverse laws and full
+  range;
+- closedness, closability, self-adjointness and equality with the canonical
+  graph closure;
+- invariance of that domain under angular evolution and the exact
+  intertwining law;
+- nonmembership of every critical-orbit vector in the unrigging domain;
+- the canonical global Fréchet--Riesz port into the strong dual of the `H₁`
+  test-coordinate realization, with a continuous constant-norm critical dual
+  orbit.
 
-The v0.52 interface deliberately does not manufacture the research-specific
-bounded `stateReadout`, claim that the raw amplitude lies in the Green state
-Hilbert space, or bundle pointwise unrigging as a bounded map.  The next
-boundary gate is a closable rigged form/port with its exact domain, followed by
-the all-bases readout identification.  Strong-resolvent or strong-graph
-passage is not used by v0.52; if a later construction requires it, its topology
-and domains must be stated explicitly.  The current realified representation
-remains deliberate: no independent complex scalar action, everywhere-defined
-inverse or ordinary boundary triple is inferred.
+The v0.53 interface deliberately does not manufacture the research-specific
+bounded `stateReadout` or claim that the raw amplitude lies in the Green state
+Hilbert space.  It instead proves that canonical unrigging is a closed
+self-adjoint partial operator and that the critical orbit is outside its exact
+domain; the orbit belongs globally to the canonical strong dual.  The missing
+object is therefore the separate mixed-order Green/Haar-to-all-bases camera
+synthesis, not closure of diagonal unrigging.  No subsequent gate is selected
+here.  Strong-resolvent or strong-graph passage remains unused; if a future
+construction requires it, its topology and domains must be stated explicitly.
+The current realified representation remains deliberate: no independent
+complex scalar action, everywhere-defined inverse or ordinary boundary triple
+is inferred.
 
 ## 10. Phase 7 — optional holonomic track
 

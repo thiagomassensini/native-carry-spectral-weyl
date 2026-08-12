@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.52 logarithmic rigged-orbit registry. -/
+/-! Ordered foundational-dependency report for the v0.53 closed rigged-port registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -1281,3 +1281,42 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Boundary.unriggedCoordinate_criticalRiggedOrbit
 #print axioms NativeCarrySpectralWeyl.Boundary.nativeLogPhase_mul_amplitude_eq_dirichletValue
 #print axioms NativeCarrySpectralWeyl.Boundary.unriggedCoordinate_eq_dirichletValue
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingWeight_one_le
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingWeight_pos
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingWeight_ne_zero
+#print axioms NativeCarrySpectralWeyl.Boundary.logRigging_apply
+#print axioms NativeCarrySpectralWeyl.Boundary.logRigging_injective
+#print axioms NativeCarrySpectralWeyl.Boundary.logRigging_isSymmetric
+#print axioms NativeCarrySpectralWeyl.Boundary.logRigging_denseRange
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingPMap_domain
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingPMap_apply
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingPMap_toFun_injective
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingPMap_ker_eq_bot
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingPMap_range
+#print axioms NativeCarrySpectralWeyl.Boundary.range_logRigging_eq_logUnriggingDomain
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_domain
+#print axioms NativeCarrySpectralWeyl.Boundary.mem_logUnrigging_domain_iff
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_denseDomain
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggingPMap_isClosed
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_isClosed
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_isClosable
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_apply_logRiggingRangeElement
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_apply_coordinate
+#print axioms NativeCarrySpectralWeyl.Boundary.logRigging_apply_logUnrigging
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_range_eq_top
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_surjective
+#print axioms NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_mem_logUnrigging_domain
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_commutes_riggedAngularEvolution
+#print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedOrbit_not_mem_logUnrigging_domain
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_domain_ne_top
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_isFormalAdjoint
+#print axioms NativeCarrySpectralWeyl.Boundary.logRigging_apply_logUnrigging_adjoint
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_adjoint_domain_le
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_adjoint_le
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_isSelfAdjoint
+#print axioms NativeCarrySpectralWeyl.Boundary.logUnrigging_closure_eq
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggedDualPort_apply
+#print axioms NativeCarrySpectralWeyl.Boundary.logRiggedDualPort_norm
+#print axioms NativeCarrySpectralWeyl.Boundary.continuous_criticalRiggedDualOrbit
+#print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedDualOrbit_apply
+#print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedDualOrbit_norm

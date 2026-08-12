@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.52.0",
-  "registry_count": 1279,
-  "count": 66,
+  "release": "0.53.0",
+  "registry_count": 1318,
+  "count": 67,
   "status_counts": {
-    "KERNEL_CHECKED": 66
+    "KERNEL_CHECKED": 67
   },
   "claims": [
     {
@@ -1746,6 +1746,52 @@
         "NCSW-1277",
         "NCSW-1278",
         "NCSW-1279"
+      ]
+    },
+    {
+      "id": "NCSW-BND-007",
+      "claim": "The canonical logarithmic rigged port is kernel checked in its strongest natural coordinate form. Division by 1+log(n) is a bounded injective complex-linear rigging map with dense range. Its inverse is multiplication by 1+log(n) on the explicit maximal domain of weighted square-summability; this domain is dense and proper, the operator is surjective, closed, closable and self-adjoint, and its canonical graph closure is itself. The domain is invariant under the logarithmic angular evolution and unrigging intertwines that evolution. Every point of the critical orbit is formally excluded from the unrigging domain because its raw amplitude has divergent harmonic energy. Independently, Frechet-Riesz duality gives an everywhere-defined anti-linear isometric equivalence from the H_-1 coordinate realization to the strong dual of the H_1 test-coordinate realization; the full critical orbit has a continuous constant-norm image under this dual port. This claim does not identify the canonical dual port with the research-specific Green/Haar-to-all-bases-camera readout and does not construct the missing mixed-order boundary synthesis.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1280",
+        "NCSW-1281",
+        "NCSW-1282",
+        "NCSW-1283",
+        "NCSW-1284",
+        "NCSW-1285",
+        "NCSW-1286",
+        "NCSW-1287",
+        "NCSW-1288",
+        "NCSW-1289",
+        "NCSW-1290",
+        "NCSW-1291",
+        "NCSW-1292",
+        "NCSW-1293",
+        "NCSW-1294",
+        "NCSW-1295",
+        "NCSW-1296",
+        "NCSW-1297",
+        "NCSW-1298",
+        "NCSW-1299",
+        "NCSW-1300",
+        "NCSW-1301",
+        "NCSW-1302",
+        "NCSW-1303",
+        "NCSW-1304",
+        "NCSW-1305",
+        "NCSW-1306",
+        "NCSW-1307",
+        "NCSW-1308",
+        "NCSW-1309",
+        "NCSW-1310",
+        "NCSW-1311",
+        "NCSW-1312",
+        "NCSW-1313",
+        "NCSW-1314",
+        "NCSW-1315",
+        "NCSW-1316",
+        "NCSW-1317",
+        "NCSW-1318"
       ]
     }
   ]

@@ -527,9 +527,33 @@ recovers exactly `dirichletValue (nativeLine t) n`.
 This does not make pointwise unrigging a bounded map into the concrete Green
 state space.  In particular, v0.52 does not contradict the harmonic
 obstruction by treating the raw amplitude as an `ℓ²` vector.  It also does not
-construct the all-bases camera readout: the next integration gate is a
-closable rigged boundary form/port, or another explicitly justified map whose
-domain and continuity statement match the source notes.
+construct the all-bases camera readout.  The canonical domain-correct
+unrigging and dual-port questions are resolved separately in v0.53.
+
+The v0.53 surface defines the bounded rigging injection
+`Jx(n)=x(n)/(1+log n)` and proves that it is injective with dense range.  Its
+inverse is bundled as a complex `LinearPMap` on the exact maximal domain
+
+```text
+{x ∈ ℓ²(PNat,ℂ) | ((1+log n)x(n))_n ∈ ℓ²(PNat,ℂ)}.
+```
+
+This domain is dense and proper.  The inverse acts by literal multiplication
+by `1+log n`, is surjective, closed, closable and self-adjoint, and equals its
+canonical graph closure.  Its domain is invariant under the angular evolution
+and the operator intertwines that evolution.  Crucially, every vector of the
+distinguished critical orbit is proved to lie outside this domain: closed
+unrigging therefore does not promote the raw harmonic amplitude to an
+unweighted state.
+
+The same surface gives the correct global rigged port by interpreting the
+`H₋₁` coordinates through the Fréchet--Riesz anti-linear isometric equivalence
+into the strong dual of the corresponding `H₁` test-coordinate realization.
+The critical orbit has a continuous constant-norm image there.  This
+canonical dual port is not identified with the research-specific
+Green/Haar-to-all-bases camera readout.  Such an identification still requires
+a separately typed mixed-order boundary synthesis; no subsequent gate is
+selected by v0.53.
 
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
@@ -600,8 +624,11 @@ The bootstrap and first milestone do not claim:
 - construction of the raw native amplitude as an unweighted Green-state-valued
   orbit (v0.52 instead proves the harmonic obstruction and constructs the
   strongly continuous logarithmically weighted `LogRiggedState` orbit);
-- boundedness of pointwise unrigging, or construction/closedness of the
-  research-specific rigged boundary form needed to feed that orbit into the
-  all-bases camera readout;
+- an everywhere-defined bounded unrigging map (v0.53 instead constructs the
+  closed self-adjoint maximal operator on its exact proper dense domain and
+  proves the critical orbit is outside it);
+- identification of the canonical strong-dual rigged port with the
+  research-specific Green/Haar-to-all-bases camera readout, or construction
+  of the missing mixed-order boundary synthesis needed for that readout;
 - equality between the Green static Poisson map and a spectral Weyl map;
 - any consequence concerning external special-function zeros.

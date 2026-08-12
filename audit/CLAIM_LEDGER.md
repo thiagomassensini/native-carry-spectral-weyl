@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.52 it contains
-sixty-six `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.53 it contains
+sixty-seven `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -314,3 +314,16 @@ norm-continuous, and the distinguished orbit has constant norm.  Pointwise
 removal of the logarithmic weight recovers exactly
 `dirichletValue (nativeLine t) n`.  This claim neither bundles unrigging as a
 bounded operator nor constructs the closable all-bases camera boundary port.
+
+The seventh boundary claim closes the canonical rigged functional-analytic
+package without weakening the harmonic obstruction.  Division by `1+log n`
+is a bounded injective rigging map with dense range.  Its inverse is literal
+multiplication by `1+log n` on the exact maximal weighted-square-summability
+domain; this proper dense partial operator is surjective, closed,
+self-adjoint, and equal to its graph closure.  Its domain is invariant under
+the angular evolution and the operator intertwines that evolution, while the
+whole critical orbit is proved to lie outside the domain.  The critical orbit
+instead enters globally through the Fréchet--Riesz anti-linear isometric
+equivalence into the strong dual of the `H₁` test-coordinate realization.
+This does not construct or identify the separate mixed-order
+Green/Haar-to-all-bases camera synthesis.
