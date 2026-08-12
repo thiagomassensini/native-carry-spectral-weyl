@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.46.0",
-  "registry_count": 1102,
-  "count": 59,
+  "release": "0.47.0",
+  "registry_count": 1126,
+  "count": 60,
   "status_counts": {
-    "KERNEL_CHECKED": 59
+    "KERNEL_CHECKED": 60
   },
   "claims": [
     {
@@ -1520,6 +1520,37 @@
         "NCSW-1100",
         "NCSW-1101",
         "NCSW-1102"
+      ]
+    },
+    {
+      "id": "NCSW-BND-001",
+      "claim": "The first Green boundary layer is kernel checked over real or complex Hilbert spaces. Linear relations are represented as submodules of the product space, with Green form omega((f,f'),(g,g'))=inner(f',g)-inner(f,g'). The form is sesquilinear and skew-Hermitian, and the documented Weyl/impedance quarter-turn (Gamma_0,Gamma_1) maps to (-Gamma_1,Gamma_0) while preserving it. Mathlib's submodule adjoint is identified exactly with the Green symplectic orthogonal, giving formal definitions of Green isotropy and maximal Green isotropy. For every densely defined LinearPMap, the Green adjoint of its graph is the graph of its Hilbert-space adjoint; graph isotropy is equivalent to formal symmetry and graph maximality is equivalent to self-adjointness. Instantiating this theorem with maximal multiplication by y=1+log(x) produces a concrete closed maximal Green relation satisfying the exact Green identity. This claim concerns the self-adjoint reference graph only: it does not yet construct the source-extended relation {(f,Yf+Vu)}, a gamma field, an ordinary boundary triple, or identify a boundary Weyl family with the compressed Cauchy inverse.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1103",
+        "NCSW-1104",
+        "NCSW-1105",
+        "NCSW-1106",
+        "NCSW-1107",
+        "NCSW-1108",
+        "NCSW-1109",
+        "NCSW-1110",
+        "NCSW-1111",
+        "NCSW-1112",
+        "NCSW-1113",
+        "NCSW-1114",
+        "NCSW-1115",
+        "NCSW-1116",
+        "NCSW-1117",
+        "NCSW-1118",
+        "NCSW-1119",
+        "NCSW-1120",
+        "NCSW-1121",
+        "NCSW-1122",
+        "NCSW-1123",
+        "NCSW-1124",
+        "NCSW-1125",
+        "NCSW-1126"
       ]
     }
   ]

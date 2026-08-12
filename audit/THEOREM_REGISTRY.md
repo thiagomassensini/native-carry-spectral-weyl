@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.46 unbounded-Weyl milestone contains exactly **1,102**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-1102` in
+The v0.47 Green-relation foundation milestone contains exactly **1,126**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-1126` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -66,5 +66,6 @@ report for every declaration.
 | `NCSW-1034`–`NCSW-1047` | `Infinite/ComplexifiedCauchy.lean` | canonical real `2 × 2` Cauchy block, coordinate and skew-form identities, conjugate adjoint, strict sign, injectivity and dense range |
 | `NCSW-1048`–`NCSW-1061` | `Infinite/WeylInverse.lean` | full-domain Cauchy partial map, exact-range Weyl inverse as `LinearPMap`, dense domain, swapped and closed graph, two-sided inverse laws and surjectivity |
 | `NCSW-1062`–`NCSW-1102` | `Infinite/WeylUnbounded.lean` | exact centered camera variance, resolvent-shift bounds, explicit unit small-image sequence, failure of a Cauchy lower bound and unboundedness of the closed inverse |
+| `NCSW-1103`–`NCSW-1126` | `Boundary/GreenRelation.lean` | product-submodule relations, skew-Hermitian Green form, symplectic Weyl-chart rotation, graph-adjoint/maximality equivalences, and the closed maximal logarithmic reference graph |
 
 The JSON registry is the machine-readable authority for exact qualified names.

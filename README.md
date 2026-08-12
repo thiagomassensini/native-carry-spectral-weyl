@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.46 unbounded-Weyl milestone contains **1,102 public
+The v0.47 Green-relation foundation milestone contains **1,126 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -406,6 +406,17 @@ surface proves:
 - exact recovery of the previously checked degree-zero through degree-eight
   moment matrices and one literal self-adjoint six-camera matrix for every
   degree `k`.
+- Hilbert-space linear relations represented as submodules of `H × H`, with
+  the documented skew-Hermitian Green form
+  `omega((f,f'),(g,g')) = inner f' g - inner f g'`;
+- the exact symplectic orthogonal as Mathlib's submodule adjoint, formal
+  Green-isotropy and maximal Green-isotropy, and the Weyl/impedance rotation
+  `(Gamma_0,Gamma_1) ↦ (-Gamma_1,Gamma_0)` preserving the Green form;
+- for every densely defined `LinearPMap`, equality of the Green adjoint of its
+  graph with the graph of its Hilbert-space adjoint, so graph maximality is
+  equivalent to self-adjointness;
+- the graph of maximal multiplication by `1+log x` as a concrete closed
+  maximal Green relation satisfying the exact Green identity.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -449,8 +460,10 @@ realified complexification.  Centering each normalized camera interval at
 an explicit scalar bound that vanishes along camera labels `3,4,5,...`; the
 resulting unit vectors have Cauchy images converging to zero.  Thus the block
 is not bounded below and its closed densely defined inverse admits no global
-norm bound.  A native complex scalar action, explicit PVM and the Green
-boundary-relation coupling remain later obligations.
+norm bound.  Phase 6 has now opened with the abstract Green-relation API and
+the closed maximal logarithmic reference graph.  A native complex scalar
+action, explicit PVM, the source-extended relation `{(f,Yf+Vu)}`, its gamma
+field and the Green/camera port coupling remain later obligations.
 
 Pinned foundations:
 
@@ -465,9 +478,10 @@ Pinned foundations:
 
 The formalization proceeds from exact camera arithmetic to finite spectral
 objects, then to the countable camera completion, Cauchy transform and closed
-unbounded Weyl inverse.  Those gates are now complete.  Boundary relations and
-the coupling to the Green state/port layer come next, only after their domain
-and maximality statements are proved independently.
+unbounded Weyl inverse.  Those gates are now complete.  The abstract relation,
+Green-form and self-adjoint graph-maximality foundations are also complete.
+The source-extended boundary relation and its coupling to the Green state/port
+layer come next, with their domain and maximality statements kept explicit.
 
 Three parameters remain permanently distinct:
 
@@ -487,7 +501,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,102 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,126 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

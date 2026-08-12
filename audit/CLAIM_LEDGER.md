@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.46 it contains
-fifty-nine `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.47 it contains
+sixty `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -92,6 +92,15 @@ to zero along camera labels `3,4,5,...`.  These cameras yield explicit unit
 vectors with Cauchy images converging to zero.  Hence the block is not bounded
 below and its closed densely defined `LinearPMap` inverse has no global norm
 bound on its domain.
+The first boundary claim opens Phase 6 with an abstract relation layer over
+real or complex Hilbert spaces.  Linear relations are product submodules, the
+documented Green form is skew-Hermitian, and the Weyl/impedance quarter-turn
+preserves it.  Mathlib's submodule adjoint is exactly the Green symplectic
+orthogonal.  For densely defined partial operators, graph isotropy is formal
+symmetry and graph maximality is self-adjointness.  Thus the maximal
+logarithmic multiplier has a concrete closed maximal Green graph.  This claim
+does not yet add the source term `V u`, a gamma field, or the boundary-Weyl
+identification.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.

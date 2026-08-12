@@ -681,7 +681,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.46 unbounded-Weyl milestone:
+Kernel checked through the v0.47 Green-relation foundation milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -786,6 +786,10 @@ continuous linear map.
 
 Only after Phase 5:
 
+```text
+NativeCarrySpectralWeyl/Boundary/GreenRelation.lean
+```
+
 - define linear relations as submodules of a product Hilbert space;
 - formalize the symplectic Green identity and maximality;
 - define the reference self-adjoint extension and rotated impedance chart;
@@ -798,6 +802,23 @@ Only after Phase 5:
 The old finite maximal-isotropic calculation remains useful motivation, but
 the infinite adjoint/domain theorem is discharged independently by the v0.43
 regularizer argument above.
+
+Kernel checked at v0.47:
+
+- linear relations represented as submodules of the product Hilbert space;
+- the documented skew-Hermitian Green form and its exact symplectic
+  orthogonal via Mathlib's submodule adjoint;
+- preservation of that form by the Weyl/impedance chart rotation
+  `(Gamma_0,Gamma_1) ↦ (-Gamma_1,Gamma_0)`;
+- equivalence of graph Green-isotropy with formal symmetry and, for dense
+  domains, equivalence of maximal Green-isotropy with self-adjointness;
+- the graph of maximal logarithmic multiplication as a closed maximal Green
+  reference relation.
+
+The next Phase 6 gate is the actual source-extended relation
+`T_C={(f,Yf+Vu)}` together with well-defined reference/Weyl boundary charts.
+Only after its Green identity and maximality are checked should the gamma
+field and compressed-resolvent/Weyl identification be added.
 
 ## 10. Phase 7 — optional holonomic track
 

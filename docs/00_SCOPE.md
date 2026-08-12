@@ -428,6 +428,20 @@ Cauchy block is not bounded below, and its closed densely defined
 surface still does not claim an independent complex scalar action, an
 explicit PVM or a Green boundary relation.
 
+The v0.47 surface opens Phase 6 at its reusable algebraic foundation.  A
+Hilbert-space linear relation is represented as a submodule of `H × H`, and
+the documented form
+`omega((f,f'),(g,g')) = inner f' g - inner f g'` is proved sesquilinear and
+skew-Hermitian.  Mathlib's submodule adjoint is identified exactly with the
+corresponding Green symplectic orthogonal; the documented Weyl/impedance
+quarter-turn `(Gamma_0,Gamma_1) ↦ (-Gamma_1,Gamma_0)` preserves the form.
+For every densely defined `LinearPMap`, the Green adjoint of its graph is the
+graph of its Hilbert-space adjoint.  Thus graph isotropy is formal symmetry
+and graph maximality is self-adjointness.  Applying this result to the v0.43
+maximal logarithmic multiplier gives a closed maximal Green reference graph.
+This is not yet the source-extended boundary relation `{(f,Yf+Vu)}` and does
+not yet construct its boundary maps, gamma field, or Weyl family.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -487,9 +501,8 @@ The bootstrap and first milestone do not claim:
   its checked compressed Cauchy family;
 - a native complex-linear realization beyond the checked canonical real
   `2 × 2` block;
-- a proof that the checked closed densely defined all-bases Weyl inverse is
-  unbounded;
-- a maximal boundary relation or gamma field;
+- the source-extended maximal boundary relation `{(f,Yf+Vu)}` or its gamma
+  field (the self-adjoint logarithmic reference graph is maximal and checked);
 - strong-resolvent or strong-graph convergence;
 - equality between the Green static Poisson map and a spectral Weyl map;
 - any consequence concerning external special-function zeros.

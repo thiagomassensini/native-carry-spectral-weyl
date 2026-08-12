@@ -47,6 +47,7 @@ import NativeCarrySpectralWeyl.Infinite.Cauchy
 import NativeCarrySpectralWeyl.Infinite.ComplexifiedCauchy
 import NativeCarrySpectralWeyl.Infinite.WeylInverse
 import NativeCarrySpectralWeyl.Infinite.WeylUnbounded
+import NativeCarrySpectralWeyl.Boundary.GreenRelation
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -233,9 +234,17 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     variance and resolvent-shift identities give an explicit sequence of unit
     camera vectors whose complete Cauchy images converge to zero.  Hence the
     Cauchy block is not bounded below and its closed densely defined inverse
-    admits no global norm bound on its domain.  An explicit complex scalar
-    action, projection-valued measure and the Green boundary-relation
-    identification remain subsequent obligations.
+    admits no global norm bound on its domain.  The first boundary layer now
+    represents Hilbert-space linear relations as product submodules, defines
+    the documented skew-Hermitian Green form and its symplectic adjoint, and
+    proves that the Weyl-chart quarter-turn preserves that form.  A densely
+    defined operator graph is Green-isotropic exactly when the operator is
+    formally symmetric, and is maximal Green-isotropic exactly when the
+    operator is self-adjoint.  Consequently the graph of maximal logarithmic
+    multiplication is a concrete closed maximal Green relation.  The
+    source-extended relation `{(f,Yf+Vu)}`, its gamma field, and identification
+    of its Weyl family with the compressed-resolvent inverse remain subsequent
+    obligations; no full boundary triple is claimed here.
 -/
 
 namespace NativeCarrySpectralWeyl
