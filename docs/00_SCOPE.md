@@ -456,6 +456,22 @@ maximal logarithmic multiplication and the injective all-bases Naimark
 isometry.  This does not yet construct the spectral-parameter-dependent gamma
 field or identify its Weyl family with the compressed resolvent inverse.
 
+The v0.49 surface closes that spectral-parameter gate in the canonical
+realification.  A generic rectangular real `2 × 2` block realifies the
+Naimark port, its adjoint and the ambient resolvent, and exact compression is
+proved equal to `M_infinity(lambda)`.  Both resolvent components lie in the
+maximal logarithmic domain.  For every nonreal `lambda`, the imaginary-part
+energy identity proves `lambda-Y` injective there, while the explicit
+domain-valued resolvent proves both inverse laws and hence bijectivity.  The
+source gamma map `u ↦ (lambda-Y)⁻¹Vu` is injective and is the unique solution
+of the defect equation.  Its boundary values are
+`Gamma_0=M_infinity(lambda)u` and `Gamma_1=u`.  Reparametrization by the first
+trace on the exact dense Cauchy range gives
+`Gamma_1 gamma(lambda)xi=M_infinity(lambda)⁻¹xi`; this Weyl family is exactly
+the existing closed, densely defined and non-norm-bounded `LinearPMap`.
+Nothing here introduces an independent complex scalar action, an
+everywhere-defined inverse, an explicit PVM or an ordinary boundary triple.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -515,9 +531,9 @@ The bootstrap and first milestone do not claim:
   its checked compressed Cauchy family;
 - a native complex-linear realization beyond the checked canonical real
   `2 × 2` block;
-- the gamma field or the compressed-resolvent identification of the boundary
-  Weyl family (the source-extended relation, both charts and maximal coupled
-  Weyl boundary graph are now checked);
+- an everywhere-defined bounded Weyl inverse or an ordinary boundary triple
+  (the gamma field and compressed-resolvent boundary law are checked only on
+  the exact dense inverse domain);
 - strong-resolvent or strong-graph convergence;
 - equality between the Green static Poisson map and a spectral Weyl map;
 - any consequence concerning external special-function zeros.

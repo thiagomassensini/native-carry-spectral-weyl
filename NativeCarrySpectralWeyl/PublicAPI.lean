@@ -45,10 +45,12 @@ import NativeCarrySpectralWeyl.Infinite.Naimark
 import NativeCarrySpectralWeyl.Infinite.LogarithmicMultiplication
 import NativeCarrySpectralWeyl.Infinite.Cauchy
 import NativeCarrySpectralWeyl.Infinite.ComplexifiedCauchy
+import NativeCarrySpectralWeyl.Infinite.ComplexifiedResolvent
 import NativeCarrySpectralWeyl.Infinite.WeylInverse
 import NativeCarrySpectralWeyl.Infinite.WeylUnbounded
 import NativeCarrySpectralWeyl.Boundary.GreenRelation
 import NativeCarrySpectralWeyl.Boundary.SourceRelation
+import NativeCarrySpectralWeyl.Boundary.GammaField
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -249,9 +251,15 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     `(u,-V^*f)` and `(V^*f,u)`.  Their symplectic rotation, both Green
     identities, and maximal coupled Green-isotropy are checked abstractly for
     every self-adjoint `Y` and concretely for logarithmic multiplication and
-    the Naimark isometry.  The gamma field and identification of its Weyl
-    family with the compressed-resolvent inverse remain subsequent
-    obligations; no ordinary boundary triple is claimed here.
+    the Naimark isometry.  The realified ambient resolvent now takes values in
+    the exact maximal logarithmic domain and is proved to be the two-sided
+    inverse of `lambda-Y` off the real axis.  It yields an injective gamma
+    field satisfying the unique defect equation.  Reparametrization by
+    `Gamma_0` on the exact dense Cauchy range proves
+    `Gamma_1 gamma(lambda) = M(lambda)⁻¹ Gamma_0 gamma(lambda)`; this boundary
+    Weyl family is the existing closed, densely defined and non-norm-bounded
+    `LinearPMap` inverse.  No independent complex scalar action or ordinary
+    boundary triple is claimed here.
 -/
 
 namespace NativeCarrySpectralWeyl

@@ -130,6 +130,10 @@ MODULES = [
      "NativeCarrySpectralWeyl.Boundary."),
     (ROOT / "NativeCarrySpectralWeyl/Boundary/SourceRelation.lean",
      "NativeCarrySpectralWeyl.Boundary."),
+    (ROOT / "NativeCarrySpectralWeyl/Infinite/ComplexifiedResolvent.lean",
+     "NativeCarrySpectralWeyl.Infinite."),
+    (ROOT / "NativeCarrySpectralWeyl/Boundary/GammaField.lean",
+     "NativeCarrySpectralWeyl.Boundary."),
 ]
 
 

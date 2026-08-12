@@ -681,7 +681,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.48 source-extended boundary-relation milestone:
+Kernel checked through the v0.49 gamma-field/Weyl-identification milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -789,6 +789,8 @@ Only after Phase 5:
 ```text
 NativeCarrySpectralWeyl/Boundary/GreenRelation.lean
 NativeCarrySpectralWeyl/Boundary/SourceRelation.lean
+NativeCarrySpectralWeyl/Infinite/ComplexifiedResolvent.lean
+NativeCarrySpectralWeyl/Boundary/GammaField.lean
 ```
 
 - define linear relations as submodules of a product Hilbert space;
@@ -804,7 +806,7 @@ The old finite maximal-isotropic calculation remains useful motivation, but
 the infinite adjoint/domain theorem is discharged independently by the v0.43
 regularizer argument above.
 
-Kernel checked through v0.48:
+Kernel checked through v0.49:
 
 - linear relations represented as submodules of the product Hilbert space;
 - the documented skew-Hermitian Green form and its exact symplectic
@@ -825,12 +827,30 @@ Kernel checked through v0.48:
   self-adjoint `Y`, proved by recovering both the boundary coordinate and the
   adjoint-domain condition from symplectic test vectors;
 - the concrete all-bases instance with maximal logarithmic multiplication,
-  the injective Naimark isometry and its adjoint compression map.
+  the injective Naimark isometry and its adjoint compression map;
+- rectangular real `2 × 2` blocks for the ambient Naimark port, its adjoint,
+  complex scalar multiplication and `(lambda-Y)⁻¹`, with exact compression
+  equal to the complete all-bases Cauchy block;
+- maximal-domain membership of both resolvent components and the exact
+  realified resolvent equation;
+- injectivity of `lambda-Y` from the imaginary-part energy identity,
+  two-sided inverse laws with the domain-valued resolvent, and bijectivity for
+  every nonreal `lambda`;
+- the bounded injective source gamma map `u ↦ (lambda-Y)⁻¹Vu`, its exact defect
+  equation and uniqueness in the maximal domain;
+- source boundary values `Gamma_0=M_infinity(lambda)u`, `Gamma_1=u`, and the
+  defect space as the exact range of the injective source parametrization;
+- the trace-parametrized partial gamma field on the exact dense Cauchy range,
+  with `Gamma_0 gamma(lambda)xi=xi` and
+  `Gamma_1 gamma(lambda)xi=M_infinity(lambda)⁻¹xi`;
+- identification of the boundary Weyl family with the existing closed,
+  densely defined and non-norm-bounded `LinearPMap` inverse.
 
-The next Phase 6 gate is the gamma field on the nonreal resolvent set and the
-exact identification of its boundary Weyl family with the already checked
-compressed-resolvent inverse.  The existing realified Cauchy representation
-must remain explicit; no independent complex scalar action may be inferred.
+The next Phase 6 gate is the explicit external Green state/port coupling.
+Strong-resolvent or strong-graph passage, if required by that interface, must
+be proved with its topology and domains stated explicitly.  The current
+realified representation remains deliberate: no independent complex scalar
+action, everywhere-defined inverse or ordinary boundary triple is inferred.
 
 ## 10. Phase 7 — optional holonomic track
 

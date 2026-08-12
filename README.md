@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.48 source-extended boundary-relation milestone contains **1,156 public
+The v0.49 gamma-field/Weyl-identification milestone contains **1,217 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -426,7 +426,21 @@ surface proves:
 - the abstract and concrete Green identities for both charts, and maximal
   coupled Green-isotropy of the Weyl boundary graph whenever `Y` is
   self-adjoint, instantiated with maximal logarithmic multiplication and the
-  all-bases Naimark isometry.
+  all-bases Naimark isometry;
+- the explicit real `2 × 2` ambient Naimark resolvent, whose compression by
+  the realified port and adjoint is exactly the complete Cauchy block;
+- exact maximal-domain membership of both resolvent components and the
+  two-sided inverse laws for `lambda-Y`, proving the operator bijective for
+  every nonreal `lambda` without postulating a separate complex scalar action;
+- the injective source gamma map `u ↦ (lambda-Y)⁻¹Vu`, its exact defect
+  equation and uniqueness among all maximal-domain solutions;
+- the source boundary identities `Gamma_0=M_infinity(lambda)u` and
+  `Gamma_1=u`, followed by trace reparametrization on the exact dense Cauchy
+  range;
+- the checked boundary law
+  `Gamma_1 gamma(lambda)xi=M_infinity(lambda)⁻¹xi`, with the boundary Weyl
+  family equal to the existing closed, densely defined and non-norm-bounded
+  `LinearPMap` inverse.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -474,8 +488,10 @@ norm bound.  Phase 6 now contains both the abstract Green-relation API and the
 actual source-extended all-bases relation `{(f,Yf+Vu)}`.  The injective
 Naimark port gives unique source coordinates; the reference/Weyl charts,
 their rotation and Green identities, and maximality of the coupled Weyl graph
-are all kernel checked.  A native complex scalar action, explicit PVM, the
-gamma field, compressed-resolvent/Weyl identification and the external
+are all kernel checked.  The canonical realification now also supplies the
+ambient resolvent, unique defect solutions, source and trace gamma fields and
+the exact compressed-resolvent/Weyl identification.  A native complex scalar
+action, explicit PVM, an ordinary boundary triple and the external
 Green/camera port coupling remain later obligations.
 
 Pinned foundations:
@@ -493,9 +509,11 @@ The formalization proceeds from exact camera arithmetic to finite spectral
 objects, then to the countable camera completion, Cauchy transform and closed
 unbounded Weyl inverse.  Those gates are now complete.  The abstract relation,
 Green-form, self-adjoint graph-maximality, source-extended relation and maximal
-coupled Weyl boundary graph are also complete.  The next boundary gate is the gamma field and
+coupled Weyl boundary graph are also complete.  The realified gamma field and
 the exact identification of its Weyl family with the compressed-resolvent
-inverse; the later external Green state/port coupling remains explicit.
+inverse are now complete as well.  The next boundary gate is the external
+Green state/port coupling, with its domains and interface hypotheses kept
+explicit.
 
 Three parameters remain permanently distinct:
 
@@ -515,7 +533,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,156 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,217 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

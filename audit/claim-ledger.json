@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.48.0",
-  "registry_count": 1156,
-  "count": 61,
+  "release": "0.49.0",
+  "registry_count": 1217,
+  "count": 63,
   "status_counts": {
-    "KERNEL_CHECKED": 61
+    "KERNEL_CHECKED": 63
   },
   "claims": [
     {
@@ -1588,6 +1588,81 @@
         "NCSW-1154",
         "NCSW-1155",
         "NCSW-1156"
+      ]
+    },
+    {
+      "id": "NCSW-INF-011",
+      "claim": "The explicit realified ambient logarithmic resolvent is kernel checked for every nonreal spectral parameter. A generic rectangular 2 by 2 real block simultaneously realifies the all-bases Naimark port, its adjoint and the bounded ambient resolvent, and compression is exactly the existing complete Cauchy block M_infinity(lambda). Both resolvent components land in the exact maximal domain of multiplication by Y=1+log(x). On the coordinatewise maximal realified domain, lambda-Y is injective by the imaginary-part energy identity and surjective by the explicit resolvent; the domain-valued resolvent is its two-sided inverse, so lambda-Y is bijective and the ambient resolvent block is injective. This claim remains in the canonical realification and does not assert an independent complex scalar action or an explicit PVM.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1157",
+        "NCSW-1158",
+        "NCSW-1159",
+        "NCSW-1160",
+        "NCSW-1161",
+        "NCSW-1162",
+        "NCSW-1163",
+        "NCSW-1164",
+        "NCSW-1165",
+        "NCSW-1166",
+        "NCSW-1167",
+        "NCSW-1168",
+        "NCSW-1169",
+        "NCSW-1170",
+        "NCSW-1171",
+        "NCSW-1172",
+        "NCSW-1173",
+        "NCSW-1174",
+        "NCSW-1175",
+        "NCSW-1176",
+        "NCSW-1177",
+        "NCSW-1178",
+        "NCSW-1179",
+        "NCSW-1180",
+        "NCSW-1181",
+        "NCSW-1182",
+        "NCSW-1183",
+        "NCSW-1184",
+        "NCSW-1185",
+        "NCSW-1186",
+        "NCSW-1187",
+        "NCSW-1188",
+        "NCSW-1189",
+        "NCSW-1190"
+      ]
+    },
+    {
+      "id": "NCSW-BND-003",
+      "claim": "The spectral-parameter-dependent carry gamma field and its Weyl boundary law are kernel checked in the canonical realification. For every nonreal lambda, the bounded source gamma map u maps to (lambda-Y)^(-1)Vu, is injective, belongs to the exact maximal logarithmic domain and is the unique solution of lambda f=Yf+Vu. Its source boundary values satisfy Gamma_0=M_infinity(lambda)u and Gamma_1=u. Reparameterizing by Gamma_0 on the exact dense range of M_infinity gives a partial gamma field with Gamma_0 gamma(lambda)xi=xi and Gamma_1 gamma(lambda)xi=M_infinity(lambda)^(-1)xi. The resulting boundary Weyl family is exactly the existing LinearPMap inverse on that range, and hence is closed, densely defined and admits no global norm bound. No everywhere-defined inverse, independent complex-linear realization or ordinary boundary triple is claimed.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1191",
+        "NCSW-1192",
+        "NCSW-1193",
+        "NCSW-1194",
+        "NCSW-1195",
+        "NCSW-1196",
+        "NCSW-1197",
+        "NCSW-1198",
+        "NCSW-1199",
+        "NCSW-1200",
+        "NCSW-1201",
+        "NCSW-1202",
+        "NCSW-1203",
+        "NCSW-1204",
+        "NCSW-1205",
+        "NCSW-1206",
+        "NCSW-1207",
+        "NCSW-1208",
+        "NCSW-1209",
+        "NCSW-1210",
+        "NCSW-1211",
+        "NCSW-1212",
+        "NCSW-1213",
+        "NCSW-1214",
+        "NCSW-1215",
+        "NCSW-1216",
+        "NCSW-1217"
       ]
     }
   ]

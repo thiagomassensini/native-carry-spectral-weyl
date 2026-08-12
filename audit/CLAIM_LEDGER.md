@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.48 it contains
-sixty-one `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.49 it contains
+sixty-three `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -255,4 +255,26 @@ gives the Green identity in both charts, while self-adjointness makes the
 coupled Weyl graph equal to its coupled Green adjoint.  The concrete instance
 uses maximal logarithmic multiplication and the all-bases Naimark isometry.
 The spectral-parameter-dependent gamma field and compressed-resolvent/Weyl
-identification remain outside this claim.
+identification remain outside this second claim and are supplied by the next
+two claims.
+
+The eleventh all-bases claim constructs the explicit ambient realification
+needed by the gamma field.  The real and imaginary parts of the Naimark port,
+its adjoint and `(lambda-Y)⁻¹` are assembled into rectangular `2 × 2` real
+blocks, and compression of the ambient resolvent is proved exactly equal to
+`M_infinity(lambda)`.  Both resolvent components lie in the maximal domain of
+`Y`; the imaginary-part energy identity makes `lambda-Y` injective off the
+real axis, while the explicit domain-valued resolvent proves surjectivity and
+both inverse laws.  Thus `lambda-Y` is bijective on its exact maximal domain.
+
+The third boundary claim constructs the realified source gamma map
+`u ↦ (lambda-Y)⁻¹Vu`, proves it injective and proves that it is the unique
+maximal-domain solution of `lambda f=Yf+Vu`.  Its boundary values are exactly
+`Gamma_0=M_infinity(lambda)u` and `Gamma_1=u`.  Reparametrizing by `Gamma_0`
+on the dense range of `M_infinity(lambda)` gives the partial trace gamma field
+and the checked law
+`Gamma_1 gamma(lambda)xi=M_infinity(lambda)⁻¹xi`.  The resulting Weyl family
+is the existing closed, densely defined `LinearPMap` inverse and admits no
+global norm bound.  This claim does not introduce an everywhere-defined
+inverse, an independent complex-linear realization, or an ordinary boundary
+triple.
