@@ -52,6 +52,7 @@ import NativeCarrySpectralWeyl.Boundary.GreenRelation
 import NativeCarrySpectralWeyl.Boundary.SourceRelation
 import NativeCarrySpectralWeyl.Boundary.GammaField
 import NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling
+import NativeCarrySpectralWeyl.Boundary.AngularReadout
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -268,6 +269,16 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     domain, where the closed inverse recovers the original camera port.  The
     pinned concrete Green split fills the frame-bound certificate, but the
     research-specific bounded state readout itself remains an explicit input.
+    The angular evaluation layer then bundles a supplied state-valued family
+    `t ↦ x(t)` with that coupling.  Coherent external synthesis recovers the
+    angular camera value and bulk, and for every independently chosen nonreal
+    `lambda` the induced gamma vector and Cauchy trace satisfy the exact Weyl
+    law `W(lambda)(trace(t,lambda)) = stateReadout(x(t))`.  Comparing any two
+    nonreal probes, including an auxiliary anchor `z0`, proves that the
+    recovered value and its zero test are probe independent without equating
+    `t`, `z0`, and `lambda`.  The supplied family is not asserted to satisfy a
+    unitary group law, and the rigged native amplitude and bounded readout are
+    still not constructed by this layer.
     No independent complex scalar action or ordinary boundary triple is
     claimed here.
 -/

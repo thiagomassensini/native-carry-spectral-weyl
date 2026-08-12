@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.50.0",
-  "count": 1242,
+  "release": "0.51.0",
+  "count": 1256,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -6212,6 +6212,76 @@
       "id": "NCSW-1242",
       "name": "concreteGreenCamera_externalGammaSource_normalizedExternal",
       "qualified": "NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling.concreteGreenCamera_externalGammaSource_normalizedExternal"
+    },
+    {
+      "id": "NCSW-1243",
+      "name": "externalPort_angularExternalData",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.externalPort_angularExternalData"
+    },
+    {
+      "id": "NCSW-1244",
+      "name": "staticPoisson_angularExternalData",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.staticPoisson_angularExternalData"
+    },
+    {
+      "id": "NCSW-1245",
+      "name": "externalOutput_angularExternalData",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.externalOutput_angularExternalData"
+    },
+    {
+      "id": "NCSW-1246",
+      "name": "angularGammaSource_eq_carryGammaSource",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularGammaSource_eq_carryGammaSource"
+    },
+    {
+      "id": "NCSW-1247",
+      "name": "angularGammaSource_eq_zero_iff",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularGammaSource_eq_zero_iff"
+    },
+    {
+      "id": "NCSW-1248",
+      "name": "angularGammaSource_defect_equation",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularGammaSource_defect_equation"
+    },
+    {
+      "id": "NCSW-1249",
+      "name": "angularGammaIntoDomain_unique",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularGammaIntoDomain_unique"
+    },
+    {
+      "id": "NCSW-1250",
+      "name": "coe_angularCauchyTrace",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.coe_angularCauchyTrace"
+    },
+    {
+      "id": "NCSW-1251",
+      "name": "carryGammaField_angularCauchyTrace",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.carryGammaField_angularCauchyTrace"
+    },
+    {
+      "id": "NCSW-1252",
+      "name": "angularWeylOutput_eq_readout",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularWeylOutput_eq_readout"
+    },
+    {
+      "id": "NCSW-1253",
+      "name": "angularWeylOutput_eq_zero_iff",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularWeylOutput_eq_zero_iff"
+    },
+    {
+      "id": "NCSW-1254",
+      "name": "angularGammaSource_boundary_values",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularGammaSource_boundary_values"
+    },
+    {
+      "id": "NCSW-1255",
+      "name": "angularWeylOutput_probe_independent",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularWeylOutput_probe_independent"
+    },
+    {
+      "id": "NCSW-1256",
+      "name": "angularWeylOutput_zero_probe_independent",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularWeylOutput_zero_probe_independent"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.50.0",
-  "registry_count": 1242,
-  "count": 64,
+  "release": "0.51.0",
+  "registry_count": 1256,
+  "count": 65,
   "status_counts": {
-    "KERNEL_CHECKED": 64
+    "KERNEL_CHECKED": 65
   },
   "claims": [
     {
@@ -1695,6 +1695,27 @@
         "NCSW-1240",
         "NCSW-1241",
         "NCSW-1242"
+      ]
+    },
+    {
+      "id": "NCSW-BND-005",
+      "claim": "Angular evaluation of the external Green-to-camera coupling is kernel checked for a supplied state-valued family t mapsto x(t) and the explicit bounded readout already required by the coupling. Coherent normalized external data recover both stateReadout(x(t)) and the separate normalized Green bulk. For every independently chosen nonreal spectral parameter lambda, the induced source gamma vector vanishes exactly when the angular readout vanishes, satisfies the exact source defect equation as the unique solution on the maximal logarithmic domain, and has a Cauchy trace in the exact domain of the closed partial Weyl inverse with W(lambda)(trace(t,lambda))=stateReadout(x(t)). Hence any two nonreal probes z0 and lambda recover the same angular value and give equivalent zero tests without identifying t, z0 and lambda. This claim does not construct the native angular family, prove a unitary group law or rigged-state realization, construct the research-specific bounded readout, or identify static Poisson with spectral Weyl.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1243",
+        "NCSW-1244",
+        "NCSW-1245",
+        "NCSW-1246",
+        "NCSW-1247",
+        "NCSW-1248",
+        "NCSW-1249",
+        "NCSW-1250",
+        "NCSW-1251",
+        "NCSW-1252",
+        "NCSW-1253",
+        "NCSW-1254",
+        "NCSW-1255",
+        "NCSW-1256"
       ]
     }
   ]

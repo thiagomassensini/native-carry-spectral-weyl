@@ -6,7 +6,7 @@ design the plan.
 
 ## Canonical core documents
 
-| Source under `carry-lab/Wayl` | SHA-256 | Intended role |
+| Source under `carry-lab` | SHA-256 | Intended role |
 |---|---|---|
 | `native_carry_defect_probe_research_log.md` | `8be81ba74d53aa9b77807c050c74b0f8df2ba2476b56bfe237134aa1b8914f5f` | Consolidated dependency map |
 | `ALL_BASES_NATIVE_CAMERA_COMMON_ZERO_SET_THEOREM.md` | `074d27a121c602af6b96e8fb2ccb7d5ef5b9b1c680ca82000000c2db258fe031` | Camera profiles, factors and analytic bridge |
@@ -14,6 +14,7 @@ design the plan.
 | `native_carry_dynamic_sector_limit_gate.py` | `13f984e873607f690ee9fb83b3b8f2db044856e6a942283b9561137ee5f901e0` | Numerical audit of the `M^-3/2` tail slope |
 | `ALL_BASES_INFINITE_CAMERA_SPECTRAL_ATLAS_THEOREM.md` | `25b291bac6d7cf6c07e7a91d1cba25ead4d46b17514c947e3536ad9294beb0a6` | Countable Gram completion and Weyl inverse |
 | `LIMITE_FRAME_DEFECT_PROBES_SEM_COLAPSO.md` | `c5fcffebf1f1acfb770a26eff34b176187b2c0a57a6aa02b97b83492bff8800e` | Noncollapse target |
+| `Arquivo/docs/OPERADORES/OBSERVACAO_DE_BORDO_ANGULAR_CONSERVATIVA.md` | `2cde09c19617f006a6ac41f292a55f3178002462a59f902ff59b66949db66217` | Fixed angular orbit/readout and `t`/resolvent-parameter firewall |
 | `UNICIDADE_LIMITE_COVARIANCIA_DEFECT_PROBES.md` | `5a5e7024f3093aacc6aa6d37a8c22cf7f5f5c05a069bfbb0a4fa34b06d5947fc` | Return-metric covariance limit |
 | `OPERADOR_ESPECTRAL_CAMERAS_DEFECT_WEYL.md` | `07a8ec4ac6446f0cb422734e2f4a8a4354825f9752847c47490e08e5451f0783` | Finite spectral pair |
 | `CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md` | `c439ab475e6fcfcd67295114277193d793384dae01572c8582aa318bc8453545` | Functional moment limit |
@@ -69,6 +70,46 @@ bundle.
 | `finite-native-carry-operator` | `00e9d6beb17226545abf5ddf90bbfede6c7146b0` | `v0.1.0`, finite camera/operator layer |
 
 Both use Lean and Mathlib `4.32.0`.
+
+## Cross-repository ecosystem audit for v0.51
+
+The angular milestone was checked against the surrounding repositories rather
+than treating the Weyl package in isolation:
+
+| Repository or PR | Inspected revision | Toolchain | Relevance to this gate |
+|---|---|---|---|
+| `green-frame-theorem` | `cd2d838bee67ad23f869a02f8ed9f0a0feb926fa` (`v2.1.0`) | `4.32.0` | Direct pinned dependency.  Supplies the normalized external/bulk split and static Poisson synthesis, while explicitly leaving the spectral generator and angular orbit to this layer. |
+| `finite-native-carry-operator` | `00e9d6beb17226545abf5ddf90bbfede6c7146b0` (`v0.1.0`) | `4.32.0` | Direct pinned dependency.  Supplies the literal finite state with phase `-t log n` and the finite camera operator, but not an infinite Green-state readout. |
+| `native-carry-geometry` | `01a536beaa9a045fdf91b511315ab309008ff602` (`v0.4.0`) | `4.32.0` | Supplies a separately audited scalar analytic readout and exact native zero-locus crosswalk.  It is a future scalar-to-Hilbert integration source, not the missing bounded all-bases readout. |
+| `primos` PR 15 | merged release PR `#15` | `4.32.0` | Release packaging and arithmetic guardrails only; it adds no Green/camera operator needed here. |
+| `primos` PR 47 | head `a7abb949aaaaff3d4c5c0bf16179d5b6e613a710`, CI passing at inspection | `4.32.0` | Proves that prime-camera positional depths reconstruct `log n` and preserve the positive-integer native log-wave samples.  This controls the generator coordinate upstream of the angular phase; it does not construct the all-bases Green readout or identify that coordinate with angular time `t`. |
+| `hatano-nelson-boundary-atlas` | `644c1524e2cd0b55a747ea8425eece130503020a` (`v0.1.0`) | `4.32.1` | Useful finite-matrix pattern for boundary compression of a Green defect, but neither toolchain-compatible with the pinned release nor an infinite readout construction. |
+| `thermal-valve-passport` | `0b325f09b454ee6b989b6716b65d7b4fad81dcfb` (`v0.4.0`) | `4.32.1` | Exact scalar trace/curvature reconstruction and cutoff provenance; conceptually useful, but not the present Hilbert-space gate. |
+| `polyakov-valve-passport` | `548ccaacfad5b889df2fb3a120f76db52e303c30` (`v0.1.0`) | `4.32.1` | Algebraic trace compatibility and carrier-mixing diagnostics; no angular orbit, Weyl family or bounded camera readout is exported. |
+
+No new package dependency is introduced at v0.51.  In particular, the open
+`primos` branch is not pinned as a production dependency, and the three
+`4.32.1` repositories do not force an unrequested toolchain upgrade.
+
+## v0.51 angular Green-camera trace
+
+`NativeCarrySpectralWeyl/Boundary/AngularReadout.lean` follows the parameter
+firewall in `OBSERVACAO_DE_BORDO_ANGULAR_CONSERVATIVA.md` and
+`LIMITE_FRAME_DEFECT_PROBES_SEM_COLAPSO.md`.  The Lean interface stores a
+supplied state family `t ↦ x(t)` separately from every nonreal gamma/Weyl
+probe.  Coherent Green synthesis recovers the camera readout and static bulk,
+while the spectral path proves
+
+`W(lambda)(trace(t,lambda)) = stateReadout(x(t))`.
+
+Two arbitrary probes `z0` and `lambda` therefore recover the same output and
+the same zero predicate.  The proof does not use `z0=lambda`, `lambda=t`, or a
+complex coercion of `t`.  The prime-depth theorem in `primos` PR 47 supports a
+future construction of the logarithmic coordinate inside the native phase,
+but it is not confused with this real angular parameter.  The state family,
+its possible rigged realization, and the research-specific bounded
+Green-state-to-camera map remain explicit obligations rather than hidden
+premises.
 
 ## v0.14 step-density trace
 

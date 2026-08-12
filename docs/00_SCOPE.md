@@ -497,6 +497,21 @@ specialization supplies `concreteAnalysisOperator omega` and
 `stateReadout` remains an explicit argument.  No strong-resolvent or
 strong-graph passage is needed for these bounded compositions.
 
+The v0.51 surface evaluates that interface along a supplied state-valued
+angular family `t ↦ x(t)`.  `AngularGreenCameraCoupling` records the existing
+bounded coupling and this family without asserting a group law, continuity or
+a rigged-state realization.  Coherent normalized external data recover
+`stateReadout(x(t))` and the separate normalized bulk.  For every nonreal
+`lambda`, the induced source gamma vector is the gamma map of this readout and
+the unique maximal-domain solution of its exact defect equation; its Cauchy
+trace belongs to the exact dense Weyl domain, and
+`W(lambda)(trace(t,lambda))=stateReadout(x(t))`.  Gamma and Weyl outputs vanish
+exactly when the angular readout vanishes.  Comparing arbitrary nonreal `z0`
+and `lambda` proves that both recovered outputs and zero tests agree; no
+equality among `t`, `z0` and `lambda` occurs.  This closes the parameterized
+angular evaluation gate, but it does not construct the native rigged orbit or
+the research-specific bounded state readout.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -561,7 +576,9 @@ The bootstrap and first milestone do not claim:
   the exact dense inverse domain);
 - strong-resolvent or strong-graph convergence;
 - construction or boundedness of the research-specific infinite
-  Green-state-to-camera readout (v0.50 proves the complete transport theorem
-  for any such bounded readout supplied explicitly);
+  Green-state-to-camera readout (v0.50 proves its complete transport and v0.51
+  proves angular evaluation for any such bounded readout supplied explicitly);
+- construction of the native amplitude as a Green-state-valued unitary orbit
+  (v0.51 accepts a supplied family and does not infer a rigged realization);
 - equality between the Green static Poisson map and a spectral Weyl map;
 - any consequence concerning external special-function zeros.

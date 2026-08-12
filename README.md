@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.50 external Green-camera coupling milestone contains **1,242 public
+The v0.51 angular Green-camera readout milestone contains **1,256 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -455,7 +455,20 @@ surface proves:
 - induced Cauchy traces in the exact Weyl domain, with the kernel-checked laws
   `gamma(trace(e)) = gammaSource(cameraPort(e))` and
   `W(lambda)(trace(e)) = cameraPort(e)`, plus a specialization to the pinned
-  concrete Green analysis operator and its exact split bounds.
+  concrete Green analysis operator and its exact split bounds;
+- an `AngularGreenCameraCoupling` that adds a supplied state-valued family
+  `t ↦ x(t)` without silently assuming a unitary group law, continuity or a
+  rigged-state realization;
+- exact coherent angular evaluation of the external camera port, static bulk,
+  source gamma vector and dense-domain Cauchy trace, including the defect
+  equation and uniqueness on the maximal logarithmic domain;
+- the angular Weyl law
+  `W(lambda)(trace(t,lambda)) = stateReadout(x(t))` for every real `t` and
+  every independently chosen nonreal `lambda`, together with equivalent
+  gamma/Weyl zero tests;
+- explicit probe independence: arbitrary nonreal `z0` and `lambda` recover
+  the same angular readout and zero test, with no equality among `t`, `z0`
+  and `lambda`.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -505,14 +518,17 @@ Naimark port gives unique source coordinates; the reference/Weyl charts,
 their rotation and Green identities, and maximality of the coupled Weyl graph
 are all kernel checked.  The canonical realification now also supplies the
 ambient resolvent, unique defect solutions, source and trace gamma fields and
-the exact compressed-resolvent/Weyl identification.  The external
-Green/camera interface is now kernel checked for every explicitly supplied
-bounded state readout, including the canonical external synthesis, the
-separate static Poisson output and transport through the defect and Weyl
-families.  Constructing the particular infinite state readout intended by the
-research notes, and proving its boundedness, remain analytic obligations.  A
-native complex scalar action, explicit PVM and ordinary boundary triple also
-remain outside the current surface.
+the exact compressed-resolvent/Weyl identification.  The external Green/camera
+interface is now kernel checked for every explicitly supplied bounded state
+readout, including canonical external synthesis, the separate static Poisson
+output and transport through the defect and Weyl families.  Its angular
+evaluation is also checked for every supplied state-valued family: `t` stays
+in the state family and each nonreal spectral probe stays in its own
+Cauchy/Weyl trace.  Constructing the particular rigged native angular family
+inside the Green state model, constructing the intended infinite readout, and
+proving that readout is bounded remain analytic obligations.  A native complex
+scalar action, explicit PVM and ordinary boundary triple also remain outside
+the current surface.
 
 Pinned foundations:
 
@@ -531,12 +547,13 @@ unbounded Weyl inverse.  Those gates are now complete.  The abstract relation,
 Green-form, self-adjoint graph-maximality, source-extended relation and maximal
 coupled Weyl boundary graph are also complete.  The realified gamma field and
 the exact identification of its Weyl family with the compressed-resolvent
-inverse are now complete as well.  The external Green state/port coupling is
-complete as a theorem parameterized by an explicit bounded state readout; its
-concrete Green split specialization is also exported.  The next boundary gate
-is either to construct and bound the research-specific infinite readout or to
-formalize its angular evaluation theorem, keeping `t` independent from the
-spectral parameter `lambda`.
+inverse are now complete as well.  The external Green state/port coupling and
+its angular evaluation theorem are complete when parameterized by an explicit
+bounded state readout and a supplied state-valued family; the concrete Green
+split specialization is also exported.  The next boundary gate is to
+construct the research-specific infinite readout and prove it bounded,
+together with the correct rigged realization of the native amplitude if that
+construction uses the formal orbit `exp(-it log n)`.
 
 Three parameters remain permanently distinct:
 
@@ -556,7 +573,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,242 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,256 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

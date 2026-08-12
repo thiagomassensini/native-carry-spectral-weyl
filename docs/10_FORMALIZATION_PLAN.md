@@ -681,7 +681,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.50 external Green-camera coupling milestone:
+Kernel checked through the v0.51 angular Green-camera readout milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -792,6 +792,7 @@ NativeCarrySpectralWeyl/Boundary/SourceRelation.lean
 NativeCarrySpectralWeyl/Infinite/ComplexifiedResolvent.lean
 NativeCarrySpectralWeyl/Boundary/GammaField.lean
 NativeCarrySpectralWeyl/Boundary/GreenCameraCoupling.lean
+NativeCarrySpectralWeyl/Boundary/AngularReadout.lean
 ```
 
 - define linear relations as submodules of a product Hilbert space;
@@ -803,13 +804,14 @@ NativeCarrySpectralWeyl/Boundary/GreenCameraCoupling.lean
 - connect external Green ports and spectral camera ports by an explicit map;
 - construct and bound the research-specific infinite state readout needed to
   instantiate that interface without an external hypothesis;
-- state the angular readout theorem with `t` independent from `lambda`.
+- construct the research-specific rigged native angular family when it does
+  not belong to the Green state Hilbert space itself.
 
 The old finite maximal-isotropic calculation remains useful motivation, but
 the infinite adjoint/domain theorem is discharged independently by the v0.43
 regularizer argument above.
 
-Kernel checked through v0.50:
+Kernel checked through v0.51:
 
 - linear relations represented as submodules of the product Hilbert space;
 - the documented skew-Hermitian Green form and its exact symplectic
@@ -863,17 +865,28 @@ Kernel checked through v0.50:
   `gamma(trace(e)) = gammaSource(externalPort(e))` and
   `W(lambda)(trace(e)) = externalPort(e)`;
 - the concrete specialization to `concreteAnalysisOperator omega` and its
-  kernel-checked split bounds.
+  kernel-checked split bounds;
+- `AngularGreenCameraCoupling`, which adds a supplied family `t ↦ x(t)` to the
+  bounded-readout interface without assuming a group law, continuity or a
+  rigged-state realization;
+- exact coherent recovery of the angular camera readout and the separate
+  normalized bulk through external synthesis;
+- angular source-gamma evaluation for every independently chosen nonreal
+  `lambda`, including the exact defect equation, uniqueness on the maximal
+  logarithmic domain and Cauchy-trace law
+  `W(lambda)(trace(t,lambda)) = stateReadout(x(t))`;
+- equivalence of angular readout, gamma and Weyl zero tests, and explicit
+  equality of the recovered outputs and zero tests for arbitrary nonreal
+  probes `z0` and `lambda`, without identifying either with `t`.
 
-The v0.50 interface deliberately does not manufacture the research-specific
-bounded `stateReadout`; that existence and boundedness theorem is one possible
-next gate.  The other immediate gate is the angular readout theorem with `t`
-kept independent from `lambda`, parameterized by the explicit coupling if
-necessary.  Strong-resolvent or strong-graph passage is not used by v0.50; if
-a later construction requires it, its topology and domains must be stated
-explicitly.  The current realified representation remains deliberate: no
-independent complex scalar action, everywhere-defined inverse or ordinary
-boundary triple is inferred.
+The v0.51 interface deliberately does not manufacture the research-specific
+bounded `stateReadout` or place the generalized native amplitude in the Green
+state Hilbert space.  Those existence, rigged-realization and boundedness
+statements are the next boundary gate.  Strong-resolvent or strong-graph
+passage is not used by v0.51; if a later construction requires it, its topology
+and domains must be stated explicitly.  The current realified representation
+remains deliberate: no independent complex scalar action, everywhere-defined
+inverse or ordinary boundary triple is inferred.
 
 ## 10. Phase 7 — optional holonomic track
 

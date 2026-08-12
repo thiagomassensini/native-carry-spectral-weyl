@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.50 it contains
-sixty-four `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.51 it contains
+sixty-five `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -291,3 +291,15 @@ domain and satisfy `W(lambda)(trace(e))=cameraPort(e)`.  The concrete
 specialization fills the split certificate from the pinned GreenFrame theorem.
 Neither existence of the research-specific bounded state readout nor equality
 of static Poisson and spectral Weyl is claimed.
+
+The fifth boundary claim evaluates that interface along a supplied
+state-valued angular family `t ↦ x(t)`.  Coherent external synthesis recovers
+both `stateReadout(x(t))` and the independent normalized bulk.  For every
+nonreal `lambda`, the source gamma vector is the unique maximal-domain solution
+of its exact defect equation, and its exact-domain Cauchy trace satisfies
+`W(lambda)(trace(t,lambda))=stateReadout(x(t))`.  Both gamma and Weyl vanishing
+are equivalent to vanishing of that readout.  Any two nonreal probes
+`z0` and `lambda` therefore give the same recovered value and zero test without
+being identified with each other or with `t`.  The claim supplies no unitary
+orbit law, rigged-state realization or construction/boundedness proof for the
+research-specific readout.
