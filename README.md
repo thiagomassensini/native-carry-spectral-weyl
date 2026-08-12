@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.51 angular Green-camera readout milestone contains **1,256 public
+The v0.52 logarithmic rigged-orbit milestone contains **1,279 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -468,7 +468,20 @@ surface proves:
   gamma/Weyl zero tests;
 - explicit probe independence: arbitrary nonreal `z0` and `lambda` recover
   the same angular readout and zero test, with no equality among `t`, `z0`
-  and `lambda`.
+  and `lambda`;
+- the exact obstruction to an unweighted critical state:
+  `Complex.normSq (n⁻¹ᐟ²) = n⁻¹`, hence the raw native amplitude is not in
+  `ℓ²(PNat, ℂ)`;
+- summability of the logarithmically rigged energy
+  `n⁻¹/(1+log n)²` and construction of its distinguished `LogRiggedState`;
+- the diagonal logarithmic evolution
+  `U(t)x(n)=exp(-it log n)x(n)` as a strongly continuous group of
+  complex-linear isometric equivalences, with exact group, inverse and norm
+  laws;
+- constant norm and continuity of the distinguished critical orbit, together
+  with the exact pointwise bridge obtained by removing the rigging weight:
+  `unriggedCoordinate (criticalRiggedOrbit t) n =
+  dirichletValue (nativeLine t) n`.
 
 The finite functional algebra is now kernel checked through arbitrary real
 polynomials.  The camera/resolvent construction is fully concrete; the
@@ -524,11 +537,15 @@ readout, including canonical external synthesis, the separate static Poisson
 output and transport through the defect and Weyl families.  Its angular
 evaluation is also checked for every supplied state-valued family: `t` stays
 in the state family and each nonreal spectral probe stays in its own
-Cauchy/Weyl trace.  Constructing the particular rigged native angular family
-inside the Green state model, constructing the intended infinite readout, and
-proving that readout is bounded remain analytic obligations.  A native complex
-scalar action, explicit PVM and ordinary boundary triple also remain outside
-the current surface.
+Cauchy/Weyl trace.  Separately, the critical native amplitude now has its
+canonical logarithmically weighted coordinate realization and a strongly
+continuous isometric orbit.  The raw amplitude is proved not to lie in
+unweighted `ℓ²`; removing the rigging weight is therefore intentionally only
+pointwise.  Constructing the appropriate closable rigged boundary form (or
+another justified port into the all-bases camera space) and proving the
+resulting readout theorem remain analytic obligations.  A native complex
+scalar action on the real all-bases camera completion, explicit PVM and
+ordinary boundary triple also remain outside the current surface.
 
 Pinned foundations:
 
@@ -550,10 +567,11 @@ the exact identification of its Weyl family with the compressed-resolvent
 inverse are now complete as well.  The external Green state/port coupling and
 its angular evaluation theorem are complete when parameterized by an explicit
 bounded state readout and a supplied state-valued family; the concrete Green
-split specialization is also exported.  The next boundary gate is to
-construct the research-specific infinite readout and prove it bounded,
-together with the correct rigged realization of the native amplitude if that
-construction uses the formal orbit `exp(-it log n)`.
+split specialization is also exported.  The logarithmic `H₋₁` coordinate
+realization and its strongly continuous orbit `exp(-it log n)` are now
+constructed independently.  The next boundary gate is to formulate and close
+the research-specific rigged boundary form/port, then connect its output to
+the all-bases camera readout without asserting a false bounded unrigging map.
 
 Three parameters remain permanently distinct:
 
@@ -573,7 +591,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,256 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,279 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

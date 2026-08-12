@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.51.0",
-  "count": 1256,
+  "release": "0.52.0",
+  "count": 1279,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -6282,6 +6282,121 @@
       "id": "NCSW-1256",
       "name": "angularWeylOutput_zero_probe_independent",
       "qualified": "NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularWeylOutput_zero_probe_independent"
+    },
+    {
+      "id": "NCSW-1257",
+      "name": "criticalRiggedEnergy_summable",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedEnergy_summable"
+    },
+    {
+      "id": "NCSW-1258",
+      "name": "nativeCriticalAmplitude_normSq",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.nativeCriticalAmplitude_normSq"
+    },
+    {
+      "id": "NCSW-1259",
+      "name": "nativeCriticalEnergy_not_summable",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.nativeCriticalEnergy_not_summable"
+    },
+    {
+      "id": "NCSW-1260",
+      "name": "nativeCriticalAmplitude_not_memLp",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.nativeCriticalAmplitude_not_memLp"
+    },
+    {
+      "id": "NCSW-1261",
+      "name": "criticalRiggedCoordinate_normSq",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedCoordinate_normSq"
+    },
+    {
+      "id": "NCSW-1262",
+      "name": "criticalRiggedState_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedState_apply"
+    },
+    {
+      "id": "NCSW-1263",
+      "name": "nativeLogPhase_norm",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.nativeLogPhase_norm"
+    },
+    {
+      "id": "NCSW-1264",
+      "name": "nativeLogPhase_normSq",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.nativeLogPhase_normSq"
+    },
+    {
+      "id": "NCSW-1265",
+      "name": "nativeLogPhase_zero",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.nativeLogPhase_zero"
+    },
+    {
+      "id": "NCSW-1266",
+      "name": "nativeLogPhase_add",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.nativeLogPhase_add"
+    },
+    {
+      "id": "NCSW-1267",
+      "name": "continuous_nativeLogPhase",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.continuous_nativeLogPhase"
+    },
+    {
+      "id": "NCSW-1268",
+      "name": "riggedAngularEvolution_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_apply"
+    },
+    {
+      "id": "NCSW-1269",
+      "name": "riggedAngularEvolution_zero",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_zero"
+    },
+    {
+      "id": "NCSW-1270",
+      "name": "riggedAngularEvolution_add",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_add"
+    },
+    {
+      "id": "NCSW-1271",
+      "name": "riggedAngularEvolution_neg_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_neg_apply"
+    },
+    {
+      "id": "NCSW-1272",
+      "name": "riggedAngularEvolution_norm",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_norm"
+    },
+    {
+      "id": "NCSW-1273",
+      "name": "continuous_riggedAngularEvolution_orbit",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.continuous_riggedAngularEvolution_orbit"
+    },
+    {
+      "id": "NCSW-1274",
+      "name": "continuous_criticalRiggedOrbit",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.continuous_criticalRiggedOrbit"
+    },
+    {
+      "id": "NCSW-1275",
+      "name": "criticalRiggedOrbit_apply",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedOrbit_apply"
+    },
+    {
+      "id": "NCSW-1276",
+      "name": "criticalRiggedOrbit_norm",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedOrbit_norm"
+    },
+    {
+      "id": "NCSW-1277",
+      "name": "unriggedCoordinate_criticalRiggedOrbit",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.unriggedCoordinate_criticalRiggedOrbit"
+    },
+    {
+      "id": "NCSW-1278",
+      "name": "nativeLogPhase_mul_amplitude_eq_dirichletValue",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.nativeLogPhase_mul_amplitude_eq_dirichletValue"
+    },
+    {
+      "id": "NCSW-1279",
+      "name": "unriggedCoordinate_eq_dirichletValue",
+      "qualified": "NativeCarrySpectralWeyl.Boundary.unriggedCoordinate_eq_dirichletValue"
     }
   ]
 }

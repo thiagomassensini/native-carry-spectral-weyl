@@ -15,6 +15,8 @@ design the plan.
 | `ALL_BASES_INFINITE_CAMERA_SPECTRAL_ATLAS_THEOREM.md` | `25b291bac6d7cf6c07e7a91d1cba25ead4d46b17514c947e3536ad9294beb0a6` | Countable Gram completion and Weyl inverse |
 | `LIMITE_FRAME_DEFECT_PROBES_SEM_COLAPSO.md` | `c5fcffebf1f1acfb770a26eff34b176187b2c0a57a6aa02b97b83492bff8800e` | Noncollapse target |
 | `Arquivo/docs/OPERADORES/OBSERVACAO_DE_BORDO_ANGULAR_CONSERVATIVA.md` | `2cde09c19617f006a6ac41f292a55f3178002462a59f902ff59b66949db66217` | Fixed angular orbit/readout and `t`/resolvent-parameter firewall |
+| `Arquivo/docs/OPERADORES/SISTEMA_OBSERVACAO_CONSERVATIVO_ALL_BASES.md` | `f9becaef17be62dfca2745ba9140bfcf6d357b3585008b182e5374b879451145` | All-bases conservative observation system and rigged amplitude scale |
+| `Green/HAAR_GREEN/C2_GREEN_HAAR_RIGGED_VECTOR_PORT_REPORT.md` | `07e235b0a923e5056cae1ffb39ae164ad0f748e00263da7374f08e450150bf00` | Audit of the Haar/Green vector-port obstruction and need for a closable form |
 | `UNICIDADE_LIMITE_COVARIANCIA_DEFECT_PROBES.md` | `5a5e7024f3093aacc6aa6d37a8c22cf7f5f5c05a069bfbb0a4fa34b06d5947fc` | Return-metric covariance limit |
 | `OPERADOR_ESPECTRAL_CAMERAS_DEFECT_WEYL.md` | `07a8ec4ac6446f0cb422734e2f4a8a4354825f9752847c47490e08e5451f0783` | Finite spectral pair |
 | `CONVERGENCIA_FUNCIONAL_DEFECT_PROBES_POVM.md` | `c439ab475e6fcfcd67295114277193d793384dae01572c8582aa318bc8453545` | Functional moment limit |
@@ -71,7 +73,7 @@ bundle.
 
 Both use Lean and Mathlib `4.32.0`.
 
-## Cross-repository ecosystem audit for v0.51
+## Cross-repository ecosystem audit for v0.52
 
 The angular milestone was checked against the surrounding repositories rather
 than treating the Weyl package in isolation:
@@ -87,7 +89,7 @@ than treating the Weyl package in isolation:
 | `thermal-valve-passport` | `0b325f09b454ee6b989b6716b65d7b4fad81dcfb` (`v0.4.0`) | `4.32.1` | Exact scalar trace/curvature reconstruction and cutoff provenance; conceptually useful, but not the present Hilbert-space gate. |
 | `polyakov-valve-passport` | `548ccaacfad5b889df2fb3a120f76db52e303c30` (`v0.1.0`) | `4.32.1` | Algebraic trace compatibility and carrier-mixing diagnostics; no angular orbit, Weyl family or bounded camera readout is exported. |
 
-No new package dependency is introduced at v0.51.  In particular, the open
+No new package dependency is introduced at v0.52.  In particular, the open
 `primos` branch is not pinned as a production dependency, and the three
 `4.32.1` repositories do not force an unrequested toolchain upgrade.
 
@@ -106,10 +108,36 @@ Two arbitrary probes `z0` and `lambda` therefore recover the same output and
 the same zero predicate.  The proof does not use `z0=lambda`, `lambda=t`, or a
 complex coercion of `t`.  The prime-depth theorem in `primos` PR 47 supports a
 future construction of the logarithmic coordinate inside the native phase,
-but it is not confused with this real angular parameter.  The state family,
-its possible rigged realization, and the research-specific bounded
-Green-state-to-camera map remain explicit obligations rather than hidden
-premises.
+but it is not confused with this real angular parameter.  At v0.51, the state
+family's possible rigged realization and the research-specific bounded
+Green-state-to-camera map remained explicit obligations rather than hidden
+premises; v0.52 discharges the former in the logarithmically weighted
+coordinate space described next, but not the latter.
+
+## v0.52 logarithmic rigged-orbit trace
+
+`NativeCarrySpectralWeyl/Boundary/RiggedAngularOrbit.lean` follows the
+logarithmic negative-scale construction recorded in
+`SISTEMA_OBSERVACAO_CONSERVATIVO_ALL_BASES.md` and the angular phase convention
+of `OBSERVACAO_DE_BORDO_ANGULAR_CONSERVATIVA.md`.  The sigma-one coordinate
+realization stores
+
+`n^(-1/2) / (1 + log n)`
+
+in an ordinary `ℓ²` carrier.  Lean proves its energy summable by an integral
+comparison with `1/(x log(x)^2)`.  Independently, it identifies the energy of
+the raw amplitude `n^(-1/2)` with `1/n` and proves that this family is not in
+unweighted `ℓ²`.  The diagonal phase `exp(-it log n)` is then packaged as a
+complex-linear isometric equivalence group, and dominated summation proves
+norm continuity of every orbit.  Pointwise cancellation of the sigma-one
+weight recovers the exact existing `dirichletValue (nativeLine t) n`.
+
+The module deliberately stops before the step rejected by the Haar/Green
+audit: pointwise unrigging is not declared bounded, and the raw functional is
+not represented by an `ℓ²` vector port.  The report classifies the remaining
+integration as a closable-form/domain problem.  No Markdown or Python result
+is used as a Lean premise, and no new package dependency or toolchain change
+is introduced.
 
 ## v0.14 step-density trace
 

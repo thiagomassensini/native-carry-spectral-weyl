@@ -681,7 +681,7 @@ Proof order:
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.51 angular Green-camera readout milestone:
+Kernel checked through the v0.52 logarithmic rigged-orbit milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -793,6 +793,7 @@ NativeCarrySpectralWeyl/Infinite/ComplexifiedResolvent.lean
 NativeCarrySpectralWeyl/Boundary/GammaField.lean
 NativeCarrySpectralWeyl/Boundary/GreenCameraCoupling.lean
 NativeCarrySpectralWeyl/Boundary/AngularReadout.lean
+NativeCarrySpectralWeyl/Boundary/RiggedAngularOrbit.lean
 ```
 
 - define linear relations as submodules of a product Hilbert space;
@@ -804,14 +805,16 @@ NativeCarrySpectralWeyl/Boundary/AngularReadout.lean
 - connect external Green ports and spectral camera ports by an explicit map;
 - construct and bound the research-specific infinite state readout needed to
   instantiate that interface without an external hypothesis;
-- construct the research-specific rigged native angular family when it does
-  not belong to the Green state Hilbert space itself.
+- construct the logarithmically rigged native angular family when the raw
+  amplitude does not belong to the Green state Hilbert space itself;
+- formulate the resulting camera port as a closable rigged boundary form (or
+  another domain-correct map) rather than assuming bounded unrigging.
 
 The old finite maximal-isotropic calculation remains useful motivation, but
 the infinite adjoint/domain theorem is discharged independently by the v0.43
 regularizer argument above.
 
-Kernel checked through v0.51:
+Kernel checked through v0.52:
 
 - linear relations represented as submodules of the product Hilbert space;
 - the documented skew-Hermitian Green form and its exact symplectic
@@ -877,13 +880,24 @@ Kernel checked through v0.51:
   `W(lambda)(trace(t,lambda)) = stateReadout(x(t))`;
 - equivalence of angular readout, gamma and Weyl zero tests, and explicit
   equality of the recovered outputs and zero tests for arbitrary nonreal
-  probes `z0` and `lambda`, without identifying either with `t`.
+  probes `z0` and `lambda`, without identifying either with `t`;
+- exact harmonic energy of the raw critical amplitude and its resulting
+  nonmembership in unweighted `ℓ²(PNat, ℂ)`;
+- summability of `n⁻¹/(1+log n)²` and construction of the canonical weighted
+  critical vector in `LogRiggedState`;
+- diagonal evolution by `exp(-it log n)` as a complex-linear isometric
+  equivalence group with exact zero, addition, inverse and norm laws;
+- norm continuity of every rigged orbit via a summable energy majorant, and
+  continuity plus constant norm of the distinguished critical orbit;
+- exact pointwise recovery of `dirichletValue (nativeLine t) n` after removal
+  of the logarithmic rigging weight.
 
-The v0.51 interface deliberately does not manufacture the research-specific
-bounded `stateReadout` or place the generalized native amplitude in the Green
-state Hilbert space.  Those existence, rigged-realization and boundedness
-statements are the next boundary gate.  Strong-resolvent or strong-graph
-passage is not used by v0.51; if a later construction requires it, its topology
+The v0.52 interface deliberately does not manufacture the research-specific
+bounded `stateReadout`, claim that the raw amplitude lies in the Green state
+Hilbert space, or bundle pointwise unrigging as a bounded map.  The next
+boundary gate is a closable rigged form/port with its exact domain, followed by
+the all-bases readout identification.  Strong-resolvent or strong-graph
+passage is not used by v0.52; if a later construction requires it, its topology
 and domains must be stated explicitly.  The current realified representation
 remains deliberate: no independent complex scalar action, everywhere-defined
 inverse or ordinary boundary triple is inferred.

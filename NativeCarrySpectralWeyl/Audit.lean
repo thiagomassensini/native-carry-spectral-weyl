@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.51 angular Green-camera registry. -/
+/-! Ordered foundational-dependency report for the v0.52 logarithmic rigged-orbit registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -1258,3 +1258,26 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularGammaSource_boundary_values
 #print axioms NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularWeylOutput_probe_independent
 #print axioms NativeCarrySpectralWeyl.Boundary.AngularGreenCameraCoupling.angularWeylOutput_zero_probe_independent
+#print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedEnergy_summable
+#print axioms NativeCarrySpectralWeyl.Boundary.nativeCriticalAmplitude_normSq
+#print axioms NativeCarrySpectralWeyl.Boundary.nativeCriticalEnergy_not_summable
+#print axioms NativeCarrySpectralWeyl.Boundary.nativeCriticalAmplitude_not_memLp
+#print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedCoordinate_normSq
+#print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedState_apply
+#print axioms NativeCarrySpectralWeyl.Boundary.nativeLogPhase_norm
+#print axioms NativeCarrySpectralWeyl.Boundary.nativeLogPhase_normSq
+#print axioms NativeCarrySpectralWeyl.Boundary.nativeLogPhase_zero
+#print axioms NativeCarrySpectralWeyl.Boundary.nativeLogPhase_add
+#print axioms NativeCarrySpectralWeyl.Boundary.continuous_nativeLogPhase
+#print axioms NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_apply
+#print axioms NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_zero
+#print axioms NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_add
+#print axioms NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_neg_apply
+#print axioms NativeCarrySpectralWeyl.Boundary.riggedAngularEvolution_norm
+#print axioms NativeCarrySpectralWeyl.Boundary.continuous_riggedAngularEvolution_orbit
+#print axioms NativeCarrySpectralWeyl.Boundary.continuous_criticalRiggedOrbit
+#print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedOrbit_apply
+#print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedOrbit_norm
+#print axioms NativeCarrySpectralWeyl.Boundary.unriggedCoordinate_criticalRiggedOrbit
+#print axioms NativeCarrySpectralWeyl.Boundary.nativeLogPhase_mul_amplitude_eq_dirichletValue
+#print axioms NativeCarrySpectralWeyl.Boundary.unriggedCoordinate_eq_dirichletValue

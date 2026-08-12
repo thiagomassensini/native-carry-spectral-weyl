@@ -53,6 +53,7 @@ import NativeCarrySpectralWeyl.Boundary.SourceRelation
 import NativeCarrySpectralWeyl.Boundary.GammaField
 import NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling
 import NativeCarrySpectralWeyl.Boundary.AngularReadout
+import NativeCarrySpectralWeyl.Boundary.RiggedAngularOrbit
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -276,9 +277,18 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     law `W(lambda)(trace(t,lambda)) = stateReadout(x(t))`.  Comparing any two
     nonreal probes, including an auxiliary anchor `z0`, proves that the
     recovered value and its zero test are probe independent without equating
-    `t`, `z0`, and `lambda`.  The supplied family is not asserted to satisfy a
-    unitary group law, and the rigged native amplitude and bounded readout are
-    still not constructed by this layer.
+    `t`, `z0`, and `lambda`.  The independent rigged angular layer then proves
+    that the raw critical amplitude `n⁻¹ᐟ²` is not in unweighted `ℓ²`, while
+    the logarithmically weighted coordinate
+    `n⁻¹ᐟ²/(1+log n)` is summable.  Diagonal multiplication by
+    `exp(-it log n)` gives a strongly continuous group of complex-linear
+    isometric equivalences on this weighted coordinate realization.  The
+    distinguished orbit has constant norm, and pointwise removal of the
+    logarithmic weight recovers exactly
+    `dirichletValue (nativeLine t) n`.  This pointwise removal is not bundled
+    as a bounded operator, so the rigged orbit is not silently promoted to a
+    concrete Green state or composed with the still-supplied all-bases camera
+    readout.
     No independent complex scalar action or ordinary boundary triple is
     claimed here.
 -/

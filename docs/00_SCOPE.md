@@ -512,6 +512,25 @@ equality among `t`, `z0` and `lambda` occurs.  This closes the parameterized
 angular evaluation gate, but it does not construct the native rigged orbit or
 the research-specific bounded state readout.
 
+The v0.52 surface constructs the canonical logarithmic coordinate
+realization of that orbit.  The raw critical amplitude has coordinate energy
+`n⁻¹`; Lean identifies the resulting harmonic divergence and proves that
+`n⁻¹ᐟ²` is not an element of unweighted `ℓ²(PNat, ℂ)`.  Dividing by
+`1+log n` gives summable energy `n⁻¹/(1+log n)²` and a distinguished vector in
+`LogRiggedState`, the sequence realization of the documented `H₋₁` scale.
+The diagonal phase `exp(-it log n)` defines a complex-linear isometric
+equivalence for every `t`; the zero, additive, inverse and norm laws hold
+exactly, and a summable domination argument proves norm continuity of every
+orbit.  On the distinguished orbit, pointwise multiplication by `1+log n`
+recovers exactly `dirichletValue (nativeLine t) n`.
+
+This does not make pointwise unrigging a bounded map into the concrete Green
+state space.  In particular, v0.52 does not contradict the harmonic
+obstruction by treating the raw amplitude as an `ℓ²` vector.  It also does not
+construct the all-bases camera readout: the next integration gate is a
+closable rigged boundary form/port, or another explicitly justified map whose
+domain and continuity statement match the source notes.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -578,7 +597,11 @@ The bootstrap and first milestone do not claim:
 - construction or boundedness of the research-specific infinite
   Green-state-to-camera readout (v0.50 proves its complete transport and v0.51
   proves angular evaluation for any such bounded readout supplied explicitly);
-- construction of the native amplitude as a Green-state-valued unitary orbit
-  (v0.51 accepts a supplied family and does not infer a rigged realization);
+- construction of the raw native amplitude as an unweighted Green-state-valued
+  orbit (v0.52 instead proves the harmonic obstruction and constructs the
+  strongly continuous logarithmically weighted `LogRiggedState` orbit);
+- boundedness of pointwise unrigging, or construction/closedness of the
+  research-specific rigged boundary form needed to feed that orbit into the
+  all-bases camera readout;
 - equality between the Green static Poisson map and a spectral Weyl map;
 - any consequence concerning external special-function zeros.

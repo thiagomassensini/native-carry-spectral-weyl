@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.51.0",
-  "registry_count": 1256,
-  "count": 65,
+  "release": "0.52.0",
+  "registry_count": 1279,
+  "count": 66,
   "status_counts": {
-    "KERNEL_CHECKED": 65
+    "KERNEL_CHECKED": 66
   },
   "claims": [
     {
@@ -1716,6 +1716,36 @@
         "NCSW-1254",
         "NCSW-1255",
         "NCSW-1256"
+      ]
+    },
+    {
+      "id": "NCSW-BND-006",
+      "claim": "The canonical logarithmic H_-1 coordinate realization of the native critical amplitude is kernel checked. The raw coordinates n^(-1/2) have harmonic squared energy and do not belong to unweighted l2, whereas n^(-1/2)/(1+log n) has summable squared energy and defines a distinguished weighted vector. Coordinatewise multiplication by exp(-i t log n) defines a complex-linear isometric equivalence group, satisfies the exact additive and inverse laws, preserves every norm, and has norm-continuous orbit maps. The distinguished critical orbit is therefore continuous with constant rigged norm. Removing the logarithmic weight pointwise recovers exactly dirichletValue(nativeLine t,n). The unrigging map is not asserted bounded, the raw amplitude is not promoted to the concrete Green state space, and no all-bases camera readout or closable boundary form is constructed by this claim.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1257",
+        "NCSW-1258",
+        "NCSW-1259",
+        "NCSW-1260",
+        "NCSW-1261",
+        "NCSW-1262",
+        "NCSW-1263",
+        "NCSW-1264",
+        "NCSW-1265",
+        "NCSW-1266",
+        "NCSW-1267",
+        "NCSW-1268",
+        "NCSW-1269",
+        "NCSW-1270",
+        "NCSW-1271",
+        "NCSW-1272",
+        "NCSW-1273",
+        "NCSW-1274",
+        "NCSW-1275",
+        "NCSW-1276",
+        "NCSW-1277",
+        "NCSW-1278",
+        "NCSW-1279"
       ]
     }
   ]

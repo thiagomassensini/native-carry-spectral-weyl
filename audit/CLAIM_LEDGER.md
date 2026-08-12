@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.51 it contains
-sixty-five `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.52 it contains
+sixty-six `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -303,3 +303,14 @@ are equivalent to vanishing of that readout.  Any two nonreal probes
 being identified with each other or with `t`.  The claim supplies no unitary
 orbit law, rigged-state realization or construction/boundedness proof for the
 research-specific readout.
+
+The sixth boundary claim constructs the logarithmic `H₋₁` coordinate
+realization of the critical native amplitude.  Lean proves that the raw
+coordinates `n⁻¹ᐟ²` have harmonic squared energy and are not in unweighted
+`ℓ²`, while `n⁻¹ᐟ²/(1+log n)` has summable energy and defines a distinguished
+rigged vector.  The phase `exp(-it log n)` acts by a complex-linear isometric
+equivalence group with exact group and inverse laws; every orbit is
+norm-continuous, and the distinguished orbit has constant norm.  Pointwise
+removal of the logarithmic weight recovers exactly
+`dirichletValue (nativeLine t) n`.  This claim neither bundles unrigging as a
+bounded operator nor constructs the closable all-bases camera boundary port.
