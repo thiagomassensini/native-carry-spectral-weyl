@@ -362,6 +362,20 @@ This does not yet define logarithmic multiplication, promote the construction
 to an all-bases PVM/POVM, compress the resolvent, or construct the unbounded
 Weyl inverse.
 
+The v0.42 surface defines the documented coordinate `y(x)=1+log x` and
+multiplication by `y` as a Mathlib `LinearPMap` on the exact maximal domain
+`{f ∈ L²((0,∞),K₀) : y f ∈ L²((0,∞),K₀)}`.  Its representative acts
+almost everywhere by literal pointwise multiplication.  The singular endpoint
+estimate for `y²` puts every camera indicator and every finite camera-core
+combination in the domain.  Multiplication by the bounded strictly positive
+regularizer `(1+|y|)⁻¹` is symmetric and injective, has dense range, and
+lands inside the maximal domain; therefore that domain is dense in the full
+Naimark space.  The logarithmic operator is symmetric and closable, and its
+canonical graph closure is closed.  This surface does not prove that the
+original maximal operator is closed or equal to its Hilbert-space adjoint, so
+self-adjointness, its PVM, compressed Cauchy family and Weyl inverse remain
+outside the checked boundary.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -417,8 +431,10 @@ transform remain outside this surface.
 
 The bootstrap and first milestone do not claim:
 
-- an all-bases POVM or Naimark dilation;
-- a self-adjoint unbounded logarithmic multiplication operator;
+- an all-bases PVM/POVM beyond the explicit Naimark isometry;
+- closedness or self-adjointness of the original maximal logarithmic
+  multiplication operator (only symmetry, closability and closedness of its
+  graph closure are claimed);
 - a closed densely defined all-bases Weyl inverse;
 - a maximal boundary relation or gamma field;
 - strong-resolvent or strong-graph convergence;

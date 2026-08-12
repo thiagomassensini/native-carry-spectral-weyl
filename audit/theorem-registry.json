@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.41.0",
-  "count": 942,
+  "release": "0.42.0",
+  "count": 973,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -4712,6 +4712,161 @@
       "id": "NCSW-942",
       "name": "naimarkIsometry_inner",
       "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkIsometry_inner"
+    },
+    {
+      "id": "NCSW-943",
+      "name": "measurable_logarithmicCoordinate",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.measurable_logarithmicCoordinate"
+    },
+    {
+      "id": "NCSW-944",
+      "name": "logarithmicWeightedFunction_aestronglyMeasurable",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicWeightedFunction_aestronglyMeasurable"
+    },
+    {
+      "id": "NCSW-945",
+      "name": "logarithmicWeightedFunction_add",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicWeightedFunction_add"
+    },
+    {
+      "id": "NCSW-946",
+      "name": "logarithmicWeightedFunction_smul",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicWeightedFunction_smul"
+    },
+    {
+      "id": "NCSW-947",
+      "name": "logarithmicWeightedFunction_zero",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicWeightedFunction_zero"
+    },
+    {
+      "id": "NCSW-948",
+      "name": "mem_logarithmicMultiplicationDomain_iff",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.mem_logarithmicMultiplicationDomain_iff"
+    },
+    {
+      "id": "NCSW-949",
+      "name": "logarithmicWeightedFunction_memLp",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicWeightedFunction_memLp"
+    },
+    {
+      "id": "NCSW-950",
+      "name": "logarithmicMultiplication_domain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_domain"
+    },
+    {
+      "id": "NCSW-951",
+      "name": "logarithmicMultiplication_coeFn",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_coeFn"
+    },
+    {
+      "id": "NCSW-952",
+      "name": "memLp_indicator_logarithmicCoordinate",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.memLp_indicator_logarithmicCoordinate"
+    },
+    {
+      "id": "NCSW-953",
+      "name": "naimarkCameraVector_mem_logarithmicMultiplicationDomain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCameraVector_mem_logarithmicMultiplicationDomain"
+    },
+    {
+      "id": "NCSW-954",
+      "name": "naimarkCoreMap_mem_logarithmicMultiplicationDomain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCoreMap_mem_logarithmicMultiplicationDomain"
+    },
+    {
+      "id": "NCSW-955",
+      "name": "measurable_logarithmicRegularizer",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.measurable_logarithmicRegularizer"
+    },
+    {
+      "id": "NCSW-956",
+      "name": "logarithmicRegularizer_pos",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizer_pos"
+    },
+    {
+      "id": "NCSW-957",
+      "name": "logarithmicRegularizer_le_one",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizer_le_one"
+    },
+    {
+      "id": "NCSW-958",
+      "name": "abs_logarithmicCoordinate_mul_regularizer_le_one",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.abs_logarithmicCoordinate_mul_regularizer_le_one"
+    },
+    {
+      "id": "NCSW-959",
+      "name": "logarithmicRegularizedFunction_aestronglyMeasurable",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizedFunction_aestronglyMeasurable"
+    },
+    {
+      "id": "NCSW-960",
+      "name": "logarithmicRegularizedFunction_memLp",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizedFunction_memLp"
+    },
+    {
+      "id": "NCSW-961",
+      "name": "logarithmicRegularizedFunction_add",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizedFunction_add"
+    },
+    {
+      "id": "NCSW-962",
+      "name": "logarithmicRegularizedFunction_smul",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizedFunction_smul"
+    },
+    {
+      "id": "NCSW-963",
+      "name": "logarithmicRegularizationLinearMap_coeFn",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizationLinearMap_coeFn"
+    },
+    {
+      "id": "NCSW-964",
+      "name": "logarithmicRegularizationLinearMap_mem_domain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizationLinearMap_mem_domain"
+    },
+    {
+      "id": "NCSW-965",
+      "name": "range_logarithmicRegularizationLinearMap_le_domain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.range_logarithmicRegularizationLinearMap_le_domain"
+    },
+    {
+      "id": "NCSW-966",
+      "name": "logarithmicRegularizationLinearMap_isSymmetric",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizationLinearMap_isSymmetric"
+    },
+    {
+      "id": "NCSW-967",
+      "name": "logarithmicRegularizationLinearMap_injective",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizationLinearMap_injective"
+    },
+    {
+      "id": "NCSW-968",
+      "name": "logarithmicRegularizationLinearMap_denseRange",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicRegularizationLinearMap_denseRange"
+    },
+    {
+      "id": "NCSW-969",
+      "name": "logarithmicMultiplicationDomain_dense",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicMultiplicationDomain_dense"
+    },
+    {
+      "id": "NCSW-970",
+      "name": "logarithmicMultiplication_denseDomain",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_denseDomain"
+    },
+    {
+      "id": "NCSW-971",
+      "name": "logarithmicMultiplication_isFormalAdjoint",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_isFormalAdjoint"
+    },
+    {
+      "id": "NCSW-972",
+      "name": "logarithmicMultiplication_isClosable",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_isClosable"
+    },
+    {
+      "id": "NCSW-973",
+      "name": "logarithmicMultiplication_closure_isClosed",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.logarithmicMultiplication_closure_isClosed"
     }
   ]
 }

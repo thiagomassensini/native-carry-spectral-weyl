@@ -1,7 +1,7 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.41 it contains
-fifty-three `KERNEL_CHECKED` claims covering finite-camera geometry, exact
+The machine-readable ledger is `audit/claim-ledger.json`.  At v0.42 it contains
+fifty-four `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
 operator, the complete aligned-C2 finite/profile coefficient identity, and the
@@ -46,8 +46,14 @@ Lebesgue measure on `(0,∞)` and the vectors `1_(0,ell_b] r_b` in
 `L²((0,∞),K₀)`, proves their almost-everywhere indicator formula and exact
 full-Gram inner products, and extends their finite linear-combination map from
 the intrinsic `Finsupp` core to a norm- and inner-product-preserving linear
-isometry on the complete camera Hilbert space.  Logarithmic multiplication,
-the PVM, Cauchy compression and the unbounded Weyl inverse are not claimed.
+isometry on the complete camera Hilbert space.
+The fifth all-bases claim constructs multiplication by the documented
+coordinate `1 + log x` as a `LinearPMap` on its exact maximal `L²` domain.
+Every camera indicator and the finite camera core lie in that domain.  The
+bounded positive regularizer `(1+|1+log x|)⁻¹` has symmetric dense range
+inside it, proving the domain dense; the logarithmic operator is symmetric and
+closable, and its canonical graph closure is closed.  The claim deliberately
+does not identify the original operator with its adjoint.
 The finite-moments claim adds the generic self-adjoint shared-slope moment
 construction, the exact first and second centered logarithmic formulas, and
 their literal period-`420` matrices for cameras `2,...,7`.
@@ -188,7 +194,8 @@ monic of degree `k`, and defines the self-adjoint algebraic camera target
 eight and gives one exact literal six-camera matrix in every degree.  It does
 not promote the degree-at-most-eight analytic limits to arbitrary degree.
 
-No all-bases POVM, `L²` Naimark realization or Weyl inverse is claimed by this
-milestone.  The Kolmogorov space realizes only `m_bc`; the slope-minimum factor
-still requires the indicator-function Naimark construction.  Positivity and
-normalization of the finite POVM do not imply idempotent spectral effects.
+No all-bases PVM, compressed Cauchy family or Weyl inverse is claimed by this
+milestone.  Closedness and self-adjointness of the original maximal
+logarithmic multiplier remain separate from the proved closedness of its
+canonical graph closure.  Positivity and normalization of the finite POVM do
+not imply idempotent spectral effects.

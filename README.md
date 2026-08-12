@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.41 explicit Naimark-isometry milestone contains **942 public
+The v0.42 logarithmic-multiplier milestone contains **973 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -116,6 +116,18 @@ surface proves:
   norm, and its extension to a real linear isometry
   `CameraHilbert →ₗᵢ[ℝ] L²((0,∞),K₀)` that maps every canonical camera
   vector to its explicit indicator vector.
+- the documented spectral coordinate `y(x)=1+log x` and multiplication by
+  `y` as a Mathlib `LinearPMap` on the exact maximal domain
+  `{f ∈ L² : y f ∈ L²}`, with its literal almost-everywhere action;
+- square-integrability at the singular endpoint for every camera indicator,
+  placing every explicit Naimark camera vector and every finite camera-core
+  combination in that maximal domain;
+- density of the logarithmic domain via the bounded positive regularizer
+  `(1+|y|)⁻¹`, whose symmetric multiplication map is injective and has dense
+  range contained in the domain;
+- symmetry and closability of the logarithmic `LinearPMap`, together with
+  closedness of its canonical graph closure.  Closedness and equality with
+  the adjoint for the original maximal operator are not yet claimed.
 - a generic slope-weighted moment construction whose real matrices are
   Hermitian and self-adjoint for every finite camera package;
 - the exact first centered logarithmic moment
@@ -369,7 +381,7 @@ functional covariance limits are now kernel checked.  The next analytic gate
 is to lift the scalar and periodic-residue arguments to a degree-generic
 induction over the new polynomial hierarchy.  The algebraic all-degree targets
 are complete, but analytic convergence beyond degree eight is not yet claimed.
-Independently, Phase 5 has passed its fourth all-bases gate: the canonical
+Independently, Phase 5 has passed its fifth all-bases gate: the canonical
 strictly positive Gram form on `Finsupp` now generates its intrinsic real
 inner product, and the all-bases camera Hilbert space is its canonical
 completion.  Every finite-label level enters isometrically and compatibly,
@@ -378,10 +390,14 @@ space.  Separately, the periodic kernel `m_bc` now has its canonical complete
 Kolmogorov realization `K₀`; its vectors `r_b` recover `m_bc` exactly and
 generate densely.  The slope-minimum factor is now realized by explicit
 positive-half-line indicator vectors, and their finite map extends
-isometrically from the intrinsic camera completion into `L²((0,∞),K₀)`.  The
-next gate is the logarithmic multiplication operator on its natural domain;
-its spectral projections, compressed Cauchy transform and operator-valued
-Weyl inverse remain separate obligations.
+isometrically from the intrinsic camera completion into `L²((0,∞),K₀)`.
+Multiplication by `1+log x` is now defined on its exact maximal `L²` domain;
+that domain is dense, contains the complete finite camera core, and the
+operator is symmetric and closable with a closed graph closure.  The next
+gate is to identify the maximal multiplier with its Hilbert-space adjoint
+(hence prove the original operator closed and self-adjoint), then construct
+its spectral projections and compressed Cauchy transform.  The
+operator-valued Weyl inverse remains a later obligation.
 
 Pinned foundations:
 
@@ -418,7 +434,7 @@ existence of a Weyl family.
 - `docs/00_SCOPE.md`: semantic and trust boundary;
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 942 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 973 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

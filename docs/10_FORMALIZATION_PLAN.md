@@ -659,6 +659,7 @@ NativeCarrySpectralWeyl/Infinite/GramKernel.lean
 NativeCarrySpectralWeyl/Infinite/CameraCompletion.lean
 NativeCarrySpectralWeyl/Infinite/Kolmogorov.lean
 NativeCarrySpectralWeyl/Infinite/Naimark.lean
+NativeCarrySpectralWeyl/Infinite/LogarithmicMultiplication.lean
 NativeCarrySpectralWeyl/Infinite/Cauchy.lean
 NativeCarrySpectralWeyl/Infinite/WeylInverse.lean
 ```
@@ -670,13 +671,15 @@ Proof order:
 2. complete that pre-Hilbert space rather than imposing standard camera `l2`;
 3. build a Kolmogorov realization of the periodic kernel;
 4. extend the explicit step-function map to a Naimark isometry;
-5. construct the logarithmic multiplication operator on its natural domain;
+5. construct the logarithmic multiplication operator on its natural domain,
+   prove that domain dense, and close the original operator/self-adjointness
+   identification;
 6. compress the resolvent to obtain a bounded Cauchy family;
 7. prove strict imaginary sign, injectivity and dense range;
 8. define the inverse as a `LinearPMap`, prove it closed and densely defined;
 9. use normalized single-camera vectors to prove the inverse is not bounded.
 
-Kernel checked through the v0.41 explicit Naimark-isometry milestone:
+Kernel checked through the v0.42 logarithmic-multiplier milestone:
 
 - the countable index of all camera labels `b >= 2` and the pair period given
   by the least common multiple of their slopes;
@@ -712,11 +715,24 @@ Kernel checked through the v0.41 explicit Naimark-isometry milestone:
   the resulting linear isometry
   `CameraHilbert →ₗᵢ[ℝ] L²((0,∞),K₀)`, preserving all inner products and
   sending each canonical camera vector to its indicator vector.
+- the measurable spectral coordinate `y(x)=1+log x`, its maximal
+  square-integrability domain `{f ∈ L² : y f ∈ L²}`, and the corresponding
+  multiplication operator bundled as a Mathlib `LinearPMap` with literal
+  almost-everywhere action;
+- membership of every camera indicator and every finite camera-core
+  combination in that domain, using the exact integrability of `y²` at zero;
+- the bounded positive regularizer `(1+|y|)⁻¹`, whose multiplication map is
+  symmetric and injective with dense range contained in the maximal domain,
+  hence density of the logarithmic domain in the full Naimark space;
+- symmetry and closability of logarithmic multiplication and closedness of
+  its canonical graph closure.  These statements do not yet identify the
+  original maximal operator with its adjoint.
 
-The next unchecked item is the logarithmic multiplication operator on its
-natural dense domain in `L²((0,∞),K₀)`, followed by its spectral projections
-and the bounded compressed Cauchy family.  No standard unweighted camera `l2`
-model is introduced.
+The next unchecked item is closedness and equality with the Hilbert-space
+adjoint for the original maximal logarithmic multiplier in
+`L²((0,∞),K₀)`.  Its spectral projections and the bounded compressed Cauchy
+family follow afterward.  No standard unweighted camera `l2` model is
+introduced.
 
 This phase must not represent the all-bases inverse as an everywhere-defined
 continuous linear map.

@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.41.0",
-  "registry_count": 942,
-  "count": 53,
+  "release": "0.42.0",
+  "registry_count": 973,
+  "count": 54,
   "status_counts": {
-    "KERNEL_CHECKED": 53
+    "KERNEL_CHECKED": 54
   },
   "claims": [
     {
@@ -1318,6 +1318,44 @@
         "NCSW-940",
         "NCSW-941",
         "NCSW-942"
+      ]
+    },
+    {
+      "id": "NCSW-INF-005",
+      "claim": "The logarithmic spectral multiplier on the explicit all-bases Naimark space is kernel checked through its densely defined symmetric closable stage. The documented coordinate y(x)=1+log(x) is measurable, and multiplication by y is bundled as a LinearPMap on the exact maximal domain of L2 vectors for which yf remains in L2. Its almost-everywhere action is literal. Every explicit camera vector 1_(0,ell_b]r_b and every finite camera-core combination lies in the domain, using the checked singular-endpoint integral of y squared. Multiplication by the bounded positive regularizer (1+abs(y))^(-1) has trivial kernel, symmetric dense range contained in the maximal domain, proving that domain dense. The logarithmic multiplier is formally self-adjoint in the symmetry sense, hence closable, and its canonical graph closure is closed. This claim does not assert that the original multiplier is closed or equal to its Hilbert-space adjoint; it does not yet construct a projection-valued measure, compressed Cauchy family or Weyl inverse.",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-943",
+        "NCSW-944",
+        "NCSW-945",
+        "NCSW-946",
+        "NCSW-947",
+        "NCSW-948",
+        "NCSW-949",
+        "NCSW-950",
+        "NCSW-951",
+        "NCSW-952",
+        "NCSW-953",
+        "NCSW-954",
+        "NCSW-955",
+        "NCSW-956",
+        "NCSW-957",
+        "NCSW-958",
+        "NCSW-959",
+        "NCSW-960",
+        "NCSW-961",
+        "NCSW-962",
+        "NCSW-963",
+        "NCSW-964",
+        "NCSW-965",
+        "NCSW-966",
+        "NCSW-967",
+        "NCSW-968",
+        "NCSW-969",
+        "NCSW-970",
+        "NCSW-971",
+        "NCSW-972",
+        "NCSW-973"
       ]
     }
   ]

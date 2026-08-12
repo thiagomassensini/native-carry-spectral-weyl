@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.41 explicit Naimark-isometry milestone contains exactly **942**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-942` in
+The v0.42 logarithmic-multiplier milestone contains exactly **973**
+named public Lean theorems, ordered as `NCSW-001` through `NCSW-973` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -61,5 +61,6 @@ report for every declaration.
 | `NCSW-878`–`NCSW-901` | `Infinite/CameraCompletion.lean` | intrinsic Gram inner product, canonical Hilbert completion, dense isometric embedding, exact camera-vector Gram kernel and dense compatible finite-level union |
 | `NCSW-902`–`NCSW-925` | `Infinite/Kolmogorov.lean` | finite periodic-kernel positivity, intrinsic pre-inner-product completion, exact canonical kernel vectors and dense algebraic span |
 | `NCSW-926`–`NCSW-942` | `Infinite/Naimark.lean` | positive-half-line indicator realization, exact full-Gram inner products, finite-core isometry and extension to the complete camera Hilbert space |
+| `NCSW-943`–`NCSW-973` | `Infinite/LogarithmicMultiplication.lean` | maximal `L²` domain for multiplication by `1+log x`, camera-core membership, dense-domain regularizer, symmetry, closability and closed graph closure |
 
 The JSON registry is the machine-readable authority for exact qualified names.

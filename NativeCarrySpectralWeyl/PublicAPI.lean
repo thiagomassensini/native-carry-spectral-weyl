@@ -42,6 +42,7 @@ import NativeCarrySpectralWeyl.Infinite.GramKernel
 import NativeCarrySpectralWeyl.Infinite.CameraCompletion
 import NativeCarrySpectralWeyl.Infinite.Kolmogorov
 import NativeCarrySpectralWeyl.Infinite.Naimark
+import NativeCarrySpectralWeyl.Infinite.LogarithmicMultiplication
 
 /-!
 # Native Carry Spectral Weyl public API
@@ -201,9 +202,14 @@ resolvent parameter.  The first scalar functional-moment layer then proves,
     `1_(0,ell_b] r_b` in `L²((0,∞),K₀)`: their inner products are exactly the
     full Gram kernel, their finite linear combinations preserve the intrinsic
     camera norm, and the map extends to a linear isometry from the complete
-    all-bases camera space.  The logarithmic multiplication operator,
-    projection-valued measure, Cauchy compression and unbounded Weyl inverse
-    remain subsequent obligations.
+    all-bases camera space.  On the ambient Naimark `L²` space, the coordinate
+    `1 + log x` now defines a partial linear multiplication operator on its
+    exact maximal square-integrability domain.  Every camera step vector and
+    the finite camera core belong to that domain; a bounded positive
+    regularizer proves the domain dense, and the operator is symmetric and
+    closable with a closed canonical graph closure.  Equality with its
+    adjoint, the projection-valued measure, Cauchy compression and unbounded
+    Weyl inverse remain subsequent obligations.
 -/
 
 namespace NativeCarrySpectralWeyl
