@@ -26,6 +26,12 @@ Thus a source-dependent bilinear formula can use this result after its camera
 variable has been bundled as a bounded core functional.  The theorem does not
 establish that boundedness for a proposed research formula.
 
+More generally, the same construction is proved for every real-linear core
+map into a complete real normed target.  Taking that target to be the native
+two-coordinate real plane retains the whole readout.  The C3 crosswalk already
+proves that its notation in `ℂ` is the inverse-coordinate packaging through
+`Complex.equivRealProdCLM`; it is not a different operator or a new channel.
+
 ## Uniform atlas restrictions
 
 For every real linear isometric inclusion

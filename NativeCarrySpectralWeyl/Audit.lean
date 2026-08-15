@@ -1338,3 +1338,10 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_bound
 #print axioms NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_norm_le
 #print axioms NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_bound_one
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_cameraEmbedding
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_unique
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_norm_le
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_norm
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_apply
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_bound
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_norm_le

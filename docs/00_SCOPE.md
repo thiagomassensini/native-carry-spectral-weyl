@@ -556,9 +556,12 @@ a separately typed mixed-order boundary synthesis; no subsequent gate is
 selected by v0.53.
 
 The post-v0.53 form-first extension selects the topology of that next
-interface without asserting a vector-valued readout.  Every bounded real
-functional on the finitely supported camera core in the intrinsic Gram norm
-extends uniquely to `CameraHilbert`, with exactly the same operator norm.
+interface without asserting a vector-valued readout.  Every bounded
+real-linear map from the finitely supported camera core in the intrinsic Gram
+norm into a complete real normed target extends uniquely to `CameraHilbert`,
+with exactly the same operator norm.  The target may be a two-coordinate real
+plane.  In the downstream C3 crosswalk, complex notation is provably only an
+equivalent packaging of those two real coordinates, not another operator.
 Restriction to any isometrically embedded atlas, including every concrete
 finite-label atlas, has one atlas-independent bound; the finite restrictions
 agree exactly under enlargement.  The explicit Naimark model provides the

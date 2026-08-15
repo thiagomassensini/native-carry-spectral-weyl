@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The post-v0.53 form-first surface contains **1,336 public
+The post-v0.53 form-first surface contains **1,343 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -557,8 +557,9 @@ continuous isometric orbit.  Its canonical unrigging is the closed
 self-adjoint maximal multiplier on the exact proper dense domain.  Lean proves
 that the whole critical orbit lies outside that domain, while the canonical
 strong-dual port contains it continuously.  The form-first interface now also
-extends every bounded real functional on the finitely supported intrinsic
-Gram core uniquely to `CameraHilbert`, preserves its exact operator norm,
+extends every bounded real-linear map on the finitely supported intrinsic
+Gram core into a complete real normed target uniquely to `CameraHilbert`,
+including two-coordinate real-plane maps, and preserves its exact operator norm,
 restricts with the same bound to every isometrically embedded atlas, and gives
 compatible concrete finite-atlas restrictions.  In the explicit Naimark
 model, the canonical target functional `u ↦ ⟨g,V u⟩` has uniform bound
@@ -624,7 +625,7 @@ existence of a Weyl family.
 - `docs/21_GREEN_HAAR_CAMERA_FORM.md`: exact scope of the form-first camera
   extension and the remaining research-specific estimate;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,336 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,343 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.

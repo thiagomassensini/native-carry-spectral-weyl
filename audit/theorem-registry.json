@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
   "release": "0.53.0",
-  "count": 1336,
+  "count": 1343,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -6682,6 +6682,41 @@
       "id": "NCSW-1336",
       "name": "naimarkCameraFunctional_bound_one",
       "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_bound_one"
+    },
+    {
+      "id": "NCSW-1337",
+      "name": "extendCameraCoreMap_cameraEmbedding",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_cameraEmbedding"
+    },
+    {
+      "id": "NCSW-1338",
+      "name": "extendCameraCoreMap_unique",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_unique"
+    },
+    {
+      "id": "NCSW-1339",
+      "name": "extendCameraCoreMap_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_norm_le"
+    },
+    {
+      "id": "NCSW-1340",
+      "name": "extendCameraCoreMap_norm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_norm"
+    },
+    {
+      "id": "NCSW-1341",
+      "name": "restrictCameraCoreMap_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_apply"
+    },
+    {
+      "id": "NCSW-1342",
+      "name": "restrictCameraCoreMap_bound",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_bound"
+    },
+    {
+      "id": "NCSW-1343",
+      "name": "restrictCameraCoreMap_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_norm_le"
     }
   ]
 }

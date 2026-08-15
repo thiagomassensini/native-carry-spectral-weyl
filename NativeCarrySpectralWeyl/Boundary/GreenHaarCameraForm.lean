@@ -214,4 +214,89 @@ theorem naimarkCameraFunctional_bound_one
     _ ≤ 1 * ‖u‖ := mul_le_mul_of_nonneg_right hg (norm_nonneg u)
     _ = ‖u‖ := one_mul _
 
+/-! ## Complete target-valued version
+
+The same dense-core argument extends real-linear maps into every complete
+real normed target.  In particular, a two-coordinate real readout may be kept
+in its real-plane carrier throughout the extension.  Any later complex
+notation is only a coordinate packaging supplied by the downstream C3
+crosswalk, not an additional camera channel.
+-/
+
+variable {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
+
+abbrev CameraCoreMap := CameraFinsupp →L[ℝ] F
+
+abbrev CameraHilbertMap := CameraHilbert →L[ℝ] F
+
+def extendCameraCoreMap
+    (q : CameraCoreMap (F := F)) : CameraHilbertMap (F := F) :=
+  q.extend cameraEmbedding.toContinuousLinearMap
+
+@[simp] theorem extendCameraCoreMap_cameraEmbedding
+    (q : CameraCoreMap (F := F)) (u : CameraFinsupp) :
+    extendCameraCoreMap q (cameraEmbedding u) = q u := by
+  exact ContinuousLinearMap.extend_eq q cameraEmbedding_denseRange
+    cameraEmbedding.isometry.isUniformInducing u
+
+theorem extendCameraCoreMap_unique
+    (q : CameraCoreMap (F := F)) (Q : CameraHilbertMap (F := F))
+    (hQ : ∀ u : CameraFinsupp, Q (cameraEmbedding u) = q u) :
+    Q = extendCameraCoreMap q := by
+  symm
+  apply ContinuousLinearMap.extend_unique q cameraEmbedding_denseRange
+    cameraEmbedding.isometry.isUniformInducing Q
+  ext u
+  exact hQ u
+
+theorem extendCameraCoreMap_norm_le (q : CameraCoreMap (F := F)) :
+    ‖extendCameraCoreMap q‖ ≤ ‖q‖ := by
+  apply (extendCameraCoreMap q).opNorm_le_bound (norm_nonneg q)
+  intro x
+  refine cameraEmbedding_denseRange.induction_on
+    (p := fun y => ‖extendCameraCoreMap q y‖ ≤ ‖q‖ * ‖y‖)
+    x ?_ ?_
+  · exact isClosed_le
+      (continuous_norm.comp (extendCameraCoreMap q).continuous)
+      (continuous_const.mul continuous_norm)
+  · intro u
+    rw [extendCameraCoreMap_cameraEmbedding, cameraEmbedding.norm_map]
+    exact q.le_opNorm u
+
+theorem extendCameraCoreMap_norm (q : CameraCoreMap (F := F)) :
+    ‖extendCameraCoreMap q‖ = ‖q‖ := by
+  apply le_antisymm (extendCameraCoreMap_norm_le q)
+  apply q.opNorm_le_bound
+    (show (0 : ℝ) ≤ ‖extendCameraCoreMap q‖ by positivity)
+  intro u
+  rw [← extendCameraCoreMap_cameraEmbedding q u]
+  simpa using (extendCameraCoreMap q).le_opNorm (cameraEmbedding u)
+
+variable {B : Type*} [NormedAddCommGroup B] [NormedSpace ℝ B]
+
+def restrictCameraCoreMap
+    (q : CameraCoreMap (F := F)) (inclusion : B →ₗᵢ[ℝ] CameraHilbert) :
+    B →L[ℝ] F :=
+  (extendCameraCoreMap q).comp inclusion.toContinuousLinearMap
+
+@[simp] theorem restrictCameraCoreMap_apply
+    (q : CameraCoreMap (F := F)) (inclusion : B →ₗᵢ[ℝ] CameraHilbert)
+    (u : B) :
+    restrictCameraCoreMap q inclusion u =
+      extendCameraCoreMap q (inclusion u) := rfl
+
+theorem restrictCameraCoreMap_bound
+    (q : CameraCoreMap (F := F)) (inclusion : B →ₗᵢ[ℝ] CameraHilbert)
+    (u : B) :
+    ‖restrictCameraCoreMap q inclusion u‖ ≤ ‖q‖ * ‖u‖ := by
+  change ‖extendCameraCoreMap q (inclusion u)‖ ≤ ‖q‖ * ‖u‖
+  rw [← extendCameraCoreMap_norm q, ← inclusion.norm_map u]
+  exact (extendCameraCoreMap q).le_opNorm (inclusion u)
+
+theorem restrictCameraCoreMap_norm_le
+    (q : CameraCoreMap (F := F)) (inclusion : B →ₗᵢ[ℝ] CameraHilbert) :
+    ‖restrictCameraCoreMap q inclusion‖ ≤ ‖q‖ := by
+  apply (restrictCameraCoreMap q inclusion).opNorm_le_bound (norm_nonneg q)
+  exact restrictCameraCoreMap_bound q inclusion
+
 end NativeCarrySpectralWeyl.Infinite

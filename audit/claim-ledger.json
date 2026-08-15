@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
   "release": "0.53.0",
-  "registry_count": 1336,
+  "registry_count": 1343,
   "count": 68,
   "status_counts": {
     "KERNEL_CHECKED": 68
@@ -1796,7 +1796,7 @@
     },
     {
       "id": "NCSW-BND-008",
-      "claim": "The form-first all-bases camera interface is kernel checked. Every bounded real functional on the finitely supported intrinsic Gram core has a unique continuous extension to CameraHilbert; the extension agrees on the core and preserves the exact operator norm. Restriction along any real linear isometric atlas inclusion retains the same bound, and the concrete finite-label restrictions are exactly compatible under enlargement. In the explicit Naimark realization, the functional u mapsto inner(g, V u) is the unique extension of its core formula and satisfies the atlas-independent bound norm(g), hence constant one for a unit source. This infrastructure does not define the research-specific Green/Haar core functional, prove its Gram estimate, construct a vector-valued camera synthesis, or infer any zero or confinement statement.",
+      "claim": "The form-first all-bases camera interface is kernel checked. Every bounded real-linear map from the finitely supported intrinsic Gram core into any complete real normed target, including a two-coordinate real plane, has a unique continuous extension to CameraHilbert; the extension agrees on the core and preserves the exact operator norm. Downstream complex notation may package that real plane without defining another channel. Restriction along any real linear isometric atlas inclusion retains the same bound, and real-valued concrete finite-label restrictions are exactly compatible under enlargement. In the explicit Naimark realization, the functional u mapsto inner(g, V u) is the unique extension of its core formula and satisfies the atlas-independent bound norm(g), hence constant one for a unit source. This infrastructure does not define the research-specific Green/Haar core map, prove its Gram estimate, construct a vector-valued camera synthesis, or infer any zero or confinement statement.",
       "status": "KERNEL_CHECKED",
       "theorem_ids": [
         "NCSW-1319",
@@ -1816,7 +1816,14 @@
         "NCSW-1333",
         "NCSW-1334",
         "NCSW-1335",
-        "NCSW-1336"
+        "NCSW-1336",
+        "NCSW-1337",
+        "NCSW-1338",
+        "NCSW-1339",
+        "NCSW-1340",
+        "NCSW-1341",
+        "NCSW-1342",
+        "NCSW-1343"
       ]
     }
   ]

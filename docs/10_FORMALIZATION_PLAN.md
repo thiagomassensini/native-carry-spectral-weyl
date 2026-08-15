@@ -917,7 +917,8 @@ object is therefore the separate mixed-order Green/Haar-to-all-bases camera
 synthesis, not closure of diagonal unrigging.
 
 The post-v0.53 gate selects a form-first interface.  The generic completion
-theorem now extends every bounded real functional from `CameraFinsupp` to
+theorem now extends every bounded real-linear map from `CameraFinsupp` into a
+complete real normed target, including a two-coordinate real plane, to
 `CameraHilbert`, preserves its exact norm, gives the same bound on every
 isometrically embedded atlas and proves compatibility of the finite-label
 restrictions.  The Naimark model supplies the canonical constant-one target

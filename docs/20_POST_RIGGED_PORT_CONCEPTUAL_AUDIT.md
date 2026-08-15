@@ -29,9 +29,13 @@ Consequently, neither closability nor closedness of the diagonal unrigging
 operator remains open.  Replacing this operator by a bounded everywhere-
 defined unrigging map would contradict the proved domain obstruction.
 
-The form-level all-bases mechanism is also closed.  Every bounded real
-functional on the finitely supported camera core extends uniquely to
-`CameraHilbert`; the extension preserves the exact operator norm.  Restriction
+The form-level all-bases mechanism is also closed.  Every bounded real-linear
+map on the finitely supported camera core with values in a complete real
+normed target extends uniquely to `CameraHilbert`; the extension preserves the
+exact operator norm.  In particular, the target can be the two-coordinate
+real plane used by the native operator.  The C3 packaging into `ℂ` is an
+equivalence of coordinates, so it neither creates nor discards a Green
+channel.  Restriction
 along any isometric atlas inclusion retains the same bound, with no atlas
 cardinality or cutoff in the constant.  The concrete finite-label restrictions
 are exactly compatible under enlargement.  In the explicit Naimark model,
