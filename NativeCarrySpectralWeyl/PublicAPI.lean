@@ -55,6 +55,7 @@ import NativeCarrySpectralWeyl.Boundary.GreenCameraCoupling
 import NativeCarrySpectralWeyl.Boundary.AngularReadout
 import NativeCarrySpectralWeyl.Boundary.RiggedAngularOrbit
 import NativeCarrySpectralWeyl.Boundary.RiggedBoundaryPort
+import NativeCarrySpectralWeyl.Boundary.GreenHaarCameraForm
 
 /-!
 # Native Carry Spectral Weyl public API

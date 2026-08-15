@@ -327,3 +327,14 @@ instead enters globally through the Fréchet--Riesz anti-linear isometric
 equivalence into the strong dual of the `H₁` test-coordinate realization.
 This does not construct or identify the separate mixed-order
 Green/Haar-to-all-bases camera synthesis.
+
+The eighth boundary claim supplies the form-first completion mechanism.  Lean
+proves that every bounded real functional on the finitely supported intrinsic
+Gram core extends uniquely to the complete all-bases camera Hilbert space and
+that this extension preserves the exact operator norm.  Restriction along any
+real linear isometric atlas inclusion keeps the same bound, while concrete
+finite-label restrictions agree under enlargement.  The explicit Naimark
+pairing is the unique extension of its core formula and is bounded by the
+source norm, hence by one for a unit source.  This claim does not define the
+research-specific Green/Haar functional, prove its Gram estimate, construct a
+bounded vector-valued synthesis, or imply a zero or confinement statement.
