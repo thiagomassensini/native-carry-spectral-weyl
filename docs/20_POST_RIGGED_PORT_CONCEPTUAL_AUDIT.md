@@ -1,7 +1,7 @@
 # Conceptual audit after the closed rigged-port milestone
 
-Status: v0.53 candidate.  This document is an audit, not the opening of a new
-formalization gate.
+Status: post-v0.53 form-first extension.  This document separates the closed
+atlas-independent mechanism from the remaining Green/Haar analytic input.
 
 ## What is actually closed
 
@@ -29,16 +29,33 @@ Consequently, neither closability nor closedness of the diagonal unrigging
 operator remains open.  Replacing this operator by a bounded everywhere-
 defined unrigging map would contradict the proved domain obstruction.
 
+The form-level all-bases mechanism is also closed.  Every bounded real-linear
+map on the finitely supported camera core with values in a complete real
+normed target extends uniquely to `CameraHilbert`; the extension preserves the
+exact operator norm.  In particular, the target can be the two-coordinate
+real plane used by the native operator.  The C3 packaging into `ℂ` is an
+equivalence of coordinates, so it neither creates nor discards a Green
+channel.  Restriction
+along any isometric atlas inclusion retains the same bound, with no atlas
+cardinality or cutoff in the constant.  The concrete finite-label restrictions
+are exactly compatible under enlargement.  In the explicit Naimark model,
+`u ↦ ⟨g,V u⟩` is the canonical target functional and has uniform bound
+`‖g‖`, hence one for a unit source.  These results are functional-analytic
+infrastructure: they do not assert that the research-specific Green/Haar core
+formula has been defined, that it satisfies the required bound, or that its
+source has been realized as such a `g`.
+
 ## Open work requiring new mathematical structure
 
 These items cannot be discharged by translating an already fixed Lean
 statement.  Each requires an additional mathematical object, topology or
 identification theorem.
 
-1. **Research-specific Green/Haar-to-camera synthesis.**  The canonical dual
-   port lands in `StrongDual ℂ LogRiggedTestState`; the existing coupling
-   expects a readout into the realified all-bases camera space.  No canonical
-   map between those targets is presently defined or justified.
+1. **Research-specific Green/Haar core formula and estimate.**  Define the
+   proposed functional on `CameraFinsupp` and prove one estimate
+   `|q(u)| ≤ C‖u‖` in the intrinsic all-bases Gram norm, with `C`
+   independent of every finite atlas.  The new completion theorem then extends
+   it uniquely; it does not prove this analytic input.
 
 2. **Mixed-order boundary geometry.**  The source notes retain a first-order
    coarse channel while bracket/hidden channels are second order.  A valid
@@ -50,18 +67,17 @@ identification theorem.
    atlas.  Current repositories provide the two sides and abstract transport,
    but not this intertwiner.
 
-4. **All-bases boundary synthesis.**  A literal infinite camera output needs
-   a convergence topology, order-independent synthesis, and the corresponding
-   global value/flux estimate.  Finite-camera identities and the completed
-   camera Hilbert space do not alone prove that the proposed boundary output
-   belongs to that space.
+4. **Source realization or vector synthesis, if needed.**  The all-bases
+   functional itself now has a canonical topology and an order-independent
+   continuous extension.  A stronger literal camera-vector output would still
+   require a separate Riesz/source realization theorem and the corresponding
+   global value/flux estimate.
 
-5. **Form-versus-vector decision.**  The Haar report supports a continuous
-   boundary-completed energy form on its documented domain but rejects the
-   naive vector-port factorization.  One must either prove that all downstream
-   uses depend only on this form, or construct a new mixed-order realization
-   (for example an associated operator/relation after specifying a closed
-   form).  Choosing between these is mathematical, not clerical Lean work.
+5. **Downstream factorization through the form.**  The form-first branch has
+   now been selected and formalized.  It remains to prove that the intended
+   Green/Haar observables factor through this continuous functional, or else to
+   add a genuinely new mixed-order operator/relation realization.  No bounded
+   vector port follows from the extension theorem.
 
 6. **Limit identification, if finite cutoffs are required downstream.**  The
    present all-bases Weyl family is constructed directly, so strong-resolvent

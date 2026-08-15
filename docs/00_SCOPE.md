@@ -555,6 +555,22 @@ Green/Haar-to-all-bases camera readout.  Such an identification still requires
 a separately typed mixed-order boundary synthesis; no subsequent gate is
 selected by v0.53.
 
+The post-v0.53 form-first extension selects the topology of that next
+interface without asserting a vector-valued readout.  Every bounded
+real-linear map from the finitely supported camera core in the intrinsic Gram
+norm into a complete real normed target extends uniquely to `CameraHilbert`,
+with exactly the same operator norm.  The target may be a two-coordinate real
+plane.  In the downstream C3 crosswalk, complex notation is provably only an
+equivalent packaging of those two real coordinates, not another operator.
+Restriction to any isometrically embedded atlas, including every concrete
+finite-label atlas, has one atlas-independent bound; the finite restrictions
+agree exactly under enlargement.  The explicit Naimark model provides the
+canonical target pairing `u ↦ ⟨g,V u⟩` with uniform bound `‖g‖`, hence one
+for a unit source.  What remains is to define the research-specific core
+functional, prove its uniform estimate and identify its Green/Haar source
+realization.  None of these form results promotes the raw critical amplitude
+to a bounded camera vector port.
+
 The v0.25 surface proves the third scalar weighted functional moment at every
 fixed positive natural cutoff multiplier `ell`.  The exact cubic increment
 uses the previously checked second and first logarithmic moments with the
@@ -628,7 +644,7 @@ The bootstrap and first milestone do not claim:
   closed self-adjoint maximal operator on its exact proper dense domain and
   proves the critical orbit is outside it);
 - identification of the canonical strong-dual rigged port with the
-  research-specific Green/Haar-to-all-bases camera readout, or construction
-  of the missing mixed-order boundary synthesis needed for that readout;
+  research-specific Green/Haar-to-all-bases camera source realization, or
+  construction and uniform estimate of the missing mixed-order core form;
 - equality between the Green static Poisson map and a spectral Weyl map;
 - any consequence concerning external special-function zeros.

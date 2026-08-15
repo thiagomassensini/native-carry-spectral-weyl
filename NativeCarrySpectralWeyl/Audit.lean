@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.53 closed rigged-port registry. -/
+/-! Ordered foundational-dependency report for the v0.54 form-first camera registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two
@@ -1320,3 +1320,28 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Boundary.continuous_criticalRiggedDualOrbit
 #print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedDualOrbit_apply
 #print axioms NativeCarrySpectralWeyl.Boundary.criticalRiggedDualOrbit_norm
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_cameraEmbedding
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_unique
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_norm_le
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_norm
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_add
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_smul
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreFunctional_apply
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreFunctional_bound
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreFunctional_norm_le
+#print axioms NativeCarrySpectralWeyl.Infinite.finiteCameraFunctional_apply
+#print axioms NativeCarrySpectralWeyl.Infinite.finiteCameraFunctional_bound
+#print axioms NativeCarrySpectralWeyl.Infinite.finiteCameraFunctional_compatible
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCoreCameraFunctional_apply
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_apply
+#print axioms NativeCarrySpectralWeyl.Infinite.extend_naimarkCoreCameraFunctional
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_bound
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_norm_le
+#print axioms NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_bound_one
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_cameraEmbedding
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_unique
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_norm_le
+#print axioms NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_norm
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_apply
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_bound
+#print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_norm_le

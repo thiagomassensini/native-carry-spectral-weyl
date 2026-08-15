@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
-  "release": "0.53.0",
-  "count": 1318,
+  "release": "0.54.0",
+  "count": 1343,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -6592,6 +6592,131 @@
       "id": "NCSW-1318",
       "name": "criticalRiggedDualOrbit_norm",
       "qualified": "NativeCarrySpectralWeyl.Boundary.criticalRiggedDualOrbit_norm"
+    },
+    {
+      "id": "NCSW-1319",
+      "name": "extendCameraCoreFunctional_cameraEmbedding",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_cameraEmbedding"
+    },
+    {
+      "id": "NCSW-1320",
+      "name": "extendCameraCoreFunctional_unique",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_unique"
+    },
+    {
+      "id": "NCSW-1321",
+      "name": "extendCameraCoreFunctional_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_norm_le"
+    },
+    {
+      "id": "NCSW-1322",
+      "name": "extendCameraCoreFunctional_norm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_norm"
+    },
+    {
+      "id": "NCSW-1323",
+      "name": "extendCameraCoreFunctional_add",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_add"
+    },
+    {
+      "id": "NCSW-1324",
+      "name": "extendCameraCoreFunctional_smul",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreFunctional_smul"
+    },
+    {
+      "id": "NCSW-1325",
+      "name": "restrictCameraCoreFunctional_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreFunctional_apply"
+    },
+    {
+      "id": "NCSW-1326",
+      "name": "restrictCameraCoreFunctional_bound",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreFunctional_bound"
+    },
+    {
+      "id": "NCSW-1327",
+      "name": "restrictCameraCoreFunctional_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreFunctional_norm_le"
+    },
+    {
+      "id": "NCSW-1328",
+      "name": "finiteCameraFunctional_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteCameraFunctional_apply"
+    },
+    {
+      "id": "NCSW-1329",
+      "name": "finiteCameraFunctional_bound",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteCameraFunctional_bound"
+    },
+    {
+      "id": "NCSW-1330",
+      "name": "finiteCameraFunctional_compatible",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.finiteCameraFunctional_compatible"
+    },
+    {
+      "id": "NCSW-1331",
+      "name": "naimarkCoreCameraFunctional_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCoreCameraFunctional_apply"
+    },
+    {
+      "id": "NCSW-1332",
+      "name": "naimarkCameraFunctional_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_apply"
+    },
+    {
+      "id": "NCSW-1333",
+      "name": "extend_naimarkCoreCameraFunctional",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extend_naimarkCoreCameraFunctional"
+    },
+    {
+      "id": "NCSW-1334",
+      "name": "naimarkCameraFunctional_bound",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_bound"
+    },
+    {
+      "id": "NCSW-1335",
+      "name": "naimarkCameraFunctional_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_norm_le"
+    },
+    {
+      "id": "NCSW-1336",
+      "name": "naimarkCameraFunctional_bound_one",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.naimarkCameraFunctional_bound_one"
+    },
+    {
+      "id": "NCSW-1337",
+      "name": "extendCameraCoreMap_cameraEmbedding",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_cameraEmbedding"
+    },
+    {
+      "id": "NCSW-1338",
+      "name": "extendCameraCoreMap_unique",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_unique"
+    },
+    {
+      "id": "NCSW-1339",
+      "name": "extendCameraCoreMap_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_norm_le"
+    },
+    {
+      "id": "NCSW-1340",
+      "name": "extendCameraCoreMap_norm",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.extendCameraCoreMap_norm"
+    },
+    {
+      "id": "NCSW-1341",
+      "name": "restrictCameraCoreMap_apply",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_apply"
+    },
+    {
+      "id": "NCSW-1342",
+      "name": "restrictCameraCoreMap_bound",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_bound"
+    },
+    {
+      "id": "NCSW-1343",
+      "name": "restrictCameraCoreMap_norm_le",
+      "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_norm_le"
     }
   ]
 }

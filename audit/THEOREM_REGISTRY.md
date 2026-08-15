@@ -1,7 +1,7 @@
 # Theorem registry
 
-The v0.53 closed rigged-port milestone contains exactly **1,318**
-named public Lean theorems, ordered as `NCSW-001` through `NCSW-1318` in
+The v0.54 form-first surface contains exactly **1,343** named public Lean
+theorems, ordered as `NCSW-001` through `NCSW-1343` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
 report for every declaration.
@@ -74,5 +74,6 @@ report for every declaration.
 | `NCSW-1243`–`NCSW-1256` | `Boundary/AngularReadout.lean` | supplied angular state family, coherent camera/bulk evaluation, unique maximal-domain defect solution, dense-domain trace evaluation, exact angular Weyl recovery and probe-independent zero test with `t`, `z0` and `lambda` distinct |
 | `NCSW-1257`–`NCSW-1279` | `Boundary/RiggedAngularOrbit.lean` | harmonic obstruction for the raw critical amplitude, logarithmic `H₋₁` coordinate realization, strongly continuous isometric evolution group and exact pointwise native Dirichlet bridge |
 | `NCSW-1280`–`NCSW-1318` | `Boundary/RiggedBoundaryPort.lean` | bounded dense-range rigging, maximal closed self-adjoint unrigging on its explicit proper dense domain, evolution intertwining, critical-domain obstruction and canonical strong-dual rigged orbit |
+| `NCSW-1319`–`NCSW-1343` | `Boundary/GreenHaarCameraForm.lean` | unique exact-norm extension of bounded core maps into complete real normed targets, including two-coordinate real-plane forms; uniform isometric-atlas restrictions, compatible real finite restrictions and the constant-one Naimark target for unit sources |
 
 The JSON registry is the machine-readable authority for exact qualified names.

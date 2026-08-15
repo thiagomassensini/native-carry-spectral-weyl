@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite the versioned software release."
+title: "Native Carry Spectral Weyl"
+type: software
+authors:
+  - family-names: Massensini
+    given-names: Thiago
+repository-code: "https://github.com/thiagomassensini/native-carry-spectral-weyl"
+url: "https://github.com/thiagomassensini/native-carry-spectral-weyl"
+license: MIT
+version: 0.54.0
+date-released: 2026-08-15
+abstract: >-
+  Lean 4 formalization of finite and all-bases native carry cameras, their
+  Hilbert completion, boundary Green relations, compressed Cauchy and Weyl
+  families, the closed logarithmic rigged port, and the form-first extension
+  of bounded Green/Haar camera forms.
+keywords:
+  - Lean 4
+  - formalized mathematics
+  - native carry
+  - spectral theory
+  - Weyl family
+  - Green boundary relation
+  - Hilbert completion
+  - reproducible proof audit

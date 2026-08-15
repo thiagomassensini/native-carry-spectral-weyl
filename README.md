@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The v0.53 closed rigged-port milestone contains **1,318 public
+The v0.54.0 form-first surface contains **1,343 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -556,12 +556,19 @@ canonical logarithmically weighted coordinate realization and a strongly
 continuous isometric orbit.  Its canonical unrigging is the closed
 self-adjoint maximal multiplier on the exact proper dense domain.  Lean proves
 that the whole critical orbit lies outside that domain, while the canonical
-strong-dual port contains it continuously.  What remains is not operator
-closure for this diagonal map, but construction of the research-specific
-Green/Haar-to-all-bases camera synthesis and proof that its output agrees with
-the existing bounded-readout interface.  A native complex
-scalar action on the real all-bases camera completion, explicit PVM and
-ordinary boundary triple also remain outside the current surface.
+strong-dual port contains it continuously.  The form-first interface now also
+extends every bounded real-linear map on the finitely supported intrinsic
+Gram core into a complete real normed target uniquely to `CameraHilbert`,
+including two-coordinate real-plane maps, and preserves its exact operator norm,
+restricts with the same bound to every isometrically embedded atlas, and gives
+compatible concrete finite-atlas restrictions.  In the explicit Naimark
+model, the canonical target functional `u ↦ ⟨g,V u⟩` has uniform bound
+`‖g‖`, hence bound one for a unit source.  What remains is not completion or
+operator closure, but the research-specific Green/Haar core formula, its
+atlas-independent Gram estimate, and its source/intertwining realization.  A
+bounded vector-valued synthesis does not follow from the form theorem.  A
+native complex scalar action on the real all-bases camera completion, explicit
+PVM and ordinary boundary triple also remain outside the current surface.
 
 Pinned foundations:
 
@@ -587,10 +594,14 @@ split specialization is also exported.  The logarithmic `H₋₁` coordinate
 realization, its strongly continuous orbit `exp(-it log n)`, the canonical
 strong-dual port and the closed self-adjoint maximal unrigging operator are now
 constructed independently.  No subsequent boundary gate is selected by this
-milestone.  The remaining research problem is the separate, typed
-Green/Haar-to-all-bases camera synthesis; it cannot be obtained by applying
-maximal unrigging to the critical orbit, which is formally outside that
-operator's domain.
+milestone.  The generic functional-extension mechanism is now closed: a
+bounded core functional extends uniquely with the exact same norm, finite
+atlas restrictions are compatible, and the Naimark pairing supplies the
+canonical constant-one target.  The remaining research problem is to define
+the typed Green/Haar core functional and prove its atlas-independent intrinsic
+Gram bound, then identify the intended source/intertwining realization.  It
+cannot be obtained by applying maximal unrigging to the critical orbit, which
+is formally outside that operator's domain.
 
 Three parameters remain permanently distinct:
 
@@ -611,8 +622,10 @@ existence of a Weyl family.
 - `docs/10_FORMALIZATION_PLAN.md`: dependency-ordered implementation plan;
 - `docs/20_POST_RIGGED_PORT_CONCEPTUAL_AUDIT.md`: post-v0.53 separation of
   genuinely new mathematical structure from formalization/consolidation;
+- `docs/21_GREEN_HAAR_CAMERA_FORM.md`: exact scope of the form-first camera
+  extension and the remaining research-specific estimate;
 - `research/SOURCE_CATALOG.md`: source inventory and provenance findings;
-- `audit/theorem-registry.json`: ordered registry of all 1,318 public theorems;
+- `audit/theorem-registry.json`: ordered registry of all 1,343 public theorems;
 - `audit/claim-ledger.json`: exact theorem-to-claim mapping;
 - `NativeCarrySpectralWeyl/Audit.lean`: one `#print axioms` report per theorem;
 - `.github/workflows/lean-audit.yml`: exact-checkout Lean audit.
@@ -624,5 +637,12 @@ lake update
 lake build --wfail NativeCarrySpectralWeyl
 ```
 
-The theorem registry and claim ledger are active.  A release tag is created
+The theorem registry and claim ledger are active. A release tag is created
 only after the exact candidate SHA passes the remote audit on `main`.
+
+## Citation and release
+
+Release `v0.54.0` adds the form-first Green/Haar camera extension without
+complexifying the underlying real operator. Citation metadata is provided in
+`CITATION.cff` and `.zenodo.json`; the GitHub Release is the archive event
+consumed by the enabled Zenodo integration.

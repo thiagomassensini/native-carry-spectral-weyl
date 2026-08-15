@@ -1,6 +1,6 @@
 # Claim ledger
 
-The machine-readable ledger is `audit/claim-ledger.json`.  At v0.53 it contains
+The machine-readable ledger is `audit/claim-ledger.json`. At v0.54 it contains
 sixty-seven `KERNEL_CHECKED` claims covering finite-camera geometry, exact
 periodic profiles, period mean zero, explicit camera factors and the uniform positive
 native-line floor, plus the exact free-coefficient realization of the finite
@@ -327,3 +327,17 @@ instead enters globally through the Fréchet--Riesz anti-linear isometric
 equivalence into the strong dual of the `H₁` test-coordinate realization.
 This does not construct or identify the separate mixed-order
 Green/Haar-to-all-bases camera synthesis.
+
+The eighth boundary claim supplies the form-first completion mechanism.  Lean
+proves that every bounded real-linear map on the finitely supported intrinsic
+Gram core with values in any complete real normed target extends uniquely to
+the complete all-bases camera Hilbert space and preserves the exact operator
+norm.  This includes complex-valued Green forms without discarding their
+second real coordinate; downstream complex notation is only an equivalent
+packaging of that real plane.  Restriction along any real linear isometric atlas
+inclusion keeps the same bound, while concrete real finite-label restrictions
+agree under enlargement.  The explicit Naimark pairing is the unique
+extension of its core formula and is bounded by the source norm, hence by one
+for a unit source.  This claim does not define the research-specific
+Green/Haar map, prove its Gram estimate, construct a bounded vector-valued
+synthesis, or imply a zero or confinement statement.

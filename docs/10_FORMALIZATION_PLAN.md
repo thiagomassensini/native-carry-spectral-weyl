@@ -914,12 +914,22 @@ Hilbert space.  It instead proves that canonical unrigging is a closed
 self-adjoint partial operator and that the critical orbit is outside its exact
 domain; the orbit belongs globally to the canonical strong dual.  The missing
 object is therefore the separate mixed-order Green/Haar-to-all-bases camera
-synthesis, not closure of diagonal unrigging.  No subsequent gate is selected
-here.  Strong-resolvent or strong-graph passage remains unused; if a future
-construction requires it, its topology and domains must be stated explicitly.
-The current realified representation remains deliberate: no independent
-complex scalar action, everywhere-defined inverse or ordinary boundary triple
-is inferred.
+synthesis, not closure of diagonal unrigging.
+
+The post-v0.53 gate selects a form-first interface.  The generic completion
+theorem now extends every bounded real-linear map from `CameraFinsupp` into a
+complete real normed target, including a two-coordinate real plane, to
+`CameraHilbert`, preserves its exact norm, gives the same bound on every
+isometrically embedded atlas and proves compatibility of the finite-label
+restrictions.  The Naimark model supplies the canonical constant-one target
+pairing for a unit source.  The next analytic input is therefore sharply
+localized: define the research-specific Green/Haar core functional and prove
+its single atlas-independent Gram-norm estimate, then establish the required
+source/intertwining realization.  Strong-resolvent or strong-graph passage
+remains unused; if a future construction requires it, its topology and domains
+must be stated explicitly.  The current realified representation remains
+deliberate: no independent complex scalar action, bounded vector synthesis,
+everywhere-defined inverse or ordinary boundary triple is inferred.
 
 ## 10. Phase 7 — optional holonomic track
 
