@@ -5,7 +5,7 @@ carry cameras.
 
 ## Current status
 
-The post-v0.53 form-first surface contains **1,343 public
+The v0.54.0 form-first surface contains **1,343 public
 kernel-checked Lean theorems**.  It builds against the exact Green Frame v2.1
 commit and the exact finite native-carry operator commit.  The current public
 surface proves:
@@ -637,5 +637,12 @@ lake update
 lake build --wfail NativeCarrySpectralWeyl
 ```
 
-The theorem registry and claim ledger are active.  A release tag is created
+The theorem registry and claim ledger are active. A release tag is created
 only after the exact candidate SHA passes the remote audit on `main`.
+
+## Citation and release
+
+Release `v0.54.0` adds the form-first Green/Haar camera extension without
+complexifying the underlying real operator. Citation metadata is provided in
+`CITATION.cff` and `.zenodo.json`; the GitHub Release is the archive event
+consumed by the enabled Zenodo integration.

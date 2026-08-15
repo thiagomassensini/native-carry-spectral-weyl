@@ -1,6 +1,6 @@
 import NativeCarrySpectralWeyl.PublicAPI
 
-/-! Ordered foundational-dependency report for the v0.53 closed rigged-port registry. -/
+/-! Ordered foundational-dependency report for the v0.54 form-first camera registry. -/
 
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_two
 #print axioms NativeCarrySpectralWeyl.Camera.cameraSlope_of_ne_two

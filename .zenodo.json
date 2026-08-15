@@ -1,0 +1,25 @@
+{
+  "title": "Native Carry Spectral Weyl",
+  "description": "Lean 4 formalization of finite and all-bases native carry cameras, their Hilbert completion, boundary Green relations, compressed Cauchy and Weyl families, the closed logarithmic rigged port, and the form-first extension of bounded Green/Haar camera forms.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "version": "0.54.0",
+  "publication_date": "2026-08-15",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Massensini, Thiago"
+    }
+  ],
+  "keywords": [
+    "Lean 4",
+    "formalized mathematics",
+    "native carry",
+    "spectral theory",
+    "Weyl family",
+    "Green boundary relation",
+    "Hilbert completion",
+    "reproducible proof audit"
+  ]
+}

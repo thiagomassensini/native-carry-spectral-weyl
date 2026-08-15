@@ -1,6 +1,6 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
-  "release": "0.53.0",
+  "release": "0.54.0",
   "registry_count": 1343,
   "count": 68,
   "status_counts": {

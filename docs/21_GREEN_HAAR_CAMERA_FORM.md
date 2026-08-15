@@ -19,7 +19,7 @@ extendCameraCoreFunctional q : CameraHilbert →L[ℝ] ℝ.
 The extension agrees with `q` on the canonical dense embedding and satisfies
 
 ```math
-\left\|\operatorname{extend}(q)\right\|=\lVert q\rVert.
+\left\|\mathrm{extend}(q)\right\|=\lVert q\rVert.
 ```
 
 Thus a source-dependent bilinear formula can use this result after its camera
@@ -43,7 +43,7 @@ i : A →ₗᵢ[ℝ] CameraHilbert,
 the restricted functional obeys
 
 ```math
-\left|\operatorname{extend}(q)(i u)\right|
+\left|\mathrm{extend}(q)(i u)\right|
 \le \lVert q\rVert\,\lVert u\rVert.
 ```
 

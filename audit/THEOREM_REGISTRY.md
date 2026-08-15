@@ -1,6 +1,6 @@
 # Theorem registry
 
-The post-v0.53 form-first surface contains exactly **1,343** named public Lean
+The v0.54 form-first surface contains exactly **1,343** named public Lean
 theorems, ordered as `NCSW-001` through `NCSW-1343` in
 `audit/theorem-registry.json`.  The same order is used by
 `NativeCarrySpectralWeyl/Audit.lean`, which emits one named `#print axioms`
