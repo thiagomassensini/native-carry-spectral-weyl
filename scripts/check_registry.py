@@ -144,6 +144,8 @@ MODULES = [
      "NativeCarrySpectralWeyl.Boundary."),
     (ROOT / "NativeCarrySpectralWeyl/Boundary/GreenHaarCameraForm.lean",
      "NativeCarrySpectralWeyl.Infinite."),
+    (ROOT / "NativeCarrySpectralWeyl/Finite/RelationalDivisibilityGram.lean",
+     "NativeCarrySpectralWeyl.Finite.Relational."),
 ]
 
 

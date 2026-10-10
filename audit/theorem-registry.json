@@ -1,7 +1,7 @@
 {
   "schema": "org.native-carry-spectral-weyl.theorem-registry/v1",
   "release": "0.54.0",
-  "count": 1343,
+  "count": 1364,
   "theorems": [
     {
       "id": "NCSW-001",
@@ -6717,6 +6717,111 @@
       "id": "NCSW-1343",
       "name": "restrictCameraCoreMap_norm_le",
       "qualified": "NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_norm_le"
+    },
+    {
+      "id": "NCSW-1344",
+      "name": "divisibilityKernel_comm",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.divisibilityKernel_comm"
+    },
+    {
+      "id": "NCSW-1345",
+      "name": "indicator_sum_commonPeriod",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.indicator_sum_commonPeriod"
+    },
+    {
+      "id": "NCSW-1346",
+      "name": "indicator_mul",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.indicator_mul"
+    },
+    {
+      "id": "NCSW-1347",
+      "name": "divisibility_inner",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.divisibility_inner"
+    },
+    {
+      "id": "NCSW-1348",
+      "name": "divisibility_period_independent",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.divisibility_period_independent"
+    },
+    {
+      "id": "NCSW-1349",
+      "name": "divisibilityKernel_posSemidef",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.divisibilityKernel_posSemidef"
+    },
+    {
+      "id": "NCSW-1350",
+      "name": "profile_relational",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.profile_relational"
+    },
+    {
+      "id": "NCSW-1351",
+      "name": "profile_finsupp",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.profile_finsupp"
+    },
+    {
+      "id": "NCSW-1352",
+      "name": "resolution_pos",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.resolution_pos"
+    },
+    {
+      "id": "NCSW-1353",
+      "name": "resolution_dvd_slope",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.resolution_dvd_slope"
+    },
+    {
+      "id": "NCSW-1354",
+      "name": "relationalForm_profileCoefficients",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.relationalForm_profileCoefficients"
+    },
+    {
+      "id": "NCSW-1355",
+      "name": "periodicProductMean_relational",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.periodicProductMean_relational"
+    },
+    {
+      "id": "NCSW-1356",
+      "name": "periodicMeanKernel_relational",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.periodicMeanKernel_relational"
+    },
+    {
+      "id": "NCSW-1357",
+      "name": "gramKernel_relational",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.gramKernel_relational"
+    },
+    {
+      "id": "NCSW-1358",
+      "name": "gramKernel_finsupp",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.gramKernel_finsupp"
+    },
+    {
+      "id": "NCSW-1359",
+      "name": "sixCamera_relational_certificate",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.sixCamera_relational_certificate"
+    },
+    {
+      "id": "NCSW-1360",
+      "name": "relationalMeanRat_cast",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.relationalMeanRat_cast"
+    },
+    {
+      "id": "NCSW-1361",
+      "name": "sixCamera_relational_rational_certificate",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.sixCamera_relational_rational_certificate"
+    },
+    {
+      "id": "NCSW-1362",
+      "name": "inner_cameraVector_relational",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.inner_cameraVector_relational"
+    },
+    {
+      "id": "NCSW-1363",
+      "name": "inner_naimarkCameraVector_relational",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.inner_naimarkCameraVector_relational"
+    },
+    {
+      "id": "NCSW-1364",
+      "name": "secondDifference_c5_not_in_sixCamera_span",
+      "qualified": "NativeCarrySpectralWeyl.Finite.Relational.secondDifference_c5_not_in_sixCamera_span"
     }
   ]
 }

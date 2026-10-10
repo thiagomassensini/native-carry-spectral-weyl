@@ -1,10 +1,10 @@
 {
   "schema": "org.native-carry-spectral-weyl.claim-ledger/v1",
   "release": "0.54.0",
-  "registry_count": 1343,
-  "count": 68,
+  "registry_count": 1364,
+  "count": 69,
   "status_counts": {
-    "KERNEL_CHECKED": 68
+    "KERNEL_CHECKED": 69
   },
   "claims": [
     {
@@ -1824,6 +1824,34 @@
         "NCSW-1341",
         "NCSW-1342",
         "NCSW-1343"
+      ]
+    },
+    {
+      "id": "NCSW-RELATIONAL-001",
+      "claim": "Positive divisibility kernel realizes all supported native profiles and the official all-bases Gram exactly, including the rational six-camera certificate; the six-camera profile span fails unit second-difference invariance",
+      "status": "KERNEL_CHECKED",
+      "theorem_ids": [
+        "NCSW-1344",
+        "NCSW-1345",
+        "NCSW-1346",
+        "NCSW-1347",
+        "NCSW-1348",
+        "NCSW-1349",
+        "NCSW-1350",
+        "NCSW-1351",
+        "NCSW-1352",
+        "NCSW-1353",
+        "NCSW-1354",
+        "NCSW-1355",
+        "NCSW-1356",
+        "NCSW-1357",
+        "NCSW-1358",
+        "NCSW-1359",
+        "NCSW-1360",
+        "NCSW-1361",
+        "NCSW-1362",
+        "NCSW-1363",
+        "NCSW-1364"
       ]
     }
   ]
