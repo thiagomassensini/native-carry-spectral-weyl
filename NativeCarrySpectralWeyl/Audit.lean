@@ -1345,3 +1345,25 @@ import NativeCarrySpectralWeyl.PublicAPI
 #print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_apply
 #print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_bound
 #print axioms NativeCarrySpectralWeyl.Infinite.restrictCameraCoreMap_norm_le
+
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.divisibilityKernel_comm
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.indicator_sum_commonPeriod
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.indicator_mul
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.divisibility_inner
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.divisibility_period_independent
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.divisibilityKernel_posSemidef
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.profile_relational
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.profile_finsupp
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.resolution_pos
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.resolution_dvd_slope
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.relationalForm_profileCoefficients
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.periodicProductMean_relational
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.periodicMeanKernel_relational
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.gramKernel_relational
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.gramKernel_finsupp
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.sixCamera_relational_certificate
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.relationalMeanRat_cast
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.sixCamera_relational_rational_certificate
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.inner_cameraVector_relational
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.inner_naimarkCameraVector_relational
+#print axioms NativeCarrySpectralWeyl.Finite.Relational.secondDifference_c5_not_in_sixCamera_span

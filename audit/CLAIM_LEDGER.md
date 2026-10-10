@@ -341,3 +341,7 @@ extension of its core formula and is bounded by the source norm, hence by one
 for a unit source.  This claim does not define the research-specific
 Green/Haar map, prove its Gram estimate, construct a bounded vector-valued
 synthesis, or imply a zero or confinement statement.
+
+## Relational divisibility extension
+
+`NCSW-RELATIONAL-001` adds 21 audited public theorems; the current ledger has 69 kernel-checked claims and covers 1364 theorems. Physical projector convergence and dynamic intertwining are not asserted.

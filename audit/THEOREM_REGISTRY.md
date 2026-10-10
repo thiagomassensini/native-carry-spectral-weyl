@@ -77,3 +77,7 @@ report for every declaration.
 | `NCSW-1319`–`NCSW-1343` | `Boundary/GreenHaarCameraForm.lean` | unique exact-norm extension of bounded core maps into complete real normed targets, including two-coordinate real-plane forms; uniform isometric-atlas restrictions, compatible real finite restrictions and the constant-one Naimark target for unit sources |
 
 The JSON registry is the machine-readable authority for exact qualified names.
+
+## Relational divisibility extension
+
+The current registry contains **1,364** public theorems. `NCSW-1344` through `NCSW-1364` cover `NativeCarrySpectralWeyl/Finite/RelationalDivisibilityGram.lean`: exact arithmetic overlap, positivity, finite synthesis, all-bases Gram identification, rational certificate, existing Hilbert realizations, and a finite dynamic no-go.
