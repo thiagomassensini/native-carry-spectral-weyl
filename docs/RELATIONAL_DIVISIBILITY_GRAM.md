@@ -195,3 +195,21 @@ de `ring` em outros módulos não são warnings.
 As pontes Green/TFVD, HP, Hankel, positividade all-order e identificação de
 alturas não fazem parte da conclusão. O resultado fechado é a identificação
 estática relacional do Gram; a obstrução dinâmica foi conservada explicitamente.
+
+## Publicação e bloqueio de integração
+
+Formalização validada no commit `f83ad1ab388ad627595eec20dbd393d2cc300f4e`,
+publicado em `origin/agent/relational-divisibility-gram` e no
+[PR #15](https://github.com/thiagomassensini/native-carry-spectral-weyl/pull/15).
+O [workflow do commit exato](https://github.com/thiagomassensini/native-carry-spectral-weyl/actions/runs/38032806186)
+foi marcado como failure antes de iniciar qualquer step. A annotation oficial
+do check `114157088567` diz: “The job was not started because your account is
+locked due to a billing issue.” Isso não é uma falha Lean nem uma validação
+remota bem-sucedida: nenhum runner chegou a executar o checkout.
+
+O build completo, registro e os 1364 relatórios de axiomas passaram no llm.
+A integração foi conservadoramente bloqueada; não houve merge, force push
+ou mudança no `origin/main`, que permanece na base `248249c` observada.
+Não foram criadas worktrees. A branch está vinculada ao PR e deve ser integrada
+após resolver o bloqueio da conta e executar novamente a CI; não é uma branch
+de trabalho esquecida. Os arquivos preexistentes do autoadjunto foram preservados.
